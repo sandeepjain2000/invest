@@ -1,0 +1,27 @@
+{
+  "sender_name": "Sandeep Jain",
+  "company_name": "PlacementsHub",
+  "phone": "+91-9860090620",
+  "email": "sandeepjain200019@gmail.com",
+  "website": "https://campus-placement-omega.vercel.app/",
+  "signature_links": [
+    {
+      "label": "PlacementsHub",
+      "url": "https://campus-placement-omega.vercel.app/"
+    },
+    {
+      "label": "My CV",
+      "url": "https://drive.google.com/file/d/14PXQO2TdZpMikZMLjyOtOfBbxhMvFVw8/view"
+    },
+    {
+      "label": "Detailed Profile",
+      "url": "https://jainsandeep729.wixsite.com/website"
+    },
+    {
+      "label": "LinkedIn Profile",
+      "url": "https://www.linkedin.com/in/jain35/"
+    }
+  ],
+  "email_subject": "Exploring a potential partnership opportunity",
+  "emails_per_run": 2
+}

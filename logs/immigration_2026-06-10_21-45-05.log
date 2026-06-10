@@ -1,0 +1,9 @@
+2026-06-10 21:45:05 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-10_21-45-05.log
+2026-06-10 21:45:05 [INFO   ] === Immigration pipeline status ===
+2026-06-10 21:45:05 [INFO   ]   search_queries_pending   0
+2026-06-10 21:45:05 [INFO   ]   search_queries_done      0
+2026-06-10 21:45:05 [INFO   ]   companies_total          0
+2026-06-10 21:45:05 [INFO   ]   companies_with_email     0
+2026-06-10 21:45:05 [INFO   ]   emails_found             0
+2026-06-10 21:45:05 [INFO   ]   emails_sent              0
+2026-06-10 21:45:05 [INFO   ]   emails_failed            0

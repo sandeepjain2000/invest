@@ -1,0 +1,12 @@
+2026-06-10 21:53:49 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-10_21-53-49.log
+2026-06-10 21:53:49 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-10 21:53:49 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-10 21:54:00 [INFO   ] DRY-RUN would send to info@greentreeimmigration.com (Best Immigration & Visa consultants in Pune | Green Tree
+
+GreenTree Immigration
+https://www.greentreeimmigration.com › pune) from jain1001sandeep@gmail.com | praise: GreenTree Immigration demonstrates exceptional dedication to guiding clients thr
+2026-06-10 21:54:01 [INFO   ] DRY-RUN would send to info@nationwidevisas.com (Best Immigration Consultant in Pune 2026
+
+Nationwide Visas
+https://www.nationwidevisas.com › Office) from jain1001sandeep@gmail.com | praise: Nationwide Visas demonstrates exceptional dedication to guiding clients through 
+2026-06-10 21:54:01 [INFO   ] Send complete: {'sent': 0, 'failed': 0, 'skipped': 2}
