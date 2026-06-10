@@ -144,6 +144,7 @@ def send_one(
     smtp_password: str,
     sender_cfg: dict,
     use_nvidia_praise: bool = True,
+    industry_id: str = "overseas_education_immigration",
 ) -> bool:
     if db.email_already_sent(recipient):
         logger.info("Already sent: %s", recipient)
@@ -151,11 +152,11 @@ def send_one(
 
     check_domain_delay(domain)
     praise = (
-        generate_company_praise(company_name, website)
+        generate_company_praise(company_name, website, industry_id=industry_id)
         if use_nvidia_praise
         else (
-            f"I was impressed by {company_name}'s dedication to supporting clients "
-            "through immigration and visa processes."
+            f"I was impressed by {company_name}'s dedication to supporting students "
+            "and strengthening career outcomes."
         )
     )
     html = read_template(company_name, praise, sender_cfg)
@@ -238,6 +239,7 @@ def run_send(
                 generate_company_praise(
                     item.get("company_name") or item.get("domain", ""),
                     item.get("website", ""),
+                    industry_id=item.get("industry", "overseas_education_immigration"),
                 )
                 if use_nvidia_praise
                 else "..."
@@ -262,6 +264,7 @@ def run_send(
             smtp_password=password,
             sender_cfg=sender_cfg,
             use_nvidia_praise=use_nvidia_praise,
+            industry_id=item.get("industry", "overseas_education_immigration"),
         )
         if ok:
             stats["sent"] += 1

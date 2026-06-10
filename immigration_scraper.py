@@ -11,7 +11,8 @@ from urllib.parse import quote_plus, urlparse
 from playwright.async_api import BrowserContext, Page, Playwright, async_playwright
 
 from immigration_db import ImmigrationDB, clean_domain
-from nvidia_llm import DEFAULT_SEARCH_SEEDS, generate_search_queries
+from industries import default_region, queries_per_industry, seed_queries_for
+from nvidia_llm import generate_queries_for_all_industries, generate_search_queries
 
 logger = logging.getLogger(__name__)
 
@@ -244,25 +245,78 @@ async def scrape_company_emails(page: Page, website: str) -> tuple[list[str], st
     return [], source, notes
 
 
+def _auto_seed_queries(
+    db: ImmigrationDB,
+    *,
+    region: str,
+    industry: str | None,
+    use_nvidia: bool,
+) -> int:
+    added = 0
+    if industry:
+        queries = (
+            generate_search_queries(
+                count=queries_per_industry(),
+                region=region,
+                industry_id=industry,
+            )
+            if use_nvidia
+            else seed_queries_for(industry)[: queries_per_industry()]
+        )
+        if not queries:
+            queries = seed_queries_for(industry)
+        added += db.add_search_queries(queries, industry=industry, source="nvidia" if use_nvidia else "seed")
+        return added
+
+    batch = generate_queries_for_all_industries(
+        region=region,
+        per_industry=queries_per_industry(),
+        use_nvidia=use_nvidia,
+    )
+    for iid, queries in batch.items():
+        added += db.add_search_queries(
+            queries,
+            industry=iid,
+            source="nvidia" if use_nvidia else "seed",
+        )
+    return added
+
+
 async def run_scrape(
     db: ImmigrationDB,
     *,
     max_companies: int = 20,
     max_queries: int = 5,
     browser: str = "auto",
-    region: str = "India",
+    region: str | None = None,
+    industry: str | None = None,
     seed_keywords: bool = True,
+    use_nvidia_seed: bool = True,
 ) -> dict:
-    stats = {"queries_run": 0, "companies_scraped": 0, "emails_found": 0, "browser_used": ""}
+    region = region or default_region()
+    stats = {
+        "queries_run": 0,
+        "companies_scraped": 0,
+        "emails_found": 0,
+        "browser_used": "",
+        "industry_filter": industry or "all",
+    }
 
-    pending = db.next_pending_query()
+    if not industry:
+        logger.info(
+            "Industry selection: random order on each query pick (distributes across verticals)"
+        )
+
+    pending = db.next_pending_query(industry)
     if not pending and seed_keywords:
-        seeds = generate_search_queries(count=12, region=region)
-        if not seeds:
-            seeds = DEFAULT_SEARCH_SEEDS
-        added = db.add_search_queries(seeds, source="nvidia")
-        logger.info("Seeded %s search query(ies).", added)
-        pending = db.next_pending_query()
+        added = _auto_seed_queries(
+            db,
+            region=region,
+            industry=industry,
+            use_nvidia=use_nvidia_seed,
+        )
+        logger.info("Seeded %s search query(ies) across industry scope.", added)
+        pending = db.next_pending_query(industry)
 
     async with async_playwright() as playwright:
         context, browser_used = await launch_context(playwright, browser)
@@ -273,12 +327,14 @@ async def run_scrape(
 
         queries_done = 0
         while queries_done < max_queries and stats["companies_scraped"] < max_companies:
-            row = db.next_pending_query()
+            row = db.next_pending_query(industry)
             if not row:
                 break
 
             query_id = int(row["id"])
             query_text = row["query_text"]
+            query_industry = row["industry"] if "industry" in row.keys() else "overseas_education_immigration"
+            logger.info("Industry: %s | Query: %s", query_industry, query_text)
             results = await google_search_urls(page, query_text)
             stats["queries_run"] += 1
             queries_done += 1
@@ -295,6 +351,7 @@ async def run_scrape(
                     name=result["title"],
                     website=result["url"],
                     search_query_id=query_id,
+                    industry=query_industry,
                 )
                 if not company_id:
                     continue

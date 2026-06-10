@@ -1,0 +1,126 @@
+{
+  "region_default": "India",
+  "queries_per_industry": 6,
+  "industries": [
+    {
+      "id": "recruitment_staffing",
+      "name": "Recruitment & Staffing Firms",
+      "rank": 1,
+      "active": true,
+      "seed_queries": [
+        "campus recruitment firm India contact",
+        "IT staffing company graduate hiring",
+        "talent acquisition founder staffing company",
+        "campus hiring solutions provider India",
+        "recruitment entrepreneur India contact email",
+        "apprenticeship provider graduate hiring India"
+      ],
+      "praise_hint": "campus recruitment, talent acquisition, and graduate hiring"
+    },
+    {
+      "id": "edtech",
+      "name": "EdTech Companies",
+      "rank": 2,
+      "active": true,
+      "seed_queries": [
+        "upskilling platform students India contact",
+        "test prep company career readiness India",
+        "professional certification provider India email",
+        "EdTech career readiness platform India",
+        "online learning platform employability India",
+        "skill development EdTech company India contact"
+      ],
+      "praise_hint": "upskilling, career readiness, and student learning outcomes"
+    },
+    {
+      "id": "overseas_education_immigration",
+      "name": "Overseas Education / Immigration",
+      "rank": 3,
+      "active": true,
+      "seed_queries": [
+        "study abroad consultant India contact",
+        "IELTS PTE coaching chain India email",
+        "visa consultant immigration services India",
+        "overseas education consultant India",
+        "student visa immigration agency India",
+        "global mobility immigration consultants India"
+      ],
+      "praise_hint": "study abroad guidance, visa support, and overseas education pathways"
+    },
+    {
+      "id": "education_finance",
+      "name": "Student Loan / Education Finance",
+      "rank": 4,
+      "active": true,
+      "seed_queries": [
+        "education loan provider India contact",
+        "student loan company India email",
+        "skill financing company India contact",
+        "income sharing education finance India",
+        "Avanse education loan partner contact",
+        "education finance company student acquisition India"
+      ],
+      "praise_hint": "education financing and enabling access to learning opportunities"
+    },
+    {
+      "id": "hrtech",
+      "name": "HRTech Companies",
+      "rank": 5,
+      "active": true,
+      "seed_queries": [
+        "applicant tracking system India contact",
+        "hiring assessment platform India email",
+        "hiring marketplace campus India contact",
+        "HRTech recruitment software India",
+        "campus hiring technology platform India",
+        "talent assessment HRTech company India"
+      ],
+      "praise_hint": "hiring technology, assessments, and recruitment innovation"
+    },
+    {
+      "id": "corporate_csr",
+      "name": "Corporate CSR Programs",
+      "rank": 6,
+      "active": true,
+      "seed_queries": [
+        "corporate CSR education employability India",
+        "IT company CSR skilling program India contact",
+        "bank CSR education initiative India email",
+        "manufacturing company CSR training India",
+        "corporate employability program India contact",
+        "CSR education partnership India company"
+      ],
+      "praise_hint": "employability initiatives and education-focused CSR programs"
+    },
+    {
+      "id": "alumni_fundraising",
+      "name": "Alumni Donation & Fundraising",
+      "rank": 7,
+      "active": true,
+      "seed_queries": [
+        "alumni association education India contact",
+        "educational trust fundraising India email",
+        "alumni engagement platform India contact",
+        "college alumni donation program India",
+        "alumni network educational institution India",
+        "fundraising education trust India contact"
+      ],
+      "praise_hint": "alumni engagement and educational community building"
+    },
+    {
+      "id": "training_finishing_schools",
+      "name": "Training & Finishing Schools",
+      "rank": 8,
+      "active": true,
+      "seed_queries": [
+        "placement training institute India contact",
+        "soft skills training institute India email",
+        "coding bootcamp India contact email",
+        "finishing school employability India",
+        "campus placement training provider India",
+        "career training institute graduate India contact"
+      ],
+      "praise_hint": "placement training, employability skills, and career readiness"
+    }
+  ]
+}

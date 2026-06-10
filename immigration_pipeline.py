@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
-Immigration provider scrape + email pipeline.
+Partnership outreach pipeline — multi-industry scrape + email.
 
-Scrapes immigration service provider websites via browser (Chrome/Firefox),
-extracts emails (landing page + Contact page), stores everything in SQLite,
-and sends partnership emails using partnership.html + EmailJson SMTP config.
+Scrapes company websites across strategic industry verticals via browser,
+extracts emails, stores in SQLite, and sends partnership emails.
 
 Usage:
+  python immigration_pipeline.py list-industries
   python immigration_pipeline.py status
-  python immigration_pipeline.py seed-keywords --count 15 --region India
+  python immigration_pipeline.py seed-keywords --all
+  python immigration_pipeline.py seed-keywords --industry recruitment_staffing
   python immigration_pipeline.py scrape --max-companies 20 --browser auto
+  python immigration_pipeline.py scrape --industry edtech --max-companies 10
   python immigration_pipeline.py send
   python immigration_pipeline.py run --max-companies 15
 """
@@ -28,7 +30,17 @@ from typing import Generator
 from immigration_db import ImmigrationDB
 from immigration_scraper import scrape_sync
 from immigration_sender import get_emails_per_run, run_send
-from nvidia_llm import DEFAULT_SEARCH_SEEDS, generate_search_queries
+from industries import (
+    default_region,
+    get_industry,
+    industry_ids,
+    industry_name,
+    list_industries,
+    queries_per_industry,
+    randomized_industry_ids,
+    seed_queries_for,
+)
+from nvidia_llm import generate_queries_for_all_industries, generate_search_queries
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 _LOG_DIR = _SCRIPT_DIR / "logs"
@@ -113,31 +125,102 @@ def prevent_windows_sleep() -> Generator[None, None, None]:
             pass
 
 
-def cmd_status(db: ImmigrationDB) -> int:
-    summary = db.summary()
-    logger.info("=== Immigration pipeline status ===")
-    for key, value in summary.items():
-        logger.info("  %-24s %s", key, value)
+def _validate_industry(industry: str | None) -> str | None:
+    if not industry:
+        return None
+    if not get_industry(industry):
+        logger.error("Unknown industry '%s'. Run: list-industries", industry)
+        raise SystemExit(1)
+    return industry
+
+
+def cmd_list_industries() -> int:
+    logger.info("=== Industry verticals (industries.json) ===")
+    for item in list_industries(active_only=False):
+        active = "active" if item.get("active", True) else "inactive"
+        logger.info(
+            "  [%s] %s — %s (%s)",
+            item.get("rank"),
+            item.get("id"),
+            item.get("name"),
+            active,
+        )
+        for q in (item.get("seed_queries") or [])[:2]:
+            logger.info("      e.g. %s", q)
     return 0
 
 
-def cmd_seed_keywords(db: ImmigrationDB, count: int, region: str) -> int:
-    queries = generate_search_queries(count=count, region=region)
-    if not queries:
-        queries = DEFAULT_SEARCH_SEEDS[:count]
-        source = "default_seed"
+def cmd_status(db: ImmigrationDB) -> int:
+    summary = db.summary()
+    logger.info("=== Pipeline status ===")
+    for key, value in summary.items():
+        logger.info("  %-24s %s", key, value)
+    by_industry = db.summary_by_industry()
+    if by_industry:
+        logger.info("")
+        logger.info("=== Companies by industry ===")
+        for row in by_industry:
+            logger.info(
+                "  %-32s total=%s  with_email=%s",
+                industry_name(row["industry"]),
+                row["companies_total"],
+                row["companies_with_email"],
+            )
+    return 0
+
+
+def cmd_seed_keywords(
+    db: ImmigrationDB,
+    *,
+    count: int,
+    region: str,
+    industry: str | None,
+    seed_all: bool,
+    use_nvidia: bool,
+) -> int:
+    total_added = 0
+
+    if seed_all or not industry:
+        batch = generate_queries_for_all_industries(
+            region=region,
+            per_industry=count or queries_per_industry(),
+            use_nvidia=use_nvidia,
+        ) if use_nvidia else {
+            iid: seed_queries_for(iid)[: count or queries_per_industry()]
+            for iid in randomized_industry_ids(active_only=True)
+        }
+        for iid, queries in batch.items():
+            if not queries:
+                queries = seed_queries_for(iid)[: count or queries_per_industry()]
+            added = db.add_search_queries(
+                queries,
+                industry=iid,
+                source="nvidia" if use_nvidia else "seed",
+            )
+            total_added += added
+            logger.info("  %s: +%s queries", industry_name(iid), added)
     else:
-        source = "nvidia"
-    added = db.add_search_queries(queries, source=source)
-    logger.info("Added %s new search query(ies) (source=%s).", added, source)
-    for q in queries[:5]:
-        logger.info("  - %s", q)
-    if len(queries) > 5:
-        logger.info("  ... and %s more", len(queries) - 5)
+        industry = _validate_industry(industry)
+        queries = (
+            generate_search_queries(count=count, region=region, industry_id=industry or "")
+            if use_nvidia
+            else seed_queries_for(industry or "")[:count]
+        )
+        if not queries:
+            queries = seed_queries_for(industry or "")[:count]
+        total_added = db.add_search_queries(
+            queries,
+            industry=industry or "overseas_education_immigration",
+            source="nvidia" if use_nvidia else "seed",
+        )
+        logger.info("Added %s queries for %s.", total_added, industry_name(industry or ""))
+
+    logger.info("Total new queries seeded: %s", total_added)
     return 0
 
 
 def cmd_scrape(args: argparse.Namespace, db: ImmigrationDB) -> int:
+    industry = _validate_industry(getattr(args, "industry", None))
     with prevent_windows_sleep():
         stats = scrape_sync(
             db,
@@ -145,7 +228,9 @@ def cmd_scrape(args: argparse.Namespace, db: ImmigrationDB) -> int:
             max_queries=args.max_queries,
             browser=args.browser,
             region=args.region,
+            industry=industry,
             seed_keywords=not args.no_seed,
+            use_nvidia_seed=not args.no_nvidia_seed,
         )
     logger.info("Scrape complete: %s", stats)
     return 0
@@ -166,6 +251,7 @@ def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
 
 
 def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
+    industry = _validate_industry(getattr(args, "industry", None))
     with prevent_windows_sleep():
         scrape_stats = scrape_sync(
             db,
@@ -173,7 +259,9 @@ def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
             max_queries=args.max_queries,
             browser=args.browser,
             region=args.region,
+            industry=industry,
             seed_keywords=not args.no_seed,
+            use_nvidia_seed=not args.no_nvidia_seed,
         )
         logger.info("Scrape complete: %s", scrape_stats)
         send_stats = run_send(
@@ -186,46 +274,55 @@ def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
     return 0 if not send_stats.get("error") else 1
 
 
+def _add_industry_arg(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--industry",
+        choices=industry_ids(active_only=False),
+        default=None,
+        help="Limit to one industry vertical (default: rotate all active industries)",
+    )
+
+
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Immigration scrape + email pipeline")
+    parser = argparse.ArgumentParser(
+        description="Multi-industry partnership scrape + email pipeline"
+    )
     sub = parser.add_subparsers(dest="command", required=True)
 
+    sub.add_parser("list-industries", help="Show all industry verticals from industries.json")
     sub.add_parser("status", help="Show SQLite summary counts")
 
-    seed = sub.add_parser("seed-keywords", help="Generate search queries via NVIDIA")
-    seed.add_argument("--count", type=int, default=12)
-    seed.add_argument("--region", default="India")
+    seed = sub.add_parser("seed-keywords", help="Seed Google search queries")
+    seed.add_argument("--count", type=int, default=0, help="Queries per industry (0 = use industries.json default)")
+    seed.add_argument("--region", default=default_region())
+    seed.add_argument("--all", action="store_true", help="Seed all active industries")
+    seed.add_argument("--no-nvidia", action="store_true", help="Use static seed_queries from industries.json only")
+    _add_industry_arg(seed)
 
-    scrape = sub.add_parser("scrape", help="Browser scrape immigration providers")
+    scrape = sub.add_parser("scrape", help="Browser scrape company websites for emails")
     scrape.add_argument("--max-companies", type=int, default=20)
     scrape.add_argument("--max-queries", type=int, default=5)
     scrape.add_argument("--browser", choices=["auto", "chrome", "chromium", "firefox"], default="auto")
-    scrape.add_argument("--region", default="India")
+    scrape.add_argument("--region", default=default_region())
     scrape.add_argument("--no-seed", action="store_true", help="Do not auto-seed queries")
+    scrape.add_argument("--no-nvidia-seed", action="store_true", help="Auto-seed from industries.json only")
+    _add_industry_arg(scrape)
 
     send = sub.add_parser("send", help="Send partnership emails to scraped addresses")
-    send.add_argument(
-        "--limit",
-        type=int,
-        default=None,
-        help="Override emails_per_run from sender_config.json",
-    )
+    send.add_argument("--limit", type=int, default=None, help="Override emails_per_run")
     send.add_argument("--no-nvidia-praise", action="store_true")
-    send.add_argument("--dry-run", action="store_true", help="Build messages only; do not SMTP send")
+    send.add_argument("--dry-run", action="store_true")
 
     run = sub.add_parser("run", help="Scrape then send in one run")
     run.add_argument("--max-companies", type=int, default=15)
     run.add_argument("--max-queries", type=int, default=5)
-    run.add_argument(
-        "--send-limit",
-        type=int,
-        default=None,
-        help="Override emails_per_run from sender_config.json",
-    )
+    run.add_argument("--send-limit", type=int, default=None)
     run.add_argument("--browser", choices=["auto", "chrome", "chromium", "firefox"], default="auto")
-    run.add_argument("--region", default="India")
+    run.add_argument("--region", default=default_region())
     run.add_argument("--no-seed", action="store_true")
+    run.add_argument("--no-nvidia-seed", action="store_true")
     run.add_argument("--no-nvidia-praise", action="store_true")
+    _add_industry_arg(run)
 
     return parser
 
@@ -237,10 +334,21 @@ def main() -> int:
     args = parser.parse_args()
     db = ImmigrationDB()
     try:
+        if args.command == "list-industries":
+            return cmd_list_industries()
         if args.command == "status":
             return cmd_status(db)
         if args.command == "seed-keywords":
-            return cmd_seed_keywords(db, args.count, args.region)
+            per = args.count or queries_per_industry()
+            seed_all = args.all or not args.industry
+            return cmd_seed_keywords(
+                db,
+                count=per,
+                region=args.region,
+                industry=args.industry,
+                seed_all=seed_all,
+                use_nvidia=not args.no_nvidia,
+            )
         if args.command == "scrape":
             return cmd_scrape(args, db)
         if args.command == "send":

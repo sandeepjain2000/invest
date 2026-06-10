@@ -116,51 +116,91 @@ def call_nvidia_llm(system_prompt: str, user_prompt: str) -> str:
     return ""
 
 
-DEFAULT_SEARCH_SEEDS = [
-    "immigration consultancy services",
-    "visa immigration consultants",
-    "student visa immigration agency",
-    "work permit immigration advisors",
-    "permanent residency immigration consultants",
-    "overseas education and immigration services",
-    "immigration law firm contact",
-    "global mobility immigration services",
-]
+from industries import (
+    default_region,
+    get_industry,
+    industry_name,
+    list_industries,
+    praise_hint_for,
+    queries_per_industry,
+    randomized_industry_ids,
+    seed_queries_for,
+)
 
 
-def generate_search_queries(count: int = 12, region: str = "India") -> list[str]:
+def generate_search_queries(
+    count: int = 12,
+    region: str | None = None,
+    *,
+    industry_id: str = "overseas_education_immigration",
+) -> list[str]:
+    region = region or default_region()
+    industry = get_industry(industry_id) or {}
+    name = industry.get("name") or industry_id
+    examples = industry.get("seed_queries") or seed_queries_for(industry_id)
+    example_text = "\n".join(f"- {q}" for q in examples[:4])
+
     system = (
-        "You generate Google search queries to discover immigration service provider "
-        "company websites. Return only a JSON array of strings, no markdown."
+        "You generate Google search queries to discover company websites for outreach. "
+        "Return only a JSON array of strings, no markdown."
     )
     user = (
-        f"Create {count} distinct Google search query strings to find immigration "
-        f"consultants, visa agencies, and immigration law firms in {region}. "
-        "Use varied wording: student visa, work permit, PR, global mobility, "
-        "overseas education + immigration, etc. Each query should be 4-10 words."
+        f"Create {count} distinct Google search query strings to find {name} in {region}. "
+        f"Focus on companies that work with students, graduates, colleges, or employability. "
+        f"Each query should be 4-12 words and suitable for finding contact pages.\n"
+        f"Example queries for this sector:\n{example_text}"
     )
     raw = call_nvidia_llm(system, user)
     queries = _parse_json_string_list(raw)
     if queries:
         return queries[:count]
-    return DEFAULT_SEARCH_SEEDS[:count]
+    return seed_queries_for(industry_id)[:count]
 
 
-def generate_company_praise(company_name: str, website: str = "") -> str:
+def generate_queries_for_all_industries(
+    *,
+    region: str | None = None,
+    per_industry: int | None = None,
+    use_nvidia: bool = True,
+) -> dict[str, list[str]]:
+    region = region or default_region()
+    per = per_industry or queries_per_industry()
+    out: dict[str, list[str]] = {}
+    for iid in randomized_industry_ids(active_only=True):
+        if use_nvidia:
+            queries = generate_search_queries(count=per, region=region, industry_id=iid)
+        else:
+            queries = seed_queries_for(iid)[:per]
+        if not queries:
+            queries = seed_queries_for(iid)[:per]
+        out[iid] = queries
+    return out
+
+
+def generate_company_praise(
+    company_name: str,
+    website: str = "",
+    *,
+    industry_id: str = "overseas_education_immigration",
+) -> str:
+    hint = praise_hint_for(industry_id)
+    sector = industry_name(industry_id)
     system = (
-        "Write one professional, warm sentence praising an immigration services "
-        "company's work. Be specific but do not invent facts. No quotes, no greeting."
+        "Write one professional, warm sentence praising a company's work. "
+        "Be specific but do not invent facts. No quotes, no greeting."
     )
     user = (
-        f"Company: {company_name}\nWebsite: {website or 'unknown'}\n"
-        "Mention their commitment to guiding clients through visa and immigration pathways."
+        f"Company: {company_name}\n"
+        f"Sector: {sector}\n"
+        f"Website: {website or 'unknown'}\n"
+        f"Mention their strengths related to {hint}."
     )
     line = call_nvidia_llm(system, user)
     if line:
         return line.strip().strip('"')
     return (
-        f"I was impressed by {company_name}'s focus on helping clients navigate "
-        "visa and immigration pathways with clarity and care."
+        f"I was impressed by {company_name}'s work in {hint} "
+        "and the value it creates for students and institutions."
     )
 
 

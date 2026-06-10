@@ -1,14 +1,35 @@
-# Immigration Scrape & Email Pipeline
+# Partnership Scrape & Email Pipeline
 
-Python pipeline that discovers immigration service providers on the web, extracts contact emails via browser scraping, and sends partnership outreach using a Gmail SMTP profile.
+Python pipeline that discovers strategic partner companies across multiple industry verticals, extracts contact emails via browser scraping, and sends partnership outreach using a Gmail SMTP profile.
 
 Built to follow patterns from `CVL-ScraperLinkedIn_SendMails` (SQLite deduplication, Gmail sending, logging) with browser-based discovery instead of LinkedIn.
 
 ---
 
+## Industry verticals
+
+Eight ranked sectors are defined in `industries.json`:
+
+| Rank | ID | Sector |
+|------|-----|--------|
+| 1 | `recruitment_staffing` | Recruitment & Staffing Firms |
+| 2 | `edtech` | EdTech Companies |
+| 3 | `overseas_education_immigration` | Overseas Education / Immigration |
+| 4 | `education_finance` | Student Loan / Education Finance |
+| 5 | `hrtech` | HRTech Companies |
+| 6 | `corporate_csr` | Corporate CSR Programs |
+| 7 | `alumni_fundraising` | Alumni Donation & Fundraising |
+| 8 | `training_finishing_schools` | Training & Finishing Schools |
+
+Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated outreach lines. Set `"active": false` on any industry to skip it.
+
+**Rank** is for reference only. When scraping or seeding all industries, the pipeline **shuffles industry order randomly on each run/query pick** so effort is spread across sectors rather than always starting at Recruitment & Staffing.
+
+---
+
 ## What it does
 
-1. **Generate search queries** — NVIDIA NIM (with API-key rotation) creates varied Google search phrases for immigration consultants, visa agencies, and related firms.
+1. **Generate search queries** — NVIDIA NIM (with API-key rotation) creates Google search phrases per industry, or uses static seeds from `industries.json`.
 2. **Scrape websites** — Playwright opens Google results in Chrome (falls back to Chromium, then Firefox). For each company site:
    - Waits up to 3 minutes for slow pages
    - Scans the full page for `@` email addresses
@@ -28,6 +49,8 @@ investment/
 ├── immigration_sender.py     # Gmail SMTP sender
 ├── immigration_db.py         # SQLite schema and helpers
 ├── nvidia_llm.py             # NVIDIA key rotation + LLM calls
+├── industries.json           # 8 industry verticals + seed search queries
+├── industries.py             # Industry config loader
 ├── partnership.html          # Email HTML template
 ├── sender_config.json        # Sender details + emails_per_run limit
 ├── requirements.txt
@@ -167,14 +190,23 @@ All signature links (website, CV, detailed profile, LinkedIn, etc.) are defined 
 ## Commands
 
 ```powershell
-# Show database counts
+# List all industry verticals
+python immigration_pipeline.py list-industries
+
+# Show database counts (including per-industry breakdown)
 python immigration_pipeline.py status
 
-# Generate Google search queries via NVIDIA
-python immigration_pipeline.py seed-keywords --count 15 --region India
+# Seed queries for ALL active industries (static seeds, fast)
+python immigration_pipeline.py seed-keywords --all --no-nvidia
 
-# Scrape immigration providers (browser opens visibly)
+# Seed one industry via NVIDIA
+python immigration_pipeline.py seed-keywords --industry recruitment_staffing
+
+# Scrape across all industries (browser opens visibly)
 python immigration_pipeline.py scrape --max-companies 20 --browser auto
+
+# Scrape one industry only
+python immigration_pipeline.py scrape --industry edtech --max-companies 10
 
 # Preview messages without sending
 python immigration_pipeline.py send --dry-run
@@ -190,10 +222,15 @@ python immigration_pipeline.py run --max-companies 15
 
 | Command | Flag | Description |
 |---------|------|-------------|
+| `seed-keywords` | `--all` | Seed every active industry in `industries.json` |
+| `seed-keywords` | `--industry ID` | Seed one vertical (e.g. `edtech`, `hrtech`) |
+| `seed-keywords` | `--no-nvidia` | Use static `seed_queries` from JSON only |
+| `scrape` / `run` | `--industry ID` | Limit scraping to one industry |
 | `scrape` | `--max-companies N` | Stop after N new company sites (default: 20) |
 | `scrape` | `--max-queries N` | Process N search queries per run (default: 5) |
 | `scrape` | `--browser auto\|chrome\|chromium\|firefox` | Browser choice (default: auto) |
 | `scrape` | `--no-seed` | Do not auto-generate queries if queue is empty |
+| `scrape` | `--no-nvidia-seed` | Auto-seed from `industries.json` only |
 | `send` | `--dry-run` | Build messages only; no SMTP |
 | `send` | `--limit N` | Override `emails_per_run` for this run |
 | `send` | `--no-nvidia-praise` | Use a static praise line instead of NVIDIA |

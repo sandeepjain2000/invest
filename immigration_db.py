@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import random
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -43,11 +44,13 @@ class ImmigrationDB:
             """
             CREATE TABLE IF NOT EXISTS search_queries (
                 id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                query_text  TEXT NOT NULL UNIQUE,
+                query_text  TEXT NOT NULL,
+                industry    TEXT NOT NULL DEFAULT 'overseas_education_immigration',
                 status      TEXT NOT NULL DEFAULT 'pending',
                 source      TEXT,
                 created_at  TEXT NOT NULL,
-                completed_at TEXT
+                completed_at TEXT,
+                UNIQUE (query_text, industry)
             );
 
             CREATE TABLE IF NOT EXISTS companies (
@@ -55,6 +58,7 @@ class ImmigrationDB:
                 name            TEXT,
                 website         TEXT,
                 domain          TEXT NOT NULL UNIQUE,
+                industry        TEXT NOT NULL DEFAULT 'overseas_education_immigration',
                 search_query_id INTEGER,
                 email_status    TEXT NOT NULL DEFAULT 'pending',
                 scraped_at      TEXT,
@@ -88,36 +92,94 @@ class ImmigrationDB:
             CREATE INDEX IF NOT EXISTS idx_search_status ON search_queries(status);
             """
         )
+        self._migrate_schema()
+        self.conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_companies_industry ON companies(industry)"
+        )
+        self.conn.execute(
+            "CREATE INDEX IF NOT EXISTS idx_search_industry ON search_queries(industry)"
+        )
         self.conn.commit()
 
-    def add_search_queries(self, queries: list[str], source: str = "seed") -> int:
+    def _migrate_schema(self) -> None:
+        sq_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(search_queries)")}
+        if "industry" not in sq_cols:
+            self.conn.execute(
+                "ALTER TABLE search_queries ADD COLUMN industry TEXT NOT NULL "
+                "DEFAULT 'overseas_education_immigration'"
+            )
+        co_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(companies)")}
+        if "industry" not in co_cols:
+            self.conn.execute(
+                "ALTER TABLE companies ADD COLUMN industry TEXT NOT NULL "
+                "DEFAULT 'overseas_education_immigration'"
+            )
+
+    def add_search_queries(
+        self,
+        queries: list[str],
+        *,
+        industry: str = "overseas_education_immigration",
+        source: str = "seed",
+    ) -> int:
         added = 0
         now = utc_now()
+        industry = (industry or "overseas_education_immigration").strip()
         for q in queries:
             q = (q or "").strip()
             if not q:
                 continue
             cur = self.conn.execute(
                 """
-                INSERT OR IGNORE INTO search_queries (query_text, status, source, created_at)
-                VALUES (?, 'pending', ?, ?)
+                INSERT OR IGNORE INTO search_queries
+                    (query_text, industry, status, source, created_at)
+                VALUES (?, ?, 'pending', ?, ?)
                 """,
-                (q, source, now),
+                (q, industry, source, now),
             )
             if cur.rowcount:
                 added += 1
         self.conn.commit()
         return added
 
-    def next_pending_query(self) -> sqlite3.Row | None:
-        return self.conn.execute(
-            """
-            SELECT * FROM search_queries
-            WHERE status = 'pending'
-            ORDER BY id ASC
-            LIMIT 1
-            """
-        ).fetchone()
+    def next_pending_query(self, industry: str | None = None) -> sqlite3.Row | None:
+        if industry:
+            return self.conn.execute(
+                """
+                SELECT * FROM search_queries
+                WHERE status = 'pending' AND industry = ?
+                ORDER BY id ASC
+                LIMIT 1
+                """,
+                (industry.strip(),),
+            ).fetchone()
+
+        pending_industries = [
+            r[0]
+            for r in self.conn.execute(
+                """
+                SELECT DISTINCT industry FROM search_queries
+                WHERE status = 'pending'
+                """
+            ).fetchall()
+        ]
+        if not pending_industries:
+            return None
+
+        random.shuffle(pending_industries)
+        for iid in pending_industries:
+            row = self.conn.execute(
+                """
+                SELECT * FROM search_queries
+                WHERE status = 'pending' AND industry = ?
+                ORDER BY id ASC
+                LIMIT 1
+                """,
+                (iid,),
+            ).fetchone()
+            if row:
+                return row
+        return None
 
     def mark_query_done(self, query_id: int, status: str = "done") -> None:
         self.conn.execute(
@@ -146,6 +208,7 @@ class ImmigrationDB:
         name: str,
         website: str,
         search_query_id: int | None,
+        industry: str = "overseas_education_immigration",
         email_status: str = "pending",
         notes: str = "",
     ) -> int | None:
@@ -155,18 +218,20 @@ class ImmigrationDB:
         now = utc_now()
         cur = self.conn.execute(
             """
-            INSERT INTO companies (name, website, domain, search_query_id, email_status, scraped_at, notes)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+            INSERT INTO companies
+                (name, website, domain, industry, search_query_id, email_status, scraped_at, notes)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(domain) DO UPDATE SET
                 name = COALESCE(excluded.name, companies.name),
                 website = COALESCE(excluded.website, companies.website),
+                industry = COALESCE(companies.industry, excluded.industry),
                 scraped_at = excluded.scraped_at,
                 notes = CASE
                     WHEN excluded.notes != '' THEN excluded.notes
                     ELSE companies.notes
                 END
             """,
-            (name or domain, website, domain, search_query_id, email_status, now, notes),
+            (name or domain, website, domain, industry, search_query_id, email_status, now, notes),
         )
         self.conn.commit()
         if cur.lastrowid:
@@ -231,7 +296,8 @@ class ImmigrationDB:
     def pending_send_queue(self, limit: int = 50) -> list[dict[str, Any]]:
         rows = self.conn.execute(
             """
-            SELECT ce.email, ce.company_id, c.name AS company_name, c.domain, c.website
+            SELECT ce.email, ce.company_id, c.name AS company_name, c.domain,
+                   c.website, c.industry
             FROM company_emails ce
             JOIN companies c ON c.id = ce.company_id
             LEFT JOIN email_sent es ON lower(es.email) = lower(ce.email)
@@ -308,3 +374,17 @@ class ImmigrationDB:
         }.items():
             out[label] = int(self.conn.execute(sql).fetchone()[0])
         return out
+
+    def summary_by_industry(self) -> list[dict[str, Any]]:
+        rows = self.conn.execute(
+            """
+            SELECT
+                c.industry,
+                COUNT(*) AS companies_total,
+                SUM(CASE WHEN c.email_status = 'found' THEN 1 ELSE 0 END) AS companies_with_email
+            FROM companies c
+            GROUP BY c.industry
+            ORDER BY c.industry ASC
+            """
+        ).fetchall()
+        return [dict(r) for r in rows]
