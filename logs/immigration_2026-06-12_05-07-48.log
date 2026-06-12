@@ -1,0 +1,117 @@
+2026-06-12 05:07:48 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-12_05-07-48.log
+2026-06-12 05:07:48 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-12 05:07:48 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-12 05:07:55 [INFO   ] Using browser: chrome
+2026-06-12 05:07:56 [INFO   ] Industry: recruitment_staffing | Query: campus recruitment firm India contact
+2026-06-12 05:07:56 [INFO   ] Google search: campus recruitment firm India contact
+2026-06-12 05:08:00 [INFO   ]   Found 7 unique result(s).
+2026-06-12 05:08:00 [INFO   ] Scraping Campus Recruitment (https://www.hrremedyindia.com/campus-recruitment/)
+2026-06-12 05:08:07 [INFO   ]   Email found: training@hrremedyindia.com
+2026-06-12 05:08:07 [INFO   ]   Email found: client@hrremedyindia.com
+2026-06-12 05:08:07 [INFO   ]   Email found: campus@hrremedyindia.com
+2026-06-12 05:08:07 [INFO   ]   Email found: job@hrremedyindia.com
+2026-06-12 05:08:07 [INFO   ] Scraping Pune Placement Agencies Directory (https://www.scribd.com/document/81716961/List-of-Placement-Consultants-in-Pune)
+2026-06-12 05:08:16 [INFO   ]   Closed pop-up/obstruction: button:has-text("Close")
+2026-06-12 05:08:17 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-12 05:08:18 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-12 05:08:49 [INFO   ]   Email found: infojobs@pn2.vsnl.net.in
+2026-06-12 05:08:49 [INFO   ]   Email found: info_jobs@vsnl.com
+2026-06-12 05:08:49 [INFO   ]   Email found: fortune@pn2.vsnl.net.in
+2026-06-12 05:08:49 [INFO   ]   Email found: gmpc@vsnl.com
+2026-06-12 05:08:49 [INFO   ]   Email found: vishvesh_kul@vsnl.net
+2026-06-12 05:08:49 [INFO   ]   Email found: archer@ip.eth.net
+2026-06-12 05:08:49 [INFO   ]   Email found: gaurav@msajobsonline.com
+2026-06-12 05:08:49 [INFO   ]   Email found: info@msajobsonline.com
+2026-06-12 05:08:49 [INFO   ]   Email found: info@msajobsonline.co
+2026-06-12 05:08:49 [INFO   ]   Email found: omampune@pn2.vsnl.net.in
+2026-06-12 05:08:49 [INFO   ]   Email found: shrikant@omampune.co
+2026-06-12 05:08:49 [INFO   ]   Email found: globalmgt14@hotmail.com
+2026-06-12 05:08:49 [INFO   ]   Email found: globalmgt@vsnl.net
+2026-06-12 05:08:49 [INFO   ]   Email found: jobsbank@vsnl.com
+2026-06-12 05:08:49 [INFO   ]   Email found: premajagtap@yahoo.com
+2026-06-12 05:08:49 [INFO   ]   Email found: saiplacements@ip.eth.ne
+2026-06-12 05:08:49 [INFO   ]   Email found: mandar1@vsnl.com
+2026-06-12 05:08:49 [INFO   ]   Email found: resumemm@pn2.vsnl.ne
+2026-06-12 05:08:49 [INFO   ]   Email found: akanksha2002@vsnl.co
+2026-06-12 05:08:49 [INFO   ]   Email found: akanksha@pn2.vsnl.net
+2026-06-12 05:08:49 [INFO   ]   Email found: ramacspd@vsnl.net
+2026-06-12 05:08:49 [INFO   ]   Email found: vsninfo@vsnl.com
+2026-06-12 05:08:49 [INFO   ]   Email found: iitcpune@ip.eth.net
+2026-06-12 05:08:50 [INFO   ]   Email found: webmaster@naukri.com
+2026-06-12 05:08:50 [INFO   ]   Email found: imedplacements@yahoo.com
+2026-06-12 05:08:50 [INFO   ]   Email found: advantagehr@vsnl.net
+2026-06-12 05:08:50 [INFO   ]   Email found: pragatijobs@vsnl.net
+2026-06-12 05:08:50 [INFO   ]   Email found: 6853093pnair@wmi.co.in
+2026-06-12 05:08:50 [INFO   ]   Email found: 5536701perform@axess.com
+2026-06-12 05:08:50 [INFO   ]   Email found: 6356927rohsik@vsnl.com
+2026-06-12 05:08:50 [INFO   ]   Email found: 5676733tmipun@satyam.net.in
+2026-06-12 05:08:50 [INFO   ]   Email found: 4156125mascon1@vsnl.com
+2026-06-12 05:08:50 [INFO   ]   Email found: 4011844nikitanaidu@hotmail.co
+2026-06-12 05:08:50 [INFO   ]   Email found: 5652682jrvgti@pn3.vsnl.net.in
+2026-06-12 05:08:50 [INFO   ]   Email found: 5656144imcon@vsnl.com
+2026-06-12 05:08:50 [INFO   ]   Email found: arora6111727kaizen2@rediffmail.com
+2026-06-12 05:08:50 [INFO   ]   Email found: 6054396pune@ritejobs.net
+2026-06-12 05:08:50 [INFO   ]   Email found: 5444214ascent@ip.eth.net
+2026-06-12 05:08:50 [INFO   ] Scraping Executive Search & Recruitment Agency in Pune & PCMC (https://www.humanforte.com/recruitment-agencies-in-pune.html)
+2026-06-12 05:08:56 [INFO   ]   Email found: info@humanforte.com
+2026-06-12 05:08:56 [INFO   ]   Email found: you@company.com
+2026-06-12 05:08:56 [INFO   ] Scraping Talent Corner (https://talentcorner.in/)
+2026-06-12 05:09:00 [INFO   ]   Email found: contact@talentcorner.in
+2026-06-12 05:09:00 [INFO   ] Scraping Campus Recruitment (https://spiderfocus.com/campus-recruitment.php)
+2026-06-12 05:09:05 [INFO   ]   Email found: info@spiderfocus.com
+2026-06-12 05:09:05 [INFO   ] Scraping placement agencies in pune (https://www.randstad.in/employers/placement-agencies-in-pune/)
+2026-06-12 05:09:10 [INFO   ]   Email found: sales.enquiry@randstad.in
+2026-06-12 05:09:10 [INFO   ] Scraping On Campus Recruitment Services in Pune (https://www.exportersindia.com/pune/on-campus-recruitment-services.htm)
+2026-06-12 05:09:13 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-12 05:09:13 [INFO   ] Email target reached (6 companies with email, goal 2) — stopping scrape.
+2026-06-12 05:09:14 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 7, 'companies_with_email': 6, 'emails_found': 47, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-12 05:09:14 [INFO   ] === Checking inboxes for human replies ===
+2026-06-12 05:09:14 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-12 05:09:14 [INFO   ] Known sent recipients: 22 | stored Message-IDs: 16
+2026-06-12 05:09:14 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-12 05:09:16 [INFO   ]   jain1001sandeep@gmail.com: 14 INBOX message(s) in last 30 days
+2026-06-12 05:09:16 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-12 05:09:17 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-12 05:09:17 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-12 05:09:18 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-12 05:09:18 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 05:09:18 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-12 05:09:19 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 05:09:19 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 05:09:19 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 05:09:20 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-12 05:09:20 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-12 05:09:21 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-12 05:09:21 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 05:09:21 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-12 05:09:22 [INFO   ] Reply check complete: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-12 05:09:22 [INFO   ] Reply check: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-12 05:09:22 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-12 05:09:22 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-12 05:09:31 [INFO   ] SENT -> info@codegnan.com (Contact Us) | Exploring a potential partnership opportunity with codegnan.com
+2026-06-12 05:09:44 [INFO   ] SENT -> info@technowebs.in (Contact) | Exploring a potential partnership opportunity with codersbootcamp.in
+2026-06-12 05:09:49 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}
+2026-06-12 05:09:49 [INFO   ] 
+2026-06-12 05:09:49 [INFO   ] ==============================================================
+2026-06-12 05:09:49 [INFO   ]   RUN SUMMARY
+2026-06-12 05:09:49 [INFO   ] ==============================================================
+2026-06-12 05:09:49 [INFO   ]   Scrape (this run)
+2026-06-12 05:09:49 [INFO   ]     Companies scraped:        7
+2026-06-12 05:09:49 [INFO   ]     Companies with email:     6
+2026-06-12 05:09:49 [INFO   ]     Emails scraped/found:     47
+2026-06-12 05:09:49 [INFO   ]     Search queries run:       1
+2026-06-12 05:09:49 [INFO   ]     Browser used:             chrome
+2026-06-12 05:09:49 [INFO   ]   Replies (this run)
+2026-06-12 05:09:49 [INFO   ]     Reply check:              skipped
+2026-06-12 05:09:49 [INFO   ]   Send (this run)
+2026-06-12 05:09:49 [INFO   ]     Emails sent:              2
+2026-06-12 05:09:49 [INFO   ]     Send failed:              0
+2026-06-12 05:09:49 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-12 05:09:49 [INFO   ]   Database totals (all runs)
+2026-06-12 05:09:49 [INFO   ]     Companies in database:    87
+2026-06-12 05:09:49 [INFO   ]     Companies with email:     79
+2026-06-12 05:09:49 [INFO   ]     Emails scraped (total):   185
+2026-06-12 05:09:49 [INFO   ]     Emails sent (total):      24
+2026-06-12 05:09:49 [INFO   ]     Replies forwarded (total): 0
+2026-06-12 05:09:49 [INFO   ] ==============================================================
+2026-06-12 05:09:49 [INFO   ] 

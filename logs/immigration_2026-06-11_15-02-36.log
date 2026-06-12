@@ -1,0 +1,51 @@
+2026-06-11 15:02:36 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_15-02-36.log
+2026-06-11 15:02:36 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-11 15:02:36 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 15:02:37 [INFO   ] Using browser: chrome
+2026-06-11 15:02:37 [INFO   ] Industry: education_finance | Query: student loan company India email
+2026-06-11 15:02:37 [INFO   ] Google search: student loan company India email
+2026-06-11 15:02:42 [INFO   ]   Found 3 unique result(s).
+2026-06-11 15:02:42 [INFO   ] Scraping Educational loan Scheme (https://nsfdc.nic.in/en/educational-loan-scheme)
+2026-06-11 15:02:49 [INFO   ]   Email found: sapanbarua7@gmail.com
+2026-06-11 15:02:50 [INFO   ]   Email found: support-nsfdc@nic.in
+2026-06-11 15:02:50 [INFO   ] Scraping Education Loan Scheme (NSFDC) (https://www.myscheme.gov.in/schemes/els-nsfdc)
+2026-06-11 15:03:06 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-11 15:03:06 [INFO   ] Scraping Student Loans Company (https://www.gov.uk/government/organisations/student-loans-company)
+2026-06-11 15:03:08 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:08 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:09 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:10 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:11 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:11 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:12 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:13 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 15:03:13 [INFO   ]   Email found: press_office@slc.co.uk
+2026-06-11 15:03:13 [INFO   ]   Email found: partner_services@slc.co.uk
+2026-06-11 15:03:13 [INFO   ]   Email found: foirequests@slc.co.uk
+2026-06-11 15:03:13 [INFO   ] Email target reached (2 companies with email, goal 2) — stopping scrape.
+2026-06-11 15:03:13 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 3, 'companies_with_email': 2, 'emails_found': 5, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 15:03:13 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 15:03:13 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-11 15:03:13 [INFO   ] Known sent recipients: 12 | stored Message-IDs: 6
+2026-06-11 15:03:13 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 15:03:15 [INFO   ]   jain1001sandeep@gmail.com: 12 INBOX message(s) in last 30 days
+2026-06-11 15:03:15 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 15:03:16 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 15:03:16 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 15:03:16 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 15:03:16 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 15:03:17 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 15:03:17 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 15:03:17 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 15:03:18 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 15:03:18 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 15:03:18 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 15:03:19 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-11 15:03:19 [INFO   ] Reply check complete: {'scanned': 12, 'forwarded': 0, 'skipped': 12, 'nvidia': 0, 'errors': 0}
+2026-06-11 15:03:19 [INFO   ] Reply check: {'scanned': 12, 'forwarded': 0, 'skipped': 12, 'nvidia': 0, 'errors': 0}
+2026-06-11 15:03:19 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 15:03:19 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 15:03:29 [INFO   ] SENT -> info@y-axis.ca (Visa Consultants & Abroad Job Consultancy in Pune) | Exploring a potential partnership opportunity with y-axis.com
+2026-06-11 15:04:04 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-11 15:04:13 [INFO   ] SENT -> info@dm-consultant.com (Poland Work Visa Assistance) | Exploring a potential partnership opportunity with dm-consultant.in
+2026-06-11 15:04:18 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

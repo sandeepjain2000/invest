@@ -1,0 +1,52 @@
+2026-06-11 14:47:08 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_14-47-08.log
+2026-06-11 14:47:08 [INFO   ] Scrape targets: up to 15 companies, stop early after 2 company(ies) with email
+2026-06-11 14:47:08 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 14:47:09 [INFO   ] Using browser: chrome
+2026-06-11 14:47:09 [INFO   ] Industry: corporate_csr | Query: corporate CSR education employability India
+2026-06-11 14:47:09 [INFO   ] Google search: corporate CSR education employability India
+2026-06-11 14:47:13 [INFO   ]   Found 8 unique result(s).
+2026-06-11 14:47:13 [INFO   ] Scraping How CSR Initiatives Are Transforming Education In India (https://www.vidyalaya.org.in/csr-education-initiatives/)
+2026-06-11 14:47:18 [INFO   ]   Email found: niru@aasvidyalaya.com
+2026-06-11 14:47:18 [INFO   ] Scraping CSR Partnership in Education: Bridging the Skill Gap in India (https://www.astroninstitute.com/blog/csr-partnership-in-education-bridging-the-skill-gap-in-india/)
+2026-06-11 14:47:24 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-11 14:47:24 [INFO   ] Scraping CSR Implementation Partner in India (https://ictacademy.in/csr/)
+2026-06-11 14:47:27 [INFO   ]   Email found: contact@ictacademy.in
+2026-06-11 14:47:27 [INFO   ] Scraping CSR-led Skills Development Programs Transforming Lives (https://gttconnect.com/csr-based-skill-development/)
+2026-06-11 14:47:36 [INFO   ]   Email found: contactus@gttconnect.com
+2026-06-11 14:47:36 [INFO   ] Scraping Corporate Social Responsibility in India: Bridging the Gaps ... (https://scope-journal.com/assets/uploads/doc/862bd-508-523.280326.pdf)
+2026-06-11 14:47:40 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-11 14:47:40 [INFO   ] Scraping Bridging India's Employability Gap Through Future-Ready ... (https://www.soulace.in/bridging-india-employability-gap-through-future-ready-csr-skilling.php)
+2026-06-11 14:47:42 [INFO   ]   Email found: adarsh.kataruka@soulace.in
+2026-06-11 14:47:42 [INFO   ]   Email found: karthik@soulace.in
+2026-06-11 14:47:42 [INFO   ]   Email found: ngo@soulace.in
+2026-06-11 14:47:42 [INFO   ]   Email found: enquiry@soulace.in
+2026-06-11 14:47:42 [INFO   ]   Email found: recruitment@soulace.in
+2026-06-11 14:47:42 [INFO   ] Scraping Corporate Social Responsibility (https://csrtimes.org/transforming-education-in-india/)
+2026-06-11 14:47:45 [INFO   ]   Email found: editor@csrtimes.org
+2026-06-11 14:47:45 [INFO   ] Scraping Empowering India Through Skill- Based CSR (http://www.edubridgeindia.com/csr)
+2026-06-11 14:47:49 [INFO   ]   Email found: wecare@edubridgeindia.in
+2026-06-11 14:47:49 [INFO   ] Email target reached (6 companies with email, goal 2) — stopping scrape.
+2026-06-11 14:47:49 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 8, 'companies_with_email': 6, 'emails_found': 10, 'email_target': 2, 'max_companies': 15, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 14:47:49 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 14:47:49 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subjects=1
+2026-06-11 14:47:49 [INFO   ] Known sent recipients: 8 | stored Message-IDs: 2
+2026-06-11 14:47:49 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 14:47:51 [INFO   ]   jain1001sandeep@gmail.com: 11 INBOX message(s) in last 30 days
+2026-06-11 14:47:52 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 14:47:52 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 14:47:53 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 14:47:53 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 14:47:53 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:47:54 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 14:47:54 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:47:55 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:47:55 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 14:47:55 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 14:47:56 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 14:47:56 [INFO   ] Reply check complete: {'scanned': 11, 'forwarded': 0, 'skipped': 11, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:47:56 [INFO   ] Reply check: {'scanned': 11, 'forwarded': 0, 'skipped': 11, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:47:56 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 14:47:56 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 14:48:10 [INFO   ] SENT -> info@ivtce.com (100% Placement Support Institute in Pune)
+2026-06-11 14:48:24 [INFO   ] SENT -> info@y-axis.com (Visa Consultants & Abroad Job Consultancy in Pune)
+2026-06-11 14:48:29 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

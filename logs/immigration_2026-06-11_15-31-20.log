@@ -1,0 +1,60 @@
+2026-06-11 15:31:20 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_15-31-20.log
+2026-06-11 15:31:20 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-11 15:31:20 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 15:31:20 [INFO   ] Using browser: chrome
+2026-06-11 15:31:20 [INFO   ] Industry: training_finishing_schools | Query: soft skills training institute India email
+2026-06-11 15:31:20 [INFO   ] Google search: soft skills training institute India email
+2026-06-11 15:31:26 [INFO   ]   Found 11 unique result(s).
+2026-06-11 15:31:26 [INFO   ] Scraping Soft Skills Training Institute in Pune, Near Me,India (https://softskillstraining.in/)
+2026-06-11 15:32:05 [INFO   ]   Email found: info@softskillstraining.in
+2026-06-11 15:32:05 [INFO   ] Scraping Training India (https://www.training-india.com/)
+2026-06-11 15:32:29 [INFO   ]   Email found: info.trainingindia@gmail.com
+2026-06-11 15:32:29 [INFO   ]   Email found: 88170cb0c9d64f94b5821ca7fd2d55a4@sentry-next.wixpress.com
+2026-06-11 15:32:29 [INFO   ] Scraping Contact Life Skills Institute Pune (https://www.lifeskillsinstitute.co.in/contact.html)
+2026-06-11 15:32:54 [INFO   ]   Email found: enquiry.lifeskill@gmail.com
+2026-06-11 15:32:54 [INFO   ] Scraping INSTITUTE OF SOFT SKILLS INDIA TRAINING PRIVATE ... (https://www.zaubacorp.com/INSTITUTE-OF-SOFT-SKILLS-INDIA-TRAINING-PRIVATE-LIMITED-U80903TG2016PTC110408)
+2026-06-11 15:32:57 [INFO   ]   Email found: uniqueprofs@gmail.com
+2026-06-11 15:32:57 [INFO   ]   Email found: info@zaubacorp.com
+2026-06-11 15:32:57 [INFO   ] Scraping Join us (https://mentorica.in/join-us/)
+2026-06-11 15:33:04 [INFO   ]   Email found: info@mentorica.in
+2026-06-11 15:33:04 [INFO   ] Scraping Soft Skills (https://www.sdibhubaneswar.co.in/placement__trashed/soft-skills/)
+2026-06-11 15:33:08 [INFO   ]   Email found: contact@sdib.in
+2026-06-11 15:33:08 [INFO   ] Skip duplicate domain: nsdcindia.org
+2026-06-11 15:33:08 [INFO   ] Scraping Soft Skills Training Program (https://actiondna.in/soft-skills-training/)
+2026-06-11 15:33:15 [INFO   ]   Email found: action.dna@gmail.com
+2026-06-11 15:33:15 [INFO   ] Scraping Soft Skills Training (https://www.tncindia.org.in/courses/soft-skills)
+2026-06-11 15:33:17 [INFO   ]   Email found: mail4nizamuddin@gmail.com
+2026-06-11 15:33:17 [INFO   ]   Email found: support@tncindia.org.in
+2026-06-11 15:33:17 [INFO   ] Scraping Website (https://www.soulcoachbd.com/)
+2026-06-11 15:33:24 [INFO   ]   Email found: brdey2002@yahoo.com
+2026-06-11 15:33:24 [INFO   ] Scraping Website (http://www.csdpune.org/)
+2026-06-11 15:33:24 [INFO   ]   No email found (navigation_failed: Page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at http://www.csdpune.org/
+Call log:
+  - navigating to "http://www.csdpune.org/", waiting until "domcontentloaded"
+).
+2026-06-11 15:33:24 [INFO   ] Email target reached (9 companies with email, goal 2) — stopping scrape.
+2026-06-11 15:33:24 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 10, 'companies_with_email': 9, 'emails_found': 12, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 15:33:24 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 15:33:24 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-11 15:33:24 [INFO   ] Known sent recipients: 14 | stored Message-IDs: 8
+2026-06-11 15:33:24 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 15:33:26 [INFO   ]   jain1001sandeep@gmail.com: 12 INBOX message(s) in last 30 days
+2026-06-11 15:33:26 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 15:33:27 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 15:33:27 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 15:33:27 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 15:33:27 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 15:33:28 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 15:33:28 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 15:33:28 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 15:33:29 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 15:33:29 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 15:33:29 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 15:33:30 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-11 15:33:30 [INFO   ] Reply check complete: {'scanned': 12, 'forwarded': 0, 'skipped': 12, 'nvidia': 0, 'errors': 0}
+2026-06-11 15:33:30 [INFO   ] Reply check: {'scanned': 12, 'forwarded': 0, 'skipped': 12, 'nvidia': 0, 'errors': 0}
+2026-06-11 15:33:30 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 15:33:30 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 15:33:40 [INFO   ] SENT -> info@upskillab.com (India's Top Upskilling Platform) | Exploring a potential partnership opportunity with upskillab.com
+2026-06-11 15:34:00 [INFO   ] SENT -> info@upskilltechnologies.com (Contact) | Exploring a potential partnership opportunity with upskilltechnologies.com
+2026-06-11 15:34:05 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

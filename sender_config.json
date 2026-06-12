@@ -23,5 +23,12 @@
     }
   ],
   "email_subject": "Exploring a potential partnership opportunity",
-  "emails_per_run": 2
+  "campaign_subjects": [
+    "Exploring a potential partnership opportunity"
+  ],
+  "forward_to": "sandeepjain200019@gmail.com",
+  "check_replies_lookback_days": 30,
+  "emails_per_run": 2,
+  "max_companies_per_run": 50,
+  "max_queries_per_run": 20
 }

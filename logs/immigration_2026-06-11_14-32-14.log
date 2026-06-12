@@ -1,0 +1,18 @@
+2026-06-11 14:32:14 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_14-32-14.log
+2026-06-11 14:32:14 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subjects=1
+2026-06-11 14:32:14 [INFO   ] Known sent recipients: 6 | stored Message-IDs: 0
+2026-06-11 14:32:14 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 14:32:16 [INFO   ]   jain1001sandeep@gmail.com: 11 INBOX message(s) in last 30 days
+2026-06-11 14:32:16 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 14:32:17 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 14:32:17 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 14:32:17 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 14:32:18 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:32:18 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 14:32:18 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:32:19 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:32:19 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 14:32:19 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 14:32:20 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 14:32:20 [INFO   ] Reply check complete: {'scanned': 11, 'forwarded': 0, 'skipped': 11, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:32:20 [INFO   ] Done: {'scanned': 11, 'forwarded': 0, 'skipped': 11, 'nvidia': 0, 'errors': 0}

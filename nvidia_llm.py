@@ -204,6 +204,71 @@ def generate_company_praise(
     )
 
 
+def classify_partnership_reply(
+    *,
+    subject: str,
+    from_addr: str,
+    body: str,
+    has_reply_headers: bool,
+    from_sent_recipient: bool,
+    subject_matches_campaign: bool,
+    thread_message_id_match: bool,
+) -> dict:
+    """NVIDIA classification for borderline human-reply detection."""
+    truncated = (body or "")[:4000]
+    system = (
+        "You analyze inbound email for a partnership outreach campaign (campus placements, "
+        "EdTech, recruitment, immigration consultancies). Decide if this is a genuine human "
+        "reply to Sandeep's outreach that should be forwarded.\n\n"
+        "Rules:\n"
+        "1. MUST be a human reply (not cold mail, newsletter, notification, spam).\n"
+        "2. MUST NOT be auto-response (OOO, mailer-daemon, automated confirmations).\n"
+        "3. Subject line alone with Re: is NOT enough — use the signals provided.\n"
+        "4. Forward interest, questions, meeting requests, or polite engagement.\n"
+        "5. If unsure, should_forward=false.\n\n"
+        "Output ONLY raw JSON:\n"
+        '{"is_reply":bool,"is_auto_response":bool,"should_forward":bool,"reason":"..."}'
+    )
+    user = (
+        f"From: {from_addr}\n"
+        f"Subject: {subject}\n"
+        f"Thread Message-ID match to our sent mail: {thread_message_id_match}\n"
+        f"From address was a campaign recipient: {from_sent_recipient}\n"
+        f"Has In-Reply-To/References headers: {has_reply_headers}\n"
+        f"Subject matches known campaign subject list: {subject_matches_campaign}\n\n"
+        f"BODY:\n{truncated}"
+    )
+    fallback = {
+        "is_reply": False,
+        "is_auto_response": False,
+        "should_forward": False,
+        "reason": "LLM unavailable or parse error",
+    }
+    raw = call_nvidia_llm(system, user)
+    if not raw:
+        return fallback
+    try:
+        text = raw.strip()
+        if "```" in text:
+            for part in text.split("```"):
+                part = part.strip()
+                if part.startswith("json"):
+                    part = part[4:].strip()
+                if part.startswith("{"):
+                    text = part
+                    break
+        data = json.loads(text)
+        return {
+            "is_reply": bool(data.get("is_reply", False)),
+            "is_auto_response": bool(data.get("is_auto_response", False)),
+            "should_forward": bool(data.get("should_forward", False)),
+            "reason": str(data.get("reason", "")),
+        }
+    except Exception as exc:
+        logger.warning("Failed to parse reply classification JSON: %s", exc)
+        return fallback
+
+
 def _parse_json_string_list(raw: str) -> list[str]:
     if not raw:
         return []

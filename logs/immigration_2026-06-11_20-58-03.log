@@ -1,0 +1,94 @@
+2026-06-11 20:58:03 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_20-58-03.log
+2026-06-11 20:58:03 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-11 20:58:03 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 20:58:04 [INFO   ] Using browser: chrome
+2026-06-11 20:58:04 [INFO   ] Industry: overseas_education_immigration | Query: India PR immigration law firms
+2026-06-11 20:58:04 [INFO   ] Google search: India PR immigration law firms
+2026-06-11 20:58:09 [INFO   ]   Found 12 unique result(s).
+2026-06-11 20:58:09 [INFO   ] Scraping Ajmeralaw (https://ajmeralaw.com/)
+2026-06-11 20:58:35 [INFO   ]   Email found: info@ajmeralaw.com
+2026-06-11 20:58:35 [INFO   ] Scraping Abhinav (https://www.abhinav.com/offices/mumbai-office/)
+2026-06-11 20:58:40 [INFO   ]   Email found: web@abhinav.com
+2026-06-11 20:58:40 [INFO   ] Scraping Karanthukral (https://www.karanthukral.com/immigration-lawyer-in-india.html)
+2026-06-11 20:58:43 [INFO   ]   Email found: infothukral@gmail.com
+2026-06-11 20:58:43 [INFO   ] Scraping Indialawoffices (https://www.indialawoffices.com/services/immigration)
+2026-06-11 20:58:47 [INFO   ]   Email found: office@indialawoffices.com
+2026-06-11 20:58:47 [INFO   ] Scraping Lawquestinternational (https://lawquestinternational.com/)
+2026-06-11 20:58:51 [INFO   ]   Closed pop-up/obstruction: button:has-text("I agree")
+2026-06-11 20:58:55 [INFO   ]   Email found: info@lawquestinternational.com
+2026-06-11 20:58:55 [INFO   ] Scraping Murthy (https://www.murthy.com/)
+2026-06-11 20:59:03 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-11 20:59:03 [INFO   ] Scraping Navratanfateh (https://navratanfateh.com/)
+2026-06-11 20:59:35 [INFO   ]   Email found: powerlegal@gmail.com
+2026-06-11 20:59:35 [INFO   ]   Email found: info@navratanfateh.com
+2026-06-11 20:59:35 [INFO   ] Scraping Website (http://kayaimmigration.com/)
+2026-06-11 20:59:37 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:59:38 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-11 20:59:39 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:59:42 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:59:51 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:59:52 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-11 20:59:53 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:59:56 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:59:56 [INFO   ]   Email found: admin@kayaimmigration.com
+2026-06-11 20:59:56 [INFO   ] Scraping Website (https://www.visalaw.in/)
+2026-06-11 21:00:09 [INFO   ]   Email found: john@doe.com
+2026-06-11 21:00:09 [INFO   ] Scraping The 10 best Immigration Lawyers in Pune, India (2026) (https://lawzana.com/immigration-lawyers/pune)
+2026-06-11 21:00:14 [INFO   ]   Email found: support@lawzana.com
+2026-06-11 21:00:14 [INFO   ] Scraping Get Green Card thru EB-5 Visa (https://www.eb5brics.com/eb5-events-pune-india)
+2026-06-11 21:00:21 [INFO   ]   Email found: vivek@eb5brics.com
+2026-06-11 21:00:21 [INFO   ]   Email found: info@eb5brics.com
+2026-06-11 21:00:21 [INFO   ] Scraping EB-5 Visa & US Immigration Lawyers in Mumbai (https://www.eb5visaindia.com/mumbai.html)
+2026-06-11 21:00:49 [INFO   ]   Email found: info@usimmigrationadvisor.com
+2026-06-11 21:00:49 [INFO   ] Email target reached (11 companies with email, goal 2) — stopping scrape.
+2026-06-11 21:00:50 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 12, 'companies_with_email': 11, 'emails_found': 13, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 21:00:50 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 21:00:50 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-11 21:00:50 [INFO   ] Known sent recipients: 20 | stored Message-IDs: 14
+2026-06-11 21:00:50 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 21:00:51 [INFO   ]   jain1001sandeep@gmail.com: 14 INBOX message(s) in last 30 days
+2026-06-11 21:00:52 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 21:00:52 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 21:00:53 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 21:00:53 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 21:00:54 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 21:00:54 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 21:00:54 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 21:00:55 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 21:00:55 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 21:00:56 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 21:00:56 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 21:00:56 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-11 21:00:57 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 21:00:57 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-11 21:00:57 [INFO   ] Reply check complete: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-11 21:00:57 [INFO   ] Reply check: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-11 21:00:57 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 21:00:57 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 21:01:11 [INFO   ] SENT -> info@codingmerijan.com (Contact Us) | Exploring a potential partnership opportunity with codingmerijan.com
+2026-06-11 21:01:25 [INFO   ] SENT -> info@mumbaicodingclub.com (Mumbai Coding Club) | Exploring a potential partnership opportunity with mumbaicodingclub.com
+2026-06-11 21:01:30 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}
+2026-06-11 21:01:30 [INFO   ] 
+2026-06-11 21:01:30 [INFO   ] ==============================================================
+2026-06-11 21:01:30 [INFO   ]   RUN SUMMARY
+2026-06-11 21:01:30 [INFO   ] ==============================================================
+2026-06-11 21:01:30 [INFO   ]   Scrape (this run)
+2026-06-11 21:01:30 [INFO   ]     Companies scraped:        12
+2026-06-11 21:01:30 [INFO   ]     Companies with email:     11
+2026-06-11 21:01:30 [INFO   ]     Emails scraped/found:     13
+2026-06-11 21:01:30 [INFO   ]     Search queries run:       1
+2026-06-11 21:01:30 [INFO   ]     Browser used:             chrome
+2026-06-11 21:01:30 [INFO   ]   Replies (this run)
+2026-06-11 21:01:30 [INFO   ]     Reply check:              skipped
+2026-06-11 21:01:30 [INFO   ]   Send (this run)
+2026-06-11 21:01:30 [INFO   ]     Emails sent:              2
+2026-06-11 21:01:30 [INFO   ]     Send failed:              0
+2026-06-11 21:01:30 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-11 21:01:30 [INFO   ]   Database totals (all runs)
+2026-06-11 21:01:30 [INFO   ]     Companies in database:    80
+2026-06-11 21:01:30 [INFO   ]     Companies with email:     73
+2026-06-11 21:01:30 [INFO   ]     Emails scraped (total):   138
+2026-06-11 21:01:30 [INFO   ]     Emails sent (total):      22
+2026-06-11 21:01:30 [INFO   ]     Replies forwarded (total): 0
+2026-06-11 21:01:30 [INFO   ] ==============================================================
+2026-06-11 21:01:30 [INFO   ] 

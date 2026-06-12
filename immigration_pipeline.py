@@ -27,9 +27,15 @@ from datetime import datetime
 from pathlib import Path
 from typing import Generator
 
+from check_replies import run_check_replies
 from immigration_db import ImmigrationDB
 from immigration_scraper import scrape_sync
-from immigration_sender import get_emails_per_run, run_send
+from immigration_sender import (
+    get_emails_per_run,
+    get_max_companies_per_run,
+    get_max_queries_per_run,
+    run_send,
+)
 from industries import (
     default_region,
     get_industry,
@@ -84,7 +90,7 @@ def setup_logger() -> logging.Logger:
     log.addHandler(fh)
     log.info("Log file: %s", log_file)
 
-    for child in ("immigration_scraper", "immigration_sender", "nvidia_llm"):
+    for child in ("immigration_scraper", "immigration_sender", "nvidia_llm", "check_replies"):
         child_log = logging.getLogger(child)
         child_log.setLevel(logging.DEBUG)
         child_log.handlers.clear()
@@ -219,25 +225,106 @@ def cmd_seed_keywords(
     return 0
 
 
+def _scrape_kwargs(args: argparse.Namespace, industry: str | None) -> dict:
+    return {
+        "max_companies": args.max_companies or get_max_companies_per_run(),
+        "max_queries": args.max_queries or get_max_queries_per_run(),
+        "email_target": get_emails_per_run(),
+        "browser": args.browser,
+        "region": args.region,
+        "industry": industry,
+        "seed_keywords": not args.no_seed,
+        "use_nvidia_seed": not args.no_nvidia_seed,
+    }
+
+
 def cmd_scrape(args: argparse.Namespace, db: ImmigrationDB) -> int:
     industry = _validate_industry(getattr(args, "industry", None))
     with prevent_windows_sleep():
-        stats = scrape_sync(
-            db,
-            max_companies=args.max_companies,
-            max_queries=args.max_queries,
-            browser=args.browser,
-            region=args.region,
-            industry=industry,
-            seed_keywords=not args.no_seed,
-            use_nvidia_seed=not args.no_nvidia_seed,
-        )
+        stats = scrape_sync(db, **_scrape_kwargs(args, industry))
     logger.info("Scrape complete: %s", stats)
+    print_execution_summary(scrape_stats=stats, db=db)
     return 0
+
+
+def print_execution_summary(
+    *,
+    scrape_stats: dict | None = None,
+    reply_stats: dict | None = None,
+    send_stats: dict | None = None,
+    db: ImmigrationDB | None = None,
+) -> None:
+    """Print end-of-run summary to console and log (shown before batch file pause)."""
+    logger.info("")
+    logger.info("=" * 62)
+    logger.info("  RUN SUMMARY")
+    logger.info("=" * 62)
+
+    if scrape_stats is not None:
+        logger.info("  Scrape (this run)")
+        logger.info("    Companies scraped:        %s", scrape_stats.get("companies_scraped", 0))
+        logger.info("    Companies with email:     %s", scrape_stats.get("companies_with_email", 0))
+        logger.info("    Emails scraped/found:     %s", scrape_stats.get("emails_found", 0))
+        logger.info("    Search queries run:       %s", scrape_stats.get("queries_run", 0))
+        if scrape_stats.get("browser_used"):
+            logger.info("    Browser used:             %s", scrape_stats.get("browser_used"))
+
+    if reply_stats is not None:
+        if reply_stats.get("skipped"):
+            logger.info("  Replies (this run)")
+            logger.info("    Reply check:              skipped")
+        else:
+            logger.info("  Replies (this run)")
+            logger.info("    Inbox messages scanned:   %s", reply_stats.get("scanned", 0))
+            logger.info("    Replies forwarded:        %s", reply_stats.get("forwarded", 0))
+
+    if send_stats is not None:
+        logger.info("  Send (this run)")
+        if send_stats.get("error"):
+            logger.info("    Error:                    %s", send_stats.get("error"))
+        logger.info("    Emails sent:              %s", send_stats.get("sent", 0))
+        logger.info("    Send failed:              %s", send_stats.get("failed", 0))
+        logger.info("    Skipped (dry-run/already): %s", send_stats.get("skipped", 0))
+
+    if db is not None:
+        totals = db.summary()
+        logger.info("  Database totals (all runs)")
+        logger.info("    Companies in database:    %s", totals.get("companies_total", 0))
+        logger.info("    Companies with email:     %s", totals.get("companies_with_email", 0))
+        logger.info("    Emails scraped (total):   %s", totals.get("emails_found", 0))
+        logger.info("    Emails sent (total):      %s", totals.get("emails_sent", 0))
+        logger.info("    Replies forwarded (total): %s", totals.get("replies_forwarded", 0))
+
+    logger.info("=" * 62)
+    logger.info("")
+
+
+def _maybe_check_replies(db: ImmigrationDB, args: argparse.Namespace) -> dict:
+    if getattr(args, "skip_replies", False) or getattr(args, "dry_run", False):
+        return {"skipped": True, "scanned": 0, "forwarded": 0}
+    logger.info("=== Checking inboxes for human replies ===")
+    reply_stats = run_check_replies(
+        db,
+        use_nvidia=not getattr(args, "no_nvidia_replies", False),
+    )
+    logger.info("Reply check: %s", reply_stats)
+    return reply_stats
+
+
+def cmd_check_replies(args: argparse.Namespace, db: ImmigrationDB) -> int:
+    with prevent_windows_sleep():
+        stats = run_check_replies(
+            db,
+            use_nvidia=not args.no_nvidia,
+        )
+    logger.info("Done: %s", stats)
+    print_execution_summary(reply_stats=stats, db=db)
+    return 0 if not stats.get("error") else 1
 
 
 def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
     with prevent_windows_sleep():
+        reply_stats = _maybe_check_replies(db, args)
         stats = run_send(
             db,
             limit=args.limit,
@@ -245,6 +332,7 @@ def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
             dry_run=args.dry_run,
         )
     logger.info("Send complete: %s", stats)
+    print_execution_summary(reply_stats=reply_stats, send_stats=stats, db=db)
     if stats.get("error"):
         return 1
     return 0
@@ -253,17 +341,9 @@ def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
 def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
     industry = _validate_industry(getattr(args, "industry", None))
     with prevent_windows_sleep():
-        scrape_stats = scrape_sync(
-            db,
-            max_companies=args.max_companies,
-            max_queries=args.max_queries,
-            browser=args.browser,
-            region=args.region,
-            industry=industry,
-            seed_keywords=not args.no_seed,
-            use_nvidia_seed=not args.no_nvidia_seed,
-        )
+        scrape_stats = scrape_sync(db, **_scrape_kwargs(args, industry))
         logger.info("Scrape complete: %s", scrape_stats)
+        reply_stats = _maybe_check_replies(db, args)
         send_stats = run_send(
             db,
             limit=args.send_limit,
@@ -271,6 +351,12 @@ def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
             dry_run=getattr(args, "dry_run", False),
         )
         logger.info("Send complete: %s", send_stats)
+    print_execution_summary(
+        scrape_stats=scrape_stats,
+        reply_stats=reply_stats,
+        send_stats=send_stats,
+        db=db,
+    )
     return 0 if not send_stats.get("error") else 1
 
 
@@ -300,28 +386,35 @@ def build_parser() -> argparse.ArgumentParser:
     _add_industry_arg(seed)
 
     scrape = sub.add_parser("scrape", help="Browser scrape company websites for emails")
-    scrape.add_argument("--max-companies", type=int, default=20)
-    scrape.add_argument("--max-queries", type=int, default=5)
+    scrape.add_argument("--max-companies", type=int, default=None, help="Override max_companies_per_run in sender_config.json")
+    scrape.add_argument("--max-queries", type=int, default=None, help="Override max_queries_per_run in sender_config.json")
     scrape.add_argument("--browser", choices=["auto", "chrome", "chromium", "firefox"], default="auto")
     scrape.add_argument("--region", default=default_region())
     scrape.add_argument("--no-seed", action="store_true", help="Do not auto-seed queries")
     scrape.add_argument("--no-nvidia-seed", action="store_true", help="Auto-seed from industries.json only")
     _add_industry_arg(scrape)
 
+    replies = sub.add_parser("check-replies", help="Scan inboxes and forward human replies")
+    replies.add_argument("--no-nvidia", action="store_true", help="Skip NVIDIA for borderline cases")
+
     send = sub.add_parser("send", help="Send partnership emails to scraped addresses")
     send.add_argument("--limit", type=int, default=None, help="Override emails_per_run")
     send.add_argument("--no-nvidia-praise", action="store_true")
     send.add_argument("--dry-run", action="store_true")
+    send.add_argument("--skip-replies", action="store_true", help="Do not check inbox before send")
+    send.add_argument("--no-nvidia-replies", action="store_true", help="Skip NVIDIA for borderline replies")
 
     run = sub.add_parser("run", help="Scrape then send in one run")
-    run.add_argument("--max-companies", type=int, default=15)
-    run.add_argument("--max-queries", type=int, default=5)
+    run.add_argument("--max-companies", type=int, default=None, help="Override max_companies_per_run in sender_config.json")
+    run.add_argument("--max-queries", type=int, default=None, help="Override max_queries_per_run in sender_config.json")
     run.add_argument("--send-limit", type=int, default=None)
     run.add_argument("--browser", choices=["auto", "chrome", "chromium", "firefox"], default="auto")
     run.add_argument("--region", default=default_region())
     run.add_argument("--no-seed", action="store_true")
     run.add_argument("--no-nvidia-seed", action="store_true")
     run.add_argument("--no-nvidia-praise", action="store_true")
+    run.add_argument("--skip-replies", action="store_true")
+    run.add_argument("--no-nvidia-replies", action="store_true")
     _add_industry_arg(run)
 
     return parser
@@ -351,6 +444,8 @@ def main() -> int:
             )
         if args.command == "scrape":
             return cmd_scrape(args, db)
+        if args.command == "check-replies":
+            return cmd_check_replies(args, db)
         if args.command == "send":
             return cmd_send(args, db)
         if args.command == "run":

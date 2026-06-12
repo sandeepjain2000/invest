@@ -1,0 +1,74 @@
+2026-06-11 20:50:14 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_20-50-14.log
+2026-06-11 20:50:14 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-11 20:50:14 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 20:50:15 [INFO   ] Using browser: chrome
+2026-06-11 20:50:15 [INFO   ] Industry: edtech | Query: test prep company career readiness India
+2026-06-11 20:50:15 [INFO   ] Google search: test prep company career readiness India
+2026-06-11 20:50:19 [INFO   ]   Found 10 unique result(s).
+2026-06-11 20:50:19 [INFO   ] Scraping Career Readiness Assessments (https://hiremee.co.in/solutions/talent-assessments/psychometric-assessments/career-readiness-assessments)
+2026-06-11 20:50:44 [INFO   ]   Email found: support@hiremee.co.in
+2026-06-11 20:50:44 [INFO   ]   Email found: privacyofficer@hiremee.co.in
+2026-06-11 20:50:44 [INFO   ] Scraping Career Readiness Program (https://stepaheadindia.com/career-readiness-program/)
+2026-06-11 20:51:38 [INFO   ]   Email found: contact@stepaheadindia.com
+2026-06-11 20:51:38 [INFO   ] Scraping PrepFree (https://www.prepfree.in/)
+2026-06-11 20:51:42 [INFO   ]   Email found: support@prepfree.in
+2026-06-11 20:51:42 [INFO   ]   Email found: care@prepfree.in
+2026-06-11 20:51:42 [INFO   ] Scraping careersaarthi.com (https://careersaarthi.com/)
+2026-06-11 20:51:54 [INFO   ]   Email found: 20anjali@careersaarthi.com
+2026-06-11 20:51:54 [INFO   ]   Email found: anjali@careersaarthi.com
+2026-06-11 20:51:54 [INFO   ] Scraping Career Assessment Test (https://www.mindler.com/career-assessment-meaning-benefits-importance)
+2026-06-11 20:52:05 [INFO   ]   Email found: hello@mindler.com
+2026-06-11 20:52:05 [INFO   ] Scraping JobPrepIndia (https://www.jobprepindia.com/)
+2026-06-11 20:52:20 [INFO   ]   Email found: partnerships@jobprepindia.com
+2026-06-11 20:52:20 [INFO   ] Scraping National Award winning platform (https://www.bodhami.com/)
+2026-06-11 20:52:25 [INFO   ]   Email found: customer.support@bodhami.com
+2026-06-11 20:52:25 [INFO   ] Scraping Aptech Learning by EduQuest (https://eduquest.org.in/eduquest-aptech/)
+2026-06-11 20:52:29 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:32 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:36 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:39 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:42 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:46 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:49 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:52 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-11 20:52:52 [INFO   ]   Email found: contact@eduquest.org.in
+2026-06-11 20:52:52 [INFO   ]   Email found: writeto.eduquest@gmail.com
+2026-06-11 20:52:52 [INFO   ]   Email found: hr@eduquest.org.in
+2026-06-11 20:52:52 [INFO   ]   Email found: account@eduquest.org.in
+2026-06-11 20:52:52 [INFO   ]   Email found: director@eduquest.org.in
+2026-06-11 20:52:52 [INFO   ]   Email found: legal@eduquest.org.in
+2026-06-11 20:52:52 [INFO   ] Scraping Career (https://www.scoreleap.in/career)
+2026-06-11 20:52:55 [INFO   ]   Email found: xyz@mail.com
+2026-06-11 20:52:55 [INFO   ]   Email found: info@scoreleap.in
+2026-06-11 20:52:55 [INFO   ] Scraping Career test for India (https://www.wisgrowth.com/career-test-for-india)
+2026-06-11 20:53:44 [INFO   ]   Email found: support@wisgrowth.com
+2026-06-11 20:53:44 [INFO   ]   Email found: partnerships@wisgrowth.com
+2026-06-11 20:53:44 [INFO   ]   Email found: info@wisgrowth.com
+2026-06-11 20:53:44 [INFO   ] Email target reached (10 companies with email, goal 2) — stopping scrape.
+2026-06-11 20:53:45 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 10, 'companies_with_email': 10, 'emails_found': 21, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 20:53:45 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 20:53:45 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-11 20:53:45 [INFO   ] Known sent recipients: 18 | stored Message-IDs: 12
+2026-06-11 20:53:45 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 20:53:48 [INFO   ]   jain1001sandeep@gmail.com: 14 INBOX message(s) in last 30 days
+2026-06-11 20:53:48 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 20:53:50 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 20:53:50 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 20:53:51 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 20:53:52 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 20:53:53 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 20:53:53 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 20:53:53 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 20:53:54 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 20:53:56 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 20:53:56 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 20:53:57 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-11 20:53:58 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 20:53:58 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-11 20:53:59 [INFO   ] Reply check complete: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-11 20:53:59 [INFO   ] Reply check: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-11 20:53:59 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 20:53:59 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 20:54:09 [INFO   ] SENT -> info@zaubacorp.com (INSTITUTE OF SOFT SKILLS INDIA TRAINING PRIVATE ...) | Exploring a potential partnership opportunity with zaubacorp.com
+2026-06-11 20:54:24 [INFO   ] SENT -> info@mentorica.in (Join us) | Exploring a potential partnership opportunity with mentorica.in
+2026-06-11 20:54:29 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

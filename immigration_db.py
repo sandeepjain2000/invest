@@ -88,6 +88,25 @@ class ImmigrationDB:
                 FOREIGN KEY (company_id) REFERENCES companies(id)
             );
 
+            CREATE TABLE IF NOT EXISTS campaign_subjects (
+                id         INTEGER PRIMARY KEY AUTOINCREMENT,
+                subject    TEXT NOT NULL UNIQUE,
+                first_used TEXT NOT NULL,
+                last_used  TEXT NOT NULL
+            );
+
+            CREATE TABLE IF NOT EXISTS reply_forwards (
+                id               INTEGER PRIMARY KEY AUTOINCREMENT,
+                gmail_account    TEXT NOT NULL,
+                incoming_msg_id  TEXT NOT NULL,
+                from_address     TEXT,
+                subject          TEXT,
+                detection_method TEXT,
+                llm_reason       TEXT,
+                forwarded_at     TEXT NOT NULL,
+                UNIQUE (gmail_account, incoming_msg_id)
+            );
+
             CREATE INDEX IF NOT EXISTS idx_companies_domain ON companies(domain);
             CREATE INDEX IF NOT EXISTS idx_search_status ON search_queries(status);
             """
@@ -114,6 +133,94 @@ class ImmigrationDB:
                 "ALTER TABLE companies ADD COLUMN industry TEXT NOT NULL "
                 "DEFAULT 'overseas_education_immigration'"
             )
+        es_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(email_sent)")}
+        if "message_id" not in es_cols:
+            self.conn.execute("ALTER TABLE email_sent ADD COLUMN message_id TEXT")
+
+    def ensure_campaign_subject(self, subject: str) -> None:
+        subject = (subject or "").strip()
+        if not subject:
+            return
+        now = utc_now()
+        self.conn.execute(
+            """
+            INSERT INTO campaign_subjects (subject, first_used, last_used)
+            VALUES (?, ?, ?)
+            ON CONFLICT(subject) DO UPDATE SET last_used = excluded.last_used
+            """,
+            (subject, now, now),
+        )
+        self.conn.commit()
+
+    def list_campaign_subjects(self) -> list[str]:
+        rows = self.conn.execute(
+            "SELECT subject FROM campaign_subjects ORDER BY last_used DESC"
+        ).fetchall()
+        return [r[0] for r in rows]
+
+    def distinct_sent_subjects(self) -> list[str]:
+        rows = self.conn.execute(
+            """
+            SELECT DISTINCT subject FROM email_sent
+            WHERE status = 'sent' AND subject IS NOT NULL AND trim(subject) != ''
+            """
+        ).fetchall()
+        return [r[0] for r in rows]
+
+    def sent_message_ids(self) -> set[str]:
+        rows = self.conn.execute(
+            """
+            SELECT message_id FROM email_sent
+            WHERE status = 'sent' AND message_id IS NOT NULL AND trim(message_id) != ''
+            """
+        ).fetchall()
+        return {r[0].strip().lower() for r in rows}
+
+    def sent_recipient_emails(self) -> set[str]:
+        rows = self.conn.execute(
+            "SELECT email FROM email_sent WHERE status = 'sent'"
+        ).fetchall()
+        return {r[0].strip().lower() for r in rows}
+
+    def reply_already_forwarded(self, gmail_account: str, incoming_msg_id: str) -> bool:
+        row = self.conn.execute(
+            """
+            SELECT 1 FROM reply_forwards
+            WHERE lower(gmail_account) = lower(?) AND lower(incoming_msg_id) = lower(?)
+            LIMIT 1
+            """,
+            (gmail_account, incoming_msg_id),
+        ).fetchone()
+        return row is not None
+
+    def record_reply_forward(
+        self,
+        *,
+        gmail_account: str,
+        incoming_msg_id: str,
+        from_address: str,
+        subject: str,
+        detection_method: str,
+        llm_reason: str = "",
+    ) -> None:
+        self.conn.execute(
+            """
+            INSERT OR IGNORE INTO reply_forwards
+                (gmail_account, incoming_msg_id, from_address, subject,
+                 detection_method, llm_reason, forwarded_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                gmail_account,
+                incoming_msg_id,
+                from_address,
+                subject,
+                detection_method,
+                llm_reason,
+                utc_now(),
+            ),
+        )
+        self.conn.commit()
 
     def add_search_queries(
         self,
@@ -334,12 +441,14 @@ class ImmigrationDB:
         subject: str,
         status: str = "sent",
         error_message: str = "",
+        message_id: str = "",
     ) -> None:
         self.conn.execute(
             """
             INSERT OR REPLACE INTO email_sent
-                (email, company_id, company_name, from_profile, subject, status, error_message, sent_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                (email, company_id, company_name, from_profile, subject,
+                 status, error_message, sent_at, message_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 email.lower(),
@@ -350,8 +459,11 @@ class ImmigrationDB:
                 status,
                 error_message,
                 utc_now() if status == "sent" else None,
+                (message_id or "").strip() or None,
             ),
         )
+        if status == "sent" and subject:
+            self.ensure_campaign_subject(subject)
         self.conn.commit()
 
     def email_already_sent(self, email: str) -> bool:
@@ -371,6 +483,8 @@ class ImmigrationDB:
             "emails_found": "SELECT COUNT(*) FROM company_emails",
             "emails_sent": "SELECT COUNT(*) FROM email_sent WHERE status='sent'",
             "emails_failed": "SELECT COUNT(*) FROM email_sent WHERE status='failed'",
+            "replies_forwarded": "SELECT COUNT(*) FROM reply_forwards",
+            "campaign_subjects": "SELECT COUNT(*) FROM campaign_subjects",
         }.items():
             out[label] = int(self.conn.execute(sql).fetchone()[0])
         return out

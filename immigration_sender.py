@@ -11,9 +11,10 @@ import time
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from email.utils import make_msgid
 from pathlib import Path
 
-from immigration_db import ImmigrationDB
+from immigration_db import ImmigrationDB, clean_domain
 from nvidia_llm import generate_company_praise
 
 logger = logging.getLogger(__name__)
@@ -43,7 +44,12 @@ def load_sender_config() -> dict:
         "website": "",
         "signature_links": [],
         "email_subject": "Exploring a potential partnership opportunity",
+        "campaign_subjects": [],
+        "forward_to": "sandeepjain200019@gmail.com",
+        "check_replies_lookback_days": 30,
         "emails_per_run": 2,
+        "max_companies_per_run": 50,
+        "max_queries_per_run": 20,
     }
     if SENDER_CONFIG_FILE.exists():
         data = json.loads(SENDER_CONFIG_FILE.read_text(encoding="utf-8"))
@@ -58,6 +64,38 @@ def get_emails_per_run() -> int:
         return max(1, int(value))
     except (TypeError, ValueError):
         return 2
+
+
+def get_max_companies_per_run() -> int:
+    """Max company sites to scrape per run (from sender_config.json)."""
+    value = load_sender_config().get("max_companies_per_run", 50)
+    try:
+        return max(1, int(value))
+    except (TypeError, ValueError):
+        return 50
+
+
+def format_email_subject(base_subject: str, domain: str) -> str:
+    """
+    Unique subject per company: '{base} with {domain}'.
+    Example: Exploring a potential partnership opportunity with croyez.in
+    """
+    base = (base_subject or "").strip()
+    dom = clean_domain(domain)
+    if not base:
+        return dom or "Partnership opportunity"
+    if not dom:
+        return base
+    return f"{base} with {dom}"
+
+
+def get_max_queries_per_run() -> int:
+    """Max Google search queries per scrape run (safety cap)."""
+    value = load_sender_config().get("max_queries_per_run", 20)
+    try:
+        return max(1, int(value))
+    except (TypeError, ValueError):
+        return 20
 
 
 def load_smtp_profiles(path: Path | None = None) -> tuple[list[dict], dict[str, str]]:
@@ -163,19 +201,25 @@ def send_one(
     if not html:
         return False
 
-    subject = sender_cfg.get("email_subject", "Exploring a potential partnership opportunity")
+    base_subject = sender_cfg.get(
+        "email_subject", "Exploring a potential partnership opportunity"
+    )
+    subject = format_email_subject(base_subject, domain)
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = from_email
     msg["To"] = recipient
+    msg["Message-ID"] = make_msgid()
+    message_id = msg["Message-ID"]
     msg.attach(MIMEText(html, "html", "utf-8"))
+    db.ensure_campaign_subject(base_subject)
 
     try:
         ctx = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=ctx) as server:
             server.login(from_email, smtp_password)
             server.send_message(msg)
-        logger.info("SENT -> %s (%s)", recipient, company_name)
+        logger.info("SENT -> %s (%s) | %s", recipient, company_name, subject)
         db.record_email_sent(
             email=recipient,
             company_id=company_id,
@@ -183,6 +227,7 @@ def send_one(
             from_profile=from_email,
             subject=subject,
             status="sent",
+            message_id=message_id,
         )
         time.sleep(EMAIL_SEND_DELAY)
         return True

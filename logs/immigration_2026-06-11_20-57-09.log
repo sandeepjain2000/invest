@@ -1,0 +1,24 @@
+2026-06-11 20:57:09 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_20-57-09.log
+2026-06-11 20:57:09 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 20:57:09 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 20:57:10 [INFO   ] DRY-RUN would send to info@codingmerijan.com (Contact Us) from jain1001sandeep@gmail.com | praise: The team at Contact Us has demonstrated exceptional proficiency in providing com
+2026-06-11 20:57:25 [INFO   ] DRY-RUN would send to info@mumbaicodingclub.com (Mumbai Coding Club) from jain1001sandeep@gmail.com | praise: Mumbai Coding Club has demonstrated exceptional strength in providing comprehens
+2026-06-11 20:57:25 [INFO   ] Send complete: {'sent': 0, 'failed': 0, 'skipped': 2}
+2026-06-11 20:57:25 [INFO   ] 
+2026-06-11 20:57:25 [INFO   ] ==============================================================
+2026-06-11 20:57:25 [INFO   ]   RUN SUMMARY
+2026-06-11 20:57:25 [INFO   ] ==============================================================
+2026-06-11 20:57:25 [INFO   ]   Replies (this run)
+2026-06-11 20:57:25 [INFO   ]     Reply check:              skipped
+2026-06-11 20:57:25 [INFO   ]   Send (this run)
+2026-06-11 20:57:25 [INFO   ]     Emails sent:              0
+2026-06-11 20:57:25 [INFO   ]     Send failed:              0
+2026-06-11 20:57:25 [INFO   ]     Skipped (dry-run/already): 2
+2026-06-11 20:57:25 [INFO   ]   Database totals (all runs)
+2026-06-11 20:57:25 [INFO   ]     Companies in database:    68
+2026-06-11 20:57:25 [INFO   ]     Companies with email:     62
+2026-06-11 20:57:25 [INFO   ]     Emails scraped (total):   125
+2026-06-11 20:57:25 [INFO   ]     Emails sent (total):      20
+2026-06-11 20:57:25 [INFO   ]     Replies forwarded (total): 0
+2026-06-11 20:57:25 [INFO   ] ==============================================================
+2026-06-11 20:57:25 [INFO   ] 

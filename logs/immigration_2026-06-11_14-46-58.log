@@ -1,0 +1,91 @@
+2026-06-11 14:46:58 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_14-46-58.log
+2026-06-11 14:46:58 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-11 14:46:58 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 14:46:59 [INFO   ] Using browser: chrome
+2026-06-11 14:46:59 [INFO   ] Industry: edtech | Query: upskilling platform students India contact
+2026-06-11 14:46:59 [INFO   ] Google search: upskilling platform students India contact
+2026-06-11 14:47:03 [INFO   ]   Found 9 unique result(s).
+2026-06-11 14:47:03 [INFO   ] Scraping Contact Us (https://www.upskillindia.net/contact.php)
+2026-06-11 14:47:06 [INFO   ]   Email found: support@upskillindia.net
+2026-06-11 14:47:06 [INFO   ] Scraping Contact Number (https://www.skillindiadigital.gov.in/contact-us)
+2026-06-11 14:47:08 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:09 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:10 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:10 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:11 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:12 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:13 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:14 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:14 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:15 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:38 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:39 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:39 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:40 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:41 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:42 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:43 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:43 [INFO   ]   Closed pop-up/obstruction: button:has-text("Skip")
+2026-06-11 14:47:44 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-11 14:47:44 [INFO   ] Scraping Contact (https://upskillfy.in/contact/)
+2026-06-11 14:50:50 [INFO   ]   Email found: upskill@upskillfy.in
+2026-06-11 14:50:50 [INFO   ] Scraping India's Top Upskilling Platform (https://upskillab.com/)
+2026-06-11 14:50:51 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:50:52 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:50:53 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:50:54 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:50:57 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:50:58 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:50:59 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:51:00 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 14:51:00 [INFO   ]   Email found: shashi.prakash.543@gmail.com
+2026-06-11 14:51:00 [INFO   ]   Email found: info@upskillab.com
+2026-06-11 14:51:00 [INFO   ] Scraping Upskilling (https://bharatskills.gov.in/content/upskilling/)
+2026-06-11 14:51:14 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-11 14:51:14 [INFO   ] Scraping National Skill Development Corporation (NSDC) (https://nsdcindia.org/)
+2026-06-11 14:54:20 [INFO   ]   Email found: contact@nsdcinternational.com
+2026-06-11 14:54:20 [INFO   ] Scraping Contact (https://www.upskilltechnologies.com/contact)
+2026-06-11 14:57:27 [INFO   ]   Email found: info@upskilltechnologies.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: dd0a55ccb8124b9c9d938e3acf41f8aa@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: c183baa23371454f99f417f6616b724d@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: baf30a2b91654c5a840931f0137bed30@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 0e6a29e4756740a8a63493e912ba2174@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 460ff4620fa44cba8df530afde949785@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: ed436f5053144538958ad06a5005e99a@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 8c30b2581acc426badc414e8a5dc04ef@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 1eeb89147c984dc6bc3ffafd9e6cd089@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 9a65e97ebe8141fca0c4fd686f70996b@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 8eb368c655b84e029ed79ad7a5c1718e@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ]   Email found: 271e9fa3230b4eec94b02bf95780f5f2@sentry.wixpress.com
+2026-06-11 14:57:27 [INFO   ] Scraping Upskill (https://www.theupskillnetwork.com/)
+2026-06-11 14:57:32 [INFO   ]   Email found: info@theupskillnetwork.com
+2026-06-11 14:57:32 [INFO   ] Scraping Top Mentor (https://topmentor.com/)
+2026-06-11 14:57:38 [INFO   ]   Email found: support@topmentor.com
+2026-06-11 14:57:38 [INFO   ] Email target reached (7 companies with email, goal 2) — stopping scrape.
+2026-06-11 14:57:38 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 9, 'companies_with_email': 7, 'emails_found': 21, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 14:57:38 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 14:57:38 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subjects=1
+2026-06-11 14:57:38 [INFO   ] Known sent recipients: 10 | stored Message-IDs: 4
+2026-06-11 14:57:38 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 14:57:40 [INFO   ]   jain1001sandeep@gmail.com: 12 INBOX message(s) in last 30 days
+2026-06-11 14:57:40 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 14:57:40 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 14:57:41 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 14:57:41 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 14:57:41 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:57:42 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 14:57:42 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:57:42 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:57:42 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 14:57:43 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 14:57:43 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 14:57:43 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-11 14:57:44 [INFO   ] Reply check complete: {'scanned': 12, 'forwarded': 0, 'skipped': 12, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:57:44 [INFO   ] Reply check: {'scanned': 12, 'forwarded': 0, 'skipped': 12, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:57:44 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 14:57:44 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 14:57:53 [INFO   ] SENT -> info@y-axis.co.uk (Visa Consultants & Abroad Job Consultancy in Pune)
+2026-06-11 14:58:09 [INFO   ] SENT -> info@croyez.in (Best Immigration Consultants in Pune)
+2026-06-11 14:58:14 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

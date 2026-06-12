@@ -1,0 +1,91 @@
+2026-06-11 14:36:37 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_14-36-37.log
+2026-06-11 14:36:37 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 14:36:43 [INFO   ] Using browser: chrome
+2026-06-11 14:36:43 [INFO   ] Industry: training_finishing_schools | Query: placement training institute India contact
+2026-06-11 14:36:43 [INFO   ] Google search: placement training institute India contact
+2026-06-11 14:36:48 [INFO   ]   Found 8 unique result(s).
+2026-06-11 14:36:48 [INFO   ] Scraping Placement Training In Pune (https://www.acte.in/placement-training-in-pune)
+2026-06-11 14:36:52 [INFO   ]   Email found: contact@acte.in
+2026-06-11 14:36:52 [INFO   ]   Email found: enquiry@acte.in
+2026-06-11 14:36:52 [INFO   ]   Email found: corpsale@acte.in
+2026-06-11 14:36:52 [INFO   ]   Email found: support@acte.in
+2026-06-11 14:36:52 [INFO   ] Scraping Best IT Training Institute in Pune (https://www.3ritechnologies.com/)
+2026-06-11 14:36:58 [INFO   ]   Email found: enquiry@3ritechnologies.com
+2026-06-11 14:36:58 [INFO   ] Scraping Job Oriented Courses in Pune (https://www.apponix.com/job-oriented-course-in-pune/)
+2026-06-11 14:37:02 [INFO   ]   Email found: info@apponix.com
+2026-06-11 14:37:02 [INFO   ] Scraping Best Job Oriented Training in Pune 100% Placement (https://www.sofcontraining.com/training-institute-in-pune.htm)
+2026-06-11 14:37:09 [INFO   ]   Email found: info@sofcontraining.com
+2026-06-11 14:37:09 [INFO   ] Scraping 100% Placement Support Institute in Pune (https://www.ivtce.com/latest-update/100-placement-support-institute-in-pune/2)
+2026-06-11 14:37:13 [INFO   ]   Email found: info@ivtce.com
+2026-06-11 14:37:13 [INFO   ] Scraping Top Placement Training in Pune With 100% Job (https://www.learnovita.com/placement-training-in-pune)
+2026-06-11 14:37:18 [INFO   ]   Email found: contact@learnovita.com
+2026-06-11 14:37:18 [INFO   ] Scraping Training & Placement Cell (https://www.ssmsimr.edu.in/TrainingPlacementCellIMR.aspx)
+2026-06-11 14:37:33 [INFO   ]   Email found: imrpune@rediffmail.com
+2026-06-11 14:37:33 [INFO   ] Scraping Job Guarantee Courses in Pune (https://vertexitservices.com/)
+2026-06-11 14:37:45 [INFO   ]   Email found: enquiry@vertexitservices.com
+2026-06-11 14:37:45 [INFO   ] Industry: overseas_education_immigration | Query: Work permit visa agencies in India
+2026-06-11 14:37:45 [INFO   ] Google search: Work permit visa agencies in India
+2026-06-11 14:37:49 [INFO   ]   Found 8 unique result(s).
+2026-06-11 14:37:49 [INFO   ] Scraping Website (https://btwvisas.com/?utm_source=pune&utm_medium=gmb&utm_campaign=bl&utm_content=main-url-gmb)
+2026-06-11 14:37:52 [INFO   ]   Email found: inquiry@btwvisas.com
+2026-06-11 14:37:52 [INFO   ] Scraping Website (https://www.joyvisas.com/)
+2026-06-11 14:37:57 [INFO   ]   Email found: enquiry@joyvisas.com
+2026-06-11 14:37:57 [INFO   ] Scraping Website (https://www.visa4you.co.in/)
+2026-06-11 14:38:00 [INFO   ]   Email found: admin@visa4you.co.in
+2026-06-11 14:38:00 [INFO   ] Skip duplicate domain: greentreeimmigration.com
+2026-06-11 14:38:00 [INFO   ] Scraping Visa Consultants & Abroad Job Consultancy in Pune (https://www.y-axis.com/bund-garden-pune/)
+2026-06-11 14:38:03 [INFO   ]   Email found: info@y-axis.com
+2026-06-11 14:38:03 [INFO   ]   Email found: australia@y-axis.com.au
+2026-06-11 14:38:03 [INFO   ]   Email found: dubai@y-axis.com
+2026-06-11 14:38:03 [INFO   ]   Email found: info@y-axis.co.uk
+2026-06-11 14:38:03 [INFO   ]   Email found: info@y-axis.ca
+2026-06-11 14:38:03 [INFO   ]   Email found: pune@y-axis.com
+2026-06-11 14:38:03 [INFO   ] Scraping Best Immigration Consultants in Pune (https://croyezimmigration.com/immigration-consultants-in-pune/)
+2026-06-11 14:41:09 [INFO   ]   Email found: info@croyez.in
+2026-06-11 14:41:09 [INFO   ] Scraping Poland Work Visa Assistance (https://dm-consultant.in/work-permit/poland/)
+2026-06-11 14:41:13 [INFO   ]   Email found: info.bglr@dm-consultant.com
+2026-06-11 14:41:13 [INFO   ]   Email found: info@dm-consultant.com
+2026-06-11 14:41:13 [INFO   ] Skip duplicate domain: nationwidevisas.com
+2026-06-11 14:41:13 [INFO   ] Industry: education_finance | Query: education loan provider India contact
+2026-06-11 14:41:13 [INFO   ] Google search: education loan provider India contact
+2026-06-11 14:41:18 [INFO   ]   Found 9 unique result(s).
+2026-06-11 14:41:18 [INFO   ] Scraping Eduvanz: Low Interest Education Loan Providers for Students ... (https://eduvanz.com/)
+2026-06-11 14:41:20 [INFO   ]   Email found: grievance.finance@adityabirlacapital.com
+2026-06-11 14:41:20 [INFO   ]   Email found: gro@smfgindia.com
+2026-06-11 14:41:20 [INFO   ]   Email found: namaste@fullertonindia.com
+2026-06-11 14:41:20 [INFO   ]   Email found: nodal.officer@piramal.com
+2026-06-11 14:41:20 [INFO   ]   Email found: crm.masfin@mas.co.in
+2026-06-11 14:41:21 [INFO   ] Scrape complete: {'queries_run': 3, 'companies_scraped': 15, 'emails_found': 28, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 14:41:21 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 14:41:21 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subjects=1
+2026-06-11 14:41:21 [INFO   ] Known sent recipients: 6 | stored Message-IDs: 0
+2026-06-11 14:41:21 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 14:41:24 [INFO   ]   jain1001sandeep@gmail.com: 11 INBOX message(s) in last 30 days
+2026-06-11 14:41:25 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 14:41:26 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 14:41:28 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 14:41:29 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 14:41:30 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:41:31 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 14:41:31 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:41:32 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 14:41:32 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 14:41:33 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 14:41:34 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 14:41:35 [INFO   ] Reply check complete: {'scanned': 11, 'forwarded': 0, 'skipped': 11, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:41:35 [INFO   ] Reply check: {'scanned': 11, 'forwarded': 0, 'skipped': 11, 'nvidia': 0, 'errors': 0}
+2026-06-11 14:41:35 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 14:41:35 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 14:42:05 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-11 14:42:36 [WARNING] NVIDIA call failed (attempt 2/5): The read operation timed out — rotating key.
+2026-06-11 14:43:07 [WARNING] NVIDIA call failed (attempt 3/5): The read operation timed out — rotating key.
+2026-06-11 14:43:38 [WARNING] NVIDIA call failed (attempt 4/5): The read operation timed out — rotating key.
+2026-06-11 14:44:09 [WARNING] NVIDIA call failed (attempt 5/5): The read operation timed out — rotating key.
+2026-06-11 14:44:17 [INFO   ] SENT -> info@apponix.com (Job Oriented Courses in Pune)
+2026-06-11 14:44:52 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-11 14:45:23 [WARNING] NVIDIA call failed (attempt 2/5): The read operation timed out — rotating key.
+2026-06-11 14:45:54 [WARNING] NVIDIA call failed (attempt 3/5): The read operation timed out — rotating key.
+2026-06-11 14:46:25 [WARNING] NVIDIA call failed (attempt 4/5): The read operation timed out — rotating key.
+2026-06-11 14:46:56 [WARNING] NVIDIA call failed (attempt 5/5): The read operation timed out — rotating key.
+2026-06-11 14:47:03 [INFO   ] SENT -> info@sofcontraining.com (Best Job Oriented Training in Pune 100% Placement)
+2026-06-11 14:47:08 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

@@ -1,0 +1,69 @@
+2026-06-11 20:40:03 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-11_20-40-03.log
+2026-06-11 20:40:03 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-11 20:40:03 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-11 20:40:04 [INFO   ] Using browser: chrome
+2026-06-11 20:40:04 [INFO   ] Industry: training_finishing_schools | Query: coding bootcamp India contact email
+2026-06-11 20:40:04 [INFO   ] Google search: coding bootcamp India contact email
+2026-06-11 20:40:09 [INFO   ]   Found 11 unique result(s).
+2026-06-11 20:40:09 [INFO   ] Scraping Contact Us (https://www.codingmerijan.com/contact-us)
+2026-06-11 20:40:14 [INFO   ]   Email found: info@codingmerijan.com
+2026-06-11 20:40:14 [INFO   ] Scraping Mumbai Coding Club (https://mumbaicodingclub.com/)
+2026-06-11 20:40:18 [INFO   ]   Email found: info@mumbaicodingclub.com
+2026-06-11 20:40:18 [INFO   ]   Email found: khalid@mumbaicodingclub.com
+2026-06-11 20:40:18 [INFO   ] Scraping The Hacking School: India's First Coding Bootcamp (https://thehackingschool.com/)
+2026-06-11 20:40:22 [INFO   ]   Email found: sadiya@thehackingschool.com
+2026-06-11 20:40:22 [INFO   ] Scraping Contact Us (https://codegnan.com/contact-us/)
+2026-06-11 20:40:26 [INFO   ]   Email found: info@codegnan.com
+2026-06-11 20:40:26 [INFO   ] Scraping Coding Bootcamp (https://www.training.codersarts.com/service-page/coding-bootcamp-1)
+2026-06-11 20:40:51 [INFO   ]   Email found: contact@codersarts.com
+2026-06-11 20:40:51 [INFO   ]   Email found: 79baaa8e09c746d2b7401643b99792e0@sentry.wixpress.com
+2026-06-11 20:40:51 [INFO   ] Scraping Full Stack Web Development Bootcamp (https://www.codingninjas.com/programs/job-bootcamp-web-development)
+2026-06-11 20:40:52 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-11 20:40:59 [INFO   ]   Email found: contact@codingninjas.com
+2026-06-11 20:40:59 [INFO   ] Scraping Contact (https://www.codersbootcamp.in/contact)
+2026-06-11 20:41:02 [INFO   ]   Email found: info@technowebs.in
+2026-06-11 20:41:02 [INFO   ]   Email found: training@technowebs.in
+2026-06-11 20:41:02 [INFO   ] Scraping Code for India Foundation (https://codeforindia.com/)
+2026-06-11 20:41:07 [INFO   ]   Email found: sadiya@codeforindia.com
+2026-06-11 20:41:07 [INFO   ] Scraping FAQs (https://www.fullstackacademy.com/faqs#:~:text=We're%20happy%20to%20answer,with%20the%20details%20you%20need.)
+2026-06-11 20:41:08 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:09 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:10 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:11 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:14 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:14 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:15 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:16 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-11 20:41:16 [INFO   ]   Email found: hello@fullstackacademy.com
+2026-06-11 20:41:16 [INFO   ] Scraping Is 27 too late to start coding? (https://www.ziprecruiter.com/e/Programmer-Is-27-too-late-to-start-coding#:~:text=Programmers%20can%20start%20coding%20at,bootcamps%2C%20or%20self%2Dstudy.)
+2026-06-11 20:41:26 [INFO   ]   Email found: accessibility@ziprecruiter.com
+2026-06-11 20:41:26 [INFO   ] Scraping Coding Bootcamp for beginners, Near Me (https://www.digisnare.com/coding-bootcamp-for-beginners.html)
+2026-06-11 20:41:31 [INFO   ]   Email found: info@digisnare.com
+2026-06-11 20:41:31 [INFO   ] Email target reached (11 companies with email, goal 2) — stopping scrape.
+2026-06-11 20:41:32 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 11, 'companies_with_email': 11, 'emails_found': 14, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-11 20:41:32 [INFO   ] === Checking inboxes for human replies ===
+2026-06-11 20:41:32 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-11 20:41:32 [INFO   ] Known sent recipients: 16 | stored Message-IDs: 10
+2026-06-11 20:41:32 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-11 20:41:34 [INFO   ]   jain1001sandeep@gmail.com: 14 INBOX message(s) in last 30 days
+2026-06-11 20:41:35 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-11 20:41:36 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-11 20:41:36 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-11 20:41:37 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-11 20:41:37 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 20:41:38 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-11 20:41:38 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 20:41:39 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-11 20:41:40 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 20:41:41 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-11 20:41:41 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-11 20:41:42 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-11 20:41:42 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-11 20:41:43 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-11 20:41:43 [INFO   ] Reply check complete: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-11 20:41:43 [INFO   ] Reply check: {'scanned': 14, 'forwarded': 0, 'skipped': 14, 'nvidia': 0, 'errors': 0}
+2026-06-11 20:41:43 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-11 20:41:43 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-11 20:41:53 [INFO   ] SENT -> info@theupskillnetwork.com (Upskill) | Exploring a potential partnership opportunity with theupskillnetwork.com
+2026-06-11 20:42:08 [INFO   ] SENT -> info@softskillstraining.in (Soft Skills Training Institute in Pune, Near Me,India) | Exploring a potential partnership opportunity with softskillstraining.in
+2026-06-11 20:42:13 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}

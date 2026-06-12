@@ -1,0 +1,91 @@
+2026-06-12 05:27:50 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-12_05-27-50.log
+2026-06-12 05:27:50 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-12 05:27:50 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-12 05:27:51 [INFO   ] Using browser: chrome
+2026-06-12 05:27:51 [INFO   ] Industry: training_finishing_schools | Query: finishing school employability India
+2026-06-12 05:27:51 [INFO   ] Google search: finishing school employability India
+2026-06-12 05:27:55 [INFO   ]   Found 10 unique result(s).
+2026-06-12 05:27:55 [INFO   ] Skip duplicate domain: ictacademy.in
+2026-06-12 05:27:55 [INFO   ] Scraping Project (https://ciifoundation.in/Finishing-School-Programme)
+2026-06-12 05:27:57 [INFO   ]   Email found: ciif.communications@cii.in
+2026-06-12 05:27:57 [INFO   ] Scraping The Benefits of Finishing School Programmes (https://www.asbm.ac.in/blogs/the-benefits-of-finishing-school-programmes-including-enhanced-employability/)
+2026-06-12 05:28:00 [INFO   ]   Email found: info@asbm.ac.in
+2026-06-12 05:28:00 [INFO   ] Scraping The Ultimate List of Reasons To Attend Finishing SchoolsAmity Finishing School › blogs › the-ultimate-li... (https://amityfinishingschool.com/blogs/the-ultimate-list-of-reasons-to-attend-finishing-schools#:~:text=Known%20as%20Charm%20Schools%20in,with%20academic%20subjects%20being%20secondary.)
+2026-06-12 05:28:03 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-12 05:28:03 [INFO   ] Scraping A training program by ICT Academy and Infosys (https://www.mlncollegeynr.ac.in/a-training-program-by-ict-academy-and-infosys.html#:~:text=A%20training%20program%20focused%20on,by%20ICT%20Academy%20and%20Infosys.)
+2026-06-12 05:28:06 [INFO   ]   Email found: info@mlncollegeynr.ac.in
+2026-06-12 05:28:06 [INFO   ]   Email found: info@inetbusinesshub.com
+2026-06-12 05:28:06 [INFO   ]   Email found: principal@mlncollegeynr.ac.in
+2026-06-12 05:28:06 [INFO   ] Scraping Finishing School (https://kcg.gujarat.gov.in/finishing-school)
+2026-06-12 05:28:32 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-12 05:28:32 [INFO   ] Scraping Finishing School (https://www.aurogroup.ac/finishing-school-for-graduate-student.php)
+2026-06-12 05:28:37 [INFO   ]   Email found: connect@aurogroup.ac
+2026-06-12 05:28:37 [INFO   ] Scraping Work Integrated Training with DMC Finishing School Pvt. ... (https://dmcfs.in/work-integrated-training-with-dmc-finishing-school-pvt-ltd-tiss-sve-a-career-game-changer/)
+2026-06-12 05:28:42 [INFO   ]   Email found: info@dmcfs.in
+2026-06-12 05:28:42 [INFO   ] Scraping Engineering Finishing Schools- A Need for Employability ... (https://ieeexplore.ieee.org/document/9735026/)
+2026-06-12 05:28:47 [INFO   ]   Closed pop-up/obstruction: button:has-text("Close")
+2026-06-12 05:29:24 [INFO   ]   Email found: corporate-communications@ieee.org
+2026-06-12 05:29:24 [INFO   ] Scraping What is a Finishing School Program and Why Does One ... (https://ekalacademy.com/blog/what-is-a-finishing-school-program-and-why-does-one-need-it/)
+2026-06-12 05:29:56 [INFO   ]   Email found: info@ekalacademy.com
+2026-06-12 05:29:56 [INFO   ] Email target reached (7 companies with email, goal 2) — stopping scrape.
+2026-06-12 05:29:57 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 9, 'companies_with_email': 7, 'emails_found': 9, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-12 05:29:57 [INFO   ] === Checking inboxes for human replies ===
+2026-06-12 05:29:57 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-12 05:29:57 [INFO   ] Known sent recipients: 34 | stored Message-IDs: 28
+2026-06-12 05:29:57 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-12 05:29:58 [INFO   ]   jain1001sandeep@gmail.com: 15 INBOX message(s) in last 30 days
+2026-06-12 05:29:59 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-12 05:29:59 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-12 05:29:59 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-12 05:30:00 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-12 05:30:00 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 05:30:00 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-12 05:30:01 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 05:30:01 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 05:30:01 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 05:30:02 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-12 05:30:02 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-12 05:30:02 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-12 05:30:03 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 05:30:03 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-12 05:30:03 [INFO   ]   NVIDIA borderline: info@msajobsonline.com | Thank you for your mail
+2026-06-12 05:30:03 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-12 05:30:05 [INFO   ]     NVIDIA -> forward=False reason=Polite acknowledgement but lacks engagement or interest, appears to be a generic response redirecting to a website
+2026-06-12 05:30:06 [INFO   ] Reply check complete: {'scanned': 15, 'forwarded': 0, 'skipped': 15, 'nvidia': 1, 'errors': 0}
+2026-06-12 05:30:06 [INFO   ] Reply check: {'scanned': 15, 'forwarded': 0, 'skipped': 15, 'nvidia': 1, 'errors': 0}
+2026-06-12 05:30:06 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-12 05:30:36 [INFO   ] SENT -> info@msajobsonline.co (Pune Placement Agencies Directory) | Exploring a potential partnership opportunity with scribd.com
+2026-06-12 05:30:48 [INFO   ] SENT -> info@spiderfocus.com (Campus Recruitment) | Exploring a potential partnership opportunity with spiderfocus.com
+2026-06-12 05:31:01 [INFO   ] SENT -> info@bwssc.in (National Skill Development Corporation (NSDC) Contact No.) | Exploring a potential partnership opportunity with indiacustomercare.com
+2026-06-12 05:31:13 [INFO   ] SENT -> info@asbm.ac.in (The Benefits of Finishing School Programmes) | Exploring a potential partnership opportunity with asbm.ac.in
+2026-06-12 05:31:26 [INFO   ] SENT -> info@mlncollegeynr.ac.in (A training program by ICT Academy and Infosys) | Exploring a potential partnership opportunity with mlncollegeynr.ac.in
+2026-06-12 05:31:39 [INFO   ] SENT -> info@dmcfs.in (Work Integrated Training with DMC Finishing School Pvt. ...) | Exploring a potential partnership opportunity with dmcfs.in
+2026-06-12 05:31:51 [INFO   ] SENT -> info@ekalacademy.com (What is a Finishing School Program and Why Does One ...) | Exploring a potential partnership opportunity with ekalacademy.com
+2026-06-12 05:32:19 [INFO   ] SENT -> contact@acte.in (Placement Training In Pune) | Exploring a potential partnership opportunity with acte.in
+2026-06-12 05:32:50 [INFO   ] SENT -> contact@learnovita.com (Top Placement Training in Pune With 100% Job) | Exploring a potential partnership opportunity with learnovita.com
+2026-06-12 05:33:02 [INFO   ] SENT -> contact@ictacademy.in (CSR Implementation Partner in India) | Exploring a potential partnership opportunity with ictacademy.in
+2026-06-12 05:33:07 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-12 05:33:07 [INFO   ] 
+2026-06-12 05:33:07 [INFO   ] ==============================================================
+2026-06-12 05:33:07 [INFO   ]   RUN SUMMARY
+2026-06-12 05:33:07 [INFO   ] ==============================================================
+2026-06-12 05:33:07 [INFO   ]   Scrape (this run)
+2026-06-12 05:33:07 [INFO   ]     Companies scraped:        9
+2026-06-12 05:33:07 [INFO   ]     Companies with email:     7
+2026-06-12 05:33:07 [INFO   ]     Emails scraped/found:     9
+2026-06-12 05:33:07 [INFO   ]     Search queries run:       1
+2026-06-12 05:33:07 [INFO   ]     Browser used:             chrome
+2026-06-12 05:33:07 [INFO   ]   Replies (this run)
+2026-06-12 05:33:07 [INFO   ]     Reply check:              skipped
+2026-06-12 05:33:07 [INFO   ]   Send (this run)
+2026-06-12 05:33:07 [INFO   ]     Emails sent:              10
+2026-06-12 05:33:07 [INFO   ]     Send failed:              0
+2026-06-12 05:33:07 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-12 05:33:07 [INFO   ]   Database totals (all runs)
+2026-06-12 05:33:07 [INFO   ]     Companies in database:    102
+2026-06-12 05:33:07 [INFO   ]     Companies with email:     89
+2026-06-12 05:33:07 [INFO   ]     Emails scraped (total):   248
+2026-06-12 05:33:07 [INFO   ]     Emails sent (total):      44
+2026-06-12 05:33:07 [INFO   ]     Replies forwarded (total): 0
+2026-06-12 05:33:07 [INFO   ] ==============================================================
+2026-06-12 05:33:07 [INFO   ] 

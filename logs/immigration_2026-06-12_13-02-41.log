@@ -1,0 +1,83 @@
+2026-06-12 13:02:41 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-12_13-02-41.log
+2026-06-12 13:02:42 [INFO   ] Scrape targets: up to 50 companies, stop early after 2 company(ies) with email
+2026-06-12 13:02:42 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-12 13:02:48 [INFO   ] Using browser: chrome
+2026-06-12 13:02:48 [INFO   ] Industry: corporate_csr | Query: IT company CSR skilling program India contact
+2026-06-12 13:02:48 [INFO   ] Google search: IT company CSR skilling program India contact
+2026-06-12 13:02:54 [INFO   ]   Found 9 unique result(s).
+2026-06-12 13:02:54 [INFO   ] Skip duplicate domain: ictacademy.in
+2026-06-12 13:02:54 [INFO   ] Skip duplicate domain: nsdcindia.org
+2026-06-12 13:02:54 [INFO   ] Scraping CSR Program Partner ::- aahvishkaar (https://www.aahvishkaar.com/corporate-social-responsibility-program-partnership)
+2026-06-12 13:02:57 [INFO   ]   Email found: info@aahvishkaar.com
+2026-06-12 13:02:57 [INFO   ]   Email found: india+91.44.45090289info@aahvishkaar.com
+2026-06-12 13:02:57 [INFO   ] Skip duplicate domain: edubridgeindia.com
+2026-06-12 13:02:57 [INFO   ] Scraping Corporate Social Responsibility (https://skillveri.com/skill-training-through-corporate-social-responsibility/)
+2026-06-12 13:03:03 [INFO   ]   Email found: sales@skillveri.in
+2026-06-12 13:03:03 [INFO   ]   Email found: usa@skillveri.com
+2026-06-12 13:03:03 [INFO   ]   Email found: sales@skillveri.com
+2026-06-12 13:03:03 [INFO   ]   Email found: uk@skillveri.com
+2026-06-12 13:03:03 [INFO   ] Scraping Expertise in CSR Training (https://www.tpsdi.com/whom-we-train/corporate/csr-training.aspx)
+2026-06-12 13:03:06 [INFO   ]   Email found: customercare-tpsdi@tatapower.com
+2026-06-12 13:03:06 [INFO   ] Scraping CSR (https://vocskills.com/csr.html)
+2026-06-12 13:03:09 [INFO   ]   Email found: mail@vocskills.com
+2026-06-12 13:03:09 [INFO   ]   Email found: sanjay.arora@vocskills.com
+2026-06-12 13:03:09 [INFO   ]   Email found: vocskills.india@gmail.com
+2026-06-12 13:03:09 [INFO   ] Scraping Corporate Social Responsibility (CSR) in Skill Development (https://ciiskills.in/corporate-social-responsibility)
+2026-06-12 13:03:13 [INFO   ]   Email found: headskills@cii.in
+2026-06-12 13:03:13 [INFO   ] Skip duplicate domain: csrtimes.org
+2026-06-12 13:03:13 [INFO   ] Email target reached (5 companies with email, goal 2) — stopping scrape.
+2026-06-12 13:03:14 [INFO   ] Scrape complete: {'queries_run': 1, 'companies_scraped': 5, 'companies_with_email': 5, 'emails_found': 11, 'email_target': 2, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-12 13:03:14 [INFO   ] === Checking inboxes for human replies ===
+2026-06-12 13:03:14 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-12 13:03:14 [INFO   ] Known sent recipients: 44 | stored Message-IDs: 38
+2026-06-12 13:03:14 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-12 13:03:16 [INFO   ]   jain1001sandeep@gmail.com: 17 INBOX message(s) in last 30 days
+2026-06-12 13:03:16 [DEBUG  ]   Skip (system_or_autoreply): =?utf-8?B?QXV0b21hdGlzY2hlIEFudHdvcnQ6IERlbGl2ZXJ5
+2026-06-12 13:03:17 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-12 13:03:17 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-12 13:03:17 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-12 13:03:18 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 13:03:18 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-12 13:03:18 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 13:03:19 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-12 13:03:19 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 13:03:20 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-12 13:03:20 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-12 13:03:21 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-12 13:03:21 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 13:03:21 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-12 13:03:21 [INFO   ]   NVIDIA borderline: info@msajobsonline.com | Thank you for your mail
+2026-06-12 13:03:22 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-12 13:03:24 [INFO   ]     NVIDIA -> forward=False reason=The response acknowledges the original email and provides a relevant reply, but it appears to be a generic response that directs the recipient to upload their CV, rather than showing genuine interest or engagement with the outreach campaign.
+2026-06-12 13:03:24 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 13:03:25 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-12 13:03:25 [INFO   ] Reply check complete: {'scanned': 17, 'forwarded': 0, 'skipped': 17, 'nvidia': 1, 'errors': 0}
+2026-06-12 13:03:25 [INFO   ] Reply check: {'scanned': 17, 'forwarded': 0, 'skipped': 17, 'nvidia': 1, 'errors': 0}
+2026-06-12 13:03:25 [INFO   ] Sending up to 2 email(s) this run (emails_per_run).
+2026-06-12 13:03:34 [INFO   ] SENT -> info@dwsscindia.com (National Skill Development Corporation (NSDC) Contact No.) | Exploring a potential partnership opportunity with indiacustomercare.com
+2026-06-12 13:03:51 [INFO   ] SENT -> info@inetbusinesshub.com (A training program by ICT Academy and Infosys) | Exploring a potential partnership opportunity with mlncollegeynr.ac.in
+2026-06-12 13:03:56 [INFO   ] Send complete: {'sent': 2, 'failed': 0, 'skipped': 0}
+2026-06-12 13:03:56 [INFO   ] 
+2026-06-12 13:03:56 [INFO   ] ==============================================================
+2026-06-12 13:03:56 [INFO   ]   RUN SUMMARY
+2026-06-12 13:03:56 [INFO   ] ==============================================================
+2026-06-12 13:03:56 [INFO   ]   Scrape (this run)
+2026-06-12 13:03:56 [INFO   ]     Companies scraped:        5
+2026-06-12 13:03:56 [INFO   ]     Companies with email:     5
+2026-06-12 13:03:56 [INFO   ]     Emails scraped/found:     11
+2026-06-12 13:03:56 [INFO   ]     Search queries run:       1
+2026-06-12 13:03:56 [INFO   ]     Browser used:             chrome
+2026-06-12 13:03:56 [INFO   ]   Replies (this run)
+2026-06-12 13:03:56 [INFO   ]     Reply check:              skipped
+2026-06-12 13:03:56 [INFO   ]   Send (this run)
+2026-06-12 13:03:56 [INFO   ]     Emails sent:              2
+2026-06-12 13:03:56 [INFO   ]     Send failed:              0
+2026-06-12 13:03:56 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-12 13:03:56 [INFO   ]   Database totals (all runs)
+2026-06-12 13:03:56 [INFO   ]     Companies in database:    107
+2026-06-12 13:03:56 [INFO   ]     Companies with email:     94
+2026-06-12 13:03:56 [INFO   ]     Emails scraped (total):   259
+2026-06-12 13:03:56 [INFO   ]     Emails sent (total):      46
+2026-06-12 13:03:56 [INFO   ]     Replies forwarded (total): 0
+2026-06-12 13:03:56 [INFO   ] ==============================================================
+2026-06-12 13:03:56 [INFO   ] 

@@ -112,7 +112,7 @@ Controls sender identity, email subject, and **how many emails to send per execu
 | `email` | Replaces `{{Email}}` in the signature |
 | `website` | Fallback if `signature_links` is empty |
 | `signature_links` | Array of `{ "label", "url" }` — all clickable footer links (website, CV, profile, etc.) |
-| `email_subject` | SMTP subject line |
+| `email_subject` | Subject base line; each send appends ` with {domain}` (e.g. `...opportunity with croyez.in`) |
 | `emails_per_run` | **Max emails sent in one `send` or `run` execution** (default: 2) |
 
 Override at runtime with `--limit` (`send`) or `--send-limit` (`run`).
@@ -187,6 +187,32 @@ All signature links (website, CV, detailed profile, LinkedIn, etc.) are defined 
 
 ---
 
+## One-click run (Windows)
+
+Double-click or run:
+
+```
+send_partnership_emails.bat
+```
+
+Full end-to-end each time:
+
+1. **Scrape** — browser discovers companies and emails (all industries, random order)
+2. **Check replies** — forwards human replies to `forward_to` in `sender_config.json`
+3. **Send** — up to `emails_per_run` new outreach emails
+
+Main tunables in `sender_config.json`:
+
+| Setting | Default | Meaning |
+|---------|---------|---------|
+| `emails_per_run` | 2 | Send target per run |
+| `max_companies_per_run` | 50 | Max sites to scrape (keeps going when early sites have no email) |
+| `max_queries_per_run` | 20 | Cap on Google search rounds per run |
+
+Scrape stops early once **2 companies with email** are found, or after **50** companies tried — whichever comes first.
+
+---
+
 ## Commands
 
 ```powershell
@@ -211,12 +237,72 @@ python immigration_pipeline.py scrape --industry edtech --max-companies 10
 # Preview messages without sending
 python immigration_pipeline.py send --dry-run
 
-# Send emails (capped by emails_per_run in sender_config.json)
+# Check inboxes and forward human replies (runs automatically before send)
+python immigration_pipeline.py check-replies
+
+# Send emails (checks replies first, then sends — capped by emails_per_run)
 python immigration_pipeline.py send
 
 # Scrape then send in one run
 python immigration_pipeline.py run --max-companies 15
 ```
+
+### Send more emails per run
+
+Default is **2** emails per execution (`emails_per_run` in `sender_config.json`). Use any of the following.
+
+**One-time override (no config edit)** — good for a single larger batch:
+
+```powershell
+# Full pipeline: scrape → check replies → send up to 10 emails
+python immigration_pipeline.py run --send-limit 10
+
+# Send only (skip scrape): up to 10 emails from the existing queue
+python immigration_pipeline.py send --limit 10
+
+# Preview 10 messages without SMTP
+python immigration_pipeline.py send --dry-run --limit 10
+
+# Larger send + scrape more sites / search rounds
+python immigration_pipeline.py run --send-limit 10 --max-companies 80 --max-queries 30 --browser auto --region India
+```
+
+**Permanent default** — edit `sender_config.json`:
+
+```json
+"emails_per_run": 10
+```
+
+Then a plain `run` or `send` uses 10. This value also controls scrape **early stop**: scraping stops once that many companies with email are found (or after `max_companies_per_run`, whichever comes first).
+
+| Goal | Command or setting |
+|------|-------------------|
+| Send 5 this run only | `python immigration_pipeline.py run --send-limit 5` |
+| Send 20 this run only | `python immigration_pipeline.py send --limit 20` |
+| Always send 10 every run | Set `"emails_per_run": 10` in `sender_config.json` |
+| Scrape longer before send | Add `--max-companies 100 --max-queries 30` |
+| Skip inbox check when sending | Add `--skip-replies` to `send` or `run` |
+
+**Batch file** — pass limits on the command line (or edit JSON):
+
+```powershell
+python immigration_pipeline.py run --send-limit 10 --max-companies 80 --browser auto --region India
+```
+
+To bake defaults into `send_partnership_emails.bat`, set `emails_per_run` in `sender_config.json` (the bat reads JSON; it does not set send count itself).
+
+### Reply forwarding
+
+Before each `send` or `run`, the pipeline scans Gmail inboxes for **human replies** to your outreach and forwards them to `forward_to` in `sender_config.json` (default: `sandeepjain200019@gmail.com`).
+
+Detection uses layered signals (not `Re:` alone):
+
+1. **Message-ID thread match** — `In-Reply-To` / `References` matches a stored outbound `Message-ID`
+2. **Sent recipient + reply headers** — from address you mailed + threading headers
+3. **Campaign subject list** — secondary signal; subjects accumulate in `campaign_subjects` + SQLite as you send
+4. **NVIDIA** — borderline cases only
+
+Skip with `--skip-replies` on `send` / `run`.
 
 ### Useful flags
 
@@ -231,6 +317,8 @@ python immigration_pipeline.py run --max-companies 15
 | `scrape` | `--browser auto\|chrome\|chromium\|firefox` | Browser choice (default: auto) |
 | `scrape` | `--no-seed` | Do not auto-generate queries if queue is empty |
 | `scrape` | `--no-nvidia-seed` | Auto-seed from `industries.json` only |
+| `check-replies` | `--no-nvidia` | Skip NVIDIA for borderline replies |
+| `send` | `--skip-replies` | Do not scan inbox before sending |
 | `send` | `--dry-run` | Build messages only; no SMTP |
 | `send` | `--limit N` | Override `emails_per_run` for this run |
 | `send` | `--no-nvidia-praise` | Use a static praise line instead of NVIDIA |
@@ -313,7 +401,7 @@ logs/immigration_YYYY-MM-DD_HH-MM-SS.log
 | SMTP auth error | Regenerate Gmail App Password in `email_config1001.json` |
 | No emails found | Normal for some sites; pipeline moves on |
 | Google consent / CAPTCHA | Complete manually in the visible browser window |
-| Want more emails per run | Increase `emails_per_run` in `sender_config.json` |
+| Want more emails per run | `run --send-limit N` or `send --limit N`, or raise `emails_per_run` in `sender_config.json` |
 
 ---
 
@@ -348,3 +436,9 @@ python immigration_pipeline.py send
 ```
 
 Each `send` run sends at most `emails_per_run` new emails (2 by default). Run again later to continue through the queue.
+
+```powershell
+# Example: send 10 in one go (after dry-run looks good)
+python immigration_pipeline.py send --dry-run --limit 10
+python immigration_pipeline.py send --limit 10
+```

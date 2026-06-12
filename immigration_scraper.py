@@ -16,8 +16,10 @@ from nvidia_llm import generate_queries_for_all_industries, generate_search_quer
 
 logger = logging.getLogger(__name__)
 
-PAGE_TIMEOUT_MS = 180_000
-NAV_TIMEOUT_MS = 180_000
+SITE_HARD_LIMIT_SEC = 180
+GOTO_TIMEOUT_MS = 60_000
+STEP_LOAD_TIMEOUT_MS = 20_000
+PAGE_DEFAULT_TIMEOUT_MS = 45_000
 SEARCH_RESULT_LIMIT = 12
 
 EMAIL_RE = re.compile(
@@ -137,30 +139,91 @@ async def launch_context(playwright: Playwright, browser: str) -> tuple[BrowserC
     return context, "firefox"
 
 
-async def dismiss_cookie_banners(page: Page) -> None:
-    candidates = [
-        'button:has-text("Accept")',
-        'button:has-text("Accept all")',
-        'button:has-text("I agree")',
-        'button:has-text("Got it")',
-        'button:has-text("OK")',
-    ]
-    for sel in candidates:
+POPUP_CLOSE_SELECTORS = [
+    # Modal / newsletter / chat pop-up close buttons
+    'button[aria-label="Close"]',
+    'button[aria-label="close"]',
+    'button[aria-label="Dismiss"]',
+    'button[aria-label="Dismiss dialog"]',
+    '[aria-label="Close"]',
+    '[aria-label="Dismiss"]',
+    '[data-dismiss="modal"]',
+    '[data-testid="close"]',
+    '[data-testid="close-button"]',
+    "button.close",
+    ".modal-close",
+    ".popup-close",
+    ".dialog-close",
+    ".fancybox-close",
+    '[role="dialog"] button[aria-label*="close" i]',
+    '[role="dialog"] button[aria-label*="dismiss" i]',
+    'button:has-text("×")',
+    'button:has-text("✕")',
+    'button:has-text("Close")',
+    'button:has-text("No thanks")',
+    'button:has-text("No Thanks")',
+    'button:has-text("Not now")',
+    'button:has-text("Not Now")',
+    'button:has-text("Maybe later")',
+    'button:has-text("Skip")',
+    'button:has-text("Continue without accepting")',
+    'button:has-text("Decline")',
+    'a.close',
+    'a.popup-close',
+    # Cookie / consent banners (often overlay the page like a pop-up)
+    'button:has-text("Accept")',
+    'button:has-text("Accept all")',
+    'button:has-text("Accept All")',
+    'button:has-text("I agree")',
+    'button:has-text("I Agree")',
+    'button:has-text("Got it")',
+    'button:has-text("OK")',
+    'button:has-text("Allow all")',
+    'button:has-text("Allow All")',
+]
+
+
+async def dismiss_page_obstructions(page: Page, *, max_rounds: int = 4) -> int:
+    """
+    Close landing-page pop-ups, modals, and cookie banners.
+    Runs multiple rounds because some sites stack overlays.
+    Returns approximate number of dismiss actions taken.
+    """
+    closed = 0
+    for _ in range(max_rounds):
+        closed_this_round = False
+
         try:
-            btn = page.locator(sel).first
-            if await btn.is_visible(timeout=1500):
-                await btn.click(timeout=3000)
-                await page.wait_for_timeout(500)
-                return
+            await page.keyboard.press("Escape")
+            await page.wait_for_timeout(250)
         except Exception:
-            continue
+            pass
+
+        for sel in POPUP_CLOSE_SELECTORS:
+            try:
+                btn = page.locator(sel).first
+                if not await btn.is_visible(timeout=600):
+                    continue
+                await btn.click(timeout=2500)
+                await page.wait_for_timeout(400)
+                closed += 1
+                closed_this_round = True
+                logger.info("  Closed pop-up/obstruction: %s", sel)
+                break
+            except Exception:
+                continue
+
+        if not closed_this_round:
+            break
+
+    return closed
 
 
 async def google_search_urls(page: Page, query: str, limit: int = SEARCH_RESULT_LIMIT) -> list[dict]:
     url = f"https://www.google.com/search?q={quote_plus(query)}&num={limit}"
     logger.info("Google search: %s", query)
-    await page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
-    await dismiss_cookie_banners(page)
+    await page.goto(url, wait_until="domcontentloaded", timeout=GOTO_TIMEOUT_MS)
+    await dismiss_page_obstructions(page)
     await page.wait_for_timeout(2000)
 
     results: list[dict] = []
@@ -191,12 +254,13 @@ async def google_search_urls(page: Page, query: str, limit: int = SEARCH_RESULT_
 
 
 async def click_contact_if_needed(page: Page) -> str | None:
+    await dismiss_page_obstructions(page, max_rounds=2)
     for sel in CONTACT_SELECTORS:
         try:
             loc = page.locator(sel).first
             if await loc.is_visible(timeout=2000):
                 await loc.click(timeout=10000)
-                await page.wait_for_load_state("domcontentloaded", timeout=NAV_TIMEOUT_MS)
+                await page.wait_for_load_state("domcontentloaded", timeout=GOTO_TIMEOUT_MS)
                 await page.wait_for_timeout(1500)
                 return page.url
         except Exception:
@@ -211,18 +275,28 @@ async def extract_emails_from_page(page: Page) -> tuple[list[str], str]:
     return emails, page.url
 
 
-async def scrape_company_emails(page: Page, website: str) -> tuple[list[str], str, str]:
-    notes = ""
+async def _abort_slow_page(page: Page) -> None:
+    """Navigate away from a hung page so the next site can load."""
     try:
-        await page.goto(website, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
+        await page.goto("about:blank", wait_until="commit", timeout=5000)
+    except Exception:
+        pass
+
+
+async def _scrape_company_emails_impl(page: Page, website: str) -> tuple[list[str], str, str]:
+    notes = ""
+    source = website
+    try:
+        await page.goto(website, wait_until="domcontentloaded", timeout=GOTO_TIMEOUT_MS)
     except Exception as exc:
         return [], website, f"navigation_failed: {exc}"
 
-    await dismiss_cookie_banners(page)
+    await dismiss_page_obstructions(page)
     try:
-        await page.wait_for_load_state("networkidle", timeout=PAGE_TIMEOUT_MS)
+        await page.wait_for_load_state("networkidle", timeout=STEP_LOAD_TIMEOUT_MS)
     except Exception:
-        await page.wait_for_timeout(5000)
+        await page.wait_for_timeout(3000)
+    await dismiss_page_obstructions(page)
 
     emails, source = await extract_emails_from_page(page)
     if emails:
@@ -230,10 +304,12 @@ async def scrape_company_emails(page: Page, website: str) -> tuple[list[str], st
 
     contact_url = await click_contact_if_needed(page)
     if contact_url:
+        await dismiss_page_obstructions(page)
         try:
-            await page.wait_for_load_state("networkidle", timeout=PAGE_TIMEOUT_MS)
+            await page.wait_for_load_state("networkidle", timeout=STEP_LOAD_TIMEOUT_MS)
         except Exception:
-            await page.wait_for_timeout(3000)
+            await page.wait_for_timeout(2000)
+        await dismiss_page_obstructions(page)
         emails, source = await extract_emails_from_page(page)
         if emails:
             return emails, source, notes
@@ -243,6 +319,30 @@ async def scrape_company_emails(page: Page, website: str) -> tuple[list[str], st
     else:
         notes = "at_symbol_but_no_valid_email"
     return [], source, notes
+
+
+async def scrape_company_emails(page: Page, website: str) -> tuple[list[str], str, str]:
+    """
+    Scrape one company site with a hard wall-clock cap (3 minutes).
+    Moves on to the next site if the cap is exceeded.
+    """
+    try:
+        return await asyncio.wait_for(
+            _scrape_company_emails_impl(page, website),
+            timeout=SITE_HARD_LIMIT_SEC,
+        )
+    except asyncio.TimeoutError:
+        logger.warning(
+            "Hard timeout (%ss) — moving on: %s",
+            SITE_HARD_LIMIT_SEC,
+            website,
+        )
+        await _abort_slow_page(page)
+        return [], website, f"site_timeout_{SITE_HARD_LIMIT_SEC}s"
+    except Exception as exc:
+        logger.warning("Scrape error for %s: %s", website, exc)
+        await _abort_slow_page(page)
+        return [], website, f"scrape_error: {exc}"
 
 
 def _auto_seed_queries(
@@ -285,8 +385,9 @@ def _auto_seed_queries(
 async def run_scrape(
     db: ImmigrationDB,
     *,
-    max_companies: int = 20,
-    max_queries: int = 5,
+    max_companies: int = 50,
+    max_queries: int = 20,
+    email_target: int = 2,
     browser: str = "auto",
     region: str | None = None,
     industry: str | None = None,
@@ -294,13 +395,22 @@ async def run_scrape(
     use_nvidia_seed: bool = True,
 ) -> dict:
     region = region or default_region()
+    email_target = max(1, int(email_target or 2))
     stats = {
         "queries_run": 0,
         "companies_scraped": 0,
+        "companies_with_email": 0,
         "emails_found": 0,
+        "email_target": email_target,
+        "max_companies": max_companies,
         "browser_used": "",
         "industry_filter": industry or "all",
     }
+    logger.info(
+        "Scrape targets: up to %s companies, stop early after %s company(ies) with email",
+        max_companies,
+        email_target,
+    )
 
     if not industry:
         logger.info(
@@ -323,12 +433,35 @@ async def run_scrape(
         stats["browser_used"] = browser_used
         logger.info("Using browser: %s", browser_used)
         page = context.pages[0] if context.pages else await context.new_page()
-        page.set_default_timeout(PAGE_TIMEOUT_MS)
+        page.set_default_timeout(PAGE_DEFAULT_TIMEOUT_MS)
 
         queries_done = 0
-        while queries_done < max_queries and stats["companies_scraped"] < max_companies:
+        while stats["companies_scraped"] < max_companies:
+            if stats["companies_with_email"] >= email_target:
+                logger.info(
+                    "Email target reached (%s companies with email, goal %s) — stopping scrape.",
+                    stats["companies_with_email"],
+                    email_target,
+                )
+                break
+
+            if queries_done >= max_queries:
+                logger.info("Reached max_queries cap (%s) for this run.", max_queries)
+                break
+
             row = db.next_pending_query(industry)
+            if not row and seed_keywords:
+                added = _auto_seed_queries(
+                    db,
+                    region=region,
+                    industry=industry,
+                    use_nvidia=use_nvidia_seed,
+                )
+                if added:
+                    logger.info("Seeded %s more search query(ies) to continue scraping.", added)
+                row = db.next_pending_query(industry)
             if not row:
+                logger.info("No more search queries available.")
                 break
 
             query_id = int(row["id"])
@@ -360,6 +493,7 @@ async def run_scrape(
                 logger.info("Scraping %s (%s)", result["title"], result["url"])
                 emails, source_page, notes = await scrape_company_emails(page, result["url"])
                 if emails:
+                    stats["companies_with_email"] += 1
                     for email in emails:
                         if db.add_company_email(company_id, email, source_page):
                             stats["emails_found"] += 1
