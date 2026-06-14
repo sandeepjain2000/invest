@@ -34,7 +34,9 @@ from immigration_sender import (
     get_emails_per_run,
     get_max_companies_per_run,
     get_max_queries_per_run,
+    load_sender_config,
     run_send,
+    run_test_send,
 )
 from industries import (
     default_region,
@@ -300,8 +302,15 @@ def print_execution_summary(
 
 
 def _maybe_check_replies(db: ImmigrationDB, args: argparse.Namespace) -> dict:
-    if getattr(args, "skip_replies", False) or getattr(args, "dry_run", False):
-        return {"skipped": True, "scanned": 0, "forwarded": 0}
+    skipped = {"skipped": True, "scanned": 0, "forwarded": 0}
+    if getattr(args, "dry_run", False):
+        return skipped
+    if getattr(args, "skip_replies", False):
+        return skipped
+    if not getattr(args, "check_replies", False) and not load_sender_config().get(
+        "check_replies_before_send", False
+    ):
+        return skipped
     logger.info("=== Checking inboxes for human replies ===")
     reply_stats = run_check_replies(
         db,
@@ -325,12 +334,20 @@ def cmd_check_replies(args: argparse.Namespace, db: ImmigrationDB) -> int:
 def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
     with prevent_windows_sleep():
         reply_stats = _maybe_check_replies(db, args)
-        stats = run_send(
-            db,
-            limit=args.limit,
-            use_nvidia_praise=not args.no_nvidia_praise,
-            dry_run=args.dry_run,
-        )
+        if getattr(args, "test_to", None):
+            stats = run_test_send(
+                db,
+                test_to=args.test_to,
+                use_nvidia_praise=not args.no_nvidia_praise,
+                dry_run=args.dry_run,
+            )
+        else:
+            stats = run_send(
+                db,
+                limit=args.limit,
+                use_nvidia_praise=not args.no_nvidia_praise,
+                dry_run=args.dry_run,
+            )
     logger.info("Send complete: %s", stats)
     print_execution_summary(reply_stats=reply_stats, send_stats=stats, db=db)
     if stats.get("error"):
@@ -401,7 +418,17 @@ def build_parser() -> argparse.ArgumentParser:
     send.add_argument("--limit", type=int, default=None, help="Override emails_per_run")
     send.add_argument("--no-nvidia-praise", action="store_true")
     send.add_argument("--dry-run", action="store_true")
+    send.add_argument(
+        "--test-to",
+        metavar="EMAIL",
+        help="Send one test email to this address (last scraped company template); does not update database",
+    )
     send.add_argument("--skip-replies", action="store_true", help="Do not check inbox before send")
+    send.add_argument(
+        "--check-replies",
+        action="store_true",
+        help="Scan inbox and forward replies before send (off by default; Brevo single sender)",
+    )
     send.add_argument("--no-nvidia-replies", action="store_true", help="Skip NVIDIA for borderline replies")
 
     run = sub.add_parser("run", help="Scrape then send in one run")
@@ -414,6 +441,11 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--no-nvidia-seed", action="store_true")
     run.add_argument("--no-nvidia-praise", action="store_true")
     run.add_argument("--skip-replies", action="store_true")
+    run.add_argument(
+        "--check-replies",
+        action="store_true",
+        help="Scan inbox and forward replies before send (off by default)",
+    )
     run.add_argument("--no-nvidia-replies", action="store_true")
     _add_industry_arg(run)
 

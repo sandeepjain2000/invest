@@ -473,6 +473,17 @@ class ImmigrationDB:
         ).fetchone()
         return row is not None
 
+    def last_scraped_company(self) -> dict[str, Any] | None:
+        row = self.conn.execute(
+            """
+            SELECT id, name, domain, website, industry, scraped_at
+            FROM companies
+            ORDER BY scraped_at DESC, id DESC
+            LIMIT 1
+            """
+        ).fetchone()
+        return dict(row) if row else None
+
     def summary(self) -> dict[str, int]:
         out: dict[str, int] = {}
         for label, sql in {

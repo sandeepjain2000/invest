@@ -1,0 +1,104 @@
+2026-06-13 16:25:46 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_16-25-46.log
+2026-06-13 16:25:46 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-13 16:25:46 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-13 16:25:47 [INFO   ] Using browser: chrome
+2026-06-13 16:25:47 [INFO   ] Industry: hrtech | Query: HRTech recruitment software India
+2026-06-13 16:25:47 [INFO   ] Google search: HRTech recruitment software India
+2026-06-13 16:25:54 [INFO   ]   Found 12 unique result(s).
+2026-06-13 16:25:54 [INFO   ] Scraping In Top10 HR Software in India (https://explore.darwinbox.com/lp/cloud/in/hr-software)
+2026-06-13 16:25:59 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:25:59 [INFO   ] Scraping Best HR Software Application (https://www.keka.com/lp/hrms-india)
+2026-06-13 16:26:06 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:26:06 [INFO   ] Scraping #1 AI Recruitment Software (https://www.manatal.com/)
+2026-06-13 16:26:12 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:26:12 [INFO   ] Scraping 7 Indian HR Tech Tools to Automate Recruitment Workflow ... (https://hrmantra.com/about/07/blog/408/7_indian_hr_tech_tools_2026_recruitment_workflow)
+2026-06-13 16:26:17 [INFO   ]   Email found: sales@hrmantra.com
+2026-06-13 16:26:17 [INFO   ] Scraping Top 10 Recruitment Management Software In India For 2026 (https://hrone.cloud/blog/top-recruitment-management-software-in-india/)
+2026-06-13 16:26:21 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:26:22 [INFO   ]   Email found: connect@hrone.cloud
+2026-06-13 16:26:22 [INFO   ] Scraping Top 10 Recruitment Management Software In India (https://savvyhrms.com/top-recruitment-management-software-in-india/)
+2026-06-13 16:26:27 [INFO   ]   Email found: hcm@savvyhrms.com
+2026-06-13 16:26:27 [INFO   ]   Email found: sales@savvyhrms.com
+2026-06-13 16:26:27 [INFO   ] Scraping Top HR Tech Companies in India to Watch in 2026 (https://www.mewurk.com/blog/top-hr-tech-companies-india?srsltid=AfmBOoplUwMQ8RhLlc_YMHn9P_NaXTBqW81MsKbtnpf82zuyaieZlsIc)
+2026-06-13 16:26:30 [INFO   ]   Email found: sales@mewurk.com
+2026-06-13 16:26:30 [INFO   ]   Email found: support@mewurk.com
+2026-06-13 16:26:30 [INFO   ] Scraping Top 21 Recruitment Software in India (2026) (https://www.imocha.io/blog/recruitment-software-in-india)
+2026-06-13 16:26:34 [INFO   ]   Closed pop-up/obstruction: [role="dialog"] button[aria-label*="dismiss" i]
+2026-06-13 16:26:35 [INFO   ]   Email found: contact@imocha.io
+2026-06-13 16:26:35 [INFO   ] Scraping Which 7 Best HR Tech Tools in India Scale Mid-Market ... (https://worxmate.ai/resources/articles/best-hr-tech-tools-in-india/)
+2026-06-13 16:27:00 [INFO   ]   Email found: info@worxmate.ai
+2026-06-13 16:27:00 [INFO   ]   Email found: support@worxmate.ai
+2026-06-13 16:27:00 [INFO   ] Scraping HR Tech Solutions for Tech Hiring & Management (https://www.ajackus.com/industries/hrtech/)
+2026-06-13 16:27:09 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:27:09 [INFO   ] Scraping Best Recruitment Software for IT Services in India (2026) (https://www.thehirehub.ai/blog/recruitment-software-for-it-services-india)
+2026-06-13 16:27:13 [INFO   ]   Email found: info@thehirehub.ai
+2026-06-13 16:27:13 [INFO   ] Scraping Best Recruitment software in India (https://ihitstech.com/recruitment-software)
+2026-06-13 16:27:17 [INFO   ]   Email found: sales@ihitstech.com
+2026-06-13 16:27:17 [INFO   ]   Email found: denny@ihitstech.com
+2026-06-13 16:27:17 [INFO   ]   Email found: sales@ihitsindia.com
+2026-06-13 16:27:17 [INFO   ]   Email found: vpmenon@ihitsglobal.com
+2026-06-13 16:27:17 [INFO   ] Industry: hrtech | Query: campus hiring technology platform India
+2026-06-13 16:27:17 [INFO   ] Google search: campus hiring technology platform India
+2026-06-13 16:27:21 [INFO   ]   Found 10 unique result(s).
+2026-06-13 16:27:21 [INFO   ] Scraping Superset (https://joinsuperset.com/)
+2026-06-13 16:27:27 [INFO   ]   Email found: sales@joinsuperset.com
+2026-06-13 16:27:27 [INFO   ] Scraping SkillsConnect (https://skillsconnect.in/)
+2026-06-13 16:27:33 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:27:33 [INFO   ]   Email found: support@skillsconnect.in
+2026-06-13 16:27:33 [INFO   ] Scraping Campus Placement & Hiring Automation Platform India (https://futuremug.com/en-in/campus-placement-hiring-platform-india)
+2026-06-13 16:27:40 [INFO   ]   Email found: info@futuremug.com
+2026-06-13 16:27:40 [INFO   ] Scraping Campus Hiring Solution (https://wheebox.com/campus-hiring.obj)
+2026-06-13 16:27:44 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:27:48 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:27:48 [INFO   ] Scraping Top 5 Campus Engagement Platforms For Smarter ... (https://unstop.com/blog/top-campus-engagement-platforms)
+2026-06-13 16:27:50 [INFO   ]   Email found: coffee@unstop.com
+2026-06-13 16:27:50 [INFO   ]   Email found: collection@infegy.com
+2026-06-13 16:27:50 [INFO   ] Scraping Campus Hiring (https://www.pareekshn.com/campus-hiring.html)
+2026-06-13 16:27:51 [INFO   ]   Email found: info@pareekshn.com
+2026-06-13 16:27:51 [INFO   ] Skip duplicate domain: imocha.io
+2026-06-13 16:27:51 [INFO   ] Scraping Powerful Campus Hiring Platform with Simplicity (https://kamphire.in/solutions)
+2026-06-13 16:27:53 [INFO   ]   Email found: sales@kamphire.in
+2026-06-13 16:27:53 [INFO   ] Skip duplicate domain: hiremee.co.in
+2026-06-13 16:27:53 [INFO   ] Scraping Campus Hiring & Recruitment : Supercharge Your Tech ... (https://www.hcltech.com/careers/campus-hiring)
+2026-06-13 16:28:05 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:28:06 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:28:06 [INFO   ] Email target reached (14 companies with email, goal 10) — stopping scrape.
+2026-06-13 16:28:07 [INFO   ] Scrape complete: {'queries_run': 2, 'companies_scraped': 20, 'companies_with_email': 14, 'emails_found': 21, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-13 16:28:07 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\SmallNotFrequent\Scrape_aishe\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-13 16:28:07 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-13 16:28:07 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 16:28:09 [INFO   ] SENT (Brevo) -> info@k7intl.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606131058.24763736163@smtp-relay.mailin.fr>
+2026-06-13 16:28:26 [INFO   ] SENT (Brevo) -> info@kcoverseas.com (10 Best Study Abroad Consultants in India) | Exploring a potential partnership opportunity with yocket.com | messageId=<202606131058.87948153129@smtp-relay.mailin.fr>
+2026-06-13 16:28:33 [INFO   ] SENT (Brevo) -> info@worxmate.ai (Which 7 Best HR Tech Tools in India Scale Mid-Market ...) | Exploring a potential partnership opportunity with worxmate.ai | messageId=<202606131058.97980721931@smtp-relay.mailin.fr>
+2026-06-13 16:28:40 [INFO   ] SENT (Brevo) -> info@thehirehub.ai (Best Recruitment Software for IT Services in India (2026)) | Exploring a potential partnership opportunity with thehirehub.ai | messageId=<202606131058.77485802355@smtp-relay.mailin.fr>
+2026-06-13 16:28:51 [INFO   ] SENT (Brevo) -> info@futuremug.com (Campus Placement & Hiring Automation Platform India) | Exploring a potential partnership opportunity with futuremug.com | messageId=<202606131058.32063094157@smtp-relay.mailin.fr>
+2026-06-13 16:29:18 [INFO   ] SENT (Brevo) -> info@pareekshn.com (Campus Hiring) | Exploring a potential partnership opportunity with pareekshn.com | messageId=<202606131059.46206659334@smtp-relay.mailin.fr>
+2026-06-13 16:29:35 [INFO   ] SENT (Brevo) -> contact@imocha.io (Top 21 Recruitment Software in India (2026)) | Exploring a potential partnership opportunity with imocha.io | messageId=<202606131059.75492828593@smtp-relay.mailin.fr>
+2026-06-13 16:29:42 [INFO   ] SENT (Brevo) -> hello@fullstackacademy.com (FAQs) | Exploring a potential partnership opportunity with fullstackacademy.com | messageId=<202606131059.86235477916@smtp-relay.mailin.fr>
+2026-06-13 16:29:50 [INFO   ] SENT (Brevo) -> hello@mindler.com (Career Assessment Test) | Exploring a potential partnership opportunity with mindler.com | messageId=<202606131059.18304827460@smtp-relay.mailin.fr>
+2026-06-13 16:30:01 [INFO   ] SENT (Brevo) -> hello@vaave.com (Top Alumni Networks in India: A Guide to the Best and Most ...) | Exploring a potential partnership opportunity with vaave.com | messageId=<202606131100.89861843041@smtp-relay.mailin.fr>
+2026-06-13 16:30:06 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-13 16:30:06 [INFO   ] 
+2026-06-13 16:30:06 [INFO   ] ==============================================================
+2026-06-13 16:30:06 [INFO   ]   RUN SUMMARY
+2026-06-13 16:30:06 [INFO   ] ==============================================================
+2026-06-13 16:30:06 [INFO   ]   Scrape (this run)
+2026-06-13 16:30:06 [INFO   ]     Companies scraped:        20
+2026-06-13 16:30:06 [INFO   ]     Companies with email:     14
+2026-06-13 16:30:06 [INFO   ]     Emails scraped/found:     21
+2026-06-13 16:30:06 [INFO   ]     Search queries run:       2
+2026-06-13 16:30:06 [INFO   ]     Browser used:             chrome
+2026-06-13 16:30:06 [INFO   ]   Replies (this run)
+2026-06-13 16:30:06 [INFO   ]     Reply check:              skipped
+2026-06-13 16:30:06 [INFO   ]   Send (this run)
+2026-06-13 16:30:06 [INFO   ]     Emails sent:              10
+2026-06-13 16:30:06 [INFO   ]     Send failed:              0
+2026-06-13 16:30:06 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 16:30:06 [INFO   ]   Database totals (all runs)
+2026-06-13 16:30:06 [INFO   ]     Companies in database:    220
+2026-06-13 16:30:06 [INFO   ]     Companies with email:     169
+2026-06-13 16:30:06 [INFO   ]     Emails scraped (total):   2206
+2026-06-13 16:30:06 [INFO   ]     Emails sent (total):      110
+2026-06-13 16:30:06 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 16:30:06 [INFO   ] ==============================================================
+2026-06-13 16:30:06 [INFO   ] 

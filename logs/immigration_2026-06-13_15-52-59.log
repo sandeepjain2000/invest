@@ -1,0 +1,24 @@
+2026-06-13 15:52:59 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_15-52-59.log
+2026-06-13 15:52:59 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\SmallNotFrequent\Scrape_aishe\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-13 15:52:59 [INFO   ] Sending up to 1 email(s) this run (emails_per_run).
+2026-06-13 15:52:59 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 15:53:02 [INFO   ] DRY-RUN would send to info@firstacademy.in (IDP's Referral Partners in India) via brevo_api from sandeep.jain@appsflow.cloud | praise: IDP's Referral Partners in India have consistently demonstrated exceptional expe
+2026-06-13 15:53:02 [INFO   ] Send complete: {'sent': 0, 'failed': 0, 'skipped': 1}
+2026-06-13 15:53:02 [INFO   ] 
+2026-06-13 15:53:02 [INFO   ] ==============================================================
+2026-06-13 15:53:02 [INFO   ]   RUN SUMMARY
+2026-06-13 15:53:02 [INFO   ] ==============================================================
+2026-06-13 15:53:02 [INFO   ]   Replies (this run)
+2026-06-13 15:53:02 [INFO   ]     Reply check:              skipped
+2026-06-13 15:53:02 [INFO   ]   Send (this run)
+2026-06-13 15:53:02 [INFO   ]     Emails sent:              0
+2026-06-13 15:53:02 [INFO   ]     Send failed:              0
+2026-06-13 15:53:02 [INFO   ]     Skipped (dry-run/already): 1
+2026-06-13 15:53:02 [INFO   ]   Database totals (all runs)
+2026-06-13 15:53:02 [INFO   ]     Companies in database:    161
+2026-06-13 15:53:02 [INFO   ]     Companies with email:     132
+2026-06-13 15:53:02 [INFO   ]     Emails scraped (total):   2125
+2026-06-13 15:53:02 [INFO   ]     Emails sent (total):      70
+2026-06-13 15:53:02 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 15:53:02 [INFO   ] ==============================================================
+2026-06-13 15:53:02 [INFO   ] 

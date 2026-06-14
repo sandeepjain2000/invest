@@ -1,0 +1,24 @@
+2026-06-13 21:06:33 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_21-06-33.log
+2026-06-13 21:06:33 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-13 21:06:33 [INFO   ] Sending up to 1 email(s) this run (emails_per_run).
+2026-06-13 21:06:33 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 21:06:39 [INFO   ] DRY-RUN would send to info@ieltsband7.com (IDP's Referral Partners in India) via brevo_api from sandeep.jain@appsflow.cloud | praise: IDP's Referral Partners in India have consistently demonstrated exceptional expe
+2026-06-13 21:06:39 [INFO   ] Send complete: {'sent': 0, 'failed': 0, 'skipped': 1}
+2026-06-13 21:06:39 [INFO   ] 
+2026-06-13 21:06:39 [INFO   ] ==============================================================
+2026-06-13 21:06:39 [INFO   ]   RUN SUMMARY
+2026-06-13 21:06:39 [INFO   ] ==============================================================
+2026-06-13 21:06:39 [INFO   ]   Replies (this run)
+2026-06-13 21:06:39 [INFO   ]     Reply check:              skipped
+2026-06-13 21:06:39 [INFO   ]   Send (this run)
+2026-06-13 21:06:39 [INFO   ]     Emails sent:              0
+2026-06-13 21:06:39 [INFO   ]     Send failed:              0
+2026-06-13 21:06:39 [INFO   ]     Skipped (dry-run/already): 1
+2026-06-13 21:06:39 [INFO   ]   Database totals (all runs)
+2026-06-13 21:06:39 [INFO   ]     Companies in database:    220
+2026-06-13 21:06:39 [INFO   ]     Companies with email:     169
+2026-06-13 21:06:39 [INFO   ]     Emails scraped (total):   2206
+2026-06-13 21:06:39 [INFO   ]     Emails sent (total):      110
+2026-06-13 21:06:39 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 21:06:39 [INFO   ] ==============================================================
+2026-06-13 21:06:39 [INFO   ] 

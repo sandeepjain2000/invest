@@ -1,0 +1,22 @@
+2026-06-13 21:12:02 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_21-12-02.log
+2026-06-13 21:12:02 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 21:12:08 [INFO   ] TEST SENT (Brevo) -> sandeepjain200019@gmail.com | company: Campus Hiring & Recruitment : Supercharge Your Tech ... (hcltech.com) | subject: Exploring a potential partnership opportunity with hcltech.com | messageId=<202606131542.64094552168@smtp-relay.mailin.fr>
+2026-06-13 21:12:08 [INFO   ] Send complete: {'sent': 1, 'failed': 0, 'skipped': 0, 'test_to': 'sandeepjain200019@gmail.com', 'company_name': 'Campus Hiring & Recruitment : Supercharge Your Tech ...', 'domain': 'hcltech.com', 'subject': 'Exploring a potential partnership opportunity with hcltech.com', 'message_id': '<202606131542.64094552168@smtp-relay.mailin.fr>'}
+2026-06-13 21:12:08 [INFO   ] 
+2026-06-13 21:12:08 [INFO   ] ==============================================================
+2026-06-13 21:12:08 [INFO   ]   RUN SUMMARY
+2026-06-13 21:12:08 [INFO   ] ==============================================================
+2026-06-13 21:12:08 [INFO   ]   Replies (this run)
+2026-06-13 21:12:08 [INFO   ]     Reply check:              skipped
+2026-06-13 21:12:08 [INFO   ]   Send (this run)
+2026-06-13 21:12:08 [INFO   ]     Emails sent:              1
+2026-06-13 21:12:08 [INFO   ]     Send failed:              0
+2026-06-13 21:12:08 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 21:12:08 [INFO   ]   Database totals (all runs)
+2026-06-13 21:12:08 [INFO   ]     Companies in database:    220
+2026-06-13 21:12:08 [INFO   ]     Companies with email:     169
+2026-06-13 21:12:08 [INFO   ]     Emails scraped (total):   2206
+2026-06-13 21:12:08 [INFO   ]     Emails sent (total):      110
+2026-06-13 21:12:08 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 21:12:08 [INFO   ] ==============================================================
+2026-06-13 21:12:08 [INFO   ] 

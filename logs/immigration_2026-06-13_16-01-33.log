@@ -1,0 +1,107 @@
+2026-06-13 16:01:33 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_16-01-33.log
+2026-06-13 16:01:33 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-13 16:01:33 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-13 16:01:34 [INFO   ] Using browser: chrome
+2026-06-13 16:01:34 [INFO   ] Industry: alumni_fundraising | Query: college alumni donation program India
+2026-06-13 16:01:34 [INFO   ] Google search: college alumni donation program India
+2026-06-13 16:01:38 [INFO   ]   Found 11 unique result(s).
+2026-06-13 16:01:38 [INFO   ] Scraping Giving back (https://acr.iitbombay.org/giving-back/)
+2026-06-13 16:01:44 [INFO   ]   Email found: dean.acr.office@iitbombay.org
+2026-06-13 16:01:44 [INFO   ] Scraping Alumni Giving (https://give.isb.edu/alumni-giving/)
+2026-06-13 16:01:53 [INFO   ]   Email found: give@isb.edu
+2026-06-13 16:01:53 [INFO   ]   Email found: exclusivediscussionwithadmissionsadvisor@isb.edu
+2026-06-13 16:01:53 [INFO   ] Scraping IITGN Donation (https://donate.iitgn.ac.in/)
+2026-06-13 16:01:59 [INFO   ]   Email found: dean.advancement@iitgn.ac.in
+2026-06-13 16:01:59 [INFO   ] Scraping Donation (https://www.irma.ac.in/donation)
+2026-06-13 16:02:05 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:02:05 [INFO   ] Scraping Donation (https://www.iitg.ac.in/aer/donation.php)
+2026-06-13 16:02:08 [INFO   ]   Email found: alumnioff@iitg.ac.in
+2026-06-13 16:02:08 [INFO   ]   Email found: eroffice@iitg.ac.in
+2026-06-13 16:02:08 [INFO   ]   Email found: infosimple@gmail.com
+2026-06-13 16:02:08 [INFO   ] Scraping Donations (https://www.duf.du.ac.in/donations.html)
+2026-06-13 16:02:12 [INFO   ]   Email found: ceo@duf.du.ac.in
+2026-06-13 16:02:12 [INFO   ] Scraping Giving Back (https://www.nls.ac.in/news-events/giving-month-giving-back-a-bridge-that-connects-alumni-with-nlsiu/)
+2026-06-13 16:02:21 [INFO   ]   Email found: contactus@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: admissions@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: nlsat.query@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: admissions.ba@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: outreach.ba@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: pace@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: fle@nls.ac.in
+2026-06-13 16:02:21 [INFO   ]   Email found: donate@nls.ac.in
+2026-06-13 16:02:21 [INFO   ] Scraping Donation Projects (https://iitmaa.org/donation)
+2026-06-13 16:02:24 [INFO   ]   Email found: test@almashines.com
+2026-06-13 16:02:24 [INFO   ]   Email found: alumni@iitm.ac.in
+2026-06-13 16:02:24 [INFO   ]   Email found: contact@almashines.com
+2026-06-13 16:02:24 [INFO   ]   Email found: clients@almashines.com
+2026-06-13 16:02:24 [INFO   ]   Email found: alumni@iitmaa.org
+2026-06-13 16:02:24 [INFO   ] Scraping 20 Colleges Where the Most Alumni Donate (https://www.usnews.com/education/best-colleges/the-short-list-college/articles/colleges-where-the-most-alumni-donate#:~:text=Of%20these%2020%20colleges%2C%20Princeton,2024%20academic%20year%3A%2044.7%25.)
+2026-06-13 16:02:50 [INFO   ]   Email found: swood@usnews.com
+2026-06-13 16:02:50 [INFO   ]   Email found: u003eswood@usnews.com
+2026-06-13 16:02:50 [INFO   ] Scraping How To Increase Alumni Donations And Grow Participation (https://www.almabase.com/blog/increase-alumni-donations)
+2026-06-13 16:03:16 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:03:16 [INFO   ] Scraping Projects (https://joyofgiving.alumni.iitm.ac.in/projects/all)
+2026-06-13 16:03:29 [INFO   ]   Email found: reachacr@acr.iitm.ac.in
+2026-06-13 16:03:29 [INFO   ] Industry: overseas_education_immigration | Query: visa consultant immigration services India
+2026-06-13 16:03:29 [INFO   ] Google search: visa consultant immigration services India
+2026-06-13 16:03:32 [INFO   ]   Found 8 unique result(s).
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: greentreeimmigration.com
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: nationwidevisas.com
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: visa4you.co.in
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: croyezimmigration.com
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: y-axis.com
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: dm-consultant.in
+2026-06-13 16:03:32 [INFO   ] Skip duplicate domain: abhinav.com
+2026-06-13 16:03:32 [INFO   ] Scraping Best European Immigration Consultant and Services in India (https://www.trivialchapter.com/)
+2026-06-13 16:03:44 [INFO   ]   Email found: global@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: grievances@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: bangalore@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: mumbai@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: chennai@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: coimbatore@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: hyderabad@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: pune@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: kerala@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ]   Email found: vizag@trivialchapter.com
+2026-06-13 16:03:44 [INFO   ] Email target reached (10 companies with email, goal 10) — stopping scrape.
+2026-06-13 16:03:44 [INFO   ] Scrape complete: {'queries_run': 2, 'companies_scraped': 12, 'companies_with_email': 10, 'emails_found': 34, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-13 16:03:44 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\SmallNotFrequent\Scrape_aishe\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-13 16:03:44 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-13 16:03:44 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 16:03:47 [INFO   ] SENT (Brevo) -> info@aimerseducation.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606131033.55830164981@smtp-relay.mailin.fr>
+2026-06-13 16:03:56 [INFO   ] SENT (Brevo) -> contact@almashines.com (Donation Projects) | Exploring a potential partnership opportunity with iitmaa.org | messageId=<202606131033.20767368929@smtp-relay.mailin.fr>
+2026-06-13 16:04:06 [INFO   ] SENT (Brevo) -> infothukral@gmail.com (Karanthukral) | Exploring a potential partnership opportunity with karanthukral.com | messageId=<202606131034.94559882776@smtp-relay.mailin.fr>
+2026-06-13 16:04:41 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-13 16:04:45 [INFO   ] SENT (Brevo) -> infojobs@pn2.vsnl.net.in (Pune Placement Agencies Directory) | Exploring a potential partnership opportunity with scribd.com | messageId=<202606131034.27628820878@smtp-relay.mailin.fr>
+2026-06-13 16:04:55 [INFO   ] SENT (Brevo) -> info.delhi@kcoverseas.com (Top 10 Study Abroad Consultants in India in 2026-27) | Exploring a potential partnership opportunity with studies-overseas.com | messageId=<202606131034.28888678530@smtp-relay.mailin.fr>
+2026-06-13 16:05:03 [INFO   ] SENT (Brevo) -> info.ca@aussizzgroup.com (PTE Coaching) | Exploring a potential partnership opportunity with aussizzgroup.com | messageId=<202606131035.81081592792@smtp-relay.mailin.fr>
+2026-06-13 16:05:17 [INFO   ] SENT (Brevo) -> contactus@centum.ind.in (Centum Foundation) | Exploring a potential partnership opportunity with centumfoundation.in | messageId=<202606131035.93531895764@smtp-relay.mailin.fr>
+2026-06-13 16:05:53 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-13 16:05:59 [INFO   ] SENT (Brevo) -> infosimple@gmail.com (Donation) | Exploring a potential partnership opportunity with iitg.ac.in | messageId=<202606131035.79461289926@smtp-relay.mailin.fr>
+2026-06-13 16:06:15 [INFO   ] SENT (Brevo) -> contactus@nls.ac.in (Giving Back) | Exploring a potential partnership opportunity with nls.ac.in | messageId=<202606131036.32310938183@smtp-relay.mailin.fr>
+2026-06-13 16:06:25 [INFO   ] SENT (Brevo) -> inquiry@btwvisas.com (Website) | Exploring a potential partnership opportunity with btwvisas.com | messageId=<202606131036.12378010720@smtp-relay.mailin.fr>
+2026-06-13 16:06:30 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-13 16:06:30 [INFO   ] 
+2026-06-13 16:06:30 [INFO   ] ==============================================================
+2026-06-13 16:06:30 [INFO   ]   RUN SUMMARY
+2026-06-13 16:06:30 [INFO   ] ==============================================================
+2026-06-13 16:06:30 [INFO   ]   Scrape (this run)
+2026-06-13 16:06:30 [INFO   ]     Companies scraped:        12
+2026-06-13 16:06:30 [INFO   ]     Companies with email:     10
+2026-06-13 16:06:30 [INFO   ]     Emails scraped/found:     34
+2026-06-13 16:06:30 [INFO   ]     Search queries run:       2
+2026-06-13 16:06:30 [INFO   ]     Browser used:             chrome
+2026-06-13 16:06:30 [INFO   ]   Replies (this run)
+2026-06-13 16:06:30 [INFO   ]     Reply check:              skipped
+2026-06-13 16:06:30 [INFO   ]   Send (this run)
+2026-06-13 16:06:30 [INFO   ]     Emails sent:              10
+2026-06-13 16:06:30 [INFO   ]     Send failed:              0
+2026-06-13 16:06:30 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 16:06:30 [INFO   ]   Database totals (all runs)
+2026-06-13 16:06:30 [INFO   ]     Companies in database:    173
+2026-06-13 16:06:30 [INFO   ]     Companies with email:     142
+2026-06-13 16:06:30 [INFO   ]     Emails scraped (total):   2159
+2026-06-13 16:06:30 [INFO   ]     Emails sent (total):      90
+2026-06-13 16:06:30 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 16:06:30 [INFO   ] ==============================================================
+2026-06-13 16:06:30 [INFO   ] 

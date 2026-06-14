@@ -387,7 +387,7 @@ async def run_scrape(
     *,
     max_companies: int = 50,
     max_queries: int = 20,
-    email_target: int = 2,
+    email_target: int = 10,
     browser: str = "auto",
     region: str | None = None,
     industry: str | None = None,
@@ -395,7 +395,7 @@ async def run_scrape(
     use_nvidia_seed: bool = True,
 ) -> dict:
     region = region or default_region()
-    email_target = max(1, int(email_target or 2))
+    email_target = max(1, int(email_target or 10))
     stats = {
         "queries_run": 0,
         "companies_scraped": 0,

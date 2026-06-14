@@ -1,0 +1,142 @@
+2026-06-13 16:07:27 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_16-07-27.log
+2026-06-13 16:07:27 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-13 16:07:27 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-13 16:07:28 [INFO   ] Using browser: chrome
+2026-06-13 16:07:28 [INFO   ] Industry: alumni_fundraising | Query: alumni network educational institution India
+2026-06-13 16:07:28 [INFO   ] Google search: alumni network educational institution India
+2026-06-13 16:07:33 [INFO   ]   Found 10 unique result(s).
+2026-06-13 16:07:33 [INFO   ] Scraping The Official Alumni Network of Indian Institute of Science ... (https://alumniconnect.iiserpune.ac.in/)
+2026-06-13 16:07:39 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:07:39 [INFO   ] Scraping The Official Alumni Network of Symbiosis International ... (https://alumni.symbiosis.ac.in/)
+2026-06-13 16:08:04 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:08:04 [INFO   ] Scraping Top Alumni Networks in India: A Guide to the Best and Most ... (https://www.vaave.com/blog/top-alumni-networks-in-india/)
+2026-06-13 16:08:13 [INFO   ]   Email found: hello@vaave.com
+2026-06-13 16:08:13 [INFO   ] Scraping The Official Alumni Network of MNR Educational Trust (https://alumni.mnrindia.org/)
+2026-06-13 16:08:41 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:08:41 [INFO   ] Scraping Find all Alumni Networks on AlmaConnect starting with ... (https://www.almaconnect.com/all-alumni-networks-i)
+2026-06-13 16:08:46 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:08:46 [INFO   ] Scraping Top 10 K-12 Schools in India with Prolific Alumni Networks (https://skoodos.com/en/blog/top-10-k12-schools-india-alumni-networks)
+2026-06-13 16:08:49 [INFO   ]   Email found: hello@skoodos.com
+2026-06-13 16:08:49 [INFO   ]   Email found: school@skoodosmail.com
+2026-06-13 16:08:49 [INFO   ] Scraping The Official Alumni Association Network of Indian Institute of ... (https://www.iiscalumni.com/)
+2026-06-13 16:08:56 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:08:56 [INFO   ] Scraping What is an Alumni Network?Crummer Graduate School of Business (https://crummer.rollins.edu/resources/what-is-an-alumni-network/#:~:text=As%20SNHU%20states%2C%20%E2%80%9CAn%20alumni,be%20beneficial%20to%20your%20career.)
+2026-06-13 16:09:04 [INFO   ]   Email found: graduate-business@rollins.edu
+2026-06-13 16:09:04 [INFO   ] Scraping Alumni Rendezvous: An Instrument of Building Network & ... (https://ndpublisher.in/admin/issues/EQv16n1a.pdf)
+2026-06-13 16:09:07 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-13 16:09:07 [INFO   ] Scraping Ekya Alumni Network (https://ekyaschools.com/alumni/)
+2026-06-13 16:09:15 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:09:16 [INFO   ]   Email found: admissions@ekyaschools.com
+2026-06-13 16:09:16 [INFO   ]   Email found: 20admissions@ekyaschools.com
+2026-06-13 16:09:16 [INFO   ]   Email found: info@ekyaschools.com
+2026-06-13 16:09:16 [INFO   ] Industry: overseas_education_immigration | Query: overseas education consultant India
+2026-06-13 16:09:16 [INFO   ] Google search: overseas education consultant India
+2026-06-13 16:09:20 [INFO   ]   Found 10 unique result(s).
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: idp.com
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: edwiseinternational.com
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: globalreach.in
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: santamonicaedu.in
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: globaldegrees.in
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: geebeeworld.com
+2026-06-13 16:09:20 [INFO   ] Skip duplicate domain: imperial-overseas.com
+2026-06-13 16:09:20 [INFO   ] Scraping 10 Best Study Abroad Consultants in India (https://yocket.com/blog/best-study-abroad-consultants-in-india)
+2026-06-13 16:09:24 [INFO   ]   Email found: support@yocket.in
+2026-06-13 16:09:24 [INFO   ]   Email found: contact@leapscholar.com
+2026-06-13 16:09:24 [INFO   ]   Email found: info@blueskyeducation.co.in
+2026-06-13 16:09:24 [INFO   ]   Email found: pune@studyin-uk.com
+2026-06-13 16:09:24 [INFO   ]   Email found: support@edvoy.com
+2026-06-13 16:09:24 [INFO   ]   Email found: info@kcoverseas.com
+2026-06-13 16:09:24 [INFO   ]   Email found: info@aeccglobal.com
+2026-06-13 16:09:24 [INFO   ]   Email found: khantedruchi@gmail.com
+2026-06-13 16:09:24 [INFO   ] Skip duplicate domain: educationvibes.in
+2026-06-13 16:09:24 [INFO   ] Scraping Overseas Edu Consult in Pune (https://karorioverseas.com/pune-home-counselling/)
+2026-06-13 16:09:25 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-13 16:09:31 [INFO   ]   Email found: info@karorioverseas.com
+2026-06-13 16:09:31 [INFO   ]   Email found: admission@karorioverseas.com
+2026-06-13 16:09:31 [INFO   ] Industry: overseas_education_immigration | Query: student visa immigration agency India
+2026-06-13 16:09:31 [INFO   ] Google search: student visa immigration agency India
+2026-06-13 16:09:36 [INFO   ]   Found 12 unique result(s).
+2026-06-13 16:09:36 [INFO   ] Skip duplicate domain: idp.com
+2026-06-13 16:09:36 [INFO   ] Skip duplicate domain: y-axis.com
+2026-06-13 16:09:36 [INFO   ] Scraping Student Visa (https://internshala.com/blog/isa-best-study-abroad-consultants-in-india/)
+2026-06-13 16:09:39 [INFO   ]   Email found: studyabroad@internshala.com
+2026-06-13 16:09:39 [INFO   ] Scraping Student Visa Application Fees (https://www.internationalstudents.cam.ac.uk/student-visa-application/student-visa-application-fees)
+2026-06-13 16:09:52 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:09:52 [INFO   ] Scraping Globalcolliance (https://globalcolliance.com/uk-student-visa-consultant-ahmedabad-vadodara-surat-rajkot)
+2026-06-13 16:10:00 [INFO   ]   Email found: inquiry@globalcolliance.com
+2026-06-13 16:10:00 [INFO   ] Scraping Teamoverseas (https://teamoverseas.in/top-10-overseas-education-consultants-in-pattukottai-ranking-fees-reviews/)
+2026-06-13 16:10:02 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-13 16:10:02 [INFO   ] Scraping Phoenixgrs (https://phoenixgrs.com/top-10-immigration-consultants-in-chennai-for-canada-pr-in-2025/)
+2026-06-13 16:10:05 [INFO   ]   Email found: shahid@phoenixgrs.com
+2026-06-13 16:10:05 [INFO   ]   Email found: info@phoenixgrs.com
+2026-06-13 16:10:05 [INFO   ] Skip duplicate domain: edwiseinternational.com
+2026-06-13 16:10:05 [INFO   ] Scraping Uniflik (https://www.uniflik.com/article/c1d60c40-ca98-4c9c-9caa-0bee1f6cdf64)
+2026-06-13 16:10:08 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:10:08 [INFO   ] Skip duplicate domain: visa4you.co.in
+2026-06-13 16:10:08 [INFO   ] Skip duplicate domain: joyvisas.com
+2026-06-13 16:10:08 [INFO   ] Skip duplicate domain: btwvisas.com
+2026-06-13 16:10:08 [INFO   ] Industry: education_finance | Query: education finance company student acquisition India
+2026-06-13 16:10:08 [INFO   ] Google search: education finance company student acquisition India
+2026-06-13 16:10:12 [INFO   ]   Found 10 unique result(s).
+2026-06-13 16:10:12 [INFO   ] Scraping Educational Loans: Apply for Student Loan in India (https://www.credila.com/)
+2026-06-13 16:10:16 [INFO   ]   Email found: loan@credila.com
+2026-06-13 16:10:16 [INFO   ] Scraping Prodigy Finance: Student Loans (https://prodigyfinance.com/)
+2026-06-13 16:10:17 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:10:18 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 16:10:34 [INFO   ]   Email found: info@prodigyfinance.com
+2026-06-13 16:10:34 [INFO   ]   Email found: partnerships@prodigyfinance.com
+2026-06-13 16:10:34 [INFO   ] Scraping School Finance (https://www.profectuscapital.com/school-finance/)
+2026-06-13 16:10:45 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-13 16:10:45 [INFO   ] Scraping Education Loan (https://nbcfdc.gov.in/nbcfdc/web/education-loan)
+2026-06-13 16:10:59 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:10:59 [INFO   ] Skip duplicate domain: eduvanz.com
+2026-06-13 16:10:59 [INFO   ] Scraping Student Loan (https://pnb.bank.in/education.aspx)
+2026-06-13 16:11:06 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:11:06 [INFO   ] Scraping Education Loans (https://www.auxilo.com/)
+2026-06-13 16:11:13 [INFO   ]   Email found: info@auxilo.com
+2026-06-13 16:11:13 [INFO   ] Scraping Fed Scholars (https://www.federal.bank.in/fedscholars)
+2026-06-13 16:11:40 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:11:40 [INFO   ] Scraping Avanse Financial Services: NBFC Education Loan for Students (https://www.avanse.com/)
+2026-06-13 16:11:44 [INFO   ]   Email found: wecare@avanse.com
+2026-06-13 16:11:44 [INFO   ] Scraping Scholarships & Education Loan (https://www.education.gov.in/en/scholarships-education-loan-4)
+2026-06-13 16:11:48 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 16:11:48 [INFO   ] Email target reached (13 companies with email, goal 10) — stopping scrape.
+2026-06-13 16:11:48 [INFO   ] Scrape complete: {'queries_run': 4, 'companies_scraped': 27, 'companies_with_email': 13, 'emails_found': 26, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-13 16:11:48 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\SmallNotFrequent\Scrape_aishe\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-13 16:11:48 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-13 16:11:48 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 16:11:51 [INFO   ] SENT (Brevo) -> info@ambitionabroad.in (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606131041.40956793910@smtp-relay.mailin.fr>
+2026-06-13 16:11:59 [INFO   ] SENT (Brevo) -> info@ekyaschools.com (Ekya Alumni Network) | Exploring a potential partnership opportunity with ekyaschools.com | messageId=<202606131041.22403976489@smtp-relay.mailin.fr>
+2026-06-13 16:12:09 [INFO   ] SENT (Brevo) -> info@blueskyeducation.co.in (10 Best Study Abroad Consultants in India) | Exploring a potential partnership opportunity with yocket.com | messageId=<202606131042.19085716605@smtp-relay.mailin.fr>
+2026-06-13 16:12:17 [INFO   ] SENT (Brevo) -> info@karorioverseas.com (Overseas Edu Consult in Pune) | Exploring a potential partnership opportunity with karorioverseas.com | messageId=<202606131042.26293424490@smtp-relay.mailin.fr>
+2026-06-13 16:12:28 [INFO   ] SENT (Brevo) -> info@phoenixgrs.com (Phoenixgrs) | Exploring a potential partnership opportunity with phoenixgrs.com | messageId=<202606131042.45381946343@smtp-relay.mailin.fr>
+2026-06-13 16:12:38 [INFO   ] SENT (Brevo) -> info@prodigyfinance.com (Prodigy Finance: Student Loans) | Exploring a potential partnership opportunity with prodigyfinance.com | messageId=<202606131042.49424208312@smtp-relay.mailin.fr>
+2026-06-13 16:12:46 [INFO   ] SENT (Brevo) -> info@auxilo.com (Education Loans) | Exploring a potential partnership opportunity with auxilo.com | messageId=<202606131042.57142257604@smtp-relay.mailin.fr>
+2026-06-13 16:12:55 [INFO   ] SENT (Brevo) -> info_jobs@vsnl.com (Pune Placement Agencies Directory) | Exploring a potential partnership opportunity with scribd.com | messageId=<202606131042.22135113319@smtp-relay.mailin.fr>
+2026-06-13 16:13:05 [INFO   ] SENT (Brevo) -> inquiry@aspiresquare.com (Best PTE Coaching In India: Fees, Contact, Reviews) | Exploring a potential partnership opportunity with collegedunia.com | messageId=<202606131043.24783337042@smtp-relay.mailin.fr>
+2026-06-13 16:13:14 [INFO   ] SENT (Brevo) -> inquiry@globalcolliance.com (Globalcolliance) | Exploring a potential partnership opportunity with globalcolliance.com | messageId=<202606131043.38220870936@smtp-relay.mailin.fr>
+2026-06-13 16:13:19 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-13 16:13:19 [INFO   ] 
+2026-06-13 16:13:19 [INFO   ] ==============================================================
+2026-06-13 16:13:19 [INFO   ]   RUN SUMMARY
+2026-06-13 16:13:19 [INFO   ] ==============================================================
+2026-06-13 16:13:19 [INFO   ]   Scrape (this run)
+2026-06-13 16:13:19 [INFO   ]     Companies scraped:        27
+2026-06-13 16:13:19 [INFO   ]     Companies with email:     13
+2026-06-13 16:13:19 [INFO   ]     Emails scraped/found:     26
+2026-06-13 16:13:19 [INFO   ]     Search queries run:       4
+2026-06-13 16:13:19 [INFO   ]     Browser used:             chrome
+2026-06-13 16:13:19 [INFO   ]   Replies (this run)
+2026-06-13 16:13:19 [INFO   ]     Reply check:              skipped
+2026-06-13 16:13:19 [INFO   ]   Send (this run)
+2026-06-13 16:13:19 [INFO   ]     Emails sent:              10
+2026-06-13 16:13:19 [INFO   ]     Send failed:              0
+2026-06-13 16:13:19 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 16:13:19 [INFO   ]   Database totals (all runs)
+2026-06-13 16:13:19 [INFO   ]     Companies in database:    200
+2026-06-13 16:13:19 [INFO   ]     Companies with email:     155
+2026-06-13 16:13:19 [INFO   ]     Emails scraped (total):   2185
+2026-06-13 16:13:19 [INFO   ]     Emails sent (total):      100
+2026-06-13 16:13:19 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 16:13:19 [INFO   ] ==============================================================
+2026-06-13 16:13:19 [INFO   ] 

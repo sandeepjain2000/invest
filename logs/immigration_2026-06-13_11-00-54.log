@@ -1,0 +1,241 @@
+2026-06-13 11:00:54 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_11-00-54.log
+2026-06-13 11:00:54 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-13 11:00:54 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-13 11:00:55 [INFO   ] Using browser: chrome
+2026-06-13 11:00:55 [INFO   ] Industry: overseas_education_immigration | Query: Best immigration consultants in India for overseas study
+2026-06-13 11:00:55 [INFO   ] Google search: Best immigration consultants in India for overseas study
+2026-06-13 11:01:02 [INFO   ]   Found 8 unique result(s).
+2026-06-13 11:01:02 [INFO   ] Scraping Study Abroad, Overseas Education Consultants (https://www.idp.com/india/)
+2026-06-13 11:01:04 [INFO   ]   Closed pop-up/obstruction: button:has-text("I agree")
+2026-06-13 11:01:07 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:01:07 [INFO   ] Scraping Edwise International: Overseas Educational Consultants ... (https://www.edwiseinternational.com/)
+2026-06-13 11:01:11 [INFO   ]   Email found: info@edwiseinternational.com
+2026-06-13 11:01:11 [INFO   ] Skip duplicate domain: greentreeimmigration.com
+2026-06-13 11:01:11 [INFO   ] Scraping Top 10 Study Abroad Consultants in India in 2026-27 (https://www.studies-overseas.com/blogs/top-10-study-abroad-consultants-in-india)
+2026-06-13 11:01:17 [INFO   ]   Email found: ningale@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: tnair@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: kathmandu1@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: kathmandu@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: abuja@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: ibadan@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: lagos@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: jakarta@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: colombo1@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: colombo2@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: colombo@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: uae@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: dhaka2@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: dhaka1@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: md.kcbd@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: lahore@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: lahore2@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: accra@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: thrissur@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: ravichandra@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: consult.srinivas@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: himayatnagar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: goa@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: hmal@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: rajkot@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: vizag@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: punec4@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: bangalore@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: namakkal@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: raipur@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: coimbatore@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: manoop@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: amravati@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: rajahmundry@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: dasija@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: jaipur@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: tvm@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: ahmedabad@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: madurai@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: panipat@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: bathinda@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: bharuch@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: karnal@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: noida@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: ghaziabad@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: central.kochi@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: gurgaon@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: gurugram_sl1@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: narmadhanishad@yahoo.co.in
+2026-06-13 11:01:18 [INFO   ]   Email found: wayanad@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: asaxena@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: jalandhar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: visnagar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: jammu@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: kottayam@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: amritsar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: mysuru@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: akshayabroad@gmail.com
+2026-06-13 11:01:18 [INFO   ]   Email found: chandigarh@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: sambhajinagar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: info.delhi@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: vadodara@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: chitradurga@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: bhopal@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: chennai@studies-overseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: sangrur@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: vmokadam@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: ludhiana@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: srnagar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: tkapoor@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: hisar@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: pathankot@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: kollam@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ]   Email found: surat@kcoverseas.com
+2026-06-13 11:01:18 [INFO   ] Skip duplicate domain: visa4you.co.in
+2026-06-13 11:01:18 [INFO   ] Skip duplicate domain: croyezimmigration.com
+2026-06-13 11:01:18 [INFO   ] Skip duplicate domain: abhinav.com
+2026-06-13 11:01:18 [INFO   ] Skip duplicate domain: y-axis.com
+2026-06-13 11:01:18 [INFO   ] Industry: recruitment_staffing | Query: apprenticeship provider graduate hiring India
+2026-06-13 11:01:18 [INFO   ] Google search: apprenticeship provider graduate hiring India
+2026-06-13 11:01:22 [INFO   ]   Found 9 unique result(s).
+2026-06-13 11:01:22 [INFO   ] Scraping 1267 Graduate Apprentice Trainee Job Vacancies In Pune (https://www.naukri.com/graduate-apprentice-trainee-jobs-in-pune)
+2026-06-13 11:01:26 [INFO   ]   Closed pop-up/obstruction: button:has-text("Got it")
+2026-06-13 11:01:27 [INFO   ]   Email found: hr@unicaremail.com
+2026-06-13 11:01:27 [INFO   ] Scraping Apprenticeship Opportunity List (https://www.apprenticeshipindia.gov.in/apprenticeship/opportunity)
+2026-06-13 11:01:30 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:01:30 [INFO   ] Scraping Graduate Apprentice (https://www.bosch.in/careers/students-and-graduates/graduate-apprentice/)
+2026-06-13 11:01:35 [INFO   ]   Closed pop-up/obstruction: button:has-text("Decline")
+2026-06-13 11:01:40 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:01:40 [INFO   ] Scraping 75 Graduate Apprenticeship Job Vacancies in India (https://in.indeed.com/Graduate-Apprenticeship-jobs-in-India)
+2026-06-13 11:01:50 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:01:50 [INFO   ] Scraping Apprenticeship (https://joinus.tatamotors.com/apprenticeship/)
+2026-06-13 11:01:52 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:01:52 [INFO   ] Scraping Genpact Apprenticeship Program (https://www.genpact.com/careers/apprenticeship-program-india)
+2026-06-13 11:01:54 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-13 11:01:58 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:01:58 [INFO   ] Scraping Apprentices (https://careers.atkinsrealis.com/en/early-careers/india/apprentices)
+2026-06-13 11:02:07 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 11:02:12 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:02:12 [INFO   ] Scraping 130 graduate apprentices jobs in India, June 2026 (https://www.glassdoor.co.in/Job/india-graduate-apprentices-jobs-SRCH_IL.0,5_IN115_KO6,26.htm)
+2026-06-13 11:02:23 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:02:23 [INFO   ] Scraping Graduate Apprentice Trainee (https://tatamotors.turbohire.co/job/publicjobs/6CzWwDzWog6lNg076fMNg5UFPdTIPK0qN_xqwPQA78fPws1Nux1Vw9S27MbOYRbe)
+2026-06-13 11:02:48 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:02:48 [INFO   ] Industry: overseas_education_immigration | Query: study abroad consultant India contact
+2026-06-13 11:02:48 [INFO   ] Google search: study abroad consultant India contact
+2026-06-13 11:02:52 [INFO   ]   Found 10 unique result(s).
+2026-06-13 11:02:52 [INFO   ] Skip duplicate domain: idp.com
+2026-06-13 11:02:52 [INFO   ] Skip duplicate domain: edwiseinternational.com
+2026-06-13 11:02:52 [INFO   ] Scraping Study Abroad Consultant in Pune (https://www.geebeeworld.com/branch/study-abroad-consultant-in-pune)
+2026-06-13 11:03:18 [INFO   ]   Email found: info@geebeeworld.com
+2026-06-13 11:03:18 [INFO   ]   Email found: pune@geebeeworld.org
+2026-06-13 11:03:18 [INFO   ]   Email found: students.kerala@geebeeworld.com
+2026-06-13 11:03:18 [INFO   ] Scraping Education Vibes: Overseas Education Consultancy in India (https://educationvibes.in/)
+2026-06-13 11:03:24 [INFO   ]   Email found: info@educationvibes.in
+2026-06-13 11:03:24 [INFO   ]   Email found: admission@educationvibes.in
+2026-06-13 11:03:24 [INFO   ] Scraping Global Reach (http://www.globalreach.in/)
+2026-06-13 11:03:28 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-13 11:03:29 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-13 11:03:30 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-13 11:03:31 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-13 11:03:31 [INFO   ]   Email found: it@globalreachonline.com
+2026-06-13 11:03:31 [INFO   ] Scraping Santamonica Study Abroad Pvt. Ltd. (https://santamonicaedu.in/)
+2026-06-13 11:03:46 [INFO   ]   Email found: info@santamonicaedu.in
+2026-06-13 11:03:46 [INFO   ] Scraping Global Degrees: Study Abroad & Overseas Education ... (https://globaldegrees.in/)
+2026-06-13 11:03:50 [INFO   ]   Email found: info@globaldegrees.in
+2026-06-13 11:03:50 [INFO   ] Scraping Study Abroad & Overseas Education Consultants (https://www.imperial-overseas.com/)
+2026-06-13 11:03:54 [INFO   ]   Email found: info@imperial-overseas.com
+2026-06-13 11:03:54 [INFO   ] Scraping Website (https://gostudyin.com/?utm_source=gmb&utm_medium=organic&utm_campaign=DMC-General_Consultation-Pune-GMB-Website)
+2026-06-13 11:03:58 [INFO   ]   Closed pop-up/obstruction: button:has-text("Allow all")
+2026-06-13 11:04:26 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:04:26 [INFO   ] Scraping Website (https://www.go.study/)
+2026-06-13 11:04:27 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-13 11:04:46 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:04:46 [INFO   ] Industry: corporate_csr | Query: corporate employability program India contact
+2026-06-13 11:04:46 [INFO   ] Google search: corporate employability program India contact
+2026-06-13 11:04:50 [INFO   ]   Found 10 unique result(s).
+2026-06-13 11:04:50 [INFO   ] Scraping Contact Us (https://employability.life/contact)
+2026-06-13 11:04:53 [INFO   ]   Email found: info@employability.life
+2026-06-13 11:04:53 [INFO   ] Scraping Best Staffing Service for Companies in India (https://corpemployservices.com/)
+2026-06-13 11:05:04 [INFO   ]   Email found: info@corpemployservices.com
+2026-06-13 11:05:04 [INFO   ] Scraping Corporate (https://www.employabilitybridge.co.in/wp_eb/section/corporate/)
+2026-06-13 11:05:14 [INFO   ]   Email found: flag@employabilitybridge.com
+2026-06-13 11:05:14 [INFO   ]   Email found: corporate@employabilitybridge.com
+2026-06-13 11:05:14 [INFO   ]   Email found: college@employabilitybridge.com
+2026-06-13 11:05:14 [INFO   ]   Email found: support@employabilitybridge.com
+2026-06-13 11:05:14 [INFO   ] Scraping Employability Programs in India (https://www.tatapower.com/community-development-trust/employability-employment)
+2026-06-13 11:05:16 [INFO   ]   Closed pop-up/obstruction: button:has-text("Decline")
+2026-06-13 11:05:19 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 11:05:19 [INFO   ] Scraping Employability Skills (https://www.aima.in/content/professional-development/workshop-and-trainings/employability-skills)
+2026-06-13 11:05:23 [INFO   ]   Email found: saumya@aima.in
+2026-06-13 11:05:23 [INFO   ]   Email found: harsh@aima.in
+2026-06-13 11:05:23 [INFO   ] Scraping GCC Employability & Skilling Program: Preparing for The ... (https://gesp.sspu.ac.in/)
+2026-06-13 11:05:28 [INFO   ]   Email found: fst@sspu.ac.in
+2026-06-13 11:05:28 [INFO   ]   Email found: gesp@sspu.ac.in
+2026-06-13 11:05:28 [INFO   ] Skip duplicate domain: ictacademy.in
+2026-06-13 11:05:28 [INFO   ] Scraping Programmes of Government of India (http://www.dge.gov.in/schemes_programmes)
+2026-06-13 11:05:49 [INFO   ]   No email found (navigation_failed: Page.goto: net::ERR_CONNECTION_TIMED_OUT at http://www.dge.gov.in/schemes_programmes
+Call log:
+  - navigating to "http://www.dge.gov.in/schemes_programmes", waiting until "domcontentloaded"
+).
+2026-06-13 11:05:49 [INFO   ] Skip duplicate domain: edubridgeindia.com
+2026-06-13 11:05:49 [INFO   ] Scraping YOUTH EMPLOYABILITY PROGRAM (https://iiwindia.com/youth-employability-program/)
+2026-06-13 11:05:55 [INFO   ]   Email found: iiw@iiwindia.com
+2026-06-13 11:05:55 [INFO   ] Email target reached (15 companies with email, goal 10) — stopping scrape.
+2026-06-13 11:05:55 [INFO   ] Scrape complete: {'queries_run': 4, 'companies_scraped': 28, 'companies_with_email': 15, 'emails_found': 96, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-13 11:05:55 [INFO   ] === Checking inboxes for human replies ===
+2026-06-13 11:05:55 [INFO   ] Reply check: forward_to=sandeepjain200019@gmail.com lookback=30d campaign_subject_bases=1
+2026-06-13 11:05:55 [INFO   ] Known sent recipients: 50 | stored Message-IDs: 44
+2026-06-13 11:05:55 [INFO   ] Checking inbox: jain1001sandeep@gmail.com
+2026-06-13 11:05:57 [INFO   ]   jain1001sandeep@gmail.com: 17 INBOX message(s) in last 30 days
+2026-06-13 11:05:57 [DEBUG  ]   Skip (system_or_autoreply): =?UTF-8?Q?Quarterly_reminder_about_YouTube=E2=80=9
+2026-06-13 11:05:58 [DEBUG  ]   Skip (system_or_autoreply): Reminder: Information Technology Rules
+2026-06-13 11:05:58 [DEBUG  ]   Skip (system_or_autoreply): Quarterly reminder about Google Play terms and pol
+2026-06-13 11:05:58 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-13 11:05:59 [DEBUG  ]   Skip (system_or_autoreply): =?Windows-1252?Q?Undeliverable:_Delivery_&_Project
+2026-06-13 11:05:59 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-13 11:05:59 [DEBUG  ]   Skip (system_or_autoreply): Security alert
+2026-06-13 11:05:59 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-13 11:06:00 [DEBUG  ]   Skip (no_correlation): =?utf-8?B?V2hhdOKAmXMgbmV3IGluIENsaWNrVXA6IEFJIG1l
+2026-06-13 11:06:00 [DEBUG  ]   Skip (system_or_autoreply): Get an exclusive discount when you complete sign-u
+2026-06-13 11:06:00 [DEBUG  ]   Skip (no_correlation): New Case # 04595704 Creation Notification
+2026-06-13 11:06:01 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-13 11:06:01 [DEBUG  ]   Skip (no_correlation): Ticket # 04595704 Closed Notification
+2026-06-13 11:06:01 [INFO   ]   NVIDIA borderline: info@msajobsonline.com | Thank you for your mail
+2026-06-13 11:06:01 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 11:06:03 [INFO   ]     NVIDIA -> forward=False reason=The response is a generic thank you message with a call to action to upload a CV, which suggests an automated or templated response rather than a personalized human reply.
+2026-06-13 11:06:03 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-13 11:06:04 [DEBUG  ]   Skip (system_or_autoreply): Delivery Status Notification (Failure)
+2026-06-13 11:06:04 [DEBUG  ]   Skip (system_or_autoreply): Get started with Google Antigravity
+2026-06-13 11:06:04 [INFO   ] Reply check complete: {'scanned': 17, 'forwarded': 0, 'skipped': 17, 'nvidia': 1, 'errors': 0}
+2026-06-13 11:06:04 [INFO   ] Reply check: {'scanned': 17, 'forwarded': 0, 'skipped': 17, 'nvidia': 1, 'errors': 0}
+2026-06-13 11:06:04 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-13 11:06:11 [INFO   ] SENT -> info@edwiseinternational.com (Edwise International: Overseas Educational Consultants ...) | Exploring a potential partnership opportunity with edwiseinternational.com
+2026-06-13 11:06:26 [INFO   ] SENT -> info@geebeeworld.com (Study Abroad Consultant in Pune) | Exploring a potential partnership opportunity with geebeeworld.com
+2026-06-13 11:06:36 [INFO   ] SENT -> info@educationvibes.in (Education Vibes: Overseas Education Consultancy in India) | Exploring a potential partnership opportunity with educationvibes.in
+2026-06-13 11:06:54 [INFO   ] SENT -> info@santamonicaedu.in (Santamonica Study Abroad Pvt. Ltd.) | Exploring a potential partnership opportunity with santamonicaedu.in
+2026-06-13 11:07:04 [INFO   ] SENT -> info@globaldegrees.in (Global Degrees: Study Abroad & Overseas Education ...) | Exploring a potential partnership opportunity with globaldegrees.in
+2026-06-13 11:07:15 [INFO   ] SENT -> info@imperial-overseas.com (Study Abroad & Overseas Education Consultants) | Exploring a potential partnership opportunity with imperial-overseas.com
+2026-06-13 11:07:24 [INFO   ] SENT -> info@employability.life (Contact Us) | Exploring a potential partnership opportunity with employability.life
+2026-06-13 11:07:35 [INFO   ] SENT -> info@corpemployservices.com (Best Staffing Service for Companies in India) | Exploring a potential partnership opportunity with corpemployservices.com
+2026-06-13 11:07:46 [INFO   ] SENT -> contact@codersarts.com (Coding Bootcamp) | Exploring a potential partnership opportunity with training.codersarts.com
+2026-06-13 11:07:58 [INFO   ] SENT -> contact@codingninjas.com (Full Stack Web Development Bootcamp) | Exploring a potential partnership opportunity with codingninjas.com
+2026-06-13 11:08:03 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-13 11:08:03 [INFO   ] 
+2026-06-13 11:08:03 [INFO   ] ==============================================================
+2026-06-13 11:08:03 [INFO   ]   RUN SUMMARY
+2026-06-13 11:08:03 [INFO   ] ==============================================================
+2026-06-13 11:08:03 [INFO   ]   Scrape (this run)
+2026-06-13 11:08:03 [INFO   ]     Companies scraped:        28
+2026-06-13 11:08:03 [INFO   ]     Companies with email:     15
+2026-06-13 11:08:03 [INFO   ]     Emails scraped/found:     96
+2026-06-13 11:08:03 [INFO   ]     Search queries run:       4
+2026-06-13 11:08:03 [INFO   ]     Browser used:             chrome
+2026-06-13 11:08:03 [INFO   ]   Replies (this run)
+2026-06-13 11:08:03 [INFO   ]     Reply check:              skipped
+2026-06-13 11:08:03 [INFO   ]   Send (this run)
+2026-06-13 11:08:03 [INFO   ]     Emails sent:              10
+2026-06-13 11:08:03 [INFO   ]     Send failed:              0
+2026-06-13 11:08:03 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 11:08:03 [INFO   ]   Database totals (all runs)
+2026-06-13 11:08:03 [INFO   ]     Companies in database:    144
+2026-06-13 11:08:03 [INFO   ]     Companies with email:     118
+2026-06-13 11:08:03 [INFO   ]     Emails scraped (total):   371
+2026-06-13 11:08:03 [INFO   ]     Emails sent (total):      60
+2026-06-13 11:08:03 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 11:08:03 [INFO   ] ==============================================================
+2026-06-13 11:08:03 [INFO   ] 

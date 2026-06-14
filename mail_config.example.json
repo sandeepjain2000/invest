@@ -1,0 +1,16 @@
+{
+  "brevo": {
+    "api_key": "YOUR_API_V3_KEY",
+    "sender": {
+      "name": "Sandeep Jain",
+      "email": "sandeep.jain@appsflow.cloud"
+    }
+  },
+  "smtp": {
+    "host": "smtp-relay.brevo.com",
+    "port": 587,
+    "login": "your-brevo-smtp-login",
+    "password": "YOUR_SMTP_KEY",
+    "use_tls": true
+  }
+}

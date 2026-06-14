@@ -1,0 +1,33 @@
+2026-06-13 21:10:59 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_21-10-59.log
+2026-06-13 21:10:59 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 21:11:06 [ERROR  ] Test send failed for sandeepjain200019@gmail.com: Brevo API send failed for sandeepjain200019@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 13 Jun 2026 15:41:06 GMT', 'Content-Type': 'application/json', 'Content-Length': '50', 'Connection': 'keep-alive', 'CF-RAY': 'a0b232914cdefba5-AMS', 'access-control-allow-credentials': 'true', 'sib-request-id': '627afdcd-74a8-993b-992c-5b1eaccbb171', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '2', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=CebwJx4YFbYdhC9RidJ2FwW5viwqbHLfd3mrkkRGw58-1781365266165-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"Key not found","code":"unauthorized"}
+
+
+2026-06-13 21:11:06 [INFO   ] Send complete: {'sent': 0, 'failed': 1, 'skipped': 0, 'error': 'Brevo API send failed for sandeepjain200019@gmail.com: (401)\nReason: Unauthorized\nHTTP response headers: HTTPHeaderDict({\'Date\': \'Sat, 13 Jun 2026 15:41:06 GMT\', \'Content-Type\': \'application/json\', \'Content-Length\': \'50\', \'Connection\': \'keep-alive\', \'CF-RAY\': \'a0b232914cdefba5-AMS\', \'access-control-allow-credentials\': \'true\', \'sib-request-id\': \'627afdcd-74a8-993b-992c-5b1eaccbb171\', \'access-control-allow-origin\': \'*\', \'access-control-allow-headers\': \'*\', \'access-control-allow-methods\': \'PUT, POST, GET, DELETE, PATCH, OPTIONS\', \'x-envoy-upstream-service-time\': \'2\', \'cf-cache-status\': \'DYNAMIC\', \'Set-Cookie\': \'_cfuvid=CebwJx4YFbYdhC9RidJ2FwW5viwqbHLfd3mrkkRGw58-1781365266165-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None\', \'Server\': \'cloudflare\'})\nHTTP response body: {"message":"Key not found","code":"unauthorized"}\n\n', 'test_to': 'sandeepjain200019@gmail.com', 'company_name': 'Campus Hiring & Recruitment : Supercharge Your Tech ...', 'domain': 'hcltech.com', 'subject': 'Exploring a potential partnership opportunity with hcltech.com'}
+2026-06-13 21:11:06 [INFO   ] 
+2026-06-13 21:11:06 [INFO   ] ==============================================================
+2026-06-13 21:11:06 [INFO   ]   RUN SUMMARY
+2026-06-13 21:11:06 [INFO   ] ==============================================================
+2026-06-13 21:11:06 [INFO   ]   Replies (this run)
+2026-06-13 21:11:06 [INFO   ]     Reply check:              skipped
+2026-06-13 21:11:06 [INFO   ]   Send (this run)
+2026-06-13 21:11:06 [INFO   ]     Error:                    Brevo API send failed for sandeepjain200019@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Sat, 13 Jun 2026 15:41:06 GMT', 'Content-Type': 'application/json', 'Content-Length': '50', 'Connection': 'keep-alive', 'CF-RAY': 'a0b232914cdefba5-AMS', 'access-control-allow-credentials': 'true', 'sib-request-id': '627afdcd-74a8-993b-992c-5b1eaccbb171', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '2', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=CebwJx4YFbYdhC9RidJ2FwW5viwqbHLfd3mrkkRGw58-1781365266165-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"Key not found","code":"unauthorized"}
+
+
+2026-06-13 21:11:06 [INFO   ]     Emails sent:              0
+2026-06-13 21:11:06 [INFO   ]     Send failed:              1
+2026-06-13 21:11:06 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 21:11:06 [INFO   ]   Database totals (all runs)
+2026-06-13 21:11:06 [INFO   ]     Companies in database:    220
+2026-06-13 21:11:06 [INFO   ]     Companies with email:     169
+2026-06-13 21:11:06 [INFO   ]     Emails scraped (total):   2206
+2026-06-13 21:11:06 [INFO   ]     Emails sent (total):      110
+2026-06-13 21:11:06 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 21:11:06 [INFO   ] ==============================================================
+2026-06-13 21:11:06 [INFO   ] 

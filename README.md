@@ -8,7 +8,7 @@ Built to follow patterns from `CVL-ScraperLinkedIn_SendMails` (SQLite deduplicat
 
 ## Industry verticals
 
-Eight ranked sectors are defined in `industries.json`:
+Eleven industry verticals are defined in `industries.json`:
 
 | Rank | ID | Sector |
 |------|-----|--------|
@@ -20,6 +20,9 @@ Eight ranked sectors are defined in `industries.json`:
 | 6 | `corporate_csr` | Corporate CSR Programs |
 | 7 | `alumni_fundraising` | Alumni Donation & Fundraising |
 | 8 | `training_finishing_schools` | Training & Finishing Schools |
+| 9 | `bfsi_nbfc_banks` | NBFC & Banks (Campus Hiring) |
+| 10 | `insurance` | Insurance (Campus & Graduate Hiring) |
+| 11 | `coaching_test_prep` | Coaching & Test Prep |
 
 Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated outreach lines. Set `"active": false` on any industry to skip it.
 
@@ -36,7 +39,7 @@ Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated
    - Clicks Contact / Contact Us if no email on the landing page
    - Skips the site if no valid email is found
 3. **Store in SQLite** — Companies, emails, search queries, and sent-mail records are saved with uniqueness constraints to prevent duplicates.
-4. **Send emails** — Uses `partnership.html`, a positive one-line company praise from NVIDIA, and Gmail app-password SMTP from `EmailJson`.
+4. **Send emails** — Renders local `partnership.html`, sends via **Brevo API** (or legacy Gmail SMTP).
 
 ---
 
@@ -49,10 +52,13 @@ investment/
 ├── immigration_sender.py     # Gmail SMTP sender
 ├── immigration_db.py         # SQLite schema and helpers
 ├── nvidia_llm.py             # NVIDIA key rotation + LLM calls
-├── industries.json           # 8 industry verticals + seed search queries
+├── industries.json           # 11 industry verticals + seed search queries
 ├── industries.py             # Industry config loader
-├── partnership.html          # Email HTML template
-├── sender_config.json        # Sender details + emails_per_run limit
+├── partnership.html          # Local email HTML template (Brevo sends filled HTML)
+├── brevo_mail.py             # Brevo API (reads project mail_config.json)
+├── mail_config.json          # Brevo API key + SMTP (edit locally; gitignored)
+├── mail_config.example.json  # Template — copy if mail_config.json is missing
+├── sender_config.json        # Sender + template path + mail_config_file pointer
 ├── requirements.txt
 ├── data/db/immigration.db    # SQLite database (created on first run)
 └── logs/                     # Timestamped run logs
@@ -84,23 +90,23 @@ playwright install chromium firefox
 
 ### `sender_config.json`
 
-Controls sender identity, email subject, and **how many emails to send per execution**.
+Controls sender identity, email subject, send limits, and **local HTML template**. Brevo credentials live in **`mail_config.json`** in this project (separate Brevo account from Scrape_aishe).
 
 ```json
 {
   "sender_name": "Sandeep Jain",
   "company_name": "PlacementsHub",
   "phone": "+91-XXXXXXXXXX",
-  "email": "jain1001sandeep@gmail.com",
+  "email": "sandeep.jain@appsflow.cloud",
   "website": "https://your-site.example",
   "signature_links": [
-    { "label": "PlacementsHub", "url": "https://your-site.example" },
-    { "label": "My CV", "url": "https://drive.google.com/file/d/..." },
-    { "label": "Detailed Profile", "url": "https://jainsandeep729.wixsite.com/website" },
-    { "label": "LinkedIn Profile", "url": "https://www.linkedin.com/in/jain35/" }
+    { "label": "Detailed Profile", "url": "https://your-profile.example" }
   ],
   "email_subject": "Exploring a potential partnership opportunity",
-  "emails_per_run": 2
+  "emails_per_run": 10,
+  "send_method": "brevo_api",
+  "template_file": "partnership.html",
+  "mail_config_file": "mail_config.json"
 }
 ```
 
@@ -111,13 +117,63 @@ Controls sender identity, email subject, and **how many emails to send per execu
 | `phone` | Replaces `{{Phone}}` in the signature |
 | `email` | Replaces `{{Email}}` in the signature |
 | `website` | Fallback if `signature_links` is empty |
-| `signature_links` | Array of `{ "label", "url" }` — all clickable footer links (website, CV, profile, etc.) |
-| `email_subject` | Subject base line; each send appends ` with {domain}` (e.g. `...opportunity with croyez.in`) |
-| `emails_per_run` | **Max emails sent in one `send` or `run` execution** (default: 2) |
+| `signature_links` | Array of `{ "label", "url" }` — all clickable footer links |
+| `email_subject` | Subject base line; each send appends ` with {domain}` |
+| `emails_per_run` | **Max emails sent in one `send` or `run` execution** (default: 10) |
+| `send_method` | `brevo_api` (default) or `gmail_smtp` for legacy Gmail |
+| `template_file` | Local HTML template (`partnership.html` in project folder) |
+| `mail_config_file` | Path to project Brevo config (`mail_config.json`) |
 
 Override at runtime with `--limit` (`send`) or `--send-limit` (`run`).
 
-### SMTP credentials
+### `mail_config.json` — Brevo API + SMTP (this project)
+
+**Separate Brevo account** for partnership outreach. Copy from the example if needed:
+
+```powershell
+copy mail_config.example.json mail_config.json
+```
+
+Edit `mail_config.json` with your Brevo keys:
+
+```json
+{
+  "brevo": {
+    "api_key": "YOUR_API_V3_KEY",
+    "sender": {
+      "name": "Sandeep Jain",
+      "email": "sandeep.jain@appsflow.cloud"
+    }
+  },
+  "smtp": {
+    "host": "smtp-relay.brevo.com",
+    "port": 587,
+    "login": "your-brevo-smtp-login",
+    "password": "YOUR_SMTP_KEY",
+    "use_tls": true
+  }
+}
+```
+
+| Section | Field | Purpose |
+|---------|-------|---------|
+| `brevo` | `api_key` | Brevo API v3 key — used by `send_method: brevo_api` (default) |
+| `brevo.sender` | `name`, `email` | Verified sender in Brevo (Zoho inbox: `sandeep.jain@appsflow.cloud`) |
+| `smtp` | `host`, `port`, `login`, `password`, `use_tls` | Brevo SMTP relay credentials (for reference / future SMTP send) |
+
+`mail_config.json` is **gitignored** so keys are not committed. `mail_config.example.json` stays in the repo as a template.
+
+- Override path: `$env:MAIL_CONFIG_FILE = "C:\path\to\mail_config.json"`
+- Override API key only: `$env:BREVO_API_KEY = "xkeysib-..."`
+
+### Brevo sending
+
+- **Default transport:** Transactional API (`send_method: brevo_api`)
+- **Template:** local `partnership.html` (filled in Python, sent as `html_content`)
+- **Sender inbox:** `sandeep.jain@appsflow.cloud` (Zoho Mail; replies forwarded to Gmail)
+- Legacy Gmail: `"send_method": "gmail_smtp"` + `email_config1001.json`
+
+### SMTP credentials (legacy Gmail only)
 
 Default path:
 
@@ -176,14 +232,11 @@ Best Regards,
 Sandeep Jain
 PlacementsHub
 +91-9860090620
-sandeepjain200019@gmail.com
-PlacementsHub          ← signature_links
-My CV                  ← signature_links
+sandeep.jain@appsflow.cloud
 Detailed Profile       ← signature_links
-LinkedIn Profile       ← signature_links
 ```
 
-All signature links (website, CV, detailed profile, LinkedIn, etc.) are defined in the `signature_links` array in `sender_config.json`. Add, remove, or reorder entries there — no code changes needed.
+All signature links are defined in the `signature_links` array in `sender_config.json`. Add, remove, or reorder entries there — no code changes needed.
 
 ---
 
@@ -198,18 +251,19 @@ send_partnership_emails.bat
 Full end-to-end each time:
 
 1. **Scrape** — browser discovers companies and emails (all industries, random order)
-2. **Check replies** — forwards human replies to `forward_to` in `sender_config.json`
-3. **Send** — up to `emails_per_run` new outreach emails
+2. **Send** — up to `emails_per_run` new outreach emails via Brevo
+
+Reply handling is **outside the pipeline**: outreach sends from **`sandeep.jain@appsflow.cloud`** (your **Zoho Mail** inbox). Zoho forwards all incoming mail to `sandeepjain200019@gmail.com`. Inbox scanning (`check-replies`) stays off and is only for legacy Gmail multi-profile setups.
 
 Main tunables in `sender_config.json`:
 
 | Setting | Default | Meaning |
 |---------|---------|---------|
-| `emails_per_run` | 2 | Send target per run |
+| `emails_per_run` | 10 | Send target per run |
 | `max_companies_per_run` | 50 | Max sites to scrape (keeps going when early sites have no email) |
 | `max_queries_per_run` | 20 | Cap on Google search rounds per run |
 
-Scrape stops early once **2 companies with email** are found, or after **50** companies tried — whichever comes first.
+Scrape stops early once **10 companies with email** are found, or after **50** companies tried — whichever comes first.
 
 ---
 
@@ -234,14 +288,20 @@ python immigration_pipeline.py scrape --max-companies 20 --browser auto
 # Scrape one industry only
 python immigration_pipeline.py scrape --industry edtech --max-companies 10
 
-# Preview messages without sending
-python immigration_pipeline.py send --dry-run
+# Preview next real outreach (no email sent)
+python immigration_pipeline.py send --dry-run --limit 1
 
-# Check inboxes and forward human replies (runs automatically before send)
-python immigration_pipeline.py check-replies
+# Preview test email to your inbox (last scraped company; no send, no DB update)
+python immigration_pipeline.py send --test-to sandeepjain200019@gmail.com --dry-run
 
-# Send emails (checks replies first, then sends — capped by emails_per_run)
+# Send real test email to your inbox (last scraped company; no DB update)
+python immigration_pipeline.py send --test-to sandeepjain200019@gmail.com
+
+# Send emails (reply check off by default)
 python immigration_pipeline.py send
+
+# Optional legacy only: Gmail IMAP reply scan (not needed — Zoho forwards to Gmail)
+# python immigration_pipeline.py check-replies
 
 # Scrape then send in one run
 python immigration_pipeline.py run --max-companies 15
@@ -249,12 +309,12 @@ python immigration_pipeline.py run --max-companies 15
 
 ### Send more emails per run
 
-Default is **2** emails per execution (`emails_per_run` in `sender_config.json`). Use any of the following.
+Default is **10** emails per execution (`emails_per_run` in `sender_config.json`). Use any of the following.
 
 **One-time override (no config edit)** — good for a single larger batch:
 
 ```powershell
-# Full pipeline: scrape → check replies → send up to 10 emails
+# Full pipeline: scrape → send up to 10 emails
 python immigration_pipeline.py run --send-limit 10
 
 # Send only (skip scrape): up to 10 emails from the existing queue
@@ -281,7 +341,7 @@ Then a plain `run` or `send` uses 10. This value also controls scrape **early st
 | Send 20 this run only | `python immigration_pipeline.py send --limit 20` |
 | Always send 10 every run | Set `"emails_per_run": 10` in `sender_config.json` |
 | Scrape longer before send | Add `--max-companies 100 --max-queries 30` |
-| Skip inbox check when sending | Add `--skip-replies` to `send` or `run` |
+| Skip inbox check when sending | Default (off). Use `--check-replies` to enable |
 
 **Batch file** — pass limits on the command line (or edit JSON):
 
@@ -291,18 +351,16 @@ python immigration_pipeline.py run --send-limit 10 --max-companies 80 --browser 
 
 To bake defaults into `send_partnership_emails.bat`, set `emails_per_run` in `sender_config.json` (the bat reads JSON; it does not set send count itself).
 
-### Reply forwarding
+### Replies (Zoho Mail → Gmail — no pipeline step)
 
-Before each `send` or `run`, the pipeline scans Gmail inboxes for **human replies** to your outreach and forwards them to `forward_to` in `sender_config.json` (default: `sandeepjain200019@gmail.com`).
+**Sender / inbox:** `sandeep.jain@appsflow.cloud` — this is your **Zoho Mail** address (also the verified Brevo sender and email signature).
 
-Detection uses layered signals (not `Re:` alone):
+**Flow:**
+1. Brevo delivers outreach from that address
+2. Replies arrive in the Zoho inbox for `sandeep.jain@appsflow.cloud`
+3. Zoho forwards everything to `sandeepjain200019@gmail.com`
 
-1. **Message-ID thread match** — `In-Reply-To` / `References` matches a stored outbound `Message-ID`
-2. **Sent recipient + reply headers** — from address you mailed + threading headers
-3. **Campaign subject list** — secondary signal; subjects accumulate in `campaign_subjects` + SQLite as you send
-4. **NVIDIA** — borderline cases only
-
-Skip with `--skip-replies` on `send` / `run`.
+You do not need `check-replies` or `forward_to` for normal operation. `check_replies_before_send` stays `false` in `sender_config.json`.
 
 ### Useful flags
 
@@ -318,7 +376,9 @@ Skip with `--skip-replies` on `send` / `run`.
 | `scrape` | `--no-seed` | Do not auto-generate queries if queue is empty |
 | `scrape` | `--no-nvidia-seed` | Auto-seed from `industries.json` only |
 | `check-replies` | `--no-nvidia` | Skip NVIDIA for borderline replies |
-| `send` | `--skip-replies` | Do not scan inbox before sending |
+| `send` | `--check-replies` | Scan Gmail and forward replies before send (off by default) |
+| `send` | `--skip-replies` | Explicitly skip reply check (default behaviour) |
+| `send` | `--test-to EMAIL` | One test send to your address (last scraped company; no DB update) |
 | `send` | `--dry-run` | Build messages only; no SMTP |
 | `send` | `--limit N` | Override `emails_per_run` for this run |
 | `send` | `--no-nvidia-praise` | Use a static praise line instead of NVIDIA |
@@ -373,11 +433,14 @@ Database path: `data/db/immigration.db`
 
 ## Sending behaviour
 
-- Gmail SMTP over SSL on port 465
+- **Default:** Brevo Transactional API (`send_method: brevo_api` in `sender_config.json`)
+- Local `partnership.html` rendered per recipient (NVIDIA praise + signature placeholders)
+- API key and SMTP in project `mail_config.json` (separate from Scrape_aishe)
 - 5 second delay between sends
 - 20 second cooldown per recipient domain
 - One email per company per run (best address only)
-- `emails_per_run` from `sender_config.json` caps each execution (currently **2**)
+- `emails_per_run` caps each execution (default **10**)
+- **Legacy:** `send_method: gmail_smtp` uses Gmail SSL port 465 + `email_config1001.json`
 
 ---
 
@@ -398,7 +461,8 @@ logs/immigration_YYYY-MM-DD_HH-MM-SS.log
 | Browser does not open | Run `playwright install chromium firefox` |
 | Chrome fails | Use `--browser firefox` |
 | NVIDIA timeout | Keys rotate automatically; run again or check key quota |
-| SMTP auth error | Regenerate Gmail App Password in `email_config1001.json` |
+| SMTP auth error | Legacy Gmail only — regenerate App Password in `email_config1001.json` |
+| Brevo send failed | Set `brevo.api_key` and verified `brevo.sender.email` in project `mail_config.json` |
 | No emails found | Normal for some sites; pipeline moves on |
 | Google consent / CAPTCHA | Complete manually in the visible browser window |
 | Want more emails per run | `run --send-limit N` or `send --limit N`, or raise `emails_per_run` in `sender_config.json` |
@@ -435,7 +499,7 @@ python immigration_pipeline.py send --dry-run
 python immigration_pipeline.py send
 ```
 
-Each `send` run sends at most `emails_per_run` new emails (2 by default). Run again later to continue through the queue.
+Each `send` run sends at most `emails_per_run` new emails (10 by default). Run again later to continue through the queue.
 
 ```powershell
 # Example: send 10 in one go (after dry-run looks good)

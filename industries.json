@@ -121,6 +121,51 @@
         "career training institute graduate India contact"
       ],
       "praise_hint": "placement training, employability skills, and career readiness"
+    },
+    {
+      "id": "bfsi_nbfc_banks",
+      "name": "NBFC & Banks (Campus Hiring)",
+      "rank": 9,
+      "active": true,
+      "seed_queries": [
+        "NBFC graduate trainee program India contact email",
+        "private bank campus recruitment India contact",
+        "public sector bank graduate hiring India email",
+        "NBFC fresher hiring relationship manager India",
+        "banking operations trainee program India contact",
+        "microfinance NBFC campus placement India email"
+      ],
+      "praise_hint": "graduate trainee programs, banking careers, and campus talent pipelines"
+    },
+    {
+      "id": "insurance",
+      "name": "Insurance (Campus & Graduate Hiring)",
+      "rank": 10,
+      "active": true,
+      "seed_queries": [
+        "life insurance company campus recruitment India contact",
+        "general insurance graduate trainee India email",
+        "insurtech startup hiring graduates India contact",
+        "insurance agent training program India corporate email",
+        "health insurance company fresher hiring India",
+        "insurance company campus placement partnership India contact"
+      ],
+      "praise_hint": "insurance careers, graduate development, and distribution talent programs"
+    },
+    {
+      "id": "coaching_test_prep",
+      "name": "Coaching & Test Prep",
+      "rank": 11,
+      "active": true,
+      "seed_queries": [
+        "competitive exam coaching institute India contact email",
+        "JEE NEET coaching chain India partnership contact",
+        "CAT MBA coaching institute India email",
+        "government exam coaching center India contact",
+        "spoken English coaching institute India email",
+        "career coaching institute graduate placement India contact"
+      ],
+      "praise_hint": "exam preparation, career coaching, and student success outcomes"
     }
   ]
 }

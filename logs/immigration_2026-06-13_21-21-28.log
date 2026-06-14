@@ -1,0 +1,102 @@
+2026-06-13 21:21:28 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-13_21-21-28.log
+2026-06-13 21:21:28 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-13 21:21:28 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-13 21:21:28 [INFO   ] Using browser: chrome
+2026-06-13 21:21:29 [INFO   ] Industry: overseas_education_immigration | Query: global mobility immigration consultants India
+2026-06-13 21:21:29 [INFO   ] Google search: global mobility immigration consultants India
+2026-06-13 21:21:34 [INFO   ]   Found 11 unique result(s).
+2026-06-13 21:21:34 [INFO   ] Scraping Global Mobility (https://consortialegal.com/global-mobility-immigration/)
+2026-06-13 21:21:36 [INFO   ]   Email found: mumbai@consortialegal.com
+2026-06-13 21:21:36 [INFO   ] Scraping Global Mobility Services and Solutions in India (https://globalmobility.in/)
+2026-06-13 21:21:46 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 21:21:46 [INFO   ] Scraping Global Mobility & Strategic Immigration for GCCs (https://lexvisas.in/global-mobility-strategic-immigration-for-gccs/)
+2026-06-13 21:21:53 [INFO   ]   Email found: hello@lexvisas.in
+2026-06-13 21:21:53 [INFO   ] Scraping Global Mobility Services in India (https://intuitconsultancy.com/in/global-mobility-services-in-india/)
+2026-06-13 21:21:58 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 21:22:08 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 21:22:08 [INFO   ] Scraping Global Mobility (https://irishexpert.com/global-mobility)
+2026-06-13 21:22:12 [INFO   ]   Email found: info@irishexpert.com
+2026-06-13 21:22:12 [INFO   ] Scraping Best Immigration Consultant: Home (https://worldmovesolutions.com/)
+2026-06-13 21:22:39 [INFO   ]   Email found: info@worldmovesolutions.com
+2026-06-13 21:22:39 [INFO   ] Scraping XIPHIAS Immigration: Best Immigration Consultants in India (https://www.xiphiasimmigration.com/)
+2026-06-13 21:23:04 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 21:23:05 [INFO   ]   Email found: immigration@xiphias.in
+2026-06-13 21:23:05 [INFO   ] Scraping Website (https://www.gic-india.com/)
+2026-06-13 21:23:05 [INFO   ]   No email found (navigation_failed: Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.gic-india.com/
+Call log:
+  - navigating to "https://www.gic-india.com/", waiting until "domcontentloaded"
+).
+2026-06-13 21:23:05 [INFO   ] Scraping Website (http://www.gmcmumbai.com/)
+2026-06-13 21:23:08 [INFO   ]   Email found: info1@gmcmumbai.com
+2026-06-13 21:23:08 [INFO   ] Scraping Global Mobility In India (https://www.empathyrelocations.com/global-mobility-service)
+2026-06-13 21:23:12 [INFO   ]   Email found: info@empathyrelocations.com
+2026-06-13 21:23:12 [INFO   ] Scraping GGIMS: Best Immigration Consultants in India (https://ggims.com/)
+2026-06-13 21:23:15 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 21:23:15 [INFO   ]   Email found: info@ggims.com
+2026-06-13 21:23:15 [INFO   ]   Email found: info@ggims.ca
+2026-06-13 21:23:15 [INFO   ]   Email found: info@ggims.ae
+2026-06-13 21:23:15 [INFO   ] Industry: hrtech | Query: talent assessment HRTech company India
+2026-06-13 21:23:15 [INFO   ] Google search: talent assessment HRTech company India
+2026-06-13 21:23:19 [INFO   ]   Found 9 unique result(s).
+2026-06-13 21:23:19 [INFO   ] Scraping PMaps: AI Talent Assessment Company (https://www.pmapstest.com/)
+2026-06-13 21:23:24 [INFO   ]   Email found: rnirwan@pmaps.in
+2026-06-13 21:23:24 [INFO   ] Skip duplicate domain: imocha.io
+2026-06-13 21:23:24 [INFO   ] Skip duplicate domain: mewurk.com
+2026-06-13 21:23:24 [INFO   ] Scraping 9 Top Talent Assessment Companies in India · June 2026 (https://www.f6s.com/companies/talent-assessment/india/co)
+2026-06-13 21:23:29 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 21:23:30 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 21:23:30 [INFO   ] Scraping TalentMetrix (https://www.talentmetrix.com/)
+2026-06-13 21:23:55 [INFO   ] Scraping Talent Assessment (https://www.mpgtalentsolutions.com/in/en/talent-assessment)
+2026-06-13 21:24:00 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 21:25:01 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-13 21:25:01 [INFO   ] Scraping Best Talent Assessment Tools for Human Resource 2024 (https://www.hackerearth.com/blog/talent-assessment-tools-hr-transformation-guide)
+2026-06-13 21:25:11 [INFO   ]   Email found: support@hackerearth.com
+2026-06-13 21:25:11 [INFO   ] Scraping The Science for Winning Talent- Assessments & More! (https://www.peoplestrong.com/th/blog/the-science-for-winning-talent-assessments-more-en/)
+2026-06-13 21:25:38 [INFO   ]   Email found: mel.thomas@peoplestrong.com
+2026-06-13 21:25:38 [INFO   ] Scraping hrtech reduced its time to hire by 66% with Equip's Talent ... (https://equip.co/customers/hrtech-reduced-its-time-to-hire-by-66%25-with-equip%27s-talent-assessments/)
+2026-06-13 21:25:41 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-13 21:25:45 [INFO   ]   Email found: 22a7fa009f5f4624ad4d9a50dc7180d1@o288839.ingest.sentry.io
+2026-06-13 21:25:45 [INFO   ]   Email found: name@company.com
+2026-06-13 21:25:45 [INFO   ]   Email found: hello@equip.co
+2026-06-13 21:25:45 [INFO   ] Email target reached (13 companies with email, goal 10) — stopping scrape.
+2026-06-13 21:25:45 [INFO   ] Scrape complete: {'queries_run': 2, 'companies_scraped': 18, 'companies_with_email': 13, 'emails_found': 16, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-13 21:25:45 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-13 21:25:45 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-13 21:25:46 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-13 21:25:52 [INFO   ] SENT (Brevo) -> info@ieltsband7.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606131555.71134506063@smtp-relay.mailin.fr>
+2026-06-13 21:26:04 [INFO   ] SENT (Brevo) -> info@aeccglobal.com (10 Best Study Abroad Consultants in India) | Exploring a potential partnership opportunity with yocket.com | messageId=<202606131556.14553730669@smtp-relay.mailin.fr>
+2026-06-13 21:26:12 [INFO   ] SENT (Brevo) -> info@irishexpert.com (Global Mobility) | Exploring a potential partnership opportunity with irishexpert.com | messageId=<202606131556.22164769131@smtp-relay.mailin.fr>
+2026-06-13 21:26:47 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-13 21:26:57 [INFO   ] SENT (Brevo) -> info@worldmovesolutions.com (Best Immigration Consultant: Home) | Exploring a potential partnership opportunity with worldmovesolutions.com | messageId=<202606131556.24972724179@smtp-relay.mailin.fr>
+2026-06-13 21:27:26 [INFO   ] SENT (Brevo) -> info@empathyrelocations.com (Global Mobility In India) | Exploring a potential partnership opportunity with empathyrelocations.com | messageId=<202606131557.47401897394@smtp-relay.mailin.fr>
+2026-06-13 21:28:01 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-13 21:28:07 [INFO   ] SENT (Brevo) -> info@ggims.com (GGIMS: Best Immigration Consultants in India) | Exploring a potential partnership opportunity with ggims.com | messageId=<202606131558.41685998511@smtp-relay.mailin.fr>
+2026-06-13 21:28:18 [INFO   ] SENT (Brevo) -> info1@gmcmumbai.com (Website) | Exploring a potential partnership opportunity with gmcmumbai.com | messageId=<202606131558.22235783374@smtp-relay.mailin.fr>
+2026-06-13 21:28:39 [INFO   ] SENT (Brevo) -> hello@skoodos.com (Top 10 K-12 Schools in India with Prolific Alumni Networks) | Exploring a potential partnership opportunity with skoodos.com | messageId=<202606131558.82996263266@smtp-relay.mailin.fr>
+2026-06-13 21:28:54 [INFO   ] SENT (Brevo) -> hello@lexvisas.in (Global Mobility & Strategic Immigration for GCCs) | Exploring a potential partnership opportunity with lexvisas.in | messageId=<202606131558.97504353883@smtp-relay.mailin.fr>
+2026-06-13 21:29:11 [INFO   ] SENT (Brevo) -> hello@equip.co (hrtech reduced its time to hire by 66% with Equip's Talent ...) | Exploring a potential partnership opportunity with equip.co | messageId=<202606131559.47968815123@smtp-relay.mailin.fr>
+2026-06-13 21:29:16 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-13 21:29:16 [INFO   ] 
+2026-06-13 21:29:16 [INFO   ] ==============================================================
+2026-06-13 21:29:16 [INFO   ]   RUN SUMMARY
+2026-06-13 21:29:16 [INFO   ] ==============================================================
+2026-06-13 21:29:16 [INFO   ]   Scrape (this run)
+2026-06-13 21:29:16 [INFO   ]     Companies scraped:        18
+2026-06-13 21:29:16 [INFO   ]     Companies with email:     13
+2026-06-13 21:29:16 [INFO   ]     Emails scraped/found:     16
+2026-06-13 21:29:16 [INFO   ]     Search queries run:       2
+2026-06-13 21:29:16 [INFO   ]     Browser used:             chrome
+2026-06-13 21:29:16 [INFO   ]   Replies (this run)
+2026-06-13 21:29:16 [INFO   ]     Reply check:              skipped
+2026-06-13 21:29:16 [INFO   ]   Send (this run)
+2026-06-13 21:29:16 [INFO   ]     Emails sent:              10
+2026-06-13 21:29:16 [INFO   ]     Send failed:              0
+2026-06-13 21:29:16 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-13 21:29:16 [INFO   ]   Database totals (all runs)
+2026-06-13 21:29:16 [INFO   ]     Companies in database:    238
+2026-06-13 21:29:16 [INFO   ]     Companies with email:     181
+2026-06-13 21:29:16 [INFO   ]     Emails scraped (total):   2222
+2026-06-13 21:29:16 [INFO   ]     Emails sent (total):      120
+2026-06-13 21:29:16 [INFO   ]     Replies forwarded (total): 0
+2026-06-13 21:29:16 [INFO   ] ==============================================================
+2026-06-13 21:29:16 [INFO   ] 
