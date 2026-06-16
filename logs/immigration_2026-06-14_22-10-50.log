@@ -1,0 +1,418 @@
+2026-06-14 22:10:50 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-14_22-10-50.log
+2026-06-14 22:10:50 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-14 22:10:50 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-14 22:10:58 [INFO   ] Using browser: chrome
+2026-06-14 22:10:58 [INFO   ] Industry: alumni_fundraising | Query: fundraising education trust India contact
+2026-06-14 22:10:58 [INFO   ] Google search: fundraising education trust India contact
+2026-06-14 22:11:02 [INFO   ]   Found 8 unique result(s).
+2026-06-14 22:11:02 [INFO   ] Scraping Trusts in India (https://gehc.in/trusts-in-india/)
+2026-06-14 22:11:06 [INFO   ]   Email found: awards@attmail.com
+2026-06-14 22:11:06 [INFO   ]   Email found: aaa@indous.org
+2026-06-14 22:11:06 [INFO   ]   Email found: info@fulbright-india.org
+2026-06-14 22:11:06 [INFO   ]   Email found: inlaks@del2.vsnl.net.in
+2026-06-14 22:11:06 [INFO   ]   Email found: jprsatyua@vsnl.com
+2026-06-14 22:11:06 [INFO   ]   Email found: mgr@vsnl.com
+2026-06-14 22:11:06 [INFO   ]   Email found: info@gehc.in
+2026-06-14 22:11:06 [INFO   ] Scraping Raise Funds For Education In India (https://www.ketto.org/cause/fundraising-for-education)
+2026-06-14 22:11:11 [INFO   ]   Email found: info@ketto.org
+2026-06-14 22:11:11 [INFO   ]   Email found: pr@ketto.org
+2026-06-14 22:11:11 [INFO   ] Scraping Education Assistance in India (https://www.motherteresacharities.org/helps/education-helps.php?srsltid=AfmBOopDQUYNaqiI0k1bonOpsg-R_IXyLBj0ZSVZVpGKUZqdtgMPPgYO)
+2026-06-14 22:11:18 [INFO   ]   Email found: mtct1997@gmail.com
+2026-06-14 22:11:18 [INFO   ]   Email found: mtct1997@yahoo.co.in
+2026-06-14 22:11:18 [INFO   ] Skip duplicate domain: scribd.com
+2026-06-14 22:11:18 [INFO   ] Scraping Scholarship Charitable Trusts Shah & Anchor Kutchhi ... (https://www.sakec.ac.in/scholarship-charitable-trusts/)
+2026-06-14 22:11:23 [INFO   ]   Email found: info@sakec.ac.in
+2026-06-14 22:11:23 [INFO   ] Scraping Charitable Donations & NGO Trust For Education India ... (https://ratnanidhi.org/)
+2026-06-14 22:11:27 [INFO   ]   Email found: info@ratnanidhi.org
+2026-06-14 22:11:27 [INFO   ] Scraping Ngo Fundraising Consultants In India (https://adityangoconsultancy.in/ngofundraisingconsultantsinindia.html)
+2026-06-14 22:11:29 [INFO   ]   Email found: info@adityangoconsultancy.in
+2026-06-14 22:11:29 [INFO   ] Scraping Muktangan Education Trust (https://www.helpyourngo.com/ngo/3649/education/muktangan-education-trust)
+2026-06-14 22:11:31 [INFO   ]   Email found: contact@muktanganedu.org
+2026-06-14 22:11:31 [INFO   ]   Email found: info@helpyourngo.com
+2026-06-14 22:11:31 [INFO   ]   Email found: rahulursekar@muktanganedu.org
+2026-06-14 22:11:32 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-14 22:13:06 [INFO   ] Seeded 68 more search query(ies) to continue scraping.
+2026-06-14 22:13:06 [INFO   ] Industry: ca_cs_firms | Query: chartered accountants firms in India for students contact
+2026-06-14 22:13:06 [INFO   ] Google search: chartered accountants firms in India for students contact
+2026-06-14 22:13:09 [INFO   ]   Found 7 unique result(s).
+2026-06-14 22:13:09 [INFO   ] Skip duplicate domain: scribd.com
+2026-06-14 22:13:09 [INFO   ] Scraping Top CA Firms in Pune (https://www.henryharvin.com/blog/best-ca-firms-in-pune/)
+2026-06-14 22:13:23 [INFO   ]   Email found: hello@henryharvin.com
+2026-06-14 22:13:23 [INFO   ]   Email found: support@henryharvin.com
+2026-06-14 22:13:23 [INFO   ]   Email found: 17783134691704271752@swiper1.js
+2026-06-14 22:13:23 [INFO   ]   Email found: iso.training.eurotech@gmail.com
+2026-06-14 22:13:23 [INFO   ]   Email found: 17783160381704264992@alpine.js
+2026-06-14 22:13:23 [INFO   ] Scraping Keyword Search Result for Pune (https://caconnect.icai.org/city-wise-list/Pune)
+2026-06-14 22:13:26 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:27 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:28 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:29 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:30 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:31 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:32 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:33 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:34 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:35 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:13:35 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-14 22:13:35 [INFO   ] Scraping CA Pranjal Joshi and Co., Chartered Accountant in Pune (https://www.capranjaljoshi.com/)
+2026-06-14 22:13:36 [INFO   ]   Email found: contact@capranjaljoshi.com
+2026-06-14 22:13:36 [INFO   ] Scraping Top Chartered Accountants Distributors, Pune (https://www.advisorkhoj.com/Pune/Chartered-Accountants-Advisor)
+2026-06-14 22:13:45 [INFO   ]   Email found: pkmishrafca@yahoo.co.in
+2026-06-14 22:13:45 [INFO   ]   Email found: prt@prteli.com
+2026-06-14 22:13:45 [INFO   ]   Email found: pradeepkamathe@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: prakashmoza@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: pramodshahca@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: pokarnaassociates@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: info@prosperitree.com
+2026-06-14 22:13:45 [INFO   ]   Email found: pjainca@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: ravi.rajapurkarkar@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: nuddu7sr@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: farlabhang@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: reliable3associates@rediffmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: raghunath.lande@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: rohit@rsmco.in
+2026-06-14 22:13:45 [INFO   ]   Email found: ca.rahulnerakar@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: rajuagiwal@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: rbmerchant317@yahoo.co.in
+2026-06-14 22:13:45 [INFO   ]   Email found: rs_somani2008@rediffmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: rajy1970@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: caasrathi@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: rohitijare@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: roshan.daultani@anrk.in
+2026-06-14 22:13:45 [INFO   ]   Email found: rupamtripathi4@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: rushab.jain@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: ca.srpasalkar@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: casggupte@hotmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: sstco@sstca.com
+2026-06-14 22:13:45 [INFO   ]   Email found: sbparabassociates@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: info@scjoglekarco.com
+2026-06-14 22:13:45 [INFO   ]   Email found: ssanjiv58@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: shaker.ca@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: ssamdekar@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: slbagadi@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: sudam248@gmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: bhujangsm@rediffmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: casndoshi@rediffmail.com
+2026-06-14 22:13:45 [INFO   ]   Email found: snjtax@yahoo.com
+2026-06-14 22:13:45 [INFO   ]   Email found: casrh@casrhajgude.com
+2026-06-14 22:13:46 [INFO   ]   Email found: srkalaje@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: karandesachin@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: shgodetaxcon@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sumodkhot@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: santosh.patole9@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ca.svmirji@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sachin_shinde@live.in
+2026-06-14 22:13:46 [INFO   ]   Email found: ca.sagar.dube@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: promanohar@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: samarth.assokm@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: oneupadvisors@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shindesanjay2005@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sanjaykaswa@vsnl.net
+2026-06-14 22:13:46 [INFO   ]   Email found: santoshnghare@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: narayansarda@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sspujari@ymail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: patil.suresh99@yahoo.in
+2026-06-14 22:13:46 [INFO   ]   Email found: shahassociates@ymail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sharpconsultancy@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shashank.patki@rediffmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shah5724@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: manjushashete@hotmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sharadpjoshi@vsnl.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shilpa_b123@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: asish.bakaidkar@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: consultants@bsmart.org.in
+2026-06-14 22:13:46 [INFO   ]   Email found: sainapune@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: raviramallu@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ca.harshad.shinde@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: huzefaujjainwala@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: capradnyakajale@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: jainmehul@rediffmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: vikram.kumbhar@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: jaindilip.ca@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: info@taxoindia.in
+2026-06-14 22:13:46 [INFO   ]   Email found: k_premjit@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: cacsparas@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shireeshmagte@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sachin@sraindia.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: pushpakmundada@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: vilas@vgnmail.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: mgramo@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: abhijitsatav@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ashokpagariyaandco@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: pashevade@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: adityagl511@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: vinod@ibca.in
+2026-06-14 22:13:46 [INFO   ]   Email found: caajitmundada@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: rahool.ramchandani@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ojasfinancial@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: jkrincometaxindia@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: thakkarassociates2012@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: 1kartikmjain@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ca.akhilkumar14@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: mohasindmulani@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: cavikasabhang@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: smartwealthpartners@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: hsa.hcs@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: rgbhilare@rediffmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: kishoremehta@ksmca.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: snehal1460@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: pdobhada@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sagarstpt@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: thakkarrr@hotmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: smunecha@rediffmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shikharhjain@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shahsu@vsnl.net
+2026-06-14 22:13:46 [INFO   ]   Email found: udaykukade@hotmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: swargate.dranth@dapns.com
+2026-06-14 22:13:46 [INFO   ]   Email found: m_jain_ca@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: neerajsonigara@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shilchandra@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: nitin_chandrani@rediffmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ingalwar@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: avinashutgikar@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: abhishek@aspadhye.com
+2026-06-14 22:13:46 [INFO   ]   Email found: nishikant.panchwagh@paylineindia.com
+2026-06-14 22:13:46 [INFO   ]   Email found: arvind@ambco.in
+2026-06-14 22:13:46 [INFO   ]   Email found: cabhaktideshpande@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sandeepmorab@eth.net
+2026-06-14 22:13:46 [INFO   ]   Email found: casanjay819@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ankush51073@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: cakarankudale@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: cacbkale@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sandeshkadlak@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: vishalparatwar@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: satyajeet.jagtap@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: vilasparbat@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: caajaypatil79@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: anca.pne@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sulakhe@vsnl.com
+2026-06-14 22:13:46 [INFO   ]   Email found: kalyankar.chaitanya@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: rajsomwanshi@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: info@aashagroup.com
+2026-06-14 22:13:46 [INFO   ]   Email found: mscasayyed@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: tax.kale@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: support@jenasworld.com
+2026-06-14 22:13:46 [INFO   ]   Email found: anil.agarwal@finegral.com
+2026-06-14 22:13:46 [INFO   ]   Email found: kamatketaki@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: jkrcorporate@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: info@pratimabhinge.com
+2026-06-14 22:13:46 [INFO   ]   Email found: amoghparanjape@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: caramnehere@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: rahulkulkarni.ca@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ahjoshi.co@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: arvindbagaitkar@rediffmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: shindeappa@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ca@aspokharna.com
+2026-06-14 22:13:46 [INFO   ]   Email found: aamandco@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: abhaymahajan25@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: abhijeetp@icai.org
+2026-06-14 22:13:46 [INFO   ]   Email found: caabhijit.shete@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: kajale.prajakta@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: meenal@abhyankarcs.com
+2026-06-14 22:13:46 [INFO   ]   Email found: info@adhauassociates.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: sagaragrawal1@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: agashesarpaleassociates@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: deepak.a.ahuja@ahujavalecha.com
+2026-06-14 22:13:46 [INFO   ]   Email found: lalit.valecha@ahujavalecha.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ajaykalaskar@yahoo.co.in
+2026-06-14 22:13:46 [INFO   ]   Email found: ajaysalagare@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: caajaypatil@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: kholeab@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ahaa.2110@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: advayicon@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: caamitpokale@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ca.amitshah@icai.org
+2026-06-14 22:13:46 [INFO   ]   Email found: ca.anaghanarkar@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: amco.pune@amcount.com
+2026-06-14 22:13:46 [INFO   ]   Email found: anant_joshi7165@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: sudhir@excise-filing.com
+2026-06-14 22:13:46 [INFO   ]   Email found: info@anrk.in
+2026-06-14 22:13:46 [INFO   ]   Email found: rahulbansode81@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: taxwomanpune123@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: apnabhaishakeel@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: arjunarkhade@yahoo.in
+2026-06-14 22:13:46 [INFO   ]   Email found: caarpitkhetan@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: asfoujdar@swavin.com
+2026-06-14 22:13:46 [INFO   ]   Email found: pune@assantaxfiling.com
+2026-06-14 22:13:46 [INFO   ]   Email found: kbehere@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: ashwin_kapoor@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: atulbaheti@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: atulcdoshipune@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: atulmokashi2012@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: balasaheb1962@yahoo.com
+2026-06-14 22:13:46 [INFO   ]   Email found: cabdthorat@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: bgu.office@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: bipendrakothari@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: brij65@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: bagrechaandassociates@gmail.com
+2026-06-14 22:13:46 [INFO   ]   Email found: mlbaheti1@hotmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: namaste@balbathia.com
+2026-06-14 22:13:47 [INFO   ]   Email found: anandbarpartute@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: parikshitkabra@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: gandhibk9@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: bharatlokhande1970@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cabharat.2707@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mshb2009@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: zbhiku@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: pbbhole@vsnl.net
+2026-06-14 22:13:47 [INFO   ]   Email found: bhushanbapat27@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: vipulshah1501@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ca.ravibiradar@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: borkarandborkar@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: butalaamit@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: butteassociates101@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: crluniya@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: caliberroc@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: casmchandorkar@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: doshica@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: jac.ca20@yahoo.in
+2026-06-14 22:13:47 [INFO   ]   Email found: cagandhidb@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: dgdasumbarge@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cacsdarshanpadia@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: drb@barveamdco.in
+2026-06-14 22:13:47 [INFO   ]   Email found: dsdarak@yahoo.co.in
+2026-06-14 22:13:47 [INFO   ]   Email found: dadamle@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: vishwas.damle@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: prakash@dapns.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kulanand47@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: 2011johnsonthomas@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kirticd@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cadevendradugad@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: info@dahotreanadahotre.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ddipak99@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: dk28666@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: caabhijeet@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: dhirajrathi@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ca.ejaz@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: shirishe@vsnl.com
+2026-06-14 22:13:47 [INFO   ]   Email found: gopal@finnovaadvisory.com
+2026-06-14 22:13:47 [INFO   ]   Email found: gagaandeepsk@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kapadia.aiyar@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: girishchand@vsnl.net
+2026-06-14 22:13:47 [INFO   ]   Email found: ganeshgaikwad3837@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kankate.ganesh@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: gatewayservices12@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: avadthut.titamde@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: gbrathiandco@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: genesis.esicpf@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: shahbaldota@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kedariamar@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cavishal.kaedkar@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: caavadhoot@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: suneel@gtgca.com
+2026-06-14 22:13:47 [INFO   ]   Email found: gundeshagb@hotmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cahassociates@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: hanumantraolad@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: harishpc@hotmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: taresuhas@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: imranmemon.ca@gmail.cim
+2026-06-14 22:13:47 [INFO   ]   Email found: makarandca@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cajagdishpatel87@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: sandeeplohade@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cajdshah@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cajayeshmeena@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cakhollam@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: daveketan@hotmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kb_jangale@yahoo.co.in
+2026-06-14 22:13:47 [INFO   ]   Email found: ksancheti@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cakmwagh@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: siddhesh.kalaje@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kale.co3357@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: shriniwaskendale@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: khanolkar.sanjay@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: cakiranppatel@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: suhas.deshpande@kirtanepandit.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ktgonline@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: djkitawat@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: carajputkl@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kumargonte.co@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: info@khandelwaljain.com
+2026-06-14 22:13:47 [INFO   ]   Email found: manikamol@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: office@lodhaglobal.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mdbaldota_67@yahoo.co.in
+2026-06-14 22:13:47 [INFO   ]   Email found: manhendrandevi@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: camspendharkar@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: msk1812@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: camadandesai@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mahendragosavi@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mvpasso@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: idssolutionpune@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: sabane.ms@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mbassociates.info@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: pune@manupatra.com
+2026-06-14 22:13:47 [INFO   ]   Email found: nitinmate.pune41@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: vivekmathkari@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mayur_abnave@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: camohseen@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: palreshagautam@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: kiranwakle97@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ca_jadhavms@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ca.sushil.mundada@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: mukingal@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: ncsurana28@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: parasnisnv@yahoo.co.in
+2026-06-14 22:13:47 [INFO   ]   Email found: dhiraj.nahata@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: canavinkumar.varma@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: nakand@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: nayana0312@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: sanjayjha_associates@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: nirmala.consultancy@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: contact@oats.co.in
+2026-06-14 22:13:47 [INFO   ]   Email found: pcp@pcpatil.com
+2026-06-14 22:13:47 [INFO   ]   Email found: phulphagarpl@yahoo.com
+2026-06-14 22:13:47 [INFO   ]   Email found: capiyushawati@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: pasurana@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: paraglunkad-co@rediffmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: consultants@pcs.org.in
+2026-06-14 22:13:47 [INFO   ]   Email found: pavangoyal30@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: pawanshetty7@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: accounts@pawanjainandassociates.com
+2026-06-14 22:13:47 [INFO   ]   Email found: puja4244@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: fca.piyushsingh@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: manojnlalwani@gmail.com
+2026-06-14 22:13:47 [INFO   ]   Email found: youremail@yourdomain.com
+2026-06-14 22:13:47 [INFO   ]   Email found: connect@advisorkhoj.com
+2026-06-14 22:13:47 [INFO   ] Scraping Top CA Accounting Firm in Pune India (https://www.ascgroup.in/ca-accounting-firm-in-pune-india/)
+2026-06-14 22:13:52 [INFO   ]   Email found: info@ascgroup.in
+2026-06-14 22:13:52 [INFO   ] Scraping List of Major Chartered Accountant's Firms (https://nrhmmanipur.org/wp-content/uploads/2019/07/newEmpanelled-CA-FIRMS.pdf)
+2026-06-14 22:13:53 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-14 22:13:53 [INFO   ] Email target reached (11 companies with email, goal 10) — stopping scrape.
+2026-06-14 22:13:54 [INFO   ] Scrape complete: {'queries_run': 2, 'companies_scraped': 13, 'companies_with_email': 11, 'emails_found': 339, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-14 22:13:54 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-14 22:13:54 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-14 22:14:01 [INFO   ] SENT (Brevo) -> info@eliteoverseaseducation.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606141644.15493787969@smtp-relay.mailin.fr>
+2026-06-14 22:14:10 [INFO   ] SENT (Brevo) -> info@ggims.ca (GGIMS: Best Immigration Consultants in India) | Exploring a potential partnership opportunity with ggims.com | messageId=<202606141644.16392674811@smtp-relay.mailin.fr>
+2026-06-14 22:14:17 [INFO   ] SENT (Brevo) -> info@fulbright-india.org (Trusts in India) | Exploring a potential partnership opportunity with gehc.in | messageId=<202606141644.74628158848@smtp-relay.mailin.fr>
+2026-06-14 22:14:26 [INFO   ] SENT (Brevo) -> info@ketto.org (Raise Funds For Education In India) | Exploring a potential partnership opportunity with ketto.org | messageId=<202606141644.16078518918@smtp-relay.mailin.fr>
+2026-06-14 22:14:39 [INFO   ] SENT (Brevo) -> info@sakec.ac.in (Scholarship Charitable Trusts Shah & Anchor Kutchhi ...) | Exploring a potential partnership opportunity with sakec.ac.in | messageId=<202606141644.13079329915@smtp-relay.mailin.fr>
+2026-06-14 22:14:55 [INFO   ] SENT (Brevo) -> info@ratnanidhi.org (Charitable Donations & NGO Trust For Education India ...) | Exploring a potential partnership opportunity with ratnanidhi.org | messageId=<202606141644.91696214762@smtp-relay.mailin.fr>
+2026-06-14 22:15:04 [INFO   ] SENT (Brevo) -> info@adityangoconsultancy.in (Ngo Fundraising Consultants In India) | Exploring a potential partnership opportunity with adityangoconsultancy.in | messageId=<202606141645.61026753067@smtp-relay.mailin.fr>
+2026-06-14 22:15:39 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-14 22:15:44 [INFO   ] SENT (Brevo) -> info@helpyourngo.com (Muktangan Education Trust) | Exploring a potential partnership opportunity with helpyourngo.com | messageId=<202606141645.28406735099@smtp-relay.mailin.fr>
+2026-06-14 22:16:11 [INFO   ] SENT (Brevo) -> info@prosperitree.com (Top Chartered Accountants Distributors, Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141646.88598010141@smtp-relay.mailin.fr>
+2026-06-14 22:16:38 [INFO   ] SENT (Brevo) -> info@ascgroup.in (Top CA Accounting Firm in Pune India) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141646.60328292864@smtp-relay.mailin.fr>
+2026-06-14 22:16:43 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-14 22:16:43 [INFO   ] 
+2026-06-14 22:16:43 [INFO   ] ==============================================================
+2026-06-14 22:16:43 [INFO   ]   RUN SUMMARY
+2026-06-14 22:16:43 [INFO   ] ==============================================================
+2026-06-14 22:16:43 [INFO   ]   Scrape (this run)
+2026-06-14 22:16:43 [INFO   ]     Companies scraped:        13
+2026-06-14 22:16:43 [INFO   ]     Companies with email:     11
+2026-06-14 22:16:43 [INFO   ]     Emails scraped/found:     339
+2026-06-14 22:16:43 [INFO   ]     Search queries run:       2
+2026-06-14 22:16:43 [INFO   ]     Browser used:             chrome
+2026-06-14 22:16:43 [INFO   ]   Replies (this run)
+2026-06-14 22:16:43 [INFO   ]     Reply check:              skipped
+2026-06-14 22:16:43 [INFO   ]   Send (this run)
+2026-06-14 22:16:43 [INFO   ]     Emails sent:              10
+2026-06-14 22:16:43 [INFO   ]     Send failed:              0
+2026-06-14 22:16:43 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-14 22:16:43 [INFO   ]   Database totals (all runs)
+2026-06-14 22:16:43 [INFO   ]     Companies in database:    251
+2026-06-14 22:16:43 [INFO   ]     Companies with email:     192
+2026-06-14 22:16:43 [INFO   ]     Emails scraped (total):   2561
+2026-06-14 22:16:43 [INFO   ]     Emails sent (total):      130
+2026-06-14 22:16:43 [INFO   ]     Replies forwarded (total): 0
+2026-06-14 22:16:43 [INFO   ] ==============================================================
+2026-06-14 22:16:43 [INFO   ] 

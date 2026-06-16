@@ -72,3 +72,59 @@ def praise_hint_for(industry_id: str) -> str:
 def industry_name(industry_id: str) -> str:
     item = get_industry(industry_id)
     return (item or {}).get("name") or industry_id
+
+
+def template_file_for(industry_id: str) -> str | None:
+    item = get_industry(industry_id)
+    if not item:
+        return None
+    raw = (item.get("template_file") or "").strip()
+    return raw or None
+
+
+def email_subject_for(industry_id: str) -> str | None:
+    item = get_industry(industry_id)
+    if not item:
+        return None
+    raw = (item.get("email_subject") or "").strip()
+    return raw or None
+
+
+def subject_append_domain_for(industry_id: str) -> bool:
+    item = get_industry(industry_id)
+    if not item:
+        return True
+    return bool(item.get("subject_append_domain", True))
+
+
+def use_nvidia_praise_for(industry_id: str) -> bool:
+    item = get_industry(industry_id)
+    if not item:
+        return True
+    return bool(item.get("use_nvidia_praise", True))
+
+
+def signature_links_for(industry_id: str) -> list[dict[str, str]] | None:
+    item = get_industry(industry_id)
+    if not item:
+        return None
+    links = item.get("signature_links")
+    if not isinstance(links, list) or not links:
+        return None
+    return links
+
+
+def scrape_source_for(industry_id: str) -> str:
+    item = get_industry(industry_id)
+    if not item:
+        return "google"
+    return (item.get("scrape_source") or "google").strip().lower()
+
+
+def google_scrape_industry_ids(*, active_only: bool = True) -> list[str]:
+    """Industry IDs handled by the Google/website scraper (excludes e.g. ca_connect)."""
+    return [
+        i["id"]
+        for i in list_industries(active_only=active_only)
+        if scrape_source_for(i["id"]) != "ca_connect"
+    ]

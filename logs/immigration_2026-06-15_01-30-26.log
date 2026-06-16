@@ -1,0 +1,86 @@
+2026-06-15 01:30:26 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-15_01-30-26.log
+2026-06-15 01:30:26 [INFO   ] 
+2026-06-15 01:30:26 [INFO   ] ======================================================================
+2026-06-15 01:30:26 [INFO   ]   RUN SUMMARY
+2026-06-15 01:30:26 [INFO   ] ======================================================================
+2026-06-15 01:30:26 [INFO   ]   SCRAPE — this run
+2026-06-15 01:30:26 [INFO   ]     Run limits (config):             max 50 sites, stop at 10 with email, max 20 Google queries
+2026-06-15 01:30:26 [INFO   ]       Caps from sender_config.json; scrape stops early when email target is met.
+2026-06-15 01:30:26 [INFO   ] 
+2026-06-15 01:30:26 [INFO   ]   CA Connect — https://caconnect.icai.org/
+2026-06-15 01:30:26 [INFO   ]     Search filters:                  Audit | Maharashtra | Pune
+2026-06-15 01:30:26 [INFO   ]       Service, state, and city from ca_connect_credentials.json.
+2026-06-15 01:30:26 [INFO   ]     Listings on results page:        574
+2026-06-15 01:30:26 [INFO   ]       Member + firm cards returned by CA Connect search (not all have email).
+2026-06-15 01:30:26 [INFO   ]     Profile pages opened:            5
+2026-06-15 01:30:26 [INFO   ]       Logged-in profile visits to extract email/mobile this run.
+2026-06-15 01:30:26 [INFO   ]     New emails added to DB:          5
+2026-06-15 01:30:26 [INFO   ]       First-time imports into immigration.db as ca_cs_firms (duplicates skipped).
+2026-06-15 01:30:26 [INFO   ] 
+2026-06-15 01:30:26 [INFO   ]   Google website scrape — this run
+2026-06-15 01:30:26 [INFO   ]     Websites visited:                11
+2026-06-15 01:30:26 [INFO   ]       Company sites opened from Google search results (excludes CA Connect).
+2026-06-15 01:30:26 [INFO   ]     Sites where email was found:     8
+2026-06-15 01:30:26 [INFO   ]       Distinct companies with at least one new email this run (Google only).
+2026-06-15 01:30:26 [INFO   ]     Email addresses discovered:      12
+2026-06-15 01:30:26 [INFO   ]       New email rows saved to the database from Google scraping.
+2026-06-15 01:30:26 [INFO   ]     Google queries executed:         2
+2026-06-15 01:30:26 [INFO   ]       Search queries consumed from the pending queue this run.
+2026-06-15 01:30:26 [INFO   ]     Reserved industry (ca_cs_firms): 5 / 2 new emails (met)
+2026-06-15 01:30:26 [INFO   ]       Chartered Accountants & Company Secretaries — minimum new contacts per run (sourced via CA Connect for ca_cs_firms).
+2026-06-15 01:30:26 [INFO   ]     Browser:                         chrome
+2026-06-15 01:30:26 [INFO   ]       Engine used for Google website scraping.
+2026-06-15 01:30:26 [INFO   ] 
+2026-06-15 01:30:26 [INFO   ]   REPLIES — this run
+2026-06-15 01:30:26 [INFO   ]     Inbox check:                     skipped
+2026-06-15 01:30:26 [INFO   ]       Reply forwarding is off (check_replies_before_send: false in sender_config.json).
+2026-06-15 01:30:26 [INFO   ] 
+2026-06-15 01:30:26 [INFO   ]   SEND — this run
+2026-06-15 01:30:26 [INFO   ]     Recipients queued:               10
+2026-06-15 01:30:26 [INFO   ]       Unsent contacts considered this run (send cap: 10 per run).
+2026-06-15 01:30:26 [INFO   ]     Queue slots for ca_cs_firms:     1 / 1 reserved
+2026-06-15 01:30:26 [INFO   ]       Chartered Accountants & Company Secretaries — at least 1 email(s) held for this industry when contacts are available.
+2026-06-15 01:30:26 [INFO   ]     Emails sent successfully:        10
+2026-06-15 01:30:26 [INFO   ]       Partnership / funding intro emails delivered via Brevo this run.
+2026-06-15 01:30:26 [INFO   ]     Send failures:                   0
+2026-06-15 01:30:26 [INFO   ]       Brevo API or transport errors (not counted as sent).
+2026-06-15 01:30:26 [INFO   ]     Skipped:                         0
+2026-06-15 01:30:26 [INFO   ]       Dry-run previews or recipients already marked sent in the database.
+2026-06-15 01:30:26 [INFO   ]     Sent by industry:
+2026-06-15 01:30:26 [INFO   ]       Recruitment & Staffing Firms   9
+2026-06-15 01:30:26 [INFO   ]       Chartered Accountants & Company Secretaries 1
+2026-06-15 01:30:27 [INFO   ] 
+2026-06-15 01:30:27 [INFO   ]   DATABASE — cumulative (all runs)
+2026-06-15 01:30:27 [INFO   ]     Companies stored:                354
+2026-06-15 01:30:27 [INFO   ]       All scraped organisations across every industry vertical.
+2026-06-15 01:30:27 [INFO   ]     Companies with email:            278
+2026-06-15 01:30:27 [INFO   ]       Records with email_status = found (ready or already used for outreach).
+2026-06-15 01:30:27 [INFO   ]     Email addresses on file:         2829
+2026-06-15 01:30:27 [INFO   ]       Total rows in company_emails (one company may have several).
+2026-06-15 01:30:27 [INFO   ]     Emails sent (lifetime):          170
+2026-06-15 01:30:27 [INFO   ]       Unique recipients successfully emailed at least once.
+2026-06-15 01:30:27 [INFO   ]     Send failures (lifetime):        0
+2026-06-15 01:30:27 [INFO   ]       Recipients with a failed status in email_sent.
+2026-06-15 01:30:27 [INFO   ]     Replies forwarded (lifetime):    0
+2026-06-15 01:30:27 [INFO   ]       Human replies forwarded to your Gmail.
+2026-06-15 01:30:27 [INFO   ]     Ready to send (now):             199
+2026-06-15 01:30:27 [INFO   ]       Unsent contacts still in the outbound queue for future runs.
+2026-06-15 01:30:27 [INFO   ]     Google queries pending:          53
+2026-06-15 01:30:27 [INFO   ]       Unused search queries waiting for future scrape runs.
+2026-06-15 01:30:27 [INFO   ]     Unsent ca_cs_firms:              20
+2026-06-15 01:30:27 [INFO   ]       Chartered Accountants & Company Secretaries contacts not yet emailed.
+2026-06-15 01:30:27 [INFO   ]     Companies by industry (with email / total):
+2026-06-15 01:30:27 [INFO   ]       Alumni Donation & Fundraising    37 / 46
+2026-06-15 01:30:27 [INFO   ]       NBFC & Banks (Campus Hiring)     8 / 13
+2026-06-15 01:30:27 [INFO   ]       Chartered Accountants & Company Secretaries 22 / 27
+2026-06-15 01:30:27 [INFO   ]       Coaching & Test Prep             12 / 14
+2026-06-15 01:30:27 [INFO   ]       Corporate CSR Programs           27 / 34
+2026-06-15 01:30:27 [INFO   ]       EdTech Companies                 17 / 19
+2026-06-15 01:30:27 [INFO   ]       Student Loan / Education Finance 10 / 19
+2026-06-15 01:30:27 [INFO   ]       HRTech Companies                 18 / 27
+2026-06-15 01:30:27 [INFO   ]       Insurance (Campus & Graduate Hiring) 15 / 16
+2026-06-15 01:30:27 [INFO   ]       Overseas Education / Immigration 49 / 59
+2026-06-15 01:30:27 [INFO   ]       Recruitment & Staffing Firms     28 / 42
+2026-06-15 01:30:27 [INFO   ]       Training & Finishing Schools     35 / 38
+2026-06-15 01:30:27 [INFO   ] ======================================================================
+2026-06-15 01:30:27 [INFO   ] 

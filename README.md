@@ -8,7 +8,7 @@ Built to follow patterns from `CVL-ScraperLinkedIn_SendMails` (SQLite deduplicat
 
 ## Industry verticals
 
-Eleven industry verticals are defined in `industries.json`:
+Fourteen industry verticals are defined in `industries.json`:
 
 | Rank | ID | Sector |
 |------|-----|--------|
@@ -18,11 +18,14 @@ Eleven industry verticals are defined in `industries.json`:
 | 4 | `education_finance` | Student Loan / Education Finance |
 | 5 | `hrtech` | HRTech Companies |
 | 6 | `corporate_csr` | Corporate CSR Programs |
-| 7 | `alumni_fundraising` | Alumni Donation & Fundraising |
+| 7 | `lawyers` | Law Firms & Lawyers |
 | 8 | `training_finishing_schools` | Training & Finishing Schools |
 | 9 | `bfsi_nbfc_banks` | NBFC & Banks (Campus Hiring) |
 | 10 | `insurance` | Insurance (Campus & Graduate Hiring) |
 | 11 | `coaching_test_prep` | Coaching & Test Prep |
+| 12 | `ca_cs_firms` | Chartered Accountants & Company Secretaries (seed investor intros; `funding_intro.html`) |
+| 13 | `company_secretary_firms` | Company Secretary Firms (`funding_intro_cs.html`; 2 reserved send slots per run) |
+| 14 | `tax_consultants` | Tax Consultants (`funding_intro_tax.html`; 2 reserved send slots per run) |
 
 Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated outreach lines. Set `"active": false` on any industry to skip it.
 
@@ -52,9 +55,10 @@ investment/
 ├── immigration_sender.py     # Gmail SMTP sender
 ├── immigration_db.py         # SQLite schema and helpers
 ├── nvidia_llm.py             # NVIDIA key rotation + LLM calls
-├── industries.json           # 11 industry verticals + seed search queries
+├── industries.json           # 12 industry verticals + seed search queries
 ├── industries.py             # Industry config loader
-├── partnership.html          # Local email HTML template (Brevo sends filled HTML)
+├── partnership.html          # Partnership outreach HTML template
+├── funding_intro.html        # CA / CS seed-investor introduction template
 ├── brevo_mail.py             # Brevo API (reads project mail_config.json)
 ├── mail_config.json          # Brevo API key + SMTP (edit locally; gitignored)
 ├── mail_config.example.json  # Template — copy if mail_config.json is missing
@@ -120,6 +124,9 @@ Controls sender identity, email subject, send limits, and **local HTML template*
 | `signature_links` | Array of `{ "label", "url" }` — all clickable footer links |
 | `email_subject` | Subject base line; each send appends ` with {domain}` |
 | `emails_per_run` | **Max emails sent in one `send` or `run` execution** (default: 10) |
+| `ensure_industry_per_run` | Industry ID to reserve slots for each send (default: `ca_cs_firms`) |
+| `min_ensure_industry_per_run` | Min emails from that industry per **send** (default: 1) |
+| `min_ensure_industry_scrape_per_run` | Min companies with email from that industry per **scrape** (default: 2) |
 | `send_method` | `brevo_api` (default) or `gmail_smtp` for legacy Gmail |
 | `template_file` | Local HTML template (`partnership.html` in project folder) |
 | `mail_config_file` | Path to project Brevo config (`mail_config.json`) |

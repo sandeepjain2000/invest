@@ -1,0 +1,25 @@
+2026-06-16 14:50:35 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-16_14-50-35.log
+2026-06-16 14:50:35 [INFO   ] === Pipeline status ===
+2026-06-16 14:50:35 [INFO   ]   search_queries_pending   30
+2026-06-16 14:50:35 [INFO   ]   search_queries_done      91
+2026-06-16 14:50:35 [INFO   ]   companies_total          529
+2026-06-16 14:50:35 [INFO   ]   companies_with_email     420
+2026-06-16 14:50:35 [INFO   ]   emails_found             3108
+2026-06-16 14:50:35 [INFO   ]   emails_sent              294
+2026-06-16 14:50:35 [INFO   ]   emails_failed            0
+2026-06-16 14:50:35 [INFO   ]   replies_forwarded        0
+2026-06-16 14:50:35 [INFO   ]   campaign_subjects        183
+2026-06-16 14:50:35 [INFO   ] 
+2026-06-16 14:50:35 [INFO   ] === Companies by industry ===
+2026-06-16 14:50:35 [INFO   ]   NBFC & Banks (Campus Hiring)     total=13  with_email=8
+2026-06-16 14:50:35 [INFO   ]   Chartered Accountants & Company Secretaries total=83  with_email=75
+2026-06-16 14:50:35 [INFO   ]   Coaching & Test Prep             total=37  with_email=31
+2026-06-16 14:50:35 [INFO   ]   Corporate CSR Programs           total=34  with_email=27
+2026-06-16 14:50:35 [INFO   ]   EdTech Companies                 total=19  with_email=17
+2026-06-16 14:50:35 [INFO   ]   Student Loan / Education Finance total=19  with_email=10
+2026-06-16 14:50:35 [INFO   ]   HRTech Companies                 total=48  with_email=32
+2026-06-16 14:50:35 [INFO   ]   Insurance (Campus & Graduate Hiring) total=21  with_email=18
+2026-06-16 14:50:35 [INFO   ]   Law Firms & Lawyers              total=85  with_email=65
+2026-06-16 14:50:35 [INFO   ]   Overseas Education / Immigration total=77  with_email=63
+2026-06-16 14:50:35 [INFO   ]   Recruitment & Staffing Firms     total=50  with_email=36
+2026-06-16 14:50:35 [INFO   ]   Training & Finishing Schools     total=43  with_email=38

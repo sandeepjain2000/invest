@@ -1,0 +1,65 @@
+2026-06-16 12:33:24 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-16_12-33-24.log
+2026-06-16 12:33:24 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-16 12:34:55 [INFO   ]   CA import: CA. ADVAIT PRASHANT MEDHEKAR <caadvaitmedhekar@gmail.com>
+2026-06-16 12:34:55 [INFO   ]   CA import: CA. SUMIT KIRAN PATIL <casumitpatil@gmail.com>
+2026-06-16 12:34:55 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 2 new email(s).
+2026-06-16 12:34:55 [INFO   ] Scrape targets: up to 50 companies, stop after 16 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-16 12:34:55 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-16 12:34:56 [INFO   ] Using browser: chrome
+2026-06-16 12:34:57 [INFO   ] Industry: overseas_education_immigration | Query: immigration consultants for students in India email
+2026-06-16 12:34:57 [INFO   ] Google search: immigration consultants for students in India email
+2026-06-16 12:35:03 [INFO   ]   Found 12 unique result(s).
+2026-06-16 12:35:03 [INFO   ] Scraping Contact Us (https://giecglobal.com/contact/)
+2026-06-16 12:35:10 [INFO   ]   Email found: te-mailinfo@giecglobal.com
+2026-06-16 12:35:10 [INFO   ]   Email found: info@giecglobal.com
+2026-06-16 12:35:10 [INFO   ]   Email found: info@giecglobal.com.au
+2026-06-16 12:35:10 [INFO   ]   Email found: info@giecglobal.lk
+2026-06-16 12:35:10 [INFO   ]   Email found: admin@giecglobal.uk
+2026-06-16 12:35:10 [INFO   ] Scraping More items... (https://1982studio.com/Docs/Contacting%20the%20Department%20-%20Migration%20Institute%20of%20Australia.pdf)
+2026-06-16 12:35:13 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-16 12:35:14 [INFO   ] Scraping How to Contact the UK Home Office (https://www.getborderless.co.uk/blog/home-office-contact-number#:~:text=What%20is%20the%20UKVI%20email,Support%40homeoffice.gov.uk)
+2026-06-16 12:35:39 [INFO   ]   Email found: ascorrespondence@migranthelpuk.org
+2026-06-16 12:35:39 [INFO   ]   Email found: businesshelpdesk@homeoffice.gov.uk
+2026-06-16 12:35:39 [INFO   ]   Email found: enquiries@homeoffice.gov.uk
+2026-06-16 12:35:39 [INFO   ]   Email found: applyonlinee-support@homeoffice.gov.uk
+2026-06-16 12:35:39 [INFO   ]   Email found: public.enquiries@homeoffice.gov.uk
+2026-06-16 12:35:39 [INFO   ] Scraping Get specialist immigration advice (https://www.citizensadvice.org.uk/immigration/get-help/get-immigration-advice/#:~:text=If%20you%20need%20help%20with,to%20the%20EU%20Settlement%20Scheme)
+2026-06-16 12:35:46 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-16 12:35:46 [INFO   ] Skip duplicate domain: xiphiasimmigration.com
+2026-06-16 12:35:46 [INFO   ] Skip duplicate domain: visa4you.co.in
+2026-06-16 12:35:46 [INFO   ] Scraping Apex Consultants : Study Abroad Education Consultants ... (https://www.apexstudent.com/)
+2026-06-16 12:36:13 [INFO   ]   Email found: info@apexstudent.com
+2026-06-16 12:36:13 [INFO   ] Skip duplicate domain: edwiseinternational.com
+2026-06-16 12:36:13 [INFO   ] Scraping APG Education & Immigration Consultants India, Asia Pacific ... (https://asiapacificgroup.com/india/)
+2026-06-16 12:36:23 [INFO   ]   Email found: info@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: wyndham@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: thomastown@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: nsw@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: nsw2@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: adelaide@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: perth@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: nsw3@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: cambodia@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: chd@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: kerala@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: srilanka@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ]   Email found: info.ph@asiapacificgroup.com
+2026-06-16 12:36:23 [INFO   ] Skip duplicate domain: idp.com
+2026-06-16 12:36:23 [INFO   ] Scraping Jain Overseas Immigration Services (https://studentvisacanada.com/Home)
+2026-06-16 12:36:27 [INFO   ]   Email found: info@studentvisacanada.com
+2026-06-16 12:36:27 [INFO   ] Scraping Overseas Education Consultant in India (https://www.krimmigrationvisa.com/)
+2026-06-16 12:36:34 [INFO   ]   Email found: emailtokrimmigration@gmail.com
+2026-06-16 12:36:34 [INFO   ] Industry: overseas_education_immigration | Query: international education agencies in India contact
+2026-06-16 12:36:34 [INFO   ] Google search: international education agencies in India contact
+2026-06-16 12:36:38 [INFO   ]   Found 7 unique result(s).
+2026-06-16 12:36:38 [INFO   ] Skip duplicate domain: idp.com
+2026-06-16 12:36:38 [INFO   ] Skip duplicate domain: globalreach.in
+2026-06-16 12:36:38 [INFO   ] Skip duplicate domain: geebeeworld.com
+2026-06-16 12:36:38 [INFO   ] Skip duplicate domain: edwiseinternational.com
+2026-06-16 12:36:38 [INFO   ] Skip duplicate domain: santamonicaedu.in
+2026-06-16 12:36:38 [INFO   ] Scraping Best Study Abroad Consultants in India 2026 (https://envisionedu.in/)
+2026-06-16 12:37:09 [WARNING] Scrape error for https://envisionedu.in/: Page.content: Target page, context or browser has been closed
+2026-06-16 12:37:09 [INFO   ]   No email found (scrape_error: Page.content: Target page, context or browser has been closed).
+2026-06-16 12:37:09 [INFO   ] Skip duplicate domain: globaldegrees.in
+2026-06-16 12:37:09 [INFO   ] Industry: training_finishing_schools | Query: employability skills training India email id
+2026-06-16 12:37:09 [INFO   ] Google search: employability skills training India email id

@@ -1,0 +1,161 @@
+2026-06-15 01:30:44 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-15_01-30-44.log
+2026-06-15 01:30:44 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-15 01:31:44 [INFO   ]   CA import: CA. VIRAJ ARUN SULE <vajs2003@yahoo.co.in>
+2026-06-15 01:31:44 [INFO   ]   CA import: CA. NINAD VIJAY KANADE <nvkanade@gmail.com>
+2026-06-15 01:31:44 [INFO   ]   CA import: CA. IMRAN IBRAHIM TAMBOLI <caimrantamboli@gmail.com>
+2026-06-15 01:31:44 [INFO   ]   CA import: CA. RUPESH RAMESHCHANDRA LAKHOTIYA <rupeshlakhotiya@rediffmail.com>
+2026-06-15 01:31:44 [INFO   ]   CA import: CA. DIPAK SUBHASH WAMANACHARYA <cadipaks@gmail.com>
+2026-06-15 01:31:44 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 5 new email(s).
+2026-06-15 01:31:44 [INFO   ] Scrape targets: up to 50 companies, stop after 10 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-15 01:31:44 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-15 01:31:45 [INFO   ] Using browser: chrome
+2026-06-15 01:31:45 [INFO   ] Industry: insurance | Query: graduate trainee program insurance India contact page
+2026-06-15 01:31:45 [INFO   ] Google search: graduate trainee program insurance India contact page
+2026-06-15 01:31:51 [INFO   ]   Found 0 unique result(s).
+2026-06-15 01:31:51 [INFO   ] Industry: training_finishing_schools | Query: training and placement institutes India contact
+2026-06-15 01:31:51 [INFO   ] Google search: training and placement institutes India contact
+2026-06-15 01:31:56 [INFO   ]   Found 8 unique result(s).
+2026-06-15 01:31:56 [INFO   ] Skip duplicate domain: sofcontraining.com
+2026-06-15 01:31:56 [INFO   ] Skip duplicate domain: acte.in
+2026-06-15 01:31:56 [INFO   ] Scraping Data Science Coaching in Pune (https://excelr.in/data_science_certification_mumbai/)
+2026-06-15 01:32:04 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 01:32:04 [INFO   ] Scraping 100% Job Assurance Course (https://imarticus.org/certified-investment-banking-operations-program/)
+2026-06-15 01:32:09 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 01:32:09 [INFO   ] Skip duplicate domain: vertexitservices.com
+2026-06-15 01:32:09 [INFO   ] Scraping Contact Us (https://traininginstitutepune.in/contact-us/)
+2026-06-15 01:32:15 [INFO   ]   Email found: info@traininginstitutepune.in
+2026-06-15 01:32:15 [INFO   ] Scraping Best IT Training Institute in Pune (https://www.systemskills.in/)
+2026-06-15 01:32:22 [INFO   ]   Email found: training_india@systemskills.com
+2026-06-15 01:32:22 [INFO   ] Scraping SEED Infotech (https://seedinfotech.com/)
+2026-06-15 01:32:34 [INFO   ]   Email found: support@seedinfotech.com
+2026-06-15 01:32:34 [INFO   ] Industry: alumni_fundraising | Query: education fundraising companies in India email
+2026-06-15 01:32:34 [INFO   ] Google search: education fundraising companies in India email
+2026-06-15 01:32:38 [INFO   ]   Found 11 unique result(s).
+2026-06-15 01:32:38 [INFO   ] Skip duplicate domain: ketto.org
+2026-06-15 01:32:38 [INFO   ] Scraping Fundraising Email Templates: A Beginner's Guide (https://www.gofundme.com/c/blog/fundraising-email-templates#:~:text=Reach%20out%20to%20local%20businesses,the%20community%20and%20giving%20back.)
+2026-06-15 01:32:56 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 01:32:56 [INFO   ] Scraping Fundraising for Education (https://tap.impactguru.com/education-crowdfunding)
+2026-06-15 01:33:24 [INFO   ] Skip duplicate domain: adityangoconsultancy.in
+2026-06-15 01:33:24 [INFO   ] Scraping Top 5 Fundraising Platforms and Companies in India 2026 (https://www.indiaisus.com/blog/top-fundraising-platforms-and-companies-in-india.html)
+2026-06-15 01:33:27 [INFO   ]   Email found: support@indiaisus.com
+2026-06-15 01:33:27 [INFO   ] Skip duplicate domain: mmpc.in
+2026-06-15 01:33:27 [INFO   ] Scraping fundraising for education in india (https://donateabook.org.in/fundraising-for-education-india/)
+2026-06-15 01:33:34 [INFO   ]   Email found: privacy@prathambooks.org
+2026-06-15 01:33:34 [INFO   ]   Email found: donateabook@prathambooks.org
+2026-06-15 01:33:34 [INFO   ] Scraping List of the best fundraising platforms in India (https://thecrowdspace.com/directory/fundraising-platforms-in-india/)
+2026-06-15 01:33:39 [INFO   ]   Email found: 403e1872e0f590ae4b58ac481cc0fb2e@o4511477543010304.ingest.de.sentry.io
+2026-06-15 01:33:39 [INFO   ]   Email found: hello@thecrowdspace.com
+2026-06-15 01:33:39 [INFO   ] Scraping Fundraising Courses in India for Nonprofits (https://indialeadersforsocialsector.com/the-ilss-fundraising-program/)
+2026-06-15 01:33:45 [INFO   ]   Email found: contact@indialeadersforsocialsector.com
+2026-06-15 01:33:45 [INFO   ]   Email found: frprogram@indialeadersforsocialsector.com
+2026-06-15 01:33:45 [INFO   ] Scraping Akanksha Education Fund (https://akankshafund.org/)
+2026-06-15 01:34:12 [INFO   ]   Email found: info@akankshafund.org
+2026-06-15 01:34:12 [INFO   ] Scraping Fundraising companies in India (https://www.a-leads.co/companies/fundraising/india)
+2026-06-15 01:34:48 [INFO   ] Scrape targets met: 15 companies with email (goal 10), 5 from ca_cs_firms (goal 2) — stopping.
+2026-06-15 01:34:48 [INFO   ] Scrape complete: {'queries_run': 3, 'companies_scraped': 13, 'companies_with_email': 15, 'emails_found': 16, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 5, 'ca_connect': {'ca_connect_ran': True, 'ca_connect_listings': 574, 'ca_profiles_enriched': 5, 'ca_profiles_failed': 0, 'ca_emails_imported': 5, 'ca_connect_logged_in': True, 'ca_connect_search': 'Audit | Maharashtra | Pune', 'error': '', 'browser_used': 'chromium-headless', 'ca_companies_upserted': 5}}
+2026-06-15 01:34:48 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-15 01:34:48 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-15 01:34:48 [INFO   ] Send queue reserves 1/1 slot(s) for industry ca_cs_firms.
+2026-06-15 01:34:48 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-15 01:34:50 [INFO   ] SENT (Brevo) -> info@adhauassociates.co.in (Top Chartered Accountants Distributors, Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606142004.48857386010@smtp-relay.mailin.fr>
+2026-06-15 01:35:26 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-15 01:35:51 [INFO   ] SENT (Brevo) -> info@admissiongyan.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606142005.69974744598@smtp-relay.mailin.fr>
+2026-06-15 01:35:58 [INFO   ] SENT (Brevo) -> info@traininginstitutepune.in (Contact Us) | Exploring a potential partnership opportunity with traininginstitutepune.in | messageId=<202606142005.44437737808@smtp-relay.mailin.fr>
+2026-06-15 01:36:15 [INFO   ] SENT (Brevo) -> info@akankshafund.org (Akanksha Education Fund) | Exploring a potential partnership opportunity with akankshafund.org | messageId=<202606142006.14557900270@smtp-relay.mailin.fr>
+2026-06-15 01:36:23 [INFO   ] SENT (Brevo) -> contact@jnanaprabodhini.org (Jnana Prabodhini Competitive Examinations Centre, Pune) | Exploring a potential partnership opportunity with jnanaprabodhini.org | messageId=<202606142006.28502604748@smtp-relay.mailin.fr>
+2026-06-15 01:36:34 [INFO   ] SENT (Brevo) -> contact@vocskill.com (Contact Us) | Exploring a potential partnership opportunity with vocskill.com | messageId=<202606142006.75068782284@smtp-relay.mailin.fr>
+2026-06-15 01:37:09 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-15 01:37:27 [INFO   ] SENT (Brevo) -> contact@letstalkindia.com (Corporate Training) | Exploring a potential partnership opportunity with letstalkindia.com | messageId=<202606142007.90895797272@smtp-relay.mailin.fr>
+2026-06-15 01:37:34 [INFO   ] SENT (Brevo) -> contact@indialeadersforsocialsector.com (Fundraising Courses in India for Nonprofits) | Exploring a potential partnership opportunity with indialeadersforsocialsector.com | messageId=<202606142007.33288672024@smtp-relay.mailin.fr>
+2026-06-15 01:37:43 [INFO   ] SENT (Brevo) -> enquiries@in.g4s.com (CSR Projects) | Exploring a potential partnership opportunity with g4s.com | messageId=<202606142007.88957790256@smtp-relay.mailin.fr>
+2026-06-15 01:37:52 [INFO   ] SENT (Brevo) -> infopune@madeeasy.in (Best Coaching in Pune for ESE, GATE, SSC JE, RRB JE & ...) | Exploring a potential partnership opportunity with madeeasy.in | messageId=<202606142007.23269982016@smtp-relay.mailin.fr>
+2026-06-15 01:37:57 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0, 'queue_size': 10, 'ensure_industry': 'ca_cs_firms', 'ensure_min_slots': 1, 'ensure_reserved_in_queue': 1, 'sent_by_industry': {'ca_cs_firms': 1, 'overseas_education_immigration': 1, 'training_finishing_schools': 1, 'alumni_fundraising': 2, 'coaching_test_prep': 4, 'corporate_csr': 1}, 'send_limit': 10}
+2026-06-15 01:37:57 [INFO   ] 
+2026-06-15 01:37:57 [INFO   ] ======================================================================
+2026-06-15 01:37:57 [INFO   ]   RUN SUMMARY
+2026-06-15 01:37:57 [INFO   ] ======================================================================
+2026-06-15 01:37:57 [INFO   ]   SCRAPE — this run
+2026-06-15 01:37:57 [INFO   ]     Run limits (config):             max 50 sites, stop at 10 with email, max 20 Google queries
+2026-06-15 01:37:57 [INFO   ]       Caps from sender_config.json; scrape stops early when email target is met.
+2026-06-15 01:37:57 [INFO   ] 
+2026-06-15 01:37:57 [INFO   ]   CA Connect — https://caconnect.icai.org/
+2026-06-15 01:37:57 [INFO   ]     Search filters:                  Audit | Maharashtra | Pune
+2026-06-15 01:37:57 [INFO   ]       Service, state, and city from ca_connect_credentials.json.
+2026-06-15 01:37:57 [INFO   ]     Listings on results page:        574
+2026-06-15 01:37:57 [INFO   ]       Member + firm cards returned by CA Connect search (not all have email).
+2026-06-15 01:37:57 [INFO   ]     Profile pages opened:            5
+2026-06-15 01:37:57 [INFO   ]       Logged-in profile visits to extract email/mobile this run.
+2026-06-15 01:37:57 [INFO   ]     New emails added to DB:          5
+2026-06-15 01:37:57 [INFO   ]       First-time imports into immigration.db as ca_cs_firms (duplicates skipped).
+2026-06-15 01:37:57 [INFO   ] 
+2026-06-15 01:37:57 [INFO   ]   Google website scrape — this run
+2026-06-15 01:37:57 [INFO   ]     Websites visited:                13
+2026-06-15 01:37:57 [INFO   ]       Company sites opened from Google search results (excludes CA Connect).
+2026-06-15 01:37:57 [INFO   ]     Sites where email was found:     10
+2026-06-15 01:37:57 [INFO   ]       Distinct companies with at least one new email this run (Google only).
+2026-06-15 01:37:57 [INFO   ]     Email addresses discovered:      11
+2026-06-15 01:37:57 [INFO   ]       New email rows saved to the database from Google scraping.
+2026-06-15 01:37:57 [INFO   ]     Google queries executed:         3
+2026-06-15 01:37:57 [INFO   ]       Search queries consumed from the pending queue this run.
+2026-06-15 01:37:57 [INFO   ]     Reserved industry (ca_cs_firms): 5 / 2 new emails (met)
+2026-06-15 01:37:57 [INFO   ]       Chartered Accountants & Company Secretaries — minimum new contacts per run (sourced via CA Connect for ca_cs_firms).
+2026-06-15 01:37:57 [INFO   ]     Browser:                         chrome
+2026-06-15 01:37:57 [INFO   ]       Engine used for Google website scraping.
+2026-06-15 01:37:57 [INFO   ] 
+2026-06-15 01:37:57 [INFO   ]   REPLIES — this run
+2026-06-15 01:37:57 [INFO   ]     Inbox check:                     skipped
+2026-06-15 01:37:57 [INFO   ]       Reply forwarding is off (check_replies_before_send: false in sender_config.json).
+2026-06-15 01:37:57 [INFO   ] 
+2026-06-15 01:37:57 [INFO   ]   SEND — this run
+2026-06-15 01:37:57 [INFO   ]     Recipients queued:               10
+2026-06-15 01:37:57 [INFO   ]       Unsent contacts considered this run (send cap: 10 per run).
+2026-06-15 01:37:57 [INFO   ]     Queue slots for ca_cs_firms:     1 / 1 reserved
+2026-06-15 01:37:57 [INFO   ]       Chartered Accountants & Company Secretaries — at least 1 email(s) held for this industry when contacts are available.
+2026-06-15 01:37:57 [INFO   ]     Emails sent successfully:        10
+2026-06-15 01:37:57 [INFO   ]       Partnership / funding intro emails delivered via Brevo this run.
+2026-06-15 01:37:57 [INFO   ]     Send failures:                   0
+2026-06-15 01:37:57 [INFO   ]       Brevo API or transport errors (not counted as sent).
+2026-06-15 01:37:57 [INFO   ]     Skipped:                         0
+2026-06-15 01:37:57 [INFO   ]       Dry-run previews or recipients already marked sent in the database.
+2026-06-15 01:37:57 [INFO   ]     Sent by industry:
+2026-06-15 01:37:57 [INFO   ]       Coaching & Test Prep           4
+2026-06-15 01:37:57 [INFO   ]       Alumni Donation & Fundraising  2
+2026-06-15 01:37:57 [INFO   ]       Chartered Accountants & Company Secretaries 1
+2026-06-15 01:37:57 [INFO   ]       Corporate CSR Programs         1
+2026-06-15 01:37:57 [INFO   ]       Overseas Education / Immigration 1
+2026-06-15 01:37:57 [INFO   ]       Training & Finishing Schools   1
+2026-06-15 01:37:57 [INFO   ] 
+2026-06-15 01:37:57 [INFO   ]   DATABASE — cumulative (all runs)
+2026-06-15 01:37:57 [INFO   ]     Companies stored:                372
+2026-06-15 01:37:57 [INFO   ]       All scraped organisations across every industry vertical.
+2026-06-15 01:37:57 [INFO   ]     Companies with email:            291
+2026-06-15 01:37:57 [INFO   ]       Records with email_status = found (ready or already used for outreach).
+2026-06-15 01:37:57 [INFO   ]     Email addresses on file:         2845
+2026-06-15 01:37:57 [INFO   ]       Total rows in company_emails (one company may have several).
+2026-06-15 01:37:57 [INFO   ]     Emails sent (lifetime):          180
+2026-06-15 01:37:57 [INFO   ]       Unique recipients successfully emailed at least once.
+2026-06-15 01:37:57 [INFO   ]     Send failures (lifetime):        0
+2026-06-15 01:37:57 [INFO   ]       Recipients with a failed status in email_sent.
+2026-06-15 01:37:57 [INFO   ]     Replies forwarded (lifetime):    0
+2026-06-15 01:37:57 [INFO   ]       Human replies forwarded to your Gmail.
+2026-06-15 01:37:57 [INFO   ]     Ready to send (now):             208
+2026-06-15 01:37:57 [INFO   ]       Unsent contacts still in the outbound queue for future runs.
+2026-06-15 01:37:57 [INFO   ]     Google queries pending:          50
+2026-06-15 01:37:57 [INFO   ]       Unused search queries waiting for future scrape runs.
+2026-06-15 01:37:57 [INFO   ]     Unsent ca_cs_firms:              25
+2026-06-15 01:37:57 [INFO   ]       Chartered Accountants & Company Secretaries contacts not yet emailed.
+2026-06-15 01:37:58 [INFO   ]     Companies by industry (with email / total):
+2026-06-15 01:37:58 [INFO   ]       Alumni Donation & Fundraising    42 / 54
+2026-06-15 01:37:58 [INFO   ]       NBFC & Banks (Campus Hiring)     8 / 13
+2026-06-15 01:37:58 [INFO   ]       Chartered Accountants & Company Secretaries 27 / 32
+2026-06-15 01:37:58 [INFO   ]       Coaching & Test Prep             12 / 14
+2026-06-15 01:37:58 [INFO   ]       Corporate CSR Programs           27 / 34
+2026-06-15 01:37:58 [INFO   ]       EdTech Companies                 17 / 19
+2026-06-15 01:37:58 [INFO   ]       Student Loan / Education Finance 10 / 19
+2026-06-15 01:37:58 [INFO   ]       HRTech Companies                 18 / 27
+2026-06-15 01:37:58 [INFO   ]       Insurance (Campus & Graduate Hiring) 15 / 16
+2026-06-15 01:37:58 [INFO   ]       Overseas Education / Immigration 49 / 59
+2026-06-15 01:37:58 [INFO   ]       Recruitment & Staffing Firms     28 / 42
+2026-06-15 01:37:58 [INFO   ]       Training & Finishing Schools     38 / 43
+2026-06-15 01:37:58 [INFO   ] ======================================================================
+2026-06-15 01:37:58 [INFO   ] 

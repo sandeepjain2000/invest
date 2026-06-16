@@ -4,7 +4,7 @@ setlocal EnableExtensions
 cd /d "%~dp0"
 
 rem Defaults live in sender_config.json:
-rem   emails_per_run         = 10
+rem   emails_per_run         = 16
 rem   max_companies_per_run  = 50
 rem   max_queries_per_run    = 20
 rem Optional overrides below (leave blank to use JSON defaults).
@@ -19,8 +19,8 @@ echo ============================================================
 echo   Partnership pipeline — scrape then send
 echo   Folder: %CD%
 echo.
-echo   Step 1: Scrape companies ^(up to 50 sites, stops at 10 emails^)
-echo   Step 2: Send partnership emails via Brevo ^(up to 10^)
+echo   Step 1: Scrape CA Connect + Google (see RUN SUMMARY for details)
+echo   Step 2: Send emails via Brevo (see RUN SUMMARY for per-industry counts)
 echo.
 echo   Settings: sender_config.json  ^|  browser=%BROWSER%  region=%REGION%
 echo ============================================================

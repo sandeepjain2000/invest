@@ -1,0 +1,98 @@
+2026-06-15 01:21:36 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-15_01-21-36.log
+2026-06-15 01:21:36 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-15 01:22:36 [INFO   ]   CA import: CA. AMOL ASHOK KHANDEKAR <amolkpune@gmail.com>
+2026-06-15 01:22:36 [INFO   ]   CA import: CA. JAGDISHKUMAR DAYARAM CHOUDHARI <cajagdishchoudhary@gmail.com>
+2026-06-15 01:22:36 [INFO   ]   CA import: CA. SHIVAJI BABURAO DESHMUKH <capshivaji@gmail.com>
+2026-06-15 01:22:36 [INFO   ]   CA import: CA. RAJENDRA SENAPATI <senapati_rajendra@yahoo.com>
+2026-06-15 01:22:36 [INFO   ]   CA import: CA. SEEMA CHANDRESH VITHLANI <vithlani_seema@yahoo.com>
+2026-06-15 01:22:36 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 5 new email(s).
+2026-06-15 01:22:36 [INFO   ] Scrape targets: up to 50 companies, stop after 10 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-15 01:22:36 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-15 01:22:37 [INFO   ] Using browser: chrome
+2026-06-15 01:22:37 [INFO   ] Industry: bfsi_nbfc_banks | Query: NBFC companies hiring freshers in India contact
+2026-06-15 01:22:37 [INFO   ] Google search: NBFC companies hiring freshers in India contact
+2026-06-15 01:22:41 [INFO   ]   Found 7 unique result(s).
+2026-06-15 01:22:41 [INFO   ] Skip duplicate domain: naukri.com
+2026-06-15 01:22:41 [INFO   ] Skip duplicate domain: in.indeed.com
+2026-06-15 01:22:41 [INFO   ] Scraping 100+ NBFC Jobs in Pune, India (Updated Jun, 2026) (https://www.ambitionbox.com/jobs/nbfc-jobs-in-pune-skiloc)
+2026-06-15 01:22:48 [INFO   ]   Email found: support@ambitionbox.com
+2026-06-15 01:22:48 [INFO   ] Scraping Latest Nbfc Jobs Vacancies in Pune 12 June 2026 (https://www.foundit.in/search/nbfc-jobs-in-pune)
+2026-06-15 01:22:53 [INFO   ]   Email found: info@foundit.in
+2026-06-15 01:22:53 [INFO   ] Scraping NBFC Job Vacancies in Pune (https://www.placementindia.com/job-search/nbfc-jobs-in-pune.htm)
+2026-06-15 01:22:58 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 01:22:58 [INFO   ] Scraping Careers at Ratnaafin (https://www.ratnaafin.com/careers)
+2026-06-15 01:23:03 [INFO   ]   Email found: careers@ratnaafin.com
+2026-06-15 01:23:03 [INFO   ]   Email found: ops.nbfc@ratnaafin.com
+2026-06-15 01:23:03 [INFO   ] Skip duplicate domain: glassdoor.co.in
+2026-06-15 01:23:03 [INFO   ] Industry: coaching_test_prep | Query: employability skill training companies in India contact email
+2026-06-15 01:23:03 [INFO   ] Google search: employability skill training companies in India contact email
+2026-06-15 01:23:07 [INFO   ]   Found 10 unique result(s).
+2026-06-15 01:23:07 [INFO   ] Skip duplicate domain: ictacademy.in
+2026-06-15 01:23:07 [INFO   ] Skip duplicate domain: aima.in
+2026-06-15 01:23:07 [INFO   ] Scraping Contact Skillroom India Pvt Ltd (https://www.skillroom.co.in/contact)
+2026-06-15 01:23:08 [INFO   ]   Email found: support@skillroom.co.in
+2026-06-15 01:23:08 [INFO   ] Scraping Contact Us (https://techsoftskills.in/contact-us/)
+2026-06-15 01:23:17 [INFO   ]   Email found: trainings@techsoftskills.in
+2026-06-15 01:23:17 [INFO   ]   Email found: 91-91-758-952-09+91-98-225-011-70trainings@techsoftskills.in
+2026-06-15 01:23:17 [INFO   ] Scraping Contact Us (https://www.vocskill.com/contact-us)
+2026-06-15 01:23:20 [INFO   ]   Email found: contact@vocskill.com
+2026-06-15 01:23:20 [INFO   ] Scraping AI-Powered Employability Skills by Wadhwani Foundation (https://wadhwanifoundation.org/our-programs/employability-skills/)
+2026-06-15 01:23:24 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 01:23:24 [INFO   ] Scraping youth employability skill training. (https://www.nationalyouthprogramme.in/)
+2026-06-15 01:23:27 [INFO   ]   Email found: secretary@nationalyouthprogramme.in
+2026-06-15 01:23:27 [INFO   ]   Email found: regionaloffice@nationalyouthprogramme.in
+2026-06-15 01:23:27 [INFO   ]   Email found: officer@nationalyouthprogramme.in
+2026-06-15 01:23:27 [INFO   ] Skip duplicate domain: skillindiadigital.gov.in
+2026-06-15 01:23:27 [INFO   ] Scraping Gram Tarang Employability Training Services (https://gramtarang.org.in/)
+2026-06-15 01:23:54 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 01:23:54 [INFO   ] Scraping Corporate Training (https://letstalkindia.com/corporate-training/)
+2026-06-15 01:23:59 [INFO   ]   Email found: contact@letstalkindia.com
+2026-06-15 01:23:59 [INFO   ] Scrape targets met: 13 companies with email (goal 10), 5 from ca_cs_firms (goal 2) — stopping.
+2026-06-15 01:23:59 [INFO   ] Scrape complete: {'queries_run': 2, 'companies_scraped': 11, 'companies_with_email': 13, 'emails_found': 17, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 5, 'ca_connect': {'ca_connect_ran': True, 'ca_connect_listings': 574, 'ca_profiles_enriched': 5, 'ca_profiles_failed': 0, 'ca_emails_imported': 5, 'ca_connect_logged_in': True, 'ca_connect_search': 'Audit | Maharashtra | Pune', 'error': '', 'browser_used': 'chromium-headless', 'ca_companies_upserted': 5}}
+2026-06-15 01:23:59 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-15 01:23:59 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-15 01:23:59 [INFO   ] Send queue reserves 1/1 slot(s) for industry ca_cs_firms.
+2026-06-15 01:23:59 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-15 01:24:29 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-15 01:24:34 [INFO   ] SENT (Brevo) -> info@pratimabhinge.com (Top Chartered Accountants Distributors, Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141954.61895970592@smtp-relay.mailin.fr>
+2026-06-15 01:24:53 [INFO   ] SENT (Brevo) -> info@harshnad.org (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606141954.97411312742@smtp-relay.mailin.fr>
+2026-06-15 01:25:01 [INFO   ] SENT (Brevo) -> info@a2y.sg (Best Staffing Companies in Pune) | Exploring a potential partnership opportunity with pitcs.in | messageId=<202606141955.69422193656@smtp-relay.mailin.fr>
+2026-06-15 01:25:36 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-15 01:25:49 [INFO   ] SENT (Brevo) -> info@v3staffing.in (List of Recruitment Companies in Pune for 2026) | Exploring a potential partnership opportunity with v3staffing.in | messageId=<202606141955.87897180088@smtp-relay.mailin.fr>
+2026-06-15 01:25:58 [INFO   ] SENT (Brevo) -> info@justvisitonline.com (Best Coaching For Competitive Exams in pune Maharashtra) | Exploring a potential partnership opportunity with justvisitonline.com | messageId=<202606141955.35345735590@smtp-relay.mailin.fr>
+2026-06-15 01:26:07 [INFO   ] SENT (Brevo) -> info@foundit.in (Latest Nbfc Jobs Vacancies in Pune 12 June 2026) | Exploring a potential partnership opportunity with foundit.in | messageId=<202606141956.49197986401@smtp-relay.mailin.fr>
+2026-06-15 01:26:18 [INFO   ] SENT (Brevo) -> contact@teamlease.com (Recruitment Agencies in Pune) | Exploring a potential partnership opportunity with group.teamlease.com | messageId=<202606141956.81148040259@smtp-relay.mailin.fr>
+2026-06-15 01:26:26 [INFO   ] SENT (Brevo) -> contact@gsjobpoint.com (Campus Placement Services) | Exploring a potential partnership opportunity with gsjobpoint.com | messageId=<202606141956.34492521174@smtp-relay.mailin.fr>
+2026-06-15 01:26:33 [INFO   ] SENT (Brevo) -> contact@builtxsdc.com (Top CSR Doners in Education Sector in India 2025) | Exploring a potential partnership opportunity with builtxsdc.com | messageId=<202606141956.43078825409@smtp-relay.mailin.fr>
+2026-06-15 01:26:43 [INFO   ] SENT (Brevo) -> contact@indianpersonnel.com (Ambe International) | Exploring a potential partnership opportunity with ambeinter.com | messageId=<202606141956.30485983200@smtp-relay.mailin.fr>
+2026-06-15 01:26:48 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-15 01:26:48 [INFO   ] 
+2026-06-15 01:26:48 [INFO   ] ==============================================================
+2026-06-15 01:26:48 [INFO   ]   RUN SUMMARY
+2026-06-15 01:26:48 [INFO   ] ==============================================================
+2026-06-15 01:26:48 [INFO   ]   Scrape (this run)
+2026-06-15 01:26:48 [INFO   ]     Companies scraped:        11
+2026-06-15 01:26:48 [INFO   ]     Companies with email:     13
+2026-06-15 01:26:48 [INFO   ]     Emails scraped/found:     17
+2026-06-15 01:26:48 [INFO   ]     Search queries run:       2
+2026-06-15 01:26:48 [INFO   ]     ca_cs_firms with email:          5 (goal 2)
+2026-06-15 01:26:48 [INFO   ]   CA Connect (https://caconnect.icai.org/)
+2026-06-15 01:26:48 [INFO   ]     Search:                   Audit | Maharashtra | Pune
+2026-06-15 01:26:48 [INFO   ]     Listings scraped:         574
+2026-06-15 01:26:48 [INFO   ]     Profiles enriched:        5
+2026-06-15 01:26:48 [INFO   ]     New emails imported:      5
+2026-06-15 01:26:48 [INFO   ]     Browser used:             chrome
+2026-06-15 01:26:48 [INFO   ]   Replies (this run)
+2026-06-15 01:26:48 [INFO   ]     Reply check:              skipped
+2026-06-15 01:26:48 [INFO   ]   Send (this run)
+2026-06-15 01:26:48 [INFO   ]     Emails sent:              10
+2026-06-15 01:26:48 [INFO   ]     Send failed:              0
+2026-06-15 01:26:48 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-15 01:26:48 [INFO   ]   Database totals (all runs)
+2026-06-15 01:26:48 [INFO   ]     Companies in database:    354
+2026-06-15 01:26:48 [INFO   ]     Companies with email:     278
+2026-06-15 01:26:48 [INFO   ]     Emails scraped (total):   2829
+2026-06-15 01:26:48 [INFO   ]     Emails sent (total):      170
+2026-06-15 01:26:48 [INFO   ]     Replies forwarded (total): 0
+2026-06-15 01:26:48 [INFO   ] ==============================================================
+2026-06-15 01:26:48 [INFO   ] 

@@ -1,0 +1,38 @@
+2026-06-15 19:13:59 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-15_19-13-59.log
+2026-06-15 19:13:59 [INFO   ] === Industry verticals (industries.json) ===
+2026-06-15 19:13:59 [INFO   ]   [1] recruitment_staffing — Recruitment & Staffing Firms (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. campus recruitment firm India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. IT staffing company graduate hiring
+2026-06-15 19:13:59 [INFO   ]   [2] edtech — EdTech Companies (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. upskilling platform students India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. test prep company career readiness India
+2026-06-15 19:13:59 [INFO   ]   [3] overseas_education_immigration — Overseas Education / Immigration (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. study abroad consultant India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. IELTS PTE coaching chain India email
+2026-06-15 19:13:59 [INFO   ]   [4] education_finance — Student Loan / Education Finance (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. education loan provider India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. student loan company India email
+2026-06-15 19:13:59 [INFO   ]   [5] hrtech — HRTech Companies (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. applicant tracking system India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. hiring assessment platform India email
+2026-06-15 19:13:59 [INFO   ]   [6] corporate_csr — Corporate CSR Programs (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. corporate CSR education employability India
+2026-06-15 19:13:59 [INFO   ]       e.g. IT company CSR skilling program India contact
+2026-06-15 19:13:59 [INFO   ]   [7] lawyers — Law Firms & Lawyers (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. law firm India contact email campus recruitment
+2026-06-15 19:13:59 [INFO   ]       e.g. corporate law firm India partnership contact
+2026-06-15 19:13:59 [INFO   ]   [8] training_finishing_schools — Training & Finishing Schools (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. placement training institute India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. soft skills training institute India email
+2026-06-15 19:13:59 [INFO   ]   [9] bfsi_nbfc_banks — NBFC & Banks (Campus Hiring) (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. NBFC graduate trainee program India contact email
+2026-06-15 19:13:59 [INFO   ]       e.g. private bank campus recruitment India contact
+2026-06-15 19:13:59 [INFO   ]   [10] insurance — Insurance (Campus & Graduate Hiring) (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. life insurance company campus recruitment India contact
+2026-06-15 19:13:59 [INFO   ]       e.g. general insurance graduate trainee India email
+2026-06-15 19:13:59 [INFO   ]   [11] coaching_test_prep — Coaching & Test Prep (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. competitive exam coaching institute India contact email
+2026-06-15 19:13:59 [INFO   ]       e.g. JEE NEET coaching chain India partnership contact
+2026-06-15 19:13:59 [INFO   ]   [12] ca_cs_firms — Chartered Accountants & Company Secretaries (active)
+2026-06-15 19:13:59 [INFO   ]       e.g. chartered accountant firms India contact email
+2026-06-15 19:13:59 [INFO   ]       e.g. CA firm Mumbai contact email

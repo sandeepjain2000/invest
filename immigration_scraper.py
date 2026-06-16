@@ -8,11 +8,21 @@ import re
 from typing import Iterable
 from urllib.parse import quote_plus, urlparse
 
-from playwright.async_api import BrowserContext, Page, Playwright, async_playwright
+from playwright.async_api import Page, async_playwright
 
+from browser_utils import dismiss_page_obstructions, launch_context, scrape_complete_beep
 from immigration_db import ImmigrationDB, clean_domain
-from industries import default_region, queries_per_industry, seed_queries_for
+from immigration_sender import get_ensure_industry_settings, load_sender_config
+from pipeline_notify import notify_stage
+from industries import (
+    default_region,
+    google_scrape_industry_ids,
+    queries_per_industry,
+    scrape_source_for,
+    seed_queries_for,
+)
 from nvidia_llm import generate_queries_for_all_industries, generate_search_queries
+from ca_connect_pipeline import run_ca_connect_for_pipeline_async
 
 logger = logging.getLogger(__name__)
 
@@ -106,117 +116,6 @@ def should_skip_result_url(url: str) -> bool:
     if not domain:
         return True
     return any(domain == skip or domain.endswith("." + skip) for skip in SKIP_DOMAINS)
-
-
-async def launch_context(playwright: Playwright, browser: str) -> tuple[BrowserContext, str]:
-    label = browser.lower()
-    viewport = {"width": 1366, "height": 900}
-    launch_args = ["--disable-blink-features=AutomationControlled"]
-
-    if label in ("auto", "chromium", "chrome"):
-        try:
-            browser_obj = await playwright.chromium.launch(
-                headless=False,
-                channel="chrome",
-                args=launch_args,
-            )
-            context = await browser_obj.new_context(viewport=viewport)
-            return context, "chrome"
-        except Exception as exc:
-            logger.warning("Chrome launch failed (%s), trying Chromium.", exc)
-            try:
-                browser_obj = await playwright.chromium.launch(
-                    headless=False,
-                    args=launch_args,
-                )
-                context = await browser_obj.new_context(viewport=viewport)
-                return context, "chromium"
-            except Exception as exc2:
-                logger.warning("Chromium launch failed (%s), trying Firefox.", exc2)
-
-    browser_obj = await playwright.firefox.launch(headless=False)
-    context = await browser_obj.new_context(viewport=viewport)
-    return context, "firefox"
-
-
-POPUP_CLOSE_SELECTORS = [
-    # Modal / newsletter / chat pop-up close buttons
-    'button[aria-label="Close"]',
-    'button[aria-label="close"]',
-    'button[aria-label="Dismiss"]',
-    'button[aria-label="Dismiss dialog"]',
-    '[aria-label="Close"]',
-    '[aria-label="Dismiss"]',
-    '[data-dismiss="modal"]',
-    '[data-testid="close"]',
-    '[data-testid="close-button"]',
-    "button.close",
-    ".modal-close",
-    ".popup-close",
-    ".dialog-close",
-    ".fancybox-close",
-    '[role="dialog"] button[aria-label*="close" i]',
-    '[role="dialog"] button[aria-label*="dismiss" i]',
-    'button:has-text("×")',
-    'button:has-text("✕")',
-    'button:has-text("Close")',
-    'button:has-text("No thanks")',
-    'button:has-text("No Thanks")',
-    'button:has-text("Not now")',
-    'button:has-text("Not Now")',
-    'button:has-text("Maybe later")',
-    'button:has-text("Skip")',
-    'button:has-text("Continue without accepting")',
-    'button:has-text("Decline")',
-    'a.close',
-    'a.popup-close',
-    # Cookie / consent banners (often overlay the page like a pop-up)
-    'button:has-text("Accept")',
-    'button:has-text("Accept all")',
-    'button:has-text("Accept All")',
-    'button:has-text("I agree")',
-    'button:has-text("I Agree")',
-    'button:has-text("Got it")',
-    'button:has-text("OK")',
-    'button:has-text("Allow all")',
-    'button:has-text("Allow All")',
-]
-
-
-async def dismiss_page_obstructions(page: Page, *, max_rounds: int = 4) -> int:
-    """
-    Close landing-page pop-ups, modals, and cookie banners.
-    Runs multiple rounds because some sites stack overlays.
-    Returns approximate number of dismiss actions taken.
-    """
-    closed = 0
-    for _ in range(max_rounds):
-        closed_this_round = False
-
-        try:
-            await page.keyboard.press("Escape")
-            await page.wait_for_timeout(250)
-        except Exception:
-            pass
-
-        for sel in POPUP_CLOSE_SELECTORS:
-            try:
-                btn = page.locator(sel).first
-                if not await btn.is_visible(timeout=600):
-                    continue
-                await btn.click(timeout=2500)
-                await page.wait_for_timeout(400)
-                closed += 1
-                closed_this_round = True
-                logger.info("  Closed pop-up/obstruction: %s", sel)
-                break
-            except Exception:
-                continue
-
-        if not closed_this_round:
-            break
-
-    return closed
 
 
 async def google_search_urls(page: Page, query: str, limit: int = SEARCH_RESULT_LIMIT) -> list[dict]:
@@ -353,7 +252,10 @@ def _auto_seed_queries(
     use_nvidia: bool,
 ) -> int:
     added = 0
+    google_ids = set(google_scrape_industry_ids())
     if industry:
+        if industry not in google_ids:
+            return 0
         queries = (
             generate_search_queries(
                 count=queries_per_industry(),
@@ -374,12 +276,31 @@ def _auto_seed_queries(
         use_nvidia=use_nvidia,
     )
     for iid, queries in batch.items():
+        if iid not in google_ids:
+            continue
         added += db.add_search_queries(
             queries,
             industry=iid,
             source="nvidia" if use_nvidia else "seed",
         )
     return added
+
+
+def _scrape_targets_met(
+    stats: dict,
+    *,
+    email_target: int,
+    ensure_industry: str | None,
+    min_ensure_scrape: int,
+) -> bool:
+    if stats["companies_with_email"] < email_target:
+        return False
+    if ensure_industry and min_ensure_scrape > 0:
+        key = ensure_industry.strip().lower()
+        have = int(stats.get("ensure_industry_with_email", 0))
+        if have < min_ensure_scrape:
+            return False
+    return True
 
 
 async def run_scrape(
@@ -393,9 +314,24 @@ async def run_scrape(
     industry: str | None = None,
     seed_keywords: bool = True,
     use_nvidia_seed: bool = True,
+    dry_run: bool = False,
 ) -> dict:
     region = region or default_region()
     email_target = max(1, int(email_target or 10))
+    cfg = load_sender_config()
+    notify_stage(cfg, "scrape_start", dry_run=dry_run)
+    ensure_industry, _, min_ensure_scrape = get_ensure_industry_settings()
+    ensure_via_ca_connect = bool(
+        ensure_industry and scrape_source_for(ensure_industry) == "ca_connect"
+    )
+    apply_ensure_scrape = bool(not industry and ensure_industry and min_ensure_scrape > 0)
+    google_exclude = [
+        iid
+        for iid in google_scrape_industry_ids(active_only=False)
+        if scrape_source_for(iid) == "ca_connect"
+    ]
+    google_only = not industry or scrape_source_for(industry) != "ca_connect"
+
     stats = {
         "queries_run": 0,
         "companies_scraped": 0,
@@ -405,20 +341,87 @@ async def run_scrape(
         "max_companies": max_companies,
         "browser_used": "",
         "industry_filter": industry or "all",
+        "ensure_industry_scrape": ensure_industry if apply_ensure_scrape else "",
+        "ensure_industry_scrape_target": min_ensure_scrape if apply_ensure_scrape else 0,
+        "ensure_industry_with_email": 0,
+        "ca_connect": {},
     }
-    logger.info(
-        "Scrape targets: up to %s companies, stop early after %s company(ies) with email",
-        max_companies,
-        email_target,
-    )
+
+    if run_ca_connect_for_pipeline_async and (not industry or ensure_via_ca_connect):
+        logger.info("=== CA Connect scrape (https://caconnect.icai.org/) ===")
+        notify_stage(cfg, "ca_connect_start", dry_run=dry_run)
+        ca_stats = await run_ca_connect_for_pipeline_async(db, browser=browser)
+        stats["ca_connect"] = ca_stats
+        if ca_stats.get("ca_connect_ran"):
+            imported = int(ca_stats.get("ca_emails_imported") or 0)
+            stats["emails_found"] += imported
+            stats["companies_with_email"] += imported
+            if ensure_via_ca_connect:
+                stats["ensure_industry_with_email"] = imported
+            stats["browser_used"] = stats["browser_used"] or ca_stats.get("browser_used", "")
+            notify_stage(
+                cfg,
+                "ca_connect_complete",
+                dry_run=dry_run,
+                imported=imported,
+            )
+
+    if not google_only:
+        logger.info(
+            "Industry %s uses CA Connect only — skipping Google website scrape.",
+            industry,
+        )
+        if apply_ensure_scrape:
+            logger.info(
+                "Scrape targets: %s companies with email (goal %s), "
+                "%s from %s (goal %s).",
+                stats["companies_with_email"],
+                email_target,
+                stats["ensure_industry_with_email"],
+                ensure_industry,
+                min_ensure_scrape,
+            )
+        return stats
+
+    notify_stage(cfg, "google_scrape_start", dry_run=dry_run)
+
+    if apply_ensure_scrape:
+        logger.info(
+            "Scrape targets: up to %s companies, stop after %s with email "
+            "(incl. at least %s from %s via %s)",
+            max_companies,
+            email_target,
+            min_ensure_scrape,
+            ensure_industry,
+            "CA Connect" if ensure_via_ca_connect else "Google",
+        )
+    else:
+        logger.info(
+            "Scrape targets: up to %s companies, stop early after %s company(ies) with email",
+            max_companies,
+            email_target,
+        )
 
     if not industry:
         logger.info(
             "Industry selection: random order on each query pick (distributes across verticals)"
         )
 
-    pending = db.next_pending_query(industry)
-    if not pending and seed_keywords:
+    prefer_google = None
+    if (
+        apply_ensure_scrape
+        and ensure_industry
+        and not ensure_via_ca_connect
+        and stats["ensure_industry_with_email"] < min_ensure_scrape
+    ):
+        prefer_google = ensure_industry
+
+    pending = db.next_pending_query(
+        industry if google_only else None,
+        prefer_industry=prefer_google,
+        exclude_industries=google_exclude if not industry else None,
+    )
+    if not pending and seed_keywords and google_only:
         added = _auto_seed_queries(
             db,
             region=region,
@@ -426,30 +429,72 @@ async def run_scrape(
             use_nvidia=use_nvidia_seed,
         )
         logger.info("Seeded %s search query(ies) across industry scope.", added)
-        pending = db.next_pending_query(industry)
+        pending = db.next_pending_query(
+            industry,
+            prefer_industry=prefer_google,
+            exclude_industries=google_exclude if not industry else None,
+        )
 
     async with async_playwright() as playwright:
         context, browser_used = await launch_context(playwright, browser)
-        stats["browser_used"] = browser_used
-        logger.info("Using browser: %s", browser_used)
+        stats["browser_used"] = browser_used or stats["browser_used"]
+        logger.info("Using browser: %s", stats["browser_used"])
         page = context.pages[0] if context.pages else await context.new_page()
         page.set_default_timeout(PAGE_DEFAULT_TIMEOUT_MS)
 
         queries_done = 0
         while stats["companies_scraped"] < max_companies:
-            if stats["companies_with_email"] >= email_target:
-                logger.info(
-                    "Email target reached (%s companies with email, goal %s) — stopping scrape.",
-                    stats["companies_with_email"],
-                    email_target,
-                )
+            if _scrape_targets_met(
+                stats,
+                email_target=email_target,
+                ensure_industry=ensure_industry if apply_ensure_scrape else None,
+                min_ensure_scrape=min_ensure_scrape,
+            ):
+                if apply_ensure_scrape:
+                    logger.info(
+                        "Scrape targets met: %s companies with email (goal %s), "
+                        "%s from %s (goal %s) — stopping.",
+                        stats["companies_with_email"],
+                        email_target,
+                        stats["ensure_industry_with_email"],
+                        ensure_industry,
+                        min_ensure_scrape,
+                    )
+                else:
+                    logger.info(
+                        "Email target reached (%s companies with email, goal %s) — stopping scrape.",
+                        stats["companies_with_email"],
+                        email_target,
+                    )
                 break
 
             if queries_done >= max_queries:
-                logger.info("Reached max_queries cap (%s) for this run.", max_queries)
+                if apply_ensure_scrape and stats["ensure_industry_with_email"] < min_ensure_scrape:
+                    logger.warning(
+                        "Reached max_queries (%s) with only %s/%s %s companies with email.",
+                        max_queries,
+                        stats["ensure_industry_with_email"],
+                        min_ensure_scrape,
+                        ensure_industry,
+                    )
+                else:
+                    logger.info("Reached max_queries cap (%s) for this run.", max_queries)
                 break
 
-            row = db.next_pending_query(industry)
+            prefer_query = None
+            if (
+                apply_ensure_scrape
+                and ensure_industry
+                and not ensure_via_ca_connect
+                and stats["ensure_industry_with_email"] < min_ensure_scrape
+            ):
+                prefer_query = ensure_industry
+
+            row = db.next_pending_query(
+                industry,
+                prefer_industry=prefer_query,
+                exclude_industries=google_exclude if not industry else None,
+            )
             if not row and seed_keywords:
                 added = _auto_seed_queries(
                     db,
@@ -459,7 +504,11 @@ async def run_scrape(
                 )
                 if added:
                     logger.info("Seeded %s more search query(ies) to continue scraping.", added)
-                row = db.next_pending_query(industry)
+                row = db.next_pending_query(
+                    industry,
+                    prefer_industry=prefer_query,
+                    exclude_industries=google_exclude if not industry else None,
+                )
             if not row:
                 logger.info("No more search queries available.")
                 break
@@ -494,6 +543,13 @@ async def run_scrape(
                 emails, source_page, notes = await scrape_company_emails(page, result["url"])
                 if emails:
                     stats["companies_with_email"] += 1
+                    if (
+                        apply_ensure_scrape
+                        and ensure_industry
+                        and not ensure_via_ca_connect
+                        and (query_industry or "").lower() == ensure_industry.lower()
+                    ):
+                        stats["ensure_industry_with_email"] += 1
                     for email in emails:
                         if db.add_company_email(company_id, email, source_page):
                             stats["emails_found"] += 1
@@ -501,6 +557,7 @@ async def run_scrape(
                 else:
                     db.mark_company_no_email(company_id)
                     logger.info("  No email found (%s).", notes or "moved on")
+                scrape_complete_beep()
 
             db.mark_query_done(query_id, status="done")
 

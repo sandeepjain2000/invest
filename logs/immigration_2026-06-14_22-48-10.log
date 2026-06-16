@@ -1,0 +1,186 @@
+2026-06-14 22:48:10 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-14_22-48-10.log
+2026-06-14 22:48:10 [INFO   ] Scrape targets: up to 50 companies, stop after 10 with email (incl. at least 2 from ca_cs_firms)
+2026-06-14 22:48:10 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-14 22:48:11 [INFO   ] Using browser: chrome
+2026-06-14 22:48:11 [INFO   ] Industry: ca_cs_firms | Query: CA firms in India for graduate recruitment contact
+2026-06-14 22:48:11 [INFO   ] Google search: CA firms in India for graduate recruitment contact
+2026-06-14 22:48:15 [INFO   ]   Found 9 unique result(s).
+2026-06-14 22:48:15 [INFO   ] Scraping CA Firm Hiring List with Contact Details (https://www.studocu.com/in/document/delhi-public-school-kanpur/business-management-sl/list-of-ca-firms-yesssss/85823260)
+2026-06-14 22:48:25 [INFO   ]   Closed pop-up/obstruction: [role="dialog"] button[aria-label*="close" i]
+2026-06-14 22:48:25 [INFO   ]   Email found: ca.akshah@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: hr@nyca.in
+2026-06-14 22:48:25 [INFO   ]   Email found: a@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: orakhiya@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: r@mehragoelco.co
+2026-06-14 22:48:25 [INFO   ]   Email found: goyal@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: kol@yahoo.com
+2026-06-14 22:48:25 [INFO   ]   Email found: sudhalok@gmail.co
+2026-06-14 22:48:25 [INFO   ]   Email found: kolkata@patni.co.in
+2026-06-14 22:48:25 [INFO   ]   Email found: 13@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: 15@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: support@nshca.com
+2026-06-14 22:48:25 [INFO   ]   Email found: 1@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: 12@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: ghal@yahoo.in
+2026-06-14 22:48:25 [INFO   ]   Email found: 4@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: rajat.jindal@sjcgroup.in
+2026-06-14 22:48:25 [INFO   ]   Email found: a@yahoo.in
+2026-06-14 22:48:25 [INFO   ]   Email found: pag908@gmail.com
+2026-06-14 22:48:25 [INFO   ]   Email found: al@smsr.co.in
+2026-06-14 22:48:25 [INFO   ]   Email found: i@rsmindia.in
+2026-06-14 22:48:25 [INFO   ]   Email found: info@camantra.com
+2026-06-14 22:48:25 [INFO   ]   Email found: deepak@ahsg.in
+2026-06-14 22:48:25 [INFO   ]   Email found: hr@pbna.in
+2026-06-14 22:48:25 [INFO   ]   Email found: k.garg@sunilgoel.com
+2026-06-14 22:48:25 [INFO   ]   Email found: info@asasso.in
+2026-06-14 22:48:25 [INFO   ]   Email found: kolkata@patni.co
+2026-06-14 22:48:25 [INFO   ]   Email found: viveklal@jka.net
+2026-06-14 22:48:25 [INFO   ]   Email found: akash@anejaassociates.co
+2026-06-14 22:48:25 [INFO   ]   Email found: darshan@smsr.co
+2026-06-14 22:48:25 [INFO   ]   Email found: manav@in.ey
+2026-06-14 22:48:25 [INFO   ]   Email found: dishani@in.ey
+2026-06-14 22:48:25 [INFO   ]   Email found: kanika@in.ey
+2026-06-14 22:48:26 [INFO   ]   Email found: riya@in.ey
+2026-06-14 22:48:26 [INFO   ]   Email found: mumbai@lodhaco.com
+2026-06-14 22:48:26 [INFO   ]   Email found: pooja@mazars.co
+2026-06-14 22:48:26 [INFO   ]   Email found: hr@mazars.co
+2026-06-14 22:48:26 [INFO   ] Skip duplicate domain: scribd.com
+2026-06-14 22:48:26 [INFO   ] Scraping Top 50 CA Firms in India for Articleship & Jobs (2026) (https://www.thinkingbridge.in/blog/top-ca-firms-in-india-for-ca-jobs-articleship)
+2026-06-14 22:48:28 [INFO   ]   Closed pop-up/obstruction: button:has-text("×")
+2026-06-14 22:48:32 [INFO   ]   Email found: incontact@deloitte.com
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@deloitte.com
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@deloitte.com
+2026-06-14 22:48:32 [INFO   ]   Email found: hyderabad@deloitte.com
+2026-06-14 22:48:32 [INFO   ]   Email found: chennai@deloitte.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@pwc.com
+2026-06-14 22:48:32 [INFO   ]   Email found: gurgaon@pwc.com
+2026-06-14 22:48:32 [INFO   ]   Email found: kolkata@pwc.com
+2026-06-14 22:48:32 [INFO   ]   Email found: pune@pwc.com
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@pwc.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@in.ey.com
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@in.ey.com
+2026-06-14 22:48:32 [INFO   ]   Email found: hyderabad@in.ey.com
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@in.ey.com
+2026-06-14 22:48:32 [INFO   ]   Email found: chennai@in.ey.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@kpmg.com
+2026-06-14 22:48:32 [INFO   ]   Email found: gurgaon@kpmg.com
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@kpmg.com
+2026-06-14 22:48:32 [INFO   ]   Email found: hyderabad@kpmg.com
+2026-06-14 22:48:32 [INFO   ]   Email found: chennai@kpmg.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@in.gt.com
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@in.gt.com
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@in.gt.com
+2026-06-14 22:48:32 [INFO   ]   Email found: hyderabad@in.gt.com
+2026-06-14 22:48:32 [INFO   ]   Email found: pune@in.gt.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@bdo.in
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@bdo.in
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@bdo.in
+2026-06-14 22:48:32 [INFO   ]   Email found: hyderabad@bdo.in
+2026-06-14 22:48:32 [INFO   ]   Email found: chennai@bdo.in
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@rsmindia.in
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@rsmindia.in
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@rsmindia.in
+2026-06-14 22:48:32 [INFO   ]   Email found: hyderabad@rsmindia.in
+2026-06-14 22:48:32 [INFO   ]   Email found: pune@rsmindia.in
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@cnkindia.com
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@cnkindia.com
+2026-06-14 22:48:32 [INFO   ]   Email found: ahmedabad@cnkindia.com
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@lodhaco.com
+2026-06-14 22:48:32 [INFO   ]   Email found: chennai@lodhaco.com
+2026-06-14 22:48:32 [INFO   ]   Email found: kolkata@lodhaco.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@srbllp.in
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@srbllp.in
+2026-06-14 22:48:32 [INFO   ]   Email found: kolkata@srbllp.in
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@asa.in
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@asa.in
+2026-06-14 22:48:32 [INFO   ]   Email found: bangalore@asa.in
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@nangia.com
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@nangia.com
+2026-06-14 22:48:32 [INFO   ]   Email found: delhi@trchadha.com
+2026-06-14 22:48:32 [INFO   ]   Email found: chennai@pkfindia.in
+2026-06-14 22:48:32 [INFO   ]   Email found: mumbai@singhico.com
+2026-06-14 22:48:32 [INFO   ]   Email found: info@trmehta.in
+2026-06-14 22:48:32 [INFO   ] Scraping S.M. Gupta & Co Career for Qualified CAs, Graduate Trainee. (https://www.smgupta.co.in/career/)
+2026-06-14 22:48:57 [INFO   ]   Email found: smgupta@lnsel.com
+2026-06-14 22:48:57 [INFO   ]   Email found: smgupta@smgupta.co.in
+2026-06-14 22:48:57 [INFO   ] Scraping K.S. Aiyar & Co (https://www.ksaiyar.com/)
+2026-06-14 22:49:23 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-14 22:49:23 [INFO   ] Scraping Top CA Articleship Firms in Delhi, Careers ... (https://www.dpncindia.com/careers)
+2026-06-14 22:49:26 [INFO   ]   Email found: talent@dpncindia.com
+2026-06-14 22:49:26 [INFO   ]   Email found: hrd@dpncindia.com
+2026-06-14 22:49:26 [INFO   ]   Email found: contact@dpncindia.com
+2026-06-14 22:49:26 [INFO   ] Skip duplicate domain: in.indeed.com
+2026-06-14 22:49:26 [INFO   ] Scraping Top 10 CA Firms In India (https://www.catestseries.org/blogs/top-ca-firms-in-india-for-chartered-accountants.php?srsltid=AfmBOoqyJ9fjCqMyYERIr0CaSnJjzRATqWlAln--cJgr7vkA45kEfDbk)
+2026-06-14 22:49:29 [INFO   ]   Email found: exam@catestseries.org
+2026-06-14 22:49:29 [INFO   ] Scraping Finance & Accounting Recruitment Agency (https://www.michaelpage.co.in/recruitment-expertise/finance-accounting)
+2026-06-14 22:49:37 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-14 22:49:37 [INFO   ] Industry: recruitment_staffing | Query: graduate recruitment agency India contact us
+2026-06-14 22:49:37 [INFO   ] Google search: graduate recruitment agency India contact us
+2026-06-14 22:49:41 [INFO   ]   Found 9 unique result(s).
+2026-06-14 22:49:41 [INFO   ] Scraping Recruitment Agencies in Pune (https://group.teamlease.com/recruitment-agencies-in-pune/)
+2026-06-14 22:49:47 [INFO   ]   Email found: contact@teamlease.com
+2026-06-14 22:49:47 [INFO   ]   Email found: clients@teamlease.com
+2026-06-14 22:49:47 [INFO   ]   Email found: info@teamlease.com
+2026-06-14 22:49:47 [INFO   ] Skip duplicate domain: randstad.in
+2026-06-14 22:49:47 [INFO   ] Skip duplicate domain: michaelpage.co.in
+2026-06-14 22:49:47 [INFO   ] Scraping Top Recruitment Agency in Pune (https://rtns.in/recruitment-agency-pune/)
+2026-06-14 22:50:14 [INFO   ]   Email found: sales@rtns.in
+2026-06-14 22:50:14 [INFO   ] Scraping Best Recruitment Agency in Pune (https://www.nlbservices.com/recruitment-agency-in-pune/)
+2026-06-14 22:50:23 [INFO   ]   Email found: info@nlbservices.com
+2026-06-14 22:50:23 [INFO   ] Scraping Global Recruitment Agency in India (https://www.morganmckinley.com/recruitment-agency-india)
+2026-06-14 22:50:26 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:50:28 [INFO   ]   Email found: privacy@morganmckinley.com
+2026-06-14 22:50:28 [INFO   ] Scraping MEMS LLP: Best Recruitment Agencies in Mumbai, India (https://www.memsllp.com/)
+2026-06-14 22:50:37 [INFO   ]   Email found: info@memsllp.com
+2026-06-14 22:50:37 [INFO   ]   Email found: hr@memsllp.com
+2026-06-14 22:50:37 [INFO   ] Scraping The Best Placement Consultant In Pune (https://www.alliancerecruitmentagency.com/placement-consultants-pune/)
+2026-06-14 22:51:05 [INFO   ]   Email found: sales@alliancerecruitmentagency.com
+2026-06-14 22:51:05 [INFO   ]   Email found: sales@aistalent.com
+2026-06-14 22:51:06 [INFO   ] Scraping Contact Us (https://www.jac-recruitment.in/contact-us)
+2026-06-14 22:51:08 [INFO   ]   Closed pop-up/obstruction: [data-dismiss="modal"]
+2026-06-14 22:51:09 [INFO   ]   Closed pop-up/obstruction: button:has-text("Decline")
+2026-06-14 22:51:11 [INFO   ]   Email found: gurgaon@jac-recruitment.in
+2026-06-14 22:51:11 [INFO   ]   Email found: bangalore@jac-recruitment.in
+2026-06-14 22:51:11 [INFO   ]   Email found: india@jac-recruitment.in
+2026-06-14 22:51:11 [INFO   ] Scrape targets met: 12 companies with email (goal 10), 5 from ca_cs_firms (goal 2) — stopping.
+2026-06-14 22:51:11 [INFO   ] Scrape complete: {'queries_run': 2, 'companies_scraped': 14, 'companies_with_email': 12, 'emails_found': 109, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 5}
+2026-06-14 22:51:11 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-14 22:51:11 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-14 22:51:12 [INFO   ] Send queue reserves 6/1 slot(s) for industry ca_cs_firms.
+2026-06-14 22:51:12 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-14 22:51:26 [INFO   ] SENT (Brevo) -> info@taxoindia.in (Top Chartered Accountants Distributors, Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141721.23091907979@smtp-relay.mailin.fr>
+2026-06-14 22:51:50 [INFO   ] SENT (Brevo) -> info@prolificoverseaseducation.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606141721.83734001460@smtp-relay.mailin.fr>
+2026-06-14 22:52:10 [INFO   ] SENT (Brevo) -> info@camantra.com (CA Firm Hiring List with Contact Details) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141722.41325288142@smtp-relay.mailin.fr>
+2026-06-14 22:52:33 [INFO   ] SENT (Brevo) -> info@trmehta.in (Top 50 CA Firms in India for Articleship & Jobs (2026)) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141722.51791449568@smtp-relay.mailin.fr>
+2026-06-14 22:52:40 [INFO   ] SENT (Brevo) -> info@teamlease.com (Recruitment Agencies in Pune) | Exploring a potential partnership opportunity with group.teamlease.com | messageId=<202606141722.84624953606@smtp-relay.mailin.fr>
+2026-06-14 22:52:51 [INFO   ] SENT (Brevo) -> info@nlbservices.com (Best Recruitment Agency in Pune) | Exploring a potential partnership opportunity with nlbservices.com | messageId=<202606141722.17008944233@smtp-relay.mailin.fr>
+2026-06-14 22:53:01 [INFO   ] SENT (Brevo) -> info@memsllp.com (MEMS LLP: Best Recruitment Agencies in Mumbai, India) | Exploring a potential partnership opportunity with memsllp.com | messageId=<202606141723.57020875942@smtp-relay.mailin.fr>
+2026-06-14 22:53:08 [INFO   ] SENT (Brevo) -> contact@capranjaljoshi.com (CA Pranjal Joshi and Co., Chartered Accountant in Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141723.54667383951@smtp-relay.mailin.fr>
+2026-06-14 22:53:15 [INFO   ] SENT (Brevo) -> contact@dpncindia.com (Top CA Articleship Firms in Delhi, Careers ...) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141723.89542625928@smtp-relay.mailin.fr>
+2026-06-14 22:53:28 [INFO   ] SENT (Brevo) -> hello@henryharvin.com (Top CA Firms in Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141723.40887117095@smtp-relay.mailin.fr>
+2026-06-14 22:53:33 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-14 22:53:33 [INFO   ] 
+2026-06-14 22:53:33 [INFO   ] ==============================================================
+2026-06-14 22:53:33 [INFO   ]   RUN SUMMARY
+2026-06-14 22:53:33 [INFO   ] ==============================================================
+2026-06-14 22:53:33 [INFO   ]   Scrape (this run)
+2026-06-14 22:53:33 [INFO   ]     Companies scraped:        14
+2026-06-14 22:53:33 [INFO   ]     Companies with email:     12
+2026-06-14 22:53:33 [INFO   ]     Emails scraped/found:     109
+2026-06-14 22:53:33 [INFO   ]     Search queries run:       2
+2026-06-14 22:53:33 [INFO   ]     ca_cs_firms with email:          5 (goal 2)
+2026-06-14 22:53:33 [INFO   ]     Browser used:             chrome
+2026-06-14 22:53:33 [INFO   ]   Replies (this run)
+2026-06-14 22:53:33 [INFO   ]     Reply check:              skipped
+2026-06-14 22:53:33 [INFO   ]   Send (this run)
+2026-06-14 22:53:33 [INFO   ]     Emails sent:              10
+2026-06-14 22:53:33 [INFO   ]     Send failed:              0
+2026-06-14 22:53:33 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-14 22:53:33 [INFO   ]   Database totals (all runs)
+2026-06-14 22:53:33 [INFO   ]     Companies in database:    283
+2026-06-14 22:53:33 [INFO   ]     Companies with email:     220
+2026-06-14 22:53:33 [INFO   ]     Emails scraped (total):   2697
+2026-06-14 22:53:33 [INFO   ]     Emails sent (total):      150
+2026-06-14 22:53:33 [INFO   ]     Replies forwarded (total): 0
+2026-06-14 22:53:33 [INFO   ] ==============================================================
+2026-06-14 22:53:33 [INFO   ] 

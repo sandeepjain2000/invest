@@ -28,6 +28,34 @@ def clean_domain(url: str) -> str:
     return host
 
 
+def domain_from_ca_profile(profile_url: str) -> str:
+    """Stable unique domain key for a CA Connect member/firm profile URL."""
+    url = (profile_url or "").strip()
+    if not url:
+        return ""
+    if "://" not in url:
+        url = "https://" + url
+    parsed = urlparse(url)
+    host = parsed.netloc.lower()
+    if host.startswith("www."):
+        host = host[4:]
+    path = parsed.path.strip("/").lower().replace("/", ".")
+    return f"{host}.{path}" if path else host
+
+
+def is_ca_connect_contact(item: dict[str, Any]) -> bool:
+    """True for individual CAs/firms imported from caconnect.icai.org (JSON scrape)."""
+    domain = (item.get("domain") or "").lower()
+    if domain.startswith("caconnect.icai.org."):
+        return True
+    if "ca connect" in (item.get("notes") or "").lower():
+        return True
+    source = (item.get("source_page") or "").lower()
+    return "caconnect.icai.org" in source and (
+        "memberprofile" in source or "firmprofile" in source
+    )
+
+
 class ImmigrationDB:
     def __init__(self, path: str | Path | None = None) -> None:
         self.path = Path(path or DB_PATH)
@@ -136,6 +164,13 @@ class ImmigrationDB:
         es_cols = {r[1] for r in self.conn.execute("PRAGMA table_info(email_sent)")}
         if "message_id" not in es_cols:
             self.conn.execute("ALTER TABLE email_sent ADD COLUMN message_id TEXT")
+
+        self.conn.execute(
+            "UPDATE companies SET industry = 'lawyers' WHERE industry = 'alumni_fundraising'"
+        )
+        self.conn.execute(
+            "UPDATE search_queries SET industry = 'lawyers' WHERE industry = 'alumni_fundraising'"
+        )
 
     def ensure_campaign_subject(self, subject: str) -> None:
         subject = (subject or "").strip()
@@ -249,9 +284,25 @@ class ImmigrationDB:
         self.conn.commit()
         return added
 
-    def next_pending_query(self, industry: str | None = None) -> sqlite3.Row | None:
+    def next_pending_query(
+        self,
+        industry: str | None = None,
+        *,
+        prefer_industry: str | None = None,
+        exclude_industries: list[str] | None = None,
+    ) -> sqlite3.Row | None:
+        exclude = {i.strip().lower() for i in (exclude_industries or []) if i and i.strip()}
+
+        def _allowed(row: sqlite3.Row | None) -> sqlite3.Row | None:
+            if not row:
+                return None
+            iid = (row["industry"] if "industry" in row.keys() else "").strip().lower()
+            if iid in exclude:
+                return None
+            return row
+
         if industry:
-            return self.conn.execute(
+            row = self.conn.execute(
                 """
                 SELECT * FROM search_queries
                 WHERE status = 'pending' AND industry = ?
@@ -260,6 +311,21 @@ class ImmigrationDB:
                 """,
                 (industry.strip(),),
             ).fetchone()
+            return _allowed(row)
+
+        prefer = (prefer_industry or "").strip()
+        if prefer and prefer.lower() not in exclude:
+            row = self.conn.execute(
+                """
+                SELECT * FROM search_queries
+                WHERE status = 'pending' AND industry = ?
+                ORDER BY id ASC
+                LIMIT 1
+                """,
+                (prefer,),
+            ).fetchone()
+            if row:
+                return row
 
         pending_industries = [
             r[0]
@@ -270,6 +336,7 @@ class ImmigrationDB:
                 """
             ).fetchall()
         ]
+        pending_industries = [i for i in pending_industries if i.strip().lower() not in exclude]
         if not pending_industries:
             return None
 
@@ -318,8 +385,9 @@ class ImmigrationDB:
         industry: str = "overseas_education_immigration",
         email_status: str = "pending",
         notes: str = "",
+        domain: str | None = None,
     ) -> int | None:
-        domain = clean_domain(website)
+        domain = (domain or "").strip() or clean_domain(website)
         if not domain:
             return None
         now = utc_now()
@@ -400,11 +468,11 @@ class ImmigrationDB:
             return 2
         return 100
 
-    def pending_send_queue(self, limit: int = 50) -> list[dict[str, Any]]:
+    def _pending_send_candidates(self) -> list[dict[str, Any]]:
         rows = self.conn.execute(
             """
             SELECT ce.email, ce.company_id, c.name AS company_name, c.domain,
-                   c.website, c.industry
+                   c.website, c.industry, c.notes, ce.source_page
             FROM company_emails ce
             JOIN companies c ON c.id = ce.company_id
             LEFT JOIN email_sent es ON lower(es.email) = lower(ce.email)
@@ -426,10 +494,69 @@ class ImmigrationDB:
 
         ordered = sorted(best_by_company.values(), key=lambda x: (x["_priority"], x["company_id"]))
         out: list[dict[str, Any]] = []
-        for item in ordered[:limit]:
+        for item in ordered:
             item.pop("_priority", None)
             out.append(item)
         return out
+
+    def pending_send_queue(
+        self,
+        limit: int = 50,
+        *,
+        ensure_industry: str | None = None,
+        min_from_industry: int = 0,
+        min_from_ca_connect: int = 0,
+        industry_reserves: dict[str, int] | None = None,
+    ) -> list[dict[str, Any]]:
+        candidates = self._pending_send_candidates()
+        if limit <= 0:
+            return []
+
+        queue: list[dict[str, Any]] = []
+        seen_emails: set[str] = set()
+
+        def _add_items(items: list[dict[str, Any]], max_count: int | None = None) -> int:
+            added = 0
+            for item in items:
+                if max_count is not None and added >= max_count:
+                    break
+                if len(queue) >= limit:
+                    break
+                email = (item.get("email") or "").lower()
+                if not email or email in seen_emails:
+                    continue
+                queue.append(item)
+                seen_emails.add(email)
+                added += 1
+            return added
+
+        ca_reserve = max(0, int(min_from_ca_connect or 0))
+        if ca_reserve > 0:
+            ca_items = [item for item in candidates if is_ca_connect_contact(item)]
+            _add_items(ca_items, ca_reserve)
+
+        industry_key = (ensure_industry or "").strip().lower()
+        industry_reserve = max(0, int(min_from_industry or 0))
+        if industry_key and industry_reserve > 0:
+            industry_items = [
+                item
+                for item in candidates
+                if (item.get("industry") or "").lower() == industry_key
+            ]
+            _add_items(industry_items, industry_reserve)
+
+        for iid, reserve_count in (industry_reserves or {}).items():
+            key = (iid or "").strip().lower()
+            count = max(0, int(reserve_count or 0))
+            if not key or count <= 0:
+                continue
+            industry_items = [
+                item for item in candidates if (item.get("industry") or "").lower() == key
+            ]
+            _add_items(industry_items, count)
+
+        _add_items(candidates)
+        return queue[:limit]
 
     def record_email_sent(
         self,
@@ -465,6 +592,22 @@ class ImmigrationDB:
         if status == "sent" and subject:
             self.ensure_campaign_subject(subject)
         self.conn.commit()
+
+    def count_unsent_ca_connect_recipients(self) -> int:
+        return sum(1 for item in self._pending_send_candidates() if is_ca_connect_contact(item))
+
+    def count_unsent_recipients(self) -> int:
+        return len(self._pending_send_candidates())
+
+    def count_unsent_recipients_for_industry(self, industry_id: str) -> int:
+        key = (industry_id or "").strip().lower()
+        if not key:
+            return 0
+        return sum(
+            1
+            for item in self._pending_send_candidates()
+            if (item.get("industry") or "").lower() == key
+        )
 
     def email_already_sent(self, email: str) -> bool:
         row = self.conn.execute(

@@ -93,19 +93,19 @@
       "praise_hint": "employability initiatives and education-focused CSR programs"
     },
     {
-      "id": "alumni_fundraising",
-      "name": "Alumni Donation & Fundraising",
+      "id": "lawyers",
+      "name": "Law Firms & Lawyers",
       "rank": 7,
       "active": true,
       "seed_queries": [
-        "alumni association education India contact",
-        "educational trust fundraising India email",
-        "alumni engagement platform India contact",
-        "college alumni donation program India",
-        "alumni network educational institution India",
-        "fundraising education trust India contact"
+        "law firm India contact email campus recruitment",
+        "corporate law firm India partnership contact",
+        "litigation law firm India email contact",
+        "legal services firm India graduate hiring contact",
+        "law firm employability training India email",
+        "boutique law firm India contact email"
       ],
-      "praise_hint": "alumni engagement and educational community building"
+      "praise_hint": "legal advisory services and professional support for businesses and institutions"
     },
     {
       "id": "training_finishing_schools",
@@ -166,6 +166,98 @@
         "career coaching institute graduate placement India contact"
       ],
       "praise_hint": "exam preparation, career coaching, and student success outcomes"
+    },
+    {
+      "id": "ca_cs_firms",
+      "name": "Chartered Accountants & Company Secretaries",
+      "rank": 12,
+      "active": true,
+      "scrape_source": "ca_connect",
+      "seed_queries": [
+        "chartered accountant firms India contact email",
+        "CA firm Mumbai contact email",
+        "chartered accountants partnership firm India contact",
+        "company secretary firms India contact email",
+        "corporate secretarial services firm India email",
+        "CS firm ROC compliance India contact",
+        "audit and assurance CA firm India contact",
+        "tax consultancy CA firm startup clients India email",
+        "company secretary corporate governance firm India contact",
+        "chartered accountant SME clients India email"
+      ],
+      "praise_hint": "professional advisory services for entrepreneurs and growing businesses",
+      "template_file": "funding_intro.html",
+      "email_subject": "Seeking Introductions to Potential Seed Investors for PlacementHub",
+      "subject_append_domain": false,
+      "use_nvidia_praise": false,
+      "signature_links": [
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        },
+        {
+          "label": "Detailed Note on Funding Requirement",
+          "url": "https://drive.google.com/file/d/1A5lZsoBM1CJ6Ni_apI1K67iJf973iNEK/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "company_secretary_firms",
+      "name": "Company Secretary Firms",
+      "rank": 13,
+      "active": true,
+      "seed_queries": [
+        "company secretary firms India contact email",
+        "corporate secretarial services firm India email",
+        "CS firm ROC compliance India contact",
+        "company secretary corporate governance firm India contact",
+        "secretarial compliance firm India contact email",
+        "company secretary startup advisory India email"
+      ],
+      "praise_hint": "corporate secretarial, compliance, and governance advisory services",
+      "template_file": "funding_intro_cs.html",
+      "email_subject": "Seeking Introductions to Potential Seed Investors for PlacementHub",
+      "subject_append_domain": false,
+      "use_nvidia_praise": false,
+      "signature_links": [
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        },
+        {
+          "label": "Detailed Note on Funding Requirement",
+          "url": "https://drive.google.com/file/d/1A5lZsoBM1CJ6Ni_apI1K67iJf973iNEK/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "tax_consultants",
+      "name": "Tax Consultants",
+      "rank": 14,
+      "active": true,
+      "seed_queries": [
+        "tax consultant firm India contact email",
+        "GST consultancy firm India email contact",
+        "direct tax advisory firm India contact",
+        "startup tax consultant India email",
+        "income tax consultant firm Pune Mumbai contact",
+        "tax planning consultancy India contact email"
+      ],
+      "praise_hint": "tax advisory, GST compliance, and regulatory filing support for businesses",
+      "template_file": "funding_intro_tax.html",
+      "email_subject": "Seeking Introductions to Potential Seed Investors for PlacementHub",
+      "subject_append_domain": false,
+      "use_nvidia_praise": false,
+      "signature_links": [
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        },
+        {
+          "label": "Detailed Note on Funding Requirement",
+          "url": "https://drive.google.com/file/d/1A5lZsoBM1CJ6Ni_apI1K67iJf973iNEK/view?usp=sharing"
+        }
+      ]
     }
   ]
 }

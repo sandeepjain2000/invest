@@ -1,0 +1,286 @@
+2026-06-14 23:57:40 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-14_23-57-40.log
+2026-06-14 23:57:40 [INFO   ] Scrape targets: up to 50 companies, stop after 10 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-14 23:57:40 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-14 23:57:41 [INFO   ] Using browser: chrome
+2026-06-14 23:57:41 [INFO   ] Industry: recruitment_staffing | Query: campus placement company in India for students
+2026-06-14 23:57:41 [INFO   ] Google search: campus placement company in India for students
+2026-06-14 23:57:45 [INFO   ]   Found 10 unique result(s).
+2026-06-14 23:57:45 [INFO   ] Skip duplicate domain: hrremedyindia.com
+2026-06-14 23:57:45 [INFO   ] Scraping Campus Recruitment solutions (https://corp.freshersworld.com/institutes/colleges)
+2026-06-14 23:57:56 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-14 23:57:56 [INFO   ] Skip duplicate domain: skillsconnect.in
+2026-06-14 23:57:56 [INFO   ] Skip duplicate domain: spiderfocus.com
+2026-06-14 23:57:56 [INFO   ] Skip duplicate domain: pareekshn.com
+2026-06-14 23:57:56 [INFO   ] Scraping Top Companies and Their Approach to On-Campus ... (https://varthana.com/student/top-companies-and-their-approach-to-on-campus-recruitment/)
+2026-06-14 23:58:10 [INFO   ]   Email found: care@varthana.com
+2026-06-14 23:58:10 [INFO   ]   Email found: hello@varthana.com
+2026-06-14 23:58:10 [INFO   ] Scraping Interview FAQ: How can I choose the right company? (https://cpt.hitbullseye.com/interview.php#:~:text=The%20answer%20to%20this%20question,chances%20of%20learning%20the%20ropes.)
+2026-06-14 23:58:14 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-14 23:58:14 [INFO   ] Scraping Campus Placement Services (https://www.gsjobpoint.com/service/campus-placement/)
+2026-06-14 23:58:22 [INFO   ]   Email found: contact@gsjobpoint.com
+2026-06-14 23:58:22 [INFO   ] Skip duplicate domain: talentcorner.in
+2026-06-14 23:58:22 [INFO   ] Scraping How to call companies for campus placements? (https://www.indiastudychannel.com/experts/29641-How-call-companies-campus-placements)
+2026-06-14 23:58:31 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-14 23:58:31 [INFO   ] Industry: insurance | Query: campus recruitment insurance sector India email id
+2026-06-14 23:58:31 [INFO   ] Google search: campus recruitment insurance sector India email id
+2026-06-14 23:58:36 [INFO   ]   Found 12 unique result(s).
+2026-06-14 23:58:36 [INFO   ] Skip duplicate domain: careers.tataaig.com
+2026-06-14 23:58:36 [INFO   ] Scraping Brainly (https://brainly.in/question/61097727)
+2026-06-14 23:58:43 [INFO   ]   Closed pop-up/obstruction: [role="dialog"] button[aria-label*="close" i]
+2026-06-14 23:58:43 [INFO   ]   Email found: subscriptions@brainly.com
+2026-06-14 23:58:43 [INFO   ]   Email found: advertising@brainly.com
+2026-06-14 23:58:43 [INFO   ] Scraping USPS Location Finder (https://tools.usps.com/find-location.htm)
+2026-06-14 23:59:25 [INFO   ]   Email found: sfsdelivery.confirmation@usps.gov
+2026-06-14 23:59:25 [INFO   ] Scraping Bajajgeneralinsurance (https://www.bajajgeneralinsurance.com/blog/health-insurance-articles/health-insurance-claim-letter.html)
+2026-06-14 23:59:37 [INFO   ]   Email found: barnali.sinha@gmail.com
+2026-06-14 23:59:37 [INFO   ]   Email found: careforyou@bajajgeneral.com
+2026-06-14 23:59:37 [INFO   ]   Email found: seniorcitizen@bajajgeneral.com
+2026-06-14 23:59:37 [INFO   ] Scraping Zoho (https://www.zoho.com/zeptomail/articles/insurance-email.html)
+2026-06-15 00:00:03 [INFO   ]   Email found: support@abc.com
+2026-06-15 00:00:03 [INFO   ]   Email found: presales@zeptomail.com
+2026-06-15 00:00:03 [INFO   ] Scraping Gicouncil (https://www.gicouncil.in/insurance-education/complaint-channels/complaints-and-grievances/)
+2026-06-15 00:00:05 [INFO   ]   Email found: complaints@irda.gov.in
+2026-06-15 00:00:05 [INFO   ] Scraping Starhealth (https://www.starhealth.in/answers/how-to-write-a-letter-to-a-health-insurance-company-for-a-claim/)
+2026-06-15 00:00:31 [INFO   ]   Email found: marketing.d2c@starhealth.in
+2026-06-15 00:00:31 [INFO   ]   Email found: info@starhealth.in
+2026-06-15 00:00:31 [INFO   ]   Email found: u003einfo@starhealth.in
+2026-06-15 00:00:31 [INFO   ] Scraping Agencyperformancepartners (https://www.agencyperformancepartners.com/blog/insurance-email-samples-proven-templates-that-work/)
+2026-06-15 00:01:09 [INFO   ]   Email found: info@agencyperformancepartners.com
+2026-06-15 00:01:09 [INFO   ] Scraping Empowered Physicaltherapy (https://empowered-physicaltherapy.com/general-guide-to-submitting-a-superbill-to-insurance/)
+2026-06-15 00:01:20 [INFO   ]   Email found: info@empowered-physicaltherapy.com
+2026-06-15 00:01:20 [INFO   ] Scraping Policyx (https://www.policyx.com/health-insurance/digit-health-insurance/customer-service.php)
+2026-06-15 00:01:21 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:22 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:23 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:24 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:25 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:26 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:27 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:28 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:01:28 [INFO   ]   Email found: healthclaims@godigit.com
+2026-06-15 00:01:28 [INFO   ]   Email found: hello@godigit.com
+2026-06-15 00:01:28 [INFO   ]   Email found: helpdesk@policyx.com
+2026-06-15 00:01:28 [INFO   ]   Email found: hr@policyx.com
+2026-06-15 00:01:28 [INFO   ] Scraping Hizuno (https://www.hizuno.com/blog/health/how-to-file-health-insurance-reimbursement-claim)
+2026-06-15 00:01:36 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 00:01:36 [INFO   ] Scraping Cholainsurance (https://www.cholainsurance.com/customer-services)
+2026-06-15 00:01:40 [INFO   ]   Email found: customercare@cholams.murugappa.com
+2026-06-15 00:01:40 [INFO   ] Industry: corporate_csr | Query: Indian companies CSR education programs for students
+2026-06-15 00:01:40 [INFO   ] Google search: Indian companies CSR education programs for students
+2026-06-15 00:01:44 [INFO   ]   Found 9 unique result(s).
+2026-06-15 00:01:44 [INFO   ] Skip duplicate domain: csrbox.org
+2026-06-15 00:01:44 [INFO   ] Skip duplicate domain: vidyanjali.education.gov.in
+2026-06-15 00:01:44 [INFO   ] Skip duplicate domain: proteantech.in
+2026-06-15 00:01:44 [INFO   ] Scraping CSR STEM EDUCATION PROGRAMS (https://indiastemfoundation.org/csr-education-programs/)
+2026-06-15 00:01:48 [INFO   ]   Email found: info@indiastemfoundation.org
+2026-06-15 00:01:48 [INFO   ] Skip duplicate domain: ictacademy.in
+2026-06-15 00:01:48 [INFO   ] Skip duplicate domain: reliancegroupindia.com
+2026-06-15 00:01:48 [INFO   ] Scraping CSR Initiatives (https://www.electronicafinance.com/csr/)
+2026-06-15 00:01:56 [INFO   ]   Email found: customerfirst@efl.co.in
+2026-06-15 00:01:56 [INFO   ] Scraping CSR Projects (https://www.g4s.com/en-in/social-responsibility/csr-projects)
+2026-06-15 00:02:03 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-15 00:02:09 [INFO   ]   Email found: enquiries@in.g4s.com
+2026-06-15 00:02:09 [INFO   ]   Email found: wecare@in.g4s.com
+2026-06-15 00:02:09 [INFO   ] Scraping Top CSR Doners in Education Sector in India 2025 (https://www.builtxsdc.com/blog/top-csr-doners-in-education-sector-in-india-2025)
+2026-06-15 00:02:13 [INFO   ]   Email found: contact@builtxsdc.com
+2026-06-15 00:02:13 [INFO   ] Industry: bfsi_nbfc_banks | Query: Indian banks campus recruitment contact details
+2026-06-15 00:02:13 [INFO   ] Google search: Indian banks campus recruitment contact details
+2026-06-15 00:02:17 [INFO   ]   Found 10 unique result(s).
+2026-06-15 00:02:17 [INFO   ] Scraping Explore Exciting Careers at Indian Bank (https://indianbank.bank.in/career/)
+2026-06-15 00:02:23 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 00:02:23 [INFO   ] Scraping Apps (https://apps.indianbank.in/cgrc/frm_cgrs_cust_welcome_new_UA1.aspx)
+2026-06-15 00:02:25 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-15 00:02:25 [INFO   ] Scraping Bankbazaar (https://www.bankbazaar.com/savings-account/indian-bank-customer-care.html)
+2026-06-15 00:02:27 [INFO   ]   Email found: support@bankbazaar.com
+2026-06-15 00:02:27 [INFO   ] Scraping Paisabazaar (https://www.paisabazaar.com/indian-bank/customer-care/)
+2026-06-15 00:02:29 [INFO   ]   Email found: care@paisabazaar.com
+2026-06-15 00:02:29 [INFO   ]   Email found: customercarecomplaints@indianbank.co.in
+2026-06-15 00:02:29 [INFO   ]   Email found: indmail@indianbank.co.in
+2026-06-15 00:02:29 [INFO   ]   Email found: nodalofficer@indianbank.co.in
+2026-06-15 00:02:29 [INFO   ] Scraping careers (http://www.indianbank.in/career.php)
+2026-06-15 00:02:50 [INFO   ]   No email found (navigation_failed: Page.goto: net::ERR_CONNECTION_TIMED_OUT at http://www.indianbank.in/career.php
+Call log:
+  - navigating to "http://www.indianbank.in/career.php", waiting until "domcontentloaded"
+).
+2026-06-15 00:02:50 [INFO   ] Scraping Notification-Indian-Bank-Specialist-Officer-Posts.pdf (https://img.freejobalert.com/uploads/2018/02/Notification-Indian-Bank-Specialist-Officer-Posts.pdf)
+2026-06-15 00:02:53 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-15 00:02:53 [INFO   ] Scraping Indian Bank SO Recruitment 2026 Notification Out, Apply ... (https://testbook.com/indian-bank-so)
+2026-06-15 00:02:58 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-15 00:02:59 [INFO   ]   Email found: support@testbook.com
+2026-06-15 00:02:59 [INFO   ]   Email found: too@root.com
+2026-06-15 00:02:59 [INFO   ] Skip duplicate domain: scribd.com
+2026-06-15 00:02:59 [INFO   ] Scraping Careers (https://www.southindianbank.bank.in/about-us/careers)
+2026-06-15 00:03:02 [INFO   ]   Email found: careers@sib.bank.in
+2026-06-15 00:03:02 [INFO   ]   Email found: customercare@sib.bank.in
+2026-06-15 00:03:02 [INFO   ] Scraping INDIAN BANK, SIRUSERI (https://chengalpattu.nic.in/public-utility/indian-bank-siruseri/)
+2026-06-15 00:03:04 [INFO   ]   Email found: siruseri@indianbank.co.in
+2026-06-15 00:03:04 [INFO   ] Industry: recruitment_staffing | Query: staffing solutions for colleges and universities
+2026-06-15 00:03:04 [INFO   ] Google search: staffing solutions for colleges and universities
+2026-06-15 00:03:08 [INFO   ]   Found 9 unique result(s).
+2026-06-15 00:03:08 [INFO   ] Scraping Education Recruitment Agency in Pune (https://www.careerchoicesolution.com/blog/education-recruitment-agency-in-pune_34983.htm)
+2026-06-15 00:03:12 [INFO   ]   Email found: abhishek.p@careerchoicesolution.com
+2026-06-15 00:03:12 [INFO   ]   Email found: hrd@careerchoicesolution.com
+2026-06-15 00:03:12 [INFO   ] Scraping 7: Best Temporary Staffing Services in Pune (https://www.7consultancy.in/best-temporary-staffing-services-in-pune.php)
+2026-06-15 00:03:15 [INFO   ]   Email found: info@7consultancy.in
+2026-06-15 00:03:15 [INFO   ] Scraping Best Staffing Companies in Pune (https://pitcs.in/best-staffing-companies-in-pune)
+2026-06-15 00:04:05 [INFO   ]   Email found: info@pitcs.in
+2026-06-15 00:04:05 [INFO   ]   Email found: info@a2y.sg
+2026-06-15 00:04:05 [INFO   ]   Email found: inf.usa@pitcs.in
+2026-06-15 00:04:05 [INFO   ] Scraping Campus Hiring & Graduate Recruitment Solutions (https://talentgigs.in/campus-hiring)
+2026-06-15 00:04:08 [INFO   ]   Email found: hr@talentgigs.in
+2026-06-15 00:04:08 [INFO   ] Scraping Top Recruiting Firms for Educational Institutions in India (https://clutch.co/in/hr/recruiting/education-industry)
+2026-06-15 00:04:21 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 00:04:21 [INFO   ] Scraping Placement Consultants in Pune, Recruitment Agencies Pune (https://www.shrofile.com/HR-consultancy-in-pune.php)
+2026-06-15 00:04:25 [INFO   ]   Email found: info@shrofile.com
+2026-06-15 00:04:25 [INFO   ] Skip duplicate domain: corp.freshersworld.com
+2026-06-15 00:04:25 [INFO   ] Scraping List of Recruitment Companies in Pune for 2026 (https://v3staffing.in/blog/recruitment-agencies-pune)
+2026-06-15 00:04:32 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-15 00:04:35 [INFO   ]   Email found: info@v3staffing.in
+2026-06-15 00:04:35 [INFO   ] Scraping Employers' Guide to the Different Types of Staffing Services (https://www.aerotek.com/en/insights/different-types-of-staffing-services#:~:text=These%20include%20temporary%20staffing%2C%20temp,payrolling%20and%20managed%20services%20programs.)
+2026-06-15 00:04:41 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-15 00:04:48 [INFO   ]   Email found: no-reply@astoncarter.com
+2026-06-15 00:04:48 [INFO   ] Industry: recruitment_staffing | Query: employability training and recruitment firm India
+2026-06-15 00:04:48 [INFO   ] Google search: employability training and recruitment firm India
+2026-06-15 00:04:53 [INFO   ]   Found 12 unique result(s).
+2026-06-15 00:04:53 [INFO   ] Scraping Job Placement and HR Consultancy (https://www.manpowergroup.co.in/)
+2026-06-15 00:04:59 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:05:01 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-15 00:05:01 [INFO   ]   Email found: enquiry@manpowergroup.com
+2026-06-15 00:05:01 [INFO   ]   Email found: myhelp@manpoweronline.in
+2026-06-15 00:05:01 [INFO   ]   Email found: reportfraud@manpowergroup.com
+2026-06-15 00:05:01 [INFO   ] Skip duplicate domain: randstad.in
+2026-06-15 00:05:01 [INFO   ] Scraping Ambe International (https://www.ambeinter.com/)
+2026-06-15 00:05:32 [INFO   ]   Email found: contact@indianpersonnel.com
+2026-06-15 00:05:32 [INFO   ] Scraping Adecco: Find Jobs in India (https://www.adecco.com/en-in)
+2026-06-15 00:05:37 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept all")
+2026-06-15 00:05:39 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:05:41 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:05:43 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:06:09 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:06:11 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:06:13 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:06:15 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:06:15 [INFO   ]   Email found: we.care@adecco.com
+2026-06-15 00:06:15 [INFO   ]   Email found: asc@adecco.com
+2026-06-15 00:06:15 [INFO   ]   Email found: in.marcom@adecco.com
+2026-06-15 00:06:15 [INFO   ]   Email found: u003ewe.care@adecco.com
+2026-06-15 00:06:15 [INFO   ]   Email found: u003easc@adecco.com
+2026-06-15 00:06:15 [INFO   ]   Email found: u003ein.marcom@adecco.com
+2026-06-15 00:06:15 [INFO   ] Skip duplicate domain: employabilitybridge.co.in
+2026-06-15 00:06:15 [INFO   ] Scraping Persol India (https://www.persolindia.com/)
+2026-06-15 00:06:46 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-15 00:06:47 [INFO   ] Scraping India's Leading Recruitment Agency (https://www.manpower.co.in/ko)
+2026-06-15 00:06:52 [INFO   ]   Closed pop-up/obstruction: button:has-text("Accept")
+2026-06-15 00:06:52 [INFO   ]   Email found: u003ereportfraud@manpowergroup.com
+2026-06-15 00:06:53 [INFO   ]   Email found: branding@manpower.co.in
+2026-06-15 00:06:53 [INFO   ] Skip duplicate domain: michaelpage.co.in
+2026-06-15 00:06:53 [INFO   ] Skip duplicate domain: jac-recruitment.in
+2026-06-15 00:06:53 [INFO   ] Skip duplicate domain: talentcorner.in
+2026-06-15 00:06:53 [INFO   ] Skip duplicate domain: careerchoicesolution.com
+2026-06-15 00:06:53 [INFO   ] Scraping Website (http://www.belagavijobs.in/)
+2026-06-15 00:06:55 [INFO   ]   Email found: recruiterment@proficientminds.co.in
+2026-06-15 00:06:55 [INFO   ] Industry: coaching_test_prep | Query: India coaching centers for competitive exams contact us
+2026-06-15 00:06:55 [INFO   ] Google search: India coaching centers for competitive exams contact us
+2026-06-15 00:06:59 [INFO   ]   Found 9 unique result(s).
+2026-06-15 00:06:59 [INFO   ] Scraping Best Coaching in Pune for ESE, GATE, SSC JE, RRB JE & ... (https://www.madeeasy.in/centre/pune)
+2026-06-15 00:07:04 [INFO   ]   Email found: infopune@madeeasy.in
+2026-06-15 00:07:04 [INFO   ]   Email found: corporaterelations@madeeasy.in
+2026-06-15 00:07:04 [INFO   ] Scraping Best Coaching For Competitive Exams in pune Maharashtra (https://www.justvisitonline.com/listing/pune/coaching-for-competitive-exams)
+2026-06-15 00:07:12 [INFO   ]   Email found: info@justvisitonline.com
+2026-06-15 00:07:12 [INFO   ] Scraping Jnana Prabodhini Competitive Examinations Centre, Pune (https://www.jnanaprabodhini.org/competitive-examinations-centre/)
+2026-06-15 00:07:17 [INFO   ]   Email found: jpcc@jnanaprabodhini.org
+2026-06-15 00:07:17 [INFO   ]   Email found: contact@jnanaprabodhini.org
+2026-06-15 00:07:17 [INFO   ] Scraping Coaching Centre in Pune For JEE, NEET & Foundation ... (https://www.vedantu.com/offline-centres/pune)
+2026-06-15 00:07:21 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-15 00:07:43 [INFO   ]   Email found: vcare@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: aishwarya.manoj@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: deepak.r@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: fathima.m@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: s.harishkumar@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: m.kalaimani@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: vasantha.kumars@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: a.jacob@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: sainath.rao@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: harish.babu2@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: keertheeswaran.prabu1@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: vlc_blr_jpnagar@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: ravinder.kumar1@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: garepati.seshudas@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: prashanth.naliganti@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: talla.ramesh@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: chiluka.vijaysagar@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: kartik.gopisetty@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: naveen.kumar1@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: raghu.ram@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: syed.ahamed1@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: rishenath.kumar@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: subairahamed.m@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: yawar.parrey@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: shilpa.patankar@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: manish.singhchauhan@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: deepak.ps@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: ishant.rameshchaudhary@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: shashi.prakash1@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: sathish.kumarkasinathan@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: naga.phanindra@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: someswara.rao@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: nagarajan.b@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: shubham.kumar5@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: mohammed.shahbaz@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: ankam.nagabhishek@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: tamilarasan.pandurangan1@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: rajkumar.murugan@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: gampa.mahesh@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: jyoti.balasahebpawar@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: sunkariediga.muraliprasad@vedantu.com
+2026-06-15 00:07:43 [INFO   ]   Email found: eslavath.ganesh@vedantu.com
+2026-06-15 00:07:43 [INFO   ] Scraping IACE: Best Coaching Institute for Government Exams, SSC ... (https://iace.co.in/)
+2026-06-15 00:07:47 [INFO   ]   Email found: queries@iace.co.in
+2026-06-15 00:07:47 [INFO   ] Skip duplicate domain: collegedunia.com
+2026-06-15 00:07:47 [INFO   ] Scraping Website (http://www.niravda.com/)
+2026-06-15 00:07:50 [INFO   ]   Email found: niravda12@gmail.com
+2026-06-15 00:07:50 [INFO   ] Scraping Website (https://www.wiceindia.com/)
+2026-06-15 00:07:59 [INFO   ]   Email found: wiceindia@gmail.com
+2026-06-15 00:07:59 [INFO   ] Scrape complete: {'queries_run': 7, 'companies_scraped': 50, 'companies_with_email': 40, 'emails_found': 110, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 0, 'ca_connect': {}}
+2026-06-15 00:07:59 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-15 00:07:59 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-15 00:07:59 [INFO   ] Send queue reserves 2/1 slot(s) for industry ca_cs_firms.
+2026-06-15 00:07:59 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-15 00:08:16 [INFO   ] SENT (Brevo) -> info@aashagroup.com (Top Chartered Accountants Distributors, Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141838.47880986593@smtp-relay.mailin.fr>
+2026-06-15 00:08:30 [INFO   ] SENT (Brevo) -> info@neethusacademy.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606141838.73217897152@smtp-relay.mailin.fr>
+2026-06-15 00:08:44 [INFO   ] SENT (Brevo) -> info@asasso.in (CA Firm Hiring List with Contact Details) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141838.84244875158@smtp-relay.mailin.fr>
+2026-06-15 00:08:57 [INFO   ] SENT (Brevo) -> info@starhealth.in (Starhealth) | Exploring a potential partnership opportunity with starhealth.in | messageId=<202606141838.73777402652@smtp-relay.mailin.fr>
+2026-06-15 00:09:08 [INFO   ] SENT (Brevo) -> info@agencyperformancepartners.com (Agencyperformancepartners) | Exploring a potential partnership opportunity with agencyperformancepartners.com | messageId=<202606141839.45999458406@smtp-relay.mailin.fr>
+2026-06-15 00:09:42 [INFO   ] SENT (Brevo) -> info@empowered-physicaltherapy.com (Empowered Physicaltherapy) | Exploring a potential partnership opportunity with empowered-physicaltherapy.com | messageId=<202606141839.34403717310@smtp-relay.mailin.fr>
+2026-06-15 00:09:58 [INFO   ] SENT (Brevo) -> info@indiastemfoundation.org (CSR STEM EDUCATION PROGRAMS) | Exploring a potential partnership opportunity with indiastemfoundation.org | messageId=<202606141839.36778902553@smtp-relay.mailin.fr>
+2026-06-15 00:10:16 [INFO   ] SENT (Brevo) -> info@7consultancy.in (7: Best Temporary Staffing Services in Pune) | Exploring a potential partnership opportunity with 7consultancy.in | messageId=<202606141840.21644195978@smtp-relay.mailin.fr>
+2026-06-15 00:10:31 [INFO   ] SENT (Brevo) -> info@pitcs.in (Best Staffing Companies in Pune) | Exploring a potential partnership opportunity with pitcs.in | messageId=<202606141840.73265865435@smtp-relay.mailin.fr>
+2026-06-15 00:11:07 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-15 00:11:38 [WARNING] NVIDIA call failed (attempt 2/5): The read operation timed out — rotating key.
+2026-06-15 00:11:42 [INFO   ] SENT (Brevo) -> info@shrofile.com (Placement Consultants in Pune, Recruitment Agencies Pune) | Exploring a potential partnership opportunity with shrofile.com | messageId=<202606141841.66733288697@smtp-relay.mailin.fr>
+2026-06-15 00:11:47 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-15 00:11:47 [INFO   ] 
+2026-06-15 00:11:47 [INFO   ] ==============================================================
+2026-06-15 00:11:47 [INFO   ]   RUN SUMMARY
+2026-06-15 00:11:47 [INFO   ] ==============================================================
+2026-06-15 00:11:47 [INFO   ]   Scrape (this run)
+2026-06-15 00:11:47 [INFO   ]     Companies scraped:        50
+2026-06-15 00:11:47 [INFO   ]     Companies with email:     40
+2026-06-15 00:11:47 [INFO   ]     Emails scraped/found:     110
+2026-06-15 00:11:47 [INFO   ]     Search queries run:       7
+2026-06-15 00:11:47 [INFO   ]     ca_cs_firms with email:          0 (goal 2)
+2026-06-15 00:11:47 [INFO   ]     Browser used:             chrome
+2026-06-15 00:11:47 [INFO   ]   Replies (this run)
+2026-06-15 00:11:47 [INFO   ]     Reply check:              skipped
+2026-06-15 00:11:47 [INFO   ]   Send (this run)
+2026-06-15 00:11:47 [INFO   ]     Emails sent:              10
+2026-06-15 00:11:47 [INFO   ]     Send failed:              0
+2026-06-15 00:11:47 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-15 00:11:47 [INFO   ]   Database totals (all runs)
+2026-06-15 00:11:47 [INFO   ]     Companies in database:    333
+2026-06-15 00:11:47 [INFO   ]     Companies with email:     260
+2026-06-15 00:11:47 [INFO   ]     Emails scraped (total):   2807
+2026-06-15 00:11:47 [INFO   ]     Emails sent (total):      160
+2026-06-15 00:11:47 [INFO   ]     Replies forwarded (total): 0
+2026-06-15 00:11:47 [INFO   ] ==============================================================
+2026-06-15 00:11:47 [INFO   ] 

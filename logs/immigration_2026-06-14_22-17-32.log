@@ -1,0 +1,119 @@
+2026-06-14 22:17:32 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-14_22-17-32.log
+2026-06-14 22:17:32 [INFO   ] Scrape targets: up to 50 companies, stop early after 10 company(ies) with email
+2026-06-14 22:17:32 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-14 22:17:33 [INFO   ] Using browser: chrome
+2026-06-14 22:17:33 [INFO   ] Industry: insurance | Query: insurance companies hiring graduates India contact us
+2026-06-14 22:17:33 [INFO   ] Google search: insurance companies hiring graduates India contact us
+2026-06-14 22:17:37 [INFO   ]   Found 8 unique result(s).
+2026-06-14 22:17:37 [INFO   ] Scraping Insurance Company Jobs in Pune for Graduate (https://www.jobhai.com/insurance-company-jobs-in-pune-for-graduates-cqcmp)
+2026-06-14 22:17:43 [INFO   ]   Email found: support@jobhai.com
+2026-06-14 22:17:43 [INFO   ]   Email found: u003esupport@jobhai.com
+2026-06-14 22:17:43 [INFO   ] Skip duplicate domain: in.indeed.com
+2026-06-14 22:17:43 [INFO   ] Skip duplicate domain: naukri.com
+2026-06-14 22:17:43 [INFO   ] Scraping Careers at TATA AIG (https://careers.tataaig.com/)
+2026-06-14 22:17:45 [INFO   ]   Closed pop-up/obstruction: button:has-text("Close")
+2026-06-14 22:17:46 [INFO   ]   Email found: padmavati.lobo@tataaig.com
+2026-06-14 22:17:46 [INFO   ]   Email found: customersupport@tataaig.com
+2026-06-14 22:17:46 [INFO   ] Scraping Career Opportunities, Jobs and Vacancies (https://www.policybazaar.com/careers/)
+2026-06-14 22:18:11 [INFO   ]   Email found: careers@policybazaar.com
+2026-06-14 22:18:11 [INFO   ]   Email found: hr@policybazaar.com
+2026-06-14 22:18:11 [INFO   ]   Email found: care@policybazaar.com
+2026-06-14 22:18:11 [INFO   ] Scraping Careers In Life Insurance (https://www.iciciprulife.com/insurance-careers.html)
+2026-06-14 22:18:19 [INFO   ]   Email found: buyonline@iciciprulife.com
+2026-06-14 22:18:19 [INFO   ] Skip duplicate domain: glassdoor.co.in
+2026-06-14 22:18:19 [INFO   ] Scraping Careers (https://www.libertyinsurance.in/careers/)
+2026-06-14 22:18:24 [INFO   ]   Email found: example@exa.com
+2026-06-14 22:18:24 [INFO   ] Industry: ca_cs_firms | Query: company secretaries firms India college placement contact
+2026-06-14 22:18:24 [INFO   ] Google search: company secretaries firms India college placement contact
+2026-06-14 22:18:28 [INFO   ]   Found 4 unique result(s).
+2026-06-14 22:18:28 [INFO   ] Scraping PlacementForMembers (https://www.icsi.edu/placementformembers/)
+2026-06-14 22:18:33 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-14 22:18:33 [INFO   ] Scraping Deepali A Sadavarte and Associates (https://csdeepali.in/)
+2026-06-14 22:18:38 [INFO   ]   Email found: sadavartedeepali@gmail.com
+2026-06-14 22:18:38 [INFO   ] Scraping Practicing Company Secretaries (https://kelkarcs.com/)
+2026-06-14 22:18:48 [INFO   ]   Email found: csk@kelkarcs.com
+2026-06-14 22:18:48 [INFO   ] Scraping SIUT Company Secretaries: CS firm in Pimpri-Chinchwad, Pune (http://www.siut.in/)
+2026-06-14 22:18:50 [INFO   ]   Email found: cs@siut.in
+2026-06-14 22:18:50 [INFO   ] Industry: alumni_fundraising | Query: alumni donation platform India contact us
+2026-06-14 22:18:50 [INFO   ] Google search: alumni donation platform India contact us
+2026-06-14 22:18:54 [INFO   ]   Found 12 unique result(s).
+2026-06-14 22:18:54 [INFO   ] Scraping Online Donation (https://www.alumnividyamandira.in/en/online_donation.php)
+2026-06-14 22:18:56 [INFO   ]   Email found: receipt@alumnividyamandira.in
+2026-06-14 22:18:56 [INFO   ]   Email found: alumnividyamandira@gmail.com
+2026-06-14 22:18:56 [INFO   ] Scraping Contact Us (https://www.impactguru.com/contact-us)
+2026-06-14 22:19:01 [INFO   ]   Email found: info@impactguru.com
+2026-06-14 22:19:01 [INFO   ]   Email found: partnerships@impactguru.com
+2026-06-14 22:19:01 [INFO   ] Scraping Contact Us (https://aseema.org/alumni/contact-us/)
+2026-06-14 22:19:03 [INFO   ]   Email found: alumni@aseema.org
+2026-06-14 22:19:03 [INFO   ]   Email found: santosh@aseema.org
+2026-06-14 22:19:03 [INFO   ]   Email found: ashish.upadhyay@aseema.org
+2026-06-14 22:19:03 [INFO   ] Scraping Contact the Best Charitable Trust India (https://www.mmpc.in/contact-us)
+2026-06-14 22:19:09 [INFO   ]   Email found: info@mmpc.in
+2026-06-14 22:19:09 [INFO   ]   Email found: donations@mmpc.in
+2026-06-14 22:19:09 [INFO   ] Scraping Contact Us (https://www.fundcorps.com/contactus)
+2026-06-14 22:19:14 [INFO   ]   Email found: info@fundcorps.com
+2026-06-14 22:19:14 [INFO   ] Scraping Top 10 Philanthropist in India 2026 (https://theglobalhues.com/top-10-philanthropist-in-india/#:~:text=Shiv%20Nadar,-If%20there's%20one&text=Founder%20of%20HCL%20and%20often,%2C%20not%20just%20degree%2Dholders.)
+2026-06-14 22:19:18 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:19 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:20 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:21 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:22 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:23 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:24 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:25 [INFO   ]   Closed pop-up/obstruction: button:has-text("OK")
+2026-06-14 22:19:25 [INFO   ]   Email found: info@theglobalhues.com
+2026-06-14 22:19:25 [INFO   ] Scraping Alumni Fundraising: Strategies, Templates & Best PracticesKindsight › resources › blog › alumni-fundraising (https://kindsight.io/resources/blog/alumni-fundraising/#:~:text=Highlight%20legacy%20giving&text=Because%20funds%20donated%20through%20legacy,work%20and%20benefitted%20your%20students.)
+2026-06-14 22:19:31 [INFO   ]   Closed pop-up/obstruction: button[aria-label="Close"]
+2026-06-14 22:19:32 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-14 22:19:32 [INFO   ] Skip duplicate domain: give.isb.edu
+2026-06-14 22:19:32 [INFO   ] Skip duplicate domain: npcindia.gov.in
+2026-06-14 22:19:32 [INFO   ] Scraping Donate (https://palliumindia.org/donate)
+2026-06-14 22:19:44 [INFO   ]   Email found: donations@palliumindia.org
+2026-06-14 22:19:44 [INFO   ]   Email found: donate@palliumindia.org
+2026-06-14 22:19:44 [INFO   ] Skip duplicate domain: joyofgiving.alumni.iitm.ac.in
+2026-06-14 22:19:44 [INFO   ] Scraping TERI Alumni Association (https://www.teriin.org/alumni)
+2026-06-14 22:19:49 [INFO   ]   Closed pop-up/obstruction: .popup-close
+2026-06-14 22:19:50 [INFO   ]   Email found: teripress@teri.res.in
+2026-06-14 22:19:50 [INFO   ]   Email found: mailbox@teri.res.in
+2026-06-14 22:19:50 [INFO   ] Email target reached (16 companies with email, goal 10) — stopping scrape.
+2026-06-14 22:19:50 [INFO   ] Scrape complete: {'queries_run': 3, 'companies_scraped': 18, 'companies_with_email': 16, 'emails_found': 27, 'email_target': 10, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all'}
+2026-06-14 22:19:50 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-14 22:19:50 [INFO   ] Sending up to 10 email(s) this run (emails_per_run).
+2026-06-14 22:19:50 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-14 22:19:54 [INFO   ] SENT (Brevo) -> info@intstuaspirations.com (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606141649.96422650104@smtp-relay.mailin.fr>
+2026-06-14 22:20:02 [INFO   ] SENT (Brevo) -> info@ggims.ae (GGIMS: Best Immigration Consultants in India) | Exploring a potential partnership opportunity with ggims.com | messageId=<202606141650.99078852487@smtp-relay.mailin.fr>
+2026-06-14 22:20:37 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-14 22:20:46 [INFO   ] SENT (Brevo) -> info@gehc.in (Trusts in India) | Exploring a potential partnership opportunity with gehc.in | messageId=<202606141650.23054454648@smtp-relay.mailin.fr>
+2026-06-14 22:21:01 [INFO   ] SENT (Brevo) -> info@scjoglekarco.com (Top Chartered Accountants Distributors, Pune) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606141651.71198261122@smtp-relay.mailin.fr>
+2026-06-14 22:21:36 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-14 22:21:42 [INFO   ] SENT (Brevo) -> info@impactguru.com (Contact Us) | Exploring a potential partnership opportunity with impactguru.com | messageId=<202606141651.89533164598@smtp-relay.mailin.fr>
+2026-06-14 22:21:55 [INFO   ] SENT (Brevo) -> info@mmpc.in (Contact the Best Charitable Trust India) | Exploring a potential partnership opportunity with mmpc.in | messageId=<202606141651.48223876106@smtp-relay.mailin.fr>
+2026-06-14 22:22:06 [INFO   ] SENT (Brevo) -> info@fundcorps.com (Contact Us) | Exploring a potential partnership opportunity with fundcorps.com | messageId=<202606141652.65796664186@smtp-relay.mailin.fr>
+2026-06-14 22:22:16 [INFO   ] SENT (Brevo) -> info@theglobalhues.com (Top 10 Philanthropist in India 2026) | Exploring a potential partnership opportunity with theglobalhues.com | messageId=<202606141652.20060174318@smtp-relay.mailin.fr>
+2026-06-14 22:22:26 [INFO   ] SENT (Brevo) -> contact@leapscholar.com (10 Best Study Abroad Consultants in India) | Exploring a potential partnership opportunity with yocket.com | messageId=<202606141652.82575719850@smtp-relay.mailin.fr>
+2026-06-14 22:22:34 [INFO   ] SENT (Brevo) -> contact@muktanganedu.org (Muktangan Education Trust) | Exploring a potential partnership opportunity with helpyourngo.com | messageId=<202606141652.61650931856@smtp-relay.mailin.fr>
+2026-06-14 22:22:39 [INFO   ] Send complete: {'sent': 10, 'failed': 0, 'skipped': 0}
+2026-06-14 22:22:39 [INFO   ] 
+2026-06-14 22:22:39 [INFO   ] ==============================================================
+2026-06-14 22:22:39 [INFO   ]   RUN SUMMARY
+2026-06-14 22:22:39 [INFO   ] ==============================================================
+2026-06-14 22:22:39 [INFO   ]   Scrape (this run)
+2026-06-14 22:22:39 [INFO   ]     Companies scraped:        18
+2026-06-14 22:22:39 [INFO   ]     Companies with email:     16
+2026-06-14 22:22:39 [INFO   ]     Emails scraped/found:     27
+2026-06-14 22:22:39 [INFO   ]     Search queries run:       3
+2026-06-14 22:22:39 [INFO   ]     Browser used:             chrome
+2026-06-14 22:22:39 [INFO   ]   Replies (this run)
+2026-06-14 22:22:39 [INFO   ]     Reply check:              skipped
+2026-06-14 22:22:39 [INFO   ]   Send (this run)
+2026-06-14 22:22:39 [INFO   ]     Emails sent:              10
+2026-06-14 22:22:39 [INFO   ]     Send failed:              0
+2026-06-14 22:22:39 [INFO   ]     Skipped (dry-run/already): 0
+2026-06-14 22:22:39 [INFO   ]   Database totals (all runs)
+2026-06-14 22:22:39 [INFO   ]     Companies in database:    269
+2026-06-14 22:22:39 [INFO   ]     Companies with email:     208
+2026-06-14 22:22:39 [INFO   ]     Emails scraped (total):   2588
+2026-06-14 22:22:39 [INFO   ]     Emails sent (total):      140
+2026-06-14 22:22:39 [INFO   ]     Replies forwarded (total): 0
+2026-06-14 22:22:39 [INFO   ] ==============================================================
+2026-06-14 22:22:39 [INFO   ] 

@@ -14,8 +14,16 @@ from email.utils import make_msgid
 from pathlib import Path
 
 from brevo_mail import load_brevo_transport, resolve_mail_config_path, send_html_via_brevo
-from immigration_db import ImmigrationDB, clean_domain
+from immigration_db import ImmigrationDB, clean_domain, is_ca_connect_contact
+from industries import (
+    email_subject_for,
+    signature_links_for,
+    subject_append_domain_for,
+    template_file_for,
+    use_nvidia_praise_for,
+)
 from nvidia_llm import generate_company_praise
+from pipeline_notify import notify_stage
 
 logger = logging.getLogger(__name__)
 
@@ -48,12 +56,27 @@ def load_sender_config() -> dict:
         "forward_to": "sandeepjain200019@gmail.com",
         "check_replies_before_send": False,
         "check_replies_lookback_days": 30,
-        "emails_per_run": 10,
+        "emails_per_run": 16,
         "max_companies_per_run": 50,
         "max_queries_per_run": 20,
         "send_method": "brevo_api",
         "template_file": "partnership.html",
         "mail_config_file": "mail_config.json",
+        "ensure_industry_per_run": "ca_cs_firms",
+        "min_ensure_industry_per_run": 0,
+        "min_ensure_industry_scrape_per_run": 2,
+        "min_ensure_ca_connect_per_run": 4,
+        "reserved_send_by_industry": {
+            "company_secretary_firms": 2,
+            "tax_consultants": 2,
+        },
+        "ca_connect_enabled": True,
+        "ca_connect_profiles_per_run": 5,
+        "ca_connect_credentials_file": "ca_connect_credentials.json",
+        "ca_connect_results_file": "data/ca_connect_results.json",
+        "pipeline_complete_voice": True,
+        "pipeline_stage_voice": True,
+        "pipeline_complete_voice_message": "Partnership pipeline run complete.",
     }
     if SENDER_CONFIG_FILE.exists():
         data = json.loads(SENDER_CONFIG_FILE.read_text(encoding="utf-8"))
@@ -61,11 +84,33 @@ def load_sender_config() -> dict:
     return defaults
 
 
-def get_template_path(sender: dict | None = None) -> Path:
+def get_template_path(sender: dict | None = None, *, template_file: str | None = None) -> Path:
     sender = sender or load_sender_config()
-    raw = (sender.get("template_file") or "partnership.html").strip()
+    raw = (template_file or sender.get("template_file") or "partnership.html").strip()
     path = Path(raw)
     return path if path.is_absolute() else _SCRIPT_DIR / path
+
+
+def resolve_send_settings(
+    industry_id: str,
+    sender_cfg: dict,
+    *,
+    use_nvidia_praise: bool | None = None,
+) -> dict:
+    """Merge sender_config.json defaults with per-industry overrides from industries.json."""
+    praise_enabled = (
+        use_nvidia_praise
+        if use_nvidia_praise is not None
+        else use_nvidia_praise_for(industry_id)
+    )
+    return {
+        "template_file": template_file_for(industry_id) or sender_cfg.get("template_file", "partnership.html"),
+        "email_subject": email_subject_for(industry_id)
+        or sender_cfg.get("email_subject", "Exploring a potential partnership opportunity"),
+        "subject_append_domain": subject_append_domain_for(industry_id),
+        "use_nvidia_praise": praise_enabled,
+        "signature_links": signature_links_for(industry_id) or sender_cfg.get("signature_links") or [],
+    }
 
 
 def get_emails_per_run() -> int:
@@ -109,6 +154,72 @@ def get_max_queries_per_run() -> int:
         return 20
 
 
+def get_ensure_industry_settings() -> tuple[str | None, int, int]:
+    """Return (industry_id, min_send_per_run, min_scrape_per_run) from sender_config.json."""
+    cfg = load_sender_config()
+    industry = (cfg.get("ensure_industry_per_run") or "").strip() or None
+    try:
+        min_send = max(0, int(cfg.get("min_ensure_industry_per_run", 0)))
+    except (TypeError, ValueError):
+        min_send = 0
+    try:
+        min_scrape = max(0, int(cfg.get("min_ensure_industry_scrape_per_run", 0)))
+    except (TypeError, ValueError):
+        min_scrape = 0
+    return industry, min_send, min_scrape
+
+
+def get_min_ensure_ca_connect_per_run() -> int:
+    """Min send slots reserved for CA Connect JSON contacts (caconnect.icai.org profiles)."""
+    try:
+        return max(0, int(load_sender_config().get("min_ensure_ca_connect_per_run", 0)))
+    except (TypeError, ValueError):
+        return 0
+
+
+def get_reserved_send_by_industry() -> dict[str, int]:
+    """Industry ID -> min send slots reserved per run (from reserved_send_by_industry)."""
+    raw = load_sender_config().get("reserved_send_by_industry") or {}
+    if not isinstance(raw, dict):
+        return {}
+    out: dict[str, int] = {}
+    for iid, count in raw.items():
+        key = (str(iid) or "").strip()
+        if not key:
+            continue
+        try:
+            n = max(0, int(count))
+        except (TypeError, ValueError):
+            continue
+        if n > 0:
+            out[key] = n
+    return out
+
+
+def sync_ca_connect_json_to_db(db: ImmigrationDB) -> dict:
+    """Import any enriched emails from ca_connect_results.json before building send queue."""
+    from ca_connect_pipeline import import_ca_listings_to_db
+
+    cfg = load_sender_config()
+    path = Path(cfg.get("ca_connect_results_file", "data/ca_connect_results.json"))
+    if not path.is_absolute():
+        path = _SCRIPT_DIR / path
+    if not path.exists():
+        return {"emails_added": 0, "skipped": True}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        logger.warning("Could not read CA Connect JSON for send sync: %s", exc)
+        return {"emails_added": 0, "error": str(exc)}
+    stats = import_ca_listings_to_db(db, data.get("results") or [])
+    if stats.get("emails_added"):
+        logger.info(
+            "Synced %s new CA Connect email(s) from JSON into database before send.",
+            stats["emails_added"],
+        )
+    return stats
+
+
 def get_send_method() -> str:
     return (load_sender_config().get("send_method") or "brevo_api").strip().lower()
 
@@ -128,12 +239,12 @@ def load_smtp_profiles(path: Path | None = None) -> tuple[list[dict], dict[str, 
     return profiles, passwords
 
 
-def _render_signature_links(sender: dict) -> str:
-    links = sender.get("signature_links") or []
-    if not links and sender.get("website"):
-        links = [{"label": sender.get("company_name", "Website"), "url": sender["website"]}]
+def _render_signature_links(sender: dict, links: list | None = None) -> str:
+    link_items = links if links is not None else (sender.get("signature_links") or [])
+    if not link_items and sender.get("website"):
+        link_items = [{"label": sender.get("company_name", "Website"), "url": sender["website"]}]
     lines: list[str] = []
-    for item in links:
+    for item in link_items:
         if not isinstance(item, dict):
             continue
         url = (item.get("url") or "").strip()
@@ -152,6 +263,7 @@ def read_template(
     sender: dict,
     *,
     template_path: Path | None = None,
+    signature_links: list | None = None,
 ) -> str | None:
     path = template_path or get_template_path(sender)
     if not path.exists():
@@ -171,8 +283,42 @@ def read_template(
         .replace("{{CompanyName}}", sender.get("company_name", ""))
         .replace("{{Phone}}", sender.get("phone", ""))
         .replace("{{Email}}", email_html)
-        .replace("{{SignatureLinks}}", _render_signature_links(sender))
+        .replace("{{SignatureLinks}}", _render_signature_links(sender, signature_links))
     )
+
+
+def build_email_message(
+    *,
+    industry_id: str,
+    company_name: str,
+    domain: str,
+    website: str,
+    sender_cfg: dict,
+    use_nvidia_praise: bool | None = None,
+) -> tuple[str | None, str]:
+    settings = resolve_send_settings(industry_id, sender_cfg, use_nvidia_praise=use_nvidia_praise)
+    praise = ""
+    if settings["use_nvidia_praise"]:
+        praise = _build_praise(
+            company_name,
+            website,
+            use_nvidia_praise=True,
+            industry_id=industry_id,
+        )
+    template_path = get_template_path(sender_cfg, template_file=settings["template_file"])
+    html = read_template(
+        company_name,
+        praise,
+        sender_cfg,
+        template_path=template_path,
+        signature_links=settings["signature_links"],
+    )
+    base_subject = settings["email_subject"]
+    if settings["subject_append_domain"]:
+        subject = format_email_subject(base_subject, domain)
+    else:
+        subject = base_subject.strip()
+    return html, subject
 
 
 def check_domain_delay(domain: str) -> None:
@@ -247,21 +393,21 @@ def send_one(
         return False
 
     check_domain_delay(domain)
-    praise = _build_praise(
-        company_name,
-        website,
-        use_nvidia_praise=use_nvidia_praise,
+    industry_id = industry_id or "overseas_education_immigration"
+    html, subject = build_email_message(
         industry_id=industry_id,
+        company_name=company_name,
+        domain=domain,
+        website=website,
+        sender_cfg=sender_cfg,
+        use_nvidia_praise=use_nvidia_praise,
     )
-    html = read_template(company_name, praise, sender_cfg)
     if not html:
         return False
 
-    base_subject = sender_cfg.get(
-        "email_subject", "Exploring a potential partnership opportunity"
+    db.ensure_campaign_subject(
+        (subject.split(" with ")[0] if " with " in subject else subject).strip()
     )
-    subject = format_email_subject(base_subject, domain)
-    db.ensure_campaign_subject(base_subject)
 
     method = get_send_method()
     if method == "brevo_api":
@@ -406,9 +552,96 @@ def run_send(
         logger.info("Send transport: Gmail SMTP")
 
     send_limit = limit if limit is not None else get_emails_per_run()
+    ensure_industry, min_ensure, _ = get_ensure_industry_settings()
+    min_ca_connect = get_min_ensure_ca_connect_per_run()
+    industry_reserves = get_reserved_send_by_industry()
+
+    sync_ca_connect_json_to_db(db)
+
     logger.info("Sending up to %s email(s) this run (emails_per_run).", send_limit)
-    queue = db.pending_send_queue(limit=send_limit)
-    stats = {"sent": 0, "failed": 0, "skipped": 0}
+    queue = db.pending_send_queue(
+        send_limit,
+        ensure_industry=ensure_industry,
+        min_from_industry=min_ensure,
+        min_from_ca_connect=min_ca_connect,
+        industry_reserves=industry_reserves,
+    )
+    stats = {
+        "sent": 0,
+        "failed": 0,
+        "skipped": 0,
+        "queue_size": len(queue),
+        "ensure_industry": ensure_industry or "",
+        "ensure_min_slots": min_ensure,
+        "ensure_reserved_in_queue": 0,
+        "ensure_ca_connect_min": min_ca_connect,
+        "ensure_ca_connect_reserved": 0,
+        "sent_ca_connect": 0,
+        "reserved_by_industry": industry_reserves,
+        "reserved_in_queue_by_industry": {},
+        "sent_by_industry": {},
+        "send_limit": send_limit,
+    }
+    if min_ca_connect > 0:
+        ca_reserved = sum(1 for item in queue if is_ca_connect_contact(item))
+        stats["ensure_ca_connect_reserved"] = ca_reserved
+        if ca_reserved >= min_ca_connect:
+            logger.info(
+                "Send queue reserves %s/%s slot(s) for CA Connect JSON contacts.",
+                ca_reserved,
+                min_ca_connect,
+            )
+        else:
+            logger.warning(
+                "Only %s/%s CA Connect JSON contact(s) in queue — "
+                "enrich more profiles or import ca_connect_results.json.",
+                ca_reserved,
+                min_ca_connect,
+            )
+    for iid, min_slots in industry_reserves.items():
+        reserved = sum(
+            1 for item in queue if (item.get("industry") or "").lower() == iid.lower()
+        )
+        stats["reserved_in_queue_by_industry"][iid] = reserved
+        if reserved >= min_slots:
+            logger.info(
+                "Send queue reserves %s/%s slot(s) for industry %s.",
+                reserved,
+                min_slots,
+                iid,
+            )
+        else:
+            logger.warning(
+                "Only %s/%s pending %s contact(s) in queue.",
+                reserved,
+                min_slots,
+                iid,
+            )
+    if ensure_industry and min_ensure > 0:
+        reserved = sum(
+            1 for item in queue if (item.get("industry") or "").lower() == ensure_industry.lower()
+        )
+        stats["ensure_reserved_in_queue"] = reserved
+        if reserved >= min_ensure:
+            logger.info(
+                "Send queue reserves %s/%s slot(s) for industry %s.",
+                reserved,
+                min_ensure,
+                ensure_industry,
+            )
+        else:
+            logger.warning(
+                "No pending %s emails in queue — sending %s other recipient(s) this run.",
+                ensure_industry,
+                len(queue),
+            )
+
+    if dry_run:
+        pass
+    elif queue:
+        notify_stage(sender_cfg, "send_start", count=len(queue))
+    else:
+        notify_stage(sender_cfg, "send_queue_empty")
 
     for idx, item in enumerate(queue):
         if method == "gmail_smtp":
@@ -420,22 +653,31 @@ def run_send(
             password = ""
 
         if dry_run:
-            praise = _build_praise(
-                item.get("company_name") or item.get("domain", ""),
-                item.get("website", ""),
+            industry_id = item.get("industry", "overseas_education_immigration")
+            settings = resolve_send_settings(
+                industry_id,
+                sender_cfg,
                 use_nvidia_praise=use_nvidia_praise,
-                industry_id=item.get("industry", "overseas_education_immigration"),
+            )
+            _, subject = build_email_message(
+                industry_id=industry_id,
+                company_name=item.get("company_name") or item.get("domain", ""),
+                domain=item.get("domain", ""),
+                website=item.get("website", ""),
+                sender_cfg=sender_cfg,
+                use_nvidia_praise=use_nvidia_praise,
             )
             transport_label = (
                 brevo_transport["sender_email"] if brevo_transport else from_email
             )
             logger.info(
-                "DRY-RUN would send to %s (%s) via %s from %s | praise: %s",
+                "DRY-RUN would send to %s (%s) via %s from %s | template: %s | subject: %s",
                 item["email"],
                 item.get("company_name"),
                 method,
                 transport_label,
-                praise[:80],
+                settings["template_file"],
+                subject,
             )
             stats["skipped"] += 1
             continue
@@ -456,10 +698,22 @@ def run_send(
         )
         if ok:
             stats["sent"] += 1
+            iid = item.get("industry") or "overseas_education_immigration"
+            stats["sent_by_industry"][iid] = stats["sent_by_industry"].get(iid, 0) + 1
+            if is_ca_connect_contact(item):
+                stats["sent_ca_connect"] += 1
         elif db.email_already_sent(item["email"]):
             stats["skipped"] += 1
         else:
             stats["failed"] += 1
+
+    if not dry_run:
+        notify_stage(
+            sender_cfg,
+            "send_complete",
+            sent=stats["sent"],
+            failed=stats["failed"],
+        )
 
     return stats
 
@@ -485,21 +739,16 @@ def run_test_send(
     domain = company.get("domain") or ""
     website = company.get("website") or ""
     industry_id = company.get("industry") or "overseas_education_immigration"
-
-    praise = _build_praise(
-        company_name,
-        website,
-        use_nvidia_praise=use_nvidia_praise,
+    html, subject = build_email_message(
         industry_id=industry_id,
+        company_name=company_name,
+        domain=domain,
+        website=website,
+        sender_cfg=sender_cfg,
+        use_nvidia_praise=use_nvidia_praise,
     )
-    html = read_template(company_name, praise, sender_cfg)
     if not html:
         return {"sent": 0, "failed": 0, "skipped": 0, "error": "template_missing"}
-
-    base_subject = sender_cfg.get(
-        "email_subject", "Exploring a potential partnership opportunity"
-    )
-    subject = format_email_subject(base_subject, domain)
 
     if dry_run:
         try:
@@ -515,7 +764,8 @@ def run_test_send(
             from_label,
             subject,
         )
-        logger.info("Praise preview: %s", praise[:120])
+        settings = resolve_send_settings(industry_id, sender_cfg, use_nvidia_praise=use_nvidia_praise)
+        logger.info("Template: %s", settings["template_file"])
         return {
             "sent": 0,
             "failed": 0,

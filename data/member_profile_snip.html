@@ -1,0 +1,486 @@
+<!DOCTYPE html><html lang="zxx"><head>    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">    <!-- Title  -->
+    <title>ICAI</title>    <!-- Google Fonts -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">    <!-- Title  -->
+
+    <title>ICAI</title>
+
+    <link rel="stylesheet" href="https://caconnect.icai.org/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://caconnect.icai.org/css/jquery-ui.css">
+    <link rel="stylesheet" href="https://caconnect.icai.org/css/lightbox.min.css">
+    <link href="https://caconnect.icai.org/datatables/datatables.min.css" rel="stylesheet">
+    <script src="https://caconnect.icai.org/scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 mob"><a class="nav-link" href="https://icai.org"><img src="https://caconnect.icai.org/img/icai.jpg"></a></div>
+        <div class="col-md-4 mob"><a class="nav-link" href="https://caconnect.icai.org"><img src="https://caconnect.icai.org/img/caconnect.jpg"></a></div>
+        <div class="col-md-4 text-center mmenu"><nav class="navbar navbar-expand-sm">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hactive">
+                            <a class="nav-link" href="https://caconnect.icai.org">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://caconnect.icai.org/search-your-ca">Search Your CA</a>
+                        </li>
+                                                <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CA Login / Register </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="register-as-member">Register as Member</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="register-as-firm">Register as Firm</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="register-as-guest">Register as Guest</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                                                <li><a class="dropdown-item" href="/login">Login</a></li>
+                                                                </ul>
+                        </li>
+                                                                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="col-md-1 text-end calogo"><img src="https://caconnect.icai.org/img/ca.jpg"></div>
+
+    </div>
+
+
+
+</div>
+
+    <style>
+        .login-tr .form-control {
+            display: block;
+            width: 100%;
+            padding: 5px 0px!important;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--bs-body-color);
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: none;
+            background-clip: padding-box;
+            border: none;
+            border-bottom: solid 1px #eee;
+            border-radius: 0;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            color: #fff;
+        }
+        .login-tr .form-control:focus {
+            color: #fff;
+            background-color: #4c6085;
+            border-bottom: solid 1px #eee;
+            outline: 0;
+            box-shadow: none!important;);
+        }
+		.loginboximg {
+    border-radius: 6px;
+    border: solid 1px #44c2ea;
+    padding: 30px;
+    height: 346px;
+    background-color: #44c2ea;
+}
+        </style>
+    <section class="loginbg">
+        <div class="container text-align-center">
+            <div class="row">
+                                                                    <div class="col-md-6">
+                    <div class="loginbox">
+                        <h2>Login</h2>
+                        <form method="POST" action="https://caconnect.icai.org/login">
+                            <input type="hidden" name="_token" value="eBnbIS1AhAQeYC4jCYojw74oG9HGdUqUm2bRCI0I"><table class="login-tr">
+    <tbody><tr>
+        <td colspan="3">E-mail:</td>
+    </tr>
+<tr>
+    <td colspan="3"><input id="email" type="email" class="form-control friminput  " name="email" value="" required="" autofocus="">
+
+            </td>
+</tr>
+    <tr>
+        <td colspan="3">Password:</td>
+    </tr>
+    <tr>
+        <td colspan="3">
+
+            <input id="password" type="password" class="form-control friminput " name="password" required="">
+
+                    </td>
+    </tr>
+
+    <tr>
+        <td colspan="">
+            <input class="form-check-input" type="checkbox" name="remember" id="remember">
+
+            <label class="form-check-label" for="remember">
+                Remember Me
+            </label></td>
+        <td></td>
+        <td>
+            <a class="btn btn-link fg-a" href="https://caconnect.icai.org/password/reset">
+                Forgot Your Password?
+            </a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <button type="submit" class="btn btn-warning">
+                Submit
+            </button>
+        </td>
+    </tr>
+	<!--
+    <tr>
+        <td colspan="3" class="text-center">
+
+                Not Register Yet?
+
+        </td>
+    </tr>
+    <tr >
+        <td class="pt-4"><a class="" href="register-as-member">Register as Member</a></td>
+        <td class="text-center pt-4"><a class="" href="register-as-firm">Register as Firm</a></td>
+        <td class="text-end pt-4"><a class="" href="register-as-guest">Register as Guest</a></td>
+    </tr>
+-->
+
+</tbody></table>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="col-md-6 svg-width">
+                    <div class="loginboximg">
+                    <img src="https://caconnect.icai.org/img/login-1.svg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- =====================================
+
+      ==== Start Footer -->
+
+ 
+<section class="footer">
+    <div class="container text-align-center">
+
+        <div class="row">
+            <div class="col-md-3"><img src="https://caconnect.icai.org/img/caconnect.jpg" style="width:100%; margin-bottom: 10px; border-radius: 8px">
+                <p>CA Connect Portal is an Indigenous system of listing CA Firms/Individual CA Practitioners on the platform of ICAL. Member or firms may register here.<br><br>
+                    <a href="https://caconnect.icai.org/login"><button type="button" class="btn btn-danger">Signup</button></a>
+                    <a href="https://caconnect.icai.org/login"><button type="button" class="btn btn-warning">Login</button></a>
+
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h2>Quick Links</h2>
+                <ul>
+				<!--
+                    <li><a href="https://caconnect.icai.org/CA-Connect-Portal.pdf" target="_blank">CA Connect Brochure</a></li>
+					-->
+                    <li><a href="https://caconnect.icai.org/search-your-ca"> Search Member</a></li>
+                    <li><a href="https://caconnect.icai.org/search-your-ca">Search Firms</a></li>
+                    <li><a href="https://caconnect.icai.org/data-security">Data Security</a></li>
+                    <li><a href="https://caconnect.icai.org/terms-conditions">Terms &amp; Conditions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2>Contact Us :</h2>
+
+                <table>
+                    <tbody><tr>
+                        <td colspan="2">  <p>Ethical Standards Board <br>The Institute of Chartered Accountants of India</p></td>
+                    </tr>
+					 <tr>
+                        <td class="p-2"><i class="fas fa-map-marker-alt"></i> </td>
+                        <td>ICAI Bhawan, Plot No. A-29, Sector-62 NOIDA – 201309</td>
+
+                    </tr>
+					 <tr>
+                        <td class="p-2"><i class="fas fa-envelope"></i> </td>
+                        <td>caconnect[at]icai[dot]in</td>
+
+                    </tr>
+                    <tr>
+                        <td class="p-2"><i class="fas fa-phone-alt"></i> </td>
+                        <td>0120-3876857 (Ethical Standards Board)</td>
+
+                    </tr>
+                   
+                   
+                </tbody></table>
+
+
+
+
+
+            </div>
+            <div class="col-md-3">
+                   <form method="POST" action="https://caconnect.icai.org/sendMail" enctype="multipart/form-data" autocomplete="off" class="form">
+
+                    <div class="messages"></div>
+
+                    <input type="hidden" name="_token" value="eBnbIS1AhAQeYC4jCYojw74oG9HGdUqUm2bRCI0I">
+
+                    <table>
+                        <tbody><tr>
+
+                            <td> <input id="form_name" type="text" class="form-control" name="name" placeholder="Name" required="required"></td>
+                        </tr>
+                        <tr>
+
+                            <td><input id="form_email" type="email" class="form-control" name="email" placeholder="Email" required="required"></td>
+                        </tr>
+                         
+                        <tr>
+
+                        <td><textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="2" required="required"></textarea></td>
+                        </tr>
+                        <tr>
+
+                            <td> <img src="https://caconnect.icai.org/captcha" class="capthaimg" style="width: 103px;
+    margin-bottom: 10px;">
+                                <img src="https://caconnect.icai.org/img/refresh.png" class="refreshcaptcha">
+                                <input type="text" name="chk" id="chk" autocomplete="off" class="form-control" placeholder="Enter Captcha"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit" class="btn  btn-danger"><span>Send Message</span></button></td>
+                        </tr>
+                    </tbody></table>
+
+
+                </form>
+
+
+            </div>
+
+
+            <div class="col-md-12 text-center">© 2024 ICAI. All Rights Reserved.</div>
+        </div>
+
+
+</div></section>
+
+<script>
+
+</script>
+
+
+
+<script src="https://caconnect.icai.org/scripts/bootstrap.bundle.min.js"></script>
+<script src="https://caconnect.icai.org/scripts/jquery-ui.js"></script>
+
+<script src="https://caconnect.icai.org/datatables/datatables.min.js"></script>
+<script type="text/javascript">
+    jQuery(".refreshcaptcha").click(function(){
+        jQuery('.capthaimg').attr('src','https://caconnect.icai.org/captcha?'+Date.now());
+    });
+</script>
+<script>
+
+    $(document).ready(function(){
+
+        var aElems = $(".toplink");
+
+        for (var i = 0, len = aElems.length; i < len; i++) {
+            aElems[i].onclick = function() {
+                var check = confirm("Are you sure you want to navigate away from this page?");
+                if (check == true) {
+                    return true;
+                }
+                else {
+                    return false;
+                }
+            };
+        }
+        //
+
+
+        $(".num").keypress(function (e) {
+            //if the letter is not digit then display error and don't type anything
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                //display error message
+                //$("#errmsg").html("Digits Only").show().fadeOut("slow");
+                return false;
+            }
+        });
+
+
+
+        //end
+
+
+
+        $(".dts").dataTable( {
+
+            "lengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+
+            "pageLength": 100
+
+        });
+
+//for date picker//
+
+        $(".datex").datepicker({
+
+            changeMonth: true,
+
+            changeYear: true,
+
+            dateFormat: "dd-mm-yy",
+
+            yearRange: "c-81:c+1"
+
+        });
+
+//ajax
+
+
+
+//end ajax
+
+        //end document
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+<script>
+    jQuery(document).ready(function() {
+        jQuery("#state").change(function(){
+            var id =   jQuery('#state').val();
+           // console.log(id);
+
+            jQuery.post(
+                {
+                    data: {id: id},
+                    // data: {mrn: mrn},
+                    url: '/citySearch',
+                    success: function (data) {
+
+                        if (data.success != "") {
+                          //  console.log(data);
+                            $("#city").empty();
+                            $("#city").append($("<option/>").val('').text('Member / Firm City'));
+                            $.each(data.success, function (data, value){
+
+                                $("#city").append($("<option/>").val(value.city_name ).text(value.city_name));
+                            });
+
+                        } else {
+                            $("#city").empty();
+                            $("#city").append($("<option/>").val('').text('Select'));
+                        }
+                    }
+
+                }, 'json');
+        });
+
+
+
+        jQuery("input[type='checkbox']").change(function() {
+            myvar=jQuery(this).val();
+            if ($(this).is(':checked')) {
+
+                if (myvar=='42')
+                {
+                    jQuery('#Specify').removeClass('dispa');
+                }
+
+
+                if (myvar=='57')
+                {
+                    jQuery('#Specify1').removeClass('dispa');
+                }
+
+            } else {
+                jQuery('#Specify1').addClass('dispa');
+                jQuery('#Specify').addClass('dispa');
+
+            }
+
+
+
+
+
+
+        });
+        jQuery("#searchId").on("change", function () {
+
+            if (jQuery(this).val() == "1") {
+                jQuery('#partnerSearch').show();
+                jQuery('#nameSearch').hide();
+                jQuery('#pinSearch').hide();
+                jQuery('#aToz').hide();
+
+            }
+            else if (jQuery(this).val() == "2")
+            {
+                jQuery('#partnerSearch').hide();
+                jQuery('#nameSearch').show();
+                jQuery('#pinSearch').hide();
+                jQuery('#aToz').hide();
+            }
+            else if (jQuery(this).val() == "3")
+            {
+                jQuery('#partnerSearch').hide();
+                jQuery('#nameSearch').hide();
+                jQuery('#pinSearch').show();
+                jQuery('#aToz').hide();
+            }
+            else if (jQuery(this).val() == "4")
+            {
+                jQuery('#partnerSearch').hide();
+                jQuery('#nameSearch').hide();
+                jQuery('#pinSearch').hide();
+                jQuery('#aToz').show();
+            }
+
+
+            //
+
+        });
+
+        //end document ready
+    });
+
+
+</script>
+
+
+
+
+</body></html>

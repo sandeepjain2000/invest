@@ -1,0 +1,779 @@
+<!DOCTYPE html><html lang="zxx"><head>    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">    <!-- Title  -->
+    <title>ICAI</title>    <!-- Google Fonts -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="">    <!-- Title  -->
+
+    <title>ICAI</title>
+
+    <link rel="stylesheet" href="https://caconnect.icai.org/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://caconnect.icai.org/css/jquery-ui.css">
+    <link rel="stylesheet" href="https://caconnect.icai.org/css/lightbox.min.css">
+    <link href="https://caconnect.icai.org/datatables/datatables.min.css" rel="stylesheet">
+    <script src="https://caconnect.icai.org/scripts/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 mob"><a class="nav-link" href="https://icai.org"><img src="https://caconnect.icai.org/img/icai.jpg"></a></div>
+        <div class="col-md-4 mob"><a class="nav-link" href="https://caconnect.icai.org"><img src="https://caconnect.icai.org/img/caconnect.jpg"></a></div>
+        <div class="col-md-4 text-center mmenu"><nav class="navbar navbar-expand-sm">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item hactive">
+                            <a class="nav-link" href="https://caconnect.icai.org">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://caconnect.icai.org/search-your-ca">Search Your CA</a>
+                        </li>
+                                                <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CA Login / Register </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="register-as-member">Register as Member</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="register-as-firm">Register as Firm</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="register-as-guest">Register as Guest</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                                                <li><a class="dropdown-item" href="/login">Login</a></li>
+                                                                </ul>
+                        </li>
+                                                                    </ul>
+                </div>
+
+            </nav>
+
+        </div>
+        <div class="col-md-1 text-end calogo"><img src="https://caconnect.icai.org/img/ca.jpg"></div>
+
+    </div>
+
+
+
+</div>
+
+<div class="clearfix"></div>
+
+
+<section class="banner">
+    <!-- Carousel -->
+    <div class="container">
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+               <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button> -->
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <h1 class="h1bold">Find The <span>CA</span> for Your Desired Services</h1>
+                            <p>We understand that finding a Chartered Accountant (CA) is crucial to achieving your financial goals. That’s why ICAI has made it easier than ever to connect with the qualified CAs in practice available on the portal. The platform offers you access to a network of Chartered Accountants across the country, vetted for their </p>
+
+                           <a href="https://caconnect.icai.org/explore-more"><button type="button" class="btn btn-warning btn-sm mt-2">Explore More</button></a>
+
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Find The CA for Your Desired Services</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <p>We understand that finding a Chartered Accountant (CA) is crucial to achieving your financial goals.
+                                                    That’s why ICAI has made it easier than ever to connect with the qualified CAs in practice available on the portal.
+                                                </p>
+                                                <p>
+                                                    The platform offers you access to a network of Chartered Accountants across the country, vetted for their qualifications and experience.
+                                                </p>
+                                                <p>
+                                                    Whether you’re an individual looking for personal tax advice, a business seeking audit services, or an entrepreneur in need of financial planning, you can find the right CA to meet your unique needs on our portal. All the Chartered Accountants listed on our portal are thoroughly verified. You can be confident that you’re working with a CA register with ICAI, and with the right experience.</p>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <h1 class="h1bold">Empower Your <span>Finances</span> with CA Assistance</h1>
+                            <p>In today’s fast-paced world, managing your finances efficiently and accurately is more important than ever. Whether you're a business owner, salaried individual, or start up, managing efficient financial matters is crucial for success </p>
+
+                            <a href="https://caconnect.icai.org/empower-finance"><button type="button" class="btn btn-warning btn-sm mt-2">Explore More</button></a>
+
+                        </div>
+                        <div class="col-md-6 ">
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal2">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Empower Your Finances with CA Assistance</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <p>In today’s fast-paced world, managing your finances efficiently and accurately is more important than ever.
+                                                    Whether you're a business owner, salaried individual, or start up, managing efficient financial matters is crucial
+                                                    for success.
+                                                    CA Connect Portal helps you to achieve the goal by finding the right CA for the desired services.
+                                                </p>
+                                                <p>
+                                                    The CA Connect Portal is more than just a tool; it's a gateway to a network of authentic
+                                                    Chartered Accountants who are dedicated to helping you achieve your financial goals.
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <h1 class="h1bold">All Listed <span>Professionals</span> verified by ICAI</h1>
+                            <p>Searching a CA on different portals may not bring the desired result as the authenticity of the portal may be completely or partially incorrect on the other hand, profile of Chartered Accountants  on CA Connect Portal</p>
+
+                            <a href="https://caconnect.icai.org/ca-verified"> <button type="button" class="btn btn-warning btn-sm mt-2">Explore More</button></a>
+
+                        </div>
+                        <div class="col-md-6 ">
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal3">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">All Listed Professional verified by ICAI</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body modal-fullscreen">
+                                            <div class="row">
+                                                <p>Searching a CA on different portals may not bring the desired result as the authenticity of the portal
+                                                    may be completely or partially incorrect on the other hand, profile of Chartered Accountants  on CA
+                                                    Connect Portal is synchronized with the ICAI database ensuring that the data is correct and may be
+                                                    used by the client without doubt.
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+<!--
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 mt-5">
+                            <h1 class="h1bold">Vacancy for position of  <span>Financial Management Officer</span> with Asian Development Bank.</h1>
+                           
+
+                            <a href="https://www.adb.org/careers/240793" target="_blank"> <button type="button" class="btn btn-warning btn-sm mt-2" >Explore More</button></a>
+
+                        </div>
+                        <div class="col-md-6 ">
+                         
+                         </div>
+
+
+
+                    </div>
+                </div>
+-->
+
+
+
+			 <div class="row">
+                <div class="col-md-6 ">
+                </div>
+                <div class="col-md-6 mobView">
+               <div class="box mt-4">
+
+    <h1>Find CA or CA Firms</h1>
+    <form method="get" action="https://caconnect.icai.org/search" class="frbody" enctype="multipart/form-data" autocomplete="off">
+        <input type="hidden" name="_token" value="PsERq5qSUQ0hyyla6yg2FbDA9If50ROcODW4f3vd">
+        <input type="hidden" name="type">
+        <table>
+            <tbody><tr>
+                <td class="">Preferred  Services</td>
+            </tr>
+
+            <tr>
+                <td><select class="form-select" name="services" id="services" required="">
+                        <option value="">Professional Services</option>
+                                                    <option value="Arbitration">Arbitration</option>
+                                                    <option value="Audit">Audit</option>
+                                                    <option value="Book keeping and Accounting">Book keeping and Accounting</option>
+                                                    <option value="BCP">BCP</option>
+                                                    <option value="Book-keeping">Book-keeping</option>
+                                                    <option value="Business Advisory">Business Advisory</option>
+                                                    <option value="Certification">Certification</option>
+                                                    <option value="Charities, Trust and Not For Profit">Charities, Trust and Not For Profit</option>
+                                                    <option value="Cloud Accounting">Cloud Accounting</option>
+                                                    <option value="Corporate Laws and LLP">Corporate Laws and LLP</option>
+                                                    <option value="Direct Taxes">Direct Taxes</option>
+                                                    <option value="FEMA">FEMA</option>
+                                                    <option value="Financial Advisory">Financial Advisory</option>
+                                                    <option value="Forensic Audit">Forensic Audit</option>
+                                                    <option value="Foreign Trade">Foreign Trade</option>
+                                                    <option value="Forensic Accounting &amp; Investigation">Forensic Accounting &amp; Investigation</option>
+                                                    <option value="Goods and Services Tax">Goods and Services Tax</option>
+                                                    <option value="ICFR audit">ICFR audit</option>
+                                                    <option value="Indirect Tax">Indirect Tax</option>
+                                                    <option value="Indirect Tax matter">Indirect Tax matter</option>
+                                                    <option value="Information Technology Services">Information Technology Services</option>
+                                                    <option value="Insolvency">Insolvency</option>
+                                                    <option value="Internal and Management Audit">Internal and Management Audit</option>
+                                                    <option value="Internal Controls">Internal Controls</option>
+                                                    <option value="International Tax">International Tax</option>
+                                                    <option value="Investment Advisory">Investment Advisory</option>
+                                                    <option value="MSME Advisory">MSME Advisory</option>
+                                                    <option value="Payroll Services">Payroll Services</option>
+                                                    <option value="RERA">RERA</option>
+                                                    <option value="Risk and Controls Management">Risk and Controls Management</option>
+                                                    <option value="Startup advisory">Startup advisory</option>
+                                                    <option value="Valuation">Valuation</option>
+                                                    <option value="Others">Others</option>
+                                                    <option value="XBRL Services">XBRL Services</option>
+                                            </select>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="pt-3">State/UT</td>
+            </tr>
+
+            <tr>
+                <td><select class="form-select" name="state" id="state" required="">
+                        <option value="">Select State</option>
+                                                                                                                                                                  <option value="Andaman &amp; Nicobar Islands">Andaman &amp; Nicobar Islands</option>
+                                                                                                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                                                                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                                                                            <option value="Assam">Assam</option>
+                                                                                                            <option value="Bihar">Bihar</option>
+                                                                                                            <option value="Chandigarh">Chandigarh</option>
+                                                                                                            <option value="Chhattisgarh">Chhattisgarh</option>
+                                                                                                            <option value="Dadra &amp; Nagar Haveli">Dadra &amp; Nagar Haveli</option>
+                                                                                                            <option value="Dadra Nagar Haveli">Dadra Nagar Haveli</option>
+                                                                                                            <option value="Daman &amp; Diu">Daman &amp; Diu</option>
+                                                                                                            <option value="Delhi">Delhi</option>
+                                                                                                            <option value="Goa">Goa</option>
+                                                                                                            <option value="Gujarat">Gujarat</option>
+                                                                                                            <option value="Haryana">Haryana</option>
+                                                                                                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                                                                            <option value="Jammu &amp; Kashmir">Jammu &amp; Kashmir</option>
+                                                                                                            <option value="Jharkhand">Jharkhand</option>
+                                                                                                            <option value="Karnataka">Karnataka</option>
+                                                                                                            <option value="Kerala">Kerala</option>
+                                                                                                            <option value="Ladakh">Ladakh</option>
+                                                                                                            <option value="Lakshadweep">Lakshadweep</option>
+                                                                                                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                                                                            <option value="Maharashtra">Maharashtra</option>
+                                                                                                            <option value="Manipur">Manipur</option>
+                                                                                                            <option value="Meghalaya">Meghalaya</option>
+                                                                                                            <option value="Mizoram">Mizoram</option>
+                                                                                                            <option value="Nagaland">Nagaland</option>
+                                                                                                            <option value="Odisha ">Odisha </option>
+                                                                                                            <option value="Pondicherry">Pondicherry</option>
+                                                                                                            <option value="Punjab">Punjab</option>
+                                                                                                            <option value="Rajasthan">Rajasthan</option>
+                                                                                                            <option value="Sikkim">Sikkim</option>
+                                                                                                            <option value="Tamil Nadu">Tamil Nadu</option>
+                                                                                                            <option value="Telangana">Telangana</option>
+                                                                                                            <option value="Tripura">Tripura</option>
+                                                                                                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                                                                            <option value="Uttarakhand">Uttarakhand</option>
+                                                                                                            <option value="West Bengal">West Bengal</option>
+                                                                        </select></td>
+            </tr>
+
+
+            <tr>
+                <td class="pt-3">Member / Firm City</td>
+            </tr>
+
+            <tr>
+                <td><select class="form-select" name="city" id="city" required="">
+                        <option value="">Select City</option>
+                    </select></td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="pt-4"><button type="submit" class="btn btn-warning btn-sm"> <i class="fas fa-search"></i> Search Your CA</button> </td>
+            </tr>
+        </tbody></table>
+    </form>
+
+
+</div>
+
+<div class="clearfix" style="margin-bottom: 5px;"></div>
+<i class="fas fa-chart-line"></i> <span style="color:#fff">Trending Search: </span>
+<a href="https://caconnect.icai.org/trending-search/Audit"><button type="button" class="btn btn-dark btn-sm">Audit</button></a>
+<!--<button type="button" class="btn btn-dark btn-sm">Audit</button>-->
+
+<a href="https://caconnect.icai.org/trending-search/Book keeping and Accounting"><button type="button" class="btn btn-dark btn-sm">Book keeping and Accounting</button></a>
+<!--<button type="button" class="btn btn-dark btn-sm">Book keeping and Accounting</button>-->
+
+<a href="https://caconnect.icai.org/trending-search/Direct Taxes"><button type="button" class="btn btn-dark btn-sm">Direct Taxes</button></a>
+<!--<button type="button" class="btn btn-dark btn-sm">Direct Taxes</button>-->
+
+<a href="https://caconnect.icai.org/trending-search/Goods and Services Tax"><button type="button" class="btn btn-dark btn-sm">Goods and Services Tax</button></a>
+<!--<button type="button" class="btn btn-dark btn-sm">Goods and Services Tax</button>-->
+
+           </div>
+                </div>
+
+
+            </div>
+
+            <!-- Left and right controls/icons -->
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+<div class="clearfix"></div>
+<section class="pt-5 member justify-content-center">
+    <div class="container text-center">
+        <h1>Leadership</h1>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="nmbox">
+                    <div class="nmbox-img">
+                        <img src="https://caconnect.icai.org/img/ca-prasanna-kumar-d.jpg">
+                    </div>
+
+                    <div class="nmbox-text">
+					 <p><b>CA. Prasanna Kumar D</b><br>
+                        <i>President, ICAI </i></p>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+		 
+            <div class="col-lg-3 col-sm-6"> <div class="nmbox">
+                    <div class="nmbox-img">
+                    <img src="https://caconnect.icai.org/img/VP-Sir-photo.jpg">
+                    </div>
+                    <div class="nmbox-text">
+                    <p><b>CA. Mangesh Kinare</b><br>
+                        <i>Vice-President, ICAI</i></p>
+                    </div>
+                </div>
+            </div>
+		 
+            <div class="col-lg-3 col-sm-6"> <div class="nmbox">
+                    <div class="nmbox-img">
+                    <img src="https://caconnect.icai.org/img/priti-paras.jpg" style="width:300px; height:244px;">
+                        </div>
+                    <div class="nmbox-text">
+                    <p><b>CA. Priti Paras Savla</b><br>
+                        <i>Chairperson, Ethical Standards Board</i></p></div></div>
+            </div>
+            <div class="col-lg-3 col-sm-6"> <div class="nmbox">
+                    <div class="nmbox-img">
+           <img src="https://caconnect.icai.org/img/Dayaniwas.png" style="width:300px; height:244px;">
+                        </div>
+                    <div class="nmbox-text">
+                    <p><b>CA. Dayaniwas Sharma</b><br>
+                        <i>Vice-Chairman, Ethical Standards Board</i></p></div></div>
+            </div>
+     
+
+	   </div>
+    </div>
+</section>
+<section class="why">
+    <div class="container text-align-center">
+        <h1>Why Use CA Connect Portal</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Bridging Communities, Empowering Growth</h2>
+
+
+
+                        <p><img src="https://caconnect.icai.org/img/icon1.jpg" style="float: left; padding: 10px 10px 50px 0px"> Listing of CA firm/ Individual CA practitioner on aggregators is not permissible as per ICAI Code of Ethics since matter-based aggregators do not confirm to ICAI ethical norms. Further, other platforms/ portals may not confirm the authenticity of CA’s registration and experience, which will not yield good results for the clients.</p>
+
+<div class="clearfix"></div>
+
+                        <p> <img src="https://caconnect.icai.org/img/icon2.jpg" style="float: left; padding: 10px 10px 50px 0px"> CA Connect Portal is a system of listing CA Firms / Individual CA Practitioners on the platform of ICAI. The objective of this Portal is to provide an effective platform for listing. ICAI acts as a facilitator and enables search to the users based on the information submitted by the registered users.</p>
+
+                </div>
+
+
+            <div class="col-md-6">
+                <iframe class="vid" src="https://www.youtube.com/embed/-R5o07N09-o?si=wvXG2tBgWraz0fp1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="pro">
+<div class="container text-center">
+    <h1>Professional Services</h1>
+
+    <div class="container">
+
+        <div id="servicesDemo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#servicesDemo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#servicesDemo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#servicesDemo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/iv.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Investment Advisory" style="text-decoration: none; color: #fff;">Investment Advisory </a> </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Foreign-Trade.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Foreign Trade" style="text-decoration: none; color: #fff;">Foreign Trade</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/ba.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Business Advisory" style="text-decoration: none; color: #fff;">Business Advisory</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Bank-Audit.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Bank Audit" style="text-decoration: none; color: #fff;">Bank Audit</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Certification.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Certifications" style="text-decoration: none; color: #fff;">Certifications</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Cloud-Accounting.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Cloud Accounting" style="text-decoration: none; color: #fff;">Cloud Accounting</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Startup-Advisory.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Startup Advisory" style="text-decoration: none; color: #fff;">Startup Advisory</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Direct-Tax.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Direct Tax" style="text-decoration: none; color: #fff;">Direct Tax</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Payroll-Service.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Payroll Services" style="text-decoration: none; color: #fff;">Payroll Services</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/FEMA.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/FEMA" style="text-decoration: none; color: #fff;">FEMA</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Arbitration.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Arbitration" style="text-decoration: none; color: #fff;">Arbitration</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Audit.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Audit" style="text-decoration: none; color: #fff;">Audit</a></div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/bookkeeping.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Book Keeping" style="text-decoration: none; color: #fff;">Book Keeping</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Charities.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Charities, Trust and Not For Profit" style="text-decoration: none; color: #fff;">Charities, Trust and Not For Profit</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Corporate-Laws.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Corporate Laws and LLP" style="text-decoration: none; color: #fff;">Corporate Laws and LLP</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/ForensicAudit.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Forensic Audit" style="text-decoration: none; color: #fff;">Forensic Audit</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Forensic-Accounting.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Forensic Accounting &amp; Investigation" style="text-decoration: none; color: #fff;">Forensic Accounting &amp; Investigation</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/inbond-outbound-services.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Inbound / Outbound Services" style="text-decoration: none; color: #fff;">Inbound / Outbound Services</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Indirect-Tax-Matter.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Indirect Tax Matter" style="text-decoration: none; color: #fff;">Indirect Tax Matter</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Insolvency.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Insolvency" style="text-decoration: none; color: #fff;">Insolvency</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Internal-and-Management-Audit.png); ">
+                                    <div class="overlaybx-m">
+									<a href="https://caconnect.icai.org/trending-search/Internal and Management Audit" style="text-decoration: none; color: #fff;">Internal and Management Audit</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/International-Tax.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/International Tax" style="text-decoration: none; color: #fff;">International Tax</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Investment-Advisory.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Investment Advisory" style="text-decoration: none; color: #fff;">Investment Advisory</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Information-Technology-Service.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Information Technology Services" style="text-decoration: none; color: #fff;">Information Technology Services</a></div>
+                                </div>
+                            </div>
+							
+							
+					
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/MSME-Advisory.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/MSME Advisory" style="text-decoration: none; color: #fff;">MSME Advisory</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Rera.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/RERA" style="text-decoration: none; color: #fff;">RERA</a></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="background-image:url(https://caconnect.icai.org/img/Valuation.png); ">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Valuation" style="text-decoration: none; color: #fff;">Valuation</a></div>
+                                </div>
+                            </div>
+
+		 <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Risk and Controls Management" style="text-decoration: none; color: #fff;">Risk and Controls Management</a></div>
+                                </div>
+                            </div>
+							
+							
+							 <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/ICFR audit" style="text-decoration: none; color: #fff;">ICFR audit</a></div>
+                                </div>
+                            </div>
+							
+							 <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/Internal Controls" style="text-decoration: none; color: #fff;">Internal Controls</a></div>
+                                </div>
+                            </div>
+							
+							 <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/BCP" style="text-decoration: none; color: #fff;">BCP</a> </div>
+                                </div>
+                            </div>
+							
+ <div class="col-lg-2 col-md-3 col-sm-6 col-xsm-12 pad-5">
+                                <div class="bxtimgm" style="">
+                                    <div class="overlaybx-m"><a href="https://caconnect.icai.org/trending-search/XBRL Services" style="text-decoration: none; color: #fff;">XBRL Services</a> </div>
+                                </div>
+                            </div>
+							
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="photo">
+    <div class="container text-align-center">
+        <h1>Photo Gallery</h1>
+		 
+        <div class="row">
+		
+	
+
+      
+            <div class="col-lg-4 mb-3 mb-lg-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://caconnect.icai.org/gallery/image1.jpg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+
+                        <p class="hover-1-description font-weight-light mb-0">
+						
+						<a href="photo-gallery">  2024-25</a></p>
+                    </div>
+                </div>
+            </div>
+			
+			
+			      <div class="col-lg-4 mb-3 mb-lg-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://caconnect.icai.org/photo-gallery-26/img15.jpg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+
+                        <p class="hover-1-description font-weight-light mb-0">
+						
+						<a href="photo-gallery-25-26">  2025-26</a></p>
+                    </div>
+                </div>
+            </div>
+			
+				<div class="col-lg-4 mb-3 mb-lg-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://caconnect.icai.org/gallery/home-release.jpeg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+                        <p class="hover-1-description font-weight-light mb-0">
+					
+						<a href="photo-gallery-26-27">  2026-27</a></p>
+                    </div>
+                </div>
+            </div>
+		 
+            <!-- DEMO 1 Item  
+            <div class="col-lg-4 mb-3 mb-lg-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://caconnect.icai.org/gallery/image2.jpg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+
+                        <p class="hover-1-description font-weight-light mb-0"><a href="photo-gallery"> View All</a></p>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-lg-4 mb-3 mb-lg-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://caconnect.icai.org/gallery/image3.jpg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+
+                        <p class="hover-1-description font-weight-light mb-0"><a href="photo-gallery"> View All</a></p>
+                    </div>
+                </div>
+            </div>
+		 
+          
+
+        
+            <div class="col-lg-4 mb-3 mb-lg-4">
+                <div class="hover hover-1 text-white rounded"><img src="https://caconnect.icai.org/gallery/image4.jpg" alt="">
+                    <div class="hover-overlay"></div>
+                    <div class="hover-1-content px-5 py-4">
+
+                        <p class="hover-1-description font-weight-light mb-0">
