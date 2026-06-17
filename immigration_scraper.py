@@ -12,8 +12,19 @@ from playwright.async_api import Page, async_playwright
 
 from browser_utils import dismiss_page_obstructions, launch_context, scrape_complete_beep
 from immigration_db import ImmigrationDB, clean_domain
-from immigration_sender import get_ensure_industry_settings, load_sender_config
+from immigration_sender import (
+    get_ensure_industry_settings,
+    get_reserved_send_by_industry,
+    load_sender_config,
+)
 from pipeline_notify import notify_stage
+from pipeline_progress import (
+    done as progress_done,
+    google_block_warning,
+    scrape_company,
+    scrape_plan,
+    scrape_status,
+)
 from industries import (
     default_region,
     google_scrape_industry_ids,
@@ -80,6 +91,16 @@ CONTACT_SELECTORS = [
     'nav a[href*="contact" i]',
 ]
 
+GOOGLE_BLOCK_PHRASES = (
+    "unusual traffic",
+    "not a robot",
+    "captcha",
+    "our systems have detected",
+    "before you continue to google",
+    "verify you are human",
+    "automated queries",
+)
+
 
 def normalize_emails(text: str) -> list[str]:
     found: list[str] = []
@@ -96,6 +117,36 @@ def normalize_emails(text: str) -> list[str]:
         seen.add(email)
         found.append(email)
     return found
+
+
+async def inspect_google_search_page(page: Page, query: str) -> str | None:
+    """Return a short reason if Google is showing consent, CAPTCHA, or a block page."""
+    try:
+        current_url = (page.url or "").lower()
+        if "/sorry/" in current_url or "google.com/sorry" in current_url:
+            return "Google /sorry/ block page (rate limit or bot detection)"
+        if "consent.google" in current_url:
+            return "Google consent page — accept cookies/terms to continue"
+
+        title = (await page.title() or "").lower()
+        if "sorry" in title:
+            return f"Google block page (title: {title[:80]})"
+
+        body = await page.evaluate("() => document.body ? document.body.innerText : ''")
+        text = (body or "").lower()[:8000]
+        for phrase in GOOGLE_BLOCK_PHRASES:
+            if phrase in text:
+                return f"Page text suggests Google challenge ({phrase!r})"
+
+        if await page.locator("#captcha, iframe[src*='recaptcha'], form#captcha-form").count():
+            return "CAPTCHA form detected on Google page"
+
+        has_search = await page.locator("#search").count()
+        if not has_search and "google." in current_url:
+            return "Google loaded but #search results area is missing (likely consent or block)"
+    except Exception as exc:
+        logger.debug("Google page inspect failed: %s", exc)
+    return None
 
 
 def clean_company_title(title: str, domain: str) -> str:
@@ -118,12 +169,20 @@ def should_skip_result_url(url: str) -> bool:
     return any(domain == skip or domain.endswith("." + skip) for skip in SKIP_DOMAINS)
 
 
-async def google_search_urls(page: Page, query: str, limit: int = SEARCH_RESULT_LIMIT) -> list[dict]:
+async def google_search_urls(
+    page: Page,
+    query: str,
+    limit: int = SEARCH_RESULT_LIMIT,
+    *,
+    headless: bool = False,
+) -> tuple[list[dict], str | None]:
     url = f"https://www.google.com/search?q={quote_plus(query)}&num={limit}"
     logger.info("Google search: %s", query)
     await page.goto(url, wait_until="domcontentloaded", timeout=GOTO_TIMEOUT_MS)
     await dismiss_page_obstructions(page)
     await page.wait_for_timeout(2000)
+
+    block_reason = await inspect_google_search_page(page, query)
 
     results: list[dict] = []
     anchors = page.locator("#search a[href^='http']")
@@ -149,7 +208,17 @@ async def google_search_urls(page: Page, query: str, limit: int = SEARCH_RESULT_
             }
         )
     logger.info("  Found %s unique result(s).", len(results))
-    return results
+
+    if block_reason:
+        google_block_warning(reason=block_reason, query=query, headless=headless)
+    elif len(results) == 0:
+        google_block_warning(
+            reason="0 search results — often consent, CAPTCHA, or rate limiting",
+            query=query,
+            headless=headless,
+        )
+
+    return results, block_reason
 
 
 async def click_contact_if_needed(page: Page) -> str | None:
@@ -244,6 +313,69 @@ async def scrape_company_emails(page: Page, website: str) -> tuple[list[str], st
         return [], website, f"scrape_error: {exc}"
 
 
+def _queries_for_industry(
+    industry: str,
+    *,
+    region: str,
+    use_nvidia: bool,
+) -> list[str]:
+    queries = (
+        generate_search_queries(
+            count=queries_per_industry(),
+            region=region,
+            industry_id=industry,
+        )
+        if use_nvidia
+        else seed_queries_for(industry)[: queries_per_industry()]
+    )
+    if not queries:
+        queries = seed_queries_for(industry)
+    return queries
+
+
+def _seed_queries_for_industries_without_pending(
+    db: ImmigrationDB,
+    *,
+    region: str,
+    use_nvidia: bool,
+    industry_ids: Iterable[str],
+) -> int:
+    added = 0
+    google_ids = set(google_scrape_industry_ids())
+    for iid in industry_ids:
+        iid = (iid or "").strip()
+        if not iid or iid not in google_ids:
+            continue
+        if db.count_pending_queries_for_industry(iid) > 0:
+            continue
+        queries = _queries_for_industry(iid, region=region, use_nvidia=use_nvidia)
+        added += db.add_search_queries(
+            queries,
+            industry=iid,
+            source="nvidia" if use_nvidia else "seed",
+        )
+    return added
+
+
+def _prefer_reserved_scrape_industry(
+    db: ImmigrationDB,
+    industry_reserves: dict[str, int],
+) -> str | None:
+    """Pick a Google-scrape industry below its reserved send quota (fewest unsent first)."""
+    best: str | None = None
+    best_unsent: int | None = None
+    for iid, min_slots in industry_reserves.items():
+        if min_slots <= 0 or scrape_source_for(iid) != "google":
+            continue
+        unsent = db.count_unsent_recipients_for_industry(iid)
+        if unsent >= min_slots:
+            continue
+        if best_unsent is None or unsent < best_unsent:
+            best = iid
+            best_unsent = unsent
+    return best
+
+
 def _auto_seed_queries(
     db: ImmigrationDB,
     *,
@@ -256,17 +388,7 @@ def _auto_seed_queries(
     if industry:
         if industry not in google_ids:
             return 0
-        queries = (
-            generate_search_queries(
-                count=queries_per_industry(),
-                region=region,
-                industry_id=industry,
-            )
-            if use_nvidia
-            else seed_queries_for(industry)[: queries_per_industry()]
-        )
-        if not queries:
-            queries = seed_queries_for(industry)
+        queries = _queries_for_industry(industry, region=region, use_nvidia=use_nvidia)
         added += db.add_search_queries(queries, industry=industry, source="nvidia" if use_nvidia else "seed")
         return added
 
@@ -292,14 +414,23 @@ def _scrape_targets_met(
     email_target: int,
     ensure_industry: str | None,
     min_ensure_scrape: int,
+    db: ImmigrationDB | None = None,
+    industry_reserves: dict[str, int] | None = None,
 ) -> bool:
     if stats["companies_with_email"] < email_target:
         return False
     if ensure_industry and min_ensure_scrape > 0:
-        key = ensure_industry.strip().lower()
         have = int(stats.get("ensure_industry_with_email", 0))
         if have < min_ensure_scrape:
             return False
+    if db and industry_reserves:
+        for iid, min_slots in industry_reserves.items():
+            if min_slots <= 0 or scrape_source_for(iid) != "google":
+                continue
+            if db.count_unsent_recipients_for_industry(iid) >= min_slots:
+                continue
+            if db.count_pending_queries_for_industry(iid) > 0:
+                return False
     return True
 
 
@@ -310,6 +441,7 @@ async def run_scrape(
     max_queries: int = 20,
     email_target: int = 10,
     browser: str = "auto",
+    headless: bool = False,
     region: str | None = None,
     industry: str | None = None,
     seed_keywords: bool = True,
@@ -321,6 +453,7 @@ async def run_scrape(
     cfg = load_sender_config()
     notify_stage(cfg, "scrape_start", dry_run=dry_run)
     ensure_industry, _, min_ensure_scrape = get_ensure_industry_settings()
+    industry_reserves = get_reserved_send_by_industry()
     ensure_via_ca_connect = bool(
         ensure_industry and scrape_source_for(ensure_industry) == "ca_connect"
     )
@@ -345,6 +478,9 @@ async def run_scrape(
         "ensure_industry_scrape_target": min_ensure_scrape if apply_ensure_scrape else 0,
         "ensure_industry_with_email": 0,
         "ca_connect": {},
+        "google_block_warnings": 0,
+        "google_zero_result_queries": 0,
+        "google_headless": headless,
     }
 
     if run_ca_connect_for_pipeline_async and (not industry or ensure_via_ca_connect):
@@ -364,6 +500,10 @@ async def run_scrape(
                 "ca_connect_complete",
                 dry_run=dry_run,
                 imported=imported,
+            )
+            progress_done(
+                f"CA Connect — {imported} email(s) from "
+                f"{int(ca_stats.get('ca_profiles_enriched') or 0)} profile(s)"
             )
 
     if not google_only:
@@ -385,6 +525,24 @@ async def run_scrape(
 
     notify_stage(cfg, "google_scrape_start", dry_run=dry_run)
 
+    if not industry and seed_keywords and industry_reserves:
+        reserved_google = [
+            iid
+            for iid in industry_reserves
+            if scrape_source_for(iid) == "google" and industry_reserves[iid] > 0
+        ]
+        seeded_reserved = _seed_queries_for_industries_without_pending(
+            db,
+            region=region,
+            use_nvidia=use_nvidia_seed,
+            industry_ids=reserved_google,
+        )
+        if seeded_reserved:
+            logger.info(
+                "Seeded %s search query(ies) for reserved Google industries with no pending queries.",
+                seeded_reserved,
+            )
+
     if apply_ensure_scrape:
         logger.info(
             "Scrape targets: up to %s companies, stop after %s with email "
@@ -402,6 +560,13 @@ async def run_scrape(
             email_target,
         )
 
+    scrape_plan(
+        max_companies=max_companies,
+        email_target=email_target,
+        max_queries=max_queries,
+        industry=industry or "",
+    )
+
     if not industry:
         logger.info(
             "Industry selection: random order on each query pick (distributes across verticals)"
@@ -415,6 +580,8 @@ async def run_scrape(
         and stats["ensure_industry_with_email"] < min_ensure_scrape
     ):
         prefer_google = ensure_industry
+    elif not industry:
+        prefer_google = _prefer_reserved_scrape_industry(db, industry_reserves)
 
     pending = db.next_pending_query(
         industry if google_only else None,
@@ -436,7 +603,7 @@ async def run_scrape(
         )
 
     async with async_playwright() as playwright:
-        context, browser_used = await launch_context(playwright, browser)
+        context, browser_used = await launch_context(playwright, browser, headless=headless)
         stats["browser_used"] = browser_used or stats["browser_used"]
         logger.info("Using browser: %s", stats["browser_used"])
         page = context.pages[0] if context.pages else await context.new_page()
@@ -449,6 +616,8 @@ async def run_scrape(
                 email_target=email_target,
                 ensure_industry=ensure_industry if apply_ensure_scrape else None,
                 min_ensure_scrape=min_ensure_scrape,
+                db=db if not industry else None,
+                industry_reserves=industry_reserves if not industry else None,
             ):
                 if apply_ensure_scrape:
                     logger.info(
@@ -489,6 +658,8 @@ async def run_scrape(
                 and stats["ensure_industry_with_email"] < min_ensure_scrape
             ):
                 prefer_query = ensure_industry
+            elif not industry:
+                prefer_query = _prefer_reserved_scrape_industry(db, industry_reserves)
 
             row = db.next_pending_query(
                 industry,
@@ -517,7 +688,15 @@ async def run_scrape(
             query_text = row["query_text"]
             query_industry = row["industry"] if "industry" in row.keys() else "overseas_education_immigration"
             logger.info("Industry: %s | Query: %s", query_industry, query_text)
-            results = await google_search_urls(page, query_text)
+            results, block_reason = await google_search_urls(
+                page,
+                query_text,
+                headless=headless,
+            )
+            if block_reason:
+                stats["google_block_warnings"] += 1
+            if not results:
+                stats["google_zero_result_queries"] += 1
             stats["queries_run"] += 1
             queries_done += 1
 
@@ -557,9 +736,26 @@ async def run_scrape(
                 else:
                     db.mark_company_no_email(company_id)
                     logger.info("  No email found (%s).", notes or "moved on")
+                scrape_company(
+                    companies=stats["companies_scraped"],
+                    company_max=max_companies,
+                    with_email=stats["companies_with_email"],
+                    email_target=email_target,
+                    name=result["title"],
+                    found_email=bool(emails),
+                )
                 scrape_complete_beep()
 
             db.mark_query_done(query_id, status="done")
+            scrape_status(
+                query_n=queries_done,
+                query_max=max_queries,
+                companies=stats["companies_scraped"],
+                company_max=max_companies,
+                with_email=stats["companies_with_email"],
+                email_target=email_target,
+                industry=query_industry,
+            )
 
         await context.close()
 

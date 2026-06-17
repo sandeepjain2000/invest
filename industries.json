@@ -15,7 +15,21 @@
         "recruitment entrepreneur India contact email",
         "apprenticeship provider graduate hiring India"
       ],
-      "praise_hint": "campus recruitment, talent acquisition, and graduate hiring"
+      "praise_hint": "campus recruitment, talent acquisition, and graduate hiring",
+      "template_file": "partnership_recruitment.html",
+      "email_subject": "Direct access to a large placement-ready graduate pool for your firm",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "edtech",
@@ -30,7 +44,21 @@
         "online learning platform employability India",
         "skill development EdTech company India contact"
       ],
-      "praise_hint": "upskilling, career readiness, and student learning outcomes"
+      "praise_hint": "upskilling, career readiness, and student learning outcomes",
+      "template_file": "partnership_edtech.html",
+      "email_subject": "Direct access to a large student audience for your EdTech programs",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "overseas_education_immigration",
@@ -45,7 +73,21 @@
         "student visa immigration agency India",
         "global mobility immigration consultants India"
       ],
-      "praise_hint": "study abroad guidance, visa support, and overseas education pathways"
+      "praise_hint": "study abroad guidance, visa support, and overseas education pathways",
+      "template_file": "partnership_immigration.html",
+      "email_subject": "Privileged student lifecycle access for overseas education consultants",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "education_finance",
@@ -60,7 +102,21 @@
         "Avanse education loan partner contact",
         "education finance company student acquisition India"
       ],
-      "praise_hint": "education financing and enabling access to learning opportunities"
+      "praise_hint": "education financing and enabling access to learning opportunities",
+      "template_file": "partnership_education_finance.html",
+      "email_subject": "Direct access to students evaluating education finance options",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "hrtech",
@@ -75,7 +131,21 @@
         "campus hiring technology platform India",
         "talent assessment HRTech company India"
       ],
-      "praise_hint": "hiring technology, assessments, and recruitment innovation"
+      "praise_hint": "hiring technology, assessments, and recruitment innovation",
+      "template_file": "partnership_hrtech.html",
+      "email_subject": "Campus placement network access for your HRTech solution",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "corporate_csr",
@@ -90,7 +160,21 @@
         "corporate employability program India contact",
         "CSR education partnership India company"
       ],
-      "praise_hint": "employability initiatives and education-focused CSR programs"
+      "praise_hint": "employability initiatives and education-focused CSR programs",
+      "template_file": "partnership_csr.html",
+      "email_subject": "Direct student and institute reach for employability CSR programs",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "lawyers",
@@ -105,7 +189,21 @@
         "law firm employability training India email",
         "boutique law firm India contact email"
       ],
-      "praise_hint": "legal advisory services and professional support for businesses and institutions"
+      "praise_hint": "legal advisory services and professional support for businesses and institutions",
+      "template_file": "partnership_lawyers.html",
+      "email_subject": "Direct access to law graduates and campus hiring pipeline",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "training_finishing_schools",
@@ -120,7 +218,21 @@
         "campus placement training provider India",
         "career training institute graduate India contact"
       ],
-      "praise_hint": "placement training, employability skills, and career readiness"
+      "praise_hint": "placement training, employability skills, and career readiness",
+      "template_file": "partnership_training.html",
+      "email_subject": "Direct access to students needing placement and skills training",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "bfsi_nbfc_banks",
@@ -135,7 +247,21 @@
         "banking operations trainee program India contact",
         "microfinance NBFC campus placement India email"
       ],
-      "praise_hint": "graduate trainee programs, banking careers, and campus talent pipelines"
+      "praise_hint": "graduate trainee programs, banking careers, and campus talent pipelines",
+      "template_file": "partnership_bfsi.html",
+      "email_subject": "Direct access to campus-ready graduates for banking and NBFC hiring",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "insurance",
@@ -150,7 +276,21 @@
         "health insurance company fresher hiring India",
         "insurance company campus placement partnership India contact"
       ],
-      "praise_hint": "insurance careers, graduate development, and distribution talent programs"
+      "praise_hint": "insurance careers, graduate development, and distribution talent programs",
+      "template_file": "partnership_insurance.html",
+      "email_subject": "Direct access to graduates for campus insurance hiring",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "coaching_test_prep",
@@ -165,7 +305,21 @@
         "spoken English coaching institute India email",
         "career coaching institute graduate placement India contact"
       ],
-      "praise_hint": "exam preparation, career coaching, and student success outcomes"
+      "praise_hint": "exam preparation, career coaching, and student success outcomes",
+      "template_file": "partnership_coaching.html",
+      "email_subject": "Direct access to students actively preparing for exams and careers",
+      "subject_append_domain": true,
+      "use_nvidia_praise": true,
+      "signature_links": [
+        {
+          "label": "PlacementHub Platform",
+          "url": "https://campus-placement-omega.vercel.app/"
+        },
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        }
+      ]
     },
     {
       "id": "ca_cs_firms",
@@ -245,6 +399,40 @@
       ],
       "praise_hint": "tax advisory, GST compliance, and regulatory filing support for businesses",
       "template_file": "funding_intro_tax.html",
+      "email_subject": "Seeking Introductions to Potential Seed Investors for PlacementHub",
+      "subject_append_domain": false,
+      "use_nvidia_praise": false,
+      "signature_links": [
+        {
+          "label": "Detailed Profile",
+          "url": "https://jainsandeep729.wixsite.com/website"
+        },
+        {
+          "label": "Detailed Note on Funding Requirement",
+          "url": "https://drive.google.com/file/d/1A5lZsoBM1CJ6Ni_apI1K67iJf973iNEK/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "wealth_managers",
+      "name": "Wealth Managers & Investment Advisors",
+      "rank": 15,
+      "active": true,
+      "scrape_source": "google",
+      "seed_queries": [
+        "wealth management firm India contact email",
+        "private wealth manager India HNI contact email",
+        "portfolio management services India contact email",
+        "registered investment advisor India contact email",
+        "mutual fund distributor India partnership contact email",
+        "family office wealth advisory India contact",
+        "financial planner HNI clients India email contact",
+        "investment advisory firm startup clients India contact",
+        "RIA wealth management India contact email",
+        "private banker wealth advisory India contact email"
+      ],
+      "praise_hint": "wealth advisory, portfolio management, and investor relationships for HNIs and entrepreneurs",
+      "template_file": "funding_intro_wealth.html",
       "email_subject": "Seeking Introductions to Potential Seed Investors for PlacementHub",
       "subject_append_domain": false,
       "use_nvidia_praise": false,

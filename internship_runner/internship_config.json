@@ -1,0 +1,42 @@
+{
+  "voice": {
+    "enabled": true,
+    "engine": "edge_tts",
+    "voice_id": "en-US-JennyNeural",
+    "rate": "+0%",
+    "volume": "+0%",
+    "play_audio": true,
+    "always_write_transcript": true,
+    "transcript_dir": "voice/transcripts",
+    "audio_dir": "voice/audio",
+    "manifest_file": "voice/voice_manifest.jsonl"
+  },
+  "stage_messages": {
+    "create_start": "Employer role. Creating a new internship posting.",
+    "create_complete": "Internship created successfully. Title: {title}. Company: {company}. Status is draft, awaiting approval.",
+    "approve_start": "Approver role. Reviewing internship posting number {id}.",
+    "approve_complete": "Internship approved and published. Students can now apply for {title} at {company}.",
+    "apply_start": "Student role. Submitting an application for internship {id}.",
+    "apply_complete": "Application submitted successfully for {title}. Applicant: {applicant_name}.",
+    "select_start": "Selection role. Reviewing applications for internship {id}.",
+    "select_complete": "Selection complete. {applicant_name} has been selected for {title} at {company}.",
+    "pipeline_complete": "Internship workflow step complete."
+  },
+  "default_internship": {
+    "title": "Software Engineering Intern — Remote",
+    "company": "Acme Tech Staffing",
+    "description": "12-week remote internship. Python, APIs, and automation. Mentor-led weekly reviews.",
+    "location": "Remote",
+    "duration_weeks": 12
+  },
+  "default_applicant": {
+    "name": "Priya Sharma",
+    "email": "priya.sharma@example.com",
+    "note": "B.Tech CSE, final year. Built automation projects in Python."
+  },
+  "auto_run": {
+    "pause_after_stage_sec": 3,
+    "pause_between_roles_sec": 6,
+    "blocking_audio": true
+  }
+}

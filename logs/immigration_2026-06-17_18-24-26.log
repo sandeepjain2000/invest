@@ -1,0 +1,313 @@
+2026-06-17 18:24:26 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-17_18-24-26.log
+2026-06-17 18:24:32 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-17 18:25:38 [INFO   ]   CA import: CA. UDAY SHETTY <caudayshetty@gmail.com>
+2026-06-17 18:25:38 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 1 new email(s).
+2026-06-17 18:25:47 [INFO   ] Scrape targets: up to 50 companies, stop after 16 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-17 18:25:47 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-17 18:25:47 [INFO   ] Using browser: chrome
+2026-06-17 18:25:47 [INFO   ] Industry: education_finance | Query: graduate financing companies India website
+2026-06-17 18:25:47 [INFO   ] Google search: graduate financing companies India website
+2026-06-17 18:25:52 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:25:52 [INFO   ] Scraping Master's Program Loans for Indian Students (https://www.mpowerfinancing.com/en-in/financial-empowerment/masters-program-loans-indian-students)
+2026-06-17 18:25:58 [INFO   ]   Email found: mpower.me@mpowerfinancing.com
+2026-06-17 18:25:58 [INFO   ]   Email found: 3d009d4173a242fb931cb479451c0a9c@o216795.ingest.sentry.io
+2026-06-17 18:25:58 [INFO   ] Scraping GradFunds (https://gradfunds.in/)
+2026-06-17 18:26:06 [INFO   ]   Email found: info@gradfunds.in
+2026-06-17 18:26:06 [INFO   ] Skip duplicate domain: eduvanz.com
+2026-06-17 18:26:06 [INFO   ] Scraping Education Loan Provider For Overseas Studies In Hyderabad. (https://www.gradsgateway.com/)
+2026-06-17 18:26:16 [INFO   ]   Email found: contact@gradsgateway.com
+2026-06-17 18:26:16 [INFO   ] Scraping GradRight (https://gradright.com/)
+2026-06-17 18:26:43 [INFO   ]   Email found: grad@gradright.com
+2026-06-17 18:26:43 [INFO   ] Skip duplicate domain: prodigyfinance.com
+2026-06-17 18:26:43 [INFO   ] Skip duplicate domain: nsfdc.nic.in
+2026-06-17 18:26:43 [INFO   ] Scraping Top 100 Student Loan Companies in India (2026) (https://ensun.io/search/student-loan/india)
+2026-06-17 18:26:51 [INFO   ]   Email found: helpdesk@tvscredit.com
+2026-06-17 18:26:51 [INFO   ]   Email found: gro@tvscredit.com
+2026-06-17 18:26:51 [INFO   ]   Email found: headcustomerservice@smfgindiacredit.com
+2026-06-17 18:26:51 [INFO   ]   Email found: investor.service@bajajfinserv.in
+2026-06-17 18:26:51 [INFO   ]   Email found: investors@bajajfinserv.in
+2026-06-17 18:26:51 [INFO   ]   Email found: loanstoretn@gmail.com
+2026-06-17 18:26:51 [INFO   ] Scraping Credenc: Get Best Education Loan Online (https://www.credenc.com/)
+2026-06-17 18:26:55 [INFO   ]   Email found: care@credenc.com
+2026-06-17 18:26:55 [INFO   ]   Email found: grievance@capitalindia.com
+2026-06-17 18:26:55 [INFO   ] Industry: education_finance | Query: employability skill loan companies India contact details
+2026-06-17 18:26:55 [INFO   ] Google search: employability skill loan companies India contact details
+2026-06-17 18:26:59 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: auxilo.com
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: nsdcindia.org
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: eduvanz.com
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: skillindiadigital.gov.in
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: lskfin.com
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: bankofbaroda.bank.in
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: nasscomfoundation.org
+2026-06-17 18:26:59 [INFO   ] Skip duplicate domain: iob.bank.in
+2026-06-17 18:26:59 [INFO   ] Scraping Rural Self Employment Training Institute (Rseti) (https://bankofmaharashtra.bank.in/rseti)
+2026-06-17 18:27:10 [INFO   ]   Email found: cmcustomerservice@mahabank.co.in
+2026-06-17 18:27:10 [INFO   ] Industry: edtech | Query: education technology startups India contact information
+2026-06-17 18:27:10 [INFO   ] Google search: education technology startups India contact information
+2026-06-17 18:27:14 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:27:14 [INFO   ] Skip duplicate domain: leadsquared.com
+2026-06-17 18:27:14 [INFO   ] Skip duplicate domain: edutechindia.com
+2026-06-17 18:27:14 [INFO   ] Skip duplicate domain: scribd.com
+2026-06-17 18:27:14 [INFO   ] Scraping Top 100 EdTech startups in India 2026 (https://www.edtechstartups.org/country/India/)
+2026-06-17 18:27:27 [INFO   ]   Email found: support@edtechstartups.org
+2026-06-17 18:27:28 [INFO   ] Scraping PW School of Startups Gautam Buddha ... (https://www.startinup.up.gov.in/crm/Welcome/incubator_user_details/ODY=)
+2026-06-17 18:27:29 [INFO   ]   Email found: namaste@schoolofstartups.live
+2026-06-17 18:27:29 [INFO   ] Skip duplicate domain: teamleaseedtech.com
+2026-06-17 18:27:29 [INFO   ] Skip duplicate domain: qualcampus.com
+2026-06-17 18:27:29 [INFO   ] Scraping EdTech Hub (https://edtechhub.org/)
+2026-06-17 18:27:39 [INFO   ]   Email found: hello@edtechhub.org
+2026-06-17 18:27:39 [INFO   ] Scraping Magic EdTech: Digital Learning Solutions for Education (https://www.magicedtech.com/)
+2026-06-17 18:28:31 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:28:32 [INFO   ] Industry: bfsi_nbfc_banks | Query: Indian public sector banks fresher hiring contact email
+2026-06-17 18:28:32 [INFO   ] Google search: Indian public sector banks fresher hiring contact email
+2026-06-17 18:28:35 [INFO   ]   Found 12 unique result(s).
+2026-06-17 18:28:35 [INFO   ] Skip duplicate domain: indianbank.bank.in
+2026-06-17 18:28:35 [INFO   ] Scraping Bank Of India Customer Care: 24x7 Toll FREE Number & Email (https://www.creditmantri.com/bank-of-india-customer-care/#:~:text=For%20general%20query%20or%20enquiry,dot%5Dco%5Bdot%5Din)
+2026-06-17 18:28:40 [INFO   ]   Email found: grievance@creditmantri.com
+2026-06-17 18:28:40 [INFO   ] Skip duplicate domain: naukri.com
+2026-06-17 18:28:40 [INFO   ] Scraping 011-28044348, Email: hrt@pnb.co.inPNB eTendering System › ntExportToExcell (https://etender.pnb.bank.in/ntExportToExcell?param_briefcaseToken=18307#:~:text=Or%20Page%206%20HUMAN%20RESOURCE,Page%206%20of%2013%20f.)
+2026-06-17 18:28:40 [INFO   ]   No email found (navigation_failed: Page.goto: Download is starting
+Call log:
+  - navigating to "https://etender.pnb.bank.in/ntExportToExcell?param_briefcaseToken=18307#:~:text=Or%20Page%206%20HUMAN%20RESOURCE,Page%206%20of%2013%20f.", waiting until "domcontentloaded"
+).
+2026-06-17 18:28:40 [INFO   ] Skip duplicate domain: bankofmaharashtra.bank.in
+2026-06-17 18:28:40 [INFO   ] Scraping Careers / Current Openings (https://www.idbi.bank.in/idbi-bank-careers-current-openings.aspx)
+2026-06-17 18:28:47 [INFO   ]   Email found: webmaster@idbi.co.in
+2026-06-17 18:28:47 [INFO   ] Skip duplicate domain: pnb.bank.in
+2026-06-17 18:28:47 [INFO   ] Scraping Lateral Hire (https://sbi.bank.in/web/careers/lateral-hire)
+2026-06-17 18:28:53 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:28:53 [INFO   ] Scraping Job Opportunities (https://uco.bank.in/job-opportunities)
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.bpr@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: gmit.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hodit.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.digital@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hopscredit.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hose.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: horrb.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: gm.rrb@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hoinsp.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ucoboardsec@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hocompliance.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hosecurity.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ciso@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hocc.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hocad.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hoacs.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: gm.finance@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hocradmn.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.fi@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.hrm@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.training@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hopad.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hoidiv.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: gm.tims@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: holaw.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.mktg@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: digital@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.midcorporate@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.msme.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: msme.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.osd@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: horec.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: ho.resources@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: gmretail.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: horetail.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: horm.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hopdev.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hogad.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: bo.treasury@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: cvo@uco.bank.in
+2026-06-17 18:29:45 [INFO   ]   Email found: hovig.calcutta@uco.bank.in
+2026-06-17 18:29:45 [INFO   ] Scraping Careers (https://bandhan.bank.in/careers)
+2026-06-17 18:30:21 [INFO   ]   Email found: customercare@bandhanbank.com
+2026-06-17 18:30:21 [INFO   ]   Email found: recruitment@bandhanbank.com
+2026-06-17 18:30:21 [INFO   ]   Email found: corpcomm@bandhanbank.com
+2026-06-17 18:30:21 [INFO   ] Skip duplicate domain: unionbankofindia.bank.in
+2026-06-17 18:30:21 [INFO   ] Scraping YES BANK Career Opportunities (https://www.yes.bank.in/work-with-us/career-opportunities)
+2026-06-17 18:30:30 [INFO   ]   Email found: yestouch@yesbank.in
+2026-06-17 18:30:30 [INFO   ]   Email found: yestouchcc@yesbank.in
+2026-06-17 18:30:30 [INFO   ]   Email found: yestouch@yes.bank.in
+2026-06-17 18:30:30 [INFO   ]   Email found: yestouchcc@yes.bank.in
+2026-06-17 18:30:30 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-17 18:33:02 [INFO   ] Seeded 65 more search query(ies) to continue scraping.
+2026-06-17 18:33:02 [INFO   ] Industry: tax_consultants | Query: tax consultant for students in India contact
+2026-06-17 18:33:02 [INFO   ] Google search: tax consultant for students in India contact
+2026-06-17 18:33:05 [INFO   ]   Found 7 unique result(s).
+2026-06-17 18:33:05 [INFO   ] Scraping Akhil Amit And Associates (https://akhilamitassociates.com/)
+2026-06-17 18:33:11 [INFO   ]   Email found: office@akhilamitassociates.com
+2026-06-17 18:33:11 [INFO   ] Scraping Usha Taxation (https://www.ushataxation.com/)
+2026-06-17 18:33:14 [INFO   ]   Email found: info@kashyapbio.com
+2026-06-17 18:33:14 [INFO   ]   Email found: ushataxation@gmail.com
+2026-06-17 18:33:14 [INFO   ] Scraping Chamber of Tax Consultants (https://www.ctconline.org/)
+2026-06-17 18:33:18 [INFO   ]   Email found: member@ctconline.org
+2026-06-17 18:33:18 [INFO   ] Scraping Taxlogist (http://www.taxlogist.in/)
+2026-06-17 18:33:21 [INFO   ]   Email found: taxlogist@gmail.com
+2026-06-17 18:33:21 [INFO   ]   Email found: u003etaxlogist@gmail.com
+2026-06-17 18:33:22 [INFO   ] Scraping Institute of Chartered Tax Practitioners India (https://www.ictpi.in/)
+2026-06-17 18:33:27 [INFO   ]   Email found: info@ictpi.in
+2026-06-17 18:33:27 [INFO   ]   Email found: f36cc48fb72b4d298c835f2793cf3b84@sentry-next.wixpress.com
+2026-06-17 18:33:27 [INFO   ] Scraping ITR Filing FY25: Should Students and Unemployed Individuals File ITR?Angel One › news › taxation › itr-filing-fy... (https://www.angelone.in/news/taxation/itr-filing-fy25-should-students-and-unemployed-individuals-file-itr#:~:text=Not%20necessarily.,little%20or%20no%20taxable%20income.)
+2026-06-17 18:33:31 [INFO   ]   Email found: compliance@angelone.in
+2026-06-17 18:33:31 [INFO   ]   Email found: npsgrievances@angelone.in
+2026-06-17 18:33:31 [INFO   ]   Email found: cybersecurityissues@angelone.in
+2026-06-17 18:33:31 [INFO   ]   Email found: legal@angelone.in
+2026-06-17 18:33:31 [INFO   ] Skip duplicate domain: ndsavla.com
+2026-06-17 18:33:31 [INFO   ] Industry: edtech | Query: online learning platforms for graduates India
+2026-06-17 18:33:31 [INFO   ] Google search: online learning platforms for graduates India
+2026-06-17 18:33:35 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:33:35 [INFO   ] Skip duplicate domain: ilearn.gov.in
+2026-06-17 18:33:35 [INFO   ] Scraping About Swayam (https://swayam.gov.in/about)
+2026-06-17 18:33:38 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:33:39 [INFO   ] Scraping Udemy: Online Courses for Skills, Careers & AI (https://www.udemy.com/?srsltid=AfmBOoq-29TIHKxe79b-tuqFe9IVQvOfLeAxeKI0Jb-JGcgdlB91Oyg8)
+2026-06-17 18:34:10 [INFO   ]   Email found: u003esuccess@udemy.com
+2026-06-17 18:34:10 [INFO   ]   Email found: policy@udemy.com
+2026-06-17 18:34:10 [INFO   ]   Email found: u003epolicy@udemy.com
+2026-06-17 18:34:10 [INFO   ] Skip duplicate domain: upgrad.com
+2026-06-17 18:34:10 [INFO   ] Scraping The 9 Best Online Learning Platforms in 2026 (https://www.ispring.com/knowledge-hub/best-online-learning-platforms)
+2026-06-17 18:34:19 [INFO   ]   Email found: support@ispring.com
+2026-06-17 18:34:19 [INFO   ] Skip duplicate domain: skillindiadigital.gov.in
+2026-06-17 18:34:19 [INFO   ] Scraping PM e-Vidya (https://pmevidya.education.gov.in/swayam-portal.html)
+2026-06-17 18:34:21 [INFO   ]   No email found (no_at_symbol_on_page).
+2026-06-17 18:34:21 [INFO   ] Scraping Unacademy (https://unacademy.com/)
+2026-06-17 18:34:25 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:34:25 [INFO   ] Scraping 13 Best Online Learning Platforms in India (https://trainings.internshala.com/blog/best-online-learning-platforms-in-india/)
+2026-06-17 18:34:30 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:34:30 [INFO   ] Industry: bfsi_nbfc_banks | Query: NBFC campus recruitment India contact us
+2026-06-17 18:34:30 [INFO   ] Google search: NBFC campus recruitment India contact us
+2026-06-17 18:34:34 [INFO   ]   Found 8 unique result(s).
+2026-06-17 18:34:34 [INFO   ] Scraping Contact Us (https://nbfcadvisory.in/contact-us/)
+2026-06-17 18:34:37 [INFO   ]   Email found: connect@affluence.net.in
+2026-06-17 18:34:37 [INFO   ]   Email found: contact@affluence.net.in
+2026-06-17 18:34:37 [INFO   ]   Email found: info@something.com
+2026-06-17 18:34:37 [INFO   ] Skip duplicate domain: careerchoicesolution.com
+2026-06-17 18:34:37 [INFO   ] Scraping Explore Career Opportunities: Join Our Team (https://www.ltfinance.com/careers)
+2026-06-17 18:34:41 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:34:41 [INFO   ] Scraping Explore Career Opportunities at AU Small Finance Bank (https://www.au.bank.in/careers)
+2026-06-17 18:34:45 [INFO   ]   Email found: career@aubank.in
+2026-06-17 18:34:45 [INFO   ] Skip duplicate domain: sidbi.in
+2026-06-17 18:34:45 [INFO   ] Scraping BFSI SSC (https://www.bfsissc.com/)
+2026-06-17 18:37:10 [INFO   ]   Email found: info@bfsissc.com
+2026-06-17 18:37:10 [INFO   ] Skip duplicate domain: indianbank.bank.in
+2026-06-17 18:37:10 [INFO   ] Scraping Careers (https://www.bajajfinserv.in/careers-finance)
+2026-06-17 18:37:13 [INFO   ] Industry: recruitment_staffing | Query: India recruitment agency for students contact
+2026-06-17 18:37:13 [INFO   ] Google search: India recruitment agency for students contact
+2026-06-17 18:37:17 [INFO   ]   Found 8 unique result(s).
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: randstad.in
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: rtns.in
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: michaelpage.co.in
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: group.teamlease.com
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: ambeinter.com
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: vazeplacement.co.in
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: cphrservices.in
+2026-06-17 18:37:17 [INFO   ] Skip duplicate domain: talentcorner.in
+2026-06-17 18:37:17 [INFO   ] Industry: hrtech | Query: student assessment platform India email contact
+2026-06-17 18:37:17 [INFO   ] Google search: student assessment platform India email contact
+2026-06-17 18:37:20 [INFO   ]   Found 8 unique result(s).
+2026-06-17 18:37:20 [INFO   ] Scraping Assessment Agencies (https://www.psscindia.org/AssessmentAgencies.aspx)
+2026-06-17 18:37:23 [INFO   ]   Email found: ksantosh@navriti.com
+2026-06-17 18:37:23 [INFO   ]   Email found: accounts@cocubes.com
+2026-06-17 18:37:23 [INFO   ]   Email found: prashant@parasmaniskills.com
+2026-06-17 18:37:23 [INFO   ]   Email found: raneesh@einsanderste.com
+2026-06-17 18:37:23 [INFO   ]   Email found: sales@iqag.org
+2026-06-17 18:37:23 [INFO   ]   Email found: info@khwaspuria.com
+2026-06-17 18:37:23 [INFO   ]   Email found: khwaspuriapl@gmail.com
+2026-06-17 18:37:23 [INFO   ]   Email found: info@indiaskills.edu.in
+2026-06-17 18:37:23 [INFO   ]   Email found: arvind@spiwd.in
+2026-06-17 18:37:23 [INFO   ]   Email found: kuldeep@spiwd.in
+2026-06-17 18:37:23 [INFO   ]   Email found: ramakant.choudhary72@gmail.com
+2026-06-17 18:37:23 [INFO   ]   Email found: pramod@iassess.in
+2026-06-17 18:37:23 [INFO   ]   Email found: husain.tezabwala@skillmantra.org
+2026-06-17 18:37:23 [INFO   ]   Email found: ceo@amanssociety.com
+2026-06-17 18:37:23 [INFO   ]   Email found: subodh@vistaskills.edu.in
+2026-06-17 18:37:23 [INFO   ]   Email found: vishal@a2pl.in
+2026-06-17 18:37:23 [INFO   ]   Email found: agamskills@gmail.com
+2026-06-17 18:37:23 [INFO   ]   Email found: operations@vedokt.com
+2026-06-17 18:37:23 [INFO   ]   Email found: ceo@tagindia.co.in
+2026-06-17 18:37:23 [INFO   ]   Email found: director@ette.co.in
+2026-06-17 18:37:23 [INFO   ]   Email found: vartika.gupta@wheebox.com
+2026-06-17 18:37:23 [INFO   ]   Email found: educeconsultancy@gmail.com
+2026-06-17 18:37:23 [INFO   ]   Email found: pcc.asmita@gmail.com
+2026-06-17 18:37:23 [INFO   ] Scraping Contact us (https://www.in.ets.org/contact-us.html)
+2026-06-17 18:37:35 [INFO   ]   Email found: toeflsupport4india@ets.org
+2026-06-17 18:37:35 [INFO   ]   Email found: gresupport4india@ets.org
+2026-06-17 18:37:35 [INFO   ]   Email found: toeic@etsindia.org
+2026-06-17 18:37:35 [INFO   ]   Email found: wbx_info@ets.org
+2026-06-17 18:37:35 [INFO   ]   Email found: register4toefl@etsindia.org
+2026-06-17 18:37:35 [INFO   ]   Email found: register4gre@etsindia.org
+2026-06-17 18:37:35 [INFO   ] Scraping Assessment Platform (https://in.pearson.com/assessment-platform.html)
+2026-06-17 18:37:59 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:37:59 [INFO   ] Scraping Privacy Policy (https://www.onsindia.net/privacy-policy)
+2026-06-17 18:38:01 [INFO   ]   Email found: infra@onsindia.net
+2026-06-17 18:38:01 [INFO   ] Scraping Homepage (https://aishe.gov.in/)
+2026-06-17 18:38:06 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:38:06 [INFO   ] Skip duplicate domain: pmapstest.com
+2026-06-17 18:38:06 [INFO   ] Scraping Interactive Assessments Development Services (https://www.suntecindia.com/interactive-assessments-development.html)
+2026-06-17 18:38:11 [INFO   ]   Email found: info@suntecindia.com
+2026-06-17 18:38:11 [INFO   ] Scraping Contact Us (https://merindyneskills.com/contact-us/)
+2026-06-17 18:38:14 [INFO   ]   Email found: ganesandirectormaheswarang@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: info@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: maheswarang@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: asl@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: hempal@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: bineta@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: vishal.m@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ]   Email found: gaurav@merindyneskills.com
+2026-06-17 18:38:14 [INFO   ] Industry: edtech | Query: college employability solutions India email
+2026-06-17 18:38:14 [INFO   ] Google search: college employability solutions India email
+2026-06-17 18:38:18 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:38:18 [INFO   ] Skip duplicate domain: employabilitysolutions.com
+2026-06-17 18:38:18 [INFO   ] Scraping College Solution India Private Limited (https://www.jobaaj.com/company/college-solution-india-private-limited-careers)
+2026-06-17 18:38:20 [INFO   ]   Email found: email@site.com
+2026-06-17 18:38:20 [INFO   ]   Email found: contact@jobaaj.com
+2026-06-17 18:38:20 [INFO   ] Scraping Career Services & Employability Support (https://www.lsbfindia.org/discover/career-services/)
+2026-06-17 18:38:26 [INFO   ]   Email found: info@lsbfindia.org
+2026-06-17 18:38:26 [INFO   ] Skip duplicate domain: employabilitybridge.co.in
+2026-06-17 18:38:26 [INFO   ] Skip duplicate domain: col.org
+2026-06-17 18:38:26 [INFO   ] Scraping ZSkillup (https://zskillup.com/)
+2026-06-17 18:38:29 [INFO   ]   Email found: lokesh@zskillup.com
+2026-06-17 18:38:29 [INFO   ] Scraping Employability Skills in Indian Context (https://academicsandbeyond.in/employability-skills-in-indian-context-are-our-students-ready-yet/)
+2026-06-17 18:38:33 [INFO   ]   Email found: admin@academicsandbeyond.in
+2026-06-17 18:38:33 [INFO   ]   Email found: services@academicsandbeyond.in
+2026-06-17 18:38:33 [INFO   ] Scraping GTT Foundation (https://www.gttfoundation.org/)
+2026-06-17 18:38:40 [INFO   ]   Email found: reachout@gttfoundation.org
+2026-06-17 18:38:40 [INFO   ] Scraping Employability Excellence with College Education & ... (https://nitiforstates.gov.in/policy-viewer?id=PSSNAP000571)
+2026-06-17 18:38:43 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:38:44 [INFO   ] Industry: company_secretary_firms | Query: company secretary firms India student services contact
+2026-06-17 18:38:44 [INFO   ] Google search: company secretary firms India student services contact
+2026-06-17 18:38:47 [INFO   ]   Found 7 unique result(s).
+2026-06-17 18:38:47 [INFO   ] Skip duplicate domain: icsi.edu
+2026-06-17 18:38:47 [INFO   ] Skip duplicate domain: kelkarcs.com
+2026-06-17 18:38:47 [INFO   ] Skip duplicate domain: csdeepali.in
+2026-06-17 18:38:47 [INFO   ] Skip duplicate domain: uja.in
+2026-06-17 18:38:47 [INFO   ] Skip duplicate domain: indiacustomercare.com
+2026-06-17 18:38:47 [INFO   ] Scraping Company Secretary Services in Pune (https://hsaindia.in/company-secretarial-services-in-pune/)
+2026-06-17 18:38:53 [INFO   ]   Email found: info@hsaindia.in
+2026-06-17 18:38:53 [INFO   ] Scraping JSP Associates: Company Secretary Firm In Mumbai, CS Firm ... (http://www.jsp-associates.com/)
+2026-06-17 18:38:55 [INFO   ]   Email found: info@jsp-associates.com
+2026-06-17 18:38:55 [INFO   ]   Email found: jatin@jsp-associates.com
+2026-06-17 18:38:55 [INFO   ] Scrape complete: {'queries_run': 11, 'companies_scraped': 50, 'companies_with_email': 40, 'emails_found': 138, 'email_target': 16, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 1, 'ca_connect': {'ca_connect_ran': True, 'ca_connect_listings': 574, 'ca_profiles_enriched': 5, 'ca_profiles_failed': 0, 'ca_emails_imported': 1, 'ca_connect_logged_in': True, 'ca_connect_search': 'Audit | Maharashtra | Pune', 'error': '', 'browser_used': 'chromium-headless', 'ca_companies_upserted': 5}}
+2026-06-17 18:39:01 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-17 18:39:01 [INFO   ] Sending up to 16 email(s) this run (emails_per_run).
+2026-06-17 18:39:02 [INFO   ] Send queue reserves 4/4 slot(s) for CA Connect JSON contacts.
+2026-06-17 18:39:02 [INFO   ] Send queue reserves 2/2 slot(s) for industry company_secretary_firms.
+2026-06-17 18:39:02 [INFO   ] Send queue reserves 2/2 slot(s) for industry tax_consultants.
+2026-06-17 18:39:13 [ERROR  ] Brevo send failed for lalit151323@gmail.com: Brevo API send failed for lalit151323@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 13:09:14 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d2499e9b7f3ce1-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': 'd3d3b27e-41f9-90d3-afdb-446d7bac3156', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '13', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=ypZBGHwfKWleADnjLK0383qNF9H3kfFYYEwAy2Uc4zY-1781701754692-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:39:19 [ERROR  ] Brevo send failed for camaheshghadshi@gmail.com: Brevo API send failed for camaheshghadshi@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 13:09:20 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d249c55aee70bc-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': 'cfc6f17d-1537-972d-9c11-fcb9dda5089d', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '10', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=KPrzamFYd5FknJKy07DHGmsU5P9VZLupmr2QgMsTXd8-1781701760910-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:39:26 [ERROR  ] Brevo send failed for zalakshah707@gmail.com: Brevo API send failed for zalakshah707@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 13:09:27 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d249eedc64f0f8-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': 'a488f15f-2ff3-9914-b0db-5df97a936759', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '8', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=XdoAy0vwiWBhd5oK_OpUvSjPK6hU91q7s5s.l959bOo-1781701767772-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:39:56 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.

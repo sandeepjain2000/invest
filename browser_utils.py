@@ -51,35 +51,41 @@ POPUP_CLOSE_SELECTORS = [
 ]
 
 
-async def launch_context(playwright: Playwright, browser: str) -> tuple[BrowserContext, str]:
+async def launch_context(
+    playwright: Playwright,
+    browser: str,
+    *,
+    headless: bool = False,
+) -> tuple[BrowserContext, str]:
     label = browser.lower()
     viewport = {"width": 1366, "height": 900}
     launch_args = ["--disable-blink-features=AutomationControlled"]
+    suffix = "-headless" if headless else ""
 
     if label in ("auto", "chromium", "chrome"):
         try:
             browser_obj = await playwright.chromium.launch(
-                headless=False,
+                headless=headless,
                 channel="chrome",
                 args=launch_args,
             )
             context = await browser_obj.new_context(viewport=viewport)
-            return context, "chrome"
+            return context, f"chrome{suffix}"
         except Exception as exc:
             logger.warning("Chrome launch failed (%s), trying Chromium.", exc)
             try:
                 browser_obj = await playwright.chromium.launch(
-                    headless=False,
+                    headless=headless,
                     args=launch_args,
                 )
                 context = await browser_obj.new_context(viewport=viewport)
-                return context, "chromium"
+                return context, f"chromium{suffix}"
             except Exception as exc2:
                 logger.warning("Chromium launch failed (%s), trying Firefox.", exc2)
 
-    browser_obj = await playwright.firefox.launch(headless=False)
+    browser_obj = await playwright.firefox.launch(headless=headless)
     context = await browser_obj.new_context(viewport=viewport)
-    return context, "firefox"
+    return context, f"firefox{suffix}"
 
 
 async def dismiss_page_obstructions(page: Page, *, max_rounds: int = 4) -> int:

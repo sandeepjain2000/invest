@@ -1,0 +1,12 @@
+2026-06-17 20:35:24 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-17_20-35-24.log
+2026-06-17 20:35:27 [INFO   ] 
+2026-06-17 20:35:27 [INFO   ] ==============================================================
+2026-06-17 20:35:27 [INFO   ] PROGRESS | STEP 1/3 — Scrape (goal 32 with email, up to 100 sites)
+2026-06-17 20:35:27 [INFO   ] ==============================================================
+2026-06-17 20:35:30 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-17 20:35:34 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-17 20:35:41 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-17 20:35:41 [INFO   ] Opening CA Connect search page: https://caconnect.icai.org/search-your-ca
+2026-06-17 20:35:43 [INFO   ] Selecting service=Audit state=Maharashtra city=Pune
+2026-06-17 20:35:47 [INFO   ] Search results URL: https://caconnect.icai.org/search?_token=3Hd77QX1mtySvokywOEa1U62SkW4WTIEN3rMlgYF&type=&services=Audit&state=Maharashtra&city=Pune
+2026-06-17 20:36:17 [INFO   ] Members tab: 287 cards

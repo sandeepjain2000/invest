@@ -8,26 +8,31 @@ Built to follow patterns from `CVL-ScraperLinkedIn_SendMails` (SQLite deduplicat
 
 ## Industry verticals
 
-Fourteen industry verticals are defined in `industries.json`:
+Fifteen industry verticals are defined in `industries.json`:
 
-| Rank | ID | Sector |
-|------|-----|--------|
-| 1 | `recruitment_staffing` | Recruitment & Staffing Firms |
-| 2 | `edtech` | EdTech Companies |
-| 3 | `overseas_education_immigration` | Overseas Education / Immigration |
-| 4 | `education_finance` | Student Loan / Education Finance |
-| 5 | `hrtech` | HRTech Companies |
-| 6 | `corporate_csr` | Corporate CSR Programs |
-| 7 | `lawyers` | Law Firms & Lawyers |
-| 8 | `training_finishing_schools` | Training & Finishing Schools |
-| 9 | `bfsi_nbfc_banks` | NBFC & Banks (Campus Hiring) |
-| 10 | `insurance` | Insurance (Campus & Graduate Hiring) |
-| 11 | `coaching_test_prep` | Coaching & Test Prep |
-| 12 | `ca_cs_firms` | Chartered Accountants & Company Secretaries (seed investor intros; `funding_intro.html`) |
-| 13 | `company_secretary_firms` | Company Secretary Firms (`funding_intro_cs.html`; 2 reserved send slots per run) |
-| 14 | `tax_consultants` | Tax Consultants (`funding_intro_tax.html`; 2 reserved send slots per run) |
+| Rank | ID | Sector | Email template |
+|------|-----|--------|----------------|
+| 1 | `recruitment_staffing` | Recruitment & Staffing Firms | `partnership_recruitment.html` |
+| 2 | `edtech` | EdTech Companies | `partnership_edtech.html` |
+| 3 | `overseas_education_immigration` | Overseas Education / Immigration | `partnership_immigration.html` |
+| 4 | `education_finance` | Student Loan / Education Finance | `partnership_education_finance.html` |
+| 5 | `hrtech` | HRTech Companies | `partnership_hrtech.html` |
+| 6 | `corporate_csr` | Corporate CSR Programs | `partnership_csr.html` |
+| 7 | `lawyers` | Law Firms & Lawyers | `partnership_lawyers.html` |
+| 8 | `training_finishing_schools` | Training & Finishing Schools | `partnership_training.html` |
+| 9 | `bfsi_nbfc_banks` | NBFC & Banks (Campus Hiring) | `partnership_bfsi.html` |
+| 10 | `insurance` | Insurance (Campus & Graduate Hiring) | `partnership_insurance.html` |
+| 11 | `coaching_test_prep` | Coaching & Test Prep | `partnership_coaching.html` |
+| 12 | `ca_cs_firms` | Chartered Accountants & Company Secretaries | `funding_intro.html` (investor intros) |
+| 13 | `company_secretary_firms` | Company Secretary Firms | `funding_intro_cs.html` |
+| 14 | `tax_consultants` | Tax Consultants | `funding_intro_tax.html` |
+| 15 | `wealth_managers` | Wealth Managers & Investment Advisors | `funding_intro_wealth.html` |
+
+Each industry has its own `template_file`, `email_subject`, and optional `signature_links` in `industries.json`. Partnership verticals use direct benefit-led copy; CA / CS / tax / wealth use investor-introduction templates.
 
 Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated outreach lines. Set `"active": false` on any industry to skip it.
+
+**Scrape source:** Almost all industries (including `wealth_managers`) use **Google search → company website** (`scrape_source: "google"`). Only `ca_cs_firms` uses **CA Connect** (`scrape_source: "ca_connect"`).
 
 **Rank** is for reference only. When scraping or seeding all industries, the pipeline **shuffles industry order randomly on each run/query pick** so effort is spread across sectors rather than always starting at Recruitment & Staffing.
 
@@ -42,7 +47,7 @@ Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated
    - Clicks Contact / Contact Us if no email on the landing page
    - Skips the site if no valid email is found
 3. **Store in SQLite** — Companies, emails, search queries, and sent-mail records are saved with uniqueness constraints to prevent duplicates.
-4. **Send emails** — Renders local `partnership.html`, sends via **Brevo API** (or legacy Gmail SMTP).
+4. **Send emails** — Renders the per-industry HTML template from `industries.json`, sends via **Brevo API** (or legacy Gmail SMTP).
 
 ---
 
@@ -55,10 +60,24 @@ investment/
 ├── immigration_sender.py     # Gmail SMTP sender
 ├── immigration_db.py         # SQLite schema and helpers
 ├── nvidia_llm.py             # NVIDIA key rotation + LLM calls
-├── industries.json           # 12 industry verticals + seed search queries
+├── industries.json           # 15 industry verticals + seed queries + per-industry templates
 ├── industries.py             # Industry config loader
-├── partnership.html          # Partnership outreach HTML template
-├── funding_intro.html        # CA / CS seed-investor introduction template
+├── partnership.html          # Fallback template (sender_config default only)
+├── partnership_recruitment.html
+├── partnership_edtech.html
+├── partnership_immigration.html
+├── partnership_education_finance.html
+├── partnership_hrtech.html
+├── partnership_csr.html
+├── partnership_lawyers.html
+├── partnership_training.html
+├── partnership_bfsi.html
+├── partnership_insurance.html
+├── partnership_coaching.html
+├── funding_intro.html        # CA seed-investor introduction template
+├── funding_intro_cs.html     # Company Secretary firms
+├── funding_intro_tax.html    # Tax consultants
+├── funding_intro_wealth.html # Wealth managers & investment advisors
 ├── brevo_mail.py             # Brevo API (reads project mail_config.json)
 ├── mail_config.json          # Brevo API key + SMTP (edit locally; gitignored)
 ├── mail_config.example.json  # Template — copy if mail_config.json is missing
@@ -127,6 +146,7 @@ Controls sender identity, email subject, send limits, and **local HTML template*
 | `ensure_industry_per_run` | Industry ID to reserve slots for each send (default: `ca_cs_firms`) |
 | `min_ensure_industry_per_run` | Min emails from that industry per **send** (default: 1) |
 | `min_ensure_industry_scrape_per_run` | Min companies with email from that industry per **scrape** (default: 2) |
+| `scrape_headless` | `true` = hide browser during Google scrape; default `false` (visible helps with Google consent/CAPTCHA) |
 | `send_method` | `brevo_api` (default) or `gmail_smtp` for legacy Gmail |
 | `template_file` | Local HTML template (`partnership.html` in project folder) |
 | `mail_config_file` | Path to project Brevo config (`mail_config.json`) |
@@ -380,6 +400,8 @@ You do not need `check-replies` or `forward_to` for normal operation. `check_rep
 | `scrape` | `--max-companies N` | Stop after N new company sites (default: 20) |
 | `scrape` | `--max-queries N` | Process N search queries per run (default: 5) |
 | `scrape` | `--browser auto\|chrome\|chromium\|firefox` | Browser choice (default: auto) |
+| `scrape` / `run` | `--headless` | Hide browser window during Google scrape |
+| `scrape` / `run` | `--no-headless` | Force visible browser (overrides `scrape_headless` in JSON) |
 | `scrape` | `--no-seed` | Do not auto-generate queries if queue is empty |
 | `scrape` | `--no-nvidia-seed` | Auto-seed from `industries.json` only |
 | `check-replies` | `--no-nvidia` | Skip NVIDIA for borderline replies |

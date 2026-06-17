@@ -13,6 +13,7 @@ from pathlib import Path
 from playwright.async_api import Page, async_playwright
 
 from browser_utils import dismiss_page_obstructions, launch_context, scrape_complete_beep
+from pipeline_progress import ca_connect_status
 
 logger = logging.getLogger(__name__)
 
@@ -206,6 +207,12 @@ async def _enrich_listings_with_profiles(
             if details.get("specialization"):
                 item["specialization"] = details["specialization"]
             enriched += 1
+            ca_connect_status(
+                n=idx,
+                total=len(todo),
+                name=details.get("member_name") or item.get("name") or "",
+                email=details.get("email") or "",
+            )
             logger.info(
                 "  [%s/%s] %s | %s | %s",
                 idx,

@@ -1,0 +1,314 @@
+2026-06-17 11:50:52 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-17_11-50-52.log
+2026-06-17 11:50:58 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-17 11:52:06 [INFO   ]   CA import: CA. LALIT RAMESH BADGUJAR <lalit151323@gmail.com>
+2026-06-17 11:52:06 [INFO   ]   CA import: CA. MAHESH SITARAM GHADSHI <camaheshghadshi@gmail.com>
+2026-06-17 11:52:06 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 2 new email(s).
+2026-06-17 11:52:15 [INFO   ] Scrape targets: up to 50 companies, stop after 16 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-17 11:52:15 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-17 11:52:15 [INFO   ] Using browser: chrome
+2026-06-17 11:52:16 [INFO   ] Industry: insurance | Query: insurance career opportunities for graduates India website contact
+2026-06-17 11:52:16 [INFO   ] Google search: insurance career opportunities for graduates India website contact
+2026-06-17 11:52:21 [INFO   ]   Found 10 unique result(s).
+2026-06-17 11:52:21 [INFO   ] Skip duplicate domain: licindia.in
+2026-06-17 11:52:21 [INFO   ] Skip duplicate domain: careers.tataaig.com
+2026-06-17 11:52:21 [INFO   ] Skip duplicate domain: sbilife.co.in
+2026-06-17 11:52:21 [INFO   ] Scraping Careers Opportunities In Life Insurance (https://www.bhartiaxa.com/about-us/careers)
+2026-06-17 11:52:23 [INFO   ]   Email found: service@bhartiaxa.com
+2026-06-17 11:52:23 [INFO   ] Skip duplicate domain: iciciprulife.com
+2026-06-17 11:52:23 [INFO   ] Skip duplicate domain: libertyinsurance.in
+2026-06-17 11:52:23 [INFO   ] Scraping Career at Aviva (https://www.avivaindia.com/career-at-aviva)
+2026-06-17 11:52:28 [INFO   ]   Email found: peoplefunction@avivaindia.com
+2026-06-17 11:52:28 [INFO   ]   Email found: customerservices@avivaindia.com
+2026-06-17 11:52:28 [INFO   ]   Email found: seniorcitizen@avivaindia.com
+2026-06-17 11:52:28 [INFO   ]   Email found: weconnect@avivaindia.com
+2026-06-17 11:52:28 [INFO   ]   Email found: complaints@avivaindia.com
+2026-06-17 11:52:28 [INFO   ]   Email found: sandeep.chaudhry@avivaindia.com
+2026-06-17 11:52:28 [INFO   ] Scraping Careers (https://pramericalife.in/career)
+2026-06-17 11:52:38 [INFO   ]   Email found: contactus@pramericalife.in
+2026-06-17 11:52:38 [INFO   ]   Email found: careers@pramericalife.in
+2026-06-17 11:52:38 [INFO   ]   Email found: seniorcitizen@pramericalife.in
+2026-06-17 11:52:38 [INFO   ] Skip duplicate domain: iffcotokio.co.in
+2026-06-17 11:52:38 [INFO   ] Skip duplicate domain: indiafirstlife.com
+2026-06-17 11:52:38 [INFO   ] Industry: edtech | Query: online learning platforms India colleges email
+2026-06-17 11:52:38 [INFO   ] Google search: online learning platforms India colleges email
+2026-06-17 11:52:42 [INFO   ]   Found 10 unique result(s).
+2026-06-17 11:52:42 [INFO   ] Scraping Online Learning & Distance Education (https://www.scdl.net/)
+2026-06-17 11:53:11 [INFO   ]   Email found: newadmissions@scdl.net
+2026-06-17 11:53:11 [INFO   ]   Email found: director.scdl@scdl.net
+2026-06-17 11:53:12 [INFO   ] Scraping Dr. D. Y. Patil Vidyapeeth's Centre of online learning (COL) ... (https://www.dypatilonline.com/about-university.aspx)
+2026-06-17 11:53:17 [INFO   ]   Email found: webmaster@dpu.edu.in
+2026-06-17 11:53:17 [INFO   ]   Email found: admissions.col@dpu.edu.in
+2026-06-17 11:53:17 [INFO   ]   Email found: refund.col@dpu.edu.in
+2026-06-17 11:53:18 [INFO   ] Scraping Top 10 Virtual Learning Platforms in India (https://www.21kschool.com/in/blog/virtual-learning-platforms/)
+2026-06-17 11:53:26 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 11:53:26 [INFO   ] Scraping Center for Distance and Online Education (CDOE) at MIT- ... (https://mituniversity.ac.in/school-of-open-distance-learning/odl)
+2026-06-17 11:53:28 [INFO   ]   Email found: admissions@mituniversity.edu.in
+2026-06-17 11:53:28 [INFO   ] Scraping Top 10 EdTech Platform for CBSE Schools in India (https://www.coschool.ai/feeds/blog/best-edtech-platform-cbse-schools)
+2026-06-17 11:53:31 [INFO   ]   Email found: support@coschool.ai
+2026-06-17 11:53:31 [INFO   ]   Email found: info@coschool.ai
+2026-06-17 11:53:31 [INFO   ] Skip duplicate domain: nationalskillsnetwork.in
+2026-06-17 11:53:31 [INFO   ] Skip duplicate domain: upgrad.com
+2026-06-17 11:53:31 [INFO   ] Scraping iLearn (https://ilearn.gov.in/)
+2026-06-17 11:53:48 [INFO   ]   Email found: deekshakapur@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: balkarsingh@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: rekhasharmasen@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: butasingh@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: brupini@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: sushmithab@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: rkuba@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: anitapriyadarshini@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: pkjain@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: liaqatali@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: mca@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: ksarul@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: shivajibhaskar@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: saleem@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: suneetkashyap@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: subhakanta@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: kakoligogoi@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: pgdesd_programme@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: psamdup@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: arvindkrdubey@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: cit@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: satishkumar@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: directoroffice.soms@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: pgdss@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: ysckhuman@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: dvapfv@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: bca@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: rosenembiakkim@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: sofl@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: vikashsingh@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: jaideep@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: dts@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: umamedury@gmail.com
+2026-06-17 11:53:48 [INFO   ]   Email found: dolly.mathew9@gmail.com
+2026-06-17 11:53:48 [INFO   ]   Email found: ekannadi@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: elizakuruvilla@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: dgopal@ignou.ac.in
+2026-06-17 11:53:48 [INFO   ]   Email found: zuchamo@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: archana@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: rcaizwal@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: paramitaz@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: nkishor@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: psychology@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: dksingharoy@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: bmdash@ignoua.c.in
+2026-06-17 11:53:49 [INFO   ]   Email found: soh@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: shikharai@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: anamikashukla@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: dnandini@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: deepan@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: chcwm@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: rajendrapandey@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: jagdishsharma@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: bswinfo@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: sysadmin@mzu.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: ddeonlinemba@gjust.org
+2026-06-17 11:53:49 [INFO   ]   Email found: ddeonlinebcom@gjust.org
+2026-06-17 11:53:49 [INFO   ]   Email found: johnbritto.soms@sathyabama.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: umamhs.som@sathyabama.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: lizy.english@sathyabama.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: mallika.maths@sathyabama.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: kalailakshmi.soms@sathyabama.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: akumar39@amity.edu
+2026-06-17 11:53:49 [INFO   ]   Email found: isconline@bharatividyapeeth.edu
+2026-06-17 11:53:49 [INFO   ]   Email found: safia.farooqui.col@dpu.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: cio@jssuni.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: mk.nagasampige@manipal.edu
+2026-06-17 11:53:49 [INFO   ]   Email found: sgk@mca.sastra.edu
+2026-06-17 11:53:49 [INFO   ]   Email found: dde@sastra.edu
+2026-06-17 11:53:49 [INFO   ]   Email found: vinay@ignouonline.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: ukanjilal@ignou.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: evab@ignouonline.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: vigneshranga2430@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: ilearn@hindustancode.com
+2026-06-17 11:53:49 [INFO   ]   Email found: mis@alagappauniversity.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: op@alagappauniversity.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: onlinesrm.evbab@srmist.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: ilearn@onlinejain.com
+2026-06-17 11:53:49 [INFO   ]   Email found: ahead@amrita.edu
+2026-06-17 11:53:49 [INFO   ]   Email found: godfathermani@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: lpu.intsupport@lpu.co.in
+2026-06-17 11:53:49 [INFO   ]   Email found: bharatchh6666@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: cdedirectors@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: ilearn@vignanonline.com
+2026-06-17 11:53:49 [INFO   ]   Email found: hiedlmshelp@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: cdembaonline@gmail.com
+2026-06-17 11:53:49 [INFO   ]   Email found: ilearn105@ardhas.com
+2026-06-17 11:53:49 [INFO   ]   Email found: directorodl@sathyabama.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: director_cesd@siu.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: babita@jamiahamdard.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: babitasingh@jamiahamdard.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: mahesh.kumar@talentedge.com
+2026-06-17 11:53:49 [INFO   ]   Email found: durgesh.mundrawale@talentedge.in
+2026-06-17 11:53:49 [INFO   ]   Email found: eadmission@kuk.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: ilearn@kuk.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: ol.admissions@andhrauniversity.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: dde@gjust.org
+2026-06-17 11:53:49 [INFO   ]   Email found: pritam.dey@cumail.in
+2026-06-17 11:53:49 [INFO   ]   Email found: asifpervez10@jmi.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: onlineinternational@dmimsu.edu.in
+2026-06-17 11:53:49 [INFO   ]   Email found: coe@mgu.ac.in
+2026-06-17 11:53:49 [INFO   ]   Email found: lekshmi.prasannan@velikotech.com
+2026-06-17 11:53:49 [INFO   ]   Email found: support@ilearn.gov.in
+2026-06-17 11:53:49 [INFO   ] Scraping best online learning platforms 2025 (https://www.digitaled.in/blogs/best-online-learning-platforms-in-india-and-their-features/)
+2026-06-17 11:53:56 [INFO   ]   Email found: info@yoursite.com
+2026-06-17 11:53:56 [INFO   ]   Email found: info@digitaled.in
+2026-06-17 11:53:56 [INFO   ] Scraping 15 Best Online E Learning Platforms for Education (https://logixbuilt.com/blogs/15-best-e-learning-platform)
+2026-06-17 11:54:14 [INFO   ]   Email found: business@logixbuilt.com
+2026-06-17 11:54:14 [INFO   ]   Email found: career@logixbuilt.com
+2026-06-17 11:54:14 [INFO   ] Industry: bfsi_nbfc_banks | Query: Top NBFCs in India for campus hiring contact
+2026-06-17 11:54:14 [INFO   ] Google search: Top NBFCs in India for campus hiring contact
+2026-06-17 11:54:19 [INFO   ]   Found 12 unique result(s).
+2026-06-17 11:54:19 [INFO   ] Scraping The Top 10 NBFCs in India (https://www.nelito.com/blog/the-top-10-nbfcs-in-india-2026.html)
+2026-06-17 11:54:22 [INFO   ]   Email found: marketing@nelito.com
+2026-06-17 11:54:22 [INFO   ] Skip duplicate domain: bankbazaar.com
+2026-06-17 11:54:22 [INFO   ] Scraping Cloudbankin (https://cloudbankin.com/blog/fintech/top-nbfcs-in-india/)
+2026-06-17 11:54:53 [INFO   ]   No email found (navigation_failed: Page.goto: net::ERR_TIMED_OUT at https://cloudbankin.com/blog/fintech/top-nbfcs-in-india/
+Call log:
+  - navigating to "https://cloudbankin.com/blog/fintech/top-nbfcs-in-india/", waiting until "domcontentloaded"
+).
+2026-06-17 11:54:53 [INFO   ] Scraping Bfsi (https://bfsi.eletsonline.com/indias-top100-nbfcs-ranking-2025/)
+2026-06-17 11:55:16 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 11:55:16 [INFO   ] Scraping Smallcase (https://www.smallcase.com/lists/nbfc-stocks/)
+2026-06-17 11:55:21 [INFO   ]   Email found: johan.loones@kraftpixel.com
+2026-06-17 11:55:21 [INFO   ] Scraping Equirus (https://www.equirus.com/wealth/glossary/nbfc)
+2026-06-17 11:55:29 [INFO   ]   Email found: support@equiruswealth.com
+2026-06-17 11:55:29 [INFO   ] Scraping Lifeselfmastery (https://lifeselfmastery.com/2024/09/25/bajaj-housing-finance-indias-top-nbfc/)
+2026-06-17 11:55:56 [INFO   ]   Email found: hello@lifeselfmastery.com
+2026-06-17 11:55:56 [INFO   ] Scraping BFSI & FinTech (https://excelhrs.com/bfsi-fintech/)
+2026-06-17 11:56:00 [INFO   ]   Email found: info@excelhrs.com
+2026-06-17 11:56:00 [INFO   ] Skip duplicate domain: naukri.com
+2026-06-17 11:56:00 [INFO   ] Scraping Western Capital Advisors Pvt Ltd (https://westerncap.in/)
+2026-06-17 11:56:50 [INFO   ]   Email found: contact@westerncap.in
+2026-06-17 11:56:50 [INFO   ]   Email found: ncdops@westerncap.in
+2026-06-17 11:56:50 [INFO   ] Scraping Careers (https://www.aptusindia.com/career/)
+2026-06-17 11:56:58 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 11:56:59 [INFO   ] Scraping Careers (https://www.tfciltd.com/careers)
+2026-06-17 11:57:01 [INFO   ]   Email found: ho@tfciltd.com
+2026-06-17 11:57:02 [INFO   ]   Email found: sanjayahuja@tfciltd.com
+2026-06-17 11:57:02 [INFO   ] Scrape targets met: 19 companies with email (goal 16), 2 from ca_cs_firms (goal 2) — stopping.
+2026-06-17 11:57:02 [INFO   ] Scrape complete: {'queries_run': 3, 'companies_scraped': 21, 'companies_with_email': 19, 'emails_found': 136, 'email_target': 16, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 2, 'ca_connect': {'ca_connect_ran': True, 'ca_connect_listings': 574, 'ca_profiles_enriched': 5, 'ca_profiles_failed': 0, 'ca_emails_imported': 2, 'ca_connect_logged_in': True, 'ca_connect_search': 'Audit | Maharashtra | Pune', 'error': '', 'browser_used': 'chromium-headless', 'ca_companies_upserted': 5}}
+2026-06-17 11:57:07 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-17 11:57:07 [INFO   ] Sending up to 16 email(s) this run (emails_per_run).
+2026-06-17 11:57:08 [INFO   ] Send queue reserves 4/4 slot(s) for CA Connect JSON contacts.
+2026-06-17 11:57:08 [WARNING] Only 0/2 pending company_secretary_firms contact(s) in queue.
+2026-06-17 11:57:08 [WARNING] Only 0/2 pending tax_consultants contact(s) in queue.
+2026-06-17 11:57:14 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-17 11:57:20 [INFO   ] SENT (Brevo) -> maheshsardesai.ca@gmail.com (CA. MAHESH PRABHAKAR SARDESAI) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606170627.39505733080@smtp-relay.mailin.fr>
+2026-06-17 11:57:28 [INFO   ] SENT (Brevo) -> dhanashreelimaye25@gmail.com (CA. DHANASHREE SHIVRAM GADGIL) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606170627.40248139655@smtp-relay.mailin.fr>
+2026-06-17 11:57:40 [INFO   ] SENT (Brevo) -> govind_soni91@rediffmail.com (CA. GOVIND SHRINIWAS SONI) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606170627.57523229514@smtp-relay.mailin.fr>
+2026-06-17 11:57:48 [INFO   ] SENT (Brevo) -> priyanka@atulpremdayal.com (CA. SHRIVASTAVA PRIYANKA) | Seeking Introductions to Potential Seed Investors for PlacementHub | messageId=<202606170627.87477799914@smtp-relay.mailin.fr>
+2026-06-17 11:57:57 [INFO   ] SENT (Brevo) -> info@thamesacademy.in (IDP's Referral Partners in India) | Exploring a potential partnership opportunity with ieltsidpindia.com | messageId=<202606170627.68664607618@smtp-relay.mailin.fr>
+2026-06-17 11:58:08 [INFO   ] SENT (Brevo) -> info@giecglobal.lk (Contact Us) | Exploring a potential partnership opportunity with giecglobal.com | messageId=<202606170628.97716996326@smtp-relay.mailin.fr>
+2026-06-17 11:58:18 [INFO   ] SENT (Brevo) -> info@sbilife.in (Career In Life Insurance) | Exploring a potential partnership opportunity with sbilife.co.in | messageId=<202606170628.69697338330@smtp-relay.mailin.fr>
+2026-06-17 11:58:27 [INFO   ] SENT (Brevo) -> info@linkktpa.com (New India Assurance Recruitment Updates) | Exploring a potential partnership opportunity with newindia.co.in | messageId=<202606170628.86113020838@smtp-relay.mailin.fr>
+2026-06-17 11:58:37 [INFO   ] SENT (Brevo) -> info@iisdt.in (IISDT Candidate Verification) | Exploring a potential partnership opportunity with iisdt.in | messageId=<202606170628.82975862502@smtp-relay.mailin.fr>
+2026-06-17 11:58:45 [INFO   ] SENT (Brevo) -> info@coschool.ai (Top 10 EdTech Platform for CBSE Schools in India) | Exploring a potential partnership opportunity with coschool.ai | messageId=<202606170628.67213399274@smtp-relay.mailin.fr>
+2026-06-17 11:59:06 [INFO   ] SENT (Brevo) -> info@yoursite.com (best online learning platforms 2025) | Exploring a potential partnership opportunity with digitaled.in | messageId=<202606170629.95185248618@smtp-relay.mailin.fr>
+2026-06-17 11:59:30 [INFO   ] SENT (Brevo) -> info@excelhrs.com (BFSI & FinTech) | Exploring a potential partnership opportunity with excelhrs.com | messageId=<202606170629.67966786211@smtp-relay.mailin.fr>
+2026-06-17 11:59:45 [INFO   ] SENT (Brevo) -> contact@westerncap.in (Western Capital Advisors Pvt Ltd) | Exploring a potential partnership opportunity with westerncap.in | messageId=<202606170629.25956216166@smtp-relay.mailin.fr>
+2026-06-17 12:00:06 [INFO   ] SENT (Brevo) -> contactus@pramericalife.in (Careers) | Exploring a potential partnership opportunity with pramericalife.in | messageId=<202606170630.96541042223@smtp-relay.mailin.fr>
+2026-06-17 12:00:26 [INFO   ] SENT (Brevo) -> hello@lifeselfmastery.com (Lifeselfmastery) | Exploring a potential partnership opportunity with lifeselfmastery.com | messageId=<202606170630.60832957160@smtp-relay.mailin.fr>
+2026-06-17 12:00:36 [INFO   ] SENT (Brevo) -> support@testbook.com (Indian Bank SO Recruitment 2026 Notification Out, Apply ...) | Exploring a potential partnership opportunity with testbook.com | messageId=<202606170630.58765463596@smtp-relay.mailin.fr>
+2026-06-17 12:00:47 [INFO   ] Send complete: {'sent': 16, 'failed': 0, 'skipped': 0, 'queue_size': 16, 'ensure_industry': 'ca_cs_firms', 'ensure_min_slots': 0, 'ensure_reserved_in_queue': 0, 'ensure_ca_connect_min': 4, 'ensure_ca_connect_reserved': 4, 'sent_ca_connect': 4, 'reserved_by_industry': {'company_secretary_firms': 2, 'tax_consultants': 2}, 'reserved_in_queue_by_industry': {'company_secretary_firms': 0, 'tax_consultants': 0}, 'sent_by_industry': {'ca_cs_firms': 4, 'overseas_education_immigration': 2, 'insurance': 3, 'training_finishing_schools': 1, 'edtech': 2, 'bfsi_nbfc_banks': 4}, 'send_limit': 16}
+2026-06-17 12:00:47 [INFO   ] 
+2026-06-17 12:00:47 [INFO   ] ======================================================================
+2026-06-17 12:00:47 [INFO   ]   RUN SUMMARY
+2026-06-17 12:00:47 [INFO   ] ======================================================================
+2026-06-17 12:00:47 [INFO   ]   SCRAPE — this run
+2026-06-17 12:00:47 [INFO   ]     Run limits (config):             max 50 sites, stop at 16 with email, max 20 Google queries
+2026-06-17 12:00:47 [INFO   ]       Caps from sender_config.json; scrape stops early when email target is met.
+2026-06-17 12:00:47 [INFO   ] 
+2026-06-17 12:00:47 [INFO   ]   CA Connect — https://caconnect.icai.org/
+2026-06-17 12:00:47 [INFO   ]     Search filters:                  Audit | Maharashtra | Pune
+2026-06-17 12:00:47 [INFO   ]       Service, state, and city from ca_connect_credentials.json.
+2026-06-17 12:00:47 [INFO   ]     Listings on results page:        574
+2026-06-17 12:00:47 [INFO   ]       Member + firm cards returned by CA Connect search (not all have email).
+2026-06-17 12:00:47 [INFO   ]     Profile pages opened:            5
+2026-06-17 12:00:47 [INFO   ]       Logged-in profile visits to extract email/mobile this run.
+2026-06-17 12:00:47 [INFO   ]     New emails added to DB:          2
+2026-06-17 12:00:47 [INFO   ]       First-time imports into immigration.db as ca_cs_firms (duplicates skipped).
+2026-06-17 12:00:47 [INFO   ]     CA records upserted:             5
+2026-06-17 12:00:47 [INFO   ]       Companies created/updated in DB (may include already-known emails).
+2026-06-17 12:00:47 [INFO   ] 
+2026-06-17 12:00:47 [INFO   ]   Google website scrape — this run
+2026-06-17 12:00:47 [INFO   ]     Websites visited:                21
+2026-06-17 12:00:47 [INFO   ]       Company sites opened from Google search results (excludes CA Connect).
+2026-06-17 12:00:47 [INFO   ]     Sites where email was found:     17
+2026-06-17 12:00:47 [INFO   ]       Distinct companies with at least one new email this run (Google only).
+2026-06-17 12:00:47 [INFO   ]     Email addresses discovered:      134
+2026-06-17 12:00:47 [INFO   ]       New email rows saved to the database from Google scraping.
+2026-06-17 12:00:47 [INFO   ]     Google queries executed:         3
+2026-06-17 12:00:47 [INFO   ]       Search queries consumed from the pending queue this run.
+2026-06-17 12:00:47 [INFO   ]     Reserved industry (ca_cs_firms): 2 / 2 new emails (met)
+2026-06-17 12:00:47 [INFO   ]       Chartered Accountants & Company Secretaries — minimum new contacts per run (sourced via CA Connect for ca_cs_firms).
+2026-06-17 12:00:47 [INFO   ]     Browser:                         chrome
+2026-06-17 12:00:47 [INFO   ]       Engine used for Google website scraping.
+2026-06-17 12:00:47 [INFO   ] 
+2026-06-17 12:00:47 [INFO   ]   REPLIES — this run
+2026-06-17 12:00:47 [INFO   ]     Inbox check:                     skipped
+2026-06-17 12:00:47 [INFO   ]       Reply forwarding is off (check_replies_before_send: false in sender_config.json).
+2026-06-17 12:00:47 [INFO   ] 
+2026-06-17 12:00:47 [INFO   ]   SEND — this run
+2026-06-17 12:00:47 [INFO   ]     Recipients queued:               16
+2026-06-17 12:00:47 [INFO   ]       Unsent contacts considered this run (send cap: 16 per run).
+2026-06-17 12:00:47 [INFO   ]     Queue slots for CA Connect JSON: 4 / 4 reserved
+2026-06-17 12:00:47 [INFO   ]       Individual CAs from ca_connect_results.json (caconnect.icai.org profiles), not Google-scraped CA firm sites.
+2026-06-17 12:00:47 [INFO   ]     Sent to CA Connect JSON:         4
+2026-06-17 12:00:47 [INFO   ]       Funding intro emails to CAs imported from CA Connect this run.
+2026-06-17 12:00:47 [INFO   ]     Queue slots for company_secretary_firms: 0 / 2 reserved
+2026-06-17 12:00:47 [INFO   ]       Company Secretary Firms — minimum send slots per run when contacts are available.
+2026-06-17 12:00:47 [INFO   ]     Queue slots for tax_consultants: 0 / 2 reserved
+2026-06-17 12:00:47 [INFO   ]       Tax Consultants — minimum send slots per run when contacts are available.
+2026-06-17 12:00:47 [INFO   ]     Emails sent successfully:        16
+2026-06-17 12:00:47 [INFO   ]       Partnership / funding intro emails delivered via Brevo this run.
+2026-06-17 12:00:47 [INFO   ]     Send failures:                   0
+2026-06-17 12:00:47 [INFO   ]       Brevo API or transport errors (not counted as sent).
+2026-06-17 12:00:47 [INFO   ]     Skipped:                         0
+2026-06-17 12:00:47 [INFO   ]       Dry-run previews or recipients already marked sent in the database.
+2026-06-17 12:00:47 [INFO   ]     Sent by industry:
+2026-06-17 12:00:47 [INFO   ]       NBFC & Banks (Campus Hiring)   4
+2026-06-17 12:00:47 [INFO   ]       Chartered Accountants & Company Secretaries 4
+2026-06-17 12:00:47 [INFO   ]       Insurance (Campus & Graduate Hiring) 3
+2026-06-17 12:00:47 [INFO   ]       EdTech Companies               2
+2026-06-17 12:00:47 [INFO   ]       Overseas Education / Immigration 2
+2026-06-17 12:00:47 [INFO   ]       Training & Finishing Schools   1
+2026-06-17 12:00:48 [INFO   ] 
+2026-06-17 12:00:48 [INFO   ]   DATABASE — cumulative (all runs)
+2026-06-17 12:00:48 [INFO   ]     Companies stored:                593
+2026-06-17 12:00:48 [INFO   ]       All scraped organisations across every industry vertical.
+2026-06-17 12:00:48 [INFO   ]     Companies with email:            471
+2026-06-17 12:00:48 [INFO   ]       Records with email_status = found (ready or already used for outreach).
+2026-06-17 12:00:48 [INFO   ]     Email addresses on file:         5602
+2026-06-17 12:00:48 [INFO   ]       Total rows in company_emails (one company may have several).
+2026-06-17 12:00:48 [INFO   ]     Emails sent (lifetime):          326
+2026-06-17 12:00:48 [INFO   ]       Unique recipients successfully emailed at least once.
+2026-06-17 12:00:48 [INFO   ]     Send failures (lifetime):        0
+2026-06-17 12:00:48 [INFO   ]       Recipients with a failed status in email_sent.
+2026-06-17 12:00:48 [INFO   ]     Replies forwarded (lifetime):    0
+2026-06-17 12:00:48 [INFO   ]       Human replies forwarded to your Gmail.
+2026-06-17 12:00:48 [INFO   ]     Ready to send (now):             312
+2026-06-17 12:00:48 [INFO   ]       Unsent contacts still in the outbound queue for future runs.
+2026-06-17 12:00:48 [INFO   ]     Google queries pending:          21
+2026-06-17 12:00:48 [INFO   ]       Unused search queries waiting for future scrape runs.
+2026-06-17 12:00:49 [INFO   ]     Unsent ca_cs_firms:              48
+2026-06-17 12:00:49 [INFO   ]       Chartered Accountants & Company Secretaries contacts not yet emailed (all sources).
+2026-06-17 12:00:50 [INFO   ]     Unsent CA Connect JSON:          26
+2026-06-17 12:00:50 [INFO   ]       Individual CAs from ca_connect_results.json still available to email.
+2026-06-17 12:00:50 [INFO   ]     Companies by industry (with email / total):
+2026-06-17 12:00:50 [INFO   ]       NBFC & Banks (Campus Hiring)     19 / 29
+2026-06-17 12:00:50 [INFO   ]       Chartered Accountants & Company Secretaries 86 / 94
+2026-06-17 12:00:50 [INFO   ]       Coaching & Test Prep             33 / 39
+2026-06-17 12:00:50 [INFO   ]       Corporate CSR Programs           28 / 36
+2026-06-17 12:00:50 [INFO   ]       EdTech Companies                 31 / 35
+2026-06-17 12:00:50 [INFO   ]       Student Loan / Education Finance 10 / 19
+2026-06-17 12:00:50 [INFO   ]       HRTech Companies                 32 / 48
+2026-06-17 12:00:50 [INFO   ]       Insurance (Campus & Graduate Hiring) 25 / 33
+2026-06-17 12:00:50 [INFO   ]       Law Firms & Lawyers              65 / 85
+2026-06-17 12:00:50 [INFO   ]       Overseas Education / Immigration 63 / 77
+2026-06-17 12:00:50 [INFO   ]       Recruitment & Staffing Firms     36 / 50
+2026-06-17 12:00:50 [INFO   ]       Training & Finishing Schools     43 / 48
+2026-06-17 12:00:50 [INFO   ] ======================================================================
+2026-06-17 12:00:50 [INFO   ] 

@@ -1,0 +1,513 @@
+2026-06-17 18:06:25 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-17_18-06-25.log
+2026-06-17 18:06:31 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-17 18:07:37 [INFO   ]   CA import: CA. RAJU MAHADEV PADAVALE <caraj2007@gmail.com>
+2026-06-17 18:07:37 [INFO   ]   CA import: CA. SHAILENDRA KISHOR AGRAWAL <shailendraagrawal06@gmail.com>
+2026-06-17 18:07:37 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 2 new email(s).
+2026-06-17 18:07:45 [INFO   ] Scrape targets: up to 50 companies, stop after 16 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-17 18:07:45 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-17 18:07:46 [INFO   ] Using browser: chrome
+2026-06-17 18:07:46 [INFO   ] Industry: overseas_education_immigration | Query: global education consultants in India contact page
+2026-06-17 18:07:46 [INFO   ] Google search: global education consultants in India contact page
+2026-06-17 18:07:51 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:07:51 [INFO   ] Scraping Contact us (https://globaledu.in/contact-us/)
+2026-06-17 18:07:57 [INFO   ]   Email found: tvm@globaledu.in
+2026-06-17 18:07:57 [INFO   ]   Email found: kottayam@globaledu.in
+2026-06-17 18:07:57 [INFO   ]   Email found: angamaly@globaledu.in
+2026-06-17 18:07:57 [INFO   ]   Email found: thrissur@globaledu.in
+2026-06-17 18:07:57 [INFO   ]   Email found: info@globaleducation.in
+2026-06-17 18:07:57 [INFO   ]   Email found: info@globaledu.in
+2026-06-17 18:07:57 [INFO   ]   Email found: enquires@globaledu.in
+2026-06-17 18:07:57 [INFO   ] Skip duplicate domain: globaledu.net.in
+2026-06-17 18:07:57 [INFO   ] Scraping Global Education Consultancy (https://globaleduconsultancy.in/)
+2026-06-17 18:07:59 [INFO   ]   Email found: support@globaleduconsultancy.in
+2026-06-17 18:07:59 [INFO   ]   Email found: geducation60@gmail.com
+2026-06-17 18:07:59 [INFO   ] Scraping Overseas Consultants for UK (https://www.planstudyabroad.com/enquiry/)
+2026-06-17 18:08:26 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:08:26 [INFO   ] Scraping Global Educational Consultancy: Home (https://globaleduconsultant.in/)
+2026-06-17 18:08:36 [INFO   ]   Email found: info@globaleduconsultant.in
+2026-06-17 18:08:36 [INFO   ] Scraping Contact us (https://globaleduconnects.in/contact-us/)
+2026-06-17 18:08:42 [INFO   ]   Email found: enquiry@globaleduconnects.in
+2026-06-17 18:08:42 [INFO   ] Skip duplicate domain: globaldegrees.in
+2026-06-17 18:08:42 [INFO   ] Scraping Global Education Services (https://www.gesintl.in/)
+2026-06-17 18:08:49 [INFO   ]   No email found (at_symbol_but_no_valid_email).
+2026-06-17 18:08:49 [INFO   ] Skip duplicate domain: zaubacorp.com
+2026-06-17 18:08:49 [INFO   ] Industry: training_finishing_schools | Query: career training institutes India email address
+2026-06-17 18:08:49 [INFO   ] Google search: career training institutes India email address
+2026-06-17 18:08:53 [INFO   ]   Found 9 unique result(s).
+2026-06-17 18:08:53 [INFO   ] Scraping Contact Us (https://tiesinstitute.com/contact-us/)
+2026-06-17 18:08:56 [INFO   ]   Email found: hello@tiesinstitute.com
+2026-06-17 18:08:57 [INFO   ] Scraping Contact Us (https://iipcindia.com/contact-us)
+2026-06-17 18:09:04 [INFO   ]   Email found: training@iipcindia.com
+2026-06-17 18:09:04 [INFO   ] Skip duplicate domain: dgt.gov.in
+2026-06-17 18:09:04 [INFO   ] Scraping Contact Us (http://cpisd.in/contact/contact.asp)
+2026-06-17 18:09:06 [INFO   ]   Email found: skillzone@cpil.in
+2026-06-17 18:09:06 [INFO   ]   Email found: zeeshan.khan@cpil.in
+2026-06-17 18:09:06 [INFO   ]   Email found: example@cpisd.in
+2026-06-17 18:09:06 [INFO   ] Scraping Training Centers (https://www.mepsc.in/training-centers/)
+2026-06-17 18:09:14 [INFO   ]   Email found: info@mepsc.in
+2026-06-17 18:09:14 [INFO   ]   Email found: sanmitshah@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: jplkpkd@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: surajit.s@medhavifoundation.in
+2026-06-17 18:09:14 [INFO   ]   Email found: skills.tirotsingcollege@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: rathorerscit18@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pseducation@rediffmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: hadahemendrasingh4103@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: prashant.d@cmr.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.wardha@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.jalgaon1@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: livedmt@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: as.kamrup@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: ap.srikakulam@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.chalisgaon@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: suresh.k1@cmr.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: vikas.g@cmr.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.aurangabad1@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: roshanlalverma6@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: naveenk.y@cmr.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.ratnagiri@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: pilkandi26@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: bawa.syska@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: ka.vijayapur@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: up.lakhimpurkheri@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: sunaibibicollege@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.buldhana1@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: as.kamrup1@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.nashik1@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: neseedtc1@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: dplcjashpur@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pilbandwan@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.wardha2@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: jangipurpil@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pseducationindore1@rediffmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: chirudhipil@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pilarambagp@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pilpandua080@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: keshav.gupta@aseemandcompany.com
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.karanjali@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.aurangabad2@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: od.ganjam1@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.wardha4@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: mh.amravati@sochsafalkendra.in
+2026-06-17 18:09:14 [INFO   ]   Email found: vitaleduedu@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: nitincs101@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: admin@moderncollege.edu.in
+2026-06-17 18:09:14 [INFO   ]   Email found: cimindiasant@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: nebrothers@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: sonamojha2424@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: vesbarwani@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: avoluvese19@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: gm.dipsho@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: avohu@yahoo.com
+2026-06-17 18:09:14 [INFO   ]   Email found: uttam143@iusikkim.edu.in
+2026-06-17 18:09:14 [INFO   ]   Email found: dreamcatcherkohima@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: assamkharif2021@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: arup.nandy@medhavifoundation.org
+2026-06-17 18:09:14 [INFO   ]   Email found: iie.sipajhar@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: jyoti.jyoti.saikia@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: govtcollegetezu@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: jithin.s@jobsacademy.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: jogividana@yahoo.com
+2026-06-17 18:09:14 [INFO   ]   Email found: rangfrahgc@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: wangcharajkumargovtcollege@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: nrkdildar@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: teresapaonam1@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: mathana971@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: patnapmkk789@orionedutech.com
+2026-06-17 18:09:14 [INFO   ]   Email found: annebokar523@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: sourav.placements@medhavifoundation.in
+2026-06-17 18:09:14 [INFO   ]   Email found: suman.hailakandi@medhavifoundation.in
+2026-06-17 18:09:14 [INFO   ]   Email found: himanshu@medhavifoundation.in
+2026-06-17 18:09:14 [INFO   ]   Email found: medhavifoundationiiedharmanaga@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: dakshindinajpurpmkk789@orionedutech.com
+2026-06-17 18:09:14 [INFO   ]   Email found: popykalita@orionedutech.com
+2026-06-17 18:09:14 [INFO   ]   Email found: amravatipmkk789@orionedutech.com
+2026-06-17 18:09:14 [INFO   ]   Email found: jcarctc.adsf@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: barrackporepmkk789@orionedutech.com
+2026-06-17 18:09:14 [INFO   ]   Email found: jsailo.sailo@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: hriatakhiangte2@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: minakag2001@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: debajnc@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: wellyalison@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: statehead-ddu-br@rooman.net
+2026-06-17 18:09:14 [INFO   ]   Email found: pratikrana46@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkkbarmer@f-tec.net.in
+2026-06-17 18:09:14 [INFO   ]   Email found: savnercollege@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: bcmoharana@k1groups.in
+2026-06-17 18:09:14 [INFO   ]   Email found: jitmbirsa.jagannathpur@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: tcsocialskill@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: jitmbirsa.khutpani@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: kanchan@aisect.org
+2026-06-17 18:09:14 [INFO   ]   Email found: rajathilagam.senthamil@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: npsskargil@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: sonamkumari093226@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkk.alappuzha@jobsacademy.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: bhaskardas.valeur@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: valeurteteliya@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkk.burdwan@jobsacademy.co.in
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkk.mis01ktr@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: inductusprojecthead@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: aisectlohardaga@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: mathuracentre@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: shubhajitp43@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: narenderboora1989@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: spocpmkkseppa@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkk.kanpurnagar@cews.in
+2026-06-17 18:09:14 [INFO   ]   Email found: firdous.andrabi@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkkanand@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: neeleshpatel3958@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: shendeg96@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: prajesh.bisen@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: satishpoonia745@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: shashank@aisect.org
+2026-06-17 18:09:14 [INFO   ]   Email found: info@flywingsacademy.com
+2026-06-17 18:09:14 [INFO   ]   Email found: elangbam@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: asopl.skillindia@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: institutionthai@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: ambarbhopal2022@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: aparindiaeastdelhi@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: deepak.kaushik@learnetskills.com
+2026-06-17 18:09:14 [INFO   ]   Email found: ngomitrek@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: merapath.niwas@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkkjhunjhunu@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: guruharkrishanacfazilka@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: north24parganaspmkk789@orionedutech.com
+2026-06-17 18:09:14 [INFO   ]   Email found: tejaswani.khunti@jitmskills.com
+2026-06-17 18:09:14 [INFO   ]   Email found: conflatezrk@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: realsteel0609@gmail.com
+2026-06-17 18:09:14 [INFO   ]   Email found: pmkkho.assist@rooman.net
+2026-06-17 18:09:14 [INFO   ]   Email found: archana.babu@rooman.net
+2026-06-17 18:09:14 [INFO   ]   Email found: shiva.nagpur@shivasociety.org.in
+2026-06-17 18:09:14 [INFO   ]   Email found: katol.spurti@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: jsdmc.koderma@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: manishsehore0403@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: vpsingh@ppdcmeerut.com
+2026-06-17 18:09:15 [INFO   ]   Email found: spurti.rplamarvati@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: tejaswini.koderma@jitmskills.com
+2026-06-17 18:09:15 [INFO   ]   Email found: tejaswini.saraikela@jitmskills.com
+2026-06-17 18:09:15 [INFO   ]   Email found: tejaswini.latehar@jitmskills.com
+2026-06-17 18:09:15 [INFO   ]   Email found: servertc22@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: mgurudatta7@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: spoc_state_returnee@khristytextiles.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk.ghatal@jobsacademy.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: sbssalani@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: raxa-academy@gmrgroup.in
+2026-06-17 18:09:15 [INFO   ]   Email found: dataprobmmsbh@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: misnagramotels@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: valeurmomacentre@outlook.com
+2026-06-17 18:09:15 [INFO   ]   Email found: a.h.me.d.ef.t.i.k.a.rali@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: shivpuri@4qlearning.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pbrmohali6@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: anirbanmondal@iswpl.org
+2026-06-17 18:09:15 [INFO   ]   Email found: surendra.dhetarwal@ilfsindia.com
+2026-06-17 18:09:15 [INFO   ]   Email found: aizawl.pmkk@medhavifoundation.org
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk_mayurbhanj@rediffmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: adarshasamajkalyansamity@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: thepeoplehumansongadh111@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: arup@medhavifoundation.org
+2026-06-17 18:09:15 [INFO   ]   Email found: sbjscheema@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: kavitha@protectionmania.com
+2026-06-17 18:09:15 [INFO   ]   Email found: sbssainimajra@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: porumamillapmkvy@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkkseoni@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: sandeepganjiwale@yahoo.com
+2026-06-17 18:09:15 [INFO   ]   Email found: vivek2404card@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk.purulia@jobsacademy.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: kolhapurpmkk@rooman.net
+2026-06-17 18:09:15 [INFO   ]   Email found: lokeshcard@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk.madhubani@ashpraskills.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk.bankura@jobsacademy.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk.surajpur@ashpraskills.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkkbarabankitc@swacaskills.in
+2026-06-17 18:09:15 [INFO   ]   Email found: soumi.c@jobsacademy.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: shivpratap.gurjar@ilfsindia.com
+2026-06-17 18:09:15 [INFO   ]   Email found: katihar@ashpraskills.com
+2026-06-17 18:09:15 [INFO   ]   Email found: gms.sirohi@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: ctaindia53@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: padmana2000@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: ssinha282@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: swad.vasu.sanstha@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: sgsr.834005@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: proposalvdkptechnology@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: mh.solapur@sochsafalkendra.in
+2026-06-17 18:09:15 [INFO   ]   Email found: gngmisinternal@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: vs4612098@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: gtsbuss@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: academics@sdivisakh.in
+2026-06-17 18:09:15 [INFO   ]   Email found: kshitijmassociation@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: mail2moharana@yahoo.com
+2026-06-17 18:09:15 [INFO   ]   Email found: vigs3013@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: btf.ashamarine@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: sdedsws@outlook.com
+2026-06-17 18:09:15 [INFO   ]   Email found: rahul.bairwa@tenon-fm.com
+2026-06-17 18:09:15 [INFO   ]   Email found: piplkhordha@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: himanshu.s@jobsacademy.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: pmkk.kollam@jobsacademy.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: jjmpltirunelvelitc01@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: pradhanmantrikaushalkendratvpm@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: oliveheritagebice3@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: aitm12259@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: shashi.aisect@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: diptihattimare0403@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: jaipuramber22@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: navin.kumar392@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: palliuday@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: krkk2020@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: seemashafiq011@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: training@cosmosgroup.in
+2026-06-17 18:09:15 [INFO   ]   Email found: mis.pmkkbpl@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: cimindia1@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: b.s.gund@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: ketakin@lighthousecommunities.org
+2026-06-17 18:09:15 [INFO   ]   Email found: bvoc.admissions@cmical.com
+2026-06-17 18:09:15 [INFO   ]   Email found: ddukk.bokaro@4qlearning.com
+2026-06-17 18:09:15 [INFO   ]   Email found: shineskill143@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: tcchaitanyaskill2022@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: brightskillsol920@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: tcapexinstitute2022@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: tcovi143@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: vipra.sk.ill.01@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: s.l.atas.dc@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: asian.skilltrain@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: sanjayp.196741@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: ib4greatsherlock12@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: chandrapur.pmkvy@shivshaktiedu.org
+2026-06-17 18:09:15 [INFO   ]   Email found: brimstonegurukul@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: neeraj@hissm.in
+2026-06-17 18:09:15 [INFO   ]   Email found: admin@rsecurity.in
+2026-06-17 18:09:15 [INFO   ]   Email found: athenafoundation038@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: omsaipsara2021@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: previse@live.com
+2026-06-17 18:09:15 [INFO   ]   Email found: rusiya.nayak@terrier.co.in
+2026-06-17 18:09:15 [INFO   ]   Email found: actbhavnagar@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: malik.samina7@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: saiscpwd@gmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: csaskhorda@rediffmail.com
+2026-06-17 18:09:15 [INFO   ]   Email found: vinodkumar.naik@gmrgroup.in
+2026-06-17 18:09:15 [INFO   ] Scraping Indian Society for Training & Development (https://www.istd.in/)
+2026-06-17 18:09:23 [INFO   ]   Email found: info@istd.in
+2026-06-17 18:09:23 [INFO   ]   Email found: training@istd.in
+2026-06-17 18:09:23 [INFO   ] Scraping Contact Us (https://www.aicpeindia.org/contact)
+2026-06-17 18:09:26 [INFO   ]   Email found: aicpe@bizindia.org
+2026-06-17 18:09:26 [INFO   ] Scraping Best IT Training Institute in Pune (https://www.cybersuccess.biz/)
+2026-06-17 18:09:48 [INFO   ]   Email found: hello@cybersuccess.biz
+2026-06-17 18:09:48 [INFO   ] Scraping Skill Development Centers in India (https://niitfoundation.org/skill-development-centres/)
+2026-06-17 18:09:57 [INFO   ]   Email found: contact@niitfoundation.org
+2026-06-17 18:09:57 [INFO   ]   Email found: summeracademy23@niitfoundation.org
+2026-06-17 18:09:57 [INFO   ] Industry: edtech | Query: career development platforms India graduates phone number
+2026-06-17 18:09:57 [INFO   ] Google search: career development platforms India graduates phone number
+2026-06-17 18:10:01 [INFO   ]   Found 7 unique result(s).
+2026-06-17 18:10:01 [INFO   ] Scraping Contact (http://careerladder.co.in/contact.php)
+2026-06-17 18:13:01 [WARNING] Hard timeout (180s) — moving on: http://careerladder.co.in/contact.php
+2026-06-17 18:13:06 [INFO   ]   No email found (site_timeout_180s).
+2026-06-17 18:13:06 [INFO   ] Scraping Contact Us (https://www.kindlecareer.com/career-counselor-kindlecareer/)
+2026-06-17 18:13:10 [INFO   ]   Email found: barun@kindlecareer.com
+2026-06-17 18:13:10 [INFO   ] Scraping Dheya (https://www.dheya.com/?srsltid=AfmBOopz3zYa_30eUpZ_hIbI_6N2HkVdqRHmujEEdWJAcWkLwn9wjfyk)
+2026-06-17 18:13:47 [INFO   ]   Email found: info@dheya.com
+2026-06-17 18:13:47 [INFO   ] Scraping India Career Support (https://indiacareersupport.com/)
+2026-06-17 18:13:49 [INFO   ]   Email found: support@indiacareersupport.com
+2026-06-17 18:13:49 [INFO   ]   Email found: hr@indiacareersupport.com
+2026-06-17 18:13:49 [INFO   ] Scraping Career counselling near me (https://www.edumilestones.com/)
+2026-06-17 18:13:54 [INFO   ]   Email found: vipin@edumilestones.com
+2026-06-17 18:13:54 [INFO   ]   Email found: ankit@edumilestones.com
+2026-06-17 18:13:54 [INFO   ]   Email found: info@edumilestones.com
+2026-06-17 18:13:54 [INFO   ] Scraping Skyy Skill Academy: India's Leading Skill Development & Job ... (https://skyyskill.com/)
+2026-06-17 18:14:01 [INFO   ]   Email found: info@skyyskill.com
+2026-06-17 18:14:02 [INFO   ] Scraping Meet Our Expert Career Counselors (https://careervidya.in/teamexpand)
+2026-06-17 18:14:21 [INFO   ]   Email found: info@careervidya.in
+2026-06-17 18:14:21 [INFO   ] Scrape targets met: 20 companies with email (goal 16), 2 from ca_cs_firms (goal 2) — stopping.
+2026-06-17 18:14:21 [INFO   ] Scrape complete: {'queries_run': 3, 'companies_scraped': 21, 'companies_with_email': 20, 'emails_found': 272, 'email_target': 16, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 2, 'ca_connect': {'ca_connect_ran': True, 'ca_connect_listings': 574, 'ca_profiles_enriched': 5, 'ca_profiles_failed': 0, 'ca_emails_imported': 2, 'ca_connect_logged_in': True, 'ca_connect_search': 'Audit | Maharashtra | Pune', 'error': '', 'browser_used': 'chromium-headless', 'ca_companies_upserted': 5}}
+2026-06-17 18:14:27 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-17 18:14:27 [INFO   ] Sending up to 16 email(s) this run (emails_per_run).
+2026-06-17 18:14:28 [INFO   ] Send queue reserves 4/4 slot(s) for CA Connect JSON contacts.
+2026-06-17 18:14:28 [WARNING] Only 0/2 pending company_secretary_firms contact(s) in queue.
+2026-06-17 18:14:28 [WARNING] Only 0/2 pending tax_consultants contact(s) in queue.
+2026-06-17 18:14:33 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-17 18:14:36 [ERROR  ] Brevo send failed for krishnaoza111@gmail.com: Brevo API send failed for krishnaoza111@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:44:38 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d225921b503bbf-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '735481aa-1a8a-9b27-b47e-2d33ff7af83d', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '10', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=2KSHaAM5YdDjIvrz213jMoeXzNBBdIuUp3OrLl_VYJI-1781700278156-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:14:42 [ERROR  ] Brevo send failed for casarikadeshpande@gmail.com: Brevo API send failed for casarikadeshpande@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:44:43 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d225b47a014fc7-MUC', 'access-control-allow-credentials': 'true', 'sib-request-id': '8118ce84-1d21-9fa2-87c6-aff36bfd50d3', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '12', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=plZOeLioAS2E0eklkR6gnu7v7qywkV94HJA5hPu00EQ-1781700283816-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:14:59 [ERROR  ] Brevo send failed for capiyush29@gmail.com: Brevo API send failed for capiyush29@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:45:01 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d22620dad0228e-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': 'e9b2aaf8-d20a-9693-8604-db6ffc195c9f', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '11', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=TLgDgnfk6omPR_mbifpfD4FuHetdPUA4TFs6qf3nhOo-1781700301205-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:15:02 [ERROR  ] Brevo send failed for casmitamurdekar@gmail.com: Brevo API send failed for casmitamurdekar@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:45:03 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d226303afdecbb-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': 'd86407fa-7843-9581-bc44-96857c610a08', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '6', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=JHP8st0OMke_TBSH3tJz9SemqlmA_PUOL_q9pU.fmqg-1781700303453-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:15:07 [ERROR  ] Brevo send failed for info@smartclasson.com: Brevo API send failed for info@smartclasson.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:45:09 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d226531f9c3ca4-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': 'cec74db1-06f1-970a-afad-db3a21faca0e', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=lrL5_JV3I3t_qvAognARdk7PVoQLj7SbPqhEPxB2FLg-1781700309013-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:15:31 [ERROR  ] Brevo send failed for info@v332b15ee.com: Brevo API send failed for info@v332b15ee.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:45:32 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d226e6bc2cbf83-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '207e4591-02c2-9519-ab19-450b567034b8', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '11', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=LLjMjUVeORRNSOiKXLyG4nYECiejUOxLL06_AinoRIk-1781700332657-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:15:33 [ERROR  ] Brevo send failed for info@globaleducation.in: Brevo API send failed for info@globaleducation.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:45:34 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d226f48e653578-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '842e038e-c067-9d15-912f-193c818b2258', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '4', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=sSSjWw1NLZR7P1X47W6PFS0ZGkItHdEq0ZDxoQJwkaY-1781700334863-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:15:57 [ERROR  ] Brevo send failed for info@globaleduconsultant.in: Brevo API send failed for info@globaleduconsultant.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:45:58 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d2278a5db7bfb4-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '5df67628-308a-98a0-b3e4-b103e5ddeb66', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '3', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=LyvFbZtakGScx9hWPs_U_oRktb4AXZDlsLeg0b.CQfA-1781700358825-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:15:59 [ERROR  ] Brevo send failed for info@mepsc.in: Brevo API send failed for info@mepsc.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:01 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d22798eb080206-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '15a6db19-75cf-98bd-9d19-6d26b937f504', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '13', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=mFuJbJnQlYTJ2mp98Jl4.Mqe0M8FPOR7OUnZZvhyvbw-1781700361168-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:05 [ERROR  ] Brevo send failed for info@istd.in: Brevo API send failed for info@istd.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d227bdcda5f118-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '35c2cc24-1573-91a4-9be5-02a4734b63fb', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=ntDGPLviTtFkrmPHMDKh_EKDEbxWCe6BjotSO7WUMJ0-1781700367037-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:08 [ERROR  ] Brevo send failed for info@dheya.com: Brevo API send failed for info@dheya.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:09 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d227cbee0cee3b-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '7f250cf1-f40c-9378-b732-c45a68b0d6f9', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '8', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=.IAhaA6eVg5Hu_TdFvzhhX0hGDB8iRsOTuldpXIR0Hg-1781700369319-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:11 [ERROR  ] Brevo send failed for info@edumilestones.com: Brevo API send failed for info@edumilestones.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:13 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d227e31a1bc01c-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': 'f9d10edd-c5b5-950a-8d5e-f0dd707d9f85', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '6', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=z6PtTID4cXuuphRL7m4qUP6YF_9KwdXQpKeMSl0GdoU-1781700373041-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:14 [ERROR  ] Brevo send failed for info@skyyskill.com: Brevo API send failed for info@skyyskill.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:15 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d227f2f8ace0cd-MUC', 'access-control-allow-credentials': 'true', 'sib-request-id': 'da0a105f-93f4-912b-a353-cc6b8fc7c49b', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '10', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=gpTQFJd9FKv8oEyYNAJxNX09rjd6Rc_TuGvHKd5cZD4-1781700375563-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:16 [ERROR  ] Brevo send failed for info@careervidya.in: Brevo API send failed for info@careervidya.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:17 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d227feaf20355a-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': '4b178a39-426a-92f9-a5b4-7a4f6cea453e', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=O4UveeuNrodJ7EG5h9NsPQO.BchXFr42xpV2PZf98So-1781700377442-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:18 [ERROR  ] Brevo send failed for contact@niitfoundation.org: Brevo API send failed for contact@niitfoundation.org: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:19 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d2280dae0fe0d1-MUC', 'access-control-allow-credentials': 'true', 'sib-request-id': '69166bad-a8f7-900d-9bbc-69df7c83e054', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '3', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=s_McS9l_0XMjIMvQE9akDo7mW5lmQecKTN41BOjInvo-1781700379824-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:20 [ERROR  ] Brevo send failed for hello@tiesinstitute.com: Brevo API send failed for hello@tiesinstitute.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 12:46:21 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d22817db7a923a-MUC', 'access-control-allow-credentials': 'true', 'sib-request-id': 'aaa7fbd1-f86f-9b9a-a10d-ab61e1b6c314', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '11', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=6uY9YrQVUjefbRr6VFfQENZD5UQkTvAH7C_Mhl.Dh1o-1781700381466-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 18:16:26 [INFO   ] Send complete: {'sent': 0, 'failed': 16, 'skipped': 0, 'queue_size': 16, 'ensure_industry': 'ca_cs_firms', 'ensure_min_slots': 0, 'ensure_reserved_in_queue': 0, 'ensure_ca_connect_min': 4, 'ensure_ca_connect_reserved': 4, 'sent_ca_connect': 0, 'reserved_by_industry': {'company_secretary_firms': 2, 'tax_consultants': 2}, 'reserved_in_queue_by_industry': {'company_secretary_firms': 0, 'tax_consultants': 0}, 'sent_by_industry': {}, 'send_limit': 16}
+2026-06-17 18:16:26 [INFO   ] 
+2026-06-17 18:16:26 [INFO   ] ======================================================================
+2026-06-17 18:16:26 [INFO   ]   RUN SUMMARY
+2026-06-17 18:16:26 [INFO   ] ======================================================================
+2026-06-17 18:16:26 [INFO   ]   SCRAPE — this run
+2026-06-17 18:16:26 [INFO   ]     Run limits (config):             max 50 sites, stop at 16 with email, max 20 Google queries
+2026-06-17 18:16:26 [INFO   ]       Caps from sender_config.json; scrape stops early when email target is met.
+2026-06-17 18:16:26 [INFO   ] 
+2026-06-17 18:16:26 [INFO   ]   CA Connect — https://caconnect.icai.org/
+2026-06-17 18:16:26 [INFO   ]     Search filters:                  Audit | Maharashtra | Pune
+2026-06-17 18:16:26 [INFO   ]       Service, state, and city from ca_connect_credentials.json.
+2026-06-17 18:16:26 [INFO   ]     Listings on results page:        574
+2026-06-17 18:16:26 [INFO   ]       Member + firm cards returned by CA Connect search (not all have email).
+2026-06-17 18:16:26 [INFO   ]     Profile pages opened:            5
+2026-06-17 18:16:26 [INFO   ]       Logged-in profile visits to extract email/mobile this run.
+2026-06-17 18:16:26 [INFO   ]     New emails added to DB:          2
+2026-06-17 18:16:26 [INFO   ]       First-time imports into immigration.db as ca_cs_firms (duplicates skipped).
+2026-06-17 18:16:26 [INFO   ]     CA records upserted:             5
+2026-06-17 18:16:26 [INFO   ]       Companies created/updated in DB (may include already-known emails).
+2026-06-17 18:16:26 [INFO   ] 
+2026-06-17 18:16:26 [INFO   ]   Google website scrape — this run
+2026-06-17 18:16:26 [INFO   ]     Websites visited:                21
+2026-06-17 18:16:26 [INFO   ]       Company sites opened from Google search results (excludes CA Connect).
+2026-06-17 18:16:26 [INFO   ]     Sites where email was found:     18
+2026-06-17 18:16:26 [INFO   ]       Distinct companies with at least one new email this run (Google only).
+2026-06-17 18:16:26 [INFO   ]     Email addresses discovered:      270
+2026-06-17 18:16:26 [INFO   ]       New email rows saved to the database from Google scraping.
+2026-06-17 18:16:26 [INFO   ]     Google queries executed:         3
+2026-06-17 18:16:26 [INFO   ]       Search queries consumed from the pending queue this run.
+2026-06-17 18:16:26 [INFO   ]     Reserved industry (ca_cs_firms): 2 / 2 new emails (met)
+2026-06-17 18:16:26 [INFO   ]       Chartered Accountants & Company Secretaries — minimum new contacts per run (sourced via CA Connect for ca_cs_firms).
+2026-06-17 18:16:26 [INFO   ]     Browser:                         chrome
+2026-06-17 18:16:26 [INFO   ]       Engine used for Google website scraping.
+2026-06-17 18:16:26 [INFO   ] 
+2026-06-17 18:16:26 [INFO   ]   REPLIES — this run
+2026-06-17 18:16:26 [INFO   ]     Inbox check:                     skipped
+2026-06-17 18:16:26 [INFO   ]       Reply forwarding is off (check_replies_before_send: false in sender_config.json).
+2026-06-17 18:16:26 [INFO   ] 
+2026-06-17 18:16:26 [INFO   ]   SEND — this run
+2026-06-17 18:16:26 [INFO   ]     Recipients queued:               16
+2026-06-17 18:16:26 [INFO   ]       Unsent contacts considered this run (send cap: 16 per run).
+2026-06-17 18:16:26 [INFO   ]     Queue slots for CA Connect JSON: 4 / 4 reserved
+2026-06-17 18:16:26 [INFO   ]       Individual CAs from ca_connect_results.json (caconnect.icai.org profiles), not Google-scraped CA firm sites.
+2026-06-17 18:16:26 [INFO   ]     Sent to CA Connect JSON:         0
+2026-06-17 18:16:26 [INFO   ]       Funding intro emails to CAs imported from CA Connect this run.
+2026-06-17 18:16:26 [INFO   ]     Queue slots for company_secretary_firms: 0 / 2 reserved
+2026-06-17 18:16:26 [INFO   ]       Company Secretary Firms — minimum send slots per run when contacts are available.
+2026-06-17 18:16:26 [INFO   ]     Queue slots for tax_consultants: 0 / 2 reserved
+2026-06-17 18:16:26 [INFO   ]       Tax Consultants — minimum send slots per run when contacts are available.
+2026-06-17 18:16:26 [INFO   ]     Emails sent successfully:        0
+2026-06-17 18:16:26 [INFO   ]       Partnership / funding intro emails delivered via Brevo this run.
+2026-06-17 18:16:26 [INFO   ]     Send failures:                   16
+2026-06-17 18:16:26 [INFO   ]       Brevo API or transport errors (not counted as sent).
+2026-06-17 18:16:26 [INFO   ]     Skipped:                         0
+2026-06-17 18:16:26 [INFO   ]       Dry-run previews or recipients already marked sent in the database.
+2026-06-17 18:16:27 [INFO   ] 
+2026-06-17 18:16:27 [INFO   ]   DATABASE — cumulative (all runs)
+2026-06-17 18:16:27 [INFO   ]     Companies stored:                714
+2026-06-17 18:16:27 [INFO   ]       All scraped organisations across every industry vertical.
+2026-06-17 18:16:27 [INFO   ]     Companies with email:            576
+2026-06-17 18:16:27 [INFO   ]       Records with email_status = found (ready or already used for outreach).
+2026-06-17 18:16:27 [INFO   ]     Email addresses on file:         6224
+2026-06-17 18:16:27 [INFO   ]       Total rows in company_emails (one company may have several).
+2026-06-17 18:16:27 [INFO   ]     Emails sent (lifetime):          326
+2026-06-17 18:16:27 [INFO   ]       Unique recipients successfully emailed at least once.
+2026-06-17 18:16:27 [INFO   ]     Send failures (lifetime):        96
+2026-06-17 18:16:27 [INFO   ]       Recipients with a failed status in email_sent.
+2026-06-17 18:16:27 [INFO   ]     Replies forwarded (lifetime):    0
+2026-06-17 18:16:27 [INFO   ]       Human replies forwarded to your Gmail.
+2026-06-17 18:16:27 [INFO   ]     Ready to send (now):             358
+2026-06-17 18:16:27 [INFO   ]       Unsent contacts still in the outbound queue for future runs.
+2026-06-17 18:16:27 [INFO   ]     Google queries pending:          4
+2026-06-17 18:16:27 [INFO   ]       Unused search queries waiting for future scrape runs.
+2026-06-17 18:16:28 [INFO   ]     Unsent ca_cs_firms:              40
+2026-06-17 18:16:28 [INFO   ]       Chartered Accountants & Company Secretaries contacts not yet emailed (all sources).
+2026-06-17 18:16:29 [INFO   ]     Unsent CA Connect JSON:          18
+2026-06-17 18:16:29 [INFO   ]       Individual CAs from ca_connect_results.json still available to email.
+2026-06-17 18:16:29 [INFO   ]     Companies by industry (with email / total):
+2026-06-17 18:16:29 [INFO   ]       NBFC & Banks (Campus Hiring)     21 / 32
+2026-06-17 18:16:29 [INFO   ]       Chartered Accountants & Company Secretaries 102 / 110
+2026-06-17 18:16:29 [INFO   ]       Coaching & Test Prep             33 / 39
+2026-06-17 18:16:29 [INFO   ]       Corporate CSR Programs           28 / 36
+2026-06-17 18:16:29 [INFO   ]       EdTech Companies                 48 / 53
+2026-06-17 18:16:29 [INFO   ]       Student Loan / Education Finance 29 / 40
+2026-06-17 18:16:29 [INFO   ]       HRTech Companies                 45 / 66
+2026-06-17 18:16:29 [INFO   ]       Insurance (Campus & Graduate Hiring) 25 / 33
+2026-06-17 18:16:29 [INFO   ]       Law Firms & Lawyers              65 / 85
+2026-06-17 18:16:29 [INFO   ]       Overseas Education / Immigration 73 / 91
+2026-06-17 18:16:29 [INFO   ]       Recruitment & Staffing Firms     36 / 50
+2026-06-17 18:16:29 [INFO   ]       Training & Finishing Schools     71 / 79
+2026-06-17 18:16:29 [INFO   ] ======================================================================
+2026-06-17 18:16:29 [INFO   ] 

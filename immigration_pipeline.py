@@ -28,6 +28,7 @@ from pathlib import Path
 from typing import Generator
 
 from pipeline_notify import notify_run_complete, notify_stage
+from pipeline_progress import done as progress_done, step as progress_step
 from check_replies import run_check_replies
 from immigration_db import ImmigrationDB
 from immigration_scraper import scrape_sync
@@ -37,6 +38,7 @@ from immigration_sender import (
     get_max_companies_per_run,
     get_max_queries_per_run,
     get_min_ensure_ca_connect_per_run,
+    get_scrape_headless,
     get_reserved_send_by_industry,
     load_sender_config,
     run_send,
@@ -96,7 +98,15 @@ def setup_logger() -> logging.Logger:
     log.addHandler(fh)
     log.info("Log file: %s", log_file)
 
-    for child in ("immigration_scraper", "immigration_sender", "nvidia_llm", "check_replies", "ca_connect_pipeline"):
+    for child in (
+        "immigration_scraper",
+        "immigration_sender",
+        "nvidia_llm",
+        "check_replies",
+        "ca_connect_pipeline",
+        "ca_connect_scraper",
+        "pipeline_progress",
+    ):
         child_log = logging.getLogger(child)
         child_log.setLevel(logging.DEBUG)
         child_log.handlers.clear()
@@ -232,11 +242,17 @@ def cmd_seed_keywords(
 
 
 def _scrape_kwargs(args: argparse.Namespace, industry: str | None) -> dict:
+    headless = get_scrape_headless()
+    if getattr(args, "headless", False):
+        headless = True
+    if getattr(args, "no_headless", False):
+        headless = False
     return {
         "max_companies": args.max_companies or get_max_companies_per_run(),
         "max_queries": args.max_queries or get_max_queries_per_run(),
         "email_target": get_emails_per_run(),
         "browser": args.browser,
+        "headless": headless,
         "region": args.region,
         "industry": industry,
         "seed_keywords": not args.no_seed,
@@ -263,9 +279,14 @@ def _notify_scrape_complete(scrape_stats: dict, *, dry_run: bool = False) -> Non
 def cmd_scrape(args: argparse.Namespace, db: ImmigrationDB) -> int:
     industry = _validate_industry(getattr(args, "industry", None))
     dry_run = getattr(args, "dry_run", False)
+    progress_step("Scrape — discovering companies and emails")
     with prevent_windows_sleep():
         stats = scrape_sync(db, **_scrape_kwargs(args, industry), dry_run=dry_run)
-    logger.info("Scrape complete: %s", stats)
+        logger.info("Scrape complete: %s", stats)
+    progress_done(
+        f"scrape finished — {stats.get('companies_with_email', 0)} with email, "
+        f"{stats.get('emails_found', 0)} addresses"
+    )
     print_execution_summary(scrape_stats=stats, db=db)
     _notify_scrape_complete(stats, dry_run=dry_run)
     _notify_pipeline_complete(dry_run=dry_run)
@@ -413,8 +434,15 @@ def print_execution_summary(
                 scrape_stats.get("browser_used"),
                 "Engine used for Google website scraping.",
             )
-
-    if reply_stats is not None:
+        block_warn = int(scrape_stats.get("google_block_warnings") or 0)
+        zero_q = int(scrape_stats.get("google_zero_result_queries") or 0)
+        if block_warn or zero_q:
+            _summary_stat(
+                "Google block / empty searches",
+                f"{block_warn} warning(s), {zero_q} query(ies) with 0 results",
+                "If high, Google may be showing consent/CAPTCHA — rerun with visible browser "
+                "(--no-headless) and complete the challenge once.",
+            )
         logger.info("")
         logger.info("  REPLIES — this run")
         if reply_stats.get("skipped"):
@@ -557,16 +585,27 @@ def print_execution_summary(
                 unsent_ca_json,
                 "Individual CAs from ca_connect_results.json still available to email.",
             )
-        by_industry = db.summary_by_industry()
-        if by_industry:
+        by_industry = {row["industry"]: row for row in db.summary_by_industry()}
+        industry_reserves = get_reserved_send_by_industry()
+        if by_industry or industry_reserves:
             logger.info("    Companies by industry (with email / total):")
-            for row in by_industry:
+            shown: set[str] = set()
+            for row in sorted(by_industry.values(), key=lambda r: r["industry"]):
                 logger.info(
                     "      %-32s %s / %s",
                     industry_name(row["industry"]),
                     row["companies_with_email"],
                     row["companies_total"],
                 )
+                shown.add(row["industry"])
+            for iid in sorted(industry_reserves):
+                if iid not in shown:
+                    logger.info(
+                        "      %-32s %s / %s",
+                        industry_name(iid),
+                        0,
+                        0,
+                    )
 
     logger.info("=" * 70)
     logger.info("")
@@ -605,6 +644,7 @@ def cmd_check_replies(args: argparse.Namespace, db: ImmigrationDB) -> int:
 
 
 def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
+    progress_step("Send — partnership emails")
     with prevent_windows_sleep():
         reply_stats = _maybe_check_replies(db, args)
         if getattr(args, "test_to", None):
@@ -622,6 +662,10 @@ def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
                 dry_run=args.dry_run,
             )
     logger.info("Send complete: %s", stats)
+    progress_done(
+        f"send finished — {stats.get('sent', 0)} sent, "
+        f"{stats.get('failed', 0)} failed, {stats.get('skipped', 0)} skipped"
+    )
     print_execution_summary(reply_stats=reply_stats, send_stats=stats, db=db)
     _notify_pipeline_complete(dry_run=args.dry_run)
     if stats.get("error"):
@@ -635,10 +679,27 @@ def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
     cfg = load_sender_config()
     notify_stage(cfg, "run_start", dry_run=dry_run)
     with prevent_windows_sleep():
+        progress_step(
+            f"STEP 1/3 — Scrape (goal {get_emails_per_run()} with email, "
+            f"up to {args.max_companies or get_max_companies_per_run()} sites)"
+        )
         scrape_stats = scrape_sync(db, **_scrape_kwargs(args, industry), dry_run=dry_run)
         logger.info("Scrape complete: %s", scrape_stats)
+        progress_done(
+            f"scrape — {scrape_stats.get('companies_with_email', 0)} with email, "
+            f"{scrape_stats.get('emails_found', 0)} addresses"
+        )
         _notify_scrape_complete(scrape_stats, dry_run=dry_run)
+        progress_step("STEP 2/3 — Check replies (if enabled)")
         reply_stats = _maybe_check_replies(db, args)
+        if reply_stats.get("skipped"):
+            progress_done("reply check skipped")
+        else:
+            progress_done(
+                f"replies — scanned {reply_stats.get('scanned', 0)}, "
+                f"forwarded {reply_stats.get('forwarded', 0)}"
+            )
+        progress_step(f"STEP 3/3 — Send (up to {args.send_limit or get_emails_per_run()} emails)")
         send_stats = run_send(
             db,
             limit=args.send_limit,
@@ -646,6 +707,10 @@ def cmd_run(args: argparse.Namespace, db: ImmigrationDB) -> int:
             dry_run=dry_run,
         )
         logger.info("Send complete: %s", send_stats)
+        progress_done(
+            f"send — {send_stats.get('sent', 0)} sent, "
+            f"{send_stats.get('failed', 0)} failed, {send_stats.get('skipped', 0)} skipped"
+        )
     print_execution_summary(
         scrape_stats=scrape_stats,
         reply_stats=reply_stats,
@@ -685,6 +750,16 @@ def build_parser() -> argparse.ArgumentParser:
     scrape.add_argument("--max-companies", type=int, default=None, help="Override max_companies_per_run in sender_config.json")
     scrape.add_argument("--max-queries", type=int, default=None, help="Override max_queries_per_run in sender_config.json")
     scrape.add_argument("--browser", choices=["auto", "chrome", "chromium", "firefox"], default="auto")
+    scrape.add_argument(
+        "--headless",
+        action="store_true",
+        help="Hide browser window during Google scrape (CA Connect is already headless)",
+    )
+    scrape.add_argument(
+        "--no-headless",
+        action="store_true",
+        help="Force visible browser even if sender_config.json sets scrape_headless",
+    )
     scrape.add_argument("--region", default=default_region())
     scrape.add_argument("--no-seed", action="store_true", help="Do not auto-seed queries")
     scrape.add_argument("--no-nvidia-seed", action="store_true", help="Auto-seed from industries.json only")
@@ -715,6 +790,16 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--max-queries", type=int, default=None, help="Override max_queries_per_run in sender_config.json")
     run.add_argument("--send-limit", type=int, default=None)
     run.add_argument("--browser", choices=["auto", "chrome", "chromium", "firefox"], default="auto")
+    run.add_argument(
+        "--headless",
+        action="store_true",
+        help="Hide browser window during Google scrape (CA Connect is already headless)",
+    )
+    run.add_argument(
+        "--no-headless",
+        action="store_true",
+        help="Force visible browser even if sender_config.json sets scrape_headless",
+    )
     run.add_argument("--region", default=default_region())
     run.add_argument("--no-seed", action="store_true")
     run.add_argument("--no-nvidia-seed", action="store_true")

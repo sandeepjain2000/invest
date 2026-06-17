@@ -24,6 +24,7 @@ from industries import (
 )
 from nvidia_llm import generate_company_praise
 from pipeline_notify import notify_stage
+from pipeline_progress import send_plan, send_status
 
 logger = logging.getLogger(__name__)
 
@@ -56,22 +57,23 @@ def load_sender_config() -> dict:
         "forward_to": "sandeepjain200019@gmail.com",
         "check_replies_before_send": False,
         "check_replies_lookback_days": 30,
-        "emails_per_run": 16,
-        "max_companies_per_run": 50,
-        "max_queries_per_run": 20,
+        "emails_per_run": 32,
+        "max_companies_per_run": 100,
+        "max_queries_per_run": 40,
         "send_method": "brevo_api",
         "template_file": "partnership.html",
         "mail_config_file": "mail_config.json",
         "ensure_industry_per_run": "ca_cs_firms",
         "min_ensure_industry_per_run": 0,
         "min_ensure_industry_scrape_per_run": 2,
-        "min_ensure_ca_connect_per_run": 4,
+        "min_ensure_ca_connect_per_run": 8,
         "reserved_send_by_industry": {
-            "company_secretary_firms": 2,
-            "tax_consultants": 2,
+            "company_secretary_firms": 4,
+            "tax_consultants": 4,
+            "wealth_managers": 4,
         },
         "ca_connect_enabled": True,
-        "ca_connect_profiles_per_run": 5,
+        "ca_connect_profiles_per_run": 10,
         "ca_connect_credentials_file": "ca_connect_credentials.json",
         "ca_connect_results_file": "data/ca_connect_results.json",
         "pipeline_complete_voice": True,
@@ -152,6 +154,11 @@ def get_max_queries_per_run() -> int:
         return max(1, int(value))
     except (TypeError, ValueError):
         return 20
+
+
+def get_scrape_headless() -> bool:
+    """Run Google scrape in headless mode when true (default: visible browser)."""
+    return bool(load_sender_config().get("scrape_headless", False))
 
 
 def get_ensure_industry_settings() -> tuple[str | None, int, int]:
@@ -643,6 +650,8 @@ def run_send(
     else:
         notify_stage(sender_cfg, "send_queue_empty")
 
+    send_plan(total=len(queue))
+
     for idx, item in enumerate(queue):
         if method == "gmail_smtp":
             profile = profiles[idx % len(profiles)]
@@ -680,6 +689,16 @@ def run_send(
                 subject,
             )
             stats["skipped"] += 1
+            send_status(
+                n=idx + 1,
+                total=len(queue),
+                sent=stats["sent"],
+                failed=stats["failed"],
+                skipped=stats["skipped"],
+                recipient=item["email"],
+                company=item.get("company_name") or "",
+                industry=item.get("industry") or "",
+            )
             continue
 
         ok = send_one(
@@ -706,6 +725,17 @@ def run_send(
             stats["skipped"] += 1
         else:
             stats["failed"] += 1
+
+        send_status(
+            n=idx + 1,
+            total=len(queue),
+            sent=stats["sent"],
+            failed=stats["failed"],
+            skipped=stats["skipped"],
+            recipient=item["email"],
+            company=item.get("company_name") or "",
+            industry=item.get("industry") or "",
+        )
 
     if not dry_run:
         notify_stage(

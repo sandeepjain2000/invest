@@ -1,0 +1,278 @@
+2026-06-17 16:00:10 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-17_16-00-10.log
+2026-06-17 16:00:17 [INFO   ] === CA Connect scrape (https://caconnect.icai.org/) ===
+2026-06-17 16:01:26 [INFO   ]   CA import: CA. RAHUL RAJKUMAR JAIN <carahuljain@rahuljainassociates.in>
+2026-06-17 16:01:26 [INFO   ]   CA import: CA. KIRAN DIPAK BAFNA <kiranbafna5@gmail.com>
+2026-06-17 16:01:26 [INFO   ] CA Connect: 574 listings, enriched 5 profiles, imported 2 new email(s).
+2026-06-17 16:01:34 [INFO   ] Scrape targets: up to 50 companies, stop after 16 with email (incl. at least 2 from ca_cs_firms via CA Connect)
+2026-06-17 16:01:34 [INFO   ] Industry selection: random order on each query pick (distributes across verticals)
+2026-06-17 16:01:35 [INFO   ] Using browser: chrome
+2026-06-17 16:01:35 [INFO   ] Industry: hrtech | Query: college placement services India company contact
+2026-06-17 16:01:35 [INFO   ] Google search: college placement services India company contact
+2026-06-17 16:01:42 [INFO   ]   Found 6 unique result(s).
+2026-06-17 16:01:42 [INFO   ] Skip duplicate domain: scribd.com
+2026-06-17 16:01:42 [INFO   ] Skip duplicate domain: corp.freshersworld.com
+2026-06-17 16:01:42 [INFO   ] Skip duplicate domain: gsjobpoint.com
+2026-06-17 16:01:42 [INFO   ] Skip duplicate domain: talentcorner.in
+2026-06-17 16:01:42 [INFO   ] Scraping Vaze Placement Services (https://www.vazeplacement.co.in/)
+2026-06-17 16:01:44 [INFO   ]   Email found: vazeplacement@gmail.com
+2026-06-17 16:01:44 [INFO   ] Skip duplicate domain: randstad.in
+2026-06-17 16:01:44 [INFO   ] Industry: education_finance | Query: education financing startups India contact page
+2026-06-17 16:01:44 [INFO   ] Google search: education financing startups India contact page
+2026-06-17 16:01:48 [INFO   ]   Found 9 unique result(s).
+2026-06-17 16:01:48 [INFO   ] Scraping Contact Us (https://www.startupindia.gov.in/content/sih/en/contact-us.html)
+2026-06-17 16:02:18 [INFO   ]   Email found: dipp-startups@nic.in
+2026-06-17 16:02:18 [INFO   ]   Email found: nsadashboard@investindia.org.in
+2026-06-17 16:02:18 [INFO   ]   Email found: ananya.kumar@investindia.org.in
+2026-06-17 16:02:18 [INFO   ]   Email found: nikita.kochhar@investindia.org.in
+2026-06-17 16:02:18 [INFO   ]   Email found: pratiti.sharma@investindia.org.in
+2026-06-17 16:02:18 [INFO   ]   Email found: startupindiahub@investindia.org.in
+2026-06-17 16:02:18 [INFO   ]   Email found: test80iac07@gmail.com
+2026-06-17 16:02:18 [INFO   ]   Email found: customformdevtesting@yopmail.com
+2026-06-17 16:02:18 [INFO   ] Scraping Education grants & funding for startups in India (https://www.startupgrantsindia.com/?search=education)
+2026-06-17 16:02:20 [INFO   ]   Email found: team@startupgrantsindia.com
+2026-06-17 16:02:20 [INFO   ] Skip duplicate domain: eduvanz.com
+2026-06-17 16:02:20 [INFO   ] Scraping EduFund (https://www.edufund.in/)
+2026-06-17 16:02:27 [INFO   ]   Email found: hello@edufund.in
+2026-06-17 16:02:27 [INFO   ] Scraping School Loans (https://www.clix.capital/k12-loans/)
+2026-06-17 16:02:30 [INFO   ]   Email found: hello@clix.capital
+2026-06-17 16:02:30 [INFO   ] Scraping Top Companies in Education Loan Providers (Apr, 2026) (https://tracxn.com/d/trending-business-models/startups-in-education-loan-providers/__B3shBzqfmpyWmRpj55Vn_atfQ_MeK9JuiSV_zmy7AV0/companies)
+2026-06-17 16:02:34 [INFO   ]   Email found: hi@tracxn.com
+2026-06-17 16:02:35 [INFO   ] Scraping iCreate Spark-up Idea Fund (https://icreate.org.in/program_listing/spark-up-idea-fund/)
+2026-06-17 16:02:39 [INFO   ]   Email found: info@icreate.org.in
+2026-06-17 16:02:39 [INFO   ] Scraping Campus Fund: Home (https://yourcampusfund.com/)
+2026-06-17 16:02:46 [INFO   ]   Email found: team@yourcampususfund.com
+2026-06-17 16:02:46 [INFO   ]   Email found: team@yourcampusfund.com
+2026-06-17 16:02:47 [INFO   ] Scraping MeitY Startup Hub (https://msh.meity.gov.in/)
+2026-06-17 16:02:53 [INFO   ]   Email found: meity-sthub@gov.in
+2026-06-17 16:02:54 [INFO   ] Industry: edtech | Query: higher education technology companies India contact us
+2026-06-17 16:02:54 [INFO   ] Google search: higher education technology companies India contact us
+2026-06-17 16:02:57 [INFO   ]   Found 10 unique result(s).
+2026-06-17 16:02:57 [INFO   ] Skip duplicate domain: teamleaseedtech.com
+2026-06-17 16:02:57 [INFO   ] Skip duplicate domain: edutechindia.com
+2026-06-17 16:02:57 [INFO   ] Skip duplicate domain: houseofedtech.in
+2026-06-17 16:02:57 [INFO   ] Scraping Contact Us (https://www.edtech.in/contact)
+2026-06-17 16:03:15 [INFO   ]   Email found: info@edtech.in
+2026-06-17 16:03:15 [INFO   ] Scraping Contact Us (https://www.edutech.com/contact-us)
+2026-06-17 16:03:19 [INFO   ]   Email found: enquiry@edutech.com
+2026-06-17 16:03:19 [INFO   ] Skip duplicate domain: qualcampus.com
+2026-06-17 16:03:19 [INFO   ] Scraping Contact Us (https://www.edtechinnovate.com/contact)
+2026-06-17 16:03:22 [INFO   ]   Email found: info@edtechinnovate.com
+2026-06-17 16:03:22 [INFO   ]   Email found: southzone@edtechinnovate.com
+2026-06-17 16:03:22 [INFO   ] Scraping List of all Edtech Companies in Pune (Maharashtra) (https://d7leadfinder.com/app/view-leads/11825402/)
+2026-06-17 16:03:35 [INFO   ]   Email found: tinfo@619a86603n.com
+2026-06-17 16:03:35 [INFO   ]   Email found: info@m220994a6cdf3y.com
+2026-06-17 16:03:35 [INFO   ]   Email found: sales@6b80d64f770ae.com
+2026-06-17 16:03:35 [INFO   ]   Email found: info@mfa36fdco.in
+2026-06-17 16:03:36 [INFO   ]   Email found: info@p70be8r.com
+2026-06-17 16:03:36 [INFO   ]   Email found: cs@cut934rt.io
+2026-06-17 16:03:36 [INFO   ]   Email found: info@v332b15ee.com
+2026-06-17 16:03:36 [INFO   ]   Email found: pvos@m9e77b9fce39e.com
+2026-06-17 16:03:36 [INFO   ]   Email found: info@32617e586623fs.com
+2026-06-17 16:03:36 [INFO   ]   Email found: an@jarro.in
+2026-06-17 16:03:36 [INFO   ]   Email found: ksa@qu32f57447eh.com
+2026-06-17 16:03:36 [INFO   ]   Email found: info@i7217s.com
+2026-06-17 16:03:36 [INFO   ]   Email found: info@p5dc9796bs.com
+2026-06-17 16:03:36 [INFO   ]   Email found: info@d7leadfinder.com
+2026-06-17 16:03:36 [INFO   ] Scraping Contact MRCC EdTech (https://mrccedtech.com/contact-us/)
+2026-06-17 16:03:44 [INFO   ]   Email found: info@mrccsolutions.com
+2026-06-17 16:03:44 [INFO   ]   Email found: sales.edtech@mrccsolutions.com
+2026-06-17 16:03:45 [INFO   ] Scraping Contact Us (https://www.mheducation.co.in/contact-mcgraw-hill-india)
+2026-06-17 16:03:53 [INFO   ]   Email found: support.india@mheducation.com
+2026-06-17 16:03:53 [INFO   ] Scrape targets met: 17 companies with email (goal 16), 2 from ca_cs_firms (goal 2) — stopping.
+2026-06-17 16:03:54 [INFO   ] Scrape complete: {'queries_run': 3, 'companies_scraped': 15, 'companies_with_email': 17, 'emails_found': 40, 'email_target': 16, 'max_companies': 50, 'browser_used': 'chrome', 'industry_filter': 'all', 'ensure_industry_scrape': 'ca_cs_firms', 'ensure_industry_scrape_target': 2, 'ensure_industry_with_email': 2, 'ca_connect': {'ca_connect_ran': True, 'ca_connect_listings': 574, 'ca_profiles_enriched': 5, 'ca_profiles_failed': 0, 'ca_emails_imported': 2, 'ca_connect_logged_in': True, 'ca_connect_search': 'Audit | Maharashtra | Pune', 'error': '', 'browser_used': 'chromium-headless', 'ca_companies_upserted': 5}}
+2026-06-17 16:03:59 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\partnership.html)
+2026-06-17 16:03:59 [INFO   ] Sending up to 16 email(s) this run (emails_per_run).
+2026-06-17 16:04:01 [INFO   ] Send queue reserves 4/4 slot(s) for CA Connect JSON contacts.
+2026-06-17 16:04:01 [WARNING] Only 0/2 pending company_secretary_firms contact(s) in queue.
+2026-06-17 16:04:01 [WARNING] Only 0/2 pending tax_consultants contact(s) in queue.
+2026-06-17 16:04:06 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-17 16:04:18 [ERROR  ] Brevo send failed for vinitajain1990bittu@gmail.com: Brevo API send failed for vinitajain1990bittu@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:19 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d166aefeab2161-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '3221e820-1764-9b53-b2c1-6ac2ae6b511f', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '8', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=u58wsZIkRosyDEMiTzfoOId7IESmMjQ_MM0ToUSKgts-1781692459401-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:20 [ERROR  ] Brevo send failed for nikhil.amraotikar@gmail.com: Brevo API send failed for nikhil.amraotikar@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:21 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d166babbfbf66d-MUC', 'access-control-allow-credentials': 'true', 'sib-request-id': '71e6fdcf-7176-9654-91ab-b913aa91fc45', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '11', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=Cd.8vGBt7i70zWPH7ZnOfJxouf82s19XjhhKXgbUDh0-1781692461285-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:33 [ERROR  ] Brevo send failed for caadvaitmedhekar@gmail.com: Brevo API send failed for caadvaitmedhekar@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:34 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1670eacda2298-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '5c4197f9-ba49-9468-9661-43df21bc07a4', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '8', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=rZCHdEhknr2hz57b_vawEZggpm7vNnBVziCd2OqKf60-1781692474698-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:35 [ERROR  ] Brevo send failed for casumitpatil@gmail.com: Brevo API send failed for casumitpatil@gmail.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:36 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1671b0b5e99c6-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '6ca04d30-dd37-9844-832c-d6c11310acac', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '15', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=J8soY1feCrVtwlV4cB6OwLquY2UZlx1f4_kE_cjdBOs-1781692476680-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:45 [ERROR  ] Brevo send failed for info@kingstonconsultants.com: Brevo API send failed for info@kingstonconsultants.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:46 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d16756aeb4e0db-MUC', 'access-control-allow-credentials': 'true', 'sib-request-id': 'bba644dc-7967-9683-acca-50b7b2f6b462', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '8', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=KJ_RbnR3qlvRpsr2yGxGLWSxTZnjYL14L4cTRBbEmTU-1781692486227-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:47 [ERROR  ] Brevo send failed for info@icreate.org.in: Brevo API send failed for info@icreate.org.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:48 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d16761ed270473-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '932f474b-0397-9a64-9fdb-2bb7e14e8d91', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '7', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=y9m_DA7bpbB1CDZ_pzq6Y9tAcnAhrW9oyVHchk1w4hU-1781692488017-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:49 [ERROR  ] Brevo send failed for info@edtech.in: Brevo API send failed for info@edtech.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:50 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d167711bf499bc-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '3a76102d-bcba-9505-9ebc-28f2edfe2de3', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '184', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=ejjaHLemfeWcu7mOema2J2NZQ23TvE.4mAQx5NxCrYY-1781692490627-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:51 [ERROR  ] Brevo send failed for info@edtechinnovate.com: Brevo API send failed for info@edtechinnovate.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:52 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1677cdacd229d-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '3e1383fe-733c-9cbd-892e-14fb22fc4d85', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '6', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=HTBL8Ilfs_UODobVw4C1.4.eZzjq6JtHdqFcp0Meah8-1781692492324-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:04:53 [ERROR  ] Brevo send failed for info@m220994a6cdf3y.com: Brevo API send failed for info@m220994a6cdf3y.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:34:54 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1678a0e0199c9-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '5b8713f2-7509-95e5-8151-562ce603bf83', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '6', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=i_qEXpQ95CV6wqWuuebmOufHs6ffQdqjD9.3tK5nZxw-1781692494435-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:05:10 [ERROR  ] Brevo send failed for info@mrccsolutions.com: Brevo API send failed for info@mrccsolutions.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:35:11 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d167f0a8e998c0-LUX', 'access-control-allow-credentials': 'true', 'sib-request-id': 'eede1d68-a575-9591-b2f3-5cfc90748224', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=xecp_rwn.Rzzu0G5nxjTvb.B8iTLZniiuYXS82dMFPQ-1781692511064-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:05:12 [ERROR  ] Brevo send failed for hello@edufund.in: Brevo API send failed for hello@edufund.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:35:13 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d167fe2c225716-BCN', 'access-control-allow-credentials': 'true', 'sib-request-id': 'f67daf35-ee28-9d5f-b37f-16b4f011eac4', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '6', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=f2ihlVNkQsj2Y62dJXu4NTaBK6246yxNiVDyw9QCbUs-1781692513182-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:05:15 [ERROR  ] Brevo send failed for hello@clix.capital: Brevo API send failed for hello@clix.capital: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:35:16 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d16813cbc4ecc6-WAW', 'access-control-allow-credentials': 'true', 'sib-request-id': 'd6f28376-38b6-9daa-8ce3-775cd8946a68', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '13', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=SZoSo0WZChofw.YJ3Uw2eY8ZIUNtxgzQAhP2r.9lQ90-1781692516502-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:05:17 [ERROR  ] Brevo send failed for support@jamboreeeducation.com: Brevo API send failed for support@jamboreeeducation.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:35:18 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1681f69c33ca4-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '163d63d4-3e30-9897-a709-766056ee433b', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '6', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=BkXN2hY6CSvZ7S616zCsQ94TQECNo66I2kaIaPxbTAg-1781692518347-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:05:19 [ERROR  ] Brevo send failed for support@buysellprivatelimited.com: Brevo API send failed for support@buysellprivatelimited.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:35:20 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1682b7e05f188-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '570c8d60-8ce5-9dc1-ae9a-0bb29616d11e', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '8', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=eMLQKvmQ89lnsFYFifsPHhZi_Yemwu2KPZlwqml1600-1781692520270-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:05:34 [ERROR  ] Brevo send failed for support@iffcotokio.co.in: Brevo API send failed for support@iffcotokio.co.in: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:35:35 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1688be91199f4-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '712d032e-6cb6-92a4-bd5c-54875e88f6a6', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '9', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=PDUTA9nA3n1JXosgxqdQ4QJvxqFgpjUTOeZeCeI1jk8-1781692535705-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:06:05 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-17 16:06:08 [ERROR  ] Brevo send failed for support@ekatvamacademy.com: Brevo API send failed for support@ekatvamacademy.com: (401)
+Reason: Unauthorized
+HTTP response headers: HTTPHeaderDict({'Date': 'Wed, 17 Jun 2026 10:36:08 GMT', 'Content-Type': 'application/json', 'Content-Length': '233', 'Connection': 'keep-alive', 'CF-RAY': 'a0d1695a0eb4f100-CDG', 'access-control-allow-credentials': 'true', 'sib-request-id': '418ccff1-440f-9e5d-bf26-583bf13ca53e', 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'PUT, POST, GET, DELETE, PATCH, OPTIONS', 'x-envoy-upstream-service-time': '5', 'cf-cache-status': 'DYNAMIC', 'Set-Cookie': '_cfuvid=KPwzJdZVK8UwxNHNvzs2i5CAaJiabrzC6a4RNTpNJN0-1781692568912-0.0.1.1-604800000; path=/; domain=.sendinblue.com; HttpOnly; Secure; SameSite=None', 'Server': 'cloudflare'})
+HTTP response body: {"message":"We have detected you are using an unrecognised IP address 27.107.86.99. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+
+
+2026-06-17 16:06:14 [INFO   ] Send complete: {'sent': 0, 'failed': 16, 'skipped': 0, 'queue_size': 16, 'ensure_industry': 'ca_cs_firms', 'ensure_min_slots': 0, 'ensure_reserved_in_queue': 0, 'ensure_ca_connect_min': 4, 'ensure_ca_connect_reserved': 4, 'sent_ca_connect': 0, 'reserved_by_industry': {'company_secretary_firms': 2, 'tax_consultants': 2}, 'reserved_in_queue_by_industry': {'company_secretary_firms': 0, 'tax_consultants': 0}, 'sent_by_industry': {}, 'send_limit': 16}
+2026-06-17 16:06:14 [INFO   ] 
+2026-06-17 16:06:14 [INFO   ] ======================================================================
+2026-06-17 16:06:14 [INFO   ]   RUN SUMMARY
+2026-06-17 16:06:14 [INFO   ] ======================================================================
+2026-06-17 16:06:14 [INFO   ]   SCRAPE — this run
+2026-06-17 16:06:14 [INFO   ]     Run limits (config):             max 50 sites, stop at 16 with email, max 20 Google queries
+2026-06-17 16:06:14 [INFO   ]       Caps from sender_config.json; scrape stops early when email target is met.
+2026-06-17 16:06:14 [INFO   ] 
+2026-06-17 16:06:14 [INFO   ]   CA Connect — https://caconnect.icai.org/
+2026-06-17 16:06:14 [INFO   ]     Search filters:                  Audit | Maharashtra | Pune
+2026-06-17 16:06:14 [INFO   ]       Service, state, and city from ca_connect_credentials.json.
+2026-06-17 16:06:14 [INFO   ]     Listings on results page:        574
+2026-06-17 16:06:14 [INFO   ]       Member + firm cards returned by CA Connect search (not all have email).
+2026-06-17 16:06:14 [INFO   ]     Profile pages opened:            5
+2026-06-17 16:06:14 [INFO   ]       Logged-in profile visits to extract email/mobile this run.
+2026-06-17 16:06:14 [INFO   ]     New emails added to DB:          2
+2026-06-17 16:06:14 [INFO   ]       First-time imports into immigration.db as ca_cs_firms (duplicates skipped).
+2026-06-17 16:06:14 [INFO   ]     CA records upserted:             5
+2026-06-17 16:06:14 [INFO   ]       Companies created/updated in DB (may include already-known emails).
+2026-06-17 16:06:14 [INFO   ] 
+2026-06-17 16:06:14 [INFO   ]   Google website scrape — this run
+2026-06-17 16:06:14 [INFO   ]     Websites visited:                15
+2026-06-17 16:06:14 [INFO   ]       Company sites opened from Google search results (excludes CA Connect).
+2026-06-17 16:06:14 [INFO   ]     Sites where email was found:     15
+2026-06-17 16:06:14 [INFO   ]       Distinct companies with at least one new email this run (Google only).
+2026-06-17 16:06:14 [INFO   ]     Email addresses discovered:      38
+2026-06-17 16:06:14 [INFO   ]       New email rows saved to the database from Google scraping.
+2026-06-17 16:06:14 [INFO   ]     Google queries executed:         3
+2026-06-17 16:06:14 [INFO   ]       Search queries consumed from the pending queue this run.
+2026-06-17 16:06:14 [INFO   ]     Reserved industry (ca_cs_firms): 2 / 2 new emails (met)
+2026-06-17 16:06:14 [INFO   ]       Chartered Accountants & Company Secretaries — minimum new contacts per run (sourced via CA Connect for ca_cs_firms).
+2026-06-17 16:06:14 [INFO   ]     Browser:                         chrome
+2026-06-17 16:06:14 [INFO   ]       Engine used for Google website scraping.
+2026-06-17 16:06:14 [INFO   ] 
+2026-06-17 16:06:14 [INFO   ]   REPLIES — this run
+2026-06-17 16:06:14 [INFO   ]     Inbox check:                     skipped
+2026-06-17 16:06:14 [INFO   ]       Reply forwarding is off (check_replies_before_send: false in sender_config.json).
+2026-06-17 16:06:14 [INFO   ] 
+2026-06-17 16:06:14 [INFO   ]   SEND — this run
+2026-06-17 16:06:14 [INFO   ]     Recipients queued:               16
+2026-06-17 16:06:14 [INFO   ]       Unsent contacts considered this run (send cap: 16 per run).
+2026-06-17 16:06:14 [INFO   ]     Queue slots for CA Connect JSON: 4 / 4 reserved
+2026-06-17 16:06:14 [INFO   ]       Individual CAs from ca_connect_results.json (caconnect.icai.org profiles), not Google-scraped CA firm sites.
+2026-06-17 16:06:14 [INFO   ]     Sent to CA Connect JSON:         0
+2026-06-17 16:06:14 [INFO   ]       Funding intro emails to CAs imported from CA Connect this run.
+2026-06-17 16:06:14 [INFO   ]     Queue slots for company_secretary_firms: 0 / 2 reserved
+2026-06-17 16:06:14 [INFO   ]       Company Secretary Firms — minimum send slots per run when contacts are available.
+2026-06-17 16:06:14 [INFO   ]     Queue slots for tax_consultants: 0 / 2 reserved
+2026-06-17 16:06:14 [INFO   ]       Tax Consultants — minimum send slots per run when contacts are available.
+2026-06-17 16:06:14 [INFO   ]     Emails sent successfully:        0
+2026-06-17 16:06:14 [INFO   ]       Partnership / funding intro emails delivered via Brevo this run.
+2026-06-17 16:06:14 [INFO   ]     Send failures:                   16
+2026-06-17 16:06:14 [INFO   ]       Brevo API or transport errors (not counted as sent).
+2026-06-17 16:06:14 [INFO   ]     Skipped:                         0
+2026-06-17 16:06:14 [INFO   ]       Dry-run previews or recipients already marked sent in the database.
+2026-06-17 16:06:15 [INFO   ] 
+2026-06-17 16:06:15 [INFO   ]   DATABASE — cumulative (all runs)
+2026-06-17 16:06:15 [INFO   ]     Companies stored:                649
+2026-06-17 16:06:15 [INFO   ]       All scraped organisations across every industry vertical.
+2026-06-17 16:06:15 [INFO   ]     Companies with email:            523
+2026-06-17 16:06:15 [INFO   ]       Records with email_status = found (ready or already used for outreach).
+2026-06-17 16:06:15 [INFO   ]     Email addresses on file:         5753
+2026-06-17 16:06:15 [INFO   ]       Total rows in company_emails (one company may have several).
+2026-06-17 16:06:15 [INFO   ]     Emails sent (lifetime):          326
+2026-06-17 16:06:15 [INFO   ]       Unique recipients successfully emailed at least once.
+2026-06-17 16:06:15 [INFO   ]     Send failures (lifetime):        48
+2026-06-17 16:06:15 [INFO   ]       Recipients with a failed status in email_sent.
+2026-06-17 16:06:15 [INFO   ]     Replies forwarded (lifetime):    0
+2026-06-17 16:06:15 [INFO   ]       Human replies forwarded to your Gmail.
+2026-06-17 16:06:15 [INFO   ]     Ready to send (now):             336
+2026-06-17 16:06:15 [INFO   ]       Unsent contacts still in the outbound queue for future runs.
+2026-06-17 16:06:15 [INFO   ]     Google queries pending:          12
+2026-06-17 16:06:15 [INFO   ]       Unused search queries waiting for future scrape runs.
+2026-06-17 16:06:16 [INFO   ]     Unsent ca_cs_firms:              46
+2026-06-17 16:06:16 [INFO   ]       Chartered Accountants & Company Secretaries contacts not yet emailed (all sources).
+2026-06-17 16:06:17 [INFO   ]     Unsent CA Connect JSON:          24
+2026-06-17 16:06:17 [INFO   ]       Individual CAs from ca_connect_results.json still available to email.
+2026-06-17 16:06:17 [INFO   ]     Companies by industry (with email / total):
+2026-06-17 16:06:17 [INFO   ]       NBFC & Banks (Campus Hiring)     21 / 32
+2026-06-17 16:06:17 [INFO   ]       Chartered Accountants & Company Secretaries 96 / 104
+2026-06-17 16:06:17 [INFO   ]       Coaching & Test Prep             33 / 39
+2026-06-17 16:06:17 [INFO   ]       Corporate CSR Programs           28 / 36
+2026-06-17 16:06:17 [INFO   ]       EdTech Companies                 42 / 46
+2026-06-17 16:06:17 [INFO   ]       Student Loan / Education Finance 27 / 37
+2026-06-17 16:06:17 [INFO   ]       HRTech Companies                 38 / 56
+2026-06-17 16:06:17 [INFO   ]       Insurance (Campus & Graduate Hiring) 25 / 33
+2026-06-17 16:06:17 [INFO   ]       Law Firms & Lawyers              65 / 85
+2026-06-17 16:06:17 [INFO   ]       Overseas Education / Immigration 63 / 77
+2026-06-17 16:06:17 [INFO   ]       Recruitment & Staffing Firms     36 / 50
+2026-06-17 16:06:17 [INFO   ]       Training & Finishing Schools     49 / 54
+2026-06-17 16:06:17 [INFO   ] ======================================================================
+2026-06-17 16:06:17 [INFO   ] 

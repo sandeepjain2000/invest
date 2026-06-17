@@ -284,6 +284,19 @@ class ImmigrationDB:
         self.conn.commit()
         return added
 
+    def count_pending_queries_for_industry(self, industry_id: str) -> int:
+        key = (industry_id or "").strip()
+        if not key:
+            return 0
+        row = self.conn.execute(
+            """
+            SELECT COUNT(*) FROM search_queries
+            WHERE status = 'pending' AND industry = ?
+            """,
+            (key,),
+        ).fetchone()
+        return int(row[0]) if row else 0
+
     def next_pending_query(
         self,
         industry: str | None = None,

@@ -4,15 +4,16 @@ setlocal EnableExtensions
 cd /d "%~dp0"
 
 rem Defaults live in sender_config.json:
-rem   emails_per_run         = 16
-rem   max_companies_per_run  = 50
-rem   max_queries_per_run    = 20
+rem   emails_per_run         = 32
+rem   max_companies_per_run  = 100
+rem   max_queries_per_run    = 40
 rem Optional overrides below (leave blank to use JSON defaults).
 
 set "SEND_LIMIT="
 set "MAX_COMPANIES="
 set "MAX_QUERIES="
 set "BROWSER=auto"
+set "HEADLESS="
 set "REGION=India"
 
 echo ============================================================
@@ -31,6 +32,8 @@ set "RUN_ARGS=run --browser %BROWSER% --region %REGION%"
 if not "%SEND_LIMIT%"=="" set "RUN_ARGS=%RUN_ARGS% --send-limit %SEND_LIMIT%"
 if not "%MAX_COMPANIES%"=="" set "RUN_ARGS=%RUN_ARGS% --max-companies %MAX_COMPANIES%"
 if not "%MAX_QUERIES%"=="" set "RUN_ARGS=%RUN_ARGS% --max-queries %MAX_QUERIES%"
+if /I "%HEADLESS%"=="1" set "RUN_ARGS=%RUN_ARGS% --headless"
+if /I "%HEADLESS%"=="true" set "RUN_ARGS=%RUN_ARGS% --headless"
 
 python immigration_pipeline.py %RUN_ARGS%
 
