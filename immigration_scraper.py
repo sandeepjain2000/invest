@@ -13,6 +13,7 @@ from playwright.async_api import Page, async_playwright
 from browser_utils import dismiss_page_obstructions, launch_context, scrape_complete_beep
 from immigration_db import ImmigrationDB, clean_domain
 from immigration_sender import (
+    get_ca_bulk_send_settings,
     get_ensure_industry_settings,
     get_reserved_send_by_industry,
     load_sender_config,
@@ -28,6 +29,7 @@ from pipeline_progress import (
 from industries import (
     default_region,
     google_scrape_industry_ids,
+    list_industries,
     queries_per_industry,
     scrape_source_for,
     seed_queries_for,
@@ -408,6 +410,26 @@ def _auto_seed_queries(
     return added
 
 
+def _ca_connect_industry_ids() -> list[str]:
+    return [
+        i["id"]
+        for i in list_industries(active_only=False)
+        if scrape_source_for(i["id"]) == "ca_connect"
+    ]
+
+
+def _should_run_pipeline_ca_connect_scrape() -> bool:
+    bulk = get_ca_bulk_send_settings()
+    if bulk.get("enabled"):
+        return False
+    from ca_connect_pipeline import get_ca_connect_settings
+
+    settings = get_ca_connect_settings()
+    if not settings.get("enabled"):
+        return False
+    return True
+
+
 def _scrape_targets_met(
     stats: dict,
     *,
@@ -458,11 +480,7 @@ async def run_scrape(
         ensure_industry and scrape_source_for(ensure_industry) == "ca_connect"
     )
     apply_ensure_scrape = bool(not industry and ensure_industry and min_ensure_scrape > 0)
-    google_exclude = [
-        iid
-        for iid in google_scrape_industry_ids(active_only=False)
-        if scrape_source_for(iid) == "ca_connect"
-    ]
+    google_exclude = _ca_connect_industry_ids()
     google_only = not industry or scrape_source_for(industry) != "ca_connect"
 
     stats = {
@@ -483,7 +501,9 @@ async def run_scrape(
         "google_headless": headless,
     }
 
-    if run_ca_connect_for_pipeline_async and (not industry or ensure_via_ca_connect):
+    if _should_run_pipeline_ca_connect_scrape() and run_ca_connect_for_pipeline_async and (
+        not industry or ensure_via_ca_connect
+    ):
         logger.info("=== CA Connect scrape (https://caconnect.icai.org/) ===")
         notify_stage(cfg, "ca_connect_start", dry_run=dry_run)
         ca_stats = await run_ca_connect_for_pipeline_async(db, browser=browser)
@@ -505,6 +525,11 @@ async def run_scrape(
                 f"CA Connect — {imported} email(s) from "
                 f"{int(ca_stats.get('ca_profiles_enriched') or 0)} profile(s)"
             )
+    elif _ca_connect_industry_ids():
+        logger.info(
+            "CA Connect pipeline scrape skipped — harvest via run_ca_bulk_import.bat; "
+            "partnership send uses ca_bulk.db only (caconnect.icai.org)."
+        )
 
     if not google_only:
         logger.info(

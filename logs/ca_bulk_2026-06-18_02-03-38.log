@@ -1,0 +1,1717 @@
+2026-06-18 02:03:38 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\ca_bulk_2026-06-18_02-03-38.log
+2026-06-18 02:03:38 [INFO   ] 
+2026-06-18 02:03:38 [INFO   ] ==============================================================
+2026-06-18 02:03:38 [INFO   ] PROGRESS | Bulk CA import — goal 1000 new email(s), batch size 50
+2026-06-18 02:03:38 [INFO   ] ==============================================================
+2026-06-18 02:03:38 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Pune (277 pending in this city)
+2026-06-18 02:03:39 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:03:45 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:03:48 [INFO   ] PROGRESS | CA Connect 1/50 | PUSHKAR ANIL JOSHI | ca.pushkarjoshi@gmail.com
+2026-06-18 02:03:48 [INFO   ]   [1/50] PUSHKAR ANIL JOSHI | ca.pushkarjoshi@gmail.com
+2026-06-18 02:03:53 [INFO   ] PROGRESS | CA Connect 2/50 | ADVAIT PRASHANT MEDHEKAR | caadvaitmedhekar@gmail.com
+2026-06-18 02:03:53 [INFO   ]   [2/50] ADVAIT PRASHANT MEDHEKAR | caadvaitmedhekar@gmail.com
+2026-06-18 02:03:58 [INFO   ] PROGRESS | CA Connect 3/50 | AKASH PRAKASH ASABE | caakashasabe@gmail.com
+2026-06-18 02:03:58 [INFO   ]   [3/50] AKASH PRAKASH ASABE | caakashasabe@gmail.com
+2026-06-18 02:04:05 [INFO   ] PROGRESS | CA Connect 4/50 | RAJENDRA SENAPATI | senapati_rajendra@yahoo.com
+2026-06-18 02:04:05 [INFO   ]   [4/50] RAJENDRA SENAPATI | senapati_rajendra@yahoo.com
+2026-06-18 02:04:10 [INFO   ] PROGRESS | CA Connect 5/50 | SAGAR BALASAHEB BHOSALE | casagarbhosale@gmail.com
+2026-06-18 02:04:10 [INFO   ]   [5/50] SAGAR BALASAHEB BHOSALE | casagarbhosale@gmail.com
+2026-06-18 02:04:15 [INFO   ] PROGRESS | CA Connect 6/50 | SOPAN PARMESHWAR LATE | sopanlate07@gmail.com
+2026-06-18 02:04:15 [INFO   ]   [6/50] SOPAN PARMESHWAR LATE | sopanlate07@gmail.com
+2026-06-18 02:04:20 [INFO   ] PROGRESS | CA Connect 7/50 | NINAD VIJAY KANADE | nvkanade@gmail.com
+2026-06-18 02:04:20 [INFO   ]   [7/50] NINAD VIJAY KANADE | nvkanade@gmail.com
+2026-06-18 02:04:25 [INFO   ] PROGRESS | CA Connect 8/50 | OMPRAKASH RAJGOPAL ZANWAR | omzanwar2002@gmail.com
+2026-06-18 02:04:25 [INFO   ]   [8/50] OMPRAKASH RAJGOPAL ZANWAR | omzanwar2002@gmail.com
+2026-06-18 02:04:30 [INFO   ] PROGRESS | CA Connect 9/50 | NITIN ANKUSHRAO HAKE | hakenitin3@gmail.com
+2026-06-18 02:04:30 [INFO   ]   [9/50] NITIN ANKUSHRAO HAKE | hakenitin3@gmail.com
+2026-06-18 02:04:35 [INFO   ] PROGRESS | CA Connect 10/50 | PRASANNAVENKATESHWARAN BALACHANDRAN IYER | suryaprasanna2001@gmail.com
+2026-06-18 02:04:35 [INFO   ]   [10/50] PRASANNAVENKATESHWARAN BALACHANDRAN IYER | suryaprasanna2001@gmail.com
+2026-06-18 02:04:40 [INFO   ] PROGRESS | CA Connect 11/50 | VAIBHAV RAMCHANDRA MOHOLKAR | cavaibhavmoholkar@gmail.com
+2026-06-18 02:04:40 [INFO   ]   [11/50] VAIBHAV RAMCHANDRA MOHOLKAR | cavaibhavmoholkar@gmail.com
+2026-06-18 02:04:45 [INFO   ] PROGRESS | CA Connect 12/50 | AKSHAY KAILASH VARMA | caakshaykvarma@gmail.com
+2026-06-18 02:04:45 [INFO   ]   [12/50] AKSHAY KAILASH VARMA | caakshaykvarma@gmail.com
+2026-06-18 02:04:50 [INFO   ] PROGRESS | CA Connect 13/50 | SIDHANT CHANDRASHEKHAR KHINVASARA | sidvb13@gmail.com
+2026-06-18 02:04:50 [INFO   ]   [13/50] SIDHANT CHANDRASHEKHAR KHINVASARA | sidvb13@gmail.com
+2026-06-18 02:04:55 [INFO   ] PROGRESS | CA Connect 14/50 | SHITAL DEVENDRA BOHARA | smunot18@gmail.com
+2026-06-18 02:04:55 [INFO   ]   [14/50] SHITAL DEVENDRA BOHARA | smunot18@gmail.com
+2026-06-18 02:05:00 [INFO   ] PROGRESS | CA Connect 15/50 | UDAY SHETTY | caudayshetty@gmail.com
+2026-06-18 02:05:00 [INFO   ]   [15/50] UDAY SHETTY | caudayshetty@gmail.com
+2026-06-18 02:05:05 [INFO   ] PROGRESS | CA Connect 16/50 | SUYOG SUDHIR AWACHAT | awachat.suyog@gmail.com
+2026-06-18 02:05:05 [INFO   ]   [16/50] SUYOG SUDHIR AWACHAT | awachat.suyog@gmail.com
+2026-06-18 02:05:11 [INFO   ] PROGRESS | CA Connect 17/50 | ZALAK NEIL SHAH | zalakshah707@gmail.com
+2026-06-18 02:05:11 [INFO   ]   [17/50] ZALAK NEIL SHAH | zalakshah707@gmail.com
+2026-06-18 02:05:16 [INFO   ] PROGRESS | CA Connect 18/50 | SUMIT KIRAN PATIL | casumitpatil@gmail.com
+2026-06-18 02:05:16 [INFO   ]   [18/50] SUMIT KIRAN PATIL | casumitpatil@gmail.com
+2026-06-18 02:05:21 [INFO   ] PROGRESS | CA Connect 19/50 | SATBHAI DILIP VASANTRAO | dvsatbhaiandco@gmail.com
+2026-06-18 02:05:21 [INFO   ]   [19/50] SATBHAI DILIP VASANTRAO | dvsatbhaiandco@gmail.com
+2026-06-18 02:05:26 [INFO   ] PROGRESS | CA Connect 20/50 | KIRAN DIPAK BAFNA | kiranbafna5@gmail.com
+2026-06-18 02:05:26 [INFO   ]   [20/50] KIRAN DIPAK BAFNA | kiranbafna5@gmail.com
+2026-06-18 02:05:32 [INFO   ] PROGRESS | CA Connect 21/50 | MAHESH PRABHAKAR SARDESAI | maheshsardesai.ca@gmail.com
+2026-06-18 02:05:32 [INFO   ]   [21/50] MAHESH PRABHAKAR SARDESAI | maheshsardesai.ca@gmail.com
+2026-06-18 02:05:37 [INFO   ] PROGRESS | CA Connect 22/50 | AMOL ASHOK KHANDEKAR | amolkpune@gmail.com
+2026-06-18 02:05:37 [INFO   ]   [22/50] AMOL ASHOK KHANDEKAR | amolkpune@gmail.com
+2026-06-18 02:05:42 [INFO   ] PROGRESS | CA Connect 23/50 | CHIRAYU BHIKCHAND BAGMAR | chirayubagmar@gmail.com
+2026-06-18 02:05:42 [INFO   ]   [23/50] CHIRAYU BHIKCHAND BAGMAR | chirayubagmar@gmail.com
+2026-06-18 02:05:47 [INFO   ] PROGRESS | CA Connect 24/50 | LALIT RAMESH BADGUJAR | lalit151323@gmail.com
+2026-06-18 02:05:47 [INFO   ]   [24/50] LALIT RAMESH BADGUJAR | lalit151323@gmail.com
+2026-06-18 02:05:52 [INFO   ] PROGRESS | CA Connect 25/50 | PRAKASH KISHANLAL SUNEJA | prakashsuneja@gmail.com
+2026-06-18 02:05:52 [INFO   ]   [25/50] PRAKASH KISHANLAL SUNEJA | prakashsuneja@gmail.com
+2026-06-18 02:05:57 [INFO   ] PROGRESS | CA Connect 26/50 | PANKAJ SHANKAR MODANI | pankajmodani@yahoo.co.in
+2026-06-18 02:05:57 [INFO   ]   [26/50] PANKAJ SHANKAR MODANI | pankajmodani@yahoo.co.in
+2026-06-18 02:06:02 [INFO   ] PROGRESS | CA Connect 27/50 | AKASH VIKAS MORE | caakashvmore@gmail.com
+2026-06-18 02:06:02 [INFO   ]   [27/50] AKASH VIKAS MORE | caakashvmore@gmail.com
+2026-06-18 02:06:07 [INFO   ] PROGRESS | CA Connect 28/50 | SHASHIKANT CHANDRAKANT BHANDARI | ssssandco@gmail.com
+2026-06-18 02:06:07 [INFO   ]   [28/50] SHASHIKANT CHANDRAKANT BHANDARI | ssssandco@gmail.com
+2026-06-18 02:06:12 [INFO   ] PROGRESS | CA Connect 29/50 | VINITA JAIN | vinitajain1990bittu@gmail.com
+2026-06-18 02:06:12 [INFO   ]   [29/50] VINITA JAIN | vinitajain1990bittu@gmail.com
+2026-06-18 02:06:17 [INFO   ] PROGRESS | CA Connect 30/50 | KIRAN ARUNKUMAR DEVGIRIKAR | cadevgirikar@gmail.com
+2026-06-18 02:06:17 [INFO   ]   [30/50] KIRAN ARUNKUMAR DEVGIRIKAR | cadevgirikar@gmail.com
+2026-06-18 02:06:22 [INFO   ] PROGRESS | CA Connect 31/50 | SATHEESH MANMOHAN | satheeshpune@gmail.com
+2026-06-18 02:06:22 [INFO   ]   [31/50] SATHEESH MANMOHAN | satheeshpune@gmail.com
+2026-06-18 02:06:27 [INFO   ] PROGRESS | CA Connect 32/50 | PIYUSH PRAKASH HARWANI | capiyush29@gmail.com
+2026-06-18 02:06:27 [INFO   ]   [32/50] PIYUSH PRAKASH HARWANI | capiyush29@gmail.com
+2026-06-18 02:06:32 [INFO   ] PROGRESS | CA Connect 33/50 | PRASHANT KANTILAL MORE | caprashantmore@gmail.com
+2026-06-18 02:06:32 [INFO   ]   [33/50] PRASHANT KANTILAL MORE | caprashantmore@gmail.com
+2026-06-18 02:06:37 [INFO   ] PROGRESS | CA Connect 34/50 | VIRAJ ARUN SULE | vajs2003@yahoo.co.in
+2026-06-18 02:06:37 [INFO   ]   [34/50] VIRAJ ARUN SULE | vajs2003@yahoo.co.in
+2026-06-18 02:06:42 [INFO   ] PROGRESS | CA Connect 35/50 | KULKARNI SANJEEV SRIKRISHNA | s.sanjeev.kulkarni@gmail.com
+2026-06-18 02:06:42 [INFO   ]   [35/50] KULKARNI SANJEEV SRIKRISHNA | s.sanjeev.kulkarni@gmail.com
+2026-06-18 02:06:47 [INFO   ] PROGRESS | CA Connect 36/50 | VINOD BABULAL ASAWA | vinodasawa@yahoo.com
+2026-06-18 02:06:47 [INFO   ]   [36/50] VINOD BABULAL ASAWA | vinodasawa@yahoo.com
+2026-06-18 02:06:54 [INFO   ] PROGRESS | CA Connect 37/50 | DIPAK SUBHASH WAMANACHARYA | cadipaks@gmail.com
+2026-06-18 02:06:54 [INFO   ]   [37/50] DIPAK SUBHASH WAMANACHARYA | cadipaks@gmail.com
+2026-06-18 02:06:59 [INFO   ] PROGRESS | CA Connect 38/50 | ARATI ASHOK PHARATE | pharatearati@gmail.com
+2026-06-18 02:06:59 [INFO   ]   [38/50] ARATI ASHOK PHARATE | pharatearati@gmail.com
+2026-06-18 02:07:04 [INFO   ] PROGRESS | CA Connect 39/50 | JITEN RAMESH KUKREJA | cajitenkukreja@gmail.com
+2026-06-18 02:07:04 [INFO   ]   [39/50] JITEN RAMESH KUKREJA | cajitenkukreja@gmail.com
+2026-06-18 02:07:09 [INFO   ] PROGRESS | CA Connect 40/50 | ANKIT DILIP PARAKH | ankit.parakh009@gmail.com
+2026-06-18 02:07:09 [INFO   ]   [40/50] ANKIT DILIP PARAKH | ankit.parakh009@gmail.com
+2026-06-18 02:07:14 [INFO   ] PROGRESS | CA Connect 41/50 | PRIYANKA JAIN | cacspj252@gmail.com
+2026-06-18 02:07:14 [INFO   ]   [41/50] PRIYANKA JAIN | cacspj252@gmail.com
+2026-06-18 02:07:19 [INFO   ] PROGRESS | CA Connect 42/50 | NARESHKUMAR BALAJIRAO KULKARNI | canareshkulkarni@gmail.com
+2026-06-18 02:07:19 [INFO   ]   [42/50] NARESHKUMAR BALAJIRAO KULKARNI | canareshkulkarni@gmail.com
+2026-06-18 02:07:24 [INFO   ] PROGRESS | CA Connect 43/50 | SHEETAL MAHENDRA GADIYA | smgadiya@gmail.com
+2026-06-18 02:07:24 [INFO   ]   [43/50] SHEETAL MAHENDRA GADIYA | smgadiya@gmail.com
+2026-06-18 02:07:29 [INFO   ] PROGRESS | CA Connect 44/50 | SNEHAL SAURABH MOHITE | casnehalmohite@gmail.com
+2026-06-18 02:07:29 [INFO   ]   [44/50] SNEHAL SAURABH MOHITE | casnehalmohite@gmail.com
+2026-06-18 02:07:34 [INFO   ] PROGRESS | CA Connect 45/50 | DAHOTRE ABHAYKUMAR BAPURAO | abhaykumardahotre@gmail.com
+2026-06-18 02:07:34 [INFO   ]   [45/50] DAHOTRE ABHAYKUMAR BAPURAO | abhaykumardahotre@gmail.com
+2026-06-18 02:07:39 [INFO   ] PROGRESS | CA Connect 46/50 | JAYESH EKNATHRAO RELKAR | cajayeshrelkar@gmail.com
+2026-06-18 02:07:39 [INFO   ]   [46/50] JAYESH EKNATHRAO RELKAR | cajayeshrelkar@gmail.com
+2026-06-18 02:07:44 [INFO   ] PROGRESS | CA Connect 47/50 | SHIVAJI BABURAO DESHMUKH | capshivaji@gmail.com
+2026-06-18 02:07:44 [INFO   ]   [47/50] SHIVAJI BABURAO DESHMUKH | capshivaji@gmail.com
+2026-06-18 02:07:49 [INFO   ] PROGRESS | CA Connect 48/50 | SUDHIR RAJARAM PAITHANKAR | capaithankaroffice@gmail.com
+2026-06-18 02:07:49 [INFO   ]   [48/50] SUDHIR RAJARAM PAITHANKAR | capaithankaroffice@gmail.com
+2026-06-18 02:07:54 [INFO   ] PROGRESS | CA Connect 49/50 | SARIKA SATISH DINDOKAR | casarikadeshpande@gmail.com
+2026-06-18 02:07:54 [INFO   ]   [49/50] SARIKA SATISH DINDOKAR | casarikadeshpande@gmail.com
+2026-06-18 02:07:59 [INFO   ] PROGRESS | CA Connect 50/50 | SONIYA KUKREJA | sonalkukreja25@gmail.com
+2026-06-18 02:07:59 [INFO   ]   [50/50] SONIYA KUKREJA | sonalkukreja25@gmail.com
+2026-06-18 02:07:59 [INFO   ] Batch done — 50 new email(s) this batch | run total 50 / 1000
+2026-06-18 02:07:59 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Pune (227 pending in this city)
+2026-06-18 02:08:00 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:08:06 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:08:09 [INFO   ] PROGRESS | CA Connect 1/50 | SHUBHAM SURESH SONI | shubham.613603@mail.ca.in
+2026-06-18 02:08:09 [INFO   ]   [1/50] SHUBHAM SURESH SONI | shubham.613603@mail.ca.in
+2026-06-18 02:08:14 [INFO   ] PROGRESS | CA Connect 2/50 | ROHIT DEEPAK TUPKAR | rohittupkar@gmail.com
+2026-06-18 02:08:14 [INFO   ]   [2/50] ROHIT DEEPAK TUPKAR | rohittupkar@gmail.com
+2026-06-18 02:08:19 [INFO   ] PROGRESS | CA Connect 3/50 | AJINKYA KISHOR YEOLE | caajinkyayeole@gmail.com
+2026-06-18 02:08:19 [INFO   ]   [3/50] AJINKYA KISHOR YEOLE | caajinkyayeole@gmail.com
+2026-06-18 02:08:24 [INFO   ] PROGRESS | CA Connect 4/50 | NIKHIL NARENDRA CHHALLANI | chhallani25@gmail.com
+2026-06-18 02:08:24 [INFO   ]   [4/50] NIKHIL NARENDRA CHHALLANI | chhallani25@gmail.com
+2026-06-18 02:08:29 [INFO   ] PROGRESS | CA Connect 5/50 | SMITA NITIN MURDEKAR | casmitamurdekar@gmail.com
+2026-06-18 02:08:29 [INFO   ]   [5/50] SMITA NITIN MURDEKAR | casmitamurdekar@gmail.com
+2026-06-18 02:08:36 [INFO   ] PROGRESS | CA Connect 6/50 | AMOL SHANKARRAO SHINGOTE | amolsshingote@gmail.com
+2026-06-18 02:08:36 [INFO   ]   [6/50] AMOL SHANKARRAO SHINGOTE | amolsshingote@gmail.com
+2026-06-18 02:08:41 [INFO   ] PROGRESS | CA Connect 7/50 | DEEPAK RAMDAS GATLEWAR | deepakgatlewar@gmail.com
+2026-06-18 02:08:41 [INFO   ]   [7/50] DEEPAK RAMDAS GATLEWAR | deepakgatlewar@gmail.com
+2026-06-18 02:08:46 [INFO   ] PROGRESS | CA Connect 8/50 | ASHOK UTTAM MOJAD | ashokmojad@yahoo.in
+2026-06-18 02:08:46 [INFO   ]   [8/50] ASHOK UTTAM MOJAD | ashokmojad@yahoo.in
+2026-06-18 02:08:51 [INFO   ] PROGRESS | CA Connect 9/50 | ANITA ANAND PARIHAR | anitasinghrajput@gmail.com
+2026-06-18 02:08:51 [INFO   ]   [9/50] ANITA ANAND PARIHAR | anitasinghrajput@gmail.com
+2026-06-18 02:08:56 [INFO   ] PROGRESS | CA Connect 10/50 | BAGESHRI SAMEER KHADILKAR | ca.bageshri@gmail.com
+2026-06-18 02:08:56 [INFO   ]   [10/50] BAGESHRI SAMEER KHADILKAR | ca.bageshri@gmail.com
+2026-06-18 02:09:01 [INFO   ] PROGRESS | CA Connect 11/50 | JAGDISHKUMAR DAYARAM CHOUDHARI | cajagdishchoudhary@gmail.com
+2026-06-18 02:09:01 [INFO   ]   [11/50] JAGDISHKUMAR DAYARAM CHOUDHARI | cajagdishchoudhary@gmail.com
+2026-06-18 02:09:06 [INFO   ] PROGRESS | CA Connect 12/50 | ANUJ RAVINDRA AGARWAL | agarwalanuj688@gmail.com
+2026-06-18 02:09:06 [INFO   ]   [12/50] ANUJ RAVINDRA AGARWAL | agarwalanuj688@gmail.com
+2026-06-18 02:09:11 [INFO   ] PROGRESS | CA Connect 13/50 | ASHTEKAR VIJAY NANDKUMAR | ashtekarca@gmail.com
+2026-06-18 02:09:11 [INFO   ]   [13/50] ASHTEKAR VIJAY NANDKUMAR | ashtekarca@gmail.com
+2026-06-18 02:09:16 [INFO   ] PROGRESS | CA Connect 14/50 | SURESH BABURAO SHINGTE | susneha_57@yahoo.com
+2026-06-18 02:09:16 [INFO   ]   [14/50] SURESH BABURAO SHINGTE | susneha_57@yahoo.com
+2026-06-18 02:09:21 [INFO   ] PROGRESS | CA Connect 15/50 | RAJU MAHADEV PADAVALE | caraj2007@gmail.com
+2026-06-18 02:09:21 [INFO   ]   [15/50] RAJU MAHADEV PADAVALE | caraj2007@gmail.com
+2026-06-18 02:09:27 [INFO   ] PROGRESS | CA Connect 16/50 | SAYALI SANJAY VIPRADAS | sayalivipradas333@gmail.com
+2026-06-18 02:09:27 [INFO   ]   [16/50] SAYALI SANJAY VIPRADAS | sayalivipradas333@gmail.com
+2026-06-18 02:09:32 [INFO   ] PROGRESS | CA Connect 17/50 | RAJESH ARUN JEURKAR | rajpranj@gmail.com
+2026-06-18 02:09:32 [INFO   ]   [17/50] RAJESH ARUN JEURKAR | rajpranj@gmail.com
+2026-06-18 02:09:37 [INFO   ] PROGRESS | CA Connect 18/50 | PRASHANT BRIJMOHAN JAKHOTIYA | cajakhotiya@gmail.com
+2026-06-18 02:09:37 [INFO   ]   [18/50] PRASHANT BRIJMOHAN JAKHOTIYA | cajakhotiya@gmail.com
+2026-06-18 02:09:42 [INFO   ] PROGRESS | CA Connect 19/50 | SEEMA CHANDRESH VITHLANI | vithlani_seema@yahoo.com
+2026-06-18 02:09:42 [INFO   ]   [19/50] SEEMA CHANDRESH VITHLANI | vithlani_seema@yahoo.com
+2026-06-18 02:09:47 [INFO   ] PROGRESS | CA Connect 20/50 | KRISHNA SURESH OZA | krishnaoza111@gmail.com
+2026-06-18 02:09:47 [INFO   ]   [20/50] KRISHNA SURESH OZA | krishnaoza111@gmail.com
+2026-06-18 02:09:52 [INFO   ] PROGRESS | CA Connect 21/50 | PARAG SUNIL PARANJPE | paragparanjpeca@gmail.com
+2026-06-18 02:09:52 [INFO   ]   [21/50] PARAG SUNIL PARANJPE | paragparanjpeca@gmail.com
+2026-06-18 02:09:57 [INFO   ] PROGRESS | CA Connect 22/50 | BHAGYASHRI NIKHIL RANADE | cabhagyashriranade@gmail.com
+2026-06-18 02:09:57 [INFO   ]   [22/50] BHAGYASHRI NIKHIL RANADE | cabhagyashriranade@gmail.com
+2026-06-18 02:10:02 [INFO   ] PROGRESS | CA Connect 23/50 | SAKSHI PAWANKUMAR AGARWAL | meetcasakshiagarwal@gmail.com
+2026-06-18 02:10:02 [INFO   ]   [23/50] SAKSHI PAWANKUMAR AGARWAL | meetcasakshiagarwal@gmail.com
+2026-06-18 02:10:07 [INFO   ] PROGRESS | CA Connect 24/50 | MUKUND BHALCHANDRA ABHYANKAR | mbabhyankar@gmail.com
+2026-06-18 02:10:07 [INFO   ]   [24/50] MUKUND BHALCHANDRA ABHYANKAR | mbabhyankar@gmail.com
+2026-06-18 02:10:13 [INFO   ] PROGRESS | CA Connect 25/50 | ISHWAR PANDURANG KADAM | ipkadam@gmail.com
+2026-06-18 02:10:13 [INFO   ]   [25/50] ISHWAR PANDURANG KADAM | ipkadam@gmail.com
+2026-06-18 02:10:18 [INFO   ] PROGRESS | CA Connect 26/50 | PRAKASH BHIKAN DOIPHODE | caprakash.b.doiphode@gmail.com
+2026-06-18 02:10:18 [INFO   ]   [26/50] PRAKASH BHIKAN DOIPHODE | caprakash.b.doiphode@gmail.com
+2026-06-18 02:10:23 [INFO   ] PROGRESS | CA Connect 27/50 | VIPUL KISHOR THACKER | thackervipul14@gmail.com
+2026-06-18 02:10:23 [INFO   ]   [27/50] VIPUL KISHOR THACKER | thackervipul14@gmail.com
+2026-06-18 02:10:28 [INFO   ] PROGRESS | CA Connect 28/50 | VRINDA VASANT GONTE | cavrindag19@gmail.com
+2026-06-18 02:10:28 [INFO   ]   [28/50] VRINDA VASANT GONTE | cavrindag19@gmail.com
+2026-06-18 02:10:33 [INFO   ] PROGRESS | CA Connect 29/50 | PRIYA TANDON | priya.tandon1011@gmail.com
+2026-06-18 02:10:33 [INFO   ]   [29/50] PRIYA TANDON | priya.tandon1011@gmail.com
+2026-06-18 02:10:38 [INFO   ] PROGRESS | CA Connect 30/50 | BALIRAM RAJABHAU KENDRE | cabaliramkendre@gmail.com
+2026-06-18 02:10:38 [INFO   ]   [30/50] BALIRAM RAJABHAU KENDRE | cabaliramkendre@gmail.com
+2026-06-18 02:10:43 [INFO   ] PROGRESS | CA Connect 31/50 | KULKARNI ATUL MADHUKAR | atul.k@bhagwananikulkarni.com
+2026-06-18 02:10:43 [INFO   ]   [31/50] KULKARNI ATUL MADHUKAR | atul.k@bhagwananikulkarni.com
+2026-06-18 02:10:48 [INFO   ] PROGRESS | CA Connect 32/50 | AAYUSHI NAREDI | aayushi1naredi@gmail.com
+2026-06-18 02:10:48 [INFO   ]   [32/50] AAYUSHI NAREDI | aayushi1naredi@gmail.com
+2026-06-18 02:10:53 [INFO   ] PROGRESS | CA Connect 33/50 | PREMALA SUKRUT BALKAWADE | ca.premalabalkawade@gmail.com
+2026-06-18 02:10:53 [INFO   ]   [33/50] PREMALA SUKRUT BALKAWADE | ca.premalabalkawade@gmail.com
+2026-06-18 02:10:58 [INFO   ] PROGRESS | CA Connect 34/50 | HEMALATHA SWAMINATHAN | hemalatha9168@gmail.com
+2026-06-18 02:10:58 [INFO   ]   [34/50] HEMALATHA SWAMINATHAN | hemalatha9168@gmail.com
+2026-06-18 02:11:03 [INFO   ] PROGRESS | CA Connect 35/50 | SHAILENDRA KISHOR AGRAWAL | shailendraagrawal06@gmail.com
+2026-06-18 02:11:03 [INFO   ]   [35/50] SHAILENDRA KISHOR AGRAWAL | shailendraagrawal06@gmail.com
+2026-06-18 02:11:08 [INFO   ] PROGRESS | CA Connect 36/50 | DISHA KUNDAN GORATE | dishagorate2096@gmail.com
+2026-06-18 02:11:08 [INFO   ]   [36/50] DISHA KUNDAN GORATE | dishagorate2096@gmail.com
+2026-06-18 02:11:13 [INFO   ] PROGRESS | CA Connect 37/50 | CHINMAY GADRE | cachinmaygadre@gmail.com
+2026-06-18 02:11:13 [INFO   ]   [37/50] CHINMAY GADRE | cachinmaygadre@gmail.com
+2026-06-18 02:11:18 [INFO   ] PROGRESS | CA Connect 38/50 | SHRADDHA SAINATH DONGARE | cashraddha.dongare@gmail.com
+2026-06-18 02:11:18 [INFO   ]   [38/50] SHRADDHA SAINATH DONGARE | cashraddha.dongare@gmail.com
+2026-06-18 02:11:24 [INFO   ] PROGRESS | CA Connect 39/50 | MILIND SHANKAR GOKHALE | milind.pgp@gmail.com
+2026-06-18 02:11:24 [INFO   ]   [39/50] MILIND SHANKAR GOKHALE | milind.pgp@gmail.com
+2026-06-18 02:11:29 [INFO   ] PROGRESS | CA Connect 40/50 | PRESHITA AMOL SANGEET | preshitavj@gmail.com
+2026-06-18 02:11:29 [INFO   ]   [40/50] PRESHITA AMOL SANGEET | preshitavj@gmail.com
+2026-06-18 02:11:34 [INFO   ] PROGRESS | CA Connect 41/50 | MANDAR GOVIND DESHPANDE | mandar2210@gmail.com
+2026-06-18 02:11:34 [INFO   ]   [41/50] MANDAR GOVIND DESHPANDE | mandar2210@gmail.com
+2026-06-18 02:11:39 [INFO   ] PROGRESS | CA Connect 42/50 | TUSHAR ARUN DEKHANE | tushardekhane@gmail.com
+2026-06-18 02:11:39 [INFO   ]   [42/50] TUSHAR ARUN DEKHANE | tushardekhane@gmail.com
+2026-06-18 02:11:44 [INFO   ] PROGRESS | CA Connect 43/50 | RAHUL RAJKUMAR JAIN | carahuljain@rahuljainassociates.in
+2026-06-18 02:11:44 [INFO   ]   [43/50] RAHUL RAJKUMAR JAIN | carahuljain@rahuljainassociates.in
+2026-06-18 02:11:49 [INFO   ] PROGRESS | CA Connect 44/50 | SWAPNIL MARUTI DHORALKAR | caswapnildhoralkar@gmail.com
+2026-06-18 02:11:49 [INFO   ]   [44/50] SWAPNIL MARUTI DHORALKAR | caswapnildhoralkar@gmail.com
+2026-06-18 02:11:54 [INFO   ] PROGRESS | CA Connect 45/50 | BHUPENDRA MANOHAR KARMARKAR | bhupendra.karmarkar1988@gmail.com
+2026-06-18 02:11:54 [INFO   ]   [45/50] BHUPENDRA MANOHAR KARMARKAR | bhupendra.karmarkar1988@gmail.com
+2026-06-18 02:11:59 [INFO   ] PROGRESS | CA Connect 46/50 | NIKHIL MAFATLAL GUNDESHA | gundeshanikhil@gmail.com
+2026-06-18 02:11:59 [INFO   ]   [46/50] NIKHIL MAFATLAL GUNDESHA | gundeshanikhil@gmail.com
+2026-06-18 02:12:04 [INFO   ] PROGRESS | CA Connect 47/50 | KUMPARAM JUGATARAM SUTHAR | cakumparamsuthar@gmail.com
+2026-06-18 02:12:04 [INFO   ]   [47/50] KUMPARAM JUGATARAM SUTHAR | cakumparamsuthar@gmail.com
+2026-06-18 02:12:09 [INFO   ] PROGRESS | CA Connect 48/50 | KARAN SURYAKANT GAWAS | cakarangawas@gmail.com
+2026-06-18 02:12:09 [INFO   ]   [48/50] KARAN SURYAKANT GAWAS | cakarangawas@gmail.com
+2026-06-18 02:12:14 [INFO   ] PROGRESS | CA Connect 49/50 | IMRAN IBRAHIM TAMBOLI | caimrantamboli@gmail.com
+2026-06-18 02:12:14 [INFO   ]   [49/50] IMRAN IBRAHIM TAMBOLI | caimrantamboli@gmail.com
+2026-06-18 02:12:19 [INFO   ] PROGRESS | CA Connect 50/50 | AJINKYA RAJENDRA JOSHI | caajinkyajoshi@gmail.com
+2026-06-18 02:12:19 [INFO   ]   [50/50] AJINKYA RAJENDRA JOSHI | caajinkyajoshi@gmail.com
+2026-06-18 02:12:20 [INFO   ] Batch done — 50 new email(s) this batch | run total 100 / 1000
+2026-06-18 02:12:20 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Pune (177 pending in this city)
+2026-06-18 02:12:21 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:12:27 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:12:31 [INFO   ] PROGRESS | CA Connect 1/50 | MAHESH MADANLALJI TAPADIA | maheshtapadia2001@yahoo.com
+2026-06-18 02:12:31 [INFO   ]   [1/50] MAHESH MADANLALJI TAPADIA | maheshtapadia2001@yahoo.com
+2026-06-18 02:12:36 [INFO   ] PROGRESS | CA Connect 2/50 | NIKHIL SHRIKRISHNA AMRAOTIKAR | nikhil.amraotikar@gmail.com
+2026-06-18 02:12:36 [INFO   ]   [2/50] NIKHIL SHRIKRISHNA AMRAOTIKAR | nikhil.amraotikar@gmail.com
+2026-06-18 02:12:41 [INFO   ] PROGRESS | CA Connect 3/50 | BARVE DHANANJAY RAMKRISHNA | drb@drbarveandco.in
+2026-06-18 02:12:41 [INFO   ]   [3/50] BARVE DHANANJAY RAMKRISHNA | drb@drbarveandco.in
+2026-06-18 02:12:46 [INFO   ] PROGRESS | CA Connect 4/50 | RUPESH RAMESHCHANDRA LAKHOTIYA | rupeshlakhotiya@rediffmail.com
+2026-06-18 02:12:46 [INFO   ]   [4/50] RUPESH RAMESHCHANDRA LAKHOTIYA | rupeshlakhotiya@rediffmail.com
+2026-06-18 02:12:51 [INFO   ] PROGRESS | CA Connect 5/50 | PRREMJI & COMPANY | ashiesh@arthyog.com
+2026-06-18 02:12:51 [INFO   ]   [5/50] PRREMJI & COMPANY | ashiesh@arthyog.com
+2026-06-18 02:12:56 [INFO   ] PROGRESS | CA Connect 6/50 | D V SATHE & CO | dvsathe.co@gmail.com
+2026-06-18 02:12:56 [INFO   ]   [6/50] D V SATHE & CO | dvsathe.co@gmail.com
+2026-06-18 02:13:01 [INFO   ] PROGRESS | CA Connect 7/50 | ULHAS M MULIK & CO | caulhasmulik@gmail.com
+2026-06-18 02:13:01 [INFO   ]   [7/50] ULHAS M MULIK & CO | caulhasmulik@gmail.com
+2026-06-18 02:13:07 [INFO   ] PROGRESS | CA Connect 8/50 | R P V K AND ASSOCIATES | carakeshpardeshi@gmail.com
+2026-06-18 02:13:07 [INFO   ]   [8/50] R P V K AND ASSOCIATES | carakeshpardeshi@gmail.com
+2026-06-18 02:13:12 [INFO   ] PROGRESS | CA Connect 9/50 | S S A A M & CO | ca_aas@yahoo.com
+2026-06-18 02:13:12 [INFO   ]   [9/50] S S A A M & CO | ca_aas@yahoo.com
+2026-06-18 02:13:17 [INFO   ] PROGRESS | CA Connect 10/50 | M M VARMA & CO | camanishvarma@gmail.com
+2026-06-18 02:13:17 [INFO   ]   [10/50] M M VARMA & CO | camanishvarma@gmail.com
+2026-06-18 02:13:22 [INFO   ] PROGRESS | CA Connect 11/50 | R V K & ASSOCIATES | ca.rohanakolkar@gmail.com
+2026-06-18 02:13:22 [INFO   ]   [11/50] R V K & ASSOCIATES | ca.rohanakolkar@gmail.com
+2026-06-18 02:13:27 [INFO   ] PROGRESS | CA Connect 12/50 | R K SHITOLE & CO | caranjitshitole@outlook.com
+2026-06-18 02:13:27 [INFO   ]   [12/50] R K SHITOLE & CO | caranjitshitole@outlook.com
+2026-06-18 02:13:32 [INFO   ] PROGRESS | CA Connect 13/50 | S A LIMAYE & CO | limayesa@salcoca.com
+2026-06-18 02:13:32 [INFO   ]   [13/50] S A LIMAYE & CO | limayesa@salcoca.com
+2026-06-18 02:13:37 [INFO   ] PROGRESS | CA Connect 14/50 | A S POKHARNA & CO | caaspokharna@gmail.com
+2026-06-18 02:13:37 [INFO   ]   [14/50] A S POKHARNA & CO | caaspokharna@gmail.com
+2026-06-18 02:13:42 [INFO   ] PROGRESS | CA Connect 15/50 | A I JAIN & ASSOCIATES | caamoljain@gmail.com
+2026-06-18 02:13:42 [INFO   ]   [15/50] A I JAIN & ASSOCIATES | caamoljain@gmail.com
+2026-06-18 02:13:47 [INFO   ] PROGRESS | CA Connect 16/50 | KANAKIYA & MEHTA ASSOCIATES | chhajedsk@yahoo.com
+2026-06-18 02:13:47 [INFO   ]   [16/50] KANAKIYA & MEHTA ASSOCIATES | chhajedsk@yahoo.com
+2026-06-18 02:13:52 [INFO   ] PROGRESS | CA Connect 17/50 | HITEN GUJARATHI & ASSOCIATES | hitengujarathi1997@gmail.com
+2026-06-18 02:13:52 [INFO   ]   [17/50] HITEN GUJARATHI & ASSOCIATES | hitengujarathi1997@gmail.com
+2026-06-18 02:13:57 [INFO   ] PROGRESS | CA Connect 18/50 | VISHAL PHULPHAGAR & ASSOCIATES | phulphagarvishal@gmail.com
+2026-06-18 02:13:57 [INFO   ]   [18/50] VISHAL PHULPHAGAR & ASSOCIATES | phulphagarvishal@gmail.com
+2026-06-18 02:14:02 [INFO   ] PROGRESS | CA Connect 19/50 | SANKET SUHAS SHAH & ASSOCIATES | casanketshah3@gmail.com
+2026-06-18 02:14:02 [INFO   ]   [19/50] SANKET SUHAS SHAH & ASSOCIATES | casanketshah3@gmail.com
+2026-06-18 02:14:07 [INFO   ] PROGRESS | CA Connect 20/50 | A G H & ASSOCIATES | anilsagarwal@gmail.com
+2026-06-18 02:14:07 [INFO   ]   [20/50] A G H & ASSOCIATES | anilsagarwal@gmail.com
+2026-06-18 02:14:12 [INFO   ] PROGRESS | CA Connect 21/50 | BATTULL AND ASSOCIATES LLP | constitution date
+2026-06-18 02:14:12 [INFO   ]   [21/50] BATTULL AND ASSOCIATES LLP | constitution date
+2026-06-18 02:14:17 [INFO   ] PROGRESS | CA Connect 22/50 | S N G P & CO | yash.nagar@hotmail.com
+2026-06-18 02:14:17 [INFO   ]   [22/50] S N G P & CO | yash.nagar@hotmail.com
+2026-06-18 02:14:22 [INFO   ] PROGRESS | CA Connect 23/50 | GANESH PAWAR & ASSOCIATES | pawarg641@gmail.com
+2026-06-18 02:14:22 [INFO   ]   [23/50] GANESH PAWAR & ASSOCIATES | pawarg641@gmail.com
+2026-06-18 02:14:27 [INFO   ] PROGRESS | CA Connect 24/50 | H P C & ASSOCIATES | cahimanshuchandak@gmail.com
+2026-06-18 02:14:27 [INFO   ]   [24/50] H P C & ASSOCIATES | cahimanshuchandak@gmail.com
+2026-06-18 02:14:32 [INFO   ] PROGRESS | CA Connect 25/50 | R J JADHAV & CO | rajendrajadhav31@rediffmail.com
+2026-06-18 02:14:32 [INFO   ]   [25/50] R J JADHAV & CO | rajendrajadhav31@rediffmail.com
+2026-06-18 02:14:37 [INFO   ] PROGRESS | CA Connect 26/50 | VAKHARIYA AND ASSOCIATES | cameruvakhariya@gmail.com
+2026-06-18 02:14:37 [INFO   ]   [26/50] VAKHARIYA AND ASSOCIATES | cameruvakhariya@gmail.com
+2026-06-18 02:14:42 [INFO   ] PROGRESS | CA Connect 27/50 | V A N S & ASSOCIATES | vans.ca.asso@gmail.com
+2026-06-18 02:14:42 [INFO   ]   [27/50] V A N S & ASSOCIATES | vans.ca.asso@gmail.com
+2026-06-18 02:14:47 [INFO   ] PROGRESS | CA Connect 28/50 | A L S S & ASSOCIATES | aniketlangote1522@gmail.com
+2026-06-18 02:14:47 [INFO   ]   [28/50] A L S S & ASSOCIATES | aniketlangote1522@gmail.com
+2026-06-18 02:14:52 [INFO   ] PROGRESS | CA Connect 29/50 | A A INAMDAR & CO | arsh.inamdar@rediffmail.com
+2026-06-18 02:14:52 [INFO   ]   [29/50] A A INAMDAR & CO | arsh.inamdar@rediffmail.com
+2026-06-18 02:14:57 [INFO   ] PROGRESS | CA Connect 30/50 | RUSHIKESH KAKADE & ASSOCIATES | rushikakade1998@gmail.com
+2026-06-18 02:14:57 [INFO   ]   [30/50] RUSHIKESH KAKADE & ASSOCIATES | rushikakade1998@gmail.com
+2026-06-18 02:15:02 [INFO   ] PROGRESS | CA Connect 31/50 | SANKET KURHE & CO | casanket@skandco.in
+2026-06-18 02:15:02 [INFO   ]   [31/50] SANKET KURHE & CO | casanket@skandco.in
+2026-06-18 02:15:08 [INFO   ] PROGRESS | CA Connect 32/50 | ABHIJEET K PISAL & CO | abhijeetpisal102@gmail.com
+2026-06-18 02:15:08 [INFO   ]   [32/50] ABHIJEET K PISAL & CO | abhijeetpisal102@gmail.com
+2026-06-18 02:15:13 [INFO   ] PROGRESS | CA Connect 33/50 | N N M & ASSOCIATES | nnmandassociates@gmail.com
+2026-06-18 02:15:13 [INFO   ]   [33/50] N N M & ASSOCIATES | nnmandassociates@gmail.com
+2026-06-18 02:15:18 [INFO   ] PROGRESS | CA Connect 34/50 | GOPAL TAMHANE & ASSOCIATES | gopaltamhane@gmail.com
+2026-06-18 02:15:18 [INFO   ]   [34/50] GOPAL TAMHANE & ASSOCIATES | gopaltamhane@gmail.com
+2026-06-18 02:15:23 [INFO   ] PROGRESS | CA Connect 35/50 | BADGUJAR JAGATAP & CO | caumesh@cabj.in
+2026-06-18 02:15:23 [INFO   ]   [35/50] BADGUJAR JAGATAP & CO | caumesh@cabj.in
+2026-06-18 02:15:28 [INFO   ] PROGRESS | CA Connect 36/50 | YARDI MEHTA & CO LLP | sushant04@gmail.com
+2026-06-18 02:15:28 [INFO   ]   [36/50] YARDI MEHTA & CO LLP | sushant04@gmail.com
+2026-06-18 02:15:33 [INFO   ] PROGRESS | CA Connect 37/50 | RAHUL BAJAJ & CO | rahul@rbc-india.com
+2026-06-18 02:15:33 [INFO   ]   [37/50] RAHUL BAJAJ & CO | rahul@rbc-india.com
+2026-06-18 02:15:38 [INFO   ] PROGRESS | CA Connect 38/50 | FATEHI & ASSOCIATES | kothari128@gmail.com
+2026-06-18 02:15:38 [INFO   ]   [38/50] FATEHI & ASSOCIATES | kothari128@gmail.com
+2026-06-18 02:15:43 [INFO   ] PROGRESS | CA Connect 39/50 | SAJAN BOGAWAT & ASSOCIATES | sajanbogawat91@gmail.com
+2026-06-18 02:15:43 [INFO   ]   [39/50] SAJAN BOGAWAT & ASSOCIATES | sajanbogawat91@gmail.com
+2026-06-18 02:15:48 [INFO   ] PROGRESS | CA Connect 40/50 | A P M & ASSOCIATES LLP | kuberafin51@gmail.com
+2026-06-18 02:15:48 [INFO   ]   [40/50] A P M & ASSOCIATES LLP | kuberafin51@gmail.com
+2026-06-18 02:15:55 [INFO   ] PROGRESS | CA Connect 41/50 | M I S & ASSOCIATES | ankurkapilca@gmail.com
+2026-06-18 02:15:55 [INFO   ]   [41/50] M I S & ASSOCIATES | ankurkapilca@gmail.com
+2026-06-18 02:16:00 [INFO   ] PROGRESS | CA Connect 42/50 | GHAISAS & ASSOCIATES | girishghaisas@gmail.com
+2026-06-18 02:16:00 [INFO   ]   [42/50] GHAISAS & ASSOCIATES | girishghaisas@gmail.com
+2026-06-18 02:16:05 [INFO   ] PROGRESS | CA Connect 43/50 | G M ACHHRA & ASSOCIATES | gm_achhra@yahoo.co.in
+2026-06-18 02:16:05 [INFO   ]   [43/50] G M ACHHRA & ASSOCIATES | gm_achhra@yahoo.co.in
+2026-06-18 02:16:10 [INFO   ] PROGRESS | CA Connect 44/50 | AHUJA VALECHA & ASSOCIATES LLP | deepak.ahuja@avallp.in
+2026-06-18 02:16:10 [INFO   ]   [44/50] AHUJA VALECHA & ASSOCIATES LLP | deepak.ahuja@avallp.in
+2026-06-18 02:16:15 [INFO   ] PROGRESS | CA Connect 45/50 | PRAVIN N JAIN & ASSOCIATES | pnjoffice@gmail.com
+2026-06-18 02:16:15 [INFO   ]   [45/50] PRAVIN N JAIN & ASSOCIATES | pnjoffice@gmail.com
+2026-06-18 02:16:20 [INFO   ] PROGRESS | CA Connect 46/50 | THAKUR N S & ASSOCIATES | nitin2109@gmail.com
+2026-06-18 02:16:20 [INFO   ]   [46/50] THAKUR N S & ASSOCIATES | nitin2109@gmail.com
+2026-06-18 02:16:25 [INFO   ] PROGRESS | CA Connect 47/50 | VIVEK JADHAV & CO | cavivekjadhav@gmail.com
+2026-06-18 02:16:25 [INFO   ]   [47/50] VIVEK JADHAV & CO | cavivekjadhav@gmail.com
+2026-06-18 02:16:30 [INFO   ] PROGRESS | CA Connect 48/50 | C A H & ASSOCIATES | avdongaonkar@gmail.com
+2026-06-18 02:16:30 [INFO   ]   [48/50] C A H & ASSOCIATES | avdongaonkar@gmail.com
+2026-06-18 02:16:35 [INFO   ] PROGRESS | CA Connect 49/50 | P R UKHARDE & ASSOCIATES | poonam.ukharde@gmail.com
+2026-06-18 02:16:35 [INFO   ]   [49/50] P R UKHARDE & ASSOCIATES | poonam.ukharde@gmail.com
+2026-06-18 02:16:40 [INFO   ] PROGRESS | CA Connect 50/50 | JOSHI JAJU & ASSOCIATES | capankajjoshi1991@gmail.com
+2026-06-18 02:16:40 [INFO   ]   [50/50] JOSHI JAJU & ASSOCIATES | capankajjoshi1991@gmail.com
+2026-06-18 02:16:40 [INFO   ] Batch done — 50 new email(s) this batch | run total 150 / 1000
+2026-06-18 02:16:40 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Pune (127 pending in this city)
+2026-06-18 02:16:41 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:16:48 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:16:51 [INFO   ] PROGRESS | CA Connect 1/50 | SHARAD A VAZE & CO | sharadvaze@gmail.com
+2026-06-18 02:16:51 [INFO   ]   [1/50] SHARAD A VAZE & CO | sharadvaze@gmail.com
+2026-06-18 02:16:56 [INFO   ] PROGRESS | CA Connect 2/50 | SHRIKANT MODAK & ASSOCIATES | modakasso@gmail.com
+2026-06-18 02:16:56 [INFO   ]   [2/50] SHRIKANT MODAK & ASSOCIATES | modakasso@gmail.com
+2026-06-18 02:17:01 [INFO   ] PROGRESS | CA Connect 3/50 | M G M AND COMPANY | mukesh.a.jain@gmail.com
+2026-06-18 02:17:01 [INFO   ]   [3/50] M G M AND COMPANY | mukesh.a.jain@gmail.com
+2026-06-18 02:17:06 [INFO   ] PROGRESS | CA Connect 4/50 | PRIYESH GUJARATHI & ASSOCIATES | gujarathipriyesh5@gmail.com
+2026-06-18 02:17:06 [INFO   ]   [4/50] PRIYESH GUJARATHI & ASSOCIATES | gujarathipriyesh5@gmail.com
+2026-06-18 02:17:12 [INFO   ] PROGRESS | CA Connect 5/50 | NILESH DEO & ASSOCIATES | canileshdeo@gmail.com
+2026-06-18 02:17:12 [INFO   ]   [5/50] NILESH DEO & ASSOCIATES | canileshdeo@gmail.com
+2026-06-18 02:17:17 [INFO   ] PROGRESS | CA Connect 6/50 | S M Nilakhe & ASSOCIATES | sagarnilakheca@gmail.com
+2026-06-18 02:17:17 [INFO   ]   [6/50] S M Nilakhe & ASSOCIATES | sagarnilakheca@gmail.com
+2026-06-18 02:17:22 [INFO   ] PROGRESS | CA Connect 7/50 | OSWAL & HEDA | caoswalheda@gmail.com
+2026-06-18 02:17:22 [INFO   ]   [7/50] OSWAL & HEDA | caoswalheda@gmail.com
+2026-06-18 02:17:27 [INFO   ] PROGRESS | CA Connect 8/50 | TAWDE & ASSOCIATES | cashilpatawde@gmail.com
+2026-06-18 02:17:27 [INFO   ]   [8/50] TAWDE & ASSOCIATES | cashilpatawde@gmail.com
+2026-06-18 02:17:32 [INFO   ] PROGRESS | CA Connect 9/50 | MONIKA SHRIWASTAV & CO | monika.ca21@gmail.com
+2026-06-18 02:17:32 [INFO   ]   [9/50] MONIKA SHRIWASTAV & CO | monika.ca21@gmail.com
+2026-06-18 02:17:37 [INFO   ] PROGRESS | CA Connect 10/50 | K L SAWANT & CO | klsawant.co@gmail.com
+2026-06-18 02:17:37 [INFO   ]   [10/50] K L SAWANT & CO | klsawant.co@gmail.com
+2026-06-18 02:17:42 [INFO   ] PROGRESS | CA Connect 11/50 | BATRA BAAKE & CO LLP | batragarima12@gmail.com
+2026-06-18 02:17:42 [INFO   ]   [11/50] BATRA BAAKE & CO LLP | batragarima12@gmail.com
+2026-06-18 02:17:47 [INFO   ] PROGRESS | CA Connect 12/50 | GOKHALE KHEDKAR AND ASSOCIATES | cavishal.khedkar@gmail.com
+2026-06-18 02:17:47 [INFO   ]   [12/50] GOKHALE KHEDKAR AND ASSOCIATES | cavishal.khedkar@gmail.com
+2026-06-18 02:17:52 [INFO   ] PROGRESS | CA Connect 13/50 | CHIRAG PIPADA & ASSOCIATES | chirag.pipada98@gmail.com
+2026-06-18 02:17:52 [INFO   ]   [13/50] CHIRAG PIPADA & ASSOCIATES | chirag.pipada98@gmail.com
+2026-06-18 02:17:57 [INFO   ] PROGRESS | CA Connect 14/50 | IRFAN BAGWAN & ASSOCIATES | cairfanbagwan@gmail.com
+2026-06-18 02:17:57 [INFO   ]   [14/50] IRFAN BAGWAN & ASSOCIATES | cairfanbagwan@gmail.com
+2026-06-18 02:18:02 [INFO   ] PROGRESS | CA Connect 15/50 | MANIYAR ATTAL & ASSOCIATES | maniyarlaxmikant@gmail.com
+2026-06-18 02:18:02 [INFO   ]   [15/50] MANIYAR ATTAL & ASSOCIATES | maniyarlaxmikant@gmail.com
+2026-06-18 02:18:07 [INFO   ] PROGRESS | CA Connect 16/50 | A B S B AND ASSOCIATES | sarawgi.rahul@gmail.com
+2026-06-18 02:18:07 [INFO   ]   [16/50] A B S B AND ASSOCIATES | sarawgi.rahul@gmail.com
+2026-06-18 02:18:13 [INFO   ] PROGRESS | CA Connect 17/50 | SALMAN SHAIKH & ASSOCIATES | casalmanshaikh@gmail.com
+2026-06-18 02:18:13 [INFO   ]   [17/50] SALMAN SHAIKH & ASSOCIATES | casalmanshaikh@gmail.com
+2026-06-18 02:18:18 [INFO   ] PROGRESS | CA Connect 18/50 | VISHWAS D PATIL & ASSOCIATES | cavishwaspatil@hotmail.com
+2026-06-18 02:18:18 [INFO   ]   [18/50] VISHWAS D PATIL & ASSOCIATES | cavishwaspatil@hotmail.com
+2026-06-18 02:18:23 [INFO   ] PROGRESS | CA Connect 19/50 | RAHUL S DHARNE & ASSOCIATES | rahuldharne@gmail.com
+2026-06-18 02:18:23 [INFO   ]   [19/50] RAHUL S DHARNE & ASSOCIATES | rahuldharne@gmail.com
+2026-06-18 02:18:28 [INFO   ] PROGRESS | CA Connect 20/50 | R R PATNI AND ASSOCIATES | rishabhpatni999@gmail.com
+2026-06-18 02:18:28 [INFO   ]   [20/50] R R PATNI AND ASSOCIATES | rishabhpatni999@gmail.com
+2026-06-18 02:18:33 [INFO   ] PROGRESS | CA Connect 21/50 | SIDDHARTH ANIL OSTWAL & CO | casiddharthostwal@gmail.com
+2026-06-18 02:18:33 [INFO   ]   [21/50] SIDDHARTH ANIL OSTWAL & CO | casiddharthostwal@gmail.com
+2026-06-18 02:18:38 [INFO   ] PROGRESS | CA Connect 22/50 | G R A N D M A R K & ASSOCIATES LLP | 33sushil@gmail.com
+2026-06-18 02:18:38 [INFO   ]   [22/50] G R A N D M A R K & ASSOCIATES LLP | 33sushil@gmail.com
+2026-06-18 02:18:43 [INFO   ] PROGRESS | CA Connect 23/50 | N R KABRA & CO | canrkabra@gmail.com
+2026-06-18 02:18:43 [INFO   ]   [23/50] N R KABRA & CO | canrkabra@gmail.com
+2026-06-18 02:18:48 [INFO   ] PROGRESS | CA Connect 24/50 | A R N A & ASSOCIATES | rahulaagnihotri@rediff.com
+2026-06-18 02:18:48 [INFO   ]   [24/50] A R N A & ASSOCIATES | rahulaagnihotri@rediff.com
+2026-06-18 02:18:53 [INFO   ] PROGRESS | CA Connect 25/50 | J K CHOUHAN & CO | jkchouhan@gmail.com
+2026-06-18 02:18:53 [INFO   ]   [25/50] J K CHOUHAN & CO | jkchouhan@gmail.com
+2026-06-18 02:18:58 [INFO   ] PROGRESS | CA Connect 26/50 | ROHIT JADHAV & ASSOCIATES | ca.rohitkjadhav@gmail.com
+2026-06-18 02:18:58 [INFO   ]   [26/50] ROHIT JADHAV & ASSOCIATES | ca.rohitkjadhav@gmail.com
+2026-06-18 02:19:03 [INFO   ] PROGRESS | CA Connect 27/50 | N B WAGH & CO | canikhilwagh@gmail.com
+2026-06-18 02:19:03 [INFO   ]   [27/50] N B WAGH & CO | canikhilwagh@gmail.com
+2026-06-18 02:19:08 [INFO   ] PROGRESS | CA Connect 28/50 | VIPUL J JAIN AND ASSOCIATES | vipulsahuji@gmail.com
+2026-06-18 02:19:08 [INFO   ]   [28/50] VIPUL J JAIN AND ASSOCIATES | vipulsahuji@gmail.com
+2026-06-18 02:19:13 [INFO   ] PROGRESS | CA Connect 29/50 | MALANI SOMANI CHANDAK & ASSOCIATES | nrmalani64@gmail.com
+2026-06-18 02:19:13 [INFO   ]   [29/50] MALANI SOMANI CHANDAK & ASSOCIATES | nrmalani64@gmail.com
+2026-06-18 02:19:18 [INFO   ] PROGRESS | CA Connect 30/50 | A K CHINDHADE & CO | akchindhade@gmail.com
+2026-06-18 02:19:18 [INFO   ]   [30/50] A K CHINDHADE & CO | akchindhade@gmail.com
+2026-06-18 02:19:23 [INFO   ] PROGRESS | CA Connect 31/50 | KISHORE S MEHTA & ASSOCIATES | kishoremehta@ksmca.co.in
+2026-06-18 02:19:23 [INFO   ]   [31/50] KISHORE S MEHTA & ASSOCIATES | kishoremehta@ksmca.co.in
+2026-06-18 02:19:28 [INFO   ] PROGRESS | CA Connect 32/50 | HAYEDAR SHAIKH & ASSOCIATES | shaikhhayedar@gmail.com
+2026-06-18 02:19:28 [INFO   ]   [32/50] HAYEDAR SHAIKH & ASSOCIATES | shaikhhayedar@gmail.com
+2026-06-18 02:19:33 [INFO   ] PROGRESS | CA Connect 33/50 | S Y TAKAWALE & ASSOCIATES | casmitatakawale@gmail.com
+2026-06-18 02:19:33 [INFO   ]   [33/50] S Y TAKAWALE & ASSOCIATES | casmitatakawale@gmail.com
+2026-06-18 02:19:38 [INFO   ] PROGRESS | CA Connect 34/50 | R R N A & ASSOCIATES | carohitravalekar@gmail.com
+2026-06-18 02:19:38 [INFO   ]   [34/50] R R N A & ASSOCIATES | carohitravalekar@gmail.com
+2026-06-18 02:19:43 [INFO   ] PROGRESS | CA Connect 35/50 | RAVI S SALUNKE & ASSOCIATES | caravisalunke@gmail.com
+2026-06-18 02:19:43 [INFO   ]   [35/50] RAVI S SALUNKE & ASSOCIATES | caravisalunke@gmail.com
+2026-06-18 02:19:48 [INFO   ] PROGRESS | CA Connect 36/50 | P S D & COMPANY | psdandekar@gmail.com
+2026-06-18 02:19:48 [INFO   ]   [36/50] P S D & COMPANY | psdandekar@gmail.com
+2026-06-18 02:19:53 [INFO   ] PROGRESS | CA Connect 37/50 | S A C & CO LLP | chinmayshah30@gmail.com
+2026-06-18 02:19:53 [INFO   ]   [37/50] S A C & CO LLP | chinmayshah30@gmail.com
+2026-06-18 02:19:58 [INFO   ] PROGRESS | CA Connect 38/50 | MAYA CHOUDHARY & ASSOCIATES | mayac442@gmail.com
+2026-06-18 02:19:58 [INFO   ]   [38/50] MAYA CHOUDHARY & ASSOCIATES | mayac442@gmail.com
+2026-06-18 02:20:03 [INFO   ] PROGRESS | CA Connect 39/50 | AJITSINGH K AND ASSOCIATES | caajitsinghk@gmail.com
+2026-06-18 02:20:03 [INFO   ]   [39/50] AJITSINGH K AND ASSOCIATES | caajitsinghk@gmail.com
+2026-06-18 02:20:08 [INFO   ] PROGRESS | CA Connect 40/50 | S KUNKULOL & ASSOCIATES | ca.saurabhkunkulol@gmail.com
+2026-06-18 02:20:08 [INFO   ]   [40/50] S KUNKULOL & ASSOCIATES | ca.saurabhkunkulol@gmail.com
+2026-06-18 02:20:13 [INFO   ] PROGRESS | CA Connect 41/50 | ABT & ASSOCIATES | caathira1808@gmail.com
+2026-06-18 02:20:13 [INFO   ]   [41/50] ABT & ASSOCIATES | caathira1808@gmail.com
+2026-06-18 02:20:18 [INFO   ] PROGRESS | CA Connect 42/50 | M G S P AND ASSOCIATES | maghareandco@gmail.com
+2026-06-18 02:20:18 [INFO   ]   [42/50] M G S P AND ASSOCIATES | maghareandco@gmail.com
+2026-06-18 02:20:23 [INFO   ] PROGRESS | CA Connect 43/50 | SACHIN GOGAVE & CO LLP | sachingogave@gmail.com
+2026-06-18 02:20:23 [INFO   ]   [43/50] SACHIN GOGAVE & CO LLP | sachingogave@gmail.com
+2026-06-18 02:20:28 [INFO   ] PROGRESS | CA Connect 44/50 | P R GUND & CO | gundparag@gmail.com
+2026-06-18 02:20:28 [INFO   ]   [44/50] P R GUND & CO | gundparag@gmail.com
+2026-06-18 02:20:33 [INFO   ] PROGRESS | CA Connect 45/50 | UMAKANT VEDPATHAK & CO | vedpathak_umakant@rediffmail.com
+2026-06-18 02:20:33 [INFO   ]   [45/50] UMAKANT VEDPATHAK & CO | vedpathak_umakant@rediffmail.com
+2026-06-18 02:20:38 [INFO   ] PROGRESS | CA Connect 46/50 | C V CHITALE & CO | shekhar@cvchitale.com
+2026-06-18 02:20:38 [INFO   ]   [46/50] C V CHITALE & CO | shekhar@cvchitale.com
+2026-06-18 02:20:43 [INFO   ] PROGRESS | CA Connect 47/50 | A S D A & ASSOCIATES | caakshaygattani@gmail.com
+2026-06-18 02:20:43 [INFO   ]   [47/50] A S D A & ASSOCIATES | caakshaygattani@gmail.com
+2026-06-18 02:20:48 [INFO   ] PROGRESS | CA Connect 48/50 | DHOOT & RATHI | capoojavrathi@gmail.com
+2026-06-18 02:20:48 [INFO   ]   [48/50] DHOOT & RATHI | capoojavrathi@gmail.com
+2026-06-18 02:20:53 [INFO   ] PROGRESS | CA Connect 49/50 | VISHAL NAWLANI & CO | cavishal444@gmail.com
+2026-06-18 02:20:53 [INFO   ]   [49/50] VISHAL NAWLANI & CO | cavishal444@gmail.com
+2026-06-18 02:20:58 [INFO   ] PROGRESS | CA Connect 50/50 | JEEVAN CHOUHAN & ASSOCIATES | jeevanchouhan@rediffmail.com
+2026-06-18 02:20:58 [INFO   ]   [50/50] JEEVAN CHOUHAN & ASSOCIATES | jeevanchouhan@rediffmail.com
+2026-06-18 02:20:59 [INFO   ] Batch done — 50 new email(s) this batch | run total 200 / 1000
+2026-06-18 02:20:59 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Pune (77 pending in this city)
+2026-06-18 02:21:00 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:21:05 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:21:09 [INFO   ] PROGRESS | CA Connect 1/50 | A A S AND COMPANY | info@aasca.in
+2026-06-18 02:21:09 [INFO   ]   [1/50] A A S AND COMPANY | info@aasca.in
+2026-06-18 02:21:14 [INFO   ] PROGRESS | CA Connect 2/50 | BRIJESH DATTAJI & CO | brijeshdattaji@gmail.com
+2026-06-18 02:21:14 [INFO   ]   [2/50] BRIJESH DATTAJI & CO | brijeshdattaji@gmail.com
+2026-06-18 02:21:19 [INFO   ] PROGRESS | CA Connect 3/50 | RATHI S K & CO | rathisumit11@gmail.com
+2026-06-18 02:21:19 [INFO   ]   [3/50] RATHI S K & CO | rathisumit11@gmail.com
+2026-06-18 02:21:24 [INFO   ] PROGRESS | CA Connect 4/50 | S P L A S H AND COMPANY | capsnavandar@yahoo.in
+2026-06-18 02:21:24 [INFO   ]   [4/50] S P L A S H AND COMPANY | capsnavandar@yahoo.in
+2026-06-18 02:21:29 [INFO   ] PROGRESS | CA Connect 5/50 | J S KULKARNI & CO | jitendrapune03@gmail.com
+2026-06-18 02:21:29 [INFO   ]   [5/50] J S KULKARNI & CO | jitendrapune03@gmail.com
+2026-06-18 02:21:34 [INFO   ] PROGRESS | CA Connect 6/50 | ASHUTOSH KALAMKAR & ASSOCIATES | ashutosh.kalamkar@gmail.com
+2026-06-18 02:21:34 [INFO   ]   [6/50] ASHUTOSH KALAMKAR & ASSOCIATES | ashutosh.kalamkar@gmail.com
+2026-06-18 02:21:39 [INFO   ] PROGRESS | CA Connect 7/50 | BHAVE & BHAVE ASSOCIATES | cadjb2@gmail.com
+2026-06-18 02:21:39 [INFO   ]   [7/50] BHAVE & BHAVE ASSOCIATES | cadjb2@gmail.com
+2026-06-18 02:21:44 [INFO   ] PROGRESS | CA Connect 8/50 | MAULIKA VARMA & ASSOCIATES | camaulikavarma@outlook.com
+2026-06-18 02:21:44 [INFO   ]   [8/50] MAULIKA VARMA & ASSOCIATES | camaulikavarma@outlook.com
+2026-06-18 02:21:49 [INFO   ] PROGRESS | CA Connect 9/50 | A P ASGEKAR & CO | anirudha.asgekar@outlook.com
+2026-06-18 02:21:49 [INFO   ]   [9/50] A P ASGEKAR & CO | anirudha.asgekar@outlook.com
+2026-06-18 02:21:54 [INFO   ] PROGRESS | CA Connect 10/50 | S M SURATWALA & CO | fflamingo02@gmail.com
+2026-06-18 02:21:54 [INFO   ]   [10/50] S M SURATWALA & CO | fflamingo02@gmail.com
+2026-06-18 02:21:59 [INFO   ] PROGRESS | CA Connect 11/50 | M S MANDKE & ASSOCIATES | mrugendra.mandke@msmca.com
+2026-06-18 02:21:59 [INFO   ]   [11/50] M S MANDKE & ASSOCIATES | mrugendra.mandke@msmca.com
+2026-06-18 02:22:04 [INFO   ] PROGRESS | CA Connect 12/50 | L K S & CO | calahotibg@gmail.com
+2026-06-18 02:22:04 [INFO   ]   [12/50] L K S & CO | calahotibg@gmail.com
+2026-06-18 02:22:09 [INFO   ] PROGRESS | CA Connect 13/50 | V S SANE & CO | ca.vilassane@gmail.com
+2026-06-18 02:22:09 [INFO   ]   [13/50] V S SANE & CO | ca.vilassane@gmail.com
+2026-06-18 02:22:14 [INFO   ] PROGRESS | CA Connect 14/50 | S R BHAGAT AND ASSOCIATES | ca.sushamabhagat@gmail.com
+2026-06-18 02:22:14 [INFO   ]   [14/50] S R BHAGAT AND ASSOCIATES | ca.sushamabhagat@gmail.com
+2026-06-18 02:22:19 [INFO   ] PROGRESS | CA Connect 15/50 | SAGAR PADIYHAR & ASSOCIATES | ca.sagar@gmail.com
+2026-06-18 02:22:19 [INFO   ]   [15/50] SAGAR PADIYHAR & ASSOCIATES | ca.sagar@gmail.com
+2026-06-18 02:22:24 [INFO   ] PROGRESS | CA Connect 16/50 | K B SANMANE & CO | kiransanmane@gmail.com
+2026-06-18 02:22:24 [INFO   ]   [16/50] K B SANMANE & CO | kiransanmane@gmail.com
+2026-06-18 02:22:29 [INFO   ] PROGRESS | CA Connect 17/50 | SANJAY S RATHI & CO | sanjaysrathi@gmail.com
+2026-06-18 02:22:29 [INFO   ]   [17/50] SANJAY S RATHI & CO | sanjaysrathi@gmail.com
+2026-06-18 02:22:34 [INFO   ] PROGRESS | CA Connect 18/50 | R M R A & ASSOCIATES | camadhurashah@gmail.com
+2026-06-18 02:22:34 [INFO   ]   [18/50] R M R A & ASSOCIATES | camadhurashah@gmail.com
+2026-06-18 02:22:39 [INFO   ] PROGRESS | CA Connect 19/50 | GOPALKAR & COMPANY | gopalkar.ca@gmail.com
+2026-06-18 02:22:39 [INFO   ]   [19/50] GOPALKAR & COMPANY | gopalkar.ca@gmail.com
+2026-06-18 02:22:44 [INFO   ] PROGRESS | CA Connect 20/50 | P B & ASSOCIATES | bhushan.bhutada@gmail.com
+2026-06-18 02:22:44 [INFO   ]   [20/50] P B & ASSOCIATES | bhushan.bhutada@gmail.com
+2026-06-18 02:22:49 [INFO   ] PROGRESS | CA Connect 21/50 | KAPADIA AIYAR ASSOCIATES | cadrkapadia2727@gmail.com
+2026-06-18 02:22:49 [INFO   ]   [21/50] KAPADIA AIYAR ASSOCIATES | cadrkapadia2727@gmail.com
+2026-06-18 02:22:54 [INFO   ] PROGRESS | CA Connect 22/50 | AMOL R MANTRI & ASSOCIATES | ca.amolmantri@gmail.com
+2026-06-18 02:22:54 [INFO   ]   [22/50] AMOL R MANTRI & ASSOCIATES | ca.amolmantri@gmail.com
+2026-06-18 02:22:59 [INFO   ] PROGRESS | CA Connect 23/50 | PARAG PATWA & ASSOCIATES | pip@cappa.in
+2026-06-18 02:22:59 [INFO   ]   [23/50] PARAG PATWA & ASSOCIATES | pip@cappa.in
+2026-06-18 02:23:04 [INFO   ] PROGRESS | CA Connect 24/50 | P G P AND ASSOCIATES | potdar_ca@hotmail.com
+2026-06-18 02:23:04 [INFO   ]   [24/50] P G P AND ASSOCIATES | potdar_ca@hotmail.com
+2026-06-18 02:23:09 [INFO   ] PROGRESS | CA Connect 25/50 | R R GUJARATHI & CO | psabad3001@gmail.com
+2026-06-18 02:23:09 [INFO   ]   [25/50] R R GUJARATHI & CO | psabad3001@gmail.com
+2026-06-18 02:23:15 [INFO   ] PROGRESS | CA Connect 26/50 | PRAKASH WALGUDE & ASSOCIATES | caprakashwalgude@gmail.com
+2026-06-18 02:23:15 [INFO   ]   [26/50] PRAKASH WALGUDE & ASSOCIATES | caprakashwalgude@gmail.com
+2026-06-18 02:23:20 [INFO   ] PROGRESS | CA Connect 27/50 | G P DHARMADHIKARI & CO | pragita_24281@yahoo.com
+2026-06-18 02:23:20 [INFO   ]   [27/50] G P DHARMADHIKARI & CO | pragita_24281@yahoo.com
+2026-06-18 02:23:25 [INFO   ] PROGRESS | CA Connect 28/50 | GOKHALE & GOKHALE | sanjivgokhale@yahoo.com
+2026-06-18 02:23:25 [INFO   ]   [28/50] GOKHALE & GOKHALE | sanjivgokhale@yahoo.com
+2026-06-18 02:23:30 [INFO   ] PROGRESS | CA Connect 29/50 | P C PATIL & ASSOCIATES | pcp@pcpatil.com
+2026-06-18 02:23:30 [INFO   ]   [29/50] P C PATIL & ASSOCIATES | pcp@pcpatil.com
+2026-06-18 02:23:35 [INFO   ] PROGRESS | CA Connect 30/50 | ASHISH R PAI & ASSOCIATES | ca.ashishrpai@gmail.com
+2026-06-18 02:23:35 [INFO   ]   [30/50] ASHISH R PAI & ASSOCIATES | ca.ashishrpai@gmail.com
+2026-06-18 02:23:40 [INFO   ] PROGRESS | CA Connect 31/50 | ASIF SHAIKH & ASSOCIATES | caasifshaikh@gmail.com
+2026-06-18 02:23:40 [INFO   ]   [31/50] ASIF SHAIKH & ASSOCIATES | caasifshaikh@gmail.com
+2026-06-18 02:23:45 [INFO   ] PROGRESS | CA Connect 32/50 | AASHISH ANIL JADHAV & ASSOCIATES | jadhavaashish1991@gmail.com
+2026-06-18 02:23:45 [INFO   ]   [32/50] AASHISH ANIL JADHAV & ASSOCIATES | jadhavaashish1991@gmail.com
+2026-06-18 02:23:50 [INFO   ] PROGRESS | CA Connect 33/50 | S K Y P & CO LLP | caprasadrajpure@gmail.com
+2026-06-18 02:23:50 [INFO   ]   [33/50] S K Y P & CO LLP | caprasadrajpure@gmail.com
+2026-06-18 02:23:55 [INFO   ] PROGRESS | CA Connect 34/50 | KHARE DESHMUKH & CO | vivek@kharedeshmukh.com
+2026-06-18 02:23:55 [INFO   ]   [34/50] KHARE DESHMUKH & CO | vivek@kharedeshmukh.com
+2026-06-18 02:24:00 [INFO   ] PROGRESS | CA Connect 35/50 | SHYAM JOSHI & ASSOCIATES | shyamjoshica@gmail.com
+2026-06-18 02:24:00 [INFO   ]   [35/50] SHYAM JOSHI & ASSOCIATES | shyamjoshica@gmail.com
+2026-06-18 02:24:05 [INFO   ] PROGRESS | CA Connect 36/50 | S N R & ASSOCIATES | casandeshgundecha@yahoo.com
+2026-06-18 02:24:05 [INFO   ]   [36/50] S N R & ASSOCIATES | casandeshgundecha@yahoo.com
+2026-06-18 02:24:10 [INFO   ] PROGRESS | CA Connect 37/50 | P A SHEVADE & CO | pashevade@yahoo.com
+2026-06-18 02:24:10 [INFO   ]   [37/50] P A SHEVADE & CO | pashevade@yahoo.com
+2026-06-18 02:24:15 [INFO   ] PROGRESS | CA Connect 38/50 | PRATIK PRAKASH SHAH & ASSOCIATES | ca.pratikpshah@gmail.com
+2026-06-18 02:24:15 [INFO   ]   [38/50] PRATIK PRAKASH SHAH & ASSOCIATES | ca.pratikpshah@gmail.com
+2026-06-18 02:24:20 [INFO   ] PROGRESS | CA Connect 39/50 | KSHIRSAGAR KULKARNI & CO | milind@kkca.co.in
+2026-06-18 02:24:20 [INFO   ]   [39/50] KSHIRSAGAR KULKARNI & CO | milind@kkca.co.in
+2026-06-18 02:24:25 [INFO   ] PROGRESS | CA Connect 40/50 | D A SISODIYA & ASSOCIATES | devendra.sisodiya8@gmail.com
+2026-06-18 02:24:25 [INFO   ]   [40/50] D A SISODIYA & ASSOCIATES | devendra.sisodiya8@gmail.com
+2026-06-18 02:24:30 [INFO   ] PROGRESS | CA Connect 41/50 | JAIN VICKY & CO | vicky@jvco.in
+2026-06-18 02:24:30 [INFO   ]   [41/50] JAIN VICKY & CO | vicky@jvco.in
+2026-06-18 02:24:35 [INFO   ] PROGRESS | CA Connect 42/50 | SHARAD SHAH & CO | sharad.shah@ssandco.com
+2026-06-18 02:24:35 [INFO   ]   [42/50] SHARAD SHAH & CO | sharad.shah@ssandco.com
+2026-06-18 02:24:40 [INFO   ] PROGRESS | CA Connect 43/50 | KATEPALLEWAR & ASSOCIATES | girish.katepallewar@gmail.com
+2026-06-18 02:24:40 [INFO   ]   [43/50] KATEPALLEWAR & ASSOCIATES | girish.katepallewar@gmail.com
+2026-06-18 02:24:45 [INFO   ] PROGRESS | CA Connect 44/50 | Taneja & CO | tanejajugal@gmail.com
+2026-06-18 02:24:45 [INFO   ]   [44/50] Taneja & CO | tanejajugal@gmail.com
+2026-06-18 02:25:12 [INFO   ] PROGRESS | CA Connect 45/50 | RATHI RATHI AND CO | parag@rathiandrathi.com
+2026-06-18 02:25:12 [INFO   ]   [45/50] RATHI RATHI AND CO | parag@rathiandrathi.com
+2026-06-18 02:25:17 [INFO   ] PROGRESS | CA Connect 46/50 | S P LADDA AND ASSOCIATES | samparth@gmail.com
+2026-06-18 02:25:17 [INFO   ]   [46/50] S P LADDA AND ASSOCIATES | samparth@gmail.com
+2026-06-18 02:25:22 [INFO   ] PROGRESS | CA Connect 47/50 | S U N S V G & ASSOCIATES | nadesatish@yahoo.co.in
+2026-06-18 02:25:22 [INFO   ]   [47/50] S U N S V G & ASSOCIATES | nadesatish@yahoo.co.in
+2026-06-18 02:25:27 [INFO   ] PROGRESS | CA Connect 48/50 | MEHRA AMIT & CO | amitmehraca@gmail.com
+2026-06-18 02:25:27 [INFO   ]   [48/50] MEHRA AMIT & CO | amitmehraca@gmail.com
+2026-06-18 02:25:32 [INFO   ] PROGRESS | CA Connect 49/50 | RAJEEV K R & ASSOCIATES | carajeevkr646@gmail.com
+2026-06-18 02:25:32 [INFO   ]   [49/50] RAJEEV K R & ASSOCIATES | carajeevkr646@gmail.com
+2026-06-18 02:25:37 [INFO   ] PROGRESS | CA Connect 50/50 | MADHURI SASTE & ASSOCIATES | madhuri.saste@gmail.com
+2026-06-18 02:25:37 [INFO   ]   [50/50] MADHURI SASTE & ASSOCIATES | madhuri.saste@gmail.com
+2026-06-18 02:25:37 [INFO   ] Batch done — 50 new email(s) this batch | run total 250 / 1000
+2026-06-18 02:25:37 [INFO   ] Enriching 27 profile(s) — Audit | Maharashtra | Pune (27 pending in this city)
+2026-06-18 02:25:38 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:25:44 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:25:47 [INFO   ] PROGRESS | CA Connect 1/27 | BATTULL AND ASSOCIATES LLP | constitution date
+2026-06-18 02:25:47 [INFO   ]   [1/27] BATTULL AND ASSOCIATES LLP | constitution date
+2026-06-18 02:25:52 [INFO   ] PROGRESS | CA Connect 2/27 | PORNIMA S NAIK & ASSOCIATES | capornima@yahoo.com
+2026-06-18 02:25:52 [INFO   ]   [2/27] PORNIMA S NAIK & ASSOCIATES | capornima@yahoo.com
+2026-06-18 02:25:57 [INFO   ] PROGRESS | CA Connect 3/27 | J C R & CO | jashvant@gmail.com
+2026-06-18 02:25:57 [INFO   ]   [3/27] J C R & CO | jashvant@gmail.com
+2026-06-18 02:26:02 [INFO   ] PROGRESS | CA Connect 4/27 | GANESH KUMBHAR AND ASSOCIATES | ghkumbhar@gmail.com
+2026-06-18 02:26:02 [INFO   ]   [4/27] GANESH KUMBHAR AND ASSOCIATES | ghkumbhar@gmail.com
+2026-06-18 02:26:07 [INFO   ] PROGRESS | CA Connect 5/27 | Y S B & CO | cayogeshreddy33@gmail.com
+2026-06-18 02:26:07 [INFO   ]   [5/27] Y S B & CO | cayogeshreddy33@gmail.com
+2026-06-18 02:26:13 [INFO   ] PROGRESS | CA Connect 6/27 | MANTHAN VAIDYA & ASSOCIATES | vaidyamanthan9@gmail.com
+2026-06-18 02:26:13 [INFO   ]   [6/27] MANTHAN VAIDYA & ASSOCIATES | vaidyamanthan9@gmail.com
+2026-06-18 02:26:18 [INFO   ] PROGRESS | CA Connect 7/27 | M M N & CO | shreyasi1510@gmail.com
+2026-06-18 02:26:18 [INFO   ]   [7/27] M M N & CO | shreyasi1510@gmail.com
+2026-06-18 02:26:23 [INFO   ] PROGRESS | CA Connect 8/27 | MUNDHE SHAHA & CO | cacsvpshaha@gmail.com
+2026-06-18 02:26:23 [INFO   ]   [8/27] MUNDHE SHAHA & CO | cacsvpshaha@gmail.com
+2026-06-18 02:26:28 [INFO   ] PROGRESS | CA Connect 9/27 | SHROFF & COMPANY | caridhimashroff@gmail.com
+2026-06-18 02:26:28 [INFO   ]   [9/27] SHROFF & COMPANY | caridhimashroff@gmail.com
+2026-06-18 02:26:33 [INFO   ] PROGRESS | CA Connect 10/27 | GOPAL K VERMA & CO | cagopalkv@gmail.com
+2026-06-18 02:26:33 [INFO   ]   [10/27] GOPAL K VERMA & CO | cagopalkv@gmail.com
+2026-06-18 02:26:38 [INFO   ] PROGRESS | CA Connect 11/27 | H T R & ASSOCIATES | ravi007kamthe@gmail.com
+2026-06-18 02:26:38 [INFO   ]   [11/27] H T R & ASSOCIATES | ravi007kamthe@gmail.com
+2026-06-18 02:26:43 [INFO   ] PROGRESS | CA Connect 12/27 | G B RATHI & CO | gokulrathi007@yahoo.co.in
+2026-06-18 02:26:43 [INFO   ]   [12/27] G B RATHI & CO | gokulrathi007@yahoo.co.in
+2026-06-18 02:26:48 [INFO   ] PROGRESS | CA Connect 13/27 | P N HORA & CO | parneet.hora@gmail.com
+2026-06-18 02:26:48 [INFO   ]   [13/27] P N HORA & CO | parneet.hora@gmail.com
+2026-06-18 02:26:53 [INFO   ] PROGRESS | CA Connect 14/27 | RAHUL SONTAKKE & CO | carsontakke@gmail.com
+2026-06-18 02:26:53 [INFO   ]   [14/27] RAHUL SONTAKKE & CO | carsontakke@gmail.com
+2026-06-18 02:26:58 [INFO   ] PROGRESS | CA Connect 15/27 | PRATIK BORA & ASSOCIATES | capratikbora@gmail.com
+2026-06-18 02:26:58 [INFO   ]   [15/27] PRATIK BORA & ASSOCIATES | capratikbora@gmail.com
+2026-06-18 02:27:03 [INFO   ] PROGRESS | CA Connect 16/27 | SHASHANK PATKI & ASSOCIATES | rutachitale@rediffmail.com
+2026-06-18 02:27:03 [INFO   ]   [16/27] SHASHANK PATKI & ASSOCIATES | rutachitale@rediffmail.com
+2026-06-18 02:27:08 [INFO   ] PROGRESS | CA Connect 17/27 | KHINVASARA AND ASSOCIATES | ca.akashkhinvasara@gmail.com
+2026-06-18 02:27:08 [INFO   ]   [17/27] KHINVASARA AND ASSOCIATES | ca.akashkhinvasara@gmail.com
+2026-06-18 02:27:13 [INFO   ] PROGRESS | CA Connect 18/27 | INGLE ZAMBARE & CO | caamol.ingle@gmail.com
+2026-06-18 02:27:13 [INFO   ]   [18/27] INGLE ZAMBARE & CO | caamol.ingle@gmail.com
+2026-06-18 02:27:18 [INFO   ] PROGRESS | CA Connect 19/27 | KHUTWAD DEVKAR & CO | santosh@kdco.in
+2026-06-18 02:27:18 [INFO   ]   [19/27] KHUTWAD DEVKAR & CO | santosh@kdco.in
+2026-06-18 02:27:23 [INFO   ] PROGRESS | CA Connect 20/27 | BHUPENDRA HARSHE AND CO | cabhupendraharshe@gmail.com
+2026-06-18 02:27:23 [INFO   ]   [20/27] BHUPENDRA HARSHE AND CO | cabhupendraharshe@gmail.com
+2026-06-18 02:27:28 [INFO   ] PROGRESS | CA Connect 21/27 | PALSULE PANGAM & CO | amitpalsule@gmail.com
+2026-06-18 02:27:28 [INFO   ]   [21/27] PALSULE PANGAM & CO | amitpalsule@gmail.com
+2026-06-18 02:27:33 [INFO   ] PROGRESS | CA Connect 22/27 | HARSHIT KABRA AND COMPANY | cahskabra@cahskabra.com
+2026-06-18 02:27:33 [INFO   ]   [22/27] HARSHIT KABRA AND COMPANY | cahskabra@cahskabra.com
+2026-06-18 02:27:39 [INFO   ] PROGRESS | CA Connect 23/27 | K P N J & ASSOCIATES | pardeshikrushna54@gmail.com
+2026-06-18 02:27:39 [INFO   ]   [23/27] K P N J & ASSOCIATES | pardeshikrushna54@gmail.com
+2026-06-18 02:27:44 [INFO   ] PROGRESS | CA Connect 24/27 | M M J K & CO | cameenaljkulkarni@gmail.com
+2026-06-18 02:27:44 [INFO   ]   [24/27] M M J K & CO | cameenaljkulkarni@gmail.com
+2026-06-18 02:27:49 [INFO   ] PROGRESS | CA Connect 25/27 | PAVAN GOYAL & ASSOCIATES | pavangoyal30@gmail.com
+2026-06-18 02:27:49 [INFO   ]   [25/27] PAVAN GOYAL & ASSOCIATES | pavangoyal30@gmail.com
+2026-06-18 02:27:54 [INFO   ] PROGRESS | CA Connect 26/27 | SHAH KHANDELWAL JAIN & ASSOCIATES | neelesh.khandelwal@skj.ican.in
+2026-06-18 02:27:54 [INFO   ]   [26/27] SHAH KHANDELWAL JAIN & ASSOCIATES | neelesh.khandelwal@skj.ican.in
+2026-06-18 02:27:59 [INFO   ] PROGRESS | CA Connect 27/27 | Suraj Shah & CO | shahsurajs@gmail.com
+2026-06-18 02:27:59 [INFO   ]   [27/27] Suraj Shah & CO | shahsurajs@gmail.com
+2026-06-18 02:27:59 [INFO   ] Batch done — 26 new email(s) this batch | run total 276 / 1000
+2026-06-18 02:27:59 [INFO   ] 
+2026-06-18 02:27:59 [INFO   ] ==============================================================
+2026-06-18 02:27:59 [INFO   ] PROGRESS | Listing harvest — Audit | Maharashtra | Mumbai
+2026-06-18 02:27:59 [INFO   ] ==============================================================
+2026-06-18 02:28:00 [INFO   ] Opening CA Connect search page: https://caconnect.icai.org/search-your-ca
+2026-06-18 02:28:03 [INFO   ] Selecting service=Audit state=Maharashtra city=Mumbai
+2026-06-18 02:28:07 [INFO   ] Search results URL: https://caconnect.icai.org/search?_token=TxZnQiUVIyGJvjMG7ixToOHfu7cr3MI4zVMEFIWn&type=&services=Audit&state=Maharashtra&city=Mumbai
+2026-06-18 02:28:35 [INFO   ] Members tab: 411 cards
+2026-06-18 02:29:06 [INFO   ] CA Firms tab: 411 cards
+2026-06-18 02:29:06 [INFO   ] Stored 396 new listing(s) (822 total on page) for Audit / Maharashtra / Mumbai
+2026-06-18 02:29:06 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (396 pending in this city)
+2026-06-18 02:29:07 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:29:14 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:29:17 [INFO   ] PROGRESS | CA Connect 1/50 | AYUSHI KAMLESH SHAH | ayushishah36@gmail.com
+2026-06-18 02:29:17 [INFO   ]   [1/50] AYUSHI KAMLESH SHAH | ayushishah36@gmail.com
+2026-06-18 02:29:22 [INFO   ] PROGRESS | CA Connect 2/50 | ANUJ ANISH DESAI | desaianuj1412@gmail.com
+2026-06-18 02:29:22 [INFO   ]   [2/50] ANUJ ANISH DESAI | desaianuj1412@gmail.com
+2026-06-18 02:29:27 [INFO   ] PROGRESS | CA Connect 3/50 | HARESH PRAKASH JETHMALANI | hareshj001@gmail.com
+2026-06-18 02:29:27 [INFO   ]   [3/50] HARESH PRAKASH JETHMALANI | hareshj001@gmail.com
+2026-06-18 02:29:32 [INFO   ] PROGRESS | CA Connect 4/50 | ASHOK LAKHAMSHI GOSAR | ashokgosar@gmail.com
+2026-06-18 02:29:32 [INFO   ]   [4/50] ASHOK LAKHAMSHI GOSAR | ashokgosar@gmail.com
+2026-06-18 02:29:37 [INFO   ] PROGRESS | CA Connect 5/50 | NIKHIL SANDEEP BOHRA | nikhilsbohra@gmail.com
+2026-06-18 02:29:37 [INFO   ]   [5/50] NIKHIL SANDEEP BOHRA | nikhilsbohra@gmail.com
+2026-06-18 02:29:42 [INFO   ] PROGRESS | CA Connect 6/50 | CHANCHAL HAJARILAL JAIN | chanchal@kondesh.com
+2026-06-18 02:29:42 [INFO   ]   [6/50] CHANCHAL HAJARILAL JAIN | chanchal@kondesh.com
+2026-06-18 02:29:47 [INFO   ] PROGRESS | CA Connect 7/50 | HARISH SHYAM CHOUDHARY | harishsc1989@gmail.com
+2026-06-18 02:29:47 [INFO   ]   [7/50] HARISH SHYAM CHOUDHARY | harishsc1989@gmail.com
+2026-06-18 02:29:53 [INFO   ] PROGRESS | CA Connect 8/50 | HARESHKUMAR VASHRAMBHAI PATEL | hvpatelandassociates@gmail.com
+2026-06-18 02:29:53 [INFO   ]   [8/50] HARESHKUMAR VASHRAMBHAI PATEL | hvpatelandassociates@gmail.com
+2026-06-18 02:29:58 [INFO   ] PROGRESS | CA Connect 9/50 | VIKRAM ISHWARLAL TRIVEDI | cavikramtrivedi@gmail.com
+2026-06-18 02:29:58 [INFO   ]   [9/50] VIKRAM ISHWARLAL TRIVEDI | cavikramtrivedi@gmail.com
+2026-06-18 02:30:03 [INFO   ] PROGRESS | CA Connect 10/50 | CHAVAN NAMDEV BABURAO | nbchavan22@yahoo.co.in
+2026-06-18 02:30:03 [INFO   ]   [10/50] CHAVAN NAMDEV BABURAO | nbchavan22@yahoo.co.in
+2026-06-18 02:30:08 [INFO   ] PROGRESS | CA Connect 11/50 | NARENDRA RAMGOPAL SEKSARIA | desaiandseksaria@gmail.com
+2026-06-18 02:30:08 [INFO   ]   [11/50] NARENDRA RAMGOPAL SEKSARIA | desaiandseksaria@gmail.com
+2026-06-18 02:30:13 [INFO   ] PROGRESS | CA Connect 12/50 | VASANT SHIVJI KHATRI | info@vasantkhatrica.com
+2026-06-18 02:30:13 [INFO   ]   [12/50] VASANT SHIVJI KHATRI | info@vasantkhatrica.com
+2026-06-18 02:30:18 [INFO   ] PROGRESS | CA Connect 13/50 | RAKESH RADHESHYAM SAHANI | rakeshsahani134@gmail.com
+2026-06-18 02:30:18 [INFO   ]   [13/50] RAKESH RADHESHYAM SAHANI | rakeshsahani134@gmail.com
+2026-06-18 02:30:23 [INFO   ] PROGRESS | CA Connect 14/50 | JITENDRA THAKUR | cajitendrathakur@gmail.com
+2026-06-18 02:30:23 [INFO   ]   [14/50] JITENDRA THAKUR | cajitendrathakur@gmail.com
+2026-06-18 02:30:28 [INFO   ] PROGRESS | CA Connect 15/50 | ABDUL KAREEM | caabdulkareem@gmail.com
+2026-06-18 02:30:28 [INFO   ]   [15/50] ABDUL KAREEM | caabdulkareem@gmail.com
+2026-06-18 02:30:33 [INFO   ] PROGRESS | CA Connect 16/50 | MILIN HEMENDRA SHAH | camilinhshah@gmail.com
+2026-06-18 02:30:33 [INFO   ]   [16/50] MILIN HEMENDRA SHAH | camilinhshah@gmail.com
+2026-06-18 02:30:38 [INFO   ] PROGRESS | CA Connect 17/50 | KISHORKUMAR MANSUKHLAL MEHTA | kimco1974@yahoo.co.in
+2026-06-18 02:30:38 [INFO   ]   [17/50] KISHORKUMAR MANSUKHLAL MEHTA | kimco1974@yahoo.co.in
+2026-06-18 02:30:43 [INFO   ] PROGRESS | CA Connect 18/50 | RAKESH KUMAR TAK | carakesh.tak@gmail.com
+2026-06-18 02:30:43 [INFO   ]   [18/50] RAKESH KUMAR TAK | carakesh.tak@gmail.com
+2026-06-18 02:30:48 [INFO   ] PROGRESS | CA Connect 19/50 | ASHITA ATUL SHAH | ca.ash.shah@gmail.com
+2026-06-18 02:30:48 [INFO   ]   [19/50] ASHITA ATUL SHAH | ca.ash.shah@gmail.com
+2026-06-18 02:30:53 [INFO   ] PROGRESS | CA Connect 20/50 | KISHORE SRICHAND HINGWANI | kishore.hingwani@gmail.com
+2026-06-18 02:30:53 [INFO   ]   [20/50] KISHORE SRICHAND HINGWANI | kishore.hingwani@gmail.com
+2026-06-18 02:30:58 [INFO   ] PROGRESS | CA Connect 21/50 | GOVIND SHRIGOPAL BHARADIA | cagovind.bharadia@gmail.com
+2026-06-18 02:30:58 [INFO   ]   [21/50] GOVIND SHRIGOPAL BHARADIA | cagovind.bharadia@gmail.com
+2026-06-18 02:31:03 [INFO   ] PROGRESS | CA Connect 22/50 | RUPESHKUMAR KARSHANDAS MASHARU | carupeshmashru@gmail.com
+2026-06-18 02:31:03 [INFO   ]   [22/50] RUPESHKUMAR KARSHANDAS MASHARU | carupeshmashru@gmail.com
+2026-06-18 02:31:08 [INFO   ] PROGRESS | CA Connect 23/50 | VINIT HASMUKH SUNITA NAGDA | ca.vinit.hn@gmail.com
+2026-06-18 02:31:08 [INFO   ]   [23/50] VINIT HASMUKH SUNITA NAGDA | ca.vinit.hn@gmail.com
+2026-06-18 02:31:13 [INFO   ] PROGRESS | CA Connect 24/50 | DAVE PARESH JAYANTKUMAR | pareshdave2003@gmail.com
+2026-06-18 02:31:13 [INFO   ]   [24/50] DAVE PARESH JAYANTKUMAR | pareshdave2003@gmail.com
+2026-06-18 02:31:18 [INFO   ] PROGRESS | CA Connect 25/50 | TRUPTI GAJANAN CHAVAN | trupti.ca@hotmail.com
+2026-06-18 02:31:18 [INFO   ]   [25/50] TRUPTI GAJANAN CHAVAN | trupti.ca@hotmail.com
+2026-06-18 02:31:23 [INFO   ] PROGRESS | CA Connect 26/50 | MAHESHWARI RITU | ritu_n_maheshwari@yahoo.co.in
+2026-06-18 02:31:23 [INFO   ]   [26/50] MAHESHWARI RITU | ritu_n_maheshwari@yahoo.co.in
+2026-06-18 02:31:28 [INFO   ] PROGRESS | CA Connect 27/50 | KUSHAL BIPINCHANDRA JAIN | cakushal01@gmail.com
+2026-06-18 02:31:28 [INFO   ]   [27/50] KUSHAL BIPINCHANDRA JAIN | cakushal01@gmail.com
+2026-06-18 02:31:33 [INFO   ] PROGRESS | CA Connect 28/50 | MANAN SATISH PATEL | mananpatel.co@gmail.com
+2026-06-18 02:31:33 [INFO   ]   [28/50] MANAN SATISH PATEL | mananpatel.co@gmail.com
+2026-06-18 02:31:38 [INFO   ] PROGRESS | CA Connect 29/50 | KUSH MILAN MALDE | maldekush@gmail.com
+2026-06-18 02:31:38 [INFO   ]   [29/50] KUSH MILAN MALDE | maldekush@gmail.com
+2026-06-18 02:31:44 [INFO   ] PROGRESS | CA Connect 30/50 | GAURAV JAIN | cagaurav914@gmail.com
+2026-06-18 02:31:44 [INFO   ]   [30/50] GAURAV JAIN | cagaurav914@gmail.com
+2026-06-18 02:31:49 [INFO   ] PROGRESS | CA Connect 31/50 | BHARAT KUMAR | singhalbharat627@gmail.com
+2026-06-18 02:31:49 [INFO   ]   [31/50] BHARAT KUMAR | singhalbharat627@gmail.com
+2026-06-18 02:31:54 [INFO   ] PROGRESS | CA Connect 32/50 | SHIVAM GYANCHAND BUNDIWAL | shivamgbundiwal@gmail.com
+2026-06-18 02:31:54 [INFO   ]   [32/50] SHIVAM GYANCHAND BUNDIWAL | shivamgbundiwal@gmail.com
+2026-06-18 02:31:59 [INFO   ] PROGRESS | CA Connect 33/50 | ASHOK PUNAMCHAND CHAUDHARY | caashok@cvmllp.com
+2026-06-18 02:31:59 [INFO   ]   [33/50] ASHOK PUNAMCHAND CHAUDHARY | caashok@cvmllp.com
+2026-06-18 02:32:04 [INFO   ] PROGRESS | CA Connect 34/50 | BURHAN SHAMUN NASIR | burhan_nasir96@hotmail.com
+2026-06-18 02:32:04 [INFO   ]   [34/50] BURHAN SHAMUN NASIR | burhan_nasir96@hotmail.com
+2026-06-18 02:32:09 [INFO   ] PROGRESS | CA Connect 35/50 | CHITKALA UMAKANT KULKARNI | kulkarnichitkala@gmail.com
+2026-06-18 02:32:09 [INFO   ]   [35/50] CHITKALA UMAKANT KULKARNI | kulkarnichitkala@gmail.com
+2026-06-18 02:32:14 [INFO   ] PROGRESS | CA Connect 36/50 | PUROHIT NILKANTH BALUSHANKAR | nbpurohit@gmail.com
+2026-06-18 02:32:14 [INFO   ]   [36/50] PUROHIT NILKANTH BALUSHANKAR | nbpurohit@gmail.com
+2026-06-18 02:32:19 [INFO   ] PROGRESS | CA Connect 37/50 | JITENDRA VASHUDEV CHABLANI | jitendrachablani@gmail.com
+2026-06-18 02:32:19 [INFO   ]   [37/50] JITENDRA VASHUDEV CHABLANI | jitendrachablani@gmail.com
+2026-06-18 02:32:24 [INFO   ] PROGRESS | CA Connect 38/50 | SHELLY JAIN | jain.shelly4@gmail.com
+2026-06-18 02:32:24 [INFO   ]   [38/50] SHELLY JAIN | jain.shelly4@gmail.com
+2026-06-18 02:32:29 [INFO   ] PROGRESS | CA Connect 39/50 | SAURABH MADHUSUDAN LADDHA | saurabh.laddha@ymail.com
+2026-06-18 02:32:29 [INFO   ]   [39/50] SAURABH MADHUSUDAN LADDHA | saurabh.laddha@ymail.com
+2026-06-18 02:32:34 [INFO   ] PROGRESS | CA Connect 40/50 | MOIN CHHOTU SHAIKH | ykyasin7@gmail.com
+2026-06-18 02:32:34 [INFO   ]   [40/50] MOIN CHHOTU SHAIKH | ykyasin7@gmail.com
+2026-06-18 02:32:39 [INFO   ] PROGRESS | CA Connect 41/50 | GAUTAM MULCHAND MEISHERI | gmm1721@yahoo.co.in
+2026-06-18 02:32:39 [INFO   ]   [41/50] GAUTAM MULCHAND MEISHERI | gmm1721@yahoo.co.in
+2026-06-18 02:32:44 [INFO   ] PROGRESS | CA Connect 42/50 | JYOTI RAVI BOHARA | jdchaplot@gmail.com
+2026-06-18 02:32:44 [INFO   ]   [42/50] JYOTI RAVI BOHARA | jdchaplot@gmail.com
+2026-06-18 02:32:49 [INFO   ] PROGRESS | CA Connect 43/50 | MOHAMMED ARBAZ MOHAMMED YASIN KHAN | caarbazofficial@gmail.com
+2026-06-18 02:32:49 [INFO   ]   [43/50] MOHAMMED ARBAZ MOHAMMED YASIN KHAN | caarbazofficial@gmail.com
+2026-06-18 02:32:54 [INFO   ] PROGRESS | CA Connect 44/50 | SANJAY SHANTILAL DODHIYA | sds1984@gmail.com
+2026-06-18 02:32:54 [INFO   ]   [44/50] SANJAY SHANTILAL DODHIYA | sds1984@gmail.com
+2026-06-18 02:32:59 [INFO   ] PROGRESS | CA Connect 45/50 | VIVEK AJIT MEHTA | vivekm82@gmail.com
+2026-06-18 02:32:59 [INFO   ]   [45/50] VIVEK AJIT MEHTA | vivekm82@gmail.com
+2026-06-18 02:33:04 [INFO   ] PROGRESS | CA Connect 46/50 | CHANDANI PRAKASHMAL BHANDARI | cacpbhandari@gmail.com
+2026-06-18 02:33:04 [INFO   ]   [46/50] CHANDANI PRAKASHMAL BHANDARI | cacpbhandari@gmail.com
+2026-06-18 02:33:09 [INFO   ] PROGRESS | CA Connect 47/50 | MUSTAFA AKBAR LAKKEDGHATWALA | mlakkedghat@gmail.com
+2026-06-18 02:33:09 [INFO   ]   [47/50] MUSTAFA AKBAR LAKKEDGHATWALA | mlakkedghat@gmail.com
+2026-06-18 02:33:14 [INFO   ] PROGRESS | CA Connect 48/50 | RAJENDER KUMAR SHARMA | carajendra89@gmail.com
+2026-06-18 02:33:14 [INFO   ]   [48/50] RAJENDER KUMAR SHARMA | carajendra89@gmail.com
+2026-06-18 02:33:19 [INFO   ] PROGRESS | CA Connect 49/50 | ANUPRITA ASHISH GAWANDE | anuprita_gawande@yahoo.co.in
+2026-06-18 02:33:19 [INFO   ]   [49/50] ANUPRITA ASHISH GAWANDE | anuprita_gawande@yahoo.co.in
+2026-06-18 02:33:24 [INFO   ] PROGRESS | CA Connect 50/50 | YASHIKA VINOD JAIN | yashika@jbtm.in
+2026-06-18 02:33:24 [INFO   ]   [50/50] YASHIKA VINOD JAIN | yashika@jbtm.in
+2026-06-18 02:33:25 [INFO   ] Batch done — 50 new email(s) this batch | run total 326 / 1000
+2026-06-18 02:33:25 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (346 pending in this city)
+2026-06-18 02:33:25 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:33:32 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:33:35 [INFO   ] PROGRESS | CA Connect 1/50 | RAHUL PRAVEEN JAIN | rj4486@gmail.com
+2026-06-18 02:33:35 [INFO   ]   [1/50] RAHUL PRAVEEN JAIN | rj4486@gmail.com
+2026-06-18 02:33:40 [INFO   ] PROGRESS | CA Connect 2/50 | VIKRAM ACHYUT WALVEKAR | wvikram@rediffmail.com
+2026-06-18 02:33:40 [INFO   ]   [2/50] VIKRAM ACHYUT WALVEKAR | wvikram@rediffmail.com
+2026-06-18 02:33:45 [INFO   ] PROGRESS | CA Connect 3/50 | VINODKUMAR VASUDEO VARMA | vinodvarma@hotmail.com
+2026-06-18 02:33:45 [INFO   ]   [3/50] VINODKUMAR VASUDEO VARMA | vinodvarma@hotmail.com
+2026-06-18 02:33:50 [INFO   ] PROGRESS | CA Connect 4/50 | HARDIK RASIK PATEL | hardikpatel128@gmail.com
+2026-06-18 02:33:50 [INFO   ]   [4/50] HARDIK RASIK PATEL | hardikpatel128@gmail.com
+2026-06-18 02:33:55 [INFO   ] PROGRESS | CA Connect 5/50 | KULWANT SINGH RAM SINGH KHALSA | kulwant@kskhokhani.com
+2026-06-18 02:33:55 [INFO   ]   [5/50] KULWANT SINGH RAM SINGH KHALSA | kulwant@kskhokhani.com
+2026-06-18 02:34:01 [INFO   ] PROGRESS | CA Connect 6/50 | REHANA SAMEER MALKANI | malkaniandassociates@gmail.com
+2026-06-18 02:34:01 [INFO   ]   [6/50] REHANA SAMEER MALKANI | malkaniandassociates@gmail.com
+2026-06-18 02:34:06 [INFO   ] PROGRESS | CA Connect 7/50 | VISHAL CHUNILAL SHETHIYA | cavishalshethiya@gmail.com
+2026-06-18 02:34:06 [INFO   ]   [7/50] VISHAL CHUNILAL SHETHIYA | cavishalshethiya@gmail.com
+2026-06-18 02:34:11 [INFO   ] PROGRESS | CA Connect 8/50 | ASHISH SURESH DHAPADE | caashish.dhapade@gmail.com
+2026-06-18 02:34:11 [INFO   ]   [8/50] ASHISH SURESH DHAPADE | caashish.dhapade@gmail.com
+2026-06-18 02:34:16 [INFO   ] PROGRESS | CA Connect 9/50 | MANOJ KUMAR BHAGERIA | manoj1.bhageria@gmail.com
+2026-06-18 02:34:16 [INFO   ]   [9/50] MANOJ KUMAR BHAGERIA | manoj1.bhageria@gmail.com
+2026-06-18 02:34:21 [INFO   ] PROGRESS | CA Connect 10/50 | MRUNAL SHANTARAM BORCHATE | mrunalworkca@gmail.com
+2026-06-18 02:34:21 [INFO   ]   [10/50] MRUNAL SHANTARAM BORCHATE | mrunalworkca@gmail.com
+2026-06-18 02:34:26 [INFO   ] PROGRESS | CA Connect 11/50 | RAJESH SHANTILAL RAYTHATHA | raythatha@gmail.com
+2026-06-18 02:34:26 [INFO   ]   [11/50] RAJESH SHANTILAL RAYTHATHA | raythatha@gmail.com
+2026-06-18 02:34:31 [INFO   ] PROGRESS | CA Connect 12/50 | JAYSHANKAR RUPNATH RAI | jairai50@gmail.com
+2026-06-18 02:34:31 [INFO   ]   [12/50] JAYSHANKAR RUPNATH RAI | jairai50@gmail.com
+2026-06-18 02:34:36 [INFO   ] PROGRESS | CA Connect 13/50 | JAYNA MUKESH SANGHAVI | jayna19@outlook.com
+2026-06-18 02:34:36 [INFO   ]   [13/50] JAYNA MUKESH SANGHAVI | jayna19@outlook.com
+2026-06-18 02:34:41 [INFO   ] PROGRESS | CA Connect 14/50 | NIRUPA VIJAY JETHWA | nirupa_jethwa@yahoo.com
+2026-06-18 02:34:41 [INFO   ]   [14/50] NIRUPA VIJAY JETHWA | nirupa_jethwa@yahoo.com
+2026-06-18 02:34:46 [INFO   ] PROGRESS | CA Connect 15/50 | Isha Ronak Shah | ishagutka@gmail.com
+2026-06-18 02:34:46 [INFO   ]   [15/50] Isha Ronak Shah | ishagutka@gmail.com
+2026-06-18 02:34:51 [INFO   ] PROGRESS | CA Connect 16/50 | HIMANSHU DHIRAJLAL DHABALIA | cahddservice@gmail.com
+2026-06-18 02:34:51 [INFO   ]   [16/50] HIMANSHU DHIRAJLAL DHABALIA | cahddservice@gmail.com
+2026-06-18 02:34:56 [INFO   ] PROGRESS | CA Connect 17/50 | KARAMCHAND MANNALAL KANKARIYA | karamchand.kankariya@gmail.com
+2026-06-18 02:34:56 [INFO   ]   [17/50] KARAMCHAND MANNALAL KANKARIYA | karamchand.kankariya@gmail.com
+2026-06-18 02:35:01 [INFO   ] PROGRESS | CA Connect 18/50 | HARDIK BHARAT CHHADVA | hardikchhadva123@gmail.com
+2026-06-18 02:35:01 [INFO   ]   [18/50] HARDIK BHARAT CHHADVA | hardikchhadva123@gmail.com
+2026-06-18 02:35:06 [INFO   ] PROGRESS | CA Connect 19/50 | NAYAN CHHOTALAL THAKKAR | nayanthakkar11@gmail.com
+2026-06-18 02:35:06 [INFO   ]   [19/50] NAYAN CHHOTALAL THAKKAR | nayanthakkar11@gmail.com
+2026-06-18 02:35:11 [INFO   ] PROGRESS | CA Connect 20/50 | SURESH LACHMAN ADVANI | caadvanisuresh@gmail.com
+2026-06-18 02:35:11 [INFO   ]   [20/50] SURESH LACHMAN ADVANI | caadvanisuresh@gmail.com
+2026-06-18 02:35:16 [INFO   ] PROGRESS | CA Connect 21/50 | DIVYANSHI GIRISH MITTAL | divyanshigmittal@gmail.com
+2026-06-18 02:35:16 [INFO   ]   [21/50] DIVYANSHI GIRISH MITTAL | divyanshigmittal@gmail.com
+2026-06-18 02:35:22 [INFO   ] PROGRESS | CA Connect 22/50 | NIDHI SUSHIL KUMBHAR | canidhikumbhar@gmail.com
+2026-06-18 02:35:22 [INFO   ]   [22/50] NIDHI SUSHIL KUMBHAR | canidhikumbhar@gmail.com
+2026-06-18 02:35:26 [INFO   ] PROGRESS | CA Connect 23/50 | BHAVNA GORKHANATH MHATRE | cabhavna87@gmail.com
+2026-06-18 02:35:26 [INFO   ]   [23/50] BHAVNA GORKHANATH MHATRE | cabhavna87@gmail.com
+2026-06-18 02:35:31 [INFO   ] PROGRESS | CA Connect 24/50 | MAHESHWARI POOJA | pooja.maheshwari1@gmail.com
+2026-06-18 02:35:31 [INFO   ]   [24/50] MAHESHWARI POOJA | pooja.maheshwari1@gmail.com
+2026-06-18 02:35:36 [INFO   ] PROGRESS | CA Connect 25/50 | BHAVISHA KUNAL SOLANKI | bhavishidoshi@yahoo.com
+2026-06-18 02:35:36 [INFO   ]   [25/50] BHAVISHA KUNAL SOLANKI | bhavishidoshi@yahoo.com
+2026-06-18 02:35:42 [INFO   ] PROGRESS | CA Connect 26/50 | BHARGAV HARISH MEHTA | bhargavmehta1@gmail.com
+2026-06-18 02:35:42 [INFO   ]   [26/50] BHARGAV HARISH MEHTA | bhargavmehta1@gmail.com
+2026-06-18 02:35:47 [INFO   ] PROGRESS | CA Connect 27/50 | JEEGAR NILAY VALERA | jeegarvalera@rediffmail.com
+2026-06-18 02:35:47 [INFO   ]   [27/50] JEEGAR NILAY VALERA | jeegarvalera@rediffmail.com
+2026-06-18 02:35:52 [INFO   ] PROGRESS | CA Connect 28/50 | SHIVEKUMAR SHAMRAJ SHARMA | shivekss@gmail.com
+2026-06-18 02:35:52 [INFO   ]   [28/50] SHIVEKUMAR SHAMRAJ SHARMA | shivekss@gmail.com
+2026-06-18 02:35:57 [INFO   ] PROGRESS | CA Connect 29/50 | CHIRANJEEVI VENKATRAO GORLI | ca_chiranjeevi@yahoo.com
+2026-06-18 02:35:57 [INFO   ]   [29/50] CHIRANJEEVI VENKATRAO GORLI | ca_chiranjeevi@yahoo.com
+2026-06-18 02:36:02 [INFO   ] PROGRESS | CA Connect 30/50 | ZAINAB MOIZ LOKHANDWALA | moizflca@yahoo.com
+2026-06-18 02:36:02 [INFO   ]   [30/50] ZAINAB MOIZ LOKHANDWALA | moizflca@yahoo.com
+2026-06-18 02:36:07 [INFO   ] PROGRESS | CA Connect 31/50 | SUDHANSHU SHEKHAR SINGH | sudhanshussingh08@gmail.com
+2026-06-18 02:36:07 [INFO   ]   [31/50] SUDHANSHU SHEKHAR SINGH | sudhanshussingh08@gmail.com
+2026-06-18 02:36:12 [INFO   ] PROGRESS | CA Connect 32/50 | SANJAY ANILKANT SHAH | sanjay_ashah10@yahoo.co.in
+2026-06-18 02:36:12 [INFO   ]   [32/50] SANJAY ANILKANT SHAH | sanjay_ashah10@yahoo.co.in
+2026-06-18 02:36:17 [INFO   ] PROGRESS | CA Connect 33/50 | SUMIT RATANLAL JAIN | office.srjain@gmail.com
+2026-06-18 02:36:17 [INFO   ]   [33/50] SUMIT RATANLAL JAIN | office.srjain@gmail.com
+2026-06-18 02:36:22 [INFO   ] PROGRESS | CA Connect 34/50 | MUKUND MANSINGRAO POL | mukundpol@yahoo.co.in
+2026-06-18 02:36:22 [INFO   ]   [34/50] MUKUND MANSINGRAO POL | mukundpol@yahoo.co.in
+2026-06-18 02:36:27 [INFO   ] PROGRESS | CA Connect 35/50 | CHANDRAKANT B AMBANI | cbambani@yahoo.co.in
+2026-06-18 02:36:27 [INFO   ]   [35/50] CHANDRAKANT B AMBANI | cbambani@yahoo.co.in
+2026-06-18 02:36:32 [INFO   ] PROGRESS | CA Connect 36/50 | KEJAL DHARMENDRA JAIN | kejaljain161@gmail.com
+2026-06-18 02:36:32 [INFO   ]   [36/50] KEJAL DHARMENDRA JAIN | kejaljain161@gmail.com
+2026-06-18 02:36:37 [INFO   ] PROGRESS | CA Connect 37/50 | JIGNESH HANSRAJ GALA | jigsgala123@gmail.com
+2026-06-18 02:36:37 [INFO   ]   [37/50] JIGNESH HANSRAJ GALA | jigsgala123@gmail.com
+2026-06-18 02:36:42 [INFO   ] PROGRESS | CA Connect 38/50 | NEHA VIJAY SHAH | nehashah23@rediffmail.com
+2026-06-18 02:36:42 [INFO   ]   [38/50] NEHA VIJAY SHAH | nehashah23@rediffmail.com
+2026-06-18 02:36:48 [INFO   ] PROGRESS | CA Connect 39/50 | SUNIL KISHORBHAI RAJGOR | rajgor.sunil22@gmail.com
+2026-06-18 02:36:48 [INFO   ]   [39/50] SUNIL KISHORBHAI RAJGOR | rajgor.sunil22@gmail.com
+2026-06-18 02:36:53 [INFO   ] PROGRESS | CA Connect 40/50 | HITESH RANCHHODDAS VAISHNAV | vaishnavhitesh60@gmail.com
+2026-06-18 02:36:53 [INFO   ]   [40/50] HITESH RANCHHODDAS VAISHNAV | vaishnavhitesh60@gmail.com
+2026-06-18 02:36:58 [INFO   ] PROGRESS | CA Connect 41/50 | RAHUL KISHOR DAYAMA | rahulkdayama@gmail.com
+2026-06-18 02:36:58 [INFO   ]   [41/50] RAHUL KISHOR DAYAMA | rahulkdayama@gmail.com
+2026-06-18 02:37:03 [INFO   ] PROGRESS | CA Connect 42/50 | DHAVAL VITHALDAS BHANUSHALI | cadhavalgori@gmail.com
+2026-06-18 02:37:03 [INFO   ]   [42/50] DHAVAL VITHALDAS BHANUSHALI | cadhavalgori@gmail.com
+2026-06-18 02:37:08 [INFO   ] PROGRESS | CA Connect 43/50 | LAKDAWALA BHUPENDRA BABUBHAI | bhupen_lakdawala@hotmail.com
+2026-06-18 02:37:08 [INFO   ]   [43/50] LAKDAWALA BHUPENDRA BABUBHAI | bhupen_lakdawala@hotmail.com
+2026-06-18 02:37:13 [INFO   ] PROGRESS | CA Connect 44/50 | EKTA ABHISHEK SINGHAL | caektajain10@gmail.com
+2026-06-18 02:37:13 [INFO   ]   [44/50] EKTA ABHISHEK SINGHAL | caektajain10@gmail.com
+2026-06-18 02:37:18 [INFO   ] PROGRESS | CA Connect 45/50 | PARAG RAMAN HANGEKAR | phangekar@yahoo.com
+2026-06-18 02:37:18 [INFO   ]   [45/50] PARAG RAMAN HANGEKAR | phangekar@yahoo.com
+2026-06-18 02:37:24 [INFO   ] PROGRESS | CA Connect 46/50 | ADITYA JAIN | jainaditya12@yahoo.co.in
+2026-06-18 02:37:24 [INFO   ]   [46/50] ADITYA JAIN | jainaditya12@yahoo.co.in
+2026-06-18 02:37:29 [INFO   ] PROGRESS | CA Connect 47/50 | DIPTI VAIBHAV JHUNJHUNWALA | deeptimangal10@gmail.com
+2026-06-18 02:37:29 [INFO   ]   [47/50] DIPTI VAIBHAV JHUNJHUNWALA | deeptimangal10@gmail.com
+2026-06-18 02:37:34 [INFO   ] PROGRESS | CA Connect 48/50 | SNEHA SAGAR PATIL | svvcafirm@gmail.com
+2026-06-18 02:37:34 [INFO   ]   [48/50] SNEHA SAGAR PATIL | svvcafirm@gmail.com
+2026-06-18 02:37:39 [INFO   ] PROGRESS | CA Connect 49/50 | DHIRAV VIPUL SANGOI | dhirav@gmail.com
+2026-06-18 02:37:39 [INFO   ]   [49/50] DHIRAV VIPUL SANGOI | dhirav@gmail.com
+2026-06-18 02:37:44 [INFO   ] PROGRESS | CA Connect 50/50 | SWAPNIL ARUNKUMAR GUPTA | guptap929@gmail.com
+2026-06-18 02:37:44 [INFO   ]   [50/50] SWAPNIL ARUNKUMAR GUPTA | guptap929@gmail.com
+2026-06-18 02:37:44 [INFO   ] Batch done — 50 new email(s) this batch | run total 376 / 1000
+2026-06-18 02:37:44 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (296 pending in this city)
+2026-06-18 02:37:45 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:37:51 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:37:54 [INFO   ] PROGRESS | CA Connect 1/50 | JAYESH KUMAR KALIDAS SHAH | jayeshkshah2002@yahoo.com
+2026-06-18 02:37:54 [INFO   ]   [1/50] JAYESH KUMAR KALIDAS SHAH | jayeshkshah2002@yahoo.com
+2026-06-18 02:37:59 [INFO   ] PROGRESS | CA Connect 2/50 | CHINMAY RAJIV SHAH | chinrshah@gmail.com
+2026-06-18 02:37:59 [INFO   ]   [2/50] CHINMAY RAJIV SHAH | chinrshah@gmail.com
+2026-06-18 02:38:04 [INFO   ] PROGRESS | CA Connect 3/50 | ANKUR HITENDRA SHAH | ca_ankurshah@hotmail.com
+2026-06-18 02:38:04 [INFO   ]   [3/50] ANKUR HITENDRA SHAH | ca_ankurshah@hotmail.com
+2026-06-18 02:38:09 [INFO   ] PROGRESS | CA Connect 4/50 | PRAKASH SHANKARLAL BHANUSHALI | caprakashbhanushali@gmail.com
+2026-06-18 02:38:09 [INFO   ]   [4/50] PRAKASH SHANKARLAL BHANUSHALI | caprakashbhanushali@gmail.com
+2026-06-18 02:38:14 [INFO   ] PROGRESS | CA Connect 5/50 | MAITREYEE ROY | mroy0277@gmail.com
+2026-06-18 02:38:14 [INFO   ]   [5/50] MAITREYEE ROY | mroy0277@gmail.com
+2026-06-18 02:38:19 [INFO   ] PROGRESS | CA Connect 6/50 | VIRENDRA JAIN | viren@virenjain.com
+2026-06-18 02:38:19 [INFO   ]   [6/50] VIRENDRA JAIN | viren@virenjain.com
+2026-06-18 02:38:24 [INFO   ] PROGRESS | CA Connect 7/50 | VIKAS KUMAR | vikas@trchadha.com
+2026-06-18 02:38:24 [INFO   ]   [7/50] VIKAS KUMAR | vikas@trchadha.com
+2026-06-18 02:38:31 [INFO   ] PROGRESS | CA Connect 8/50 | TEJAS MAHADU METANGALE | ca.tejasmetangale@gmail.com
+2026-06-18 02:38:31 [INFO   ]   [8/50] TEJAS MAHADU METANGALE | ca.tejasmetangale@gmail.com
+2026-06-18 02:38:36 [INFO   ] PROGRESS | CA Connect 9/50 | RAMLAXMAN RADHAKISHAN NOLAKHA | rlnolakha22@yahoo.com
+2026-06-18 02:38:36 [INFO   ]   [9/50] RAMLAXMAN RADHAKISHAN NOLAKHA | rlnolakha22@yahoo.com
+2026-06-18 02:38:41 [INFO   ] PROGRESS | CA Connect 10/50 | SHAILESH ANIL JAIN | cashaileshjain123@gmail.com
+2026-06-18 02:38:41 [INFO   ]   [10/50] SHAILESH ANIL JAIN | cashaileshjain123@gmail.com
+2026-06-18 02:38:46 [INFO   ] PROGRESS | CA Connect 11/50 | RAHUL MAHESH KUMAR BHAUWALA | rahul.bhauwala@gmail.com
+2026-06-18 02:38:46 [INFO   ]   [11/50] RAHUL MAHESH KUMAR BHAUWALA | rahul.bhauwala@gmail.com
+2026-06-18 02:38:51 [INFO   ] PROGRESS | CA Connect 12/50 | PRATIK KARAMCHAND KANKARIYA | pratik.kankariya@gmail.com
+2026-06-18 02:38:51 [INFO   ]   [12/50] PRATIK KARAMCHAND KANKARIYA | pratik.kankariya@gmail.com
+2026-06-18 02:38:56 [INFO   ] PROGRESS | CA Connect 13/50 | TANVI RONISH SHAH | trsandco90@gmail.com
+2026-06-18 02:38:56 [INFO   ]   [13/50] TANVI RONISH SHAH | trsandco90@gmail.com
+2026-06-18 02:39:01 [INFO   ] PROGRESS | CA Connect 14/50 | ARIHANT UTTAMCHAND LODHA | arihantlodha@gmail.com
+2026-06-18 02:39:01 [INFO   ]   [14/50] ARIHANT UTTAMCHAND LODHA | arihantlodha@gmail.com
+2026-06-18 02:39:06 [INFO   ] PROGRESS | CA Connect 15/50 | SHIVRATAN LAXMINARAYAN KALANTRI | shiv_kalantri@yahoo.com
+2026-06-18 02:39:06 [INFO   ]   [15/50] SHIVRATAN LAXMINARAYAN KALANTRI | shiv_kalantri@yahoo.com
+2026-06-18 02:39:12 [INFO   ] PROGRESS | CA Connect 16/50 | RAJ JAYANTI SAVLA | raj.savla1@gmail.com
+2026-06-18 02:39:12 [INFO   ]   [16/50] RAJ JAYANTI SAVLA | raj.savla1@gmail.com
+2026-06-18 02:39:17 [INFO   ] PROGRESS | CA Connect 17/50 | ARADHANA MANEESH AGRAWAL | caaradhana03@gmail.com
+2026-06-18 02:39:17 [INFO   ]   [17/50] ARADHANA MANEESH AGRAWAL | caaradhana03@gmail.com
+2026-06-18 02:39:22 [INFO   ] PROGRESS | CA Connect 18/50 | AVIN KAUSHIK SHAH | ca.avinkshah@gmail.com
+2026-06-18 02:39:22 [INFO   ]   [18/50] AVIN KAUSHIK SHAH | ca.avinkshah@gmail.com
+2026-06-18 02:39:27 [INFO   ] PROGRESS | CA Connect 19/50 | BUSHRA RIZWAN KAZI | kazibushra19@gmail.com
+2026-06-18 02:39:27 [INFO   ]   [19/50] BUSHRA RIZWAN KAZI | kazibushra19@gmail.com
+2026-06-18 02:39:32 [INFO   ] PROGRESS | CA Connect 20/50 | TINANI HARESH VISHANDAS | haresh257in@yahoo.co.in
+2026-06-18 02:39:32 [INFO   ]   [20/50] TINANI HARESH VISHANDAS | haresh257in@yahoo.co.in
+2026-06-18 02:39:37 [INFO   ] PROGRESS | CA Connect 21/50 | DIVESH CHANGOIWALA | diveshchangoiwala@gmail.com
+2026-06-18 02:39:37 [INFO   ]   [21/50] DIVESH CHANGOIWALA | diveshchangoiwala@gmail.com
+2026-06-18 02:39:42 [INFO   ] PROGRESS | CA Connect 22/50 | VARUN CHANDRAKANT YADAV | cavarunyadav1184@gmail.com
+2026-06-18 02:39:42 [INFO   ]   [22/50] VARUN CHANDRAKANT YADAV | cavarunyadav1184@gmail.com
+2026-06-18 02:39:47 [INFO   ] PROGRESS | CA Connect 23/50 | ROHIT RAKESH SINGH | ca.rohitsingh1202@gmail.com
+2026-06-18 02:39:47 [INFO   ]   [23/50] ROHIT RAKESH SINGH | ca.rohitsingh1202@gmail.com
+2026-06-18 02:39:52 [INFO   ] PROGRESS | CA Connect 24/50 | PRAMOD AMARSHI SHAH | shahpramod100@gmail.com
+2026-06-18 02:39:52 [INFO   ]   [24/50] PRAMOD AMARSHI SHAH | shahpramod100@gmail.com
+2026-06-18 02:39:57 [INFO   ] PROGRESS | CA Connect 25/50 | PARAG DINESH GUPTA | parag19852003@yahoo.com
+2026-06-18 02:39:57 [INFO   ]   [25/50] PARAG DINESH GUPTA | parag19852003@yahoo.com
+2026-06-18 02:40:02 [INFO   ] PROGRESS | CA Connect 26/50 | JITESH KUMAR SHAMBHUNATH JHA | jiteshsjha@gmail.com
+2026-06-18 02:40:02 [INFO   ]   [26/50] JITESH KUMAR SHAMBHUNATH JHA | jiteshsjha@gmail.com
+2026-06-18 02:40:07 [INFO   ] PROGRESS | CA Connect 27/50 | JINDAL MAN MOHAN | mmjindalassociates@gmail.com
+2026-06-18 02:40:07 [INFO   ]   [27/50] JINDAL MAN MOHAN | mmjindalassociates@gmail.com
+2026-06-18 02:40:12 [INFO   ] PROGRESS | CA Connect 28/50 | KAVITA MANOJ JHAVER | cakavitajhaver@gmail.com
+2026-06-18 02:40:12 [INFO   ]   [28/50] KAVITA MANOJ JHAVER | cakavitajhaver@gmail.com
+2026-06-18 02:40:18 [INFO   ] PROGRESS | CA Connect 29/50 | KALPANADEVEE KESHAVLAL PIRDHANANI | cakalpanasahtani@gmail.com
+2026-06-18 02:40:18 [INFO   ]   [29/50] KALPANADEVEE KESHAVLAL PIRDHANANI | cakalpanasahtani@gmail.com
+2026-06-18 02:40:23 [INFO   ] PROGRESS | CA Connect 30/50 | BHATT TUSHAR BHAVANJI | tbcous@yahoo.com
+2026-06-18 02:40:23 [INFO   ]   [30/50] BHATT TUSHAR BHAVANJI | tbcous@yahoo.com
+2026-06-18 02:40:28 [INFO   ] PROGRESS | CA Connect 31/50 | BHAVESH MULRAJ MEHTA | bhavesh@cabmc.net
+2026-06-18 02:40:28 [INFO   ]   [31/50] BHAVESH MULRAJ MEHTA | bhavesh@cabmc.net
+2026-06-18 02:40:33 [INFO   ] PROGRESS | CA Connect 32/50 | TARUN DOSHI | tarundoshi00@gmail.com
+2026-06-18 02:40:33 [INFO   ]   [32/50] TARUN DOSHI | tarundoshi00@gmail.com
+2026-06-18 02:40:38 [INFO   ] PROGRESS | CA Connect 33/50 | GANESH CHANDRAMOULI | ca.caganesh@gmail.com
+2026-06-18 02:40:38 [INFO   ]   [33/50] GANESH CHANDRAMOULI | ca.caganesh@gmail.com
+2026-06-18 02:40:43 [INFO   ] PROGRESS | CA Connect 34/50 | SUPRIYA DILIP PATHAK | supriyapathak995@gmail.com
+2026-06-18 02:40:43 [INFO   ]   [34/50] SUPRIYA DILIP PATHAK | supriyapathak995@gmail.com
+2026-06-18 02:40:48 [INFO   ] PROGRESS | CA Connect 35/50 | IMRAN YASIN KACHHI | imran.kachhi@gmail.com
+2026-06-18 02:40:48 [INFO   ]   [35/50] IMRAN YASIN KACHHI | imran.kachhi@gmail.com
+2026-06-18 02:40:53 [INFO   ] PROGRESS | CA Connect 36/50 | SAMARTH VILAS GAONKAR | samarth_gaonkar@hotmail.com
+2026-06-18 02:40:53 [INFO   ]   [36/50] SAMARTH VILAS GAONKAR | samarth_gaonkar@hotmail.com
+2026-06-18 02:40:58 [INFO   ] PROGRESS | CA Connect 37/50 | SHETTY SUNIL RAM | ramesh.sunil@hotmail.com
+2026-06-18 02:40:58 [INFO   ]   [37/50] SHETTY SUNIL RAM | ramesh.sunil@hotmail.com
+2026-06-18 02:41:03 [INFO   ] PROGRESS | CA Connect 38/50 | KUNAL ARVIND SHAH | kunals721@gmail.com
+2026-06-18 02:41:03 [INFO   ]   [38/50] KUNAL ARVIND SHAH | kunals721@gmail.com
+2026-06-18 02:41:08 [INFO   ] PROGRESS | CA Connect 39/50 | MEGHNA SURESH SARAF | meghna.saraf@gmail.com
+2026-06-18 02:41:08 [INFO   ]   [39/50] MEGHNA SURESH SARAF | meghna.saraf@gmail.com
+2026-06-18 02:41:13 [INFO   ] PROGRESS | CA Connect 40/50 | MANISHA SOMNATH KOLI | samanvi.23@gmail.com
+2026-06-18 02:41:13 [INFO   ]   [40/50] MANISHA SOMNATH KOLI | samanvi.23@gmail.com
+2026-06-18 02:41:18 [INFO   ] PROGRESS | CA Connect 41/50 | KUMAR JAYSUKHALAL MEHTA | mehta.kumar5595@gmail.com
+2026-06-18 02:41:18 [INFO   ]   [41/50] KUMAR JAYSUKHALAL MEHTA | mehta.kumar5595@gmail.com
+2026-06-18 02:41:23 [INFO   ] PROGRESS | CA Connect 42/50 | DHARMIL RAJENDRA SHAH | dharmilshah5@gmail.com
+2026-06-18 02:41:23 [INFO   ]   [42/50] DHARMIL RAJENDRA SHAH | dharmilshah5@gmail.com
+2026-06-18 02:41:28 [INFO   ] PROGRESS | CA Connect 43/50 | SUNIL SHREERAM DAMLE | sunil_damle3@rediffmail.com
+2026-06-18 02:41:28 [INFO   ]   [43/50] SUNIL SHREERAM DAMLE | sunil_damle3@rediffmail.com
+2026-06-18 02:41:33 [INFO   ] PROGRESS | CA Connect 44/50 | YASHVANT KUMAR | ykumarca@gmail.com
+2026-06-18 02:41:33 [INFO   ]   [44/50] YASHVANT KUMAR | ykumarca@gmail.com
+2026-06-18 02:41:38 [INFO   ] PROGRESS | CA Connect 45/50 | KIRAN SHIVAL PUROHIT | purohitkiran0693@gmail.com
+2026-06-18 02:41:38 [INFO   ]   [45/50] KIRAN SHIVAL PUROHIT | purohitkiran0693@gmail.com
+2026-06-18 02:41:43 [INFO   ] PROGRESS | CA Connect 46/50 | SOHAIL SALIM KAGALWALA | sohailkagalwala@yahoo.co.in
+2026-06-18 02:41:43 [INFO   ]   [46/50] SOHAIL SALIM KAGALWALA | sohailkagalwala@yahoo.co.in
+2026-06-18 02:41:48 [INFO   ] PROGRESS | CA Connect 47/50 | SHAH CHANDRESH CHHABILDAS | hsbcshah@gmail.com
+2026-06-18 02:41:48 [INFO   ]   [47/50] SHAH CHANDRESH CHHABILDAS | hsbcshah@gmail.com
+2026-06-18 02:41:53 [INFO   ] PROGRESS | CA Connect 48/50 | ATUL NARENDRAKUMAR PITHADIA | atulpithadia55@gmail.com
+2026-06-18 02:41:53 [INFO   ]   [48/50] ATUL NARENDRAKUMAR PITHADIA | atulpithadia55@gmail.com
+2026-06-18 02:41:58 [INFO   ] PROGRESS | CA Connect 49/50 | ABHISHEK GUPTA | guptaabhishek282@gmail.com
+2026-06-18 02:41:58 [INFO   ]   [49/50] ABHISHEK GUPTA | guptaabhishek282@gmail.com
+2026-06-18 02:42:03 [INFO   ] PROGRESS | CA Connect 50/50 | RAKESH ROHITBHAI DAFTARY | rakesh_daftary@rediffmail.com
+2026-06-18 02:42:03 [INFO   ]   [50/50] RAKESH ROHITBHAI DAFTARY | rakesh_daftary@rediffmail.com
+2026-06-18 02:42:03 [INFO   ] Batch done — 50 new email(s) this batch | run total 426 / 1000
+2026-06-18 02:42:03 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (246 pending in this city)
+2026-06-18 02:42:04 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:42:10 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:42:13 [INFO   ] PROGRESS | CA Connect 1/50 | HANIF FAROOK USMAN | hanifusman@yahoo.com
+2026-06-18 02:42:13 [INFO   ]   [1/50] HANIF FAROOK USMAN | hanifusman@yahoo.com
+2026-06-18 02:42:18 [INFO   ] PROGRESS | CA Connect 2/50 | DUBEY NAGESH KUMAR VIJAYNATH | dubey.nagesh@gmail.com
+2026-06-18 02:42:18 [INFO   ]   [2/50] DUBEY NAGESH KUMAR VIJAYNATH | dubey.nagesh@gmail.com
+2026-06-18 02:42:24 [INFO   ] PROGRESS | CA Connect 3/50 | KEYUR DILIP SHAH | kdshahconsultancy@gmail.com
+2026-06-18 02:42:24 [INFO   ]   [3/50] KEYUR DILIP SHAH | kdshahconsultancy@gmail.com
+2026-06-18 02:42:29 [INFO   ] PROGRESS | CA Connect 4/50 | NIMESH ARVIND RAJPOPAT | nim.8055@gmail.com
+2026-06-18 02:42:29 [INFO   ]   [4/50] NIMESH ARVIND RAJPOPAT | nim.8055@gmail.com
+2026-06-18 02:42:34 [INFO   ] PROGRESS | CA Connect 5/50 | EKTA BHARAT SHAH | shahekta528@gmail.com
+2026-06-18 02:42:34 [INFO   ]   [5/50] EKTA BHARAT SHAH | shahekta528@gmail.com
+2026-06-18 02:42:39 [INFO   ] PROGRESS | CA Connect 6/50 | ABHISHEK RAJENDRAKUMAR JAIN | caabhishekjain1117@gmail.com
+2026-06-18 02:42:39 [INFO   ]   [6/50] ABHISHEK RAJENDRAKUMAR JAIN | caabhishekjain1117@gmail.com
+2026-06-18 02:42:44 [INFO   ] PROGRESS | CA Connect 7/50 | ADITYA RAJESH CHATURVEDI | aditya.r.chaturvedi@gmail.com
+2026-06-18 02:42:44 [INFO   ]   [7/50] ADITYA RAJESH CHATURVEDI | aditya.r.chaturvedi@gmail.com
+2026-06-18 02:42:49 [INFO   ] PROGRESS | CA Connect 8/50 | SANJEEV KUMAR GOWADIA | sgowadia@rediffmail.com
+2026-06-18 02:42:49 [INFO   ]   [8/50] SANJEEV KUMAR GOWADIA | sgowadia@rediffmail.com
+2026-06-18 02:42:54 [INFO   ] PROGRESS | CA Connect 9/50 | MITUL MAYUR VALIA | mitulvalia8879@gmail.com
+2026-06-18 02:42:54 [INFO   ]   [9/50] MITUL MAYUR VALIA | mitulvalia8879@gmail.com
+2026-06-18 02:42:59 [INFO   ] PROGRESS | CA Connect 10/50 | RAM PRAKASH TIWARI | ramprakasht009@gmail.com
+2026-06-18 02:42:59 [INFO   ]   [10/50] RAM PRAKASH TIWARI | ramprakasht009@gmail.com
+2026-06-18 02:43:04 [INFO   ] PROGRESS | CA Connect 11/50 | CHOKSEY RASHMIKANT ISHWARLAL | ca.richoksey@gmail.com
+2026-06-18 02:43:04 [INFO   ]   [11/50] CHOKSEY RASHMIKANT ISHWARLAL | ca.richoksey@gmail.com
+2026-06-18 02:43:09 [INFO   ] PROGRESS | CA Connect 12/50 | DEDHIA CHETAN NANJI | cndedhia@hotmail.com
+2026-06-18 02:43:09 [INFO   ]   [12/50] DEDHIA CHETAN NANJI | cndedhia@hotmail.com
+2026-06-18 02:43:14 [INFO   ] PROGRESS | CA Connect 13/50 | UTTAM CHAND NAHAR | nahar_uttam@rediffmail.com
+2026-06-18 02:43:14 [INFO   ]   [13/50] UTTAM CHAND NAHAR | nahar_uttam@rediffmail.com
+2026-06-18 02:43:19 [INFO   ] PROGRESS | CA Connect 14/50 | SWETHA JAIN S | realshwetha@gmail.com
+2026-06-18 02:43:19 [INFO   ]   [14/50] SWETHA JAIN S | realshwetha@gmail.com
+2026-06-18 02:43:24 [INFO   ] PROGRESS | CA Connect 15/50 | SURAJKUMAR BABUBHAI PATEL | surajkumarp840@gmail.com
+2026-06-18 02:43:24 [INFO   ]   [15/50] SURAJKUMAR BABUBHAI PATEL | surajkumarp840@gmail.com
+2026-06-18 02:43:29 [INFO   ] PROGRESS | CA Connect 16/50 | DHARMESH HASMUKHBHAI VAIYATA | cadharmesh.vaiyata@gmail.com
+2026-06-18 02:43:29 [INFO   ]   [16/50] DHARMESH HASMUKHBHAI VAIYATA | cadharmesh.vaiyata@gmail.com
+2026-06-18 02:43:34 [INFO   ] PROGRESS | CA Connect 17/50 | HANISHA VIJAYBHAI SARVAIYA | jeswanirathore.hanisha@gmail.com
+2026-06-18 02:43:34 [INFO   ]   [17/50] HANISHA VIJAYBHAI SARVAIYA | jeswanirathore.hanisha@gmail.com
+2026-06-18 02:43:39 [INFO   ] PROGRESS | CA Connect 18/50 | RIYA HEMANT CHAVAN | cariyachavan@gmail.com
+2026-06-18 02:43:39 [INFO   ]   [18/50] RIYA HEMANT CHAVAN | cariyachavan@gmail.com
+2026-06-18 02:43:44 [INFO   ] PROGRESS | CA Connect 19/50 | RAHUL PRAKASH KOTHARI | rahulk1988@gmail.com
+2026-06-18 02:43:44 [INFO   ]   [19/50] RAHUL PRAKASH KOTHARI | rahulk1988@gmail.com
+2026-06-18 02:43:49 [INFO   ] PROGRESS | CA Connect 20/50 | KRISHNA ROHIT GUPTA | gkrishna8521@gmail.com
+2026-06-18 02:43:49 [INFO   ]   [20/50] KRISHNA ROHIT GUPTA | gkrishna8521@gmail.com
+2026-06-18 02:43:54 [INFO   ] PROGRESS | CA Connect 21/50 | MANOJKUMAR GAURISHANKAR GHASOLIA | mghasolia1992@gmail.com
+2026-06-18 02:43:54 [INFO   ]   [21/50] MANOJKUMAR GAURISHANKAR GHASOLIA | mghasolia1992@gmail.com
+2026-06-18 02:43:59 [INFO   ] PROGRESS | CA Connect 22/50 | NATASHA DHARMENDRA RATHOD | natasharathod15@gmail.com
+2026-06-18 02:43:59 [INFO   ]   [22/50] NATASHA DHARMENDRA RATHOD | natasharathod15@gmail.com
+2026-06-18 02:44:05 [INFO   ] PROGRESS | CA Connect 23/50 | AISHA KHATOON | aisha.k.ca@gmail.com
+2026-06-18 02:44:05 [INFO   ]   [23/50] AISHA KHATOON | aisha.k.ca@gmail.com
+2026-06-18 02:44:10 [INFO   ] PROGRESS | CA Connect 24/50 | HEEMA RAJESH MAV | mavheema@gmail.com
+2026-06-18 02:44:10 [INFO   ]   [24/50] HEEMA RAJESH MAV | mavheema@gmail.com
+2026-06-18 02:44:15 [INFO   ] PROGRESS | CA Connect 25/50 | RAJESH RAMESH AGRAWAL | rajeshag2007@gmail.com
+2026-06-18 02:44:15 [INFO   ]   [25/50] RAJESH RAMESH AGRAWAL | rajeshag2007@gmail.com
+2026-06-18 02:44:20 [INFO   ] PROGRESS | CA Connect 26/50 | RAHEJA KAMLESH RAMCHAND | kamlesh@krraheja.com
+2026-06-18 02:44:20 [INFO   ]   [26/50] RAHEJA KAMLESH RAMCHAND | kamlesh@krraheja.com
+2026-06-18 02:44:25 [INFO   ] PROGRESS | CA Connect 27/50 | ADITYA VIVEK GHANEKAR | aditya_ghanekar17@yahoo.com
+2026-06-18 02:44:25 [INFO   ]   [27/50] ADITYA VIVEK GHANEKAR | aditya_ghanekar17@yahoo.com
+2026-06-18 02:44:30 [INFO   ] PROGRESS | CA Connect 28/50 | MANTHAN GANDHI & CO | manthan1206@gmail.com
+2026-06-18 02:44:30 [INFO   ]   [28/50] MANTHAN GANDHI & CO | manthan1206@gmail.com
+2026-06-18 02:44:35 [INFO   ] PROGRESS | CA Connect 29/50 | S G BHAVE & CO | casaurabhbhave@gmail.com
+2026-06-18 02:44:35 [INFO   ]   [29/50] S G BHAVE & CO | casaurabhbhave@gmail.com
+2026-06-18 02:44:40 [INFO   ] PROGRESS | CA Connect 30/50 | H S A S & CO | cahimanshuanilsharma@gmail.com
+2026-06-18 02:44:40 [INFO   ]   [30/50] H S A S & CO | cahimanshuanilsharma@gmail.com
+2026-06-18 02:44:45 [INFO   ] PROGRESS | CA Connect 31/50 | RITUL JAIN & CO | rituljain357@gmail.com
+2026-06-18 02:44:45 [INFO   ]   [31/50] RITUL JAIN & CO | rituljain357@gmail.com
+2026-06-18 02:44:50 [INFO   ] PROGRESS | CA Connect 32/50 | AKKAD MEHTA & CO LLP | sanjay.amco@gmail.com
+2026-06-18 02:44:50 [INFO   ]   [32/50] AKKAD MEHTA & CO LLP | sanjay.amco@gmail.com
+2026-06-18 02:44:55 [INFO   ] PROGRESS | CA Connect 33/50 | BASER & ASSOCIATES | basermanoj@yahoo.com
+2026-06-18 02:44:55 [INFO   ]   [33/50] BASER & ASSOCIATES | basermanoj@yahoo.com
+2026-06-18 02:45:00 [INFO   ] PROGRESS | CA Connect 34/50 | R D H A & ASSOCIATES | rachana123g@gmail.com
+2026-06-18 02:45:00 [INFO   ]   [34/50] R D H A & ASSOCIATES | rachana123g@gmail.com
+2026-06-18 02:45:05 [INFO   ] PROGRESS | CA Connect 35/50 | AARTI BHANDARI & ASSOCIATES | aarti.bhandari86@gmail.com
+2026-06-18 02:45:05 [INFO   ]   [35/50] AARTI BHANDARI & ASSOCIATES | aarti.bhandari86@gmail.com
+2026-06-18 02:45:10 [INFO   ] PROGRESS | CA Connect 36/50 | B K KHARE & CO | pbkhare@bkkhareco.com
+2026-06-18 02:45:10 [INFO   ]   [36/50] B K KHARE & CO | pbkhare@bkkhareco.com
+2026-06-18 02:45:16 [INFO   ] PROGRESS | CA Connect 37/50 | SAMDANI & CO | shravansamdani@gmail.com
+2026-06-18 02:45:16 [INFO   ]   [37/50] SAMDANI & CO | shravansamdani@gmail.com
+2026-06-18 02:45:21 [INFO   ] PROGRESS | CA Connect 38/50 | PRASAD KSHIRSAGAR & CO | prasad45067@gmail.com
+2026-06-18 02:45:21 [INFO   ]   [38/50] PRASAD KSHIRSAGAR & CO | prasad45067@gmail.com
+2026-06-18 02:45:26 [INFO   ] PROGRESS | CA Connect 39/50 | S Y LODHA AND ASSOCIATES | shashank@syla.in
+2026-06-18 02:45:26 [INFO   ]   [39/50] S Y LODHA AND ASSOCIATES | shashank@syla.in
+2026-06-18 02:45:31 [INFO   ] PROGRESS | CA Connect 40/50 | M A SHAH & CO | dilipshahca@hotmail.com
+2026-06-18 02:45:31 [INFO   ]   [40/50] M A SHAH & CO | dilipshahca@hotmail.com
+2026-06-18 02:45:36 [INFO   ] PROGRESS | CA Connect 41/50 | YASH JINKESH & CO | jinkesh.rathid@gmail.com
+2026-06-18 02:45:36 [INFO   ]   [41/50] YASH JINKESH & CO | jinkesh.rathid@gmail.com
+2026-06-18 02:45:41 [INFO   ] PROGRESS | CA Connect 42/50 | M DHADUK & ASSOCIATES | dhadukminaxi@gmail.com
+2026-06-18 02:45:41 [INFO   ]   [42/50] M DHADUK & ASSOCIATES | dhadukminaxi@gmail.com
+2026-06-18 02:45:46 [INFO   ] PROGRESS | CA Connect 43/50 | KAUSHIK MAKWANA & CO | cakaushikmakwana@gmail.com
+2026-06-18 02:45:46 [INFO   ]   [43/50] KAUSHIK MAKWANA & CO | cakaushikmakwana@gmail.com
+2026-06-18 02:45:51 [INFO   ] PROGRESS | CA Connect 44/50 | M N CHOKSI & CO LLP | camnc@mncandco.com
+2026-06-18 02:45:51 [INFO   ]   [44/50] M N CHOKSI & CO LLP | camnc@mncandco.com
+2026-06-18 02:45:56 [INFO   ] PROGRESS | CA Connect 45/50 | NIKHIL K GUPTA & ASSOCIATES | nikhilgupta24@gmail.com
+2026-06-18 02:45:56 [INFO   ]   [45/50] NIKHIL K GUPTA & ASSOCIATES | nikhilgupta24@gmail.com
+2026-06-18 02:46:01 [INFO   ] PROGRESS | CA Connect 46/50 | KANU DOSHI ASSOCIATES LLP | jayeshp@kdg.co.in
+2026-06-18 02:46:01 [INFO   ]   [46/50] KANU DOSHI ASSOCIATES LLP | jayeshp@kdg.co.in
+2026-06-18 02:46:06 [INFO   ] PROGRESS | CA Connect 47/50 | ROHAN A SHAH & CO | rashah106@gmail.com
+2026-06-18 02:46:06 [INFO   ]   [47/50] ROHAN A SHAH & CO | rashah106@gmail.com
+2026-06-18 02:46:11 [INFO   ] PROGRESS | CA Connect 48/50 | BASHMAKH & CO | heena.bashmakh@gmail.com
+2026-06-18 02:46:11 [INFO   ]   [48/50] BASHMAKH & CO | heena.bashmakh@gmail.com
+2026-06-18 02:46:16 [INFO   ] PROGRESS | CA Connect 49/50 | B CHOTHANI & ASSOCIATES | ca.badalchothani002@gmail.com
+2026-06-18 02:46:16 [INFO   ]   [49/50] B CHOTHANI & ASSOCIATES | ca.badalchothani002@gmail.com
+2026-06-18 02:46:22 [INFO   ] PROGRESS | CA Connect 50/50 | M K P S & ASSOCIATES | narendra.khandal@gmail.com
+2026-06-18 02:46:22 [INFO   ]   [50/50] M K P S & ASSOCIATES | narendra.khandal@gmail.com
+2026-06-18 02:46:23 [INFO   ] Batch done — 50 new email(s) this batch | run total 476 / 1000
+2026-06-18 02:46:23 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (196 pending in this city)
+2026-06-18 02:46:24 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:46:29 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:46:33 [INFO   ] PROGRESS | CA Connect 1/50 | B M CHAUHAN & CO | bmchauhan18@gmail.com
+2026-06-18 02:46:33 [INFO   ]   [1/50] B M CHAUHAN & CO | bmchauhan18@gmail.com
+2026-06-18 02:46:38 [INFO   ] PROGRESS | CA Connect 2/50 | Modi Gourav & ASSOCIATES | gouravmodi1995@gmail.com
+2026-06-18 02:46:38 [INFO   ]   [2/50] Modi Gourav & ASSOCIATES | gouravmodi1995@gmail.com
+2026-06-18 02:46:43 [INFO   ] PROGRESS | CA Connect 3/50 | HARDIK MACHCHHAR & ASSOCIATES | hardikmac@outlook.com
+2026-06-18 02:46:43 [INFO   ]   [3/50] HARDIK MACHCHHAR & ASSOCIATES | hardikmac@outlook.com
+2026-06-18 02:46:48 [INFO   ] PROGRESS | CA Connect 4/50 | F S SADIKOT & CO | fssadikotca@yahoo.com
+2026-06-18 02:46:48 [INFO   ]   [4/50] F S SADIKOT & CO | fssadikotca@yahoo.com
+2026-06-18 02:46:53 [INFO   ] PROGRESS | CA Connect 5/50 | VISHAL R JAISWAL AND ASSOCIATES | jaiswalvishal19@gmail.com
+2026-06-18 02:46:53 [INFO   ]   [5/50] VISHAL R JAISWAL AND ASSOCIATES | jaiswalvishal19@gmail.com
+2026-06-18 02:46:58 [INFO   ] PROGRESS | CA Connect 6/50 | MOHIT S SHAH & CO | camohitshah20@gmail.com
+2026-06-18 02:46:58 [INFO   ]   [6/50] MOHIT S SHAH & CO | camohitshah20@gmail.com
+2026-06-18 02:47:03 [INFO   ] PROGRESS | CA Connect 7/50 | S K MUNDRA & ASSOCIATES | casunilmundra@gmail.com
+2026-06-18 02:47:03 [INFO   ]   [7/50] S K MUNDRA & ASSOCIATES | casunilmundra@gmail.com
+2026-06-18 02:47:08 [INFO   ] PROGRESS | CA Connect 8/50 | JANGID & ASSOCIATES | shyamjangid@rediffmail.com
+2026-06-18 02:47:08 [INFO   ]   [8/50] JANGID & ASSOCIATES | shyamjangid@rediffmail.com
+2026-06-18 02:47:13 [INFO   ] PROGRESS | CA Connect 9/50 | R R TIWARI SHAH & CO LLP | ca.rrtiwari@gmail.com
+2026-06-18 02:47:13 [INFO   ]   [9/50] R R TIWARI SHAH & CO LLP | ca.rrtiwari@gmail.com
+2026-06-18 02:47:18 [INFO   ] PROGRESS | CA Connect 10/50 | MUGDHA GUDEKAR & CO | mugdha.gudekar@gmail.com
+2026-06-18 02:47:18 [INFO   ]   [10/50] MUGDHA GUDEKAR & CO | mugdha.gudekar@gmail.com
+2026-06-18 02:47:23 [INFO   ] PROGRESS | CA Connect 11/50 | KUNAL P SHAH & CO | ca.kunalshah23@gmail.com
+2026-06-18 02:47:23 [INFO   ]   [11/50] KUNAL P SHAH & CO | ca.kunalshah23@gmail.com
+2026-06-18 02:47:28 [INFO   ] PROGRESS | CA Connect 12/50 | KANUGA & ASSOCIATES | hareshkanuga90@gmail.com
+2026-06-18 02:47:28 [INFO   ]   [12/50] KANUGA & ASSOCIATES | hareshkanuga90@gmail.com
+2026-06-18 02:47:33 [INFO   ] PROGRESS | CA Connect 13/50 | H H DEDHIA & ASSOCIATES | hrd.2311@gmail.com
+2026-06-18 02:47:33 [INFO   ]   [13/50] H H DEDHIA & ASSOCIATES | hrd.2311@gmail.com
+2026-06-18 02:47:38 [INFO   ] PROGRESS | CA Connect 14/50 | J D POOJARA & CO | cajdpoojara@gmail.com
+2026-06-18 02:47:38 [INFO   ]   [14/50] J D POOJARA & CO | cajdpoojara@gmail.com
+2026-06-18 02:47:43 [INFO   ] PROGRESS | CA Connect 15/50 | OKA & BHAT | jgoka_ca@yahoo.com
+2026-06-18 02:47:43 [INFO   ]   [15/50] OKA & BHAT | jgoka_ca@yahoo.com
+2026-06-18 02:47:48 [INFO   ] PROGRESS | CA Connect 16/50 | I C JAIN & CO | icjainca@gmail.com
+2026-06-18 02:47:48 [INFO   ]   [16/50] I C JAIN & CO | icjainca@gmail.com
+2026-06-18 02:47:53 [INFO   ] PROGRESS | CA Connect 17/50 | KUNDALIA & ASSOCIATES | deepak.kundalia@gmail.com
+2026-06-18 02:47:53 [INFO   ]   [17/50] KUNDALIA & ASSOCIATES | deepak.kundalia@gmail.com
+2026-06-18 02:47:58 [INFO   ] PROGRESS | CA Connect 18/50 | NARENDRA SAMAR & CO | n.samar2005@gmail.com
+2026-06-18 02:47:58 [INFO   ]   [18/50] NARENDRA SAMAR & CO | n.samar2005@gmail.com
+2026-06-18 02:48:03 [INFO   ] PROGRESS | CA Connect 19/50 | VISHAL KELKAR & CO | cavishalkelkar@gmail.com
+2026-06-18 02:48:03 [INFO   ]   [19/50] VISHAL KELKAR & CO | cavishalkelkar@gmail.com
+2026-06-18 02:48:08 [INFO   ] PROGRESS | CA Connect 20/50 | N L LOHANI & CO | nllohani@rediffmail.com
+2026-06-18 02:48:08 [INFO   ]   [20/50] N L LOHANI & CO | nllohani@rediffmail.com
+2026-06-18 02:48:13 [INFO   ] PROGRESS | CA Connect 21/50 | ABHISHEK D JAIN AND ASSOCIATES | abhishekdjain1992@gmail.com
+2026-06-18 02:48:13 [INFO   ]   [21/50] ABHISHEK D JAIN AND ASSOCIATES | abhishekdjain1992@gmail.com
+2026-06-18 02:48:18 [INFO   ] PROGRESS | CA Connect 22/50 | A R TENANI & ASSOCIATES | caamittenani@gmail.com
+2026-06-18 02:48:18 [INFO   ]   [22/50] A R TENANI & ASSOCIATES | caamittenani@gmail.com
+2026-06-18 02:48:24 [INFO   ] PROGRESS | CA Connect 23/50 | CHETAN N MHAPANKAR & CO | imcachetan@gmail.com
+2026-06-18 02:48:24 [INFO   ]   [23/50] CHETAN N MHAPANKAR & CO | imcachetan@gmail.com
+2026-06-18 02:48:28 [INFO   ] PROGRESS | CA Connect 24/50 | A V BHUTADA & CO | ajay.bhutada03@gmail.com
+2026-06-18 02:48:28 [INFO   ]   [24/50] A V BHUTADA & CO | ajay.bhutada03@gmail.com
+2026-06-18 02:48:33 [INFO   ] PROGRESS | CA Connect 25/50 | G A P C & CO | vpanjiyar@gmail.com
+2026-06-18 02:48:33 [INFO   ]   [25/50] G A P C & CO | vpanjiyar@gmail.com
+2026-06-18 02:48:39 [INFO   ] PROGRESS | CA Connect 26/50 | S P MOHANDAS & CO | sagar.mohandas@yahoo.com
+2026-06-18 02:48:39 [INFO   ]   [26/50] S P MOHANDAS & CO | sagar.mohandas@yahoo.com
+2026-06-18 02:48:44 [INFO   ] PROGRESS | CA Connect 27/50 | R S PRABHU & ASSOCIATES | rsp.vasai@gmail.com
+2026-06-18 02:48:44 [INFO   ]   [27/50] R S PRABHU & ASSOCIATES | rsp.vasai@gmail.com
+2026-06-18 02:48:49 [INFO   ] PROGRESS | CA Connect 28/50 | RUSHABH BANSAL & CO | rushabhbansal@gmail.com
+2026-06-18 02:48:49 [INFO   ]   [28/50] RUSHABH BANSAL & CO | rushabhbansal@gmail.com
+2026-06-18 02:48:54 [INFO   ] PROGRESS | CA Connect 29/50 | BHUSHAN KHOT & CO | bhushan@cabkc.in
+2026-06-18 02:48:54 [INFO   ]   [29/50] BHUSHAN KHOT & CO | bhushan@cabkc.in
+2026-06-18 02:48:59 [INFO   ] PROGRESS | CA Connect 30/50 | MAYUR GOSRANI AND ASSOCIATES | camayurgosrani@gmail.com
+2026-06-18 02:48:59 [INFO   ]   [30/50] MAYUR GOSRANI AND ASSOCIATES | camayurgosrani@gmail.com
+2026-06-18 02:49:04 [INFO   ] PROGRESS | CA Connect 31/50 | D GIDIA & CO | cadevendrakumargidia@gmail.com
+2026-06-18 02:49:04 [INFO   ]   [31/50] D GIDIA & CO | cadevendrakumargidia@gmail.com
+2026-06-18 02:49:09 [INFO   ] PROGRESS | CA Connect 32/50 | NIPUN PANCHAMIYA & ASSOCIATES | nipun.panchamiya@outlook.com
+2026-06-18 02:49:09 [INFO   ]   [32/50] NIPUN PANCHAMIYA & ASSOCIATES | nipun.panchamiya@outlook.com
+2026-06-18 02:49:14 [INFO   ] PROGRESS | CA Connect 33/50 | G A B & ASSOCIATES | gab.surat@gmail.com
+2026-06-18 02:49:14 [INFO   ]   [33/50] G A B & ASSOCIATES | gab.surat@gmail.com
+2026-06-18 02:49:19 [INFO   ] PROGRESS | CA Connect 34/50 | V B GOEL & CO | info@vbgco.com
+2026-06-18 02:49:19 [INFO   ]   [34/50] V B GOEL & CO | info@vbgco.com
+2026-06-18 02:49:24 [INFO   ] PROGRESS | CA Connect 35/50 | ANAND SHENOY & ASSOCIATES | anand@asaca.in
+2026-06-18 02:49:24 [INFO   ]   [35/50] ANAND SHENOY & ASSOCIATES | anand@asaca.in
+2026-06-18 02:49:29 [INFO   ] PROGRESS | CA Connect 36/50 | R Gaurav & ASSOCIATES | gauravrmakwana93@gmail.com
+2026-06-18 02:49:29 [INFO   ]   [36/50] R Gaurav & ASSOCIATES | gauravrmakwana93@gmail.com
+2026-06-18 02:49:34 [INFO   ] PROGRESS | CA Connect 37/50 | BANSHI JAIN & ASSOCIATES | jainparag@rediffmail.com
+2026-06-18 02:49:34 [INFO   ]   [37/50] BANSHI JAIN & ASSOCIATES | jainparag@rediffmail.com
+2026-06-18 02:49:39 [INFO   ] PROGRESS | CA Connect 38/50 | DILIP S SHAH & ASSOCIATES | dssagroup@rediffmail.com
+2026-06-18 02:49:39 [INFO   ]   [38/50] DILIP S SHAH & ASSOCIATES | dssagroup@rediffmail.com
+2026-06-18 02:49:44 [INFO   ] PROGRESS | CA Connect 39/50 | SELIYA AND ASSOCIATES | caasadullah@gmail.com
+2026-06-18 02:49:44 [INFO   ]   [39/50] SELIYA AND ASSOCIATES | caasadullah@gmail.com
+2026-06-18 02:49:49 [INFO   ] PROGRESS | CA Connect 40/50 | RAJPOOT AND CO | caganeshsinghrajpoot@gmail.com
+2026-06-18 02:49:49 [INFO   ]   [40/50] RAJPOOT AND CO | caganeshsinghrajpoot@gmail.com
+2026-06-18 02:49:54 [INFO   ] PROGRESS | CA Connect 41/50 | C P C & CO | paras.p.cpc@gmail.com
+2026-06-18 02:49:54 [INFO   ]   [41/50] C P C & CO | paras.p.cpc@gmail.com
+2026-06-18 02:49:59 [INFO   ] PROGRESS | CA Connect 42/50 | VANDANA V DODHIA & CO | vandana.dodhia@gmail.com
+2026-06-18 02:49:59 [INFO   ]   [42/50] VANDANA V DODHIA & CO | vandana.dodhia@gmail.com
+2026-06-18 02:50:04 [INFO   ] PROGRESS | CA Connect 43/50 | C V K & ASSOCIATES | kpc@cvk-ca.com
+2026-06-18 02:50:04 [INFO   ]   [43/50] C V K & ASSOCIATES | kpc@cvk-ca.com
+2026-06-18 02:50:09 [INFO   ] PROGRESS | CA Connect 44/50 | SHROFF GONSALVES & DALIA | glen.office@gmail.com
+2026-06-18 02:50:09 [INFO   ]   [44/50] SHROFF GONSALVES & DALIA | glen.office@gmail.com
+2026-06-18 02:50:14 [INFO   ] PROGRESS | CA Connect 45/50 | ROBIN TALARI & ASSOCIATES | robintalari@gmail.com
+2026-06-18 02:50:14 [INFO   ]   [45/50] ROBIN TALARI & ASSOCIATES | robintalari@gmail.com
+2026-06-18 02:50:19 [INFO   ] PROGRESS | CA Connect 46/50 | M S N K & ASSOCIATES LLP | mihirshah235@gmail.com
+2026-06-18 02:50:19 [INFO   ]   [46/50] M S N K & ASSOCIATES LLP | mihirshah235@gmail.com
+2026-06-18 02:50:25 [INFO   ] PROGRESS | CA Connect 47/50 | MEHTA & PARMAR | mpmehta1@rediffmail.com
+2026-06-18 02:50:25 [INFO   ]   [47/50] MEHTA & PARMAR | mpmehta1@rediffmail.com
+2026-06-18 02:50:30 [INFO   ] PROGRESS | CA Connect 48/50 | JHAWAR MANTRI & ASSOCIATES | jhawarmantrica@gmail.com
+2026-06-18 02:50:30 [INFO   ]   [48/50] JHAWAR MANTRI & ASSOCIATES | jhawarmantrica@gmail.com
+2026-06-18 02:50:35 [INFO   ] PROGRESS | CA Connect 49/50 | SHRIKANT KOLI & ASSOCIATES | koli.shrikant@yahoo.co.in
+2026-06-18 02:50:35 [INFO   ]   [49/50] SHRIKANT KOLI & ASSOCIATES | koli.shrikant@yahoo.co.in
+2026-06-18 02:50:40 [INFO   ] PROGRESS | CA Connect 50/50 | SHILPA S SHETTY & COMPANY | shilpa.sudhir07@gmail.com
+2026-06-18 02:50:40 [INFO   ]   [50/50] SHILPA S SHETTY & COMPANY | shilpa.sudhir07@gmail.com
+2026-06-18 02:50:40 [INFO   ] Batch done — 50 new email(s) this batch | run total 526 / 1000
+2026-06-18 02:50:40 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (146 pending in this city)
+2026-06-18 02:50:41 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:50:47 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:50:50 [INFO   ] PROGRESS | CA Connect 1/50 | K JHA & ASSOCIATES | keshav.z.kj@gmail.com
+2026-06-18 02:50:50 [INFO   ]   [1/50] K JHA & ASSOCIATES | keshav.z.kj@gmail.com
+2026-06-18 02:50:55 [INFO   ] PROGRESS | CA Connect 2/50 | H D JOSHI & CO | hemant.joshi@hotmail.com
+2026-06-18 02:50:55 [INFO   ]   [2/50] H D JOSHI & CO | hemant.joshi@hotmail.com
+2026-06-18 02:51:00 [INFO   ] PROGRESS | CA Connect 3/50 | SAKARIYA VEER & ASSOCIATES | caveersakariya@gmail.com
+2026-06-18 02:51:00 [INFO   ]   [3/50] SAKARIYA VEER & ASSOCIATES | caveersakariya@gmail.com
+2026-06-18 02:51:05 [INFO   ] PROGRESS | CA Connect 4/50 | M L LAHOTI & CO | cacsnirajlahoti@gmail.com
+2026-06-18 02:51:05 [INFO   ]   [4/50] M L LAHOTI & CO | cacsnirajlahoti@gmail.com
+2026-06-18 02:51:10 [INFO   ] PROGRESS | CA Connect 5/50 | ROHIT KUMAR SHARMA & ASSOCIATES | carohit235@gmail.com
+2026-06-18 02:51:10 [INFO   ]   [5/50] ROHIT KUMAR SHARMA & ASSOCIATES | carohit235@gmail.com
+2026-06-18 02:51:15 [INFO   ] PROGRESS | CA Connect 6/50 | KHYATI K SACHDE & CO | khyati.sachde1405@gmail.com
+2026-06-18 02:51:15 [INFO   ]   [6/50] KHYATI K SACHDE & CO | khyati.sachde1405@gmail.com
+2026-06-18 02:51:20 [INFO   ] PROGRESS | CA Connect 7/50 | M H S & ASSOCIATES | mhsandassociates@gmail.com
+2026-06-18 02:51:20 [INFO   ]   [7/50] M H S & ASSOCIATES | mhsandassociates@gmail.com
+2026-06-18 02:51:25 [INFO   ] PROGRESS | CA Connect 8/50 | ANJALI MANOJ JAIN & ASSOCIATES | caanjali2012@gmail.com
+2026-06-18 02:51:25 [INFO   ]   [8/50] ANJALI MANOJ JAIN & ASSOCIATES | caanjali2012@gmail.com
+2026-06-18 02:51:30 [INFO   ] PROGRESS | CA Connect 9/50 | RUPESH PATIL & ASSOCIATES | ca.rupeshpatil@hotmail.com
+2026-06-18 02:51:30 [INFO   ]   [9/50] RUPESH PATIL & ASSOCIATES | ca.rupeshpatil@hotmail.com
+2026-06-18 02:51:35 [INFO   ] PROGRESS | CA Connect 10/50 | K A KANSARA & CO | kakansaraco@gmail.com
+2026-06-18 02:51:35 [INFO   ]   [10/50] K A KANSARA & CO | kakansaraco@gmail.com
+2026-06-18 02:51:40 [INFO   ] PROGRESS | CA Connect 11/50 | RINKI GUPTA & CO | caguptarinki@gmail.com
+2026-06-18 02:51:40 [INFO   ]   [11/50] RINKI GUPTA & CO | caguptarinki@gmail.com
+2026-06-18 02:51:45 [INFO   ] PROGRESS | CA Connect 12/50 | V R PANDYA & CO | vrpandya.co@gmail.com
+2026-06-18 02:51:45 [INFO   ]   [12/50] V R PANDYA & CO | vrpandya.co@gmail.com
+2026-06-18 02:51:50 [INFO   ] PROGRESS | CA Connect 13/50 | ANIL C JETHVA & ASSOCIATES | acj1290@gmail.com
+2026-06-18 02:51:50 [INFO   ]   [13/50] ANIL C JETHVA & ASSOCIATES | acj1290@gmail.com
+2026-06-18 02:51:55 [INFO   ] PROGRESS | CA Connect 14/50 | SANDESH S DESAI & CO | sandesh2690@gmail.com
+2026-06-18 02:51:55 [INFO   ]   [14/50] SANDESH S DESAI & CO | sandesh2690@gmail.com
+2026-06-18 02:52:00 [INFO   ] PROGRESS | CA Connect 15/50 | KRUNALI NAYAN RAJA & ASSOCIATES | cakrunali@knrassociates.in
+2026-06-18 02:52:00 [INFO   ]   [15/50] KRUNALI NAYAN RAJA & ASSOCIATES | cakrunali@knrassociates.in
+2026-06-18 02:52:05 [INFO   ] PROGRESS | CA Connect 16/50 | RONAK JAIN & ASSOCIATES | ronak_jain143@yahoo.co.in
+2026-06-18 02:52:05 [INFO   ]   [16/50] RONAK JAIN & ASSOCIATES | ronak_jain143@yahoo.co.in
+2026-06-18 02:52:10 [INFO   ] PROGRESS | CA Connect 17/50 | PRIYANKA GUNJAN & ASSOCIATES | cagoyalpriyanka@gmail.com
+2026-06-18 02:52:10 [INFO   ]   [17/50] PRIYANKA GUNJAN & ASSOCIATES | cagoyalpriyanka@gmail.com
+2026-06-18 02:52:15 [INFO   ] PROGRESS | CA Connect 18/50 | MAJITHIA & ASSOCIATES | pankaj@pcpl.net.in
+2026-06-18 02:52:15 [INFO   ]   [18/50] MAJITHIA & ASSOCIATES | pankaj@pcpl.net.in
+2026-06-18 02:52:20 [INFO   ] PROGRESS | CA Connect 19/50 | NIRAV DOSHI & CO | niravdoshi.1008@gmail.com
+2026-06-18 02:52:20 [INFO   ]   [19/50] NIRAV DOSHI & CO | niravdoshi.1008@gmail.com
+2026-06-18 02:52:25 [INFO   ] PROGRESS | CA Connect 20/50 | VAIBHAV KAMBLE & ASSOCIATES | cavaibhavkamble@gmail.com
+2026-06-18 02:52:25 [INFO   ]   [20/50] VAIBHAV KAMBLE & ASSOCIATES | cavaibhavkamble@gmail.com
+2026-06-18 02:52:30 [INFO   ] PROGRESS | CA Connect 21/50 | P R AND CO LLP | capankit@caprco.in
+2026-06-18 02:52:30 [INFO   ]   [21/50] P R AND CO LLP | capankit@caprco.in
+2026-06-18 02:52:35 [INFO   ] PROGRESS | CA Connect 22/50 | B M CHATURVEDI & CO | bmchaturvedi@yahoo.com
+2026-06-18 02:52:35 [INFO   ]   [22/50] B M CHATURVEDI & CO | bmchaturvedi@yahoo.com
+2026-06-18 02:52:40 [INFO   ] PROGRESS | CA Connect 23/50 | VARAWALA & ARIF | zohar@vararif.com
+2026-06-18 02:52:40 [INFO   ]   [23/50] VARAWALA & ARIF | zohar@vararif.com
+2026-06-18 02:52:45 [INFO   ] PROGRESS | CA Connect 24/50 | DHANLAXMI & ASSOCIATES | dhanlaxmi_gori@yahoo.in
+2026-06-18 02:52:45 [INFO   ]   [24/50] DHANLAXMI & ASSOCIATES | dhanlaxmi_gori@yahoo.in
+2026-06-18 02:52:50 [INFO   ] PROGRESS | CA Connect 25/50 | SWETA MEHTA & ASSOCIATES | shweta_m3030@yahoo.co.in
+2026-06-18 02:52:50 [INFO   ]   [25/50] SWETA MEHTA & ASSOCIATES | shweta_m3030@yahoo.co.in
+2026-06-18 02:52:55 [INFO   ] PROGRESS | CA Connect 26/50 | SHWETA JAIN & CO | cashweta.co@gmail.com
+2026-06-18 02:52:55 [INFO   ]   [26/50] SHWETA JAIN & CO | cashweta.co@gmail.com
+2026-06-18 02:53:00 [INFO   ] PROGRESS | CA Connect 27/50 | PIYUSH SHUKLA & COMPANY | thepiyushshukla@gmail.com
+2026-06-18 02:53:00 [INFO   ]   [27/50] PIYUSH SHUKLA & COMPANY | thepiyushshukla@gmail.com
+2026-06-18 02:53:05 [INFO   ] PROGRESS | CA Connect 28/50 | S V BHAT & CO | svbhatandco@gmail.com
+2026-06-18 02:53:05 [INFO   ]   [28/50] S V BHAT & CO | svbhatandco@gmail.com
+2026-06-18 02:53:10 [INFO   ] PROGRESS | CA Connect 29/50 | PARIKH SRIVASTAVA & ASSOCIATES LLP | abhikritsrivastava@outlook.com
+2026-06-18 02:53:10 [INFO   ]   [29/50] PARIKH SRIVASTAVA & ASSOCIATES LLP | abhikritsrivastava@outlook.com
+2026-06-18 02:53:15 [INFO   ] PROGRESS | CA Connect 30/50 | A S B S & CO | cajankush@gmail.com
+2026-06-18 02:53:15 [INFO   ]   [30/50] A S B S & CO | cajankush@gmail.com
+2026-06-18 02:53:20 [INFO   ] PROGRESS | CA Connect 31/50 | H SINGHVI & CO | hsco_ca@rediffmail.com/singhvihm@hotmail.com
+2026-06-18 02:53:20 [INFO   ]   [31/50] H SINGHVI & CO | hsco_ca@rediffmail.com/singhvihm@hotmail.com
+2026-06-18 02:53:25 [INFO   ] PROGRESS | CA Connect 32/50 | N H SHAH & ASSOCIATES | nikhilhs210268@gmail.com
+2026-06-18 02:53:25 [INFO   ]   [32/50] N H SHAH & ASSOCIATES | nikhilhs210268@gmail.com
+2026-06-18 02:53:30 [INFO   ] PROGRESS | CA Connect 33/50 | K K NAULAKHA & CO | knaulakha@outlook.com
+2026-06-18 02:53:30 [INFO   ]   [33/50] K K NAULAKHA & CO | knaulakha@outlook.com
+2026-06-18 02:53:35 [INFO   ] PROGRESS | CA Connect 34/50 | VENUS SHAH & ASSOCIATES LLP | shahvenus@rediffmail.com
+2026-06-18 02:53:35 [INFO   ]   [34/50] VENUS SHAH & ASSOCIATES LLP | shahvenus@rediffmail.com
+2026-06-18 02:53:40 [INFO   ] PROGRESS | CA Connect 35/50 | GALA & ASSOCIATES | galaashwin@gmail.com
+2026-06-18 02:53:40 [INFO   ]   [35/50] GALA & ASSOCIATES | galaashwin@gmail.com
+2026-06-18 02:53:45 [INFO   ] PROGRESS | CA Connect 36/50 | GUPTA CHETAN & ASSOCIATES | meetchetangupta@gmail.com
+2026-06-18 02:53:45 [INFO   ]   [36/50] GUPTA CHETAN & ASSOCIATES | meetchetangupta@gmail.com
+2026-06-18 02:53:50 [INFO   ] PROGRESS | CA Connect 37/50 | N S GOKHALE & CO | abhaysidhaye@gmail.com
+2026-06-18 02:53:50 [INFO   ]   [37/50] N S GOKHALE & CO | abhaysidhaye@gmail.com
+2026-06-18 02:53:55 [INFO   ] PROGRESS | CA Connect 38/50 | SHREENATH & ASSOCIATES | cashrinath35@gmail.com
+2026-06-18 02:53:55 [INFO   ]   [38/50] SHREENATH & ASSOCIATES | cashrinath35@gmail.com
+2026-06-18 02:54:00 [INFO   ] PROGRESS | CA Connect 39/50 | VIRENDRA AGRAWAL & ASSOCIATES | vapa1955@gmail.com
+2026-06-18 02:54:00 [INFO   ]   [39/50] VIRENDRA AGRAWAL & ASSOCIATES | vapa1955@gmail.com
+2026-06-18 02:54:05 [INFO   ] PROGRESS | CA Connect 40/50 | GORI & ASSOCIATES | yogeshgori@gmail.com
+2026-06-18 02:54:05 [INFO   ]   [40/50] GORI & ASSOCIATES | yogeshgori@gmail.com
+2026-06-18 02:54:10 [INFO   ] PROGRESS | CA Connect 41/50 | BAUL SAVLA & ASSOCIATES | abhijitbaul@gmail.com
+2026-06-18 02:54:10 [INFO   ]   [41/50] BAUL SAVLA & ASSOCIATES | abhijitbaul@gmail.com
+2026-06-18 02:54:15 [INFO   ] PROGRESS | CA Connect 42/50 | PARMAR & CO | rspca1982@gmail.com
+2026-06-18 02:54:15 [INFO   ]   [42/50] PARMAR & CO | rspca1982@gmail.com
+2026-06-18 02:54:20 [INFO   ] PROGRESS | CA Connect 43/50 | N M ASSOCIATES | info@nmassociates.in
+2026-06-18 02:54:20 [INFO   ]   [43/50] N M ASSOCIATES | info@nmassociates.in
+2026-06-18 02:54:25 [INFO   ] PROGRESS | CA Connect 44/50 | R A K C H A M P S & CO LLP | accounts@rakchamps.com
+2026-06-18 02:54:25 [INFO   ]   [44/50] R A K C H A M P S & CO LLP | accounts@rakchamps.com
+2026-06-18 02:54:31 [INFO   ] PROGRESS | CA Connect 45/50 | CHANDAK AGARWAL & CO | caghanshyam87@gmail.com
+2026-06-18 02:54:31 [INFO   ]   [45/50] CHANDAK AGARWAL & CO | caghanshyam87@gmail.com
+2026-06-18 02:54:36 [INFO   ] PROGRESS | CA Connect 46/50 | N N AHMED & ASSOCIATES | nasirahmed8@gmail.com
+2026-06-18 02:54:36 [INFO   ]   [46/50] N N AHMED & ASSOCIATES | nasirahmed8@gmail.com
+2026-06-18 02:54:41 [INFO   ] PROGRESS | CA Connect 47/50 | A N P J & CO | jigsbhanushali19@gmail.com
+2026-06-18 02:54:41 [INFO   ]   [47/50] A N P J & CO | jigsbhanushali19@gmail.com
+2026-06-18 02:54:46 [INFO   ] PROGRESS | CA Connect 48/50 | NISHA N HALDANKAR & CO | cahnisha@gmail.com
+2026-06-18 02:54:46 [INFO   ]   [48/50] NISHA N HALDANKAR & CO | cahnisha@gmail.com
+2026-06-18 02:54:51 [INFO   ] PROGRESS | CA Connect 49/50 | CHANDABHOY & JASSOOBHOY | mail@cnj.in
+2026-06-18 02:54:51 [INFO   ]   [49/50] CHANDABHOY & JASSOOBHOY | mail@cnj.in
+2026-06-18 02:54:56 [INFO   ] PROGRESS | CA Connect 50/50 | SARAGE DOSHI & ASSOCIATES | devang0829@gmail.com
+2026-06-18 02:54:56 [INFO   ]   [50/50] SARAGE DOSHI & ASSOCIATES | devang0829@gmail.com
+2026-06-18 02:54:56 [INFO   ] Batch done — 50 new email(s) this batch | run total 576 / 1000
+2026-06-18 02:54:56 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Mumbai (96 pending in this city)
+2026-06-18 02:54:57 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:55:03 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:55:07 [INFO   ] PROGRESS | CA Connect 1/50 | A S S B & ASSOCIATES | anurag.singh207@gmail.com
+2026-06-18 02:55:07 [INFO   ]   [1/50] A S S B & ASSOCIATES | anurag.singh207@gmail.com
+2026-06-18 02:55:12 [INFO   ] PROGRESS | CA Connect 2/50 | GOVIND PRASAD & CO | govind_aggarwal@hotmail.com
+2026-06-18 02:55:12 [INFO   ]   [2/50] GOVIND PRASAD & CO | govind_aggarwal@hotmail.com
+2026-06-18 02:55:17 [INFO   ] PROGRESS | CA Connect 3/50 | ASHISH SHAH & ASSOCIATES | shah_vab@rediffmail.com
+2026-06-18 02:55:17 [INFO   ]   [3/50] ASHISH SHAH & ASSOCIATES | shah_vab@rediffmail.com
+2026-06-18 02:55:22 [INFO   ] PROGRESS | CA Connect 4/50 | KAMLESH A SHARMA & ASSOCIATES | kamleshsharma1993@gmail.com
+2026-06-18 02:55:22 [INFO   ]   [4/50] KAMLESH A SHARMA & ASSOCIATES | kamleshsharma1993@gmail.com
+2026-06-18 02:55:27 [INFO   ] PROGRESS | CA Connect 5/50 | ARUN JAMUNA & CO | arunca03@gmail.com
+2026-06-18 02:55:27 [INFO   ]   [5/50] ARUN JAMUNA & CO | arunca03@gmail.com
+2026-06-18 02:55:32 [INFO   ] PROGRESS | CA Connect 6/50 | JIGAR VAGHELA & ASSOCIATES | cajigarvaghela@gmail.com
+2026-06-18 02:55:32 [INFO   ]   [6/50] JIGAR VAGHELA & ASSOCIATES | cajigarvaghela@gmail.com
+2026-06-18 02:55:37 [INFO   ] PROGRESS | CA Connect 7/50 | KAUSHIL GALA AND CO | kaushilgala1991@gmail.com
+2026-06-18 02:55:37 [INFO   ]   [7/50] KAUSHIL GALA AND CO | kaushilgala1991@gmail.com
+2026-06-18 02:55:42 [INFO   ] PROGRESS | CA Connect 8/50 | A R B R & CO LLP | caabhishekruia@gmail.com
+2026-06-18 02:55:42 [INFO   ]   [8/50] A R B R & CO LLP | caabhishekruia@gmail.com
+2026-06-18 02:55:47 [INFO   ] PROGRESS | CA Connect 9/50 | D K Y & ASSOCIATES LLP | cadarshanjain@gmail.com
+2026-06-18 02:55:47 [INFO   ]   [9/50] D K Y & ASSOCIATES LLP | cadarshanjain@gmail.com
+2026-06-18 02:55:52 [INFO   ] PROGRESS | CA Connect 10/50 | A M PAREKH & ASSOCIATES | caaparekh@yahoo.com
+2026-06-18 02:55:52 [INFO   ]   [10/50] A M PAREKH & ASSOCIATES | caaparekh@yahoo.com
+2026-06-18 02:55:57 [INFO   ] PROGRESS | CA Connect 11/50 | N S A R G & CO LLP | ca.anilgg@gmail.com
+2026-06-18 02:55:57 [INFO   ]   [11/50] N S A R G & CO LLP | ca.anilgg@gmail.com
+2026-06-18 02:56:02 [INFO   ] PROGRESS | CA Connect 12/50 | SANJAY RANE & ASSOCIATES LLP | sanjayr@ssrane.net
+2026-06-18 02:56:02 [INFO   ]   [12/50] SANJAY RANE & ASSOCIATES LLP | sanjayr@ssrane.net
+2026-06-18 02:56:07 [INFO   ] PROGRESS | CA Connect 13/50 | PESHORI PACHORI & JAIN | kspeshori@hotmail.com
+2026-06-18 02:56:07 [INFO   ]   [13/50] PESHORI PACHORI & JAIN | kspeshori@hotmail.com
+2026-06-18 02:56:12 [INFO   ] PROGRESS | CA Connect 14/50 | KOMAL K PATEL & ASSOCIATES | cakomalpatel23289@gmail.com
+2026-06-18 02:56:12 [INFO   ]   [14/50] KOMAL K PATEL & ASSOCIATES | cakomalpatel23289@gmail.com
+2026-06-18 02:56:17 [INFO   ] PROGRESS | CA Connect 15/50 | VIVEK V JAISWAL & ASSOCIATES | vivek.jaiswal222@gmail.com
+2026-06-18 02:56:17 [INFO   ]   [15/50] VIVEK V JAISWAL & ASSOCIATES | vivek.jaiswal222@gmail.com
+2026-06-18 02:56:23 [INFO   ] PROGRESS | CA Connect 16/50 | R K CHAPAWAT & CO | capurnima1987@gmail.com
+2026-06-18 02:56:23 [INFO   ]   [16/50] R K CHAPAWAT & CO | capurnima1987@gmail.com
+2026-06-18 02:56:28 [INFO   ] PROGRESS | CA Connect 17/50 | M A K K S & CO | cagauravsaboo@outlook.com
+2026-06-18 02:56:28 [INFO   ]   [17/50] M A K K S & CO | cagauravsaboo@outlook.com
+2026-06-18 02:56:33 [INFO   ] PROGRESS | CA Connect 18/50 | SHARATH SHETTY & ASSOCIATES | ssshetty288@gmail.com
+2026-06-18 02:56:33 [INFO   ]   [18/50] SHARATH SHETTY & ASSOCIATES | ssshetty288@gmail.com
+2026-06-18 02:56:38 [INFO   ] PROGRESS | CA Connect 19/50 | V A BAPAT & CO | vivek.bapat@vabapat.com
+2026-06-18 02:56:38 [INFO   ]   [19/50] V A BAPAT & CO | vivek.bapat@vabapat.com
+2026-06-18 02:56:43 [INFO   ] PROGRESS | CA Connect 20/50 | DINESH CHOUDHARY & CO | ca.dineshhchoudhary@gmail.com
+2026-06-18 02:56:43 [INFO   ]   [20/50] DINESH CHOUDHARY & CO | ca.dineshhchoudhary@gmail.com
+2026-06-18 02:56:48 [INFO   ] PROGRESS | CA Connect 21/50 | YASHWANT AND CO | yash_ca@yahoo.com
+2026-06-18 02:56:48 [INFO   ]   [21/50] YASHWANT AND CO | yash_ca@yahoo.com
+2026-06-18 02:56:53 [INFO   ] PROGRESS | CA Connect 22/50 | P Y DHURU & CO | padmini07@gmail.com
+2026-06-18 02:56:53 [INFO   ]   [22/50] P Y DHURU & CO | padmini07@gmail.com
+2026-06-18 02:56:58 [INFO   ] PROGRESS | CA Connect 23/50 | AMIT VERMA & CO | ca.amitverma@gmail.com
+2026-06-18 02:56:58 [INFO   ]   [23/50] AMIT VERMA & CO | ca.amitverma@gmail.com
+2026-06-18 02:57:03 [INFO   ] PROGRESS | CA Connect 24/50 | SANJEEV MANMOHAN & ASSOCIATES | casanjeevmanmohan@yahoo.co.in
+2026-06-18 02:57:03 [INFO   ]   [24/50] SANJEEV MANMOHAN & ASSOCIATES | casanjeevmanmohan@yahoo.co.in
+2026-06-18 02:57:08 [INFO   ] PROGRESS | CA Connect 25/50 | BHARUKA & ASSOCIATES | vikrambharuka@gmail.com
+2026-06-18 02:57:08 [INFO   ]   [25/50] BHARUKA & ASSOCIATES | vikrambharuka@gmail.com
+2026-06-18 02:57:13 [INFO   ] PROGRESS | CA Connect 26/50 | ROHIT FULWANI & CO | carohitsfulwani@gmail.com
+2026-06-18 02:57:13 [INFO   ]   [26/50] ROHIT FULWANI & CO | carohitsfulwani@gmail.com
+2026-06-18 02:57:18 [INFO   ] PROGRESS | CA Connect 27/50 | H A Y AND ASSOCIATES | hasmukhjoban@gmail.com
+2026-06-18 02:57:18 [INFO   ]   [27/50] H A Y AND ASSOCIATES | hasmukhjoban@gmail.com
+2026-06-18 02:57:23 [INFO   ] PROGRESS | CA Connect 28/50 | HIRAN & ASSOCIATES | bharat.hiran@yahoo.com
+2026-06-18 02:57:23 [INFO   ]   [28/50] HIRAN & ASSOCIATES | bharat.hiran@yahoo.com
+2026-06-18 02:57:28 [INFO   ] PROGRESS | CA Connect 29/50 | C S L & CO | chiragsharma118@gmail.com
+2026-06-18 02:57:28 [INFO   ]   [29/50] C S L & CO | chiragsharma118@gmail.com
+2026-06-18 02:57:34 [INFO   ] PROGRESS | CA Connect 30/50 | MAHENDRA PUROHIT AND ASSOCIATES | mpurohit970@gmail.com
+2026-06-18 02:57:34 [INFO   ]   [30/50] MAHENDRA PUROHIT AND ASSOCIATES | mpurohit970@gmail.com
+2026-06-18 02:57:39 [INFO   ] PROGRESS | CA Connect 31/50 | RAJESH VARMA & ASSOCIATES | raj.varma2004@gmail.com
+2026-06-18 02:57:39 [INFO   ]   [31/50] RAJESH VARMA & ASSOCIATES | raj.varma2004@gmail.com
+2026-06-18 02:57:44 [INFO   ] PROGRESS | CA Connect 32/50 | YATIN S SHAH & CO | yatinshah01@yahoo.co.in
+2026-06-18 02:57:44 [INFO   ]   [32/50] YATIN S SHAH & CO | yatinshah01@yahoo.co.in
+2026-06-18 02:57:49 [INFO   ] PROGRESS | CA Connect 33/50 | CHAITANYA C DALAL & CO | chaitanya.dalal@gmail.com
+2026-06-18 02:57:49 [INFO   ]   [33/50] CHAITANYA C DALAL & CO | chaitanya.dalal@gmail.com
+2026-06-18 02:57:54 [INFO   ] PROGRESS | CA Connect 34/50 | KIRAN THAKKAR & CO | cakiranthakkar2018@gmail.com
+2026-06-18 02:57:54 [INFO   ]   [34/50] KIRAN THAKKAR & CO | cakiranthakkar2018@gmail.com
+2026-06-18 02:57:59 [INFO   ] PROGRESS | CA Connect 35/50 | J S TAPARIA & ASSOCIATES | jitendra.taparia@gmail.com
+2026-06-18 02:57:59 [INFO   ]   [35/50] J S TAPARIA & ASSOCIATES | jitendra.taparia@gmail.com
+2026-06-18 02:58:04 [INFO   ] PROGRESS | CA Connect 36/50 | RUPALI MAYEKAR & ASSOCIATES | rupali_abhani@yahoo.com
+2026-06-18 02:58:04 [INFO   ]   [36/50] RUPALI MAYEKAR & ASSOCIATES | rupali_abhani@yahoo.com
+2026-06-18 02:58:11 [INFO   ] PROGRESS | CA Connect 37/50 | A M N & ASSOCIATES | anil_mansingka@amnca.com
+2026-06-18 02:58:11 [INFO   ]   [37/50] A M N & ASSOCIATES | anil_mansingka@amnca.com
+2026-06-18 02:58:16 [INFO   ] PROGRESS | CA Connect 38/50 | DIPTI DESAI & CO | dipti.sandeep.desai@icai.org
+2026-06-18 02:58:16 [INFO   ]   [38/50] DIPTI DESAI & CO | dipti.sandeep.desai@icai.org
+2026-06-18 02:58:21 [INFO   ] PROGRESS | CA Connect 39/50 | KUNAL RAMKUMAR AILANI | kunal_ailani@hotmail.com
+2026-06-18 02:58:21 [INFO   ]   [39/50] KUNAL RAMKUMAR AILANI | kunal_ailani@hotmail.com
+2026-06-18 02:58:26 [INFO   ] PROGRESS | CA Connect 40/50 | SURENDRA TIWARI AND ASSOCIATES | surya5673@gmail.com
+2026-06-18 02:58:26 [INFO   ]   [40/50] SURENDRA TIWARI AND ASSOCIATES | surya5673@gmail.com
+2026-06-18 02:58:31 [INFO   ] PROGRESS | CA Connect 41/50 | MOHADIKAR AND ASSOCIATES | mohadikarassociates@gmail.com
+2026-06-18 02:58:31 [INFO   ]   [41/50] MOHADIKAR AND ASSOCIATES | mohadikarassociates@gmail.com
+2026-06-18 02:58:36 [INFO   ] PROGRESS | CA Connect 42/50 | AJAY BHANUSHALI & ASSOCIATES | caajaybhanushali@gmail.com
+2026-06-18 02:58:36 [INFO   ]   [42/50] AJAY BHANUSHALI & ASSOCIATES | caajaybhanushali@gmail.com
+2026-06-18 02:58:41 [INFO   ] PROGRESS | CA Connect 43/50 | N R TIBREWALA & CO LLP | support@canrt.com
+2026-06-18 02:58:41 [INFO   ]   [43/50] N R TIBREWALA & CO LLP | support@canrt.com
+2026-06-18 02:58:46 [INFO   ] PROGRESS | CA Connect 44/50 | B D JOKHAKAR & CO | ramanj@bdjokhakar.com
+2026-06-18 02:58:46 [INFO   ]   [44/50] B D JOKHAKAR & CO | ramanj@bdjokhakar.com
+2026-06-18 02:58:51 [INFO   ] PROGRESS | CA Connect 45/50 | S M T & ASSOCIATES | kapil.thakkar21@gmail.com
+2026-06-18 02:58:51 [INFO   ]   [45/50] S M T & ASSOCIATES | kapil.thakkar21@gmail.com
+2026-06-18 02:58:56 [INFO   ] PROGRESS | CA Connect 46/50 | S K SHAH & CO | sachinshah91@gmail.com
+2026-06-18 02:58:56 [INFO   ]   [46/50] S K SHAH & CO | sachinshah91@gmail.com
+2026-06-18 02:59:01 [INFO   ] PROGRESS | CA Connect 47/50 | J M M K & CO | ukumashankar6@gmail.com
+2026-06-18 02:59:01 [INFO   ]   [47/50] J M M K & CO | ukumashankar6@gmail.com
+2026-06-18 02:59:06 [INFO   ] PROGRESS | CA Connect 48/50 | KISHOR V PAREKH & CO | kvparekh_co@yahoo.co.in
+2026-06-18 02:59:06 [INFO   ]   [48/50] KISHOR V PAREKH & CO | kvparekh_co@yahoo.co.in
+2026-06-18 02:59:11 [INFO   ] PROGRESS | CA Connect 49/50 | S S M G & ASSOCIATES LLP | saurabhmane99@gmail.com
+2026-06-18 02:59:11 [INFO   ]   [49/50] S S M G & ASSOCIATES LLP | saurabhmane99@gmail.com
+2026-06-18 02:59:16 [INFO   ] PROGRESS | CA Connect 50/50 | S A PORWAL & ASSOCIATES | casankitporwal@gmail.com
+2026-06-18 02:59:16 [INFO   ]   [50/50] S A PORWAL & ASSOCIATES | casankitporwal@gmail.com
+2026-06-18 02:59:17 [INFO   ] Batch done — 50 new email(s) this batch | run total 626 / 1000
+2026-06-18 02:59:17 [INFO   ] Enriching 46 profile(s) — Audit | Maharashtra | Mumbai (46 pending in this city)
+2026-06-18 02:59:17 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 02:59:23 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 02:59:26 [INFO   ] PROGRESS | CA Connect 1/46 | PRAKASH RAVATALE & ASSOCIATES | prakashkings@icai.org
+2026-06-18 02:59:26 [INFO   ]   [1/46] PRAKASH RAVATALE & ASSOCIATES | prakashkings@icai.org
+2026-06-18 02:59:31 [INFO   ] PROGRESS | CA Connect 2/46 | B C PAREKH & CO | bcparekh.co@gmail.com
+2026-06-18 02:59:31 [INFO   ]   [2/46] B C PAREKH & CO | bcparekh.co@gmail.com
+2026-06-18 02:59:37 [INFO   ] PROGRESS | CA Connect 3/46 | S N THANVI & ASSOCIATES | santoshthanvi@gmail.com
+2026-06-18 02:59:37 [INFO   ]   [3/46] S N THANVI & ASSOCIATES | santoshthanvi@gmail.com
+2026-06-18 02:59:42 [INFO   ] PROGRESS | CA Connect 4/46 | NILESH J SHAH & ASSOCIATES | nilesh1902@gmail.com
+2026-06-18 02:59:42 [INFO   ]   [4/46] NILESH J SHAH & ASSOCIATES | nilesh1902@gmail.com
+2026-06-18 02:59:47 [INFO   ] PROGRESS | CA Connect 5/46 | DIPALI SHETYE & ASSOCIATES | deepalica@gmail.com
+2026-06-18 02:59:47 [INFO   ]   [5/46] DIPALI SHETYE & ASSOCIATES | deepalica@gmail.com
+2026-06-18 02:59:52 [INFO   ] PROGRESS | CA Connect 6/46 | Uttam Abuwala Ghosh & Associates | uttam@uttamcorporate.com
+2026-06-18 02:59:52 [INFO   ]   [6/46] Uttam Abuwala Ghosh & Associates | uttam@uttamcorporate.com
+2026-06-18 02:59:57 [INFO   ] PROGRESS | CA Connect 7/46 | PARESH RAKESH & ASSOCIATES LLP | mail@pareshrakesh.in
+2026-06-18 02:59:57 [INFO   ]   [7/46] PARESH RAKESH & ASSOCIATES LLP | mail@pareshrakesh.in
+2026-06-18 03:00:02 [INFO   ] PROGRESS | CA Connect 8/46 | SANJAY SINGH & CO | sanjaysingh.ssco@gmail.com
+2026-06-18 03:00:02 [INFO   ]   [8/46] SANJAY SINGH & CO | sanjaysingh.ssco@gmail.com
+2026-06-18 03:00:07 [INFO   ] PROGRESS | CA Connect 9/46 | JULIUS CARDOZO & CO | jcardozo2812@gmail.com
+2026-06-18 03:00:07 [INFO   ]   [9/46] JULIUS CARDOZO & CO | jcardozo2812@gmail.com
+2026-06-18 03:00:12 [INFO   ] PROGRESS | CA Connect 10/46 | SUBRAT NAYAK & ASSOCIATES | subratnayak0303@gmail.com
+2026-06-18 03:00:12 [INFO   ]   [10/46] SUBRAT NAYAK & ASSOCIATES | subratnayak0303@gmail.com
+2026-06-18 03:00:17 [INFO   ] PROGRESS | CA Connect 11/46 | M J P T & CO LLP | parikhjainassociates@gmail.com
+2026-06-18 03:00:17 [INFO   ]   [11/46] M J P T & CO LLP | parikhjainassociates@gmail.com
+2026-06-18 03:00:22 [INFO   ] PROGRESS | CA Connect 12/46 | VIJAY GARG & CO | vijaygarg25@gmail.com
+2026-06-18 03:00:22 [INFO   ]   [12/46] VIJAY GARG & CO | vijaygarg25@gmail.com
+2026-06-18 03:00:27 [INFO   ] PROGRESS | CA Connect 13/46 | PARTH M MEHTA & CO | caparthmmehta@gmail.com
+2026-06-18 03:00:27 [INFO   ]   [13/46] PARTH M MEHTA & CO | caparthmmehta@gmail.com
+2026-06-18 03:00:32 [INFO   ] PROGRESS | CA Connect 14/46 | R K KHANNA & ASSOCIATES | singh@rkka.in
+2026-06-18 03:00:32 [INFO   ]   [14/46] R K KHANNA & ASSOCIATES | singh@rkka.in
+2026-06-18 03:00:37 [INFO   ] PROGRESS | CA Connect 15/46 | GIRISH D MARU & ASSOCIATES | cagirish@girishdmaru.in
+2026-06-18 03:00:37 [INFO   ]   [15/46] GIRISH D MARU & ASSOCIATES | cagirish@girishdmaru.in
+2026-06-18 03:00:42 [INFO   ] PROGRESS | CA Connect 16/46 | M N T AND ASSOCIATES LLP | maheshmgala_ca@yahoo.co.in
+2026-06-18 03:00:42 [INFO   ]   [16/46] M N T AND ASSOCIATES LLP | maheshmgala_ca@yahoo.co.in
+2026-06-18 03:00:47 [INFO   ] PROGRESS | CA Connect 17/46 | DEEPALI GORDE & CO | deepaligorde31@gmail.com
+2026-06-18 03:00:47 [INFO   ]   [17/46] DEEPALI GORDE & CO | deepaligorde31@gmail.com
+2026-06-18 03:00:52 [INFO   ] PROGRESS | CA Connect 18/46 | SHIGWAN PARMAR AND ASSOCIATES | ca.jmshigwan@gmail.com
+2026-06-18 03:00:52 [INFO   ]   [18/46] SHIGWAN PARMAR AND ASSOCIATES | ca.jmshigwan@gmail.com
+2026-06-18 03:00:57 [INFO   ] PROGRESS | CA Connect 19/46 | C K S P AND CO LLP | kalpen@ckspllp.com
+2026-06-18 03:00:57 [INFO   ]   [19/46] C K S P AND CO LLP | kalpen@ckspllp.com
+2026-06-18 03:01:02 [INFO   ] PROGRESS | CA Connect 20/46 | N S MEHTA AND ASSOCIATES | mehtashurjan99.ms@gmail.com
+2026-06-18 03:01:02 [INFO   ]   [20/46] N S MEHTA AND ASSOCIATES | mehtashurjan99.ms@gmail.com
+2026-06-18 03:01:08 [INFO   ] PROGRESS | CA Connect 21/46 | K H DOSHI & ASSOCIATES LLP | cavimmydoshi@gmail.com
+2026-06-18 03:01:08 [INFO   ]   [21/46] K H DOSHI & ASSOCIATES LLP | cavimmydoshi@gmail.com
+2026-06-18 03:01:13 [INFO   ] PROGRESS | CA Connect 22/46 | Saini Pati Shah & CO LLP | somsaini@gmail.com
+2026-06-18 03:01:13 [INFO   ]   [22/46] Saini Pati Shah & CO LLP | somsaini@gmail.com
+2026-06-18 03:01:18 [INFO   ] PROGRESS | CA Connect 23/46 | SANJAY B BHUJBAL & ASSOCIATES LLP | casanjaybhujbal@gmail.com
+2026-06-18 03:01:18 [INFO   ]   [23/46] SANJAY B BHUJBAL & ASSOCIATES LLP | casanjaybhujbal@gmail.com
+2026-06-18 03:01:23 [INFO   ] PROGRESS | CA Connect 24/46 | PINKY MALVIA & CO | pinkymalvia@gmail.com
+2026-06-18 03:01:23 [INFO   ]   [24/46] PINKY MALVIA & CO | pinkymalvia@gmail.com
+2026-06-18 03:01:28 [INFO   ] PROGRESS | CA Connect 25/46 | N K R & CO LLP | rachna@nkrco.in
+2026-06-18 03:01:28 [INFO   ]   [25/46] N K R & CO LLP | rachna@nkrco.in
+2026-06-18 03:01:33 [INFO   ] PROGRESS | CA Connect 26/46 | N R MAMTORA & CO | nitin_mamtora@yahoo.co.in
+2026-06-18 03:01:33 [INFO   ]   [26/46] N R MAMTORA & CO | nitin_mamtora@yahoo.co.in
+2026-06-18 03:01:40 [INFO   ] PROGRESS | CA Connect 27/46 | ABHISHEK S KOTHARI & ASSOCIATES | abhishekkothari152@gmail.com
+2026-06-18 03:01:40 [INFO   ]   [27/46] ABHISHEK S KOTHARI & ASSOCIATES | abhishekkothari152@gmail.com
+2026-06-18 03:01:45 [INFO   ] PROGRESS | CA Connect 28/46 | KENIL SHAH & CO | kenilshah059@gmail.com
+2026-06-18 03:01:45 [INFO   ]   [28/46] KENIL SHAH & CO | kenilshah059@gmail.com
+2026-06-18 03:01:50 [INFO   ] PROGRESS | CA Connect 29/46 | MENARIYA & ASSOCIATES | capurshottammenariya@gmail.com
+2026-06-18 03:01:50 [INFO   ]   [29/46] MENARIYA & ASSOCIATES | capurshottammenariya@gmail.com
+2026-06-18 03:01:55 [INFO   ] PROGRESS | CA Connect 30/46 | HARSHAL MEHTA & ASSOCIATES | hnm6991@gmail.com
+2026-06-18 03:01:55 [INFO   ]   [30/46] HARSHAL MEHTA & ASSOCIATES | hnm6991@gmail.com
+2026-06-18 03:02:00 [INFO   ] PROGRESS | CA Connect 31/46 | SHANTILAL CHANDALIYA & CO | info@slcca.in
+2026-06-18 03:02:00 [INFO   ]   [31/46] SHANTILAL CHANDALIYA & CO | info@slcca.in
+2026-06-18 03:02:05 [INFO   ] PROGRESS | CA Connect 32/46 | SHINDE & ASSOCIATES | 999audit@gmail.com
+2026-06-18 03:02:05 [INFO   ]   [32/46] SHINDE & ASSOCIATES | 999audit@gmail.com
+2026-06-18 03:02:10 [INFO   ] PROGRESS | CA Connect 33/46 | P S JOGLEKAR & CO | joglekarp@yahoo.com
+2026-06-18 03:02:10 [INFO   ]   [33/46] P S JOGLEKAR & CO | joglekarp@yahoo.com
+2026-06-18 03:02:16 [INFO   ] PROGRESS | CA Connect 34/46 | GANESH & RAJENDRA ASSOCIATES | audit@grassociates.co.in
+2026-06-18 03:02:16 [INFO   ]   [34/46] GANESH & RAJENDRA ASSOCIATES | audit@grassociates.co.in
+2026-06-18 03:02:21 [INFO   ] PROGRESS | CA Connect 35/46 | MODI ROONGTA & ASSOCIATES | lkroongta@gmail.com
+2026-06-18 03:02:21 [INFO   ]   [35/46] MODI ROONGTA & ASSOCIATES | lkroongta@gmail.com
+2026-06-18 03:02:26 [INFO   ] PROGRESS | CA Connect 36/46 | VIRAL DOSHI & CO | mail@caviraldoshi.com
+2026-06-18 03:02:26 [INFO   ]   [36/46] VIRAL DOSHI & CO | mail@caviraldoshi.com
+2026-06-18 03:02:32 [INFO   ] PROGRESS | CA Connect 37/46 | PRASENJEET RAO & CO | caprasenjeetrao@yahoo.com
+2026-06-18 03:02:32 [INFO   ]   [37/46] PRASENJEET RAO & CO | caprasenjeetrao@yahoo.com
+2026-06-18 03:02:37 [INFO   ] PROGRESS | CA Connect 38/46 | VINDU & ASSOCIATES | vindu_c89@yahoo.com
+2026-06-18 03:02:37 [INFO   ]   [38/46] VINDU & ASSOCIATES | vindu_c89@yahoo.com
+2026-06-18 03:02:42 [INFO   ] PROGRESS | CA Connect 39/46 | CHANDRASHEKHAR J MEHTA & CO | cjmehta234@gmail.com
+2026-06-18 03:02:42 [INFO   ]   [39/46] CHANDRASHEKHAR J MEHTA & CO | cjmehta234@gmail.com
+2026-06-18 03:02:47 [INFO   ] PROGRESS | CA Connect 40/46 | P M RUGHANI & CO | piyush.rughani@gmail.com
+2026-06-18 03:02:47 [INFO   ]   [40/46] P M RUGHANI & CO | piyush.rughani@gmail.com
+2026-06-18 03:02:52 [INFO   ] PROGRESS | CA Connect 41/46 | INANI & ASSOCIATES | ankit.inani12@gmail.com
+2026-06-18 03:02:52 [INFO   ]   [41/46] INANI & ASSOCIATES | ankit.inani12@gmail.com
+2026-06-18 03:02:57 [INFO   ] PROGRESS | CA Connect 42/46 | DAYANAND SINGH & ASSOCIATES | singhkdayanand@gmail.com
+2026-06-18 03:02:57 [INFO   ]   [42/46] DAYANAND SINGH & ASSOCIATES | singhkdayanand@gmail.com
+2026-06-18 03:03:02 [INFO   ] PROGRESS | CA Connect 43/46 | JAGDISH B SHAH & ASSOCIATES | urvi@cajbshahassociates.com
+2026-06-18 03:03:02 [INFO   ]   [43/46] JAGDISH B SHAH & ASSOCIATES | urvi@cajbshahassociates.com
+2026-06-18 03:03:07 [INFO   ] PROGRESS | CA Connect 44/46 | K A R M & CO | cakarmandco@gmail.com
+2026-06-18 03:03:07 [INFO   ]   [44/46] K A R M & CO | cakarmandco@gmail.com
+2026-06-18 03:03:12 [INFO   ] PROGRESS | CA Connect 45/46 | PAYAL R GADA & ASSOCIATES | payalrgada@gmail.com
+2026-06-18 03:03:12 [INFO   ]   [45/46] PAYAL R GADA & ASSOCIATES | payalrgada@gmail.com
+2026-06-18 03:03:17 [INFO   ] PROGRESS | CA Connect 46/46 | I O DHARIA & CO | iodharia@gmail.com
+2026-06-18 03:03:17 [INFO   ]   [46/46] I O DHARIA & CO | iodharia@gmail.com
+2026-06-18 03:03:18 [INFO   ] Batch done — 46 new email(s) this batch | run total 672 / 1000
+2026-06-18 03:03:18 [INFO   ] 
+2026-06-18 03:03:18 [INFO   ] ==============================================================
+2026-06-18 03:03:18 [INFO   ] PROGRESS | Listing harvest — Audit | Maharashtra | Nagpur
+2026-06-18 03:03:18 [INFO   ] ==============================================================
+2026-06-18 03:03:19 [INFO   ] Opening CA Connect search page: https://caconnect.icai.org/search-your-ca
+2026-06-18 03:03:22 [INFO   ] Selecting service=Audit state=Maharashtra city=Nagpur
+2026-06-18 03:03:26 [INFO   ] Search results URL: https://caconnect.icai.org/search?_token=4Dr1DYXwnZaOA2MoqhPLB99VslMmmbeLCkWlhfsG&type=&services=Audit&state=Maharashtra&city=Nagpur
+2026-06-18 03:03:28 [INFO   ] Members tab: 62 cards
+2026-06-18 03:03:34 [INFO   ] CA Firms tab: 62 cards
+2026-06-18 03:03:34 [INFO   ] Stored 61 new listing(s) (124 total on page) for Audit / Maharashtra / Nagpur
+2026-06-18 03:03:34 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Nagpur (61 pending in this city)
+2026-06-18 03:03:35 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 03:03:40 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 03:03:44 [INFO   ] PROGRESS | CA Connect 1/50 | NIRAJ ARVIND NIMJE | canirajnimje@yahoo.com
+2026-06-18 03:03:44 [INFO   ]   [1/50] NIRAJ ARVIND NIMJE | canirajnimje@yahoo.com
+2026-06-18 03:03:49 [INFO   ] PROGRESS | CA Connect 2/50 | PAWAN AGARWAL | capkagarwal@icai.org
+2026-06-18 03:03:49 [INFO   ]   [2/50] PAWAN AGARWAL | capkagarwal@icai.org
+2026-06-18 03:03:54 [INFO   ] PROGRESS | CA Connect 3/50 | SHUBHAM SAWAL | shubhamsawal4@gmail.com
+2026-06-18 03:03:54 [INFO   ]   [3/50] SHUBHAM SAWAL | shubhamsawal4@gmail.com
+2026-06-18 03:03:59 [INFO   ] PROGRESS | CA Connect 4/50 | TARUNA TARUN GIDWANI | catarunakukreja@gmail.com
+2026-06-18 03:03:59 [INFO   ]   [4/50] TARUNA TARUN GIDWANI | catarunakukreja@gmail.com
+2026-06-18 03:04:04 [INFO   ] PROGRESS | CA Connect 5/50 | TANEJA SURESH HUNDRAJ | tsuresh2002@gmail.com
+2026-06-18 03:04:04 [INFO   ]   [5/50] TANEJA SURESH HUNDRAJ | tsuresh2002@gmail.com
+2026-06-18 03:04:09 [INFO   ] PROGRESS | CA Connect 6/50 | CHINTAN PAVAN KOTHARI | chintankothari2605@gmail.com
+2026-06-18 03:04:09 [INFO   ]   [6/50] CHINTAN PAVAN KOTHARI | chintankothari2605@gmail.com
+2026-06-18 03:04:14 [INFO   ] PROGRESS | CA Connect 7/50 | KISHOR BHANUPRATAPJI WARMA | kishorwarma@gmail.com
+2026-06-18 03:04:14 [INFO   ]   [7/50] KISHOR BHANUPRATAPJI WARMA | kishorwarma@gmail.com
+2026-06-18 03:04:19 [INFO   ] PROGRESS | CA Connect 8/50 | BAHRI KAPIL SADANAND | taxaudits@gmail.com
+2026-06-18 03:04:19 [INFO   ]   [8/50] BAHRI KAPIL SADANAND | taxaudits@gmail.com
+2026-06-18 03:04:24 [INFO   ] PROGRESS | CA Connect 9/50 | PURUSHOTTAM BHAWARLAL DARAK | purushottamd2@gmail.com
+2026-06-18 03:04:24 [INFO   ]   [9/50] PURUSHOTTAM BHAWARLAL DARAK | purushottamd2@gmail.com
+2026-06-18 03:04:29 [INFO   ] PROGRESS | CA Connect 10/50 | PARTH RAKESH GUPTA | parthrg25@gmail.com
+2026-06-18 03:04:29 [INFO   ]   [10/50] PARTH RAKESH GUPTA | parthrg25@gmail.com
+2026-06-18 03:04:34 [INFO   ] PROGRESS | CA Connect 11/50 | GAURAV RAJESH BANGARE | cagauravbangare@gmail.com
+2026-06-18 03:04:34 [INFO   ]   [11/50] GAURAV RAJESH BANGARE | cagauravbangare@gmail.com
+2026-06-18 03:04:39 [INFO   ] PROGRESS | CA Connect 12/50 | SAURABH VINOD JAIN | casaurabhjain1994@gmail.com
+2026-06-18 03:04:39 [INFO   ]   [12/50] SAURABH VINOD JAIN | casaurabhjain1994@gmail.com
+2026-06-18 03:04:44 [INFO   ] PROGRESS | CA Connect 13/50 | DHAWAL MAHESH SHAH | cadhawalshah@gmail.com
+2026-06-18 03:04:44 [INFO   ]   [13/50] DHAWAL MAHESH SHAH | cadhawalshah@gmail.com
+2026-06-18 03:04:49 [INFO   ] PROGRESS | CA Connect 14/50 | PETHE RAJIV BALWANT | rbpethe@gmail.com
+2026-06-18 03:04:49 [INFO   ]   [14/50] PETHE RAJIV BALWANT | rbpethe@gmail.com
+2026-06-18 03:04:54 [INFO   ] PROGRESS | CA Connect 15/50 | ANIRUDDHA GOVIND MAHURKAR | agmcangp@gmail.com
+2026-06-18 03:04:54 [INFO   ]   [15/50] ANIRUDDHA GOVIND MAHURKAR | agmcangp@gmail.com
+2026-06-18 03:04:59 [INFO   ] PROGRESS | CA Connect 16/50 | MOHAN CHOUTHMAL RATHI | rdcangp@gmail.com
+2026-06-18 03:04:59 [INFO   ]   [16/50] MOHAN CHOUTHMAL RATHI | rdcangp@gmail.com
+2026-06-18 03:05:04 [INFO   ] PROGRESS | CA Connect 17/50 | ATUL MADHUKAR DESHMUKH | atulmd13@gmail.com
+2026-06-18 03:05:04 [INFO   ]   [17/50] ATUL MADHUKAR DESHMUKH | atulmd13@gmail.com
+2026-06-18 03:05:09 [INFO   ] PROGRESS | CA Connect 18/50 | VINAY SRICHAND AHUJA | vinayahuja11@gmail.com
+2026-06-18 03:05:09 [INFO   ]   [18/50] VINAY SRICHAND AHUJA | vinayahuja11@gmail.com
+2026-06-18 03:05:14 [INFO   ] PROGRESS | CA Connect 19/50 | MADHUR POPLI | madhurpoplica@gmail.com
+2026-06-18 03:05:14 [INFO   ]   [19/50] MADHUR POPLI | madhurpoplica@gmail.com
+2026-06-18 03:05:19 [INFO   ] PROGRESS | CA Connect 20/50 | SHRADDHA SUNIL BAVDEKAR | cashraddhabavdekar@gmail.com
+2026-06-18 03:05:19 [INFO   ]   [20/50] SHRADDHA SUNIL BAVDEKAR | cashraddhabavdekar@gmail.com
+2026-06-18 03:05:24 [INFO   ] PROGRESS | CA Connect 21/50 | PADMA GOPALDASJI VYAS | padmavyas1690@gmail.com
+2026-06-18 03:05:24 [INFO   ]   [21/50] PADMA GOPALDASJI VYAS | padmavyas1690@gmail.com
+2026-06-18 03:05:29 [INFO   ] PROGRESS | CA Connect 22/50 | ANIKET VASANTRAO KHAPRE | caaniketkhapre@gmail.com
+2026-06-18 03:05:29 [INFO   ]   [22/50] ANIKET VASANTRAO KHAPRE | caaniketkhapre@gmail.com
+2026-06-18 03:05:34 [INFO   ] PROGRESS | CA Connect 23/50 | JAYAKRISHNAN P | jaya_ngp@yahoo.com
+2026-06-18 03:05:34 [INFO   ]   [23/50] JAYAKRISHNAN P | jaya_ngp@yahoo.com
+2026-06-18 03:05:39 [INFO   ] PROGRESS | CA Connect 24/50 | NINAD DHANYAKUMAR NANDGAONKAR | ninad.n.ca@gmail.com
+2026-06-18 03:05:39 [INFO   ]   [24/50] NINAD DHANYAKUMAR NANDGAONKAR | ninad.n.ca@gmail.com
+2026-06-18 03:05:45 [INFO   ] PROGRESS | CA Connect 25/50 | ANAND PENDHARI & ASSOCIATES | anandpendhari@gmail.com
+2026-06-18 03:05:45 [INFO   ]   [25/50] ANAND PENDHARI & ASSOCIATES | anandpendhari@gmail.com
+2026-06-18 03:05:50 [INFO   ] PROGRESS | CA Connect 26/50 | RAJAT FULADI & ASSOCIATES | rajatf8@gmail.com
+2026-06-18 03:05:50 [INFO   ]   [26/50] RAJAT FULADI & ASSOCIATES | rajatf8@gmail.com
+2026-06-18 03:05:55 [INFO   ] PROGRESS | CA Connect 27/50 | HUSAIN SHAKIR & COMPANY | chathusain@yahoo.com
+2026-06-18 03:05:55 [INFO   ]   [27/50] HUSAIN SHAKIR & COMPANY | chathusain@yahoo.com
+2026-06-18 03:06:00 [INFO   ] PROGRESS | CA Connect 28/50 | MOGRE SINGH AND CO | shubhamsingh1018@gmail.com
+2026-06-18 03:06:00 [INFO   ]   [28/50] MOGRE SINGH AND CO | shubhamsingh1018@gmail.com
+2026-06-18 03:06:05 [INFO   ] PROGRESS | CA Connect 29/50 | A A KOHALE & CO | adityakohale@gmail.com
+2026-06-18 03:06:05 [INFO   ]   [29/50] A A KOHALE & CO | adityakohale@gmail.com
+2026-06-18 03:06:10 [INFO   ] PROGRESS | CA Connect 30/50 | SWATI PADOLE & ASSOCIATES | caswatipadole@gmail.com
+2026-06-18 03:06:10 [INFO   ]   [30/50] SWATI PADOLE & ASSOCIATES | caswatipadole@gmail.com
+2026-06-18 03:06:15 [INFO   ] PROGRESS | CA Connect 31/50 | P P R S & ASSOCIATES | carajeshshukla@yahoo.com
+2026-06-18 03:06:15 [INFO   ]   [31/50] P P R S & ASSOCIATES | carajeshshukla@yahoo.com
+2026-06-18 03:06:20 [INFO   ] PROGRESS | CA Connect 32/50 | RAGHAV GOKHALE AND CO | caraghavgokhale07@gmail.com
+2026-06-18 03:06:20 [INFO   ]   [32/50] RAGHAV GOKHALE AND CO | caraghavgokhale07@gmail.com
+2026-06-18 03:06:25 [INFO   ] PROGRESS | CA Connect 33/50 | H T S AND COMPANY | ravisamnani2105@gmail.com
+2026-06-18 03:06:25 [INFO   ]   [33/50] H T S AND COMPANY | ravisamnani2105@gmail.com
+2026-06-18 03:06:30 [INFO   ] PROGRESS | CA Connect 34/50 | R M SHAH & CO | rmshahandco@yahoo.co.in
+2026-06-18 03:06:30 [INFO   ]   [34/50] R M SHAH & CO | rmshahandco@yahoo.co.in
+2026-06-18 03:06:35 [INFO   ] PROGRESS | CA Connect 35/50 | P O SHUKLA & CO | caparagshukla@gmail.com
+2026-06-18 03:06:35 [INFO   ]   [35/50] P O SHUKLA & CO | caparagshukla@gmail.com
+2026-06-18 03:06:40 [INFO   ] PROGRESS | CA Connect 36/50 | K P SAHASRABUDHE & CO | sunil_anwani@yahoo.co.in
+2026-06-18 03:06:40 [INFO   ]   [36/50] K P SAHASRABUDHE & CO | sunil_anwani@yahoo.co.in
+2026-06-18 03:06:45 [INFO   ] PROGRESS | CA Connect 37/50 | U Y & ASSOCIATES | uditchoithani@gmail.com
+2026-06-18 03:06:45 [INFO   ]   [37/50] U Y & ASSOCIATES | uditchoithani@gmail.com
+2026-06-18 03:06:50 [INFO   ] PROGRESS | CA Connect 38/50 | S P CHANDAK & ASSOCIATES | chandak.shreyp@gmail.com
+2026-06-18 03:06:50 [INFO   ]   [38/50] S P CHANDAK & ASSOCIATES | chandak.shreyp@gmail.com
+2026-06-18 03:06:55 [INFO   ] PROGRESS | CA Connect 39/50 | PARAG KELA & CO | kps_parag@yahoo.co.in
+2026-06-18 03:06:55 [INFO   ]   [39/50] PARAG KELA & CO | kps_parag@yahoo.co.in
+2026-06-18 03:07:00 [INFO   ] PROGRESS | CA Connect 40/50 | HITESH L CHELANI & ASSOCIATES | hiteshchelani77@gmail.com
+2026-06-18 03:07:00 [INFO   ]   [40/50] HITESH L CHELANI & ASSOCIATES | hiteshchelani77@gmail.com
+2026-06-18 03:07:05 [INFO   ] PROGRESS | CA Connect 41/50 | LOHIYA & ASSOCIATES | lohiyakushal@gmail.com
+2026-06-18 03:07:05 [INFO   ]   [41/50] LOHIYA & ASSOCIATES | lohiyakushal@gmail.com
+2026-06-18 03:07:10 [INFO   ] PROGRESS | CA Connect 42/50 | A S KULKARNI AND ASSOCIATES | ask_arti@rediffmail.com
+2026-06-18 03:07:10 [INFO   ]   [42/50] A S KULKARNI AND ASSOCIATES | ask_arti@rediffmail.com
+2026-06-18 03:07:15 [INFO   ] PROGRESS | CA Connect 43/50 | NANWANI & ASSOCIATES | psnanwani@gmail.com
+2026-06-18 03:07:15 [INFO   ]   [43/50] NANWANI & ASSOCIATES | psnanwani@gmail.com
+2026-06-18 03:07:20 [INFO   ] PROGRESS | CA Connect 44/50 | G K PAREEK & ASSOCIATES | ganeshkumarpareekca@gmail.com
+2026-06-18 03:07:20 [INFO   ]   [44/50] G K PAREEK & ASSOCIATES | ganeshkumarpareekca@gmail.com
+2026-06-18 03:07:25 [INFO   ] PROGRESS | CA Connect 45/50 | D P A V & ASSOCIATES | cavivekparakh@gmail.com
+2026-06-18 03:07:25 [INFO   ]   [45/50] D P A V & ASSOCIATES | cavivekparakh@gmail.com
+2026-06-18 03:07:30 [INFO   ] PROGRESS | CA Connect 46/50 | P S JAJODIA & ASSOCIATES | jajodiapranay@gmail.com
+2026-06-18 03:07:30 [INFO   ]   [46/50] P S JAJODIA & ASSOCIATES | jajodiapranay@gmail.com
+2026-06-18 03:07:35 [INFO   ] PROGRESS | CA Connect 47/50 | A A A S & ASSOCIATES | sanchitarathi@gmail.com
+2026-06-18 03:07:35 [INFO   ]   [47/50] A A A S & ASSOCIATES | sanchitarathi@gmail.com
+2026-06-18 03:07:40 [INFO   ] PROGRESS | CA Connect 48/50 | S B AGRAWAL AND ASSOCIATES | agrawalshivam6899@gmail.com
+2026-06-18 03:07:40 [INFO   ]   [48/50] S B AGRAWAL AND ASSOCIATES | agrawalshivam6899@gmail.com
+2026-06-18 03:07:45 [INFO   ] PROGRESS | CA Connect 49/50 | PRAVIN DHIRAN & CO | pravin.dhiran@gmail.com
+2026-06-18 03:07:45 [INFO   ]   [49/50] PRAVIN DHIRAN & CO | pravin.dhiran@gmail.com
+2026-06-18 03:07:50 [INFO   ] PROGRESS | CA Connect 50/50 | JAIN & BAVARIA | kanchi.a.jain@gmail.com
+2026-06-18 03:07:50 [INFO   ]   [50/50] JAIN & BAVARIA | kanchi.a.jain@gmail.com
+2026-06-18 03:07:51 [INFO   ] Batch done — 50 new email(s) this batch | run total 722 / 1000
+2026-06-18 03:07:51 [INFO   ] Enriching 11 profile(s) — Audit | Maharashtra | Nagpur (11 pending in this city)
+2026-06-18 03:07:52 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 03:07:57 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 03:08:01 [INFO   ] PROGRESS | CA Connect 1/11 | KURALKAR SHASTRI & COMPANY | nrkuralkar@yahoo.com
+2026-06-18 03:08:01 [INFO   ]   [1/11] KURALKAR SHASTRI & COMPANY | nrkuralkar@yahoo.com
+2026-06-18 03:08:06 [INFO   ] PROGRESS | CA Connect 2/11 | SONI PATEL & ASSOCIATES | soniprajal111@gmail.com
+2026-06-18 03:08:06 [INFO   ]   [2/11] SONI PATEL & ASSOCIATES | soniprajal111@gmail.com
+2026-06-18 03:08:11 [INFO   ] PROGRESS | CA Connect 3/11 | BAGDIA & COMPANY | casaket@rediffmail.com
+2026-06-18 03:08:11 [INFO   ]   [3/11] BAGDIA & COMPANY | casaket@rediffmail.com
+2026-06-18 03:08:16 [INFO   ] PROGRESS | CA Connect 4/11 | B K SINDHWANI & CO | email.bksco@gmail.com
+2026-06-18 03:08:16 [INFO   ]   [4/11] B K SINDHWANI & CO | email.bksco@gmail.com
+2026-06-18 03:08:21 [INFO   ] PROGRESS | CA Connect 5/11 | NACHIKET SHAHANE & CO | nachiketdshahane@gmail.com
+2026-06-18 03:08:21 [INFO   ]   [5/11] NACHIKET SHAHANE & CO | nachiketdshahane@gmail.com
+2026-06-18 03:08:26 [INFO   ] PROGRESS | CA Connect 6/11 | M HUSSAIN & CO | eoffice.mhussain@gmail.com
+2026-06-18 03:08:26 [INFO   ]   [6/11] M HUSSAIN & CO | eoffice.mhussain@gmail.com
+2026-06-18 03:08:31 [INFO   ] PROGRESS | CA Connect 7/11 | DHOKA BOTHRA & CO | anandrdhoka@gmail.com
+2026-06-18 03:08:31 [INFO   ]   [7/11] DHOKA BOTHRA & CO | anandrdhoka@gmail.com
+2026-06-18 03:08:36 [INFO   ] PROGRESS | CA Connect 8/11 | MINHAJ KHAN & CO | caminhajkhan@gmail.com
+2026-06-18 03:08:36 [INFO   ]   [8/11] MINHAJ KHAN & CO | caminhajkhan@gmail.com
+2026-06-18 03:08:41 [INFO   ] PROGRESS | CA Connect 9/11 | PRATHMESH SHETE & ASSOCIATES | pashete98@gmail.com
+2026-06-18 03:08:41 [INFO   ]   [9/11] PRATHMESH SHETE & ASSOCIATES | pashete98@gmail.com
+2026-06-18 03:08:46 [INFO   ] PROGRESS | CA Connect 10/11 | AJAY & AMAR ASSOCIATES | bhutadacp193@gmail.com
+2026-06-18 03:08:46 [INFO   ]   [10/11] AJAY & AMAR ASSOCIATES | bhutadacp193@gmail.com
+2026-06-18 03:08:51 [INFO   ] PROGRESS | CA Connect 11/11 | GUPTA SARDA & BAGDIA | pcsarda@hotmail.com
+2026-06-18 03:08:51 [INFO   ]   [11/11] GUPTA SARDA & BAGDIA | pcsarda@hotmail.com
+2026-06-18 03:08:51 [INFO   ] Batch done — 11 new email(s) this batch | run total 733 / 1000
+2026-06-18 03:08:51 [INFO   ] 
+2026-06-18 03:08:51 [INFO   ] ==============================================================
+2026-06-18 03:08:51 [INFO   ] PROGRESS | Listing harvest — Audit | Maharashtra | Nashik
+2026-06-18 03:08:51 [INFO   ] ==============================================================
+2026-06-18 03:08:52 [INFO   ] Opening CA Connect search page: https://caconnect.icai.org/search-your-ca
+2026-06-18 03:08:55 [INFO   ] Selecting service=Audit state=Maharashtra city=Nashik
+2026-06-18 03:08:59 [INFO   ] Search results URL: https://caconnect.icai.org/search?_token=0c9ef4mSDhcGLMUXOMgBlX6m7SBDhQsdQyGjHYbT&type=&services=Audit&state=Maharashtra&city=Nashik
+2026-06-18 03:09:02 [INFO   ] Members tab: 77 cards
+2026-06-18 03:09:08 [INFO   ] CA Firms tab: 77 cards
+2026-06-18 03:09:08 [INFO   ] Stored 68 new listing(s) (154 total on page) for Audit / Maharashtra / Nashik
+2026-06-18 03:09:08 [INFO   ] Enriching 50 profile(s) — Audit | Maharashtra | Nashik (68 pending in this city)
+2026-06-18 03:09:09 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 03:09:15 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 03:09:18 [INFO   ] PROGRESS | CA Connect 1/50 | MAYURI SANJAY PURANIK | camspuranik@gmail.com
+2026-06-18 03:09:18 [INFO   ]   [1/50] MAYURI SANJAY PURANIK | camspuranik@gmail.com
+2026-06-18 03:09:23 [INFO   ] PROGRESS | CA Connect 2/50 | BHAUSAHEB DHANA KHAIRNAR | bdkhairnar@gmail.com
+2026-06-18 03:09:23 [INFO   ]   [2/50] BHAUSAHEB DHANA KHAIRNAR | bdkhairnar@gmail.com
+2026-06-18 03:09:28 [INFO   ] PROGRESS | CA Connect 3/50 | SATISH GANPAT KOTHULE | satishkothule@gmail.com
+2026-06-18 03:09:28 [INFO   ]   [3/50] SATISH GANPAT KOTHULE | satishkothule@gmail.com
+2026-06-18 03:09:33 [INFO   ] PROGRESS | CA Connect 4/50 | MIHIR GANESH JOSHI | mihirjoshiandcompany@gmail.com
+2026-06-18 03:09:33 [INFO   ]   [4/50] MIHIR GANESH JOSHI | mihirjoshiandcompany@gmail.com
+2026-06-18 03:09:38 [INFO   ] PROGRESS | CA Connect 5/50 | KALPESH EKNATH BAVISKAR | cakalpeshbaviskar@gmail.com
+2026-06-18 03:09:38 [INFO   ]   [5/50] KALPESH EKNATH BAVISKAR | cakalpeshbaviskar@gmail.com
+2026-06-18 03:09:44 [INFO   ] PROGRESS | CA Connect 6/50 | SACHIN DILIP SHIRSAT | sachinshirsat@yahoo.com
+2026-06-18 03:09:44 [INFO   ]   [6/50] SACHIN DILIP SHIRSAT | sachinshirsat@yahoo.com
+2026-06-18 03:09:49 [INFO   ] PROGRESS | CA Connect 7/50 | JAYESH SUBHASH DESALE | jayeshdesale@yahoo.co.in
+2026-06-18 03:09:49 [INFO   ]   [7/50] JAYESH SUBHASH DESALE | jayeshdesale@yahoo.co.in
+2026-06-18 03:09:54 [INFO   ] PROGRESS | CA Connect 8/50 | PRASHANT BHAVARILAL CHHORIYA | prashantbchhoriya@gmail.com
+2026-06-18 03:09:54 [INFO   ]   [8/50] PRASHANT BHAVARILAL CHHORIYA | prashantbchhoriya@gmail.com
+2026-06-18 03:10:00 [INFO   ] PROGRESS | CA Connect 9/50 | SANJAY SHANTILAL LODHA | sanjay_1430@yahoo.co.in
+2026-06-18 03:10:00 [INFO   ]   [9/50] SANJAY SHANTILAL LODHA | sanjay_1430@yahoo.co.in
+2026-06-18 03:10:05 [INFO   ] PROGRESS | CA Connect 10/50 | MANSI PARESH SHAH | ca.shahmansi20@gmail.com
+2026-06-18 03:10:05 [INFO   ]   [10/50] MANSI PARESH SHAH | ca.shahmansi20@gmail.com
+2026-06-18 03:10:10 [INFO   ] PROGRESS | CA Connect 11/50 | PRATHAMESH MOHAN PHATAK | prtham856@gmail.com
+2026-06-18 03:10:10 [INFO   ]   [11/50] PRATHAMESH MOHAN PHATAK | prtham856@gmail.com
+2026-06-18 03:10:15 [INFO   ] PROGRESS | CA Connect 12/50 | AVINASH KISHOR KSHIRSAGAR | iamavinash244@gmail.com
+2026-06-18 03:10:15 [INFO   ]   [12/50] AVINASH KISHOR KSHIRSAGAR | iamavinash244@gmail.com
+2026-06-18 03:10:20 [INFO   ] PROGRESS | CA Connect 13/50 | ANKIT RAJKUMAR RAI | ankitrainsk@gmail.com
+2026-06-18 03:10:20 [INFO   ]   [13/50] ANKIT RAJKUMAR RAI | ankitrainsk@gmail.com
+2026-06-18 03:10:25 [INFO   ] PROGRESS | CA Connect 14/50 | RAHUL PRAKASH BAFNA | carahulbafna@gmail.com
+2026-06-18 03:10:25 [INFO   ]   [14/50] RAHUL PRAKASH BAFNA | carahulbafna@gmail.com
+2026-06-18 03:10:30 [INFO   ] PROGRESS | CA Connect 15/50 | BHUSHAN JAYANT TATAR | bhushantatarnsk@gmail.com
+2026-06-18 03:10:30 [INFO   ]   [15/50] BHUSHAN JAYANT TATAR | bhushantatarnsk@gmail.com
+2026-06-18 03:10:35 [INFO   ] PROGRESS | CA Connect 16/50 | KRISHNA BABULAL JAIN | krishnajain1234@gmail.com
+2026-06-18 03:10:35 [INFO   ]   [16/50] KRISHNA BABULAL JAIN | krishnajain1234@gmail.com
+2026-06-18 03:10:40 [INFO   ] PROGRESS | CA Connect 17/50 | RAVINDRA BAPUSAHEB DESHMUKH | caravindradeshmukh@gmail.com
+2026-06-18 03:10:40 [INFO   ]   [17/50] RAVINDRA BAPUSAHEB DESHMUKH | caravindradeshmukh@gmail.com
+2026-06-18 03:10:45 [INFO   ] PROGRESS | CA Connect 18/50 | OMKAR MADANRAO SONAWANE | omkar.sonawane563@gmail.com
+2026-06-18 03:10:45 [INFO   ]   [18/50] OMKAR MADANRAO SONAWANE | omkar.sonawane563@gmail.com
+2026-06-18 03:10:50 [INFO   ] PROGRESS | CA Connect 19/50 | GOVIND SHANKAR SURYAWANSHI | jainsuryawanshi@gmail.com
+2026-06-18 03:10:50 [INFO   ]   [19/50] GOVIND SHANKAR SURYAWANSHI | jainsuryawanshi@gmail.com
+2026-06-18 03:10:55 [INFO   ] PROGRESS | CA Connect 20/50 | DEVENDRA SOMNATH KULKARNI | cadskulkarni@gmail.com
+2026-06-18 03:10:55 [INFO   ]   [20/50] DEVENDRA SOMNATH KULKARNI | cadskulkarni@gmail.com
+2026-06-18 03:11:00 [INFO   ] PROGRESS | CA Connect 21/50 | PRATIK MANOHAR RATHOD | pratikrathod451@gmail.com
+2026-06-18 03:11:00 [INFO   ]   [21/50] PRATIK MANOHAR RATHOD | pratikrathod451@gmail.com
+2026-06-18 03:11:05 [INFO   ] PROGRESS | CA Connect 22/50 | ROHIT DINESH NIMSE | rohitdnimse@gmail.com
+2026-06-18 03:11:05 [INFO   ]   [22/50] ROHIT DINESH NIMSE | rohitdnimse@gmail.com
+2026-06-18 03:11:10 [INFO   ] PROGRESS | CA Connect 23/50 | POONAM GORAKHANATH DONGARE | poonamgd1601@gmail.com
+2026-06-18 03:11:10 [INFO   ]   [23/50] POONAM GORAKHANATH DONGARE | poonamgd1601@gmail.com
+2026-06-18 03:11:15 [INFO   ] PROGRESS | CA Connect 24/50 | DAGA ANAND SHIVADAS | ananddaga99@rediffmail.com
+2026-06-18 03:11:15 [INFO   ]   [24/50] DAGA ANAND SHIVADAS | ananddaga99@rediffmail.com
+2026-06-18 03:11:20 [INFO   ] PROGRESS | CA Connect 25/50 | RENUKA AKSHAY BHATTAD | bhattadrenuka@gmail.com
+2026-06-18 03:11:20 [INFO   ]   [25/50] RENUKA AKSHAY BHATTAD | bhattadrenuka@gmail.com
+2026-06-18 03:11:25 [INFO   ] PROGRESS | CA Connect 26/50 | RAHUL ACHYUT SOMAN | carahulsoman@gmail.com
+2026-06-18 03:11:25 [INFO   ]   [26/50] RAHUL ACHYUT SOMAN | carahulsoman@gmail.com
+2026-06-18 03:11:30 [INFO   ] PROGRESS | CA Connect 27/50 | MALPATHAK SHANTANU DINESH | sdmalpathak@gmail.com
+2026-06-18 03:11:30 [INFO   ]   [27/50] MALPATHAK SHANTANU DINESH | sdmalpathak@gmail.com
+2026-06-18 03:11:35 [INFO   ] PROGRESS | CA Connect 28/50 | RAJESH CHAND | chand1503@gmail.com
+2026-06-18 03:11:35 [INFO   ]   [28/50] RAJESH CHAND | chand1503@gmail.com
+2026-06-18 03:11:40 [INFO   ] PROGRESS | CA Connect 29/50 | CHETAN ANAND & CO | chets1984@gmail.com
+2026-06-18 03:11:40 [INFO   ]   [29/50] CHETAN ANAND & CO | chets1984@gmail.com
+2026-06-18 03:11:45 [INFO   ] PROGRESS | CA Connect 30/50 | GIRISH SATBHAI & ASSOCIATES | girish@satbhai.com
+2026-06-18 03:11:45 [INFO   ]   [30/50] GIRISH SATBHAI & ASSOCIATES | girish@satbhai.com
+2026-06-18 03:11:50 [INFO   ] PROGRESS | CA Connect 31/50 | V L H & CO | ca.vishvanath149@gmail.com
+2026-06-18 03:11:50 [INFO   ]   [31/50] V L H & CO | ca.vishvanath149@gmail.com
+2026-06-18 03:11:55 [INFO   ] PROGRESS | CA Connect 32/50 | P D W & CO | pwadodkar@yahoo.com
+2026-06-18 03:11:55 [INFO   ]   [32/50] P D W & CO | pwadodkar@yahoo.com
+2026-06-18 03:12:00 [INFO   ] PROGRESS | CA Connect 33/50 | G C C & COMPANY | cashishirrc@gmail.com
+2026-06-18 03:12:00 [INFO   ]   [33/50] G C C & COMPANY | cashishirrc@gmail.com
+2026-06-18 03:12:05 [INFO   ] PROGRESS | CA Connect 34/50 | R B SONAWANE & ASSOCIATES | carahulsonawane@gmail.com
+2026-06-18 03:12:05 [INFO   ]   [34/50] R B SONAWANE & ASSOCIATES | carahulsonawane@gmail.com
+2026-06-18 03:12:10 [INFO   ] PROGRESS | CA Connect 35/50 | R R KABRA & BIRLA | rakesh_kabra@rediffmail.com
+2026-06-18 03:12:10 [INFO   ]   [35/50] R R KABRA & BIRLA | rakesh_kabra@rediffmail.com
+2026-06-18 03:12:15 [INFO   ] PROGRESS | CA Connect 36/50 | RAKA AND ASSOCIATES | akshayraka2512@gmail.com
+2026-06-18 03:12:15 [INFO   ]   [36/50] RAKA AND ASSOCIATES | akshayraka2512@gmail.com
+2026-06-18 03:12:20 [INFO   ] PROGRESS | CA Connect 37/50 | KAMAL VERMA & ASSOCIATES | kkkadel@rediffmail.com
+2026-06-18 03:12:20 [INFO   ]   [37/50] KAMAL VERMA & ASSOCIATES | kkkadel@rediffmail.com
+2026-06-18 03:12:25 [INFO   ] PROGRESS | CA Connect 38/50 | SOURABH PARDESHI & CO | caspco.nsk@gmail.com
+2026-06-18 03:12:25 [INFO   ]   [38/50] SOURABH PARDESHI & CO | caspco.nsk@gmail.com
+2026-06-18 03:12:31 [INFO   ] PROGRESS | CA Connect 39/50 | KALANTRI & ASSOCIATES | caapurvakalantri@gmail.com
+2026-06-18 03:12:31 [INFO   ]   [39/50] KALANTRI & ASSOCIATES | caapurvakalantri@gmail.com
+2026-06-18 03:12:36 [INFO   ] PROGRESS | CA Connect 40/50 | SANJAY V GOYAL & CO | casanjaygoyal@gmail.com
+2026-06-18 03:12:36 [INFO   ]   [40/50] SANJAY V GOYAL & CO | casanjaygoyal@gmail.com
+2026-06-18 03:12:41 [INFO   ] PROGRESS | CA Connect 41/50 | MILIND M KULKARNI & ASSOCIATES | contactus@mmkassociates.com
+2026-06-18 03:12:41 [INFO   ]   [41/50] MILIND M KULKARNI & ASSOCIATES | contactus@mmkassociates.com
+2026-06-18 03:12:46 [INFO   ] PROGRESS | CA Connect 42/50 | AMIT R SARDA & ASSOCIATES | canitinsarda@gmail.com
+2026-06-18 03:12:46 [INFO   ]   [42/50] AMIT R SARDA & ASSOCIATES | canitinsarda@gmail.com
+2026-06-18 03:12:51 [INFO   ] PROGRESS | CA Connect 43/50 | SABADRA & SABADRA | ansabadra@gmail.com
+2026-06-18 03:12:51 [INFO   ]   [43/50] SABADRA & SABADRA | ansabadra@gmail.com
+2026-06-18 03:12:56 [INFO   ] PROGRESS | CA Connect 44/50 | CHANDAK RAHANE & CO | capiyushchandak@gmail.com
+2026-06-18 03:12:56 [INFO   ]   [44/50] CHANDAK RAHANE & CO | capiyushchandak@gmail.com
+2026-06-18 03:13:01 [INFO   ] PROGRESS | CA Connect 45/50 | V J BHAVSAR & ASSOCIATES | vipuljeevan@gmail.com
+2026-06-18 03:13:01 [INFO   ]   [45/50] V J BHAVSAR & ASSOCIATES | vipuljeevan@gmail.com
+2026-06-18 03:13:06 [INFO   ] PROGRESS | CA Connect 46/50 | GOKUL GANGURDE & ASSOCIATES | gokulgangurde@gmail.com
+2026-06-18 03:13:06 [INFO   ]   [46/50] GOKUL GANGURDE & ASSOCIATES | gokulgangurde@gmail.com
+2026-06-18 03:13:11 [INFO   ] PROGRESS | CA Connect 47/50 | ADITYA AMRITKAR & ASSOCIATES | amritkaraditya1997@gmail.com
+2026-06-18 03:13:11 [INFO   ]   [47/50] ADITYA AMRITKAR & ASSOCIATES | amritkaraditya1997@gmail.com
+2026-06-18 03:13:16 [INFO   ] PROGRESS | CA Connect 48/50 | SIDDHESH GITE & CO | siddheshgite01@gmail.com
+2026-06-18 03:13:16 [INFO   ]   [48/50] SIDDHESH GITE & CO | siddheshgite01@gmail.com
+2026-06-18 03:13:21 [INFO   ] PROGRESS | CA Connect 49/50 | ULHAS BORSE & CO | caulhasborse.nsk@gmail.com
+2026-06-18 03:13:21 [INFO   ]   [49/50] ULHAS BORSE & CO | caulhasborse.nsk@gmail.com
+2026-06-18 03:13:26 [INFO   ] PROGRESS | CA Connect 50/50 | PATIL HIRAN JAJOO & CO | caulhaspatil@gmail.com
+2026-06-18 03:13:26 [INFO   ]   [50/50] PATIL HIRAN JAJOO & CO | caulhaspatil@gmail.com
+2026-06-18 03:13:26 [INFO   ] Batch done — 50 new email(s) this batch | run total 783 / 1000
+2026-06-18 03:13:26 [INFO   ] Enriching 18 profile(s) — Audit | Maharashtra | Nashik (18 pending in this city)
+2026-06-18 03:13:27 [INFO   ] Logging in to CA Connect as sandeepjain200019@gmail.com
+2026-06-18 03:13:33 [INFO   ] Login OK — current URL: https://caconnect.icai.org/home
+2026-06-18 03:13:37 [INFO   ] PROGRESS | CA Connect 1/18 | ASHOK S ZAWAR & CO | aszandco@gmail.com
+2026-06-18 03:13:37 [INFO   ]   [1/18] ASHOK S ZAWAR & CO | aszandco@gmail.com
+2026-06-18 03:13:42 [INFO   ] PROGRESS | CA Connect 2/18 | B G KALE & COMPANY | bgkale@bgkaleco.com
+2026-06-18 03:13:42 [INFO   ]   [2/18] B G KALE & COMPANY | bgkale@bgkaleco.com
+2026-06-18 03:13:47 [INFO   ] PROGRESS | CA Connect 3/18 | PRITAM BAGMAR & CO | capritambagmar@gmail.com
+2026-06-18 03:13:47 [INFO   ]   [3/18] PRITAM BAGMAR & CO | capritambagmar@gmail.com
+2026-06-18 03:13:52 [INFO   ] PROGRESS | CA Connect 4/18 | A P P S AND ASSOCIATES | gstclientnsk@gmail.com
+2026-06-18 03:13:52 [INFO   ]   [4/18] A P P S AND ASSOCIATES | gstclientnsk@gmail.com
+2026-06-18 03:13:57 [INFO   ] PROGRESS | CA Connect 5/18 | NITIN S DHUMAL & CO | canitindhumal@gmail.com
+2026-06-18 03:13:57 [INFO   ]   [5/18] NITIN S DHUMAL & CO | canitindhumal@gmail.com
+2026-06-18 03:14:02 [INFO   ] PROGRESS | CA Connect 6/18 | M A P S V & ASSOCIATES | cavikashase@gmail.com
+2026-06-18 03:14:02 [INFO   ]   [6/18] M A P S V & ASSOCIATES | cavikashase@gmail.com
+2026-06-18 03:14:07 [INFO   ] PROGRESS | CA Connect 7/18 | THAKARE GALANDE MISAL & CO | caravindramisal@gmail.com
+2026-06-18 03:14:07 [INFO   ]   [7/18] THAKARE GALANDE MISAL & CO | caravindramisal@gmail.com
+2026-06-18 03:14:12 [INFO   ] PROGRESS | CA Connect 8/18 | AMRUTKAR BRAHMANKAR & CO LLP | amolbramhankar@gmail.com
+2026-06-18 03:14:12 [INFO   ]   [8/18] AMRUTKAR BRAHMANKAR & CO LLP | amolbramhankar@gmail.com
+2026-06-18 03:14:17 [INFO   ] PROGRESS | CA Connect 9/18 | AJAY AGRAWAL AND COMPANY | ca.kavita01@gmail.com
+2026-06-18 03:14:17 [INFO   ]   [9/18] AJAY AGRAWAL AND COMPANY | ca.kavita01@gmail.com
+2026-06-18 03:14:23 [INFO   ] PROGRESS | CA Connect 10/18 | TUSHAR PAGAR & CO | tusharpagar@gmail.com
+2026-06-18 03:14:23 [INFO   ]   [10/18] TUSHAR PAGAR & CO | tusharpagar@gmail.com
+2026-06-18 03:14:29 [INFO   ] PROGRESS | CA Connect 11/18 | BHALGAT BOTHARA & ASSOCIATES | caabnasik@gmail.com
+2026-06-18 03:14:29 [INFO   ]   [11/18] BHALGAT BOTHARA & ASSOCIATES | caabnasik@gmail.com
+2026-06-18 03:14:34 [INFO   ] PROGRESS | CA Connect 12/18 | JADHAV & ASSOCIATES | capriyankajadhav94@gmail.com
+2026-06-18 03:14:34 [INFO   ]   [12/18] JADHAV & ASSOCIATES | capriyankajadhav94@gmail.com
+2026-06-18 03:14:39 [INFO   ] PROGRESS | CA Connect 13/18 | PIYUSH S JAIN & CO | piyush.ca84@gmail.com
+2026-06-18 03:14:39 [INFO   ]   [13/18] PIYUSH S JAIN & CO | piyush.ca84@gmail.com
+2026-06-18 03:14:44 [INFO   ] PROGRESS | CA Connect 14/18 | RAHUL KHANDEBHARAD & ASSOCIATES | khandebharadrahul@gmail.com
+2026-06-18 03:14:44 [INFO   ]   [14/18] RAHUL KHANDEBHARAD & ASSOCIATES | khandebharadrahul@gmail.com
+2026-06-18 03:14:49 [INFO   ] PROGRESS | CA Connect 15/18 | BHUTADA & BHUTADA | prasad.bhutada5@gmail.com
+2026-06-18 03:14:49 [INFO   ]   [15/18] BHUTADA & BHUTADA | prasad.bhutada5@gmail.com
+2026-06-18 03:14:54 [INFO   ] PROGRESS | CA Connect 16/18 | S R SAYYED & COMPANY | casrsayyedandcompany@gmail.com
+2026-06-18 03:14:54 [INFO   ]   [16/18] S R SAYYED & COMPANY | casrsayyedandcompany@gmail.com
+2026-06-18 03:14:59 [INFO   ] PROGRESS | CA Connect 17/18 | NANDURDIKAR SUGANDHI & ASSOCIATES | caparthn@gmail.com
+2026-06-18 03:14:59 [INFO   ]   [17/18] NANDURDIKAR SUGANDHI & ASSOCIATES | caparthn@gmail.com
+2026-06-18 03:15:04 [INFO   ] PROGRESS | CA Connect 18/18 | R K KULKARNI & ASSOCIATES | caruchikulkarni@gmail.com
+2026-06-18 03:15:04 [INFO   ]   [18/18] R K KULKARNI & ASSOCIATES | caruchikulkarni@gmail.com
+2026-06-18 03:15:04 [INFO   ] Batch done — 18 new email(s) this batch | run total 801 / 1000
+2026-06-18 03:15:04 [INFO   ] 
+2026-06-18 03:15:04 [INFO   ] ==============================================================
+2026-06-18 03:15:04 [INFO   ] PROGRESS | Listing harvest — Audit | Maharashtra | Thane
+2026-06-18 03:15:04 [INFO   ] ==============================================================
+2026-06-18 03:15:05 [INFO   ] Opening CA Connect search page: https://caconnect.icai.org/search-your-ca
+2026-06-18 03:15:08 [INFO   ] Selecting service=Audit state=Maharashtra city=Thane

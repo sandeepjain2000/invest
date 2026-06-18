@@ -44,7 +44,11 @@ def domain_from_ca_profile(profile_url: str) -> str:
 
 
 def is_ca_connect_contact(item: dict[str, Any]) -> bool:
-    """True for individual CAs/firms imported from caconnect.icai.org (JSON scrape)."""
+    """True for CAs/firms from caconnect.icai.org (bulk DB or immigration import)."""
+    if (item.get("contact_source") or "").lower() == "ca_bulk":
+        return True
+    if item.get("ca_bulk_listing_id"):
+        return True
     domain = (item.get("domain") or "").lower()
     if domain.startswith("caconnect.icai.org."):
         return True
@@ -304,17 +308,23 @@ class ImmigrationDB:
         prefer_industry: str | None = None,
         exclude_industries: list[str] | None = None,
     ) -> sqlite3.Row | None:
+        from industries import inactive_industry_ids, industry_is_active
+
         exclude = {i.strip().lower() for i in (exclude_industries or []) if i and i.strip()}
+        exclude.update(iid.lower() for iid in inactive_industry_ids())
 
         def _allowed(row: sqlite3.Row | None) -> sqlite3.Row | None:
             if not row:
                 return None
             iid = (row["industry"] if "industry" in row.keys() else "").strip().lower()
-            if iid in exclude:
+            if iid in exclude or not industry_is_active(iid):
                 return None
             return row
 
         if industry:
+            key = industry.strip().lower()
+            if key in exclude or not industry_is_active(key):
+                return None
             row = self.conn.execute(
                 """
                 SELECT * FROM search_queries
@@ -482,6 +492,8 @@ class ImmigrationDB:
         return 100
 
     def _pending_send_candidates(self) -> list[dict[str, Any]]:
+        from industries import industry_is_active
+
         rows = self.conn.execute(
             """
             SELECT ce.email, ce.company_id, c.name AS company_name, c.domain,
@@ -509,8 +521,16 @@ class ImmigrationDB:
         out: list[dict[str, Any]] = []
         for item in ordered:
             item.pop("_priority", None)
+            if not industry_is_active(item.get("industry") or ""):
+                continue
             out.append(item)
         return out
+
+    def sent_email_addresses(self) -> set[str]:
+        rows = self.conn.execute(
+            "SELECT lower(email) FROM email_sent WHERE status = 'sent'"
+        ).fetchall()
+        return {str(row[0]) for row in rows if row[0]}
 
     def pending_send_queue(
         self,
@@ -520,8 +540,17 @@ class ImmigrationDB:
         min_from_industry: int = 0,
         min_from_ca_connect: int = 0,
         industry_reserves: dict[str, int] | None = None,
+        extra_ca_items: list[dict[str, Any]] | None = None,
+        ca_bulk_only: bool = False,
     ) -> list[dict[str, Any]]:
         candidates = self._pending_send_candidates()
+        if ca_bulk_only:
+            candidates = [
+                item
+                for item in candidates
+                if not is_ca_connect_contact(item)
+                or (item.get("contact_source") or "").lower() == "ca_bulk"
+            ]
         if limit <= 0:
             return []
 
@@ -545,7 +574,21 @@ class ImmigrationDB:
 
         ca_reserve = max(0, int(min_from_ca_connect or 0))
         if ca_reserve > 0:
-            ca_items = [item for item in candidates if is_ca_connect_contact(item)]
+            if extra_ca_items and ca_bulk_only:
+                ca_items = list(extra_ca_items)
+            else:
+                ca_items = [item for item in candidates if is_ca_connect_contact(item)]
+                if extra_ca_items:
+                    seen_ca_emails = {(item.get("email") or "").lower() for item in ca_items}
+                    merged_ca: list[dict[str, Any]] = []
+                    for item in extra_ca_items:
+                        email = (item.get("email") or "").lower()
+                        if not email or email in seen_ca_emails:
+                            continue
+                        merged_ca.append(item)
+                        seen_ca_emails.add(email)
+                    merged_ca.extend(ca_items)
+                    ca_items = merged_ca
             _add_items(ca_items, ca_reserve)
 
         industry_key = (ensure_industry or "").strip().lower()

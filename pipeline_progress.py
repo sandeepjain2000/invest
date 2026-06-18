@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import logging
+import re
+from html import unescape
 
 from industries import industry_name
 
@@ -82,6 +84,36 @@ def send_plan(*, total: int) -> None:
     log.info("PROGRESS | Send plan — %s recipient(s) in queue", total)
 
 
+def _html_to_plain(html: str) -> str:
+    text = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", html)
+    text = re.sub(r"(?i)<br\s*/?>", "\n", text)
+    text = re.sub(r"(?i)</p>", "\n\n", text)
+    text = re.sub(r"(?i)</li>", "\n", text)
+    text = re.sub(r"(?i)</tr>", "\n", text)
+    text = re.sub(r"<[^>]+>", "", text)
+    text = unescape(text)
+    text = text.replace("\xa0", " ")
+    lines = [re.sub(r"[ \t]+", " ", ln).strip() for ln in text.splitlines()]
+    return "\n".join(ln for ln in lines if ln)
+
+
+def send_email_content(*, recipient: str, subject: str, html: str) -> None:
+    """Print subject and plain-text body preview to the terminal."""
+    plain = _html_to_plain(html)
+    log.info("")
+    log.info("-" * 62)
+    log.info("PROGRESS | Email content — To: %s", recipient)
+    log.info("PROGRESS | Subject: %s", subject)
+    log.info("PROGRESS | Body:")
+    if plain:
+        for line in plain.splitlines():
+            log.info("PROGRESS |   %s", line)
+    else:
+        log.info("PROGRESS |   (empty body)")
+    log.info("-" * 62)
+    log.info("")
+
+
 def send_status(
     *,
     n: int,
@@ -92,21 +124,23 @@ def send_status(
     recipient: str = "",
     company: str = "",
     industry: str = "",
+    outcome: str = "",
 ) -> None:
-    tail = ""
-    if recipient:
-        label = (company or recipient)[:40]
-        tail = f" | {label} <{recipient}>"
-    if industry:
-        tail += f" [{industry_name(industry)}]"
+    email = recipient or "—"
+    name = (company or "—")[:45]
+    ind = f" [{industry_name(industry)}]" if industry else ""
+    tag = outcome.upper() if outcome else "—"
     log.info(
-        "PROGRESS | Send %s/%s | ok=%s fail=%s skip=%s%s",
+        "PROGRESS | Send %s/%s | %s | %s | %s%s | ok=%s fail=%s skip=%s",
         n,
         total,
+        tag,
+        email,
+        name,
+        ind,
         sent,
         failed,
         skipped,
-        tail,
     )
 
 

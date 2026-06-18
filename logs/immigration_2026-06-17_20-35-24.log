@@ -10,3 +10,21 @@
 2026-06-17 20:35:43 [INFO   ] Selecting service=Audit state=Maharashtra city=Pune
 2026-06-17 20:35:47 [INFO   ] Search results URL: https://caconnect.icai.org/search?_token=3Hd77QX1mtySvokywOEa1U62SkW4WTIEN3rMlgYF&type=&services=Audit&state=Maharashtra&city=Pune
 2026-06-17 20:36:17 [INFO   ] Members tab: 287 cards
+2026-06-17 21:21:43 [INFO   ] CA Firms tab: 287 cards
+2026-06-17 21:21:43 [INFO   ] Enriching 10 profile page(s) with contact details...
+2026-06-17 21:21:43 [WARNING] Profile failed https://caconnect.icai.org/memberProfile/5425/1: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://caconnect.icai.org/memberProfile/5425/1
+Call log:
+  - navigating to "https://caconnect.icai.org/memberProfile/5425/1", waiting until "domcontentloaded"
+
+2026-06-17 21:21:44 [WARNING] Profile failed https://caconnect.icai.org/memberProfile/4267/1: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://caconnect.icai.org/memberProfile/4267/1
+Call log:
+  - navigating to "https://caconnect.icai.org/memberProfile/4267/1", waiting until "domcontentloaded"
+
+2026-06-17 21:21:46 [WARNING] Profile failed https://caconnect.icai.org/memberProfile/2267/1: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://caconnect.icai.org/memberProfile/2267/1
+Call log:
+  - navigating to "https://caconnect.icai.org/memberProfile/2267/1", waiting until "domcontentloaded"
+
+2026-06-17 21:21:48 [WARNING] Profile failed https://caconnect.icai.org/memberProfile/331/1: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://caconnect.icai.org/memberProfile/331/1
+Call log:
+  - navigating to "https://caconnect.icai.org/memberProfile/331/1", waiting until "domcontentloaded"
+

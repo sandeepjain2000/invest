@@ -1,8 +1,15 @@
 # Partnership Scrape & Email Pipeline
 
-Python pipeline that discovers strategic partner companies across multiple industry verticals, extracts contact emails via browser scraping, and sends partnership outreach using a Gmail SMTP profile.
+Python pipeline that discovers strategic partner companies across **15 industry verticals**, extracts contact emails via browser scraping, and sends partnership outreach via **Brevo API** (legacy Gmail SMTP optional).
 
-Built to follow patterns from `CVL-ScraperLinkedIn_SendMails` (SQLite deduplication, Gmail sending, logging) with browser-based discovery instead of LinkedIn.
+Built to follow patterns from `CVL-ScraperLinkedIn_SendMails` (SQLite deduplication, sending, logging) with browser-based discovery instead of LinkedIn.
+
+**Two databases:**
+
+| Database | Tool | Purpose |
+|----------|------|---------|
+| `data/db/immigration.db` | `immigration_pipeline.py` | Scrape + send partnership emails |
+| `data/db/ca_bulk.db` | `ca_bulk_import.py` | Bulk resumable CA Connect email harvest (1000+ contacts) |
 
 ---
 
@@ -28,13 +35,16 @@ Fifteen industry verticals are defined in `industries.json`:
 | 14 | `tax_consultants` | Tax Consultants | `funding_intro_tax.html` |
 | 15 | `wealth_managers` | Wealth Managers & Investment Advisors | `funding_intro_wealth.html` |
 
-Each industry has its own `template_file`, `email_subject`, and optional `signature_links` in `industries.json`. Partnership verticals use direct benefit-led copy; CA / CS / tax / wealth use investor-introduction templates.
+Each industry has its own `template_file`, `email_subject`, and optional `signature_links` in `industries.json`.
+
+- **Partnership verticals (11)** — direct benefit-led copy (`partnership_*.html`): opens with *Direct benefit for {{RecipientCompany}}*, strategic bullet list, one-line pitch.
+- **Investor-intro verticals (4)** — `funding_intro*.html` for CA, CS, tax, and wealth managers (seed investor introductions + future mandate upside).
 
 Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated outreach lines. Set `"active": false` on any industry to skip it.
 
-**Scrape source:** Almost all industries (including `wealth_managers`) use **Google search → company website** (`scrape_source: "google"`). Only `ca_cs_firms` uses **CA Connect** (`scrape_source: "ca_connect"`).
+**Scrape source:** Almost all industries use **Google search → company website**. Only `ca_cs_firms` uses **CA Connect** (`scrape_source: "ca_connect"`). Reserved industries (`wealth_managers`, `tax_consultants`, etc.) are auto-seeded and preferred during scrape when their queue is below quota.
 
-**Rank** is for reference only. When scraping or seeding all industries, the pipeline **shuffles industry order randomly on each run/query pick** so effort is spread across sectors rather than always starting at Recruitment & Staffing.
+**Rank** is for reference only. When scraping all industries, the pipeline **shuffles industry order randomly** on each query pick so effort spreads across sectors.
 
 ---
 
@@ -55,36 +65,37 @@ Each industry has static `seed_queries` and a `praise_hint` for NVIDIA-generated
 
 ```
 investment/
-├── immigration_pipeline.py   # Main CLI entry point
-├── immigration_scraper.py    # Browser scraping (Google + company sites)
-├── immigration_sender.py     # Gmail SMTP sender
-├── immigration_db.py         # SQLite schema and helpers
-├── nvidia_llm.py             # NVIDIA key rotation + LLM calls
-├── industries.json           # 15 industry verticals + seed queries + per-industry templates
-├── industries.py             # Industry config loader
-├── partnership.html          # Fallback template (sender_config default only)
-├── partnership_recruitment.html
-├── partnership_edtech.html
-├── partnership_immigration.html
-├── partnership_education_finance.html
-├── partnership_hrtech.html
-├── partnership_csr.html
-├── partnership_lawyers.html
-├── partnership_training.html
-├── partnership_bfsi.html
-├── partnership_insurance.html
-├── partnership_coaching.html
-├── funding_intro.html        # CA seed-investor introduction template
-├── funding_intro_cs.html     # Company Secretary firms
-├── funding_intro_tax.html    # Tax consultants
-├── funding_intro_wealth.html # Wealth managers & investment advisors
-├── brevo_mail.py             # Brevo API (reads project mail_config.json)
-├── mail_config.json          # Brevo API key + SMTP (edit locally; gitignored)
-├── mail_config.example.json  # Template — copy if mail_config.json is missing
-├── sender_config.json        # Sender + template path + mail_config_file pointer
+├── immigration_pipeline.py     # Main CLI — scrape + send
+├── immigration_scraper.py      # Google + company site scraping
+├── immigration_sender.py       # Brevo / Gmail sender
+├── immigration_db.py           # immigration.db schema
+├── ca_bulk_import.py           # Bulk resumable CA email harvester
+├── ca_bulk_db.py               # ca_bulk.db schema
+├── ca_connect_pipeline.py      # CA Connect hook for main pipeline
+├── ca_connect_scraper.py       # CA Connect browser scraper
+├── pipeline_progress.py        # Terminal PROGRESS | lines during runs
+├── pipeline_notify.py          # Beeps / voice on completion
+├── nvidia_llm.py               # NVIDIA key rotation + LLM calls
+├── industries.json             # 15 verticals + templates + seed queries
+├── industries.py
+├── partnership.html            # Fallback template only
+├── partnership_*.html          # Per-industry partnership templates (11)
+├── funding_intro*.html         # CA / CS / tax / wealth templates (4)
+├── brevo_mail.py               # Brevo API client
+├── mail_config.json            # Brevo keys (gitignored)
+├── mail_config.example.json
 ├── requirements.txt
-├── data/db/immigration.db    # SQLite database (created on first run)
-└── logs/                     # Timestamped run logs
+├── send_partnership_emails.bat # One-click scrape + send
+├── run_ca_bulk_import.bat      # One-click bulk CA harvest (resume)
+├── ca_bulk_status.bat          # Bulk DB status only
+├── ca_bulk_import.bat          # Bulk CLI pass-through
+├── ca_bulk_config.example.json # Bulk harvest config (copy → ca_bulk_config.json)
+├── ca_connect_credentials.example.json
+├── sender_config.json
+├── data/db/immigration.db
+├── data/db/ca_bulk.db          # Separate bulk CA database
+├── data/ca_connect_results.json
+└── logs/                       # immigration_*.log and ca_bulk_*.log
 ```
 
 ---
@@ -126,7 +137,10 @@ Controls sender identity, email subject, send limits, and **local HTML template*
     { "label": "Detailed Profile", "url": "https://your-profile.example" }
   ],
   "email_subject": "Exploring a potential partnership opportunity",
-  "emails_per_run": 10,
+  "emails_per_run": 32,
+  "max_companies_per_run": 100,
+  "max_queries_per_run": 40,
+  "scrape_headless": false,
   "send_method": "brevo_api",
   "template_file": "partnership.html",
   "mail_config_file": "mail_config.json"
@@ -140,16 +154,22 @@ Controls sender identity, email subject, send limits, and **local HTML template*
 | `phone` | Replaces `{{Phone}}` in the signature |
 | `email` | Replaces `{{Email}}` in the signature |
 | `website` | Fallback if `signature_links` is empty |
-| `signature_links` | Array of `{ "label", "url" }` — all clickable footer links |
-| `email_subject` | Subject base line; each send appends ` with {domain}` |
-| `emails_per_run` | **Max emails sent in one `send` or `run` execution** (default: 10) |
-| `ensure_industry_per_run` | Industry ID to reserve slots for each send (default: `ca_cs_firms`) |
-| `min_ensure_industry_per_run` | Min emails from that industry per **send** (default: 1) |
-| `min_ensure_industry_scrape_per_run` | Min companies with email from that industry per **scrape** (default: 2) |
-| `scrape_headless` | `true` = hide browser during Google scrape; default `false` (visible helps with Google consent/CAPTCHA) |
-| `send_method` | `brevo_api` (default) or `gmail_smtp` for legacy Gmail |
-| `template_file` | Local HTML template (`partnership.html` in project folder) |
-| `mail_config_file` | Path to project Brevo config (`mail_config.json`) |
+| `signature_links` | Default footer links (overridden per industry in `industries.json`) |
+| `email_subject` | Default subject base (overridden per industry in `industries.json`) |
+| `emails_per_run` | Max emails sent per `send` / `run` (also scrape email target) |
+| `max_companies_per_run` | Max company sites to visit per scrape run |
+| `max_queries_per_run` | Max Google search queries per scrape run |
+| `scrape_headless` | `true` = hide browser during Google scrape; default `false` |
+| `ensure_industry_per_run` | Industry for CA Connect ensure (default: `ca_cs_firms`) |
+| `min_ensure_ca_connect_per_run` | Min CA Connect contacts reserved in send queue (default: 8) |
+| `min_ensure_industry_scrape_per_run` | Min companies with email from ensure industry per scrape |
+| `reserved_send_by_industry` | Min send slots per run for e.g. CS, tax, wealth managers |
+| `ca_connect_enabled` | Run CA Connect scrape at start of pipeline scrape |
+| `ca_connect_profiles_per_run` | Profile pages to enrich per pipeline run (default: 10) |
+| `ca_connect_credentials_file` | Login JSON for CA Connect profile pages |
+| `send_method` | `brevo_api` (default) or `gmail_smtp` |
+| `template_file` | Fallback HTML if industry has no `template_file` in `industries.json` |
+| `mail_config_file` | Path to Brevo config |
 
 Override at runtime with `--limit` (`send`) or `--send-limit` (`run`).
 
@@ -240,57 +260,63 @@ Each key file:
 { "api_key": "nvapi-..." }
 ```
 
-### Email template — `partnership.html`
+### Email templates
+
+Each industry uses its own HTML file (see table above). Per-industry settings in `industries.json`:
+
+```json
+"template_file": "partnership_immigration.html",
+"email_subject": "Privileged student lifecycle access for overseas education consultants",
+"subject_append_domain": true,
+"use_nvidia_praise": true,
+"signature_links": [ { "label": "...", "url": "..." } ]
+```
 
 | Placeholder | Filled with |
 |-------------|-------------|
-| `{{RecipientCompany}}` | Scraped company name |
-| `{{CompanyPraise}}` | One positive sentence from NVIDIA about the company |
+| `{{RecipientCompany}}` | Scraped company or CA name |
+| `{{CompanyPraise}}` | One positive sentence from NVIDIA (when enabled) |
 | `{{SenderName}}` | `sender_name` from `sender_config.json` |
 | `{{CompanyName}}` | `company_name` from `sender_config.json` |
-| `{{Phone}}` | `phone` from `sender_config.json` |
-| `{{Email}}` | `email` from `sender_config.json` (mailto link) |
-| `{{SignatureLinks}}` | All entries from `signature_links` in `sender_config.json` |
+| `{{Phone}}` | `phone` |
+| `{{Email}}` | `email` (mailto link) |
+| `{{SignatureLinks}}` | Industry `signature_links`, or fallback from `sender_config.json` |
 
-Email signature block (links driven by `signature_links` in JSON):
-
-```
-Best Regards,
-Sandeep Jain
-PlacementsHub
-+91-9860090620
-sandeep.jain@appsflow.cloud
-Detailed Profile       ← signature_links
-```
-
-All signature links are defined in the `signature_links` array in `sender_config.json`. Add, remove, or reorder entries there — no code changes needed.
+Subject line: base from industry config; appends ` with {domain}` when `subject_append_domain` is true.
 
 ---
 
 ## One-click run (Windows)
 
-Double-click or run:
+### Partnership pipeline — `send_partnership_emails.bat`
 
+Double-click or run from the project folder. Each execution:
+
+1. **Scrape** — CA Connect (headless, 10 profiles/run) + Google (visible browser by default)
+2. **Send** — up to `emails_per_run` emails via Brevo with per-industry templates
+
+Optional overrides at top of the bat file:
+
+```bat
+set "SEND_LIMIT="
+set "MAX_COMPANIES="
+set "MAX_QUERIES="
+set "HEADLESS=1"    rem hide Google browser
+set "REGION=India"
 ```
-send_partnership_emails.bat
-```
 
-Full end-to-end each time:
+**Terminal progress:** lines prefixed with `PROGRESS |` show scrape/send counters live. **RUN SUMMARY** at the end shows per-industry counts.
 
-1. **Scrape** — browser discovers companies and emails (all industries, random order)
-2. **Send** — up to `emails_per_run` new outreach emails via Brevo
-
-Reply handling is **outside the pipeline**: outreach sends from **`sandeep.jain@appsflow.cloud`** (your **Zoho Mail** inbox). Zoho forwards all incoming mail to `sandeepjain200019@gmail.com`. Inbox scanning (`check-replies`) stays off and is only for legacy Gmail multi-profile setups.
-
-Main tunables in `sender_config.json`:
+Current defaults in `sender_config.json`:
 
 | Setting | Default | Meaning |
 |---------|---------|---------|
-| `emails_per_run` | 10 | Send target per run |
-| `max_companies_per_run` | 50 | Max sites to scrape (keeps going when early sites have no email) |
-| `max_queries_per_run` | 20 | Cap on Google search rounds per run |
+| `emails_per_run` | 32 | Send target + scrape stops after this many companies with email |
+| `max_companies_per_run` | 100 | Max sites to open per scrape |
+| `max_queries_per_run` | 40 | Max Google searches per scrape |
+| `ca_connect_profiles_per_run` | 10 | CA profile pages enriched per run (main pipeline) |
 
-Scrape stops early once **10 companies with email** are found, or after **50** companies tried — whichever comes first.
+Reply handling: outreach sends from **`sandeep.jain@appsflow.cloud`** (Zoho → forwarded to Gmail). `check_replies_before_send` stays off by default.
 
 ---
 
@@ -336,47 +362,23 @@ python immigration_pipeline.py run --max-companies 15
 
 ### Send more emails per run
 
-Default is **10** emails per execution (`emails_per_run` in `sender_config.json`). Use any of the following.
-
-**One-time override (no config edit)** — good for a single larger batch:
+Default is **32** emails per execution (`emails_per_run` in `sender_config.json`).
 
 ```powershell
-# Full pipeline: scrape → send up to 10 emails
-python immigration_pipeline.py run --send-limit 10
-
-# Send only (skip scrape): up to 10 emails from the existing queue
-python immigration_pipeline.py send --limit 10
-
-# Preview 10 messages without SMTP
-python immigration_pipeline.py send --dry-run --limit 10
-
-# Larger send + scrape more sites / search rounds
-python immigration_pipeline.py run --send-limit 10 --max-companies 80 --max-queries 30 --browser auto --region India
+python immigration_pipeline.py run --send-limit 50
+python immigration_pipeline.py send --limit 50
+python immigration_pipeline.py run --headless          # Google scrape without visible window
+python immigration_pipeline.py run --no-headless       # force visible browser
+python immigration_pipeline.py seed-keywords --industry wealth_managers
 ```
 
-**Permanent default** — edit `sender_config.json`:
+Permanent default — edit `sender_config.json`:
 
 ```json
-"emails_per_run": 10
+"emails_per_run": 32,
+"max_companies_per_run": 100,
+"max_queries_per_run": 40
 ```
-
-Then a plain `run` or `send` uses 10. This value also controls scrape **early stop**: scraping stops once that many companies with email are found (or after `max_companies_per_run`, whichever comes first).
-
-| Goal | Command or setting |
-|------|-------------------|
-| Send 5 this run only | `python immigration_pipeline.py run --send-limit 5` |
-| Send 20 this run only | `python immigration_pipeline.py send --limit 20` |
-| Always send 10 every run | Set `"emails_per_run": 10` in `sender_config.json` |
-| Scrape longer before send | Add `--max-companies 100 --max-queries 30` |
-| Skip inbox check when sending | Default (off). Use `--check-replies` to enable |
-
-**Batch file** — pass limits on the command line (or edit JSON):
-
-```powershell
-python immigration_pipeline.py run --send-limit 10 --max-companies 80 --browser auto --region India
-```
-
-To bake defaults into `send_partnership_emails.bat`, set `emails_per_run` in `sender_config.json` (the bat reads JSON; it does not set send count itself).
 
 ### Replies (Zoho Mail → Gmail — no pipeline step)
 
@@ -435,6 +437,19 @@ Re-scan page for @ addresses
 Save to SQLite or mark as no_email
 ```
 
+**Google block detection:** if Google shows consent, CAPTCHA, or `/sorry/`, the terminal prints:
+
+```
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+PROGRESS | GOOGLE BLOCK / CHALLENGE DETECTED
+PROGRESS | Fix: run without --headless, complete consent/CAPTCHA in the browser
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+```
+
+Also watch for repeated `Found 0 unique result(s).` on every query.
+
+**CA Connect in main pipeline:** enriches up to `ca_connect_profiles_per_run` profiles per run. **`imported 0 new email(s)`** means those emails are already in `immigration.db` from a prior run — not a scrape failure.
+
 **Deduplication**
 
 - `companies.domain` — unique; same website is never scraped twice
@@ -462,24 +477,82 @@ Database path: `data/db/immigration.db`
 
 ## Sending behaviour
 
-- **Default:** Brevo Transactional API (`send_method: brevo_api` in `sender_config.json`)
-- Local `partnership.html` rendered per recipient (NVIDIA praise + signature placeholders)
-- API key and SMTP in project `mail_config.json` (separate from Scrape_aishe)
-- 5 second delay between sends
-- 20 second cooldown per recipient domain
-- One email per company per run (best address only)
-- `emails_per_run` caps each execution (default **10**)
-- **Legacy:** `send_method: gmail_smtp` uses Gmail SSL port 465 + `email_config1001.json`
+- **Default:** Brevo Transactional API (`send_method: brevo_api`)
+- **Per-industry HTML** from `industries.json` (`partnership_*.html` or `funding_intro*.html`)
+- NVIDIA praise line when `use_nvidia_praise` is true for that industry
+- Reserved send slots for `company_secretary_firms`, `tax_consultants`, `wealth_managers` (see `reserved_send_by_industry`)
+- 5 second delay between sends; 20 second cooldown per domain
+- One email per company per run (best address preferred: `info@`, `contact@`, …)
+- `emails_per_run` caps each execution (default **32**)
+
+---
+
+## Bulk CA email harvest (separate database)
+
+Import **hundreds or thousands** of CA emails with **resume on each run**. Uses `data/db/ca_bulk.db` — does **not** modify `immigration.db`.
+
+### Quick start (Windows)
+
+Double-click **`run_ca_bulk_import.bat`**. It will:
+
+1. Create `ca_bulk_config.json` from example if missing
+2. Require `ca_connect_credentials.json` (CA Connect login for profile pages)
+3. Seed city queue + import existing `data/ca_connect_results.json` on first run
+4. Enrich profiles until **1000 new emails** saved (configurable), resuming pending rows next time
+
+| Batch file | Action |
+|------------|--------|
+| `run_ca_bulk_import.bat` | Setup + enrich (resume each run) |
+| `ca_bulk_status.bat` | Pending / email counts only |
+| `ca_bulk_import.bat` | CLI pass-through, e.g. `ca_bulk_import.bat export-csv` |
+
+### Manual commands
+
+```powershell
+copy ca_bulk_config.example.json ca_bulk_config.json
+copy ca_connect_credentials.example.json ca_connect_credentials.json   # add login
+
+python ca_bulk_import.py seed-searches     # load search_queue (20 cities in example)
+python ca_bulk_import.py import-json       # bootstrap from ca_connect_results.json
+python ca_bulk_import.py status            # pending / with email / per city
+python ca_bulk_import.py run                 # up to 1000 NEW emails (default)
+python ca_bulk_import.py run --goal 500 --batch 100
+python ca_bulk_import.py export-csv          # → data/ca_bulk_emails.csv
+```
+
+### Config — `ca_bulk_config.json`
+
+| Field | Default | Purpose |
+|-------|---------|---------|
+| `goal_emails_per_run` | 1000 | Stop after this many **new** emails saved in one run |
+| `profiles_per_batch` | 50 | Profiles per browser session batch |
+| `delay_between_profiles_sec` | 1.5 | Pause between profile page loads |
+| `search_queue` | 20 cities | City/state rows to harvest in order |
+| `headless` | true | Hide browser during enrichment |
+
+### While running
+
+```
+PROGRESS | CA Connect 3/50 | NAME | email@example.com
+Batch done — 12 new email(s) this batch | run total 45 / 1000
+```
+
+Logs: `logs/ca_bulk_*.log`
+
+### Scale
+
+Each city search yields ~300–600 listing cards. With 20 cities in the example queue, potential **6,000–12,000** contacts. Add more rows to `search_queue` for wider coverage.
 
 ---
 
 ## Logs
 
-Each run writes to:
+| Log | Path |
+|-----|------|
+| Partnership pipeline | `logs/immigration_YYYY-MM-DD_HH-MM-SS.log` |
+| Bulk CA import | `logs/ca_bulk_YYYY-MM-DD_HH-MM-SS.log` |
 
-```
-logs/immigration_YYYY-MM-DD_HH-MM-SS.log
-```
+Live terminal lines prefixed with **`PROGRESS |`** show scrape/send/bulk counters during runs.
 
 ---
 
@@ -487,14 +560,19 @@ logs/immigration_YYYY-MM-DD_HH-MM-SS.log
 
 | Issue | What to try |
 |-------|-------------|
-| Browser does not open | Run `playwright install chromium firefox` |
-| Chrome fails | Use `--browser firefox` |
-| NVIDIA timeout | Keys rotate automatically; run again or check key quota |
-| SMTP auth error | Legacy Gmail only — regenerate App Password in `email_config1001.json` |
-| Brevo send failed | Set `brevo.api_key` and verified `brevo.sender.email` in project `mail_config.json` |
-| No emails found | Normal for some sites; pipeline moves on |
-| Google consent / CAPTCHA | Complete manually in the visible browser window |
-| Want more emails per run | `run --send-limit N` or `send --limit N`, or raise `emails_per_run` in `sender_config.json` |
+| Browser does not open | `playwright install chromium firefox` |
+| Chrome fails | `--browser firefox` |
+| Google consent / CAPTCHA | Run visible browser (`--no-headless`); complete challenge once |
+| `GOOGLE BLOCK / CHALLENGE DETECTED` | Same as above; or wait 30–60 min and retry |
+| Repeated `Found 0 unique result(s)` | Google blocking — use visible browser |
+| NVIDIA timeout | Keys rotate automatically; run again |
+| Brevo send failed | Check `mail_config.json` API key and verified sender |
+| No emails on company site | Normal; pipeline moves on |
+| CA Connect `imported 0 new email(s)` | Emails already in DB from prior run (dedup) |
+| Wealth managers missing from summary | Run `seed-keywords --industry wealth_managers`; reserved industries show as `0 / 0` |
+| Bulk CA login failed | Fill `ca_connect_credentials.json` |
+| Bulk CA `0 new email(s)` but profiles run | Those emails already in `ca_bulk.db` |
+| Want more emails per run | Raise `emails_per_run` or `run --send-limit N` |
 
 ---
 
@@ -508,30 +586,28 @@ logs/immigration_YYYY-MM-DD_HH-MM-SS.log
 
 ---
 
-## Example workflow
+## Example workflows
+
+### Partnership pipeline
 
 ```powershell
-# 1. Configure sender details and emails_per_run
-notepad sender_config.json
-
-# 2. Seed search keywords
-python immigration_pipeline.py seed-keywords --count 10 --region India
-
-# 3. Scrape a small batch first
-python immigration_pipeline.py scrape --max-companies 10
-
-# 4. Check results
+python immigration_pipeline.py seed-keywords --all --no-nvidia
+python immigration_pipeline.py scrape --max-companies 20
 python immigration_pipeline.py status
-
-# 5. Dry-run then send
-python immigration_pipeline.py send --dry-run
-python immigration_pipeline.py send
+python immigration_pipeline.py send --dry-run --limit 3
+python immigration_pipeline.py run
 ```
 
-Each `send` run sends at most `emails_per_run` new emails (10 by default). Run again later to continue through the queue.
+Or double-click `send_partnership_emails.bat`.
+
+### Bulk CA harvest
 
 ```powershell
-# Example: send 10 in one go (after dry-run looks good)
-python immigration_pipeline.py send --dry-run --limit 10
-python immigration_pipeline.py send --limit 10
+copy ca_bulk_config.example.json ca_bulk_config.json
+notepad ca_connect_credentials.json
+run_ca_bulk_import.bat
+ca_bulk_status.bat
+python ca_bulk_import.py export-csv
 ```
+
+Re-run `run_ca_bulk_import.bat` anytime — it continues from pending profiles.

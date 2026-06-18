@@ -24,19 +24,21 @@
   "send_method": "brevo_api",
   "template_file": "partnership.html",
   "mail_config_file": "mail_config.json",
-  "ensure_industry_per_run": "ca_cs_firms",
+  "ensure_industry_per_run": "",
   "min_ensure_industry_per_run": 0,
-  "min_ensure_industry_scrape_per_run": 2,
+  "min_ensure_industry_scrape_per_run": 0,
   "min_ensure_ca_connect_per_run": 8,
   "reserved_send_by_industry": {
     "company_secretary_firms": 4,
-    "tax_consultants": 4,
-    "wealth_managers": 4
+    "tax_consultants": 4
   },
-  "ca_connect_enabled": true,
+  "ca_connect_enabled": false,
   "ca_connect_profiles_per_run": 10,
   "ca_connect_credentials_file": "ca_connect_credentials.json",
   "ca_connect_results_file": "data/ca_connect_results.json",
+  "ca_bulk_send_enabled": true,
+  "ca_bulk_send_only": true,
+  "ca_bulk_database_file": "data/db/ca_bulk.db",
   "pipeline_complete_voice": true,
   "pipeline_stage_voice": true,
   "pipeline_complete_voice_message": "Partnership pipeline run complete."

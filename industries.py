@@ -128,3 +128,18 @@ def google_scrape_industry_ids(*, active_only: bool = True) -> list[str]:
         for i in list_industries(active_only=active_only)
         if scrape_source_for(i["id"]) != "ca_connect"
     ]
+
+
+def industry_is_active(industry_id: str) -> bool:
+    item = get_industry(industry_id)
+    if not item:
+        return True
+    return bool(item.get("active", True))
+
+
+def inactive_industry_ids() -> list[str]:
+    return [
+        i["id"]
+        for i in load_industries_config().get("industries", [])
+        if not i.get("active", True)
+    ]

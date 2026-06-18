@@ -14,6 +14,7 @@ from email.utils import make_msgid
 from pathlib import Path
 
 from brevo_mail import load_brevo_transport, resolve_mail_config_path, send_html_via_brevo
+from ca_bulk_db import CaBulkDB
 from immigration_db import ImmigrationDB, clean_domain, is_ca_connect_contact
 from industries import (
     email_subject_for,
@@ -24,7 +25,7 @@ from industries import (
 )
 from nvidia_llm import generate_company_praise
 from pipeline_notify import notify_stage
-from pipeline_progress import send_plan, send_status
+from pipeline_progress import send_email_content, send_plan, send_status
 
 logger = logging.getLogger(__name__)
 
@@ -63,19 +64,21 @@ def load_sender_config() -> dict:
         "send_method": "brevo_api",
         "template_file": "partnership.html",
         "mail_config_file": "mail_config.json",
-        "ensure_industry_per_run": "ca_cs_firms",
+        "ensure_industry_per_run": "",
         "min_ensure_industry_per_run": 0,
-        "min_ensure_industry_scrape_per_run": 2,
+        "min_ensure_industry_scrape_per_run": 0,
         "min_ensure_ca_connect_per_run": 8,
         "reserved_send_by_industry": {
             "company_secretary_firms": 4,
             "tax_consultants": 4,
-            "wealth_managers": 4,
         },
-        "ca_connect_enabled": True,
+        "ca_connect_enabled": False,
         "ca_connect_profiles_per_run": 10,
         "ca_connect_credentials_file": "ca_connect_credentials.json",
         "ca_connect_results_file": "data/ca_connect_results.json",
+        "ca_bulk_send_enabled": True,
+        "ca_bulk_send_only": True,
+        "ca_bulk_database_file": "data/db/ca_bulk.db",
         "pipeline_complete_voice": True,
         "pipeline_stage_voice": True,
         "pipeline_complete_voice_message": "Partnership pipeline run complete.",
@@ -177,11 +180,77 @@ def get_ensure_industry_settings() -> tuple[str | None, int, int]:
 
 
 def get_min_ensure_ca_connect_per_run() -> int:
-    """Min send slots reserved for CA Connect JSON contacts (caconnect.icai.org profiles)."""
+    """Min send slots reserved for CA portal contacts (ca_bulk.db or immigration import)."""
     try:
         return max(0, int(load_sender_config().get("min_ensure_ca_connect_per_run", 0)))
     except (TypeError, ValueError):
         return 0
+
+
+def get_ca_bulk_send_settings() -> dict:
+    cfg = load_sender_config()
+    raw = (cfg.get("ca_bulk_database_file") or "data/db/ca_bulk.db").strip()
+    path = Path(raw)
+    if not path.is_absolute():
+        path = _SCRIPT_DIR / path
+    bulk_enabled = bool(cfg.get("ca_bulk_send_enabled", True))
+    return {
+        "enabled": bulk_enabled,
+        "send_only": bool(cfg.get("ca_bulk_send_only", bulk_enabled)),
+        "database_file": path,
+    }
+
+
+def load_ca_bulk_send_candidates(db: ImmigrationDB) -> list[dict]:
+    """Unsent CA portal contacts from ca_bulk.db (no copy into immigration.db)."""
+    settings = get_ca_bulk_send_settings()
+    if not settings["enabled"]:
+        return []
+    path = settings["database_file"]
+    if not path.exists():
+        return []
+    bulk_db = CaBulkDB(path)
+    try:
+        return bulk_db.pending_send_candidates(db.sent_email_addresses())
+    finally:
+        bulk_db.close()
+
+
+def count_unsent_ca_portal_recipients(db: ImmigrationDB) -> dict[str, int]:
+    """Unsent CA portal contacts; when ca_bulk_send_only, bulk DB is the sole source."""
+    settings = get_ca_bulk_send_settings()
+    sent = db.sent_email_addresses()
+    bulk_count = 0
+    if settings["enabled"] and settings["database_file"].exists():
+        bulk_db = CaBulkDB(settings["database_file"])
+        try:
+            bulk_items = bulk_db.pending_send_candidates(sent)
+            bulk_count = len(bulk_items)
+        finally:
+            bulk_db.close()
+    if settings.get("send_only"):
+        return {"bulk": bulk_count, "immigration": 0, "total": bulk_count}
+    bulk_emails = set()
+    if bulk_count:
+        bulk_db = CaBulkDB(settings["database_file"])
+        try:
+            bulk_emails = {
+                (item.get("email") or "").lower()
+                for item in bulk_db.pending_send_candidates(sent)
+            }
+        finally:
+            bulk_db.close()
+    immigration_count = sum(
+        1
+        for item in db._pending_send_candidates()
+        if is_ca_connect_contact(item)
+        and (item.get("email") or "").lower() not in bulk_emails
+    )
+    return {
+        "bulk": bulk_count,
+        "immigration": immigration_count,
+        "total": bulk_count + immigration_count,
+    }
 
 
 def get_reserved_send_by_industry() -> dict[str, int]:
@@ -412,6 +481,8 @@ def send_one(
     if not html:
         return False
 
+    send_email_content(recipient=recipient, subject=subject, html=html)
+
     db.ensure_campaign_subject(
         (subject.split(" with ")[0] if " with " in subject else subject).strip()
     )
@@ -563,7 +634,21 @@ def run_send(
     min_ca_connect = get_min_ensure_ca_connect_per_run()
     industry_reserves = get_reserved_send_by_industry()
 
-    sync_ca_connect_json_to_db(db)
+    bulk_settings = get_ca_bulk_send_settings()
+    bulk_ca_items = load_ca_bulk_send_candidates(db) if bulk_settings["enabled"] else []
+    ca_bulk_only = bool(bulk_settings.get("send_only"))
+    if bulk_ca_items:
+        logger.info(
+            "CA send queue: %s unsent contact(s) from ca_bulk.db (caconnect.icai.org).",
+            len(bulk_ca_items),
+        )
+    elif ca_bulk_only:
+        logger.warning(
+            "CA bulk send enabled but ca_bulk.db has no unsent emails — "
+            "no CA portal contacts will be emailed this run (run_ca_bulk_import.bat)."
+        )
+    elif bulk_settings["enabled"]:
+        sync_ca_connect_json_to_db(db)
 
     logger.info("Sending up to %s email(s) this run (emails_per_run).", send_limit)
     queue = db.pending_send_queue(
@@ -572,6 +657,8 @@ def run_send(
         min_from_industry=min_ensure,
         min_from_ca_connect=min_ca_connect,
         industry_reserves=industry_reserves,
+        extra_ca_items=bulk_ca_items or None,
+        ca_bulk_only=ca_bulk_only,
     )
     stats = {
         "sent": 0,
@@ -583,6 +670,8 @@ def run_send(
         "ensure_reserved_in_queue": 0,
         "ensure_ca_connect_min": min_ca_connect,
         "ensure_ca_connect_reserved": 0,
+        "ensure_ca_connect_from_bulk": 0,
+        "ca_bulk_unsent": len(bulk_ca_items),
         "sent_ca_connect": 0,
         "reserved_by_industry": industry_reserves,
         "reserved_in_queue_by_industry": {},
@@ -591,17 +680,22 @@ def run_send(
     }
     if min_ca_connect > 0:
         ca_reserved = sum(1 for item in queue if is_ca_connect_contact(item))
+        ca_from_bulk = sum(
+            1 for item in queue if (item.get("contact_source") or "").lower() == "ca_bulk"
+        )
         stats["ensure_ca_connect_reserved"] = ca_reserved
+        stats["ensure_ca_connect_from_bulk"] = ca_from_bulk
         if ca_reserved >= min_ca_connect:
             logger.info(
-                "Send queue reserves %s/%s slot(s) for CA Connect JSON contacts.",
+                "Send queue reserves %s/%s slot(s) for CA portal contacts (%s from ca_bulk.db).",
                 ca_reserved,
                 min_ca_connect,
+                ca_from_bulk,
             )
         else:
             logger.warning(
-                "Only %s/%s CA Connect JSON contact(s) in queue — "
-                "enrich more profiles or import ca_connect_results.json.",
+                "Only %s/%s CA portal contact(s) in queue — "
+                "run ca_bulk import or enrich more profiles on caconnect.icai.org.",
                 ca_reserved,
                 min_ca_connect,
             )
@@ -668,7 +762,7 @@ def run_send(
                 sender_cfg,
                 use_nvidia_praise=use_nvidia_praise,
             )
-            _, subject = build_email_message(
+            html, subject = build_email_message(
                 industry_id=industry_id,
                 company_name=item.get("company_name") or item.get("domain", ""),
                 domain=item.get("domain", ""),
@@ -676,6 +770,8 @@ def run_send(
                 sender_cfg=sender_cfg,
                 use_nvidia_praise=use_nvidia_praise,
             )
+            if html:
+                send_email_content(recipient=item["email"], subject=subject, html=html)
             transport_label = (
                 brevo_transport["sender_email"] if brevo_transport else from_email
             )
@@ -698,8 +794,21 @@ def run_send(
                 recipient=item["email"],
                 company=item.get("company_name") or "",
                 industry=item.get("industry") or "",
+                outcome="dry-run",
             )
             continue
+
+        send_status(
+            n=idx + 1,
+            total=len(queue),
+            sent=stats["sent"],
+            failed=stats["failed"],
+            skipped=stats["skipped"],
+            recipient=item["email"],
+            company=item.get("company_name") or "",
+            industry=item.get("industry") or "",
+            outcome="sending",
+        )
 
         ok = send_one(
             db,
@@ -721,10 +830,13 @@ def run_send(
             stats["sent_by_industry"][iid] = stats["sent_by_industry"].get(iid, 0) + 1
             if is_ca_connect_contact(item):
                 stats["sent_ca_connect"] += 1
+            outcome = "sent"
         elif db.email_already_sent(item["email"]):
             stats["skipped"] += 1
+            outcome = "skipped"
         else:
             stats["failed"] += 1
+            outcome = "failed"
 
         send_status(
             n=idx + 1,
@@ -735,6 +847,7 @@ def run_send(
             recipient=item["email"],
             company=item.get("company_name") or "",
             industry=item.get("industry") or "",
+            outcome=outcome,
         )
 
     if not dry_run:
@@ -779,6 +892,8 @@ def run_test_send(
     )
     if not html:
         return {"sent": 0, "failed": 0, "skipped": 0, "error": "template_missing"}
+
+    send_email_content(recipient=recipient, subject=subject, html=html)
 
     if dry_run:
         try:

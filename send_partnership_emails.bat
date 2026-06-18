@@ -20,8 +20,8 @@ echo ============================================================
 echo   Partnership pipeline — scrape then send
 echo   Folder: %CD%
 echo.
-echo   Step 1: Scrape CA Connect + Google (see RUN SUMMARY for details)
-echo   Step 2: Send emails via Brevo (see RUN SUMMARY for per-industry counts)
+echo   Step 1: Google scrape only (no CA Connect — use run_ca_bulk_import.bat for CAs)
+echo   Step 2: Send emails — 8 CA slots from ca_bulk.db + other industries
 echo.
 echo   Settings: sender_config.json  ^|  browser=%BROWSER%  region=%REGION%
 echo ============================================================

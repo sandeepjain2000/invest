@@ -33,6 +33,7 @@ from check_replies import run_check_replies
 from immigration_db import ImmigrationDB
 from immigration_scraper import scrape_sync
 from immigration_sender import (
+    count_unsent_ca_portal_recipients,
     get_emails_per_run,
     get_ensure_industry_settings,
     get_max_companies_per_run,
@@ -477,17 +478,17 @@ def print_execution_summary(
             )
         if min_ca_connect > 0:
             ca_reserved = int(send_stats.get("ensure_ca_connect_reserved") or 0)
+            ca_from_bulk = int(send_stats.get("ensure_ca_connect_from_bulk") or 0)
             ca_sent = int(send_stats.get("sent_ca_connect") or 0)
             _summary_stat(
-                "Queue slots for CA Connect JSON",
+                "Queue slots for CA portal",
                 f"{ca_reserved} / {min_ca_connect} reserved",
-                "Individual CAs from ca_connect_results.json (caconnect.icai.org profiles), "
-                "not Google-scraped CA firm sites.",
+                f"Individual CAs from caconnect.icai.org ({ca_from_bulk} from ca_bulk.db).",
             )
             _summary_stat(
-                "Sent to CA Connect JSON",
+                "Sent to CA portal contacts",
                 ca_sent,
-                "Funding intro emails to CAs imported from CA Connect this run.",
+                "Partnership emails to CAs from CA Connect / bulk harvest this run.",
             )
         reserved_by = send_stats.get("reserved_in_queue_by_industry") or {}
         for iid, min_slots in industry_reserves.items():
@@ -578,12 +579,13 @@ def print_execution_summary(
                 ca_pending,
                 f"{industry_name(ensure_industry)} contacts not yet emailed (all sources).",
             )
-        unsent_ca_json = db.count_unsent_ca_connect_recipients()
-        if unsent_ca_json or min_ca_connect > 0:
+        ca_unsent = count_unsent_ca_portal_recipients(db)
+        if ca_unsent.get("total") or min_ca_connect > 0:
             _summary_stat(
-                "Unsent CA Connect JSON",
-                unsent_ca_json,
-                "Individual CAs from ca_connect_results.json still available to email.",
+                "Unsent CA portal contacts",
+                ca_unsent.get("total", 0),
+                f"{ca_unsent.get('bulk', 0)} in ca_bulk.db, "
+                f"{ca_unsent.get('immigration', 0)} in immigration.db (caconnect.icai.org).",
             )
         by_industry = {row["industry"]: row for row in db.summary_by_industry()}
         industry_reserves = get_reserved_send_by_industry()

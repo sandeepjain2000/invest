@@ -151,7 +151,7 @@
       "id": "corporate_csr",
       "name": "Corporate CSR Programs",
       "rank": 6,
-      "active": true,
+      "active": false,
       "seed_queries": [
         "corporate CSR education employability India",
         "IT company CSR skilling program India contact",
@@ -267,7 +267,7 @@
       "id": "insurance",
       "name": "Insurance (Campus & Graduate Hiring)",
       "rank": 10,
-      "active": true,
+      "active": false,
       "seed_queries": [
         "life insurance company campus recruitment India contact",
         "general insurance graduate trainee India email",
@@ -417,7 +417,7 @@
       "id": "wealth_managers",
       "name": "Wealth Managers & Investment Advisors",
       "rank": 15,
-      "active": true,
+      "active": false,
       "scrape_source": "google",
       "seed_queries": [
         "wealth management firm India contact email",
