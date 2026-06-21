@@ -38,10 +38,17 @@ from ca_connect_scraper import (
     run_ca_connect_search,
 )
 from pipeline_progress import ca_connect_status, step as progress_step
+from project_paths import (
+    CA_BULK_CONFIG,
+    CA_BULK_CONFIG_EXAMPLE,
+    PROJECT_ROOT,
+    resolve_config_file,
+    resolve_project_path,
+)
 
-_SCRIPT_DIR = Path(__file__).resolve().parent
-_CONFIG_FILE = _SCRIPT_DIR / "ca_bulk_config.json"
-_CONFIG_EXAMPLE = _SCRIPT_DIR / "ca_bulk_config.example.json"
+_SCRIPT_DIR = PROJECT_ROOT
+_CONFIG_FILE = CA_BULK_CONFIG
+_CONFIG_EXAMPLE = CA_BULK_CONFIG_EXAMPLE
 _LOG_DIR = _SCRIPT_DIR / "logs"
 
 logger = logging.getLogger("ca_bulk_import")
@@ -81,8 +88,12 @@ def setup_logging() -> None:
 
 
 def load_config() -> dict:
-    path = _CONFIG_FILE if _CONFIG_FILE.exists() else _CONFIG_EXAMPLE
-    if not path.exists():
+    path = _CONFIG_FILE if _CONFIG_FILE.is_file() else _CONFIG_EXAMPLE
+    if not path.is_file():
+        path = resolve_config_file("ca_bulk_config.json")
+    if not path.is_file():
+        path = resolve_config_file("ca_bulk_config.example.json")
+    if not path.is_file():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -97,9 +108,7 @@ def db_from_config(cfg: dict) -> CaBulkDB:
 
 def credentials_from_config(cfg: dict) -> tuple[Path, dict]:
     raw = (cfg.get("credentials_file") or str(DEFAULT_CREDENTIALS_FILE)).strip()
-    path = Path(raw)
-    if not path.is_absolute():
-        path = _SCRIPT_DIR / path
+    path = resolve_project_path(raw)
     return path, load_credentials(path)
 
 

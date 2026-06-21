@@ -34,6 +34,7 @@ from immigration_db import ImmigrationDB
 from immigration_scraper import scrape_sync
 from immigration_sender import (
     count_unsent_ca_portal_recipients,
+    get_ca_bulk_emails_per_run,
     get_emails_per_run,
     get_ensure_industry_settings,
     get_max_companies_per_run,
@@ -42,7 +43,9 @@ from immigration_sender import (
     get_scrape_headless,
     get_reserved_send_by_industry,
     load_sender_config,
+    run_audit_brevo_deliveries,
     run_send,
+    run_send_ca_bulk,
     run_test_send,
 )
 from industries import (
@@ -645,6 +648,52 @@ def cmd_check_replies(args: argparse.Namespace, db: ImmigrationDB) -> int:
     return 0 if not stats.get("error") else 1
 
 
+def cmd_reset_send_queue(db: ImmigrationDB) -> int:
+    stats = db.reset_send_queue()
+    logger.info(
+        "Send queue reset: cleared %s email_sent row(s); %s companies ready to send.",
+        stats["cleared"],
+        stats["pending_companies"],
+    )
+    print_execution_summary(db=db)
+    return 0
+
+
+def cmd_audit_brevo(args: argparse.Namespace, db: ImmigrationDB) -> int:
+    stats = run_audit_brevo_deliveries(
+        db,
+        days=args.days,
+        limit=args.limit,
+        dry_run=args.dry_run,
+    )
+    logger.info("Audit complete: %s", stats)
+    print_execution_summary(db=db)
+    return 0 if not stats.get("error") else 1
+
+
+def cmd_send_ca(args: argparse.Namespace, db: ImmigrationDB) -> int:
+    limit = args.limit if args.limit is not None else get_ca_bulk_emails_per_run()
+    progress_step(f"Send — CA emails only (up to {limit} from ca_bulk.db)")
+    with prevent_windows_sleep():
+        stats = run_send_ca_bulk(
+            db,
+            limit=limit,
+            use_nvidia_praise=not args.no_nvidia_praise,
+            dry_run=args.dry_run,
+        )
+    logger.info("CA send complete: %s", stats)
+    unsent = count_unsent_ca_portal_recipients(db)
+    progress_done(
+        f"CA send — {stats.get('sent', 0)} sent, "
+        f"{stats.get('failed', 0)} failed, "
+        f"{unsent.get('bulk', 0)} unsent in ca_bulk.db"
+    )
+    if stats.get("error"):
+        logger.error("CA send error: %s", stats["error"])
+        return 1
+    return 0
+
+
 def cmd_send(args: argparse.Namespace, db: ImmigrationDB) -> int:
     progress_step("Send — partnership emails")
     with prevent_windows_sleep():
@@ -741,6 +790,11 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("list-industries", help="Show all industry verticals from industries.json")
     sub.add_parser("status", help="Show SQLite summary counts")
 
+    sub.add_parser(
+        "reset-send-queue",
+        help="Clear email_sent so all scraped emails can be sent again (batch limits unchanged)",
+    )
+
     seed = sub.add_parser("seed-keywords", help="Seed Google search queries")
     seed.add_argument("--count", type=int, default=0, help="Queries per industry (0 = use industries.json default)")
     seed.add_argument("--region", default=default_region())
@@ -787,6 +841,19 @@ def build_parser() -> argparse.ArgumentParser:
     )
     send.add_argument("--no-nvidia-replies", action="store_true", help="Skip NVIDIA for borderline replies")
 
+    send_ca = sub.add_parser(
+        "send-ca",
+        help="Send only to CAs from ca_bulk.db (caconnect.icai.org) — no scrape",
+    )
+    send_ca.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Emails per run (default: ca_bulk_emails_per_run in sender_config.json, usually 10)",
+    )
+    send_ca.add_argument("--no-nvidia-praise", action="store_true")
+    send_ca.add_argument("--dry-run", action="store_true")
+
     run = sub.add_parser("run", help="Scrape then send in one run")
     run.add_argument("--max-companies", type=int, default=None, help="Override max_companies_per_run in sender_config.json")
     run.add_argument("--max-queries", type=int, default=None, help="Override max_queries_per_run in sender_config.json")
@@ -815,6 +882,14 @@ def build_parser() -> argparse.ArgumentParser:
     run.add_argument("--no-nvidia-replies", action="store_true")
     _add_industry_arg(run)
 
+    audit = sub.add_parser(
+        "audit-brevo",
+        help="Check Brevo delivery logs for recent sends and mark delivery_failed",
+    )
+    audit.add_argument("--days", type=int, default=14, help="Look back this many days (default 14)")
+    audit.add_argument("--limit", type=int, default=200, help="Max messageIds to check")
+    audit.add_argument("--dry-run", action="store_true", help="Report only; do not update email_sent")
+
     return parser
 
 
@@ -829,6 +904,8 @@ def main() -> int:
             return cmd_list_industries()
         if args.command == "status":
             return cmd_status(db)
+        if args.command == "reset-send-queue":
+            return cmd_reset_send_queue(db)
         if args.command == "seed-keywords":
             per = args.count or queries_per_industry()
             seed_all = args.all or not args.industry
@@ -846,6 +923,10 @@ def main() -> int:
             return cmd_check_replies(args, db)
         if args.command == "send":
             return cmd_send(args, db)
+        if args.command == "send-ca":
+            return cmd_send_ca(args, db)
+        if args.command == "audit-brevo":
+            return cmd_audit_brevo(args, db)
         if args.command == "run":
             return cmd_run(args, db)
         parser.print_help()

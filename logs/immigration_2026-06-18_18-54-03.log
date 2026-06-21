@@ -1,0 +1,29 @@
+2026-06-18 18:54:03 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-18_18-54-03.log
+2026-06-18 18:54:03 [INFO   ] === Pipeline status ===
+2026-06-18 18:54:03 [INFO   ]   search_queries_pending   43
+2026-06-18 18:54:03 [INFO   ]   search_queries_done      262
+2026-06-18 18:54:03 [INFO   ]   companies_total          1259
+2026-06-18 18:54:03 [INFO   ]   companies_with_email     1013
+2026-06-18 18:54:03 [INFO   ]   emails_found             8981
+2026-06-18 18:54:03 [INFO   ]   emails_sent              0
+2026-06-18 18:54:03 [INFO   ]   emails_failed            0
+2026-06-18 18:54:03 [INFO   ]   emails_delivery_failed   0
+2026-06-18 18:54:03 [INFO   ]   replies_forwarded        0
+2026-06-18 18:54:03 [INFO   ]   campaign_subjects        299
+2026-06-18 18:54:03 [INFO   ] 
+2026-06-18 18:54:03 [INFO   ] === Companies by industry ===
+2026-06-18 18:54:03 [INFO   ]   NBFC & Banks (Campus Hiring)     total=62  with_email=41
+2026-06-18 18:54:03 [INFO   ]   Chartered Accountants & Company Secretaries total=129  with_email=121
+2026-06-18 18:54:03 [INFO   ]   Coaching & Test Prep             total=98  with_email=84
+2026-06-18 18:54:03 [INFO   ]   Company Secretary Firms          total=36  with_email=31
+2026-06-18 18:54:03 [INFO   ]   Corporate CSR Programs           total=71  with_email=55
+2026-06-18 18:54:03 [INFO   ]   EdTech Companies                 total=90  with_email=72
+2026-06-18 18:54:03 [INFO   ]   Student Loan / Education Finance total=64  with_email=51
+2026-06-18 18:54:03 [INFO   ]   HRTech Companies                 total=88  with_email=59
+2026-06-18 18:54:03 [INFO   ]   Insurance (Campus & Graduate Hiring) total=59  with_email=42
+2026-06-18 18:54:03 [INFO   ]   Law Firms & Lawyers              total=126  with_email=98
+2026-06-18 18:54:03 [INFO   ]   Overseas Education / Immigration total=104  with_email=83
+2026-06-18 18:54:03 [INFO   ]   Recruitment & Staffing Firms     total=86  with_email=66
+2026-06-18 18:54:03 [INFO   ]   Tax Consultants                  total=78  with_email=62
+2026-06-18 18:54:03 [INFO   ]   Training & Finishing Schools     total=117  with_email=105
+2026-06-18 18:54:03 [INFO   ]   Wealth Managers & Investment Advisors total=51  with_email=43

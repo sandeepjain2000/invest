@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import logging
 import re
+import sys
 from html import unescape
 
 from industries import industry_name
@@ -97,21 +98,65 @@ def _html_to_plain(html: str) -> str:
     return "\n".join(ln for ln in lines if ln)
 
 
-def send_email_content(*, recipient: str, subject: str, html: str) -> None:
-    """Print subject and plain-text body preview to the terminal."""
-    plain = _html_to_plain(html)
-    log.info("")
-    log.info("-" * 62)
-    log.info("PROGRESS | Email content — To: %s", recipient)
-    log.info("PROGRESS | Subject: %s", subject)
-    log.info("PROGRESS | Body:")
+def _preview_lines(*, recipient: str, subject: str, plain: str) -> list[str]:
+    lines = [
+        "-" * 62,
+        f"Email content — To: {recipient}",
+        f"Subject: {subject}",
+        "Body:",
+    ]
     if plain:
-        for line in plain.splitlines():
-            log.info("PROGRESS |   %s", line)
+        lines.extend(f"  {line}" for line in plain.splitlines())
     else:
-        log.info("PROGRESS |   (empty body)")
-    log.info("-" * 62)
-    log.info("")
+        lines.append("  (empty body)")
+    lines.extend(["-" * 62, "", ""])
+    return lines
+
+
+def _write_terminal_preview(lines: list[str]) -> None:
+    """One atomic stdout write so logging on the same stream cannot interleave or drop lines."""
+    block = "\n".join(lines)
+    sys.stdout.write(block)
+    if not block.endswith("\n"):
+        sys.stdout.write("\n")
+    sys.stdout.flush()
+
+
+def _write_file_preview(lines: list[str]) -> None:
+    """Persist the full preview in the log file (console stays timestamp-free)."""
+    for handler in log.handlers:
+        if not isinstance(handler, logging.FileHandler):
+            continue
+        for line in lines:
+            if line.startswith("PROGRESS |") or line == "":
+                msg = line
+            elif set(line) == {"-"}:
+                msg = line
+            elif line.startswith("  "):
+                msg = f"PROGRESS | {line}"
+            elif line.startswith("Email content") or line.startswith("Subject:") or line == "Body:":
+                msg = f"PROGRESS | {line}"
+            else:
+                msg = line
+            record = log.makeRecord(
+                log.name,
+                logging.INFO,
+                "",
+                0,
+                msg,
+                (),
+                None,
+            )
+            handler.handle(record)
+
+
+def send_email_content(*, recipient: str, subject: str, html: str) -> None:
+    """Print subject and plain-text body preview to the terminal (no log timestamps on body)."""
+    plain = _html_to_plain(html)
+    lines = _preview_lines(recipient=recipient, subject=subject, plain=plain)
+    _write_terminal_preview(lines)
+    _write_file_preview(lines)
+    log.info("PROGRESS | Email preview — To: %s | Subject: %s", recipient, subject)
 
 
 def send_status(

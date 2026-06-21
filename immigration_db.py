@@ -672,6 +672,55 @@ class ImmigrationDB:
         ).fetchone()
         return row is not None
 
+    def list_sent_for_brevo_audit(self, *, days: int = 14, limit: int = 200) -> list[dict]:
+        from datetime import datetime, timedelta, timezone
+
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=max(days, 1))).strftime("%Y-%m-%d")
+        rows = self.conn.execute(
+            """
+            SELECT email, company_name, subject, message_id, sent_at, status
+            FROM email_sent
+            WHERE status = 'sent'
+              AND message_id IS NOT NULL
+              AND TRIM(message_id) != ''
+              AND (sent_at IS NULL OR substr(sent_at, 1, 10) >= ?)
+            ORDER BY sent_at DESC
+            LIMIT ?
+            """,
+            (cutoff, max(limit, 1)),
+        ).fetchall()
+        return [dict(row) for row in rows]
+
+    def update_email_send_status(
+        self,
+        email: str,
+        *,
+        status: str,
+        error_message: str = "",
+    ) -> None:
+        self.conn.execute(
+            """
+            UPDATE email_sent
+            SET status = ?, error_message = ?
+            WHERE lower(email) = lower(?)
+            """,
+            (status, error_message or None, email),
+        )
+        self.conn.commit()
+
+    def reset_send_queue(self) -> dict[str, int]:
+        """
+        Clear email_sent so all scraped addresses become eligible again.
+        Does not delete company_emails or companies.
+        """
+        before_sent = int(
+            self.conn.execute("SELECT COUNT(*) FROM email_sent").fetchone()[0]
+        )
+        self.conn.execute("DELETE FROM email_sent")
+        self.conn.commit()
+        pending = self.count_unsent_recipients()
+        return {"cleared": before_sent, "pending_companies": pending}
+
     def last_scraped_company(self) -> dict[str, Any] | None:
         row = self.conn.execute(
             """
@@ -693,6 +742,7 @@ class ImmigrationDB:
             "emails_found": "SELECT COUNT(*) FROM company_emails",
             "emails_sent": "SELECT COUNT(*) FROM email_sent WHERE status='sent'",
             "emails_failed": "SELECT COUNT(*) FROM email_sent WHERE status='failed'",
+            "emails_delivery_failed": "SELECT COUNT(*) FROM email_sent WHERE status='delivery_failed'",
             "replies_forwarded": "SELECT COUNT(*) FROM reply_forwards",
             "campaign_subjects": "SELECT COUNT(*) FROM campaign_subjects",
         }.items():

@@ -527,7 +527,7 @@ async def run_scrape(
             )
     elif _ca_connect_industry_ids():
         logger.info(
-            "CA Connect pipeline scrape skipped — harvest via run_ca_bulk_import.bat; "
+            "CA Connect pipeline scrape skipped — harvest via scripts\\run_ca_bulk_import.bat; "
             "partnership send uses ca_bulk.db only (caconnect.icai.org)."
         )
 

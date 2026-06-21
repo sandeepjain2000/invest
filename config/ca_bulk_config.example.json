@@ -1,0 +1,32 @@
+{
+  "profiles_per_batch": 50,
+  "goal_emails_per_run": 1000,
+  "delay_between_profiles_sec": 1.5,
+  "headless": true,
+  "browser": "auto",
+  "credentials_file": "config/ca_connect_credentials.json",
+  "database_file": "data/db/ca_bulk.db",
+  "search_queue": [
+    { "service": "Audit", "state": "Maharashtra", "city": "Pune" },
+    { "service": "Audit", "state": "Maharashtra", "city": "Mumbai" },
+    { "service": "Audit", "state": "Maharashtra", "city": "Nagpur" },
+    { "service": "Audit", "state": "Maharashtra", "city": "Nashik" },
+    { "service": "Audit", "state": "Maharashtra", "city": "Thane" },
+    { "service": "Audit", "state": "Maharashtra", "city": "Aurangabad" },
+    { "service": "Audit", "state": "Karnataka", "city": "Bengaluru" },
+    { "service": "Audit", "state": "Karnataka", "city": "Mysuru" },
+    { "service": "Audit", "state": "Tamil Nadu", "city": "Chennai" },
+    { "service": "Audit", "state": "Tamil Nadu", "city": "Coimbatore" },
+    { "service": "Audit", "state": "Gujarat", "city": "Ahmedabad" },
+    { "service": "Audit", "state": "Gujarat", "city": "Surat" },
+    { "service": "Audit", "state": "Delhi", "city": "Delhi" },
+    { "service": "Audit", "state": "West Bengal", "city": "Kolkata" },
+    { "service": "Audit", "state": "Telangana", "city": "Hyderabad" },
+    { "service": "Audit", "state": "Rajasthan", "city": "Jaipur" },
+    { "service": "Audit", "state": "Uttar Pradesh", "city": "Lucknow" },
+    { "service": "Audit", "state": "Uttar Pradesh", "city": "Noida" },
+    { "service": "Audit", "state": "Madhya Pradesh", "city": "Indore" },
+    { "service": "Audit", "state": "Kerala", "city": "Kochi" }
+  ],
+  "notes": "Copy to ca_bulk_config.json. Each run enriches up to goal_emails_per_run profiles, resuming pending listings next time. Add more city/state rows to search_queue for wider coverage."
+}

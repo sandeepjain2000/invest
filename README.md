@@ -76,22 +76,23 @@ investment/
 ├── pipeline_progress.py        # Terminal PROGRESS | lines during runs
 ├── pipeline_notify.py          # Beeps / voice on completion
 ├── nvidia_llm.py               # NVIDIA key rotation + LLM calls
-├── industries.json             # 15 verticals + templates + seed queries
+├── project_paths.py            # config/, templates/bodies/, templates/subjects/ paths
 ├── industries.py
-├── partnership.html            # Fallback template only
-├── partnership_*.html          # Per-industry partnership templates (11)
-├── funding_intro*.html         # CA / CS / tax / wealth templates (4)
+├── config/                     # JSON settings (see config/README.txt)
+│   ├── industries.json
+│   ├── sender_config.json
+│   ├── mail_config.json        # gitignored
+│   └── ca_bulk_config.json
+├── templates/
+│   ├── bodies/                 # HTML email bodies (partnership_*.html, funding_intro*.html)
+│   └── subjects/               # Subject lines (*.subject.txt)
 ├── brevo_mail.py               # Brevo API client
-├── mail_config.json            # Brevo keys (gitignored)
-├── mail_config.example.json
 ├── requirements.txt
-├── send_partnership_emails.bat # One-click scrape + send
-├── run_ca_bulk_import.bat      # One-click bulk CA harvest (resume)
-├── ca_bulk_status.bat          # Bulk DB status only
-├── ca_bulk_import.bat          # Bulk CLI pass-through
-├── ca_bulk_config.example.json # Bulk harvest config (copy → ca_bulk_config.json)
-├── ca_connect_credentials.example.json
-├── sender_config.json
+├── scripts/                    # Windows .bat launchers (see scripts/README.txt)
+│   ├── send_partnership_emails.bat
+│   ├── send_partnership_emails_only.bat
+│   ├── run_ca_bulk_import.bat
+│   └── ca_bulk_status.bat
 ├── data/db/immigration.db
 ├── data/db/ca_bulk.db          # Separate bulk CA database
 ├── data/ca_connect_results.json
@@ -178,10 +179,10 @@ Override at runtime with `--limit` (`send`) or `--send-limit` (`run`).
 **Separate Brevo account** for partnership outreach. Copy from the example if needed:
 
 ```powershell
-copy mail_config.example.json mail_config.json
+copy config\mail_config.example.json config\mail_config.json
 ```
 
-Edit `mail_config.json` with your Brevo keys:
+Edit `mail_config.json` with your **Investment / PlacementHub** Brevo account keys (separate from Scrape_aishe):
 
 ```json
 {
@@ -195,18 +196,37 @@ Edit `mail_config.json` with your Brevo keys:
   "smtp": {
     "host": "smtp-relay.brevo.com",
     "port": 587,
-    "login": "your-brevo-smtp-login",
+    "login": "ae9cb5001@smtp-brevo.com",
     "password": "YOUR_SMTP_KEY",
     "use_tls": true
   }
 }
 ```
 
+**Where to find each value in Brevo** (this account only — not the AISHE account):
+
+| JSON field | Brevo dashboard location |
+|------------|--------------------------|
+| `brevo.api_key` | **SMTP & API → API keys** → create or copy an **API v3** key (`xkeysib-...`). Used by `send_method: brevo_api`. |
+| `brevo.sender.email` | **Senders & IP → Senders** → must be **verified** on this account. Default: `sandeep.jain@appsflow.cloud`. |
+| `smtp.login` | **SMTP & API → SMTP** → Login (e.g. `ae9cb5001@smtp-brevo.com`). |
+| `smtp.password` | **SMTP & API → SMTP** → **Master password** (SMTP key). Not the same as the API key. |
+
 | Section | Field | Purpose |
 |---------|-------|---------|
 | `brevo` | `api_key` | Brevo API v3 key — used by `send_method: brevo_api` (default) |
 | `brevo.sender` | `name`, `email` | Verified sender in Brevo (Zoho inbox: `sandeep.jain@appsflow.cloud`) |
-| `smtp` | `host`, `port`, `login`, `password`, `use_tls` | Brevo SMTP relay credentials (for reference / future SMTP send) |
+| `smtp` | `host`, `port`, `login`, `password`, `use_tls` | Brevo SMTP relay (for legacy SMTP send or other tools) |
+
+**Why failed emails may not appear in script logs:** Brevo’s API returns `messageId` when it **accepts** the send into its queue. Invalid-sender and some other errors happen **after** that, and only show in the Brevo **Transactional → Logs** UI. The script records `status=sent` on API success; synchronous API exceptions become `status=failed`.
+
+To reconcile delivery with Brevo logs:
+
+```powershell
+python immigration_pipeline.py audit-brevo --days 14
+```
+
+This polls Brevo for stored `messageId`s and updates `email_sent` to `delivery_failed` when Brevo reports blocked/error events (those recipients can be emailed again).
 
 `mail_config.json` is **gitignored** so keys are not committed. `mail_config.example.json` stays in the repo as a template.
 
@@ -267,7 +287,6 @@ Each industry uses its own HTML file (see table above). Per-industry settings in
 ```json
 "template_file": "partnership_immigration.html",
 "email_subject": "Privileged student lifecycle access for overseas education consultants",
-"subject_append_domain": true,
 "use_nvidia_praise": true,
 "signature_links": [ { "label": "...", "url": "..." } ]
 ```
@@ -282,13 +301,13 @@ Each industry uses its own HTML file (see table above). Per-industry settings in
 | `{{Email}}` | `email` (mailto link) |
 | `{{SignatureLinks}}` | Industry `signature_links`, or fallback from `sender_config.json` |
 
-Subject line: base from industry config; appends ` with {domain}` when `subject_append_domain` is true.
+Subject line: one `templates/subjects/{template_stem}.subject.txt` per body HTML file. Include the recipient suffix in the template (e.g. ` with {{Domain}}` or ` with {{RecipientIdentity}}`). See `templates/subjects/README.txt`.
 
 ---
 
 ## One-click run (Windows)
 
-### Partnership pipeline — `send_partnership_emails.bat`
+### Partnership pipeline — `scripts\send_partnership_emails.bat`
 
 Double-click or run from the project folder. Each execution:
 
@@ -493,7 +512,7 @@ Import **hundreds or thousands** of CA emails with **resume on each run**. Uses 
 
 ### Quick start (Windows)
 
-Double-click **`run_ca_bulk_import.bat`**. It will:
+Double-click **`scripts\run_ca_bulk_import.bat`**. It will:
 
 1. Create `ca_bulk_config.json` from example if missing
 2. Require `ca_connect_credentials.json` (CA Connect login for profile pages)
@@ -502,9 +521,9 @@ Double-click **`run_ca_bulk_import.bat`**. It will:
 
 | Batch file | Action |
 |------------|--------|
-| `run_ca_bulk_import.bat` | Setup + enrich (resume each run) |
-| `ca_bulk_status.bat` | Pending / email counts only |
-| `ca_bulk_import.bat` | CLI pass-through, e.g. `ca_bulk_import.bat export-csv` |
+| `scripts\run_ca_bulk_import.bat` | Setup + enrich (resume each run) |
+| `scripts\ca_bulk_status.bat` | Pending / email counts only |
+| `scripts\ca_bulk_import.bat` | CLI pass-through, e.g. `scripts\ca_bulk_import.bat export-csv` |
 
 ### Manual commands
 
@@ -598,16 +617,16 @@ python immigration_pipeline.py send --dry-run --limit 3
 python immigration_pipeline.py run
 ```
 
-Or double-click `send_partnership_emails.bat`.
+Or double-click `scripts\send_partnership_emails.bat`.
 
 ### Bulk CA harvest
 
 ```powershell
-copy ca_bulk_config.example.json ca_bulk_config.json
-notepad ca_connect_credentials.json
-run_ca_bulk_import.bat
-ca_bulk_status.bat
+copy config\ca_bulk_config.example.json config\ca_bulk_config.json
+notepad config\ca_connect_credentials.json
+scripts\run_ca_bulk_import.bat
+scripts\ca_bulk_status.bat
 python ca_bulk_import.py export-csv
 ```
 
-Re-run `run_ca_bulk_import.bat` anytime — it continues from pending profiles.
+Re-run `scripts\run_ca_bulk_import.bat` anytime — it continues from pending profiles.

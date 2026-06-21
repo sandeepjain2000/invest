@@ -1,4 +1,7 @@
 mail_config.json
+config/mail_config.json
 ca_connect_credentials.json
+config/ca_connect_credentials.json
 ca_bulk_config.json
+config/ca_bulk_config.json
 data/db/ca_bulk.db

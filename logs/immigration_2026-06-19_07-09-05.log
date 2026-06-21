@@ -1,0 +1,1153 @@
+2026-06-19 07:09:05 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\immigration_2026-06-19_07-09-05.log
+2026-06-19 07:09:05 [INFO   ] 
+2026-06-19 07:09:05 [INFO   ] ==============================================================
+2026-06-19 07:09:05 [INFO   ] PROGRESS | Send — partnership emails
+2026-06-19 07:09:05 [INFO   ] ==============================================================
+2026-06-19 07:09:06 [INFO   ] Send transport: Brevo API (config: C:\Users\sandeep\Downloads\Claudes\investment\config\mail_config.json, template: C:\Users\sandeep\Downloads\Claudes\investment\templates\bodies\partnership.html, sender: sandeepjain200019@gmail.com)
+2026-06-19 07:09:06 [INFO   ] CA send queue: 764 unsent contact(s) from ca_bulk.db (caconnect.icai.org).
+2026-06-19 07:09:06 [INFO   ] Sending up to 32 email(s) this run (emails_per_run).
+2026-06-19 07:09:07 [INFO   ] Send queue reserves 8/8 slot(s) for CA portal contacts (8 from ca_bulk.db).
+2026-06-19 07:09:07 [INFO   ] Send queue reserves 4/4 slot(s) for industry company_secretary_firms.
+2026-06-19 07:09:07 [INFO   ] Send queue reserves 4/4 slot(s) for industry tax_consultants.
+2026-06-19 07:09:12 [INFO   ] PROGRESS | Send plan — 32 recipient(s) in queue
+2026-06-19 07:09:12 [INFO   ] PROGRESS | Send 1/32 | SENDING | cajitenkukreja@gmail.com | JITEN RAMESH KUKREJA [Chartered Accountants & Company Secretaries] | ok=0 fail=0 skip=0
+2026-06-19 07:09:12 [INFO   ] Loaded 41 NVIDIA API key(s) for rotation.
+2026-06-19 07:09:14 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:09:14 [INFO   ] PROGRESS | Email content — To: cajitenkukreja@gmail.com
+2026-06-19 07:09:14 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with JITEN RAMESH KUKREJA
+2026-06-19 07:09:14 [INFO   ] PROGRESS | Body:
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:09:14 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:09:14 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:09:14 [INFO   ] 
+2026-06-19 07:09:14 [INFO   ] 
+2026-06-19 07:09:14 [INFO   ] PROGRESS | Email preview — To: cajitenkukreja@gmail.com | Subject: PlacementHub pre-seed intro with JITEN RAMESH KUKREJA
+2026-06-19 07:09:15 [INFO   ] SENT (Brevo) -> cajitenkukreja@gmail.com (JITEN RAMESH KUKREJA) | PlacementHub pre-seed intro with JITEN RAMESH KUKREJA | messageId=<202606190139.59155370058@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:09:15 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:09:25 [INFO   ] PROGRESS | Send 1/32 | SENT | cajitenkukreja@gmail.com | JITEN RAMESH KUKREJA [Chartered Accountants & Company Secretaries] | ok=1 fail=0 skip=0
+2026-06-19 07:09:25 [INFO   ] PROGRESS | Send 2/32 | SENDING | ankit.parakh009@gmail.com | ANKIT DILIP PARAKH [Chartered Accountants & Company Secretaries] | ok=1 fail=0 skip=0
+2026-06-19 07:09:27 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:09:27 [INFO   ] PROGRESS | Email content — To: ankit.parakh009@gmail.com
+2026-06-19 07:09:27 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with ANKIT DILIP PARAKH
+2026-06-19 07:09:27 [INFO   ] PROGRESS | Body:
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:09:27 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:09:27 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:09:27 [INFO   ] 
+2026-06-19 07:09:27 [INFO   ] 
+2026-06-19 07:09:27 [INFO   ] PROGRESS | Email preview — To: ankit.parakh009@gmail.com | Subject: PlacementHub pre-seed intro with ANKIT DILIP PARAKH
+2026-06-19 07:09:28 [INFO   ] SENT (Brevo) -> ankit.parakh009@gmail.com (ANKIT DILIP PARAKH) | PlacementHub pre-seed intro with ANKIT DILIP PARAKH | messageId=<202606190139.55565582890@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:09:28 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:09:38 [INFO   ] PROGRESS | Send 2/32 | SENT | ankit.parakh009@gmail.com | ANKIT DILIP PARAKH [Chartered Accountants & Company Secretaries] | ok=2 fail=0 skip=0
+2026-06-19 07:09:38 [INFO   ] PROGRESS | Send 3/32 | SENDING | cacspj252@gmail.com | PRIYANKA JAIN [Chartered Accountants & Company Secretaries] | ok=2 fail=0 skip=0
+2026-06-19 07:10:08 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-19 07:10:11 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:10:11 [INFO   ] PROGRESS | Email content — To: cacspj252@gmail.com
+2026-06-19 07:10:11 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with PRIYANKA JAIN
+2026-06-19 07:10:11 [INFO   ] PROGRESS | Body:
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:10:11 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:10:11 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:10:11 [INFO   ] 
+2026-06-19 07:10:11 [INFO   ] 
+2026-06-19 07:10:11 [INFO   ] PROGRESS | Email preview — To: cacspj252@gmail.com | Subject: PlacementHub pre-seed intro with PRIYANKA JAIN
+2026-06-19 07:10:12 [INFO   ] SENT (Brevo) -> cacspj252@gmail.com (PRIYANKA JAIN) | PlacementHub pre-seed intro with PRIYANKA JAIN | messageId=<202606190140.13197018785@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:10:12 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:10:22 [INFO   ] PROGRESS | Send 3/32 | SENT | cacspj252@gmail.com | PRIYANKA JAIN [Chartered Accountants & Company Secretaries] | ok=3 fail=0 skip=0
+2026-06-19 07:10:22 [INFO   ] PROGRESS | Send 4/32 | SENDING | canareshkulkarni@gmail.com | NARESHKUMAR BALAJIRAO KULKARNI [Chartered Accountants & Company Secretaries] | ok=3 fail=0 skip=0
+2026-06-19 07:10:25 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:10:25 [INFO   ] PROGRESS | Email content — To: canareshkulkarni@gmail.com
+2026-06-19 07:10:25 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with NARESHKUMAR BALAJIRAO KULKARNI
+2026-06-19 07:10:25 [INFO   ] PROGRESS | Body:
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:10:25 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:10:25 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:10:25 [INFO   ] 
+2026-06-19 07:10:25 [INFO   ] 
+2026-06-19 07:10:25 [INFO   ] PROGRESS | Email preview — To: canareshkulkarni@gmail.com | Subject: PlacementHub pre-seed intro with NARESHKUMAR BALAJIRAO KULKARNI
+2026-06-19 07:10:25 [INFO   ] SENT (Brevo) -> canareshkulkarni@gmail.com (NARESHKUMAR BALAJIRAO KULKARNI) | PlacementHub pre-seed intro with NARESHKUMAR BALAJIRAO KULKARNI | messageId=<202606190140.50367273993@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:10:25 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:10:35 [INFO   ] PROGRESS | Send 4/32 | SENT | canareshkulkarni@gmail.com | NARESHKUMAR BALAJIRAO KULKARNI [Chartered Accountants & Company Secretaries] | ok=4 fail=0 skip=0
+2026-06-19 07:10:35 [INFO   ] PROGRESS | Send 5/32 | SENDING | smgadiya@gmail.com | SHEETAL MAHENDRA GADIYA [Chartered Accountants & Company Secretaries] | ok=4 fail=0 skip=0
+2026-06-19 07:10:47 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:10:47 [INFO   ] PROGRESS | Email content — To: smgadiya@gmail.com
+2026-06-19 07:10:47 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with SHEETAL MAHENDRA GADIYA
+2026-06-19 07:10:47 [INFO   ] PROGRESS | Body:
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:10:47 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:10:47 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:10:47 [INFO   ] 
+2026-06-19 07:10:47 [INFO   ] 
+2026-06-19 07:10:47 [INFO   ] PROGRESS | Email preview — To: smgadiya@gmail.com | Subject: PlacementHub pre-seed intro with SHEETAL MAHENDRA GADIYA
+2026-06-19 07:10:48 [INFO   ] SENT (Brevo) -> smgadiya@gmail.com (SHEETAL MAHENDRA GADIYA) | PlacementHub pre-seed intro with SHEETAL MAHENDRA GADIYA | messageId=<202606190140.25290099565@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:10:48 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:10:58 [INFO   ] PROGRESS | Send 5/32 | SENT | smgadiya@gmail.com | SHEETAL MAHENDRA GADIYA [Chartered Accountants & Company Secretaries] | ok=5 fail=0 skip=0
+2026-06-19 07:10:58 [INFO   ] PROGRESS | Send 6/32 | SENDING | casnehalmohite@gmail.com | SNEHAL SAURABH MOHITE [Chartered Accountants & Company Secretaries] | ok=5 fail=0 skip=0
+2026-06-19 07:11:07 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:07 [INFO   ] PROGRESS | Email content — To: casnehalmohite@gmail.com
+2026-06-19 07:11:07 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with SNEHAL SAURABH MOHITE
+2026-06-19 07:11:07 [INFO   ] PROGRESS | Body:
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:11:07 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:11:07 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:07 [INFO   ] 
+2026-06-19 07:11:07 [INFO   ] 
+2026-06-19 07:11:07 [INFO   ] PROGRESS | Email preview — To: casnehalmohite@gmail.com | Subject: PlacementHub pre-seed intro with SNEHAL SAURABH MOHITE
+2026-06-19 07:11:07 [INFO   ] SENT (Brevo) -> casnehalmohite@gmail.com (SNEHAL SAURABH MOHITE) | PlacementHub pre-seed intro with SNEHAL SAURABH MOHITE | messageId=<202606190141.20143417575@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:11:07 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:11:17 [INFO   ] PROGRESS | Send 6/32 | SENT | casnehalmohite@gmail.com | SNEHAL SAURABH MOHITE [Chartered Accountants & Company Secretaries] | ok=6 fail=0 skip=0
+2026-06-19 07:11:17 [INFO   ] PROGRESS | Send 7/32 | SENDING | abhaykumardahotre@gmail.com | DAHOTRE ABHAYKUMAR BAPURAO [Chartered Accountants & Company Secretaries] | ok=6 fail=0 skip=0
+2026-06-19 07:11:20 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:20 [INFO   ] PROGRESS | Email content — To: abhaykumardahotre@gmail.com
+2026-06-19 07:11:20 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with DAHOTRE ABHAYKUMAR BAPURAO
+2026-06-19 07:11:20 [INFO   ] PROGRESS | Body:
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:11:20 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:11:20 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:20 [INFO   ] 
+2026-06-19 07:11:20 [INFO   ] 
+2026-06-19 07:11:20 [INFO   ] PROGRESS | Email preview — To: abhaykumardahotre@gmail.com | Subject: PlacementHub pre-seed intro with DAHOTRE ABHAYKUMAR BAPURAO
+2026-06-19 07:11:21 [INFO   ] SENT (Brevo) -> abhaykumardahotre@gmail.com (DAHOTRE ABHAYKUMAR BAPURAO) | PlacementHub pre-seed intro with DAHOTRE ABHAYKUMAR BAPURAO | messageId=<202606190141.57699752627@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:11:21 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:11:31 [INFO   ] PROGRESS | Send 7/32 | SENT | abhaykumardahotre@gmail.com | DAHOTRE ABHAYKUMAR BAPURAO [Chartered Accountants & Company Secretaries] | ok=7 fail=0 skip=0
+2026-06-19 07:11:31 [INFO   ] PROGRESS | Send 8/32 | SENDING | cajayeshrelkar@gmail.com | JAYESH EKNATHRAO RELKAR [Chartered Accountants & Company Secretaries] | ok=7 fail=0 skip=0
+2026-06-19 07:11:36 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:36 [INFO   ] PROGRESS | Email content — To: cajayeshrelkar@gmail.com
+2026-06-19 07:11:36 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with JAYESH EKNATHRAO RELKAR
+2026-06-19 07:11:36 [INFO   ] PROGRESS | Body:
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:11:36 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:11:36 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:36 [INFO   ] 
+2026-06-19 07:11:36 [INFO   ] 
+2026-06-19 07:11:36 [INFO   ] PROGRESS | Email preview — To: cajayeshrelkar@gmail.com | Subject: PlacementHub pre-seed intro with JAYESH EKNATHRAO RELKAR
+2026-06-19 07:11:37 [INFO   ] SENT (Brevo) -> cajayeshrelkar@gmail.com (JAYESH EKNATHRAO RELKAR) | PlacementHub pre-seed intro with JAYESH EKNATHRAO RELKAR | messageId=<202606190141.84888454129@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:11:37 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:11:47 [INFO   ] PROGRESS | Send 8/32 | SENT | cajayeshrelkar@gmail.com | JAYESH EKNATHRAO RELKAR [Chartered Accountants & Company Secretaries] | ok=8 fail=0 skip=0
+2026-06-19 07:11:47 [INFO   ] PROGRESS | Send 9/32 | SENDING | info@jainandpartners.com | Vacancy List [Company Secretary Firms] | ok=8 fail=0 skip=0
+2026-06-19 07:11:48 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:48 [INFO   ] PROGRESS | Email content — To: info@jainandpartners.com
+2026-06-19 07:11:48 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with buchasia.com
+2026-06-19 07:11:48 [INFO   ] PROGRESS | Body:
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   startup network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   For a Company Secretary firm, the relevance is mainly professional and strategic:
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   PlacementHub may require support across corporate structuring, ROC/MCA compliance, board processes, ESOP documentation, investor filings, and governance.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor or promoter contacts.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:11:48 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:11:48 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:11:48 [INFO   ] 
+2026-06-19 07:11:48 [INFO   ] 
+2026-06-19 07:11:48 [INFO   ] PROGRESS | Email preview — To: info@jainandpartners.com | Subject: PlacementHub pre-seed intro with buchasia.com
+2026-06-19 07:11:49 [INFO   ] SENT (Brevo) -> info@jainandpartners.com (Vacancy List) | PlacementHub pre-seed intro with buchasia.com | messageId=<202606190141.24340309856@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:11:49 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:11:59 [INFO   ] PROGRESS | Send 9/32 | SENT | info@jainandpartners.com | Vacancy List [Company Secretary Firms] | ok=9 fail=0 skip=0
+2026-06-19 07:11:59 [INFO   ] PROGRESS | Send 10/32 | SENDING | gtbharat@in.gt.com | Compliance and Secretarial Services [Company Secretary Firms] | ok=9 fail=0 skip=0
+2026-06-19 07:12:01 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:01 [INFO   ] PROGRESS | Email content — To: gtbharat@in.gt.com
+2026-06-19 07:12:01 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Compliance and Secretarial Services
+2026-06-19 07:12:01 [INFO   ] PROGRESS | Body:
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   startup network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   For a Company Secretary firm, the relevance is mainly professional and strategic:
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   PlacementHub may require support across corporate structuring, ROC/MCA compliance, board processes, ESOP documentation, investor filings, and governance.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor or promoter contacts.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:12:01 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:12:01 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:01 [INFO   ] 
+2026-06-19 07:12:01 [INFO   ] 
+2026-06-19 07:12:01 [INFO   ] PROGRESS | Email preview — To: gtbharat@in.gt.com | Subject: PlacementHub pre-seed intro with Compliance and Secretarial Services
+2026-06-19 07:12:01 [INFO   ] SENT (Brevo) -> gtbharat@in.gt.com (Compliance and Secretarial Services) | PlacementHub pre-seed intro with Compliance and Secretarial Services | messageId=<202606190142.35481816977@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:12:01 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:12:11 [INFO   ] PROGRESS | Send 10/32 | SENT | gtbharat@in.gt.com | Compliance and Secretarial Services [Company Secretary Firms] | ok=10 fail=0 skip=0
+2026-06-19 07:12:11 [INFO   ] PROGRESS | Send 11/32 | SENDING | btechdocuments@sitpune.edu.in | Training & Placement Cell [Company Secretary Firms] | ok=10 fail=0 skip=0
+2026-06-19 07:12:13 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:13 [INFO   ] PROGRESS | Email content — To: btechdocuments@sitpune.edu.in
+2026-06-19 07:12:13 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Training & Placement Cell
+2026-06-19 07:12:13 [INFO   ] PROGRESS | Body:
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   startup network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   For a Company Secretary firm, the relevance is mainly professional and strategic:
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   PlacementHub may require support across corporate structuring, ROC/MCA compliance, board processes, ESOP documentation, investor filings, and governance.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor or promoter contacts.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:12:13 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:12:13 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:13 [INFO   ] 
+2026-06-19 07:12:13 [INFO   ] 
+2026-06-19 07:12:13 [INFO   ] PROGRESS | Email preview — To: btechdocuments@sitpune.edu.in | Subject: PlacementHub pre-seed intro with Training & Placement Cell
+2026-06-19 07:12:14 [INFO   ] SENT (Brevo) -> btechdocuments@sitpune.edu.in (Training & Placement Cell) | PlacementHub pre-seed intro with Training & Placement Cell | messageId=<202606190142.32908786301@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:12:14 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:12:24 [INFO   ] PROGRESS | Send 11/32 | SENT | btechdocuments@sitpune.edu.in | Training & Placement Cell [Company Secretary Firms] | ok=11 fail=0 skip=0
+2026-06-19 07:12:24 [INFO   ] PROGRESS | Send 12/32 | SENDING | admissions@aceec.ac.in | Training and Placement Cell [Company Secretary Firms] | ok=11 fail=0 skip=0
+2026-06-19 07:12:26 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:26 [INFO   ] PROGRESS | Email content — To: admissions@aceec.ac.in
+2026-06-19 07:12:26 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Training and Placement Cell
+2026-06-19 07:12:26 [INFO   ] PROGRESS | Body:
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   startup network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   For a Company Secretary firm, the relevance is mainly professional and strategic:
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   PlacementHub may require support across corporate structuring, ROC/MCA compliance, board processes, ESOP documentation, investor filings, and governance.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor or promoter contacts.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:12:26 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:12:26 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:26 [INFO   ] 
+2026-06-19 07:12:26 [INFO   ] 
+2026-06-19 07:12:26 [INFO   ] PROGRESS | Email preview — To: admissions@aceec.ac.in | Subject: PlacementHub pre-seed intro with Training and Placement Cell
+2026-06-19 07:12:27 [INFO   ] SENT (Brevo) -> admissions@aceec.ac.in (Training and Placement Cell) | PlacementHub pre-seed intro with Training and Placement Cell | messageId=<202606190142.62524267441@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:12:27 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:12:37 [INFO   ] PROGRESS | Send 12/32 | SENT | admissions@aceec.ac.in | Training and Placement Cell [Company Secretary Firms] | ok=12 fail=0 skip=0
+2026-06-19 07:12:37 [INFO   ] PROGRESS | Send 13/32 | SENDING | info@levare.co.in | Finance, Accounting, Costing, GST, Taxation & [Tax Consultants] | ok=12 fail=0 skip=0
+2026-06-19 07:12:39 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:39 [INFO   ] PROGRESS | Email content — To: info@levare.co.in
+2026-06-19 07:12:39 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Finance, Accounting, Costing, GST, Taxation & Fixed Asset ...
+2026-06-19 07:12:39 [INFO   ] PROGRESS | Body:
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   HNI client network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   For a tax consultant, the relevance is mainly threefold:
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   A credible early-stage education and employability platform to share with suitable investor clients.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Potential future advisory work across GST, TDS, payroll tax, startup structuring, and investor tax documentation.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   A relationship-led introduction model that respects your client ownership and professional judgement.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:12:39 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:12:39 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:12:39 [INFO   ] 
+2026-06-19 07:12:39 [INFO   ] 
+2026-06-19 07:12:39 [INFO   ] PROGRESS | Email preview — To: info@levare.co.in | Subject: PlacementHub pre-seed intro with Finance, Accounting, Costing, GST, Taxation & Fixed Asset ...
+2026-06-19 07:12:40 [INFO   ] SENT (Brevo) -> info@levare.co.in (Finance, Accounting, Costing, GST, Taxation & Fixed Asset ...) | PlacementHub pre-seed intro with Finance, Accounting, Costing, GST, Taxation & Fixed Asset ... | messageId=<202606190142.63832863242@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:12:40 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:12:50 [INFO   ] PROGRESS | Send 13/32 | SENT | info@levare.co.in | Finance, Accounting, Costing, GST, Taxation & [Tax Consultants] | ok=13 fail=0 skip=0
+2026-06-19 07:12:50 [INFO   ] PROGRESS | Send 14/32 | SENDING | info@jainanuragassociates.com | Jain Anurag & Associates: Best Chartered Acco [Tax Consultants] | ok=13 fail=0 skip=0
+2026-06-19 07:13:19 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:13:19 [INFO   ] PROGRESS | Email content — To: info@jainanuragassociates.com
+2026-06-19 07:13:19 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Jain Anurag & Associates: Best Chartered Accountants in ...
+2026-06-19 07:13:19 [INFO   ] PROGRESS | Body:
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   HNI client network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   For a tax consultant, the relevance is mainly threefold:
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   A credible early-stage education and employability platform to share with suitable investor clients.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Potential future advisory work across GST, TDS, payroll tax, startup structuring, and investor tax documentation.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   A relationship-led introduction model that respects your client ownership and professional judgement.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:13:19 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:13:19 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:13:19 [INFO   ] 
+2026-06-19 07:13:19 [INFO   ] 
+2026-06-19 07:13:19 [INFO   ] PROGRESS | Email preview — To: info@jainanuragassociates.com | Subject: PlacementHub pre-seed intro with Jain Anurag & Associates: Best Chartered Accountants in ...
+2026-06-19 07:13:20 [INFO   ] SENT (Brevo) -> info@jainanuragassociates.com (Jain Anurag & Associates: Best Chartered Accountants in ...) | PlacementHub pre-seed intro with Jain Anurag & Associates: Best Chartered Accountants in ... | messageId=<202606190143.72172990092@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:13:20 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:13:30 [INFO   ] PROGRESS | Send 14/32 | SENT | info@jainanuragassociates.com | Jain Anurag & Associates: Best Chartered Acco [Tax Consultants] | ok=14 fail=0 skip=0
+2026-06-19 07:13:30 [INFO   ] PROGRESS | Send 15/32 | SENDING | info@krishnaaccounts.in | Shaping Financial Leaders [Tax Consultants] | ok=14 fail=0 skip=0
+2026-06-19 07:13:32 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:13:32 [INFO   ] PROGRESS | Email content — To: info@krishnaaccounts.in
+2026-06-19 07:13:32 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Shaping Financial Leaders
+2026-06-19 07:13:32 [INFO   ] PROGRESS | Body:
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   HNI client network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   For a tax consultant, the relevance is mainly threefold:
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   A credible early-stage education and employability platform to share with suitable investor clients.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Potential future advisory work across GST, TDS, payroll tax, startup structuring, and investor tax documentation.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   A relationship-led introduction model that respects your client ownership and professional judgement.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:13:32 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:13:32 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:13:32 [INFO   ] 
+2026-06-19 07:13:32 [INFO   ] 
+2026-06-19 07:13:32 [INFO   ] PROGRESS | Email preview — To: info@krishnaaccounts.in | Subject: PlacementHub pre-seed intro with Shaping Financial Leaders
+2026-06-19 07:13:33 [INFO   ] SENT (Brevo) -> info@krishnaaccounts.in (Shaping Financial Leaders) | PlacementHub pre-seed intro with Shaping Financial Leaders | messageId=<202606190143.70145985261@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:13:33 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:13:43 [INFO   ] PROGRESS | Send 15/32 | SENT | info@krishnaaccounts.in | Shaping Financial Leaders [Tax Consultants] | ok=15 fail=0 skip=0
+2026-06-19 07:13:43 [INFO   ] PROGRESS | Send 16/32 | SENDING | info@e-startupindia.com | Contact Us [Tax Consultants] | ok=15 fail=0 skip=0
+2026-06-19 07:13:56 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:13:56 [INFO   ] PROGRESS | Email content — To: info@e-startupindia.com
+2026-06-19 07:13:56 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with e-startupindia.com
+2026-06-19 07:13:56 [INFO   ] PROGRESS | Body:
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, promoter, or
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   HNI client network may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   For a tax consultant, the relevance is mainly threefold:
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   A credible early-stage education and employability platform to share with suitable investor clients.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Potential future advisory work across GST, TDS, payroll tax, startup structuring, and investor tax documentation.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   A relationship-led introduction model that respects your client ownership and professional judgement.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:13:56 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:13:56 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:13:56 [INFO   ] 
+2026-06-19 07:13:56 [INFO   ] 
+2026-06-19 07:13:56 [INFO   ] PROGRESS | Email preview — To: info@e-startupindia.com | Subject: PlacementHub pre-seed intro with e-startupindia.com
+2026-06-19 07:13:57 [INFO   ] SENT (Brevo) -> info@e-startupindia.com (Contact Us) | PlacementHub pre-seed intro with e-startupindia.com | messageId=<202606190143.35745892013@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:13:57 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:14:07 [INFO   ] PROGRESS | Send 16/32 | SENT | info@e-startupindia.com | Contact Us [Tax Consultants] | ok=16 fail=0 skip=0
+2026-06-19 07:14:07 [INFO   ] PROGRESS | Send 17/32 | SENDING | info@k7intl.com | IDP's Referral Partners in India [Overseas Education / Immigration] | ok=16 fail=0 skip=0
+2026-06-19 07:14:08 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:14:08 [INFO   ] PROGRESS | Email content — To: info@k7intl.com
+2026-06-19 07:14:08 [INFO   ] PROGRESS | Subject: PlacementHub student outreach with ieltsidpindia.com
+2026-06-19 07:14:08 [INFO   ] PROGRESS | Body:
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   IDP's Referral Partners in India.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   PlacementHub is a campus placement and employability platform working with colleges, placement cells,
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   and graduating students across India. We are speaking with overseas education and immigration
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   consultants who may benefit from earlier visibility in the student journey, and who may also see value
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   in participating as strategic partners as the platform grows. PlacementHub is currently in its pre-seed
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   fundraising stage, and I am also soliciting strategic seed investment from aligned partners.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   For an overseas education or immigration practice, the fit is simple:
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Access to students while they are still shaping career, higher education, and migration plans.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   College-led engagement opportunities for seminars, counselling sessions, and structured student outreach.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Better context on student goals and readiness, helping your team focus on warmer and more relevant prospects.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   IDP's Referral Partners in India have consistently demonstrated exceptional expertise in providing comprehensive study abroad guidance, streamlined visa support, and tailored overseas education pathways, empowering numerous students to achieve their international academic and career aspirations.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   selected institutes.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:14:08 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:14:08 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:14:08 [INFO   ] 
+2026-06-19 07:14:08 [INFO   ] 
+2026-06-19 07:14:08 [INFO   ] PROGRESS | Email preview — To: info@k7intl.com | Subject: PlacementHub student outreach with ieltsidpindia.com
+2026-06-19 07:14:09 [INFO   ] SENT (Brevo) -> info@k7intl.com (IDP's Referral Partners in India) | PlacementHub student outreach with ieltsidpindia.com | messageId=<202606190144.34042121098@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:14:09 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:14:19 [INFO   ] PROGRESS | Send 17/32 | SENT | info@k7intl.com | IDP's Referral Partners in India [Overseas Education / Immigration] | ok=17 fail=0 skip=0
+2026-06-19 07:14:19 [INFO   ] PROGRESS | Send 18/32 | SENDING | info@ggims.ae | GGIMS: Best Immigration Consultants in India [Overseas Education / Immigration] | ok=17 fail=0 skip=0
+2026-06-19 07:14:37 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:14:37 [INFO   ] PROGRESS | Email content — To: info@ggims.ae
+2026-06-19 07:14:37 [INFO   ] PROGRESS | Subject: PlacementHub student outreach with ggims.com
+2026-06-19 07:14:37 [INFO   ] PROGRESS | Body:
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   GGIMS: Best Immigration Consultants in India.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   PlacementHub is a campus placement and employability platform working with colleges, placement cells,
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   and graduating students across India. We are speaking with overseas education and immigration
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   consultants who may benefit from earlier visibility in the student journey, and who may also see value
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   in participating as strategic partners as the platform grows. PlacementHub is currently in its pre-seed
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   fundraising stage, and I am also soliciting strategic seed investment from aligned partners.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   For an overseas education or immigration practice, the fit is simple:
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Access to students while they are still shaping career, higher education, and migration plans.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   College-led engagement opportunities for seminars, counselling sessions, and structured student outreach.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Better context on student goals and readiness, helping your team focus on warmer and more relevant prospects.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   GGIMS demonstrates exceptional expertise in providing comprehensive study abroad guidance, streamlined visa support, and tailored overseas education pathways, making them a trusted and reliable partner for individuals seeking to pursue educational opportunities abroad.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   selected institutes.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:14:37 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:14:37 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:14:37 [INFO   ] 
+2026-06-19 07:14:37 [INFO   ] 
+2026-06-19 07:14:37 [INFO   ] PROGRESS | Email preview — To: info@ggims.ae | Subject: PlacementHub student outreach with ggims.com
+2026-06-19 07:14:38 [INFO   ] SENT (Brevo) -> info@ggims.ae (GGIMS: Best Immigration Consultants in India) | PlacementHub student outreach with ggims.com | messageId=<202606190144.52137429492@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:14:38 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:14:48 [INFO   ] PROGRESS | Send 18/32 | SENT | info@ggims.ae | GGIMS: Best Immigration Consultants in India [Overseas Education / Immigration] | ok=18 fail=0 skip=0
+2026-06-19 07:14:48 [INFO   ] PROGRESS | Send 19/32 | SENDING | info@taxoindia.in | Top Chartered Accountants Distributors, Pune [Chartered Accountants & Company Secretaries] | ok=18 fail=0 skip=0
+2026-06-19 07:14:56 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:14:56 [INFO   ] PROGRESS | Email content — To: info@taxoindia.in
+2026-06-19 07:14:56 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with Top Chartered Accountants Distributors, Pune
+2026-06-19 07:14:56 [INFO   ] PROGRESS | Body:
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:14:56 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:14:56 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:14:56 [INFO   ] 
+2026-06-19 07:14:56 [INFO   ] 
+2026-06-19 07:14:56 [INFO   ] PROGRESS | Email preview — To: info@taxoindia.in | Subject: PlacementHub pre-seed intro with Top Chartered Accountants Distributors, Pune
+2026-06-19 07:14:57 [INFO   ] SENT (Brevo) -> info@taxoindia.in (Top Chartered Accountants Distributors, Pune) | PlacementHub pre-seed intro with Top Chartered Accountants Distributors, Pune | messageId=<202606190144.90602174798@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:14:57 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:15:07 [INFO   ] PROGRESS | Send 19/32 | SENT | info@taxoindia.in | Top Chartered Accountants Distributors, Pune [Chartered Accountants & Company Secretaries] | ok=19 fail=0 skip=0
+2026-06-19 07:15:07 [INFO   ] PROGRESS | Send 20/32 | SENDING | info@asasso.in | CA Firm Hiring List with Contact Details [Chartered Accountants & Company Secretaries] | ok=19 fail=0 skip=0
+2026-06-19 07:15:09 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:15:09 [INFO   ] PROGRESS | Email content — To: info@asasso.in
+2026-06-19 07:15:09 [INFO   ] PROGRESS | Subject: PlacementHub pre-seed intro with CA Firm Hiring List with Contact Details
+2026-06-19 07:15:09 [INFO   ] PROGRESS | Body:
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether any of your investor, entrepreneur, or
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   HNI clients may be open to reviewing a strategic seed opportunity.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   My name is Sandeep Jain. PlacementHub is currently in its pre-seed fundraising stage, and I am
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   soliciting strategic seed investment for the same. PlacementHub is a campus placement and employability
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   platform connecting students, colleges, and recruiters. The product is built and in early
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   commercialization. A brief investment note is linked below.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   For a Chartered Accountant firm, the relevance is mainly professional and strategic:
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   PlacementHub may require support across accounting, taxation, compliance, payroll, investor documentation, audit, and related professional services.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and, where appropriate, introductions to suitable investor clients.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   If the opportunity is worth a look, I would be happy to send the note and speak briefly about the round,
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   the platform, and the type of strategic investors we are looking for.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Warm Regards,
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:15:09 [INFO   ] PROGRESS |   Detailed Note on Funding Requirement
+2026-06-19 07:15:09 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:15:09 [INFO   ] 
+2026-06-19 07:15:09 [INFO   ] 
+2026-06-19 07:15:09 [INFO   ] PROGRESS | Email preview — To: info@asasso.in | Subject: PlacementHub pre-seed intro with CA Firm Hiring List with Contact Details
+2026-06-19 07:15:09 [INFO   ] SENT (Brevo) -> info@asasso.in (CA Firm Hiring List with Contact Details) | PlacementHub pre-seed intro with CA Firm Hiring List with Contact Details | messageId=<202606190145.98235019743@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:15:09 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:15:19 [INFO   ] PROGRESS | Send 20/32 | SENT | info@asasso.in | CA Firm Hiring List with Contact Details [Chartered Accountants & Company Secretaries] | ok=20 fail=0 skip=0
+2026-06-19 07:15:19 [INFO   ] PROGRESS | Send 21/32 | SENDING | info@a2y.sg | Best Staffing Companies in Pune [Recruitment & Staffing Firms] | ok=20 fail=0 skip=0
+2026-06-19 07:15:28 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:15:28 [INFO   ] PROGRESS | Email content — To: info@a2y.sg
+2026-06-19 07:15:28 [INFO   ] PROGRESS | Subject: PlacementHub graduate hiring with pitcs.in
+2026-06-19 07:15:28 [INFO   ] PROGRESS | Body:
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Best Staffing Companies in Pune.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   PlacementHub connects colleges, placement cells, and employers through a single campus placement
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   ecosystem. We are speaking with recruitment and staffing firms that want earlier access to graduate
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   talent. PlacementHub is currently in its pre-seed fundraising stage, and I am also soliciting strategic
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   seed investment from aligned partners.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   For a recruitment or staffing firm, the fit is practical:
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Access to final-year students and recent graduates during active placement cycles.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   College and placement-cell visibility for hiring drives, client mandates, and graduate programs.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Better shortlisting context across skills, domains, locations, and role intent.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   The company excels in providing top-notch recruitment and staffing services, particularly in campus recruitment, talent acquisition, and graduate hiring, demonstrating exceptional strengths in identifying and placing skilled candidates in prominent organizations.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:15:28 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:15:28 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:15:28 [INFO   ] 
+2026-06-19 07:15:28 [INFO   ] 
+2026-06-19 07:15:28 [INFO   ] PROGRESS | Email preview — To: info@a2y.sg | Subject: PlacementHub graduate hiring with pitcs.in
+2026-06-19 07:15:29 [INFO   ] SENT (Brevo) -> info@a2y.sg (Best Staffing Companies in Pune) | PlacementHub graduate hiring with pitcs.in | messageId=<202606190145.64395017963@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:15:29 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:15:39 [INFO   ] PROGRESS | Send 21/32 | SENT | info@a2y.sg | Best Staffing Companies in Pune [Recruitment & Staffing Firms] | ok=21 fail=0 skip=0
+2026-06-19 07:15:39 [INFO   ] PROGRESS | Send 22/32 | SENDING | info@justvisitonline.com | Best Coaching For Competitive Exams in pune M [Coaching & Test Prep] | ok=21 fail=0 skip=0
+2026-06-19 07:16:09 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-19 07:16:40 [WARNING] NVIDIA call failed (attempt 2/5): The read operation timed out — rotating key.
+2026-06-19 07:16:43 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:16:43 [INFO   ] PROGRESS | Email content — To: info@justvisitonline.com
+2026-06-19 07:16:43 [INFO   ] PROGRESS | Subject: PlacementHub coaching partnership with justvisitonline.com
+2026-06-19 07:16:43 [INFO   ] PROGRESS | Body:
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Best Coaching For Competitive Exams in pune Maharashtra.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   PlacementHub works with educational institutions on placements and employability. We are exploring
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   partnerships with coaching and test-prep providers that want earlier student visibility and warmer
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   referral channels. PlacementHub is currently in its pre-seed fundraising stage, and I am also
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   soliciting strategic seed investment from aligned partners.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   For a coaching or test-prep institute, the fit is practical:
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Access to students considering exam prep, career coaching, and placement support.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   College-led opportunities for awareness sessions, scholarship drives, and campus outreach.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Better context on exam goals, academic streams, and preparation timelines.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Best Coaching For Competitive Exams in Pune, Maharashtra, demonstrates exceptional expertise in exam preparation, providing comprehensive career coaching and yielding impressive student success outcomes, thereby establishing itself as a trusted and reliable institution for students seeking to excel in competitive examinations.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:16:43 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:16:43 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:16:43 [INFO   ] 
+2026-06-19 07:16:43 [INFO   ] 
+2026-06-19 07:16:43 [INFO   ] PROGRESS | Email preview — To: info@justvisitonline.com | Subject: PlacementHub coaching partnership with justvisitonline.com
+2026-06-19 07:16:44 [INFO   ] SENT (Brevo) -> info@justvisitonline.com (Best Coaching For Competitive Exams in pune Maharashtra) | PlacementHub coaching partnership with justvisitonline.com | messageId=<202606190146.44607476444@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:16:44 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:16:54 [INFO   ] PROGRESS | Send 22/32 | SENT | info@justvisitonline.com | Best Coaching For Competitive Exams in pune M [Coaching & Test Prep] | ok=22 fail=0 skip=0
+2026-06-19 07:16:54 [INFO   ] PROGRESS | Send 23/32 | SENDING | info@foundit.in | Latest Nbfc Jobs Vacancies in Pune 12 June 20 [NBFC & Banks (Campus Hiring)] | ok=22 fail=0 skip=0
+2026-06-19 07:16:55 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:16:55 [INFO   ] PROGRESS | Email content — To: info@foundit.in
+2026-06-19 07:16:55 [INFO   ] PROGRESS | Subject: PlacementHub campus hiring with foundit.in
+2026-06-19 07:16:55 [INFO   ] PROGRESS | Body:
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Latest Nbfc Jobs Vacancies in Pune 12 June 2026.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   PlacementHub works with colleges on campus placements and graduate hiring. We are exploring partnerships
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   with banks and NBFCs that want structured campus visibility and graduate talent access. PlacementHub is
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   currently in its pre-seed fundraising stage, and I am also soliciting strategic seed investment from
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   aligned partners.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   For a bank or NBFC, the fit is practical:
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Access to graduates considering trainee, operations, relationship, and branch-facing roles.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Campus visibility through placement cells, financial literacy sessions, and structured hiring drives.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Better shortlisting context across academics, locations, domains, and role preferences.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   The company has demonstrated exceptional expertise in connecting graduates with prominent NBFC and banking institutions through its well-structured graduate trainee programs, fostering successful banking careers, and maintaining a robust campus talent pipeline that effectively meets the industry's hiring needs.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a focused campus pilot.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:16:55 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:16:55 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:16:55 [INFO   ] 
+2026-06-19 07:16:55 [INFO   ] 
+2026-06-19 07:16:55 [INFO   ] PROGRESS | Email preview — To: info@foundit.in | Subject: PlacementHub campus hiring with foundit.in
+2026-06-19 07:16:55 [INFO   ] SENT (Brevo) -> info@foundit.in (Latest Nbfc Jobs Vacancies in Pune 12 June 2026) | PlacementHub campus hiring with foundit.in | messageId=<202606190146.16026093313@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:16:55 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:17:05 [INFO   ] PROGRESS | Send 23/32 | SENT | info@foundit.in | Latest Nbfc Jobs Vacancies in Pune 12 June 20 [NBFC & Banks (Campus Hiring)] | ok=23 fail=0 skip=0
+2026-06-19 07:17:05 [INFO   ] PROGRESS | Send 24/32 | SENDING | info@traininginstitutepune.in | Contact Us [Training & Finishing Schools] | ok=23 fail=0 skip=0
+2026-06-19 07:17:09 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:17:09 [INFO   ] PROGRESS | Email content — To: info@traininginstitutepune.in
+2026-06-19 07:17:09 [INFO   ] PROGRESS | Subject: PlacementHub training partnership with traininginstitutepune.in
+2026-06-19 07:17:09 [INFO   ] PROGRESS | Body:
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Contact Us.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   PlacementHub works with colleges on campus placements and employability outcomes. We are exploring
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   partnerships with training and finishing schools that want warm, placement-linked student demand.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   PlacementHub is currently in its pre-seed fundraising stage, and I am also soliciting strategic seed
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   investment from aligned partners.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   For a training or finishing school, the fit is clear:
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Access to students who are actively preparing for interviews, aptitude rounds, and placement season.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   College-led opportunities for bootcamps, placement-prep drives, and finishing-school programs.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Better visibility into skill gaps and readiness, helping shape more relevant training offers.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   The team at Training Institute Pune demonstrates exceptional expertise in placement training, effectively enhancing employability skills and fostering career readiness in individuals, thereby bridging the gap between academic knowledge and professional requirements.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:17:09 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:17:09 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:17:09 [INFO   ] 
+2026-06-19 07:17:09 [INFO   ] 
+2026-06-19 07:17:09 [INFO   ] PROGRESS | Email preview — To: info@traininginstitutepune.in | Subject: PlacementHub training partnership with traininginstitutepune.in
+2026-06-19 07:17:10 [INFO   ] SENT (Brevo) -> info@traininginstitutepune.in (Contact Us) | PlacementHub training partnership with traininginstitutepune.in | messageId=<202606190147.65310121976@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:17:10 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:17:20 [INFO   ] PROGRESS | Send 24/32 | SENT | info@traininginstitutepune.in | Contact Us [Training & Finishing Schools] | ok=24 fail=0 skip=0
+2026-06-19 07:17:20 [INFO   ] PROGRESS | Send 25/32 | SENDING | info@akankshafund.org | Akanksha Education Fund [Law Firms & Lawyers] | ok=24 fail=0 skip=0
+2026-06-19 07:17:37 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:17:37 [INFO   ] PROGRESS | Email content — To: info@akankshafund.org
+2026-06-19 07:17:37 [INFO   ] PROGRESS | Subject: PlacementHub legal support with akankshafund.org
+2026-06-19 07:17:37 [INFO   ] PROGRESS | Body:
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Akanksha Education Fund.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   PlacementHub works with colleges on placements, employability, and student-career workflows. We are
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   also speaking with professional firms that may be interested in supporting the company during its
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   early growth phase. PlacementHub is currently in its pre-seed fundraising stage, and I am also
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   soliciting strategic seed investment from aligned partners.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   For a law firm, the relevance is mainly professional and strategic:
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   PlacementHub may require support across corporate structuring, contracts, employment, compliance, investment documentation, data protection, and governance.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   I would naturally be pleased to consider and prioritize firms that support PlacementHub during its early growth phase, subject to suitability and mutual agreement.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   The relationship can begin with a simple review of the investment note and a discussion on where your firm may be relevant as the company scales.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Akanksha Education Fund demonstrates exceptional expertise in providing legal advisory services and professional support, leveraging their strengths to deliver tailored guidance and counsel to businesses and institutions, ultimately fostering a strong foundation for their clients' success.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss where your firm may
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   fit as PlacementHub grows.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:17:37 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:17:37 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:17:37 [INFO   ] 
+2026-06-19 07:17:37 [INFO   ] 
+2026-06-19 07:17:37 [INFO   ] PROGRESS | Email preview — To: info@akankshafund.org | Subject: PlacementHub legal support with akankshafund.org
+2026-06-19 07:17:37 [INFO   ] SENT (Brevo) -> info@akankshafund.org (Akanksha Education Fund) | PlacementHub legal support with akankshafund.org | messageId=<202606190147.13687521994@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:17:38 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:17:48 [INFO   ] PROGRESS | Send 25/32 | SENT | info@akankshafund.org | Akanksha Education Fund [Law Firms & Lawyers] | ok=25 fail=0 skip=0
+2026-06-19 07:17:48 [INFO   ] PROGRESS | Send 26/32 | SENDING | info@gdx.in | Overseas Education Consultants in Pune (NIBM  [Coaching & Test Prep] | ok=25 fail=0 skip=0
+2026-06-19 07:17:51 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:17:51 [INFO   ] PROGRESS | Email content — To: info@gdx.in
+2026-06-19 07:17:51 [INFO   ] PROGRESS | Subject: PlacementHub coaching partnership with gdx.in
+2026-06-19 07:17:51 [INFO   ] PROGRESS | Body:
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Overseas Education Consultants in Pune (NIBM Road).
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   PlacementHub works with educational institutions on placements and employability. We are exploring
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   partnerships with coaching and test-prep providers that want earlier student visibility and warmer
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   referral channels. PlacementHub is currently in its pre-seed fundraising stage, and I am also
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   soliciting strategic seed investment from aligned partners.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   For a coaching or test-prep institute, the fit is practical:
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Access to students considering exam prep, career coaching, and placement support.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   College-led opportunities for awareness sessions, scholarship drives, and campus outreach.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Better context on exam goals, academic streams, and preparation timelines.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Overseas Education Consultants in Pune has established itself as a trusted partner for students seeking to study abroad, offering comprehensive coaching and test preparation services, expert career coaching, and a proven track record of achieving outstanding student success outcomes.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:17:51 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:17:51 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:17:51 [INFO   ] 
+2026-06-19 07:17:51 [INFO   ] 
+2026-06-19 07:17:51 [INFO   ] PROGRESS | Email preview — To: info@gdx.in | Subject: PlacementHub coaching partnership with gdx.in
+2026-06-19 07:17:52 [INFO   ] SENT (Brevo) -> info@gdx.in (Overseas Education Consultants in Pune (NIBM Road)) | PlacementHub coaching partnership with gdx.in | messageId=<202606190147.58082521487@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:17:52 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:18:02 [INFO   ] PROGRESS | Send 26/32 | SENT | info@gdx.in | Overseas Education Consultants in Pune (NIBM  [Coaching & Test Prep] | ok=26 fail=0 skip=0
+2026-06-19 07:18:02 [INFO   ] PROGRESS | Send 27/32 | SENDING | info@cphrservices.in | 5 Ways to Find a Career Counselor & How They  [Coaching & Test Prep] | ok=26 fail=0 skip=0
+2026-06-19 07:18:32 [WARNING] NVIDIA call failed (attempt 1/5): The read operation timed out — rotating key.
+2026-06-19 07:18:37 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:18:37 [INFO   ] PROGRESS | Email content — To: info@cphrservices.in
+2026-06-19 07:18:37 [INFO   ] PROGRESS | Subject: PlacementHub coaching partnership with cphrservices.in
+2026-06-19 07:18:37 [INFO   ] PROGRESS | Body:
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   5 Ways to Find a Career Counselor & How They Help.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   PlacementHub works with educational institutions on placements and employability. We are exploring
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   partnerships with coaching and test-prep providers that want earlier student visibility and warmer
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   referral channels. PlacementHub is currently in its pre-seed fundraising stage, and I am also
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   soliciting strategic seed investment from aligned partners.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   For a coaching or test-prep institute, the fit is practical:
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Access to students considering exam prep, career coaching, and placement support.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   College-led opportunities for awareness sessions, scholarship drives, and campus outreach.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Better context on exam goals, academic streams, and preparation timelines.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   CPHR Services demonstrates exceptional expertise in guiding students towards achieving their academic and professional goals, leveraging their comprehensive coaching and test preparation services to drive remarkable career success outcomes and empower individuals to make informed decisions about their future.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:18:37 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:18:37 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:18:37 [INFO   ] 
+2026-06-19 07:18:37 [INFO   ] 
+2026-06-19 07:18:37 [INFO   ] PROGRESS | Email preview — To: info@cphrservices.in | Subject: PlacementHub coaching partnership with cphrservices.in
+2026-06-19 07:18:38 [INFO   ] SENT (Brevo) -> info@cphrservices.in (5 Ways to Find a Career Counselor & How They Help) | PlacementHub coaching partnership with cphrservices.in | messageId=<202606190148.82852383288@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:18:38 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:18:48 [INFO   ] PROGRESS | Send 27/32 | SENT | info@cphrservices.in | 5 Ways to Find a Career Counselor & How They  [Coaching & Test Prep] | ok=27 fail=0 skip=0
+2026-06-19 07:18:48 [INFO   ] PROGRESS | Send 28/32 | SENDING | info@punetrainingcompany.com | Expert Corporate Trainers in Pune [Coaching & Test Prep] | ok=27 fail=0 skip=0
+2026-06-19 07:18:59 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:18:59 [INFO   ] PROGRESS | Email content — To: info@punetrainingcompany.com
+2026-06-19 07:18:59 [INFO   ] PROGRESS | Subject: PlacementHub coaching partnership with punetrainingcompany.com
+2026-06-19 07:18:59 [INFO   ] PROGRESS | Body:
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Expert Corporate Trainers in Pune.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   PlacementHub works with educational institutions on placements and employability. We are exploring
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   partnerships with coaching and test-prep providers that want earlier student visibility and warmer
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   referral channels. PlacementHub is currently in its pre-seed fundraising stage, and I am also
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   soliciting strategic seed investment from aligned partners.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   For a coaching or test-prep institute, the fit is practical:
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Access to students considering exam prep, career coaching, and placement support.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   College-led opportunities for awareness sessions, scholarship drives, and campus outreach.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Better context on exam goals, academic streams, and preparation timelines.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   The team at Expert Corporate Trainers in Pune demonstrates exceptional expertise in coaching and test preparation, leveraging their strengths in personalized career coaching and tailored exam preparation strategies to consistently deliver outstanding student success outcomes.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:18:59 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:18:59 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:18:59 [INFO   ] 
+2026-06-19 07:18:59 [INFO   ] 
+2026-06-19 07:18:59 [INFO   ] PROGRESS | Email preview — To: info@punetrainingcompany.com | Subject: PlacementHub coaching partnership with punetrainingcompany.com
+2026-06-19 07:19:00 [INFO   ] SENT (Brevo) -> info@punetrainingcompany.com (Expert Corporate Trainers in Pune) | PlacementHub coaching partnership with punetrainingcompany.com | messageId=<202606190148.72821524987@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:19:00 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:19:10 [INFO   ] PROGRESS | Send 28/32 | SENT | info@punetrainingcompany.com | Expert Corporate Trainers in Pune [Coaching & Test Prep] | ok=28 fail=0 skip=0
+2026-06-19 07:19:10 [INFO   ] PROGRESS | Send 29/32 | SENDING | info@mindgroom.com | No.1 Career Counselling for Working Professio [Coaching & Test Prep] | ok=28 fail=0 skip=0
+2026-06-19 07:19:39 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:19:39 [INFO   ] PROGRESS | Email content — To: info@mindgroom.com
+2026-06-19 07:19:39 [INFO   ] PROGRESS | Subject: PlacementHub coaching partnership with mindgroom.com
+2026-06-19 07:19:39 [INFO   ] PROGRESS | Body:
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   No.1 Career Counselling for Working Professionals in Pune.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   PlacementHub works with educational institutions on placements and employability. We are exploring
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   partnerships with coaching and test-prep providers that want earlier student visibility and warmer
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   referral channels. PlacementHub is currently in its pre-seed fundraising stage, and I am also
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   soliciting strategic seed investment from aligned partners.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   For a coaching or test-prep institute, the fit is practical:
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Access to students considering exam prep, career coaching, and placement support.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   College-led opportunities for awareness sessions, scholarship drives, and campus outreach.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Better context on exam goals, academic streams, and preparation timelines.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Mindgroom's career counselling services for working professionals in Pune have consistently demonstrated exceptional strengths in exam preparation, career coaching, and student success outcomes, effectively guiding individuals towards achieving their professional goals through personalized coaching and test prep strategies.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:19:39 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:19:39 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:19:39 [INFO   ] 
+2026-06-19 07:19:39 [INFO   ] 
+2026-06-19 07:19:39 [INFO   ] PROGRESS | Email preview — To: info@mindgroom.com | Subject: PlacementHub coaching partnership with mindgroom.com
+2026-06-19 07:19:39 [INFO   ] SENT (Brevo) -> info@mindgroom.com (No.1 Career Counselling for Working Professionals in Pune) | PlacementHub coaching partnership with mindgroom.com | messageId=<202606190149.36590947745@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:19:39 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:19:49 [INFO   ] PROGRESS | Send 29/32 | SENT | info@mindgroom.com | No.1 Career Counselling for Working Professio [Coaching & Test Prep] | ok=29 fail=0 skip=0
+2026-06-19 07:19:49 [INFO   ] PROGRESS | Send 30/32 | SENDING | info@employwise.com | Top 10 HR Tech Companies in India: Enhancing  [HRTech Companies] | ok=29 fail=0 skip=0
+2026-06-19 07:19:59 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:19:59 [INFO   ] PROGRESS | Email content — To: info@employwise.com
+2026-06-19 07:19:59 [INFO   ] PROGRESS | Subject: PlacementHub HRTech pilot with employwise.com
+2026-06-19 07:19:59 [INFO   ] PROGRESS | Body:
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Top 10 HR Tech Companies in India: Enhancing HR Operations.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   PlacementHub runs campus placement and employability programs with colleges and employers. We are
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   exploring partnerships with HRTech companies that want real-world distribution and product validation.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   PlacementHub is currently in its pre-seed fundraising stage, and I am also soliciting strategic seed
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   investment from aligned partners.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   For an HRTech company, the fit is practical:
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Access to live campus placement cycles where assessments, ATS workflows, and hiring tools can be tested.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   College and employer visibility through pilots, demos, and co-branded hiring programs.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Workflow insight from real placement operations, helping sharpen product roadmap and go-to-market.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   The company stands out among the top 10 HR tech companies in India, leveraging its expertise in hiring technology, assessments, and recruitment innovation to streamline and enhance HR operations, making it a leader in the industry.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a focused integration or institute pilot.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:19:59 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:19:59 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:19:59 [INFO   ] 
+2026-06-19 07:19:59 [INFO   ] 
+2026-06-19 07:19:59 [INFO   ] PROGRESS | Email preview — To: info@employwise.com | Subject: PlacementHub HRTech pilot with employwise.com
+2026-06-19 07:19:59 [INFO   ] SENT (Brevo) -> info@employwise.com (Top 10 HR Tech Companies in India: Enhancing HR Operations) | PlacementHub HRTech pilot with employwise.com | messageId=<202606190149.33388894962@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:19:59 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:20:09 [INFO   ] PROGRESS | Send 30/32 | SENT | info@employwise.com | Top 10 HR Tech Companies in India: Enhancing  [HRTech Companies] | ok=30 fail=0 skip=0
+2026-06-19 07:20:09 [INFO   ] PROGRESS | Send 31/32 | SENDING | info@cielhr.com | Best Recruitment Agency in Pune [Recruitment & Staffing Firms] | ok=30 fail=0 skip=0
+2026-06-19 07:20:18 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:20:18 [INFO   ] PROGRESS | Email content — To: info@cielhr.com
+2026-06-19 07:20:18 [INFO   ] PROGRESS | Subject: PlacementHub graduate hiring with cielhr.com
+2026-06-19 07:20:18 [INFO   ] PROGRESS | Body:
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Best Recruitment Agency in Pune.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   PlacementHub connects colleges, placement cells, and employers through a single campus placement
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   ecosystem. We are speaking with recruitment and staffing firms that want earlier access to graduate
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   talent. PlacementHub is currently in its pre-seed fundraising stage, and I am also soliciting strategic
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   seed investment from aligned partners.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   For a recruitment or staffing firm, the fit is practical:
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Access to final-year students and recent graduates during active placement cycles.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   College and placement-cell visibility for hiring drives, client mandates, and graduate programs.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Better shortlisting context across skills, domains, locations, and role intent.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Ciel HR's expertise in recruitment and staffing has been consistently impressive, particularly in their campus recruitment drives, strategic talent acquisition initiatives, and focused graduate hiring programs, which have enabled them to effectively connect top talent with leading organizations in Pune.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with selected institutes.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:20:18 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:20:18 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:20:18 [INFO   ] 
+2026-06-19 07:20:18 [INFO   ] 
+2026-06-19 07:20:18 [INFO   ] PROGRESS | Email preview — To: info@cielhr.com | Subject: PlacementHub graduate hiring with cielhr.com
+2026-06-19 07:20:19 [INFO   ] SENT (Brevo) -> info@cielhr.com (Best Recruitment Agency in Pune) | PlacementHub graduate hiring with cielhr.com | messageId=<202606190150.30866555078@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:20:19 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:20:29 [INFO   ] PROGRESS | Send 31/32 | SENT | info@cielhr.com | Best Recruitment Agency in Pune [Recruitment & Staffing Firms] | ok=31 fail=0 skip=0
+2026-06-19 07:20:29 [INFO   ] PROGRESS | Send 32/32 | SENDING | info@yashoverseas.org | Website [Overseas Education / Immigration] | ok=31 fail=0 skip=0
+2026-06-19 07:20:42 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:20:42 [INFO   ] PROGRESS | Email content — To: info@yashoverseas.org
+2026-06-19 07:20:42 [INFO   ] PROGRESS | Subject: PlacementHub student outreach with yashoverseas.org
+2026-06-19 07:20:42 [INFO   ] PROGRESS | Body:
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Dear Sir/Madam,
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   I am reaching out to introduce PlacementHub and explore whether there may be a strategic fit with
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Website.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   PlacementHub is a campus placement and employability platform working with colleges, placement cells,
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   and graduating students across India. We are speaking with overseas education and immigration
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   consultants who may benefit from earlier visibility in the student journey, and who may also see value
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   in participating as strategic partners as the platform grows. PlacementHub is currently in its pre-seed
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   fundraising stage, and I am also soliciting strategic seed investment from aligned partners.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   For an overseas education or immigration practice, the fit is simple:
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Access to students while they are still shaping career, higher education, and migration plans.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   College-led engagement opportunities for seminars, counselling sessions, and structured student outreach.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Better context on student goals and readiness, helping your team focus on warmer and more relevant prospects.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Yash Overseas has established itself as a trusted and reliable partner for individuals seeking to study abroad, offering comprehensive guidance on overseas education pathways, expert visa support, and personalized study abroad assistance to help students achieve their international academic goals.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   If this is relevant, I would be happy to share a short investment note and discuss a pilot with
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   selected institutes.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Please reply to this email or call me if you would like to explore it.
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Best Regards,
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Sandeep Jain
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Founder, PlacementHub
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   +91-9860090620
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   sandeepjain200019@gmail.com
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   PlacementHub Platform
+2026-06-19 07:20:42 [INFO   ] PROGRESS |   Detailed Profile
+2026-06-19 07:20:42 [INFO   ] --------------------------------------------------------------
+2026-06-19 07:20:42 [INFO   ] 
+2026-06-19 07:20:42 [INFO   ] 
+2026-06-19 07:20:42 [INFO   ] PROGRESS | Email preview — To: info@yashoverseas.org | Subject: PlacementHub student outreach with yashoverseas.org
+2026-06-19 07:20:43 [INFO   ] SENT (Brevo) -> info@yashoverseas.org (Website) | PlacementHub student outreach with yashoverseas.org | messageId=<202606190150.47744658807@smtp-relay.mailin.fr> (API accepted; run audit-brevo to confirm delivery)
+2026-06-19 07:20:43 [INFO   ] Sleeping for 10 seconds
+2026-06-19 07:20:53 [INFO   ] PROGRESS | Send 32/32 | SENT | info@yashoverseas.org | Website [Overseas Education / Immigration] | ok=32 fail=0 skip=0
+2026-06-19 07:20:59 [INFO   ] Send complete: {'sent': 32, 'failed': 0, 'skipped': 0, 'queue_size': 32, 'ensure_industry': '', 'ensure_min_slots': 0, 'ensure_reserved_in_queue': 0, 'ensure_ca_connect_min': 8, 'ensure_ca_connect_reserved': 8, 'ensure_ca_connect_from_bulk': 8, 'ca_bulk_unsent': 764, 'sent_ca_connect': 8, 'reserved_by_industry': {'company_secretary_firms': 4, 'tax_consultants': 4}, 'reserved_in_queue_by_industry': {'company_secretary_firms': 4, 'tax_consultants': 4}, 'sent_by_industry': {'ca_cs_firms': 10, 'company_secretary_firms': 4, 'tax_consultants': 4, 'overseas_education_immigration': 3, 'recruitment_staffing': 2, 'coaching_test_prep': 5, 'bfsi_nbfc_banks': 1, 'training_finishing_schools': 1, 'lawyers': 1, 'hrtech': 1}, 'send_limit': 32}
+2026-06-19 07:20:59 [INFO   ] PROGRESS | Done — send finished — 32 sent, 0 failed, 0 skipped
+2026-06-19 07:20:59 [INFO   ] 
+2026-06-19 07:20:59 [INFO   ] ======================================================================
+2026-06-19 07:20:59 [INFO   ]   RUN SUMMARY
+2026-06-19 07:20:59 [INFO   ] ======================================================================
+2026-06-19 07:20:59 [INFO   ] 
+2026-06-19 07:20:59 [INFO   ]   SEND — this run
+2026-06-19 07:20:59 [INFO   ]     Recipients queued:               32
+2026-06-19 07:20:59 [INFO   ]       Unsent contacts considered this run (send cap: 32 per run).
+2026-06-19 07:20:59 [INFO   ]     Queue slots for CA portal:       8 / 8 reserved
+2026-06-19 07:20:59 [INFO   ]       Individual CAs from caconnect.icai.org (8 from ca_bulk.db).
+2026-06-19 07:20:59 [INFO   ]     Sent to CA portal contacts:      8
+2026-06-19 07:20:59 [INFO   ]       Partnership emails to CAs from CA Connect / bulk harvest this run.
+2026-06-19 07:20:59 [INFO   ]     Queue slots for company_secretary_firms: 4 / 4 reserved
+2026-06-19 07:20:59 [INFO   ]       Company Secretary Firms — minimum send slots per run when contacts are available.
+2026-06-19 07:20:59 [INFO   ]     Queue slots for tax_consultants: 4 / 4 reserved
+2026-06-19 07:20:59 [INFO   ]       Tax Consultants — minimum send slots per run when contacts are available.
+2026-06-19 07:20:59 [INFO   ]     Emails sent successfully:        32
+2026-06-19 07:20:59 [INFO   ]       Partnership / funding intro emails delivered via Brevo this run.
+2026-06-19 07:20:59 [INFO   ]     Send failures:                   0
+2026-06-19 07:20:59 [INFO   ]       Brevo API or transport errors (not counted as sent).
+2026-06-19 07:20:59 [INFO   ]     Skipped:                         0
+2026-06-19 07:20:59 [INFO   ]       Dry-run previews or recipients already marked sent in the database.
+2026-06-19 07:20:59 [INFO   ]     Sent by industry:
+2026-06-19 07:20:59 [INFO   ]       Chartered Accountants & Company Secretaries 10
+2026-06-19 07:20:59 [INFO   ]       Coaching & Test Prep           5
+2026-06-19 07:20:59 [INFO   ]       Company Secretary Firms        4
+2026-06-19 07:20:59 [INFO   ]       Tax Consultants                4
+2026-06-19 07:20:59 [INFO   ]       Overseas Education / Immigration 3
+2026-06-19 07:20:59 [INFO   ]       Recruitment & Staffing Firms   2
+2026-06-19 07:20:59 [INFO   ]       NBFC & Banks (Campus Hiring)   1
+2026-06-19 07:20:59 [INFO   ]       HRTech Companies               1
+2026-06-19 07:20:59 [INFO   ]       Law Firms & Lawyers            1
+2026-06-19 07:20:59 [INFO   ]       Training & Finishing Schools   1
+2026-06-19 07:21:00 [INFO   ] 
+2026-06-19 07:21:00 [INFO   ]   DATABASE — cumulative (all runs)
+2026-06-19 07:21:00 [INFO   ]     Companies stored:                1259
+2026-06-19 07:21:00 [INFO   ]       All scraped organisations across every industry vertical.
+2026-06-19 07:21:00 [INFO   ]     Companies with email:            1013
+2026-06-19 07:21:00 [INFO   ]       Records with email_status = found (ready or already used for outreach).
+2026-06-19 07:21:00 [INFO   ]     Email addresses on file:         8981
+2026-06-19 07:21:00 [INFO   ]       Total rows in company_emails (one company may have several).
+2026-06-19 07:21:00 [INFO   ]     Emails sent (lifetime):          224
+2026-06-19 07:21:00 [INFO   ]       Unique recipients successfully emailed at least once.
+2026-06-19 07:21:00 [INFO   ]     Send failures (lifetime):        0
+2026-06-19 07:21:00 [INFO   ]       Recipients with a failed status in email_sent.
+2026-06-19 07:21:00 [INFO   ]     Replies forwarded (lifetime):    0
+2026-06-19 07:21:00 [INFO   ]       Human replies forwarded to your Gmail.
+2026-06-19 07:21:00 [INFO   ]     Ready to send (now):             742
+2026-06-19 07:21:00 [INFO   ]       Unsent contacts still in the outbound queue for future runs.
+2026-06-19 07:21:00 [INFO   ]     Google queries pending:          43
+2026-06-19 07:21:00 [INFO   ]       Unused search queries waiting for future scrape runs.
+2026-06-19 07:21:00 [INFO   ]     Unsent CA portal contacts:       756
+2026-06-19 07:21:00 [INFO   ]       756 in ca_bulk.db, 0 in immigration.db (caconnect.icai.org).
+2026-06-19 07:21:00 [INFO   ]     Companies by industry (with email / total):
+2026-06-19 07:21:00 [INFO   ]       NBFC & Banks (Campus Hiring)     41 / 62
+2026-06-19 07:21:00 [INFO   ]       Chartered Accountants & Company Secretaries 121 / 129
+2026-06-19 07:21:00 [INFO   ]       Coaching & Test Prep             84 / 98
+2026-06-19 07:21:00 [INFO   ]       Company Secretary Firms          31 / 36
+2026-06-19 07:21:00 [INFO   ]       Corporate CSR Programs           55 / 71
+2026-06-19 07:21:00 [INFO   ]       EdTech Companies                 72 / 90
+2026-06-19 07:21:00 [INFO   ]       Student Loan / Education Finance 51 / 64
+2026-06-19 07:21:00 [INFO   ]       HRTech Companies                 59 / 88
+2026-06-19 07:21:00 [INFO   ]       Insurance (Campus & Graduate Hiring) 42 / 59
+2026-06-19 07:21:00 [INFO   ]       Law Firms & Lawyers              98 / 126
+2026-06-19 07:21:00 [INFO   ]       Overseas Education / Immigration 83 / 104
+2026-06-19 07:21:00 [INFO   ]       Recruitment & Staffing Firms     66 / 86
+2026-06-19 07:21:00 [INFO   ]       Tax Consultants                  62 / 78
+2026-06-19 07:21:00 [INFO   ]       Training & Finishing Schools     105 / 117
+2026-06-19 07:21:00 [INFO   ]       Wealth Managers & Investment Advisors 43 / 51
+2026-06-19 07:21:00 [INFO   ] ======================================================================
+2026-06-19 07:21:00 [INFO   ] 

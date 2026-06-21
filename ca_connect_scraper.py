@@ -14,11 +14,18 @@ from playwright.async_api import Page, async_playwright
 
 from browser_utils import dismiss_page_obstructions, launch_context, scrape_complete_beep
 from pipeline_progress import ca_connect_status
+from project_paths import (
+    CA_CONNECT_CREDENTIALS,
+    CA_CONNECT_CREDENTIALS_EXAMPLE,
+    PROJECT_ROOT,
+    resolve_config_file,
+    resolve_project_path,
+)
 
 logger = logging.getLogger(__name__)
 
-_SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_CREDENTIALS_FILE = _SCRIPT_DIR / "ca_connect_credentials.json"
+_SCRIPT_DIR = PROJECT_ROOT
+DEFAULT_CREDENTIALS_FILE = CA_CONNECT_CREDENTIALS
 DEFAULT_OUTPUT_FILE = _SCRIPT_DIR / "data" / "ca_connect_results.json"
 
 CA_CONNECT_HOME = "https://caconnect.icai.org/"
@@ -30,11 +37,13 @@ def load_credentials(path: Path | None = None) -> dict:
     cred_path = path or Path(
         os.environ.get("CA_CONNECT_CREDENTIALS_FILE", str(DEFAULT_CREDENTIALS_FILE))
     )
+    if not cred_path.is_absolute():
+        cred_path = resolve_project_path(str(cred_path))
     if not cred_path.exists():
-        example = _SCRIPT_DIR / "ca_connect_credentials.example.json"
+        example = resolve_config_file("ca_connect_credentials.example.json")
         raise FileNotFoundError(
             f"Credentials not found: {cred_path}. "
-            f"Copy {example.name} to {cred_path.name} and add your login details."
+            f"Copy {example} to {DEFAULT_CREDENTIALS_FILE} and add your login details."
         )
     return json.loads(cred_path.read_text(encoding="utf-8"))
 

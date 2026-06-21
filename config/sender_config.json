@@ -1,0 +1,46 @@
+{
+  "sender_name": "Sandeep Jain",
+  "company_name": "PlacementsHub",
+  "phone": "+91-9860090620",
+  "email": "sandeepjain200019@gmail.com",
+  "website": "https://campus-placement-omega.vercel.app/",
+  "signature_links": [
+    {
+      "label": "Detailed Profile",
+      "url": "https://jainsandeep729.wixsite.com/website"
+    }
+  ],
+  "email_subject": "Exploring a potential partnership opportunity",
+  "campaign_subjects": [
+    "Exploring a potential partnership opportunity"
+  ],
+  "forward_to": "sandeepjain200019@gmail.com",
+  "check_replies_before_send": false,
+  "check_replies_lookback_days": 30,
+  "emails_per_run": 32,
+  "max_companies_per_run": 100,
+  "max_queries_per_run": 40,
+  "scrape_headless": false,
+  "send_method": "brevo_api",
+  "template_file": "partnership.html",
+  "mail_config_file": "config/mail_config.json",
+  "ensure_industry_per_run": "",
+  "min_ensure_industry_per_run": 0,
+  "min_ensure_industry_scrape_per_run": 0,
+  "min_ensure_ca_connect_per_run": 8,
+  "reserved_send_by_industry": {
+    "company_secretary_firms": 4,
+    "tax_consultants": 4
+  },
+  "ca_connect_enabled": false,
+  "ca_connect_profiles_per_run": 10,
+  "ca_connect_credentials_file": "config/ca_connect_credentials.json",
+  "ca_connect_results_file": "data/ca_connect_results.json",
+  "ca_bulk_send_enabled": true,
+  "ca_bulk_send_only": true,
+  "ca_bulk_emails_per_run": 10,
+  "ca_bulk_database_file": "data/db/ca_bulk.db",
+  "pipeline_complete_voice": true,
+  "pipeline_stage_voice": true,
+  "pipeline_complete_voice_message": "Partnership pipeline run complete."
+}

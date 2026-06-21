@@ -17,6 +17,7 @@ from ca_connect_scraper import (
 )
 from immigration_db import ImmigrationDB, domain_from_ca_profile
 from immigration_sender import get_ensure_industry_settings, load_sender_config
+from project_paths import resolve_project_path
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +35,9 @@ def get_ca_connect_settings() -> dict:
         "profile_limit": profile_limit,
         "results_file": Path(cfg.get("ca_connect_results_file", str(DEFAULT_OUTPUT_FILE))),
         "credentials_file": Path(
-            cfg.get("ca_connect_credentials_file", str(DEFAULT_CREDENTIALS_FILE))
+            resolve_project_path(
+                str(cfg.get("ca_connect_credentials_file", DEFAULT_CREDENTIALS_FILE))
+            )
         ),
         "browser": (cfg.get("ca_connect_browser") or "auto").strip(),
     }

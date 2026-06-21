@@ -7,7 +7,11 @@ import random
 from pathlib import Path
 from typing import Any
 
-INDUSTRIES_FILE = Path(__file__).resolve().parent / "industries.json"
+from project_paths import (
+    INDUSTRIES_FILE,
+    PROJECT_ROOT,
+    SUBJECT_TEMPLATES_DIR,
+)
 
 _cache: dict[str, Any] | None = None
 
@@ -82,20 +86,119 @@ def template_file_for(industry_id: str) -> str | None:
     return raw or None
 
 
+def subject_template_path_for(body_template_file: str) -> Path:
+    """
+    Subject template paired with a body HTML file.
+    partnership_coaching.html -> templates/subjects/partnership_coaching.subject.txt
+    """
+    stem = Path((body_template_file or "").strip()).stem or "partnership"
+    return SUBJECT_TEMPLATES_DIR / f"{stem}.subject.txt"
+
+
+def subject_template_file_for(industry_id: str) -> str | None:
+    """Optional explicit subject template path in industries.json."""
+    item = get_industry(industry_id)
+    if not item:
+        return None
+    raw = (item.get("subject_template_file") or "").strip()
+    return raw or None
+
+
+def resolve_subject_template_path(industry_id: str, body_template_file: str) -> Path:
+    explicit = subject_template_file_for(industry_id)
+    if explicit:
+        path = Path(explicit)
+        return path if path.is_absolute() else PROJECT_ROOT / path
+    return subject_template_path_for(body_template_file)
+
+
+_GENERIC_COMPANY_NAMES = frozenset(
+    {
+        "careers",
+        "contact",
+        "contact us",
+        "home",
+        "about us",
+        "about",
+        "vacancy list",
+        "enquiries",
+        "inquiry",
+        "hello",
+        "admin",
+        "support",
+        "sales",
+        "office",
+    }
+)
+
+
+def recipient_identity(*, company_name: str, domain: str) -> str:
+    """Meaningful company/CA name, or domain when the name is a generic page title."""
+    from immigration_db import clean_domain
+
+    name = " ".join((company_name or "").split()).strip()
+    dom = clean_domain(domain)
+    if name and name.lower() not in _GENERIC_COMPANY_NAMES and len(name) >= 3:
+        return name[:100]
+    return dom
+
+
+def render_subject_template(
+    template: str,
+    *,
+    company_name: str = "",
+    domain: str = "",
+    college_name: str = "",
+) -> str:
+    """Fill {{RecipientCompany}}, {{Domain}}, {{RecipientIdentity}}, {{CollegeName}} in subject template."""
+    from immigration_db import clean_domain
+
+    line = (template or "").strip()
+    if not line:
+        return ""
+
+    dom = clean_domain(domain)
+    name = " ".join((company_name or "").split()).strip()
+    identity = recipient_identity(company_name=company_name, domain=domain)
+    college = " ".join((college_name or "").split()).strip()
+    if len(college) > 120:
+        college = college[:117].rstrip() + "..."
+
+    return (
+        line.replace("{{RecipientCompany}}", name)
+        .replace("{{Domain}}", dom)
+        .replace("{{CompanyDomain}}", dom)
+        .replace("{{RecipientIdentity}}", identity)
+        .replace("{{CollegeName}}", college)
+        .strip()
+    )
+
+
+def load_subject_template_text(
+    industry_id: str,
+    body_template_file: str,
+    *,
+    company_name: str = "",
+    domain: str = "",
+    fallback_subject: str = "",
+) -> str:
+    """Load and render templates/subjects/{stem}.subject.txt (first line)."""
+    path = resolve_subject_template_path(industry_id, body_template_file)
+    if path.is_file():
+        raw = path.read_text(encoding="utf-8").strip()
+        line = raw.splitlines()[0].strip() if raw else ""
+    else:
+        line = (email_subject_for(industry_id) or fallback_subject or "").strip()
+
+    return render_subject_template(line, company_name=company_name, domain=domain)
+
+
 def email_subject_for(industry_id: str) -> str | None:
     item = get_industry(industry_id)
     if not item:
         return None
     raw = (item.get("email_subject") or "").strip()
     return raw or None
-
-
-def subject_append_domain_for(industry_id: str) -> bool:
-    item = get_industry(industry_id)
-    if not item:
-        return True
-    return bool(item.get("subject_append_domain", True))
-
 
 def use_nvidia_praise_for(industry_id: str) -> bool:
     item = get_industry(industry_id)

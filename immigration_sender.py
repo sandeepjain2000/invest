@@ -13,25 +13,29 @@ from email.mime.text import MIMEText
 from email.utils import make_msgid
 from pathlib import Path
 
-from brevo_mail import load_brevo_transport, resolve_mail_config_path, send_html_via_brevo
+from brevo_mail import (
+    audit_brevo_message,
+    ensure_brevo_sender_verified,
+    load_brevo_transport,
+    resolve_mail_config_path,
+    send_html_via_brevo,
+)
 from ca_bulk_db import CaBulkDB
 from immigration_db import ImmigrationDB, clean_domain, is_ca_connect_contact
 from industries import (
-    email_subject_for,
+    load_subject_template_text,
     signature_links_for,
-    subject_append_domain_for,
     template_file_for,
     use_nvidia_praise_for,
 )
 from nvidia_llm import generate_company_praise
 from pipeline_notify import notify_stage
 from pipeline_progress import send_email_content, send_plan, send_status
+from project_paths import resolve_body_template_path, resolve_config_file, resolve_project_path
 
 logger = logging.getLogger(__name__)
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_TEMPLATE_FILE = _SCRIPT_DIR / "partnership.html"
-SENDER_CONFIG_FILE = _SCRIPT_DIR / "sender_config.json"
 SMTP_CONFIG_FILE = Path(
     os.environ.get(
         "EMAIL_CONFIG_FILE",
@@ -39,10 +43,21 @@ SMTP_CONFIG_FILE = Path(
     )
 )
 
-EMAIL_SEND_DELAY = 5
+EMAIL_SEND_DELAY = 10
 SAME_DOMAIN_DELAY = 20
 
 _domain_last_sent: dict[str, float] = {}
+
+
+def sleep_between_sends(seconds: float, *, reason: str = "") -> None:
+    """Pause between outbound emails; visible on terminal and in logs."""
+    if seconds <= 0:
+        return
+    wait_display = int(seconds) if float(seconds).is_integer() else round(seconds, 1)
+    suffix = f" ({reason})" if reason else ""
+    print(f"Sleeping for {wait_display} seconds{suffix}...", flush=True)
+    logger.info("Sleeping for %s seconds%s", wait_display, suffix)
+    time.sleep(seconds)
 
 
 def load_sender_config() -> dict:
@@ -63,7 +78,7 @@ def load_sender_config() -> dict:
         "max_queries_per_run": 40,
         "send_method": "brevo_api",
         "template_file": "partnership.html",
-        "mail_config_file": "mail_config.json",
+        "mail_config_file": "config/mail_config.json",
         "ensure_industry_per_run": "",
         "min_ensure_industry_per_run": 0,
         "min_ensure_industry_scrape_per_run": 0,
@@ -74,17 +89,19 @@ def load_sender_config() -> dict:
         },
         "ca_connect_enabled": False,
         "ca_connect_profiles_per_run": 10,
-        "ca_connect_credentials_file": "ca_connect_credentials.json",
+        "ca_connect_credentials_file": "config/ca_connect_credentials.json",
         "ca_connect_results_file": "data/ca_connect_results.json",
         "ca_bulk_send_enabled": True,
         "ca_bulk_send_only": True,
+        "ca_bulk_emails_per_run": 10,
         "ca_bulk_database_file": "data/db/ca_bulk.db",
         "pipeline_complete_voice": True,
         "pipeline_stage_voice": True,
         "pipeline_complete_voice_message": "Partnership pipeline run complete.",
     }
-    if SENDER_CONFIG_FILE.exists():
-        data = json.loads(SENDER_CONFIG_FILE.read_text(encoding="utf-8"))
+    config_path = resolve_config_file("sender_config.json")
+    if config_path.is_file():
+        data = json.loads(config_path.read_text(encoding="utf-8"))
         defaults.update(data)
     return defaults
 
@@ -92,8 +109,7 @@ def load_sender_config() -> dict:
 def get_template_path(sender: dict | None = None, *, template_file: str | None = None) -> Path:
     sender = sender or load_sender_config()
     raw = (template_file or sender.get("template_file") or "partnership.html").strip()
-    path = Path(raw)
-    return path if path.is_absolute() else _SCRIPT_DIR / path
+    return resolve_body_template_path(raw)
 
 
 def resolve_send_settings(
@@ -108,11 +124,9 @@ def resolve_send_settings(
         if use_nvidia_praise is not None
         else use_nvidia_praise_for(industry_id)
     )
+    body_template = template_file_for(industry_id) or sender_cfg.get("template_file", "partnership.html")
     return {
-        "template_file": template_file_for(industry_id) or sender_cfg.get("template_file", "partnership.html"),
-        "email_subject": email_subject_for(industry_id)
-        or sender_cfg.get("email_subject", "Exploring a potential partnership opportunity"),
-        "subject_append_domain": subject_append_domain_for(industry_id),
+        "template_file": body_template,
         "use_nvidia_praise": praise_enabled,
         "signature_links": signature_links_for(industry_id) or sender_cfg.get("signature_links") or [],
     }
@@ -134,20 +148,6 @@ def get_max_companies_per_run() -> int:
         return max(1, int(value))
     except (TypeError, ValueError):
         return 50
-
-
-def format_email_subject(base_subject: str, domain: str) -> str:
-    """
-    Unique subject per company: '{base} with {domain}'.
-    Example: Exploring a potential partnership opportunity with croyez.in
-    """
-    base = (base_subject or "").strip()
-    dom = clean_domain(domain)
-    if not base:
-        return dom or "Partnership opportunity"
-    if not dom:
-        return base
-    return f"{base} with {dom}"
 
 
 def get_max_queries_per_run() -> int:
@@ -389,11 +389,13 @@ def build_email_message(
         template_path=template_path,
         signature_links=settings["signature_links"],
     )
-    base_subject = settings["email_subject"]
-    if settings["subject_append_domain"]:
-        subject = format_email_subject(base_subject, domain)
-    else:
-        subject = base_subject.strip()
+    subject = load_subject_template_text(
+        industry_id,
+        settings["template_file"],
+        company_name=company_name,
+        domain=domain,
+        fallback_subject=sender_cfg.get("email_subject", "Exploring a potential partnership opportunity"),
+    )
     return html, subject
 
 
@@ -405,8 +407,7 @@ def check_domain_delay(domain: str) -> None:
         elapsed = time.time() - last
         if elapsed < SAME_DOMAIN_DELAY:
             wait = SAME_DOMAIN_DELAY - elapsed
-            logger.info("Domain cooldown: waiting %ss for %s", int(wait), domain)
-            time.sleep(wait)
+            sleep_between_sends(wait, reason=f"same domain {domain}")
     _domain_last_sent[domain] = time.time()
 
 
@@ -501,7 +502,8 @@ def send_one(
                 api_key=transport["api_key"],
             )
             logger.info(
-                "SENT (Brevo) -> %s (%s) | %s | messageId=%s",
+                "SENT (Brevo) -> %s (%s) | %s | messageId=%s "
+                "(API accepted; run audit-brevo to confirm delivery)",
                 recipient,
                 company_name,
                 subject,
@@ -517,7 +519,7 @@ def send_one(
                 status="sent",
                 message_id=message_id,
             )
-            time.sleep(EMAIL_SEND_DELAY)
+            sleep_between_sends(EMAIL_SEND_DELAY)
             return True
         except Exception as exc:
             logger.error("Brevo send failed for %s: %s", recipient, exc)
@@ -561,7 +563,7 @@ def send_one(
             status="sent",
             message_id=message_id,
         )
-        time.sleep(EMAIL_SEND_DELAY)
+        sleep_between_sends(EMAIL_SEND_DELAY)
         return True
     except smtplib.SMTPAuthenticationError:
         logger.error("SMTP auth failed for %s", from_email)
@@ -591,6 +593,32 @@ def send_one(
         return False
 
 
+def get_ca_bulk_emails_per_run() -> int:
+    try:
+        return max(1, int(load_sender_config().get("ca_bulk_emails_per_run", 10)))
+    except (TypeError, ValueError):
+        return 10
+
+
+def run_send_ca_bulk(
+    db: ImmigrationDB,
+    *,
+    limit: int | None = None,
+    smtp_config: Path | None = None,
+    use_nvidia_praise: bool = True,
+    dry_run: bool = False,
+) -> dict:
+    """Send only to CAs from ca_bulk.db (caconnect.icai.org harvest). No scrape."""
+    return run_send(
+        db,
+        limit=limit,
+        smtp_config=smtp_config,
+        use_nvidia_praise=use_nvidia_praise,
+        dry_run=dry_run,
+        ca_only=True,
+    )
+
+
 def run_send(
     db: ImmigrationDB,
     *,
@@ -598,6 +626,7 @@ def run_send(
     smtp_config: Path | None = None,
     use_nvidia_praise: bool = True,
     dry_run: bool = False,
+    ca_only: bool = False,
 ) -> dict:
     sender_cfg = load_sender_config()
     method = get_send_method()
@@ -608,10 +637,12 @@ def run_send(
     if method == "brevo_api":
         try:
             brevo_transport = load_brevo_transport(sender_cfg)
+            ensure_brevo_sender_verified(brevo_transport)
             logger.info(
-                "Send transport: Brevo API (config: %s, template: %s)",
+                "Send transport: Brevo API (config: %s, template: %s, sender: %s)",
                 resolve_mail_config_path(sender_cfg),
                 get_template_path(sender_cfg),
+                brevo_transport["sender_email"],
             )
         except (FileNotFoundError, ValueError) as exc:
             if dry_run:
@@ -629,113 +660,147 @@ def run_send(
             return {"sent": 0, "failed": 0, "skipped": 0, "error": "no_smtp_profiles"}
         logger.info("Send transport: Gmail SMTP")
 
-    send_limit = limit if limit is not None else get_emails_per_run()
-    ensure_industry, min_ensure, _ = get_ensure_industry_settings()
-    min_ca_connect = get_min_ensure_ca_connect_per_run()
-    industry_reserves = get_reserved_send_by_industry()
-
-    bulk_settings = get_ca_bulk_send_settings()
-    bulk_ca_items = load_ca_bulk_send_candidates(db) if bulk_settings["enabled"] else []
-    ca_bulk_only = bool(bulk_settings.get("send_only"))
-    if bulk_ca_items:
-        logger.info(
-            "CA send queue: %s unsent contact(s) from ca_bulk.db (caconnect.icai.org).",
-            len(bulk_ca_items),
-        )
-    elif ca_bulk_only:
-        logger.warning(
-            "CA bulk send enabled but ca_bulk.db has no unsent emails — "
-            "no CA portal contacts will be emailed this run (run_ca_bulk_import.bat)."
-        )
-    elif bulk_settings["enabled"]:
-        sync_ca_connect_json_to_db(db)
-
-    logger.info("Sending up to %s email(s) this run (emails_per_run).", send_limit)
-    queue = db.pending_send_queue(
-        send_limit,
-        ensure_industry=ensure_industry,
-        min_from_industry=min_ensure,
-        min_from_ca_connect=min_ca_connect,
-        industry_reserves=industry_reserves,
-        extra_ca_items=bulk_ca_items or None,
-        ca_bulk_only=ca_bulk_only,
+    send_limit = limit if limit is not None else (
+        get_ca_bulk_emails_per_run() if ca_only else get_emails_per_run()
     )
-    stats = {
-        "sent": 0,
-        "failed": 0,
-        "skipped": 0,
-        "queue_size": len(queue),
-        "ensure_industry": ensure_industry or "",
-        "ensure_min_slots": min_ensure,
-        "ensure_reserved_in_queue": 0,
-        "ensure_ca_connect_min": min_ca_connect,
-        "ensure_ca_connect_reserved": 0,
-        "ensure_ca_connect_from_bulk": 0,
-        "ca_bulk_unsent": len(bulk_ca_items),
-        "sent_ca_connect": 0,
-        "reserved_by_industry": industry_reserves,
-        "reserved_in_queue_by_industry": {},
-        "sent_by_industry": {},
-        "send_limit": send_limit,
-    }
-    if min_ca_connect > 0:
-        ca_reserved = sum(1 for item in queue if is_ca_connect_contact(item))
-        ca_from_bulk = sum(
-            1 for item in queue if (item.get("contact_source") or "").lower() == "ca_bulk"
+
+    if ca_only:
+        bulk_settings = get_ca_bulk_send_settings()
+        if not bulk_settings["enabled"]:
+            return {"sent": 0, "failed": 0, "skipped": 0, "error": "ca_bulk_send_disabled"}
+        if not bulk_settings["database_file"].exists():
+            return {"sent": 0, "failed": 0, "skipped": 0, "error": "ca_bulk_db_missing"}
+        bulk_ca_items = load_ca_bulk_send_candidates(db)
+        queue = bulk_ca_items[:send_limit]
+        logger.info(
+            "CA-only send from ca_bulk.db — %s unsent, up to %s this run (caconnect.icai.org).",
+            len(bulk_ca_items),
+            send_limit,
         )
-        stats["ensure_ca_connect_reserved"] = ca_reserved
-        stats["ensure_ca_connect_from_bulk"] = ca_from_bulk
-        if ca_reserved >= min_ca_connect:
+        stats = {
+            "sent": 0,
+            "failed": 0,
+            "skipped": 0,
+            "queue_size": len(queue),
+            "ca_only": True,
+            "ca_bulk_unsent": len(bulk_ca_items),
+            "sent_ca_connect": 0,
+            "sent_by_industry": {},
+            "send_limit": send_limit,
+        }
+    else:
+        ensure_industry, min_ensure, _ = get_ensure_industry_settings()
+        min_ca_connect = get_min_ensure_ca_connect_per_run()
+        industry_reserves = get_reserved_send_by_industry()
+
+        bulk_settings = get_ca_bulk_send_settings()
+        bulk_ca_items = load_ca_bulk_send_candidates(db) if bulk_settings["enabled"] else []
+        ca_bulk_only = bool(bulk_settings.get("send_only"))
+        if bulk_ca_items:
             logger.info(
-                "Send queue reserves %s/%s slot(s) for CA portal contacts (%s from ca_bulk.db).",
-                ca_reserved,
-                min_ca_connect,
-                ca_from_bulk,
+                "CA send queue: %s unsent contact(s) from ca_bulk.db (caconnect.icai.org).",
+                len(bulk_ca_items),
             )
-        else:
+        elif ca_bulk_only:
             logger.warning(
-                "Only %s/%s CA portal contact(s) in queue — "
-                "run ca_bulk import or enrich more profiles on caconnect.icai.org.",
-                ca_reserved,
-                min_ca_connect,
+                "CA bulk send enabled but ca_bulk.db has no unsent emails — "
+                "no CA portal contacts will be emailed this run (run_ca_bulk_import.bat)."
             )
-    for iid, min_slots in industry_reserves.items():
-        reserved = sum(
-            1 for item in queue if (item.get("industry") or "").lower() == iid.lower()
+        elif bulk_settings["enabled"]:
+            sync_ca_connect_json_to_db(db)
+
+        logger.info("Sending up to %s email(s) this run (emails_per_run).", send_limit)
+        queue = db.pending_send_queue(
+            send_limit,
+            ensure_industry=ensure_industry,
+            min_from_industry=min_ensure,
+            min_from_ca_connect=min_ca_connect,
+            industry_reserves=industry_reserves,
+            extra_ca_items=bulk_ca_items or None,
+            ca_bulk_only=ca_bulk_only,
         )
-        stats["reserved_in_queue_by_industry"][iid] = reserved
-        if reserved >= min_slots:
-            logger.info(
-                "Send queue reserves %s/%s slot(s) for industry %s.",
-                reserved,
-                min_slots,
-                iid,
+        stats = {
+            "sent": 0,
+            "failed": 0,
+            "skipped": 0,
+            "queue_size": len(queue),
+            "ensure_industry": ensure_industry or "",
+            "ensure_min_slots": min_ensure,
+            "ensure_reserved_in_queue": 0,
+            "ensure_ca_connect_min": min_ca_connect,
+            "ensure_ca_connect_reserved": 0,
+            "ensure_ca_connect_from_bulk": 0,
+            "ca_bulk_unsent": len(bulk_ca_items),
+            "sent_ca_connect": 0,
+            "reserved_by_industry": industry_reserves,
+            "reserved_in_queue_by_industry": {},
+            "sent_by_industry": {},
+            "send_limit": send_limit,
+        }
+        if min_ca_connect > 0:
+            ca_reserved = sum(1 for item in queue if is_ca_connect_contact(item))
+            ca_from_bulk = sum(
+                1 for item in queue if (item.get("contact_source") or "").lower() == "ca_bulk"
             )
-        else:
-            logger.warning(
-                "Only %s/%s pending %s contact(s) in queue.",
-                reserved,
-                min_slots,
-                iid,
+            stats["ensure_ca_connect_reserved"] = ca_reserved
+            stats["ensure_ca_connect_from_bulk"] = ca_from_bulk
+            if ca_reserved >= min_ca_connect:
+                logger.info(
+                    "Send queue reserves %s/%s slot(s) for CA portal contacts (%s from ca_bulk.db).",
+                    ca_reserved,
+                    min_ca_connect,
+                    ca_from_bulk,
+                )
+            else:
+                logger.warning(
+                    "Only %s/%s CA portal contact(s) in queue — "
+                    "run ca_bulk import or enrich more profiles on caconnect.icai.org.",
+                    ca_reserved,
+                    min_ca_connect,
+                )
+        for iid, min_slots in industry_reserves.items():
+            reserved = sum(
+                1 for item in queue if (item.get("industry") or "").lower() == iid.lower()
             )
-    if ensure_industry and min_ensure > 0:
-        reserved = sum(
-            1 for item in queue if (item.get("industry") or "").lower() == ensure_industry.lower()
-        )
-        stats["ensure_reserved_in_queue"] = reserved
-        if reserved >= min_ensure:
-            logger.info(
-                "Send queue reserves %s/%s slot(s) for industry %s.",
-                reserved,
-                min_ensure,
-                ensure_industry,
+            stats["reserved_in_queue_by_industry"][iid] = reserved
+            if reserved >= min_slots:
+                logger.info(
+                    "Send queue reserves %s/%s slot(s) for industry %s.",
+                    reserved,
+                    min_slots,
+                    iid,
+                )
+            else:
+                logger.warning(
+                    "Only %s/%s pending %s contact(s) in queue.",
+                    reserved,
+                    min_slots,
+                    iid,
+                )
+        if ensure_industry and min_ensure > 0:
+            reserved = sum(
+                1
+                for item in queue
+                if (item.get("industry") or "").lower() == ensure_industry.lower()
             )
-        else:
-            logger.warning(
-                "No pending %s emails in queue — sending %s other recipient(s) this run.",
-                ensure_industry,
-                len(queue),
-            )
+            stats["ensure_reserved_in_queue"] = reserved
+            if reserved >= min_ensure:
+                logger.info(
+                    "Send queue reserves %s/%s slot(s) for industry %s.",
+                    reserved,
+                    min_ensure,
+                    ensure_industry,
+                )
+            else:
+                logger.warning(
+                    "No pending %s emails in queue — sending %s other recipient(s) this run.",
+                    ensure_industry,
+                    len(queue),
+                )
+
+    if ca_only and not queue:
+        logger.warning("No unsent CA emails in ca_bulk.db — run run_ca_bulk_import.bat first.")
+        return {**stats, "error": "ca_bulk_queue_empty"}
 
     if dry_run:
         pass
@@ -927,6 +992,7 @@ def run_test_send(
 
     try:
         transport = load_brevo_transport(sender_cfg)
+        ensure_brevo_sender_verified(transport)
     except (FileNotFoundError, ValueError) as exc:
         return {"sent": 0, "failed": 0, "skipped": 0, "error": str(exc)}
 
@@ -969,3 +1035,82 @@ def run_test_send(
             "domain": domain,
             "subject": subject,
         }
+
+
+def run_audit_brevo_deliveries(
+    db: ImmigrationDB,
+    *,
+    days: int = 14,
+    limit: int = 200,
+    dry_run: bool = False,
+) -> dict:
+    """
+    Poll Brevo transactional logs for messageIds stored as status=sent.
+    Updates email_sent to delivery_failed when Brevo reports blocked/error events.
+    """
+    sender_cfg = load_sender_config()
+    if get_send_method() != "brevo_api":
+        return {"checked": 0, "delivered": 0, "failed": 0, "pending": 0, "error": "brevo_api_only"}
+
+    try:
+        transport = load_brevo_transport(sender_cfg)
+    except (FileNotFoundError, ValueError) as exc:
+        return {"checked": 0, "delivered": 0, "failed": 0, "pending": 0, "error": str(exc)}
+
+    rows = db.list_sent_for_brevo_audit(days=days, limit=limit)
+    stats = {"checked": 0, "delivered": 0, "failed": 0, "pending": 0, "unknown": 0, "updated": 0}
+    api_key = transport["api_key"]
+
+    for row in rows:
+        message_id = (row.get("message_id") or "").strip()
+        if not message_id:
+            continue
+        stats["checked"] += 1
+        try:
+            result = audit_brevo_message(api_key, message_id)
+        except Exception as exc:
+            logger.warning("Brevo audit failed for %s: %s", message_id, exc)
+            stats["unknown"] += 1
+            continue
+
+        brevo_status = result.get("status") or "unknown"
+        detail = (result.get("detail") or "").strip()
+        recipient = (row.get("email") or result.get("recipient") or "").strip()
+
+        if brevo_status == "failed":
+            stats["failed"] += 1
+            logger.error(
+                "Brevo delivery FAILED -> %s | messageId=%s | %s",
+                recipient,
+                message_id,
+                detail or "blocked/error",
+            )
+            if not dry_run:
+                db.update_email_send_status(
+                    recipient,
+                    status="delivery_failed",
+                    error_message=detail or "brevo_delivery_failed",
+                )
+                stats["updated"] += 1
+        elif brevo_status == "delivered":
+            stats["delivered"] += 1
+            logger.info("Brevo delivery OK -> %s | messageId=%s", recipient, message_id)
+        elif brevo_status == "pending":
+            stats["pending"] += 1
+            logger.info(
+                "Brevo delivery pending -> %s | messageId=%s | %s",
+                recipient,
+                message_id,
+                detail,
+            )
+        else:
+            stats["unknown"] += 1
+            logger.warning(
+                "Brevo delivery unknown -> %s | messageId=%s | %s",
+                recipient,
+                message_id,
+                detail,
+            )
+
+    logger.info("Brevo delivery audit: %s", stats)
+    return stats
