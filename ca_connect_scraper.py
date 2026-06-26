@@ -259,6 +259,46 @@ def merge_prior_enrichment(new_results: list[dict], prior_results: list[dict]) -
                 item[key] = old[key]
 
 
+def resolve_ca_connect_city(
+    city: str,
+    city_options: list[str],
+    *,
+    city_aliases: dict[str, str] | None = None,
+) -> str:
+    """Map a config city name to an ICAI CA Connect dropdown label."""
+    options = [c for c in city_options if c and c != "Member / Firm City"]
+    if city in options:
+        return city
+
+    aliases = city_aliases or {}
+    mapped = (aliases.get(city) or "").strip()
+    if mapped:
+        if mapped in options:
+            return mapped
+        alias_matches = [
+            c
+            for c in options
+            if mapped.lower() in c.lower() or c.lower() in mapped.lower()
+        ]
+        if alias_matches:
+            return alias_matches[0]
+
+    matches = [
+        c
+        for c in options
+        if city.lower() in c.lower() or c.lower() in city.lower()
+    ]
+    if matches:
+        return matches[0]
+
+    sample = options[:12]
+    hint = f" Alias tried: {mapped}." if mapped else ""
+    raise ValueError(
+        f"City '{city}' not found for state dropdown.{hint} "
+        f"Sample options: {sample}"
+    )
+
+
 async def run_ca_connect_search(
     *,
     service: str = "Audit",
@@ -271,6 +311,7 @@ async def run_ca_connect_search(
     enrich_profiles: bool = False,
     profile_limit: int = 0,
     prior_results: list[dict] | None = None,
+    city_aliases: dict[str, str] | None = None,
 ) -> dict:
     credentials = credentials or {}
     stats = {
@@ -326,15 +367,8 @@ async def run_ca_connect_search(
             "#city",
             "el => Array.from(el.options).map(o => o.text.trim()).filter(Boolean)",
         )
-        city_pick = city
-        if city not in city_options:
-            matches = [c for c in city_options if city.lower() in c.lower()]
-            if not matches:
-                raise ValueError(
-                    f"City '{city}' not found for state '{state}'. "
-                    f"Sample options: {city_options[:12]}"
-                )
-            city_pick = matches[0]
+        city_pick = resolve_ca_connect_city(city, city_options, city_aliases=city_aliases)
+        if city_pick != city:
             logger.info("City matched: %s -> %s", city, city_pick)
         await page.select_option("#city", label=city_pick)
 

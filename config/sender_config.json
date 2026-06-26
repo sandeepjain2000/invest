@@ -38,7 +38,7 @@
   "ca_connect_results_file": "data/ca_connect_results.json",
   "ca_bulk_send_enabled": true,
   "ca_bulk_send_only": true,
-  "ca_bulk_emails_per_run": 10,
+  "ca_bulk_emails_per_run": 50,
   "ca_bulk_database_file": "data/db/ca_bulk.db",
   "pipeline_complete_voice": true,
   "pipeline_stage_voice": true,

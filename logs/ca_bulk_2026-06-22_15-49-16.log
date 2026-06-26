@@ -1,0 +1,11 @@
+2026-06-22 15:49:16 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\ca_bulk_2026-06-22_15-49-16.log
+2026-06-22 15:49:16 [INFO   ] 
+2026-06-22 15:49:16 [INFO   ] ==============================================================
+2026-06-22 15:49:16 [INFO   ] PROGRESS | Bulk CA import — goal 1000 new email(s), batch size 50
+2026-06-22 15:49:16 [INFO   ] ==============================================================
+2026-06-22 15:49:16 [INFO   ] 
+2026-06-22 15:49:16 [INFO   ] ==============================================================
+2026-06-22 15:49:16 [INFO   ] PROGRESS | Listing harvest — Audit | Maharashtra | Thane
+2026-06-22 15:49:16 [INFO   ] ==============================================================
+2026-06-22 15:49:32 [INFO   ] Opening CA Connect search page: https://caconnect.icai.org/search-your-ca
+2026-06-22 15:49:37 [INFO   ] Selecting service=Audit state=Maharashtra city=Thane

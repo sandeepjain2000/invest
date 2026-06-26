@@ -1,0 +1,37 @@
+2026-06-22 15:40:17 [INFO   ] Log file: C:\Users\sandeep\Downloads\Claudes\investment\logs\ca_bulk_2026-06-22_15-40-17.log
+2026-06-22 15:40:17 [INFO   ] === CA bulk database: C:\Users\sandeep\Downloads\Claudes\investment\data\db\ca_bulk.db ===
+2026-06-22 15:40:17 [INFO   ]   searches total:        20
+2026-06-22 15:40:17 [INFO   ]   searches queued:       16
+2026-06-22 15:40:17 [INFO   ]   searches listed:       0
+2026-06-22 15:40:17 [INFO   ]   searches complete:     4
+2026-06-22 15:40:17 [INFO   ]   listings total:        812
+2026-06-22 15:40:17 [INFO   ]   listings pending:      0
+2026-06-22 15:40:17 [INFO   ]   listings with email:   812
+2026-06-22 15:40:17 [INFO   ]   listings no email:     0
+2026-06-22 15:40:17 [INFO   ]   listings failed:       0
+2026-06-22 15:40:17 [INFO   ] 
+2026-06-22 15:40:17 [INFO   ]   Searches:
+2026-06-22 15:40:17 [INFO   ]     [1] Audit | Maharashtra | Pune — status=complete listings=574 emails=287 pending=0
+2026-06-22 15:40:17 [INFO   ]     [2] Audit | Maharashtra | Mumbai — status=complete listings=822 emails=396 pending=0
+2026-06-22 15:40:17 [INFO   ]     [3] Audit | Maharashtra | Nagpur — status=complete listings=124 emails=61 pending=0
+2026-06-22 15:40:17 [INFO   ]     [4] Audit | Maharashtra | Nashik — status=complete listings=154 emails=68 pending=0
+2026-06-22 15:40:17 [INFO   ]     [5] Audit | Maharashtra | Thane — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [6] Audit | Maharashtra | Aurangabad — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [7] Audit | Karnataka | Bengaluru — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [8] Audit | Karnataka | Mysuru — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [9] Audit | Tamil Nadu | Chennai — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [10] Audit | Tamil Nadu | Coimbatore — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [11] Audit | Gujarat | Ahmedabad — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [12] Audit | Gujarat | Surat — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [13] Audit | Delhi | Delhi — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [14] Audit | West Bengal | Kolkata — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [15] Audit | Telangana | Hyderabad — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [16] Audit | Rajasthan | Jaipur — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [17] Audit | Uttar Pradesh | Lucknow — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [18] Audit | Uttar Pradesh | Noida — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [19] Audit | Madhya Pradesh | Indore — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ]     [20] Audit | Kerala | Kochi — status=queued listings=0 emails=0 pending=0
+2026-06-22 15:40:17 [INFO   ] 
+2026-06-22 15:40:17 [INFO   ]   Last enriched: R K KULKARNI & ASSOCIATES <caruchikulkarni@gmail.com> — Audit / Maharashtra / Nashik at 2026-06-17T21:45:04+00:00
+2026-06-22 15:40:17 [INFO   ] 
+2026-06-22 15:40:17 [INFO   ]   Resume: python ca_bulk_import.py run

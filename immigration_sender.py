@@ -93,7 +93,7 @@ def load_sender_config() -> dict:
         "ca_connect_results_file": "data/ca_connect_results.json",
         "ca_bulk_send_enabled": True,
         "ca_bulk_send_only": True,
-        "ca_bulk_emails_per_run": 10,
+        "ca_bulk_emails_per_run": 50,
         "ca_bulk_database_file": "data/db/ca_bulk.db",
         "pipeline_complete_voice": True,
         "pipeline_stage_voice": True,
@@ -595,7 +595,7 @@ def send_one(
 
 def get_ca_bulk_emails_per_run() -> int:
     try:
-        return max(1, int(load_sender_config().get("ca_bulk_emails_per_run", 10)))
+        return max(1, int(load_sender_config().get("ca_bulk_emails_per_run", 50)))
     except (TypeError, ValueError):
         return 10
 

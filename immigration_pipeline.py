@@ -849,7 +849,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--limit",
         type=int,
         default=None,
-        help="Emails per run (default: ca_bulk_emails_per_run in sender_config.json, usually 10)",
+        help="Emails per run (default: ca_bulk_emails_per_run in sender_config.json, usually 50)",
     )
     send_ca.add_argument("--no-nvidia-praise", action="store_true")
     send_ca.add_argument("--dry-run", action="store_true")

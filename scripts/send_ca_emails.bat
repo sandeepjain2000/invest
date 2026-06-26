@@ -3,16 +3,18 @@ setlocal EnableExtensions
 
 cd /d "%~dp0\.."
 
-rem --- Override send count (blank = config\sender_config.json ca_bulk_emails_per_run, default 10) ---
+rem --- Override ICAI send count (blank = sender_config.json ca_bulk_emails_per_run, default 50) ---
+rem --- Not the same as emails_per_run (32) used by partnership scrape/send scripts ---
 set "SEND_LIMIT="
 
 echo ============================================================
 echo   CA email send only — caconnect.icai.org contacts
 echo   Folder: %CD%
 echo   Source: data\db\ca_bulk.db
-echo   Default: 10 emails per run (funding intro template)
+echo   Default: 50 emails per run from ICAI ca_bulk.db
+echo   ^(Partnership scrape/send uses emails_per_run=32 in sender_config.json^)
 echo.
-echo   No scrape — harvest CAs with scripts\run_ca_bulk_import.bat first.
+echo   No scrape — harvest CAs with scripts\harvest_ca_from_icai.bat first.
 echo ============================================================
 echo.
 pause

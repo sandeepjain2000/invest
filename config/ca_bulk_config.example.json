@@ -6,6 +6,12 @@
   "browser": "auto",
   "credentials_file": "config/ca_connect_credentials.json",
   "database_file": "data/db/ca_bulk.db",
+  "city_aliases": {
+    "Thane": "Dombivli",
+    "Aurangabad": "Aurangabad (MH)",
+    "Bengaluru": "Bangalore",
+    "Mysuru": "Mysore"
+  },
   "search_queue": [
     { "service": "Audit", "state": "Maharashtra", "city": "Pune" },
     { "service": "Audit", "state": "Maharashtra", "city": "Mumbai" },

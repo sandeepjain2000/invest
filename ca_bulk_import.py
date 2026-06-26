@@ -119,6 +119,7 @@ async def harvest_search_listings(
     credentials: dict,
     browser: str,
     headless: bool,
+    city_aliases: dict[str, str] | None = None,
 ) -> int:
     """Run CA Connect search and store listing cards (no profile enrichment)."""
     progress_step(
@@ -134,6 +135,7 @@ async def harvest_search_listings(
         headless=headless,
         enrich_profiles=False,
         profile_limit=0,
+        city_aliases=city_aliases,
     )
     listings = stats.get("results") or []
     added = db.insert_listings(int(search["id"]), listings)
@@ -280,6 +282,17 @@ async def enrich_batch(
     return stats
 
 
+def city_aliases_from_config(cfg: dict) -> dict[str, str]:
+    raw = cfg.get("city_aliases") or {}
+    if not isinstance(raw, dict):
+        return {}
+    return {
+        str(key).strip(): str(value).strip()
+        for key, value in raw.items()
+        if str(key).strip() and str(value).strip()
+    }
+
+
 async def run_bulk_import(
     db: CaBulkDB,
     *,
@@ -289,6 +302,7 @@ async def run_bulk_import(
     browser: str,
     headless: bool,
     delay_sec: float,
+    city_aliases: dict[str, str] | None = None,
 ) -> dict:
     run_stats = {
         "new_emails": 0,
@@ -318,6 +332,7 @@ async def run_bulk_import(
                 credentials=credentials,
                 browser=browser,
                 headless=headless,
+                city_aliases=city_aliases,
             )
             run_stats["searches_listed"] += 1
             search = db.get_search(search_id) or search
@@ -581,6 +596,7 @@ def main() -> int:
                     browser=browser,
                     headless=headless,
                     delay_sec=delay,
+                    city_aliases=city_aliases_from_config(cfg),
                 )
             )
             logger.info("Run complete: %s", stats)

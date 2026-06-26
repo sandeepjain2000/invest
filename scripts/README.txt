@@ -4,10 +4,16 @@ Partnership pipeline:
   send_partnership_emails.bat       Scrape (Google) then send
   send_partnership_emails_only.bat  Send only (no scrape)
 
-CA bulk harvest:
-  run_ca_bulk_import.bat            Full setup + enrich (resume each run)
-  ca_bulk_status.bat                Pending / email counts
-  ca_bulk_import.bat                CLI pass-through (status, export-csv, …)
+CA bulk (ICAI):
+  harvest_ca_from_icai.bat          Pull new CA emails from ICAI (browser)
+  ca_bulk_status.bat                Check harvest progress (read-only)
+  send_ca_emails.bat                Email contacts already in ca_bulk.db
+
+Optional CLI (terminal, with arguments):
+  ca_bulk_import.bat export-csv
+  ca_bulk_import.bat seed-searches
+  run_ca_bulk_import.bat            Old name for harvest_ca_from_icai.bat
 
 Double-click any .bat here, or from a terminal:
-  scripts\send_partnership_emails_only.bat
+  scripts\ca_bulk_status.bat
+  scripts\harvest_ca_from_icai.bat
